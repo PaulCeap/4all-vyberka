@@ -2,6 +2,9 @@
 
 Denně aktualizovaný předvýběr veřejných zakázek, poptávek a komerčních tendrů relevantních pro komunikační agenturu [4ALL](https://www.4all.cz/). Projekt spojuje sběr z oficiálních i oborových zdrojů, transparentní bodování, deduplikaci a statický web pro `vyberka.4all.cz`.
 
+**Živý web:** [vyberka.4all.cz](https://vyberka.4all.cz/)
+
+
 ## Co je hotové
 
 - oficiální český zdroj **Zakázky GOV** (novinky za posledních 24 hodin),
