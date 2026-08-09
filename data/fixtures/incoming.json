@@ -1,0 +1,52 @@
+[
+  {
+    "source": "zakazky-gov",
+    "sourceId": "RVZ-DEMO-001",
+    "url": "https://zakazky.gov.cz/",
+    "title": "Komunikační a kreativní kampaň pro nábor nových studentů",
+    "buyer": "Univerzita Demo",
+    "summary": "Příprava komunikační strategie, kreativního konceptu, videí, správy sociálních sítí a PR podpory.",
+    "publishedAt": "2026-08-08T08:00:00+02:00",
+    "deadline": "2026-08-29T10:00:00+02:00",
+    "value": { "amount": 2400000, "currency": "CZK" },
+    "cpv": ["79340000"],
+    "procedureType": "Služby"
+  },
+  {
+    "source": "manual",
+    "sourceId": "DEMO-002",
+    "url": "https://example.com/demo-002",
+    "title": "Mediální trénink vedení organizace",
+    "buyer": "Krajská organizace Demo",
+    "summary": "Školení komunikace s médii, krizová komunikace a nácvik televizních rozhovorů.",
+    "publishedAt": "2026-08-07T08:00:00+02:00",
+    "deadline": "2026-09-04T10:00:00+02:00",
+    "value": { "amount": 420000, "currency": "CZK" },
+    "cpv": ["80510000"],
+    "procedureType": "Služby"
+  },
+  {
+    "source": "manual",
+    "sourceId": "DEMO-003",
+    "url": "https://example.com/demo-003",
+    "title": "Rekonstrukce budovy kulturního domu",
+    "buyer": "Město Demo",
+    "summary": "Stavební práce, výměna oken a projektová dokumentace stavby.",
+    "publishedAt": "2026-08-08T08:00:00+02:00",
+    "deadline": "2026-09-10T10:00:00+02:00",
+    "cpv": ["45000000"],
+    "procedureType": "Stavební práce"
+  },
+  {
+    "source": "ted",
+    "sourceId": "999999-2026",
+    "url": "https://ted.europa.eu/",
+    "title": "Komunikační a kreativní kampaň pro nábor nových studentů",
+    "buyer": "Univerzita Demo",
+    "summary": "Kompletní reklamní, obsahové a public relations služby pro náborovou kampaň.",
+    "publishedAt": "2026-08-08T08:00:00+02:00",
+    "deadline": "2026-08-29T10:00:00+02:00",
+    "cpv": ["79416200"],
+    "procedureType": "services"
+  }
+]

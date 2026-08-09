@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Denně aktualizovaný výběr veřejných zakázek relevantních pro komunikační agenturu 4ALL.">
+    <meta name="theme-color" content="#171717">
+    <meta property="og:title" content="4ALL Výběrka — příležitosti bez šumu">
+    <meta property="og:description" content="Denní výběr relevantních zakázek pro 4ALL.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vyberka.4all.cz">
+    <title>4ALL Výběrka — příležitosti bez šumu</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#opportunities">Přeskočit na zakázky</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="4ALL Výběrka — úvod">
+        <span class="brand-main">4ALL</span>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-product">VÝBĚRKA</span>
+      </a>
+      <nav aria-label="Hlavní navigace">
+        <a href="#opportunities">Příležitosti</a>
+        <a href="#method">Jak to funguje</a>
+        <a class="nav-external" href="https://www.4all.cz/" target="_blank" rel="noreferrer">4all.cz <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-kicker"><span class="live-dot" aria-hidden="true"></span> Denní monitoring běží</div>
+        <h1 id="hero-title">NOVÉ PŘÍLEŽITOSTI.<br><em>BEZ ŠUMU.</em></h1>
+        <div class="hero-bottom">
+          <p>Agent každý den projde veřejné zakázky, otevřené poptávky i komerční tendry a vytáhne ty, kde může 4ALL spojit kreativitu, komunikaci a technologie.</p>
+          <div class="hero-stats" aria-label="Souhrn zakázek">
+            <div><strong id="stat-total">—</strong><span>aktivních tipů</span></div>
+            <div><strong id="stat-strong">—</strong><span>silná shoda</span></div>
+            <div><strong id="stat-soon">—</strong><span>končí do 7 dní</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="opportunities" id="opportunities" aria-labelledby="opportunities-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Pracovní přehled</p>
+            <h2 id="opportunities-title">Vybrané zakázky</h2>
+          </div>
+          <p class="updated" id="updated-at">Načítám poslední aktualizaci…</p>
+        </div>
+
+        <div class="toolbar" aria-label="Filtrování zakázek">
+          <label class="search-field">
+            <span class="sr-only">Hledat v zakázkách</span>
+            <span aria-hidden="true">⌕</span>
+            <input id="search" type="search" placeholder="Hledat zakázku nebo zadavatele…" autocomplete="off">
+          </label>
+          <label class="select-field">
+            <span>Typ</span>
+            <select id="type-filter">
+              <option value="all">Všechny příležitosti</option>
+              <option value="public-tender">Veřejné zakázky</option>
+              <option value="commercial-demand">Poptávky</option>
+              <option value="market-signal">Komerční tendry</option>
+            </select>
+          </label>
+          <label class="select-field">
+            <span>Min. shoda</span>
+            <select id="score-filter">
+              <option value="42">Všechny tipy</option>
+              <option value="55">Dobrá shoda 55+</option>
+              <option value="75">Silná shoda 75+</option>
+            </select>
+          </label>
+          <label class="select-field">
+            <span>Řazení</span>
+            <select id="sort">
+              <option value="score">Nejlepší shoda</option>
+              <option value="deadline">Nejbližší deadline</option>
+              <option value="newest">Nejnovější</option>
+            </select>
+          </label>
+          <button class="saved-filter" id="saved-filter" type="button" aria-pressed="false">☆ Uložené</button>
+        </div>
+
+        <div class="category-chips" id="category-chips" aria-label="Kategorie služeb">
+          <button type="button" class="chip active" data-category="all" aria-pressed="true">Vše</button>
+          <button type="button" class="chip" data-category="content" aria-pressed="false">Obsah</button>
+          <button type="button" class="chip" data-category="pr" aria-pressed="false">PR & komunikace</button>
+          <button type="button" class="chip" data-category="marketing" aria-pressed="false">Marketing & eventy</button>
+          <button type="button" class="chip" data-category="strategy" aria-pressed="false">Strategie</button>
+          <button type="button" class="chip" data-category="ai" aria-pressed="false">AI & automatizace</button>
+          <button type="button" class="chip" data-category="training" aria-pressed="false">Školení</button>
+        </div>
+
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <div class="tender-list" id="tender-list" aria-busy="true">
+          <div class="loading-card"></div>
+          <div class="loading-card"></div>
+          <div class="loading-card"></div>
+        </div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span aria-hidden="true">∅</span>
+          <h3>V tomhle filtru zatím nic není.</h3>
+          <p>Zkuste snížit minimální shodu nebo změnit kategorii.</p>
+          <button type="button" id="reset-filters">Zobrazit všechny tipy</button>
+        </div>
+      </section>
+
+      <section class="method" id="method" aria-labelledby="method-title">
+        <div class="method-intro">
+          <p class="eyebrow">Jak to funguje</p>
+          <h2 id="method-title">Agent čte široce.<br>Vy rozhodujete úzce.</h2>
+          <p>Výsledek je předvýběr, ne automatické obchodní rozhodnutí. U každého tipu je vidět, proč prošel a co může být riziko.</p>
+        </div>
+        <ol class="method-steps">
+          <li><span>01</span><div><h3>Sběr</h3><p>Každý den nové zakázky, oborové poptávky a výběrová řízení zachycená v médiích.</p></div></li>
+          <li><span>02</span><div><h3>Vyčištění</h3><p>Sjednocení formátu a spojení stejné zakázky napříč zdroji.</p></div></li>
+          <li><span>03</span><div><h3>Shoda s 4ALL</h3><p>Obsah, PR, marketing, eventy, strategie, AI a školení.</p></div></li>
+          <li><span>04</span><div><h3>Lidské rozhodnutí</h3><p>Ověřit dokumentaci, kapacitu, reference a ekonomiku nabídky.</p></div></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <div class="brand footer-brand"><span class="brand-main">4ALL</span><span class="brand-divider"></span><span class="brand-product">VÝBĚRKA</span></div>
+      <p>Interní pracovní nástroj. Před podáním vždy ověřte aktuální zadávací dokumentaci u zdroje.</p>
+      <a href="mailto:hello@4all.cz">hello@4all.cz</a>
+    </footer>
+  </body>
+</html>
