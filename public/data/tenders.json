@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-09T08:00:00.000Z",
+  "generatedAt": "2026-08-10T05:50:19.244Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -8,25 +8,25 @@
   },
   "stats": {
     "total": 4,
-    "newThisRun": 4,
-    "strong": 2,
+    "newThisRun": 0,
+    "strong": 1,
     "closingSoon": 3
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 4
+      "count": 9
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 60
+      "count": 59
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 339
+      "count": 403
     },
     {
       "id": "poptavky",
@@ -75,18 +75,20 @@
       "procedureType": "Veřejná zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-09T08:00:00.000Z",
+      "lastSeenAt": "2026-08-10T05:50:19.244Z",
       "status": "open",
       "fingerprint": "36bdb84cb4290686f55d",
+      "duplicateSources": [
+        "poptavky"
+      ],
       "relevance": {
-        "score": 86,
+        "score": 82,
         "level": "strong",
         "reasons": [
           "Tvorba obsahu: sociálních sítí, marketingového obsahu",
           "Marketing & eventy: marketingové služby, marketingové strategie",
           "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby",
-          "zbývá alespoň týden na reakci"
+          "jde o zakázku na služby"
         ],
         "negativeSignals": [],
         "categories": [
@@ -106,7 +108,7 @@
             "score": 16
           }
         ],
-        "deadlineDays": 7
+        "deadlineDays": 6
       }
     },
     {
@@ -129,21 +131,20 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-09T08:00:00.000Z",
+      "lastSeenAt": "2026-08-10T05:50:19.244Z",
       "status": "open",
       "fingerprint": "ba32df76c8b751d0a6bd",
       "duplicateSources": [
         "poptavej"
       ],
       "relevance": {
-        "score": 78,
-        "level": "strong",
+        "score": 74,
+        "level": "good",
         "reasons": [
           "Marketing & eventy: marketingové služby",
           "PR & komunikace: propagace, tiskových zpráv",
           "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby",
-          "zbývá alespoň týden na reakci"
+          "jde o zakázku na služby"
         ],
         "negativeSignals": [],
         "categories": [
@@ -163,7 +164,7 @@
             "score": 12
           }
         ],
-        "deadlineDays": 7
+        "deadlineDays": 6
       }
     },
     {
@@ -188,7 +189,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-09T14:42:44.439Z",
+      "lastSeenAt": "2026-08-10T05:50:19.244Z",
       "status": "open",
       "fingerprint": "77c15abc52aa267105b9",
       "duplicateSources": [
@@ -237,7 +238,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-09T08:00:00.000Z",
+      "lastSeenAt": "2026-08-10T05:50:19.244Z",
       "status": "signal",
       "fingerprint": "15b58812da73e9ffa3a8",
       "duplicateSources": [
