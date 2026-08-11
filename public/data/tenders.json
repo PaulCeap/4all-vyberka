@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-10T05:50:19.244Z",
+  "generatedAt": "2026-08-11T05:31:46.823Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -16,17 +16,17 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 9
+      "count": 101
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 59
+      "count": 60
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 403
+      "count": 467
     },
     {
       "id": "poptavky",
@@ -75,7 +75,7 @@
       "procedureType": "Veřejná zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-10T05:50:19.244Z",
+      "lastSeenAt": "2026-08-11T05:31:46.823Z",
       "status": "open",
       "fingerprint": "36bdb84cb4290686f55d",
       "duplicateSources": [
@@ -108,7 +108,7 @@
             "score": 16
           }
         ],
-        "deadlineDays": 6
+        "deadlineDays": 5
       }
     },
     {
@@ -131,7 +131,7 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-10T05:50:19.244Z",
+      "lastSeenAt": "2026-08-11T05:31:46.823Z",
       "status": "open",
       "fingerprint": "ba32df76c8b751d0a6bd",
       "duplicateSources": [
@@ -164,7 +164,7 @@
             "score": 12
           }
         ],
-        "deadlineDays": 6
+        "deadlineDays": 5
       }
     },
     {
@@ -189,7 +189,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-10T05:50:19.244Z",
+      "lastSeenAt": "2026-08-11T05:31:46.823Z",
       "status": "open",
       "fingerprint": "77c15abc52aa267105b9",
       "duplicateSources": [
@@ -218,7 +218,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 23
+        "deadlineDays": 22
       }
     },
     {
@@ -238,7 +238,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-10T05:50:19.244Z",
+      "lastSeenAt": "2026-08-11T05:31:46.823Z",
       "status": "signal",
       "fingerprint": "15b58812da73e9ffa3a8",
       "duplicateSources": [
