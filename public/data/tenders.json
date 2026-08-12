@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-11T05:31:46.823Z",
+  "generatedAt": "2026-08-12T05:50:00.478Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -16,7 +16,7 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 101
+      "count": 128
     },
     {
       "id": "nen",
@@ -26,7 +26,7 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 467
+      "count": 497
     },
     {
       "id": "poptavky",
@@ -75,7 +75,7 @@
       "procedureType": "Veřejná zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-11T05:31:46.823Z",
+      "lastSeenAt": "2026-08-12T05:50:00.478Z",
       "status": "open",
       "fingerprint": "36bdb84cb4290686f55d",
       "duplicateSources": [
@@ -108,7 +108,7 @@
             "score": 16
           }
         ],
-        "deadlineDays": 5
+        "deadlineDays": 4
       }
     },
     {
@@ -134,9 +134,6 @@
       "lastSeenAt": "2026-08-11T05:31:46.823Z",
       "status": "open",
       "fingerprint": "ba32df76c8b751d0a6bd",
-      "duplicateSources": [
-        "poptavej"
-      ],
       "relevance": {
         "score": 74,
         "level": "good",
@@ -164,7 +161,7 @@
             "score": 12
           }
         ],
-        "deadlineDays": 5
+        "deadlineDays": 4
       }
     },
     {
@@ -189,7 +186,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-11T05:31:46.823Z",
+      "lastSeenAt": "2026-08-12T05:50:00.478Z",
       "status": "open",
       "fingerprint": "77c15abc52aa267105b9",
       "duplicateSources": [
@@ -218,7 +215,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 22
+        "deadlineDays": 21
       }
     },
     {
@@ -238,7 +235,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-11T05:31:46.823Z",
+      "lastSeenAt": "2026-08-12T05:50:00.478Z",
       "status": "signal",
       "fingerprint": "15b58812da73e9ffa3a8",
       "duplicateSources": [
