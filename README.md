@@ -19,6 +19,7 @@ Denně aktualizovaný předvýběr veřejných zakázek, poptávek a komerčníc
 - vysvětlitelné skóre 0–100 podle nabídky 4ALL,
 - responzivní web s hledáním, filtry, řazením a lokálně uloženými favority,
 - denní GitHub Actions workflow a automatické nasazení na GitHub Pages,
+- volitelný e-mailový souhrn, který odejde pouze při nálezu nových relevantních položek,
 - testy scoringu a deduplikace.
 
 ## Rychlý start

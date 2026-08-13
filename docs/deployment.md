@@ -44,4 +44,18 @@ Po propagaci DNS se v **Settings → Pages → Custom domain** musí zobrazit `v
 - Ruční tipy: JSON v `data/manual/`.
 - Čas běhu: `cron` v `.github/workflows/daily-agent.yml` je v UTC.
 
+## 6. E-mailové upozornění na nové příležitosti
+
+Po denním sběru může workflow poslat jeden souhrnný e-mail. Odesílá se pouze tehdy, když agent v aktuálním běhu poprvé zachytí alespoň jednu relevantní položku. Používá [Resend Email API](https://resend.com/docs/api-reference/emails/send-email); repozitář neobsahuje API klíč ani adresy příjemců.
+
+1. V Resend ověřte odesílací doménu, například `4all.cz`, a vytvořte API klíč s oprávněním pouze k odesílání.
+2. V GitHubu otevřete **Settings → Secrets and variables → Actions**.
+3. Do **Repository secrets** přidejte:
+   - `RESEND_API_KEY` — API klíč služby Resend;
+   - `ALERT_EMAILS` — jednu nebo více adres oddělených čárkou.
+4. Do **Repository variables** přidejte `RESEND_FROM`, například `4ALL Výběrka <vyberka@4all.cz>`.
+5. Ručně spusťte workflow. Pokud v běhu není nová položka, správně se vypíše, že se e-mail neposílá.
+
+Bez těchto tří hodnot denní sběr a nasazení fungují dál; pouze se přeskočí e-mail. Lokální náhled obsahu lze vypsat příkazem `npm run notify:dry-run` po běhu agenta.
+
 Repozitář může být veřejný i soukromý podle tarifu a pravidel organizace. Samotný web a výsledný JSON jsou při GitHub Pages veřejně dostupné; nevkládejte do nich neveřejné obchodní poznámky ani osobní hodnocení.

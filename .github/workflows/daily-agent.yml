@@ -36,3 +36,9 @@ jobs:
           git add public/data/tenders.json
           git commit -m "data: denní aktualizace zakázek"
           git push
+      - name: Upozornit e-mailem na nové příležitosti
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          ALERT_EMAILS: ${{ secrets.ALERT_EMAILS }}
+          RESEND_FROM: ${{ vars.RESEND_FROM }}
+        run: npm run notify
