@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T20:39:28.103Z",
+  "generatedAt": "2026-08-13T21:00:51.545Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 4,
-    "newThisRun": 2,
-    "strong": 0,
-    "closingSoon": 3,
-    "unresolvedOrigin": 2
+    "total": 3,
+    "newThisRun": 0,
+    "strong": 1,
+    "closingSoon": 1,
+    "unresolvedOrigin": 0
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 142
+      "count": 141
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 77
+      "count": 76
     },
     {
       "id": "nen",
@@ -37,7 +37,7 @@
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 30
+      "count": 100
     },
     {
       "id": "media-signals",
@@ -64,65 +64,69 @@
   ],
   "tenders": [
     {
-      "id": "poptavky:2050851",
-      "source": "poptavky",
-      "sourceId": "2050851",
-      "url": "https://www.poptavky.cz/poptavka/2050851-reklamni-a-marketingove-sluzby",
+      "id": "ezak-jmk:P26V00003164",
+      "source": "ezak-jmk",
+      "sourceId": "P26V00003164",
+      "url": "https://zakazky.krajbezkorupce.cz/contract_display_46460.html",
       "title": "Reklamní a marketingové služby",
-      "buyer": "Zadavatel z Poptávky.cz",
-      "summary": "Podrobný popis: - předmětem veřejné zakázky je poskytování reklamních a marketingových služeb spočívajících zejména v návrhu a realizaci marketingové strategie, správě sociálních sítí, tvorbě a distribuci marketingového obsahu, přípravě a realizaci reklamních kampaní, podpoře komunikace s veřejností a průběžném vyhodnocování efektivity marketingových aktivit Lokalita: - Křetín Termín pro podání nabídek: - 15. 08. 2026 12:00",
+      "buyer": "Jihomoravské dětské léčebny, příspěvková organizace",
+      "summary": "Předmětem veřejné zakázky je poskytování reklamních a marketingových služeb spočívajících zejména v návrhu a realizaci marketingové strategie, správě sociálních sítí, tvorbě a distribuci marketingového obsahu, přípravě a realizaci reklamních kampaní, podpoře komunikace s veřejností a průběžném vyhodnocování efektivity marketingových aktivit. Služby budou poskytovány podle aktuálních potřeb zadavatele po dobu 48 měsíců.",
       "country": "CZ",
-      "region": "Křetín",
-      "publishedAt": "2026-08-07T06:44:00.000Z",
-      "deadline": "2026-08-15T10:00:00.000Z",
+      "region": "Jihomoravský kraj",
+      "publishedAt": "2026-07-31T10:00:00.000Z",
+      "deadline": "2026-08-21T10:00:00.000Z",
       "value": {
-        "amount": 3000000,
+        "amount": 2000000,
         "currency": "CZK"
       },
-      "cpv": [],
-      "procedureType": "Veřejná zakázka na služby",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-12T05:50:00.478Z",
-      "status": "open",
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2050851-reklamni-a-marketingove-sluzby",
-      "originStatus": "unresolved",
-      "originConfidence": 21,
-      "fingerprint": "36bdb84cb4290686f55d",
-      "duplicateSources": [
-        "poptavky"
+      "cpv": [
+        "79340000",
+        "79341000",
+        "79341400",
+        "79342000",
+        "79342200",
+        "79413000",
+        "79416000"
       ],
+      "procedureType": "Služby",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-13T20:58:44.387Z",
+      "lastSeenAt": "2026-08-13T21:00:51.545Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "fingerprint": "4f4133051f0c6edfb62a",
       "relevance": {
-        "score": 74,
-        "level": "good",
+        "score": 97,
+        "level": "strong",
         "reasons": [
-          "Tvorba obsahu: sociálních sítí, marketingového obsahu",
           "Marketing & eventy: marketingové služby, marketingové strategie",
+          "Tvorba obsahu: sociálních sítí, marketingového obsahu",
           "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby"
+          "jde o zakázku na služby",
+          "zbývá alespoň týden na reakci"
         ],
-        "negativeSignals": [
-          "velmi krátká lhůta"
-        ],
+        "negativeSignals": [],
         "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 50
+          },
           {
             "id": "marketing",
             "label": "Marketing & eventy",
             "score": 50
           },
           {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 27
-          },
-          {
             "id": "pr",
             "label": "PR & komunikace",
-            "score": 16
+            "score": 40
           }
         ],
-        "deadlineDays": 2
+        "deadlineDays": 8
       }
     },
     {
@@ -147,16 +151,13 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-13T20:39:28.103Z",
+      "lastSeenAt": "2026-08-13T21:00:51.545Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
       "originConfidence": null,
       "fingerprint": "77c15abc52aa267105b9",
-      "duplicateSources": [
-        "nen"
-      ],
       "relevance": {
         "score": 73,
         "level": "good",
@@ -184,68 +185,6 @@
       }
     },
     {
-      "id": "poptavej:VZ142853",
-      "source": "poptavej",
-      "sourceId": "VZ142853",
-      "url": "https://www.poptavej.cz/verejna-zakazka/VZ142853/reklamni-a-marketingove-sluzby",
-      "title": "Reklamní a marketingové služby",
-      "buyer": "Zadavatel z Poptávej.cz",
-      "summary": "Předmět plnění: - plánování a koordinace obchodních a komunikačních aktivit léčebny - rozvoj komunikace směrem k rodičům, pediatrům, odborné veřejnosti, školám, obcím a dalším relevantním partnerům - přípravy textů, informačních materiálů, prezentací, tiskových zpráv a podkladů pro média - aktivní vyhledávání a oslovování vhodných partnerů, institucí, médií a dalších kontaktů - podpora naplňování kapacity léčebných pobytů a propagace jednotlivých termínů - koordinace kampaní, akcí, konferencí, dnů otevřených dveří a dalších aktivit léčebny - rozvoj PR a mediálních příležitostí včetně komunikace s redakcemi a přípravy odborných témat - obsahová a projektová koordinace webových stránek a dalších online komunikačních kanálů - koordinace externích dodavatelů zapojených do marketingu, grafiky, webů, reklamy nebo dalších navazujících činností - rozvoj spolupráce s odbornými pracovišti a partnery zapojenými do následné péče o dětské pacienty - průběžné vyhodnocování realizovaných aktivit a přípravu měsíčního přehledu dalšího postupu - osobní schůzky s lékaři, partnery, dodavateli po celé ČR dle individuálních potřeb léčebny - osobní účast na pravidelných poradách v místě objednatele Hodnotící kritéria: - nabídková cena - 40 % - kvalita návrhu řešení - 30 % - zkušenosti a reference - 20 % - přidaná hodnota a inovativnost - 10 % Lokalita: - okres Blansko Termín: - po dobu 48 měsíců",
-      "country": "CZ",
-      "region": "okres Blansko",
-      "publishedAt": "2026-07-31T10:00:00.000Z",
-      "deadline": "2026-08-15T10:00:00.000Z",
-      "value": {
-        "amount": 2000000,
-        "currency": "CZK"
-      },
-      "cpv": [],
-      "procedureType": "Zakázka na služby",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-09T08:00:00.000Z",
-      "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ142853/reklamni-a-marketingove-sluzby",
-      "originStatus": "unresolved",
-      "originConfidence": 21,
-      "fingerprint": "ba32df76c8b751d0a6bd",
-      "duplicateSources": [
-        "poptavej"
-      ],
-      "relevance": {
-        "score": 66,
-        "level": "good",
-        "reasons": [
-          "Marketing & eventy: marketingové služby",
-          "PR & komunikace: propagace, tiskových zpráv",
-          "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [
-          "velmi krátká lhůta"
-        ],
-        "categories": [
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 47
-          },
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 17
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 12
-          }
-        ],
-        "deadlineDays": 2
-      }
-    },
-    {
       "id": "mediaguru:pivovary-zubr-eventova-agentura-2027",
       "source": "mediaguru",
       "sourceId": "pivovary-zubr-eventova-agentura-2027",
@@ -262,16 +201,13 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-13T20:39:28.103Z",
+      "lastSeenAt": "2026-08-13T21:00:51.545Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
       "originConfidence": null,
       "fingerprint": "15b58812da73e9ffa3a8",
-      "duplicateSources": [
-        "mediaguru"
-      ],
       "relevance": {
         "score": 64,
         "level": "good",

@@ -100,8 +100,10 @@ const normalized = rows.map((row) => {
 });
 // Radarové položky už prošly novým pokusem o dohledání originálu výše.
 // Starou kopii nepřidáváme znovu, jinak by po úspěšném spojení zůstal i placený agregátorový duplikát.
+const currentKeys = new Set(normalized.map((tender) => `${tender.source}:${tender.sourceId}`));
 const previousNormalized = previous.tenders
   .filter((tender) => !isAggregatorSource(tender.source))
+  .filter((tender) => !currentKeys.has(`${tender.source}:${tender.sourceId}`))
   .map((tender) => normalizeTender(tender, now));
 const tenders = deduplicateTenders([...previousNormalized, ...normalized])
   .map((tender) => ({ ...tender, relevance: scoreTender(tender, now) }))

@@ -67,7 +67,8 @@ Skóre je předvýběr, nikoli automatické doporučení k podání nabídky. P�
 | `NEN_DETAIL_LIMIT` | `60` | Nejvyšší počet NEN detailů načtených v jednom běhu |
 | `POPTAVKY_DETAIL_LIMIT` | `30` | Nejvyšší počet detailů z Poptávky.cz |
 | `POPTAVEJ_DETAIL_LIMIT` | `30` | Nejvyšší počet detailů z Poptávej.cz |
-| `EZAK_DETAIL_LIMIT` | `40` | Nejvyšší počet detailů z jednoho E-ZAK profilu |
+| `EZAK_DETAIL_LIMIT` | `80` | Nejvyšší počet detailů z jednoho E-ZAK profilu napříč stránkami |
+| `EZAK_PAGE_LIMIT` | `10` | Nejvyšší počet stránek aktivních zakázek z jednoho E-ZAK profilu |
 | `AGENT_NOW` | aktuální čas | Pevný čas pro testy/reprodukci |
 
 Ruční tip vložte jako jeden objekt nebo pole objektů do `data/manual/*.json`. Strukturu lze převzít z `data/fixtures/incoming.json`.
