@@ -38,6 +38,8 @@ export function normalizeTender(input, now = new Date()) {
   const sourceId = cleanText(input.sourceId || input.externalId || input.id);
   const title = cleanText(input.title);
   const buyer = cleanText(input.buyer || "Neuvedený zadavatel");
+  const aggregatorSource = source === "poptavky" || source === "poptavej";
+  const suppliedOriginStatus = cleanText(input.originStatus || "").toLowerCase();
 
   if (!sourceId || !title) {
     throw new Error("Zakázka musí obsahovat sourceId a title.");
@@ -64,6 +66,12 @@ export function normalizeTender(input, now = new Date()) {
     firstSeenAt: isoOrNull(input.firstSeenAt) || now.toISOString(),
     lastSeenAt: isoOrNull(input.lastSeenAt) || now.toISOString(),
     status: input.status || "open",
+    discoverySource: cleanText(input.discoverySource || "").toLowerCase() || null,
+    discoveryUrl: String(input.discoveryUrl || "").trim() || null,
+    originStatus: aggregatorSource && suppliedOriginStatus !== "resolved"
+      ? "unresolved"
+      : suppliedOriginStatus || "verified",
+    originConfidence: Number.isFinite(Number(input.originConfidence)) ? Number(input.originConfidence) : null,
   };
 
   tender.fingerprint = tenderFingerprint(tender);

@@ -1,4 +1,5 @@
 import { czechDate, getText, mapLimited, money, plainText } from "./html-utils.mjs";
+import { extractCandidateOriginUrls } from "../origin-resolver.mjs";
 
 const CATEGORY_URL = "https://www.poptavky.cz/poptavky/reklama-tisk";
 
@@ -30,6 +31,8 @@ export function parsePoptavkyDetail(html, url) {
     value: money(priceBlock),
     procedureType: /veřejn[éá] zakáz/i.test(description) ? "Veřejná zakázka na služby" : "Komerční poptávka",
     opportunityType: /veřejn[éá] zakáz/i.test(description) ? "public-tender" : "commercial-demand",
+    candidateOriginUrls: extractCandidateOriginUrls(html, url),
+    originStatus: "unresolved",
   };
 }
 

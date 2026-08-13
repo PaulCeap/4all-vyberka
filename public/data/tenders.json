@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T05:52:29.541Z",
+  "generatedAt": "2026-08-13T20:39:28.103Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -8,15 +8,21 @@
   },
   "stats": {
     "total": 4,
-    "newThisRun": 0,
+    "newThisRun": 2,
     "strong": 0,
-    "closingSoon": 3
+    "closingSoon": 3,
+    "unresolvedOrigin": 2
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 114
+      "count": 142
+    },
+    {
+      "id": "tenderarena",
+      "ok": true,
+      "count": 77
     },
     {
       "id": "nen",
@@ -29,14 +35,9 @@
       "count": 494
     },
     {
-      "id": "poptavky",
+      "id": "ezak-watchlist",
       "ok": true,
-      "count": 20
-    },
-    {
-      "id": "poptavej",
-      "ok": true,
-      "count": 20
+      "count": 30
     },
     {
       "id": "media-signals",
@@ -44,14 +45,21 @@
       "count": 0
     },
     {
-      "id": "ezak-watchlist",
-      "ok": true,
-      "count": 15
-    },
-    {
       "id": "manual",
       "ok": true,
       "count": 1
+    },
+    {
+      "id": "poptavky",
+      "ok": true,
+      "count": 20,
+      "resolved": 0
+    },
+    {
+      "id": "poptavej",
+      "ok": true,
+      "count": 20,
+      "resolved": 0
     }
   ],
   "tenders": [
@@ -77,7 +85,14 @@
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
       "lastSeenAt": "2026-08-12T05:50:00.478Z",
       "status": "open",
+      "discoverySource": "poptavky",
+      "discoveryUrl": "https://www.poptavky.cz/poptavka/2050851-reklamni-a-marketingove-sluzby",
+      "originStatus": "unresolved",
+      "originConfidence": 21,
       "fingerprint": "36bdb84cb4290686f55d",
+      "duplicateSources": [
+        "poptavky"
+      ],
       "relevance": {
         "score": 74,
         "level": "good",
@@ -107,7 +122,7 @@
             "score": 16
           }
         ],
-        "deadlineDays": 3
+        "deadlineDays": 2
       }
     },
     {
@@ -132,8 +147,12 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-13T05:52:29.541Z",
+      "lastSeenAt": "2026-08-13T20:39:28.103Z",
       "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
       "fingerprint": "77c15abc52aa267105b9",
       "duplicateSources": [
         "nen"
@@ -161,7 +180,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 20
+        "deadlineDays": 19
       }
     },
     {
@@ -184,9 +203,16 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-11T05:31:46.823Z",
+      "lastSeenAt": "2026-08-09T08:00:00.000Z",
       "status": "open",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ142853/reklamni-a-marketingove-sluzby",
+      "originStatus": "unresolved",
+      "originConfidence": 21,
       "fingerprint": "ba32df76c8b751d0a6bd",
+      "duplicateSources": [
+        "poptavej"
+      ],
       "relevance": {
         "score": 66,
         "level": "good",
@@ -216,7 +242,7 @@
             "score": 12
           }
         ],
-        "deadlineDays": 3
+        "deadlineDays": 2
       }
     },
     {
@@ -236,8 +262,12 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-13T05:52:29.541Z",
+      "lastSeenAt": "2026-08-13T20:39:28.103Z",
       "status": "signal",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
       "fingerprint": "15b58812da73e9ffa3a8",
       "duplicateSources": [
         "mediaguru"

@@ -128,6 +128,8 @@ h2 { margin: 0; font-size: clamp(40px, 5vw, 75px); line-height: .95; letter-spac
 .summary-toggle { margin-top: 9px; padding: 3px 0; border: 0; border-bottom: 1px solid currentColor; background: transparent; color: var(--blue); font: inherit; font-size: 12px; font-weight: 800; cursor: pointer; }
 .summary-toggle:hover { color: var(--orange); }
 .summary-toggle:focus-visible { outline: 2px solid var(--orange); outline-offset: 4px; }
+.provenance { margin: 13px 0 0; color: #356955; font-size: 12px; font-weight: 700; }
+.provenance-warning { max-width: 760px; padding: 9px 11px; border-left: 3px solid var(--orange); background: var(--orange-soft); color: #7a3a20; }
 .match-tags { display: flex; gap: 7px; flex-wrap: wrap; margin-top: 18px; }
 .match-tags span { font-size: 11px; padding: 6px 9px; background: #e6e0d6; border-radius: 2px; }
 .reason { margin: 14px 0 0; font-size: 12px; color: var(--muted); }
@@ -138,6 +140,7 @@ h2 { margin: 0; font-size: clamp(40px, 5vw, 75px); line-height: .95; letter-spac
 .side-row strong { text-align: right; }
 .deadline-soon strong { color: #c84c25; }
 .source-link { margin-top: 18px; font-weight: 800; font-size: 13px; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.source-link.unresolved { color: #8a4528; }
 .save-button { width: 38px; height: 38px; border: 1px solid var(--line); background: transparent; border-radius: 50%; cursor: pointer; font-size: 20px; }
 .save-button[aria-pressed="true"] { color: var(--orange); border-color: var(--orange); background: var(--orange-soft); }
 .loading-card { height: 210px; border-bottom: 1px solid var(--line); background: linear-gradient(100deg, transparent 20%, rgba(255,255,255,.65) 50%, transparent 80%); background-size: 200% 100%; animation: loading 1.4s infinite; }

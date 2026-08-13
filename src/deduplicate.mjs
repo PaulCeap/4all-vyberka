@@ -13,6 +13,12 @@ function mergeTender(primary, secondary) {
     publishedAt: primary.publishedAt || secondary.publishedAt,
     firstSeenAt: [primary.firstSeenAt, secondary.firstSeenAt].filter(Boolean).sort()[0],
     lastSeenAt: [primary.lastSeenAt, secondary.lastSeenAt].filter(Boolean).sort().at(-1),
+    discoverySource: primary.discoverySource || secondary.discoverySource || null,
+    discoveryUrl: primary.discoveryUrl || secondary.discoveryUrl || null,
+    originStatus: primary.originStatus === "resolved" || secondary.originStatus === "resolved"
+      ? "resolved"
+      : primary.originStatus || secondary.originStatus,
+    originConfidence: Math.max(primary.originConfidence || 0, secondary.originConfidence || 0) || null,
     duplicateSources: [...new Set([
       ...(primary.duplicateSources || [primary.source]),
       ...(secondary.duplicateSources || [secondary.source]),

@@ -3,6 +3,8 @@ import assert from "node:assert/strict";
 import { parsePoptavkyDetail } from "../src/sources/poptavky.mjs";
 import { parsePoptavejDetail } from "../src/sources/poptavej.mjs";
 import { parseMediaFeed } from "../src/sources/media-signals.mjs";
+import { parseTenderArenaList } from "../src/sources/tenderarena.mjs";
+import { extractCandidateOriginUrls, resolveAggregatorLeads } from "../src/origin-resolver.mjs";
 
 test("Poptávky.cz přečte JSON-LD, cenu a deadline", () => {
   const demand = { "@type": "Demand", identifier: "2050851", name: "Reklamní a marketingové služby", description: "Lokalita:\n- Křetín\nTermín pro podání nabídek:\n- 15. 08. 2026 12:00", mainEntityOfPage: { url: "https://example.test/1" } };
@@ -25,4 +27,37 @@ test("mediální RSS propustí aktivní tendr a vyřadí výsledek tendru", () =
   const rows = parseMediaFeed(xml, "mediaguru");
   assert.equal(rows.length, 1);
   assert.equal(rows[0].opportunityType, "market-signal");
+});
+
+test("TenderArena převede veřejný seznam na přímé detaily", () => {
+  const [row] = parseTenderArenaList({ polozky: [{
+    id: 908464, systemoveCislo: "P26V00343460", nazev: "Komunikační kampaň",
+    uredniNazevZadavatele: "Město Test", stav: "NEUKONCENA", lhutaProPodaniNabidek: 1788170400000,
+  }] });
+  assert.equal(row.source, "tenderarena");
+  assert.equal(row.sourceId, "P26V00343460");
+  assert.equal(row.url, "https://tenderarena.cz/dodavatel/zakazka/908464");
+  assert.match(row.deadline, /^2026-/);
+});
+
+test("agregátor povýší jen konkrétní oficiální detail", () => {
+  const html = `<a href="https://zakazky.gov.cz/">portál</a><a href="https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/N006-26-V00012345">zdroj</a>`;
+  assert.deepEqual(extractCandidateOriginUrls(html, "https://www.poptavky.cz/poptavka/1"), [
+    "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/N006-26-V00012345",
+  ]);
+});
+
+test("radarový tip se spojí s odpovídajícím oficiálním záznamem", () => {
+  const official = {
+    source: "tenderarena", sourceId: "P26V00343460", url: "https://tenderarena.cz/dodavatel/zakazka/1",
+    title: "Tvorba komunikační strategie a marketingové kampaně", buyer: "Město Test", deadline: "2026-08-31T10:00:00Z",
+  };
+  const lead = {
+    source: "poptavky", sourceId: "123", url: "https://www.poptavky.cz/poptavka/123",
+    title: "Tvorba komunikační strategie a marketingové kampaně", buyer: "Zadavatel z Poptávky.cz", deadline: "2026-08-31T12:00:00+02:00",
+  };
+  const { rows } = resolveAggregatorLeads([lead], [official]);
+  assert.equal(rows[0].source, "tenderarena");
+  assert.equal(rows[0].discoverySource, "poptavky");
+  assert.equal(rows[0].originStatus, "resolved");
 });

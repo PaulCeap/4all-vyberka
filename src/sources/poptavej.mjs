@@ -1,4 +1,5 @@
 import { czechDate, getText, mapLimited, money, plainText } from "./html-utils.mjs";
+import { extractCandidateOriginUrls } from "../origin-resolver.mjs";
 
 const CATEGORY_URL = "https://www.poptavej.cz/verejne-zakazky/reklama-a-tisk";
 
@@ -29,6 +30,8 @@ export function parsePoptavejDetail(html, url) {
     value: money(expectedValue),
     procedureType: field(html, "Druh veřejné zakázky") || "Veřejná zakázka",
     opportunityType: "public-tender",
+    candidateOriginUrls: extractCandidateOriginUrls(html, url),
+    originStatus: "unresolved",
   };
 }
 

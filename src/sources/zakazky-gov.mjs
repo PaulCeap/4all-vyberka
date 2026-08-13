@@ -22,5 +22,6 @@ export async function fetchZakazkyGov({ fetchImpl = fetch } = {}) {
     procedureType: row.typ_zadavaciho_postupu?.replaceAll("_", " ") || "Veřejná zakázka",
     status: row.stav?.includes("AKTIVNI") ? "open" : "unknown",
     cpv: [],
+    originStatus: "verified",
   }));
 }

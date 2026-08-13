@@ -37,6 +37,9 @@ Publikovaný soubor `public/data/tenders.json` má `schemaVersion: 1` a následu
 | `firstSeenAt`, `lastSeenAt` | ISO datetime | Lokální historie sledování |
 | `fingerprint` | string | Krátký SHA-256 pro mezizdrojovou deduplikaci |
 | `duplicateSources` | string[] / undefined | Zdroje sloučeného záznamu |
+| `discoverySource`, `discoveryUrl` | string / null | Radarový agregátor a URL, přes kterou byl tip zachycen |
+| `originStatus` | string | `verified`, `resolved` nebo `unresolved` |
+| `originConfidence` | number / null | Jistota automatického spojení s originálem 0–100 |
 | `relevance` | object | Výsledek scoringu |
 
 ## Relevance

@@ -8,10 +8,11 @@ Denně aktualizovaný předvýběr veřejných zakázek, poptávek a komerčníc
 ## Co je hotové
 
 - oficiální český zdroj **Zakázky GOV** (novinky za posledních 24 hodin),
+- přímý veřejný seznam nových zakázek **TenderArena**,
 - cílený průběžný výběr z **NEN** pro menší české zakázky,
 - evropský **TED Search API** jako doplňkový a záložní zdroj,
-- marketingové kategorie **Poptávky.cz** a **Poptávej.cz**,
-- přímý watchlist profilu **E-ZAK Správy železnic** a nepřímé pokrytí dalších profilů přes Zakázky GOV,
+- **Poptávky.cz** a **Poptávej.cz** pouze jako radar s automatickým dohledáním původního zdroje,
+- přímý watchlist **E-ZAK Jihomoravského kraje** a **Správy železnic**,
 - komerční tendry z RSS **MediaGuru**, **Médiáře** a **Marketing & Media**,
 - volitelný ruční vstup přes JSON v `data/manual/`,
 - jednotný datový model a spojování duplikátů napříč zdroji,
@@ -50,7 +51,8 @@ Scoring je záměrně čitelný a verzovaný v `src/config.mjs` a `src/scoring.m
 2. přidává body za shodu přímo v názvu, zakázku na služby a použitelnou lhůtu,
 3. odečítá body za stavebnictví, právní služby, hardware a další zjevně nerelevantní předměty,
 4. publikuje jen zakázky se skóre alespoň 42,
-5. u každé zakázky uloží důvody, kategorie a negativní signály.
+5. u radarových tipů dohledá oficiální originál nebo jasně označí, že zatím ověřený není,
+6. u každé zakázky uloží důvody, kategorie a negativní signály.
 
 Skóre je předvýběr, nikoli automatické doporučení k podání nabídky. Před rozhodnutím je nutné otevřít původní zdroj a ověřit kvalifikaci, dokumentaci, lhůty, rozpočet a kapacitu týmu.
 

@@ -4,11 +4,15 @@
 
 ```mermaid
 flowchart LR
-  Z[Zakázky GOV / 24 h] --> C[Sběr]
+  Z[Zakázky GOV / 24 h] --> C[Sběr oficiálních zdrojů]
+  TA[TenderArena / nové zakázky] --> C
   NEN[NEN / cílené otevřené zakázky] --> C
   T[TED Search API / 8 dní] --> C
+  E[E-ZAK JMK a watchlist] --> C
   M[Ruční JSON tipy] --> C
-  C --> N[Normalizace]
+  R[Poptávky.cz / Poptávej.cz radar] --> O[Dohledání originálu]
+  C --> O
+  O --> N[Normalizace]
   N --> D[Deduplikace]
   D --> S[Scoring 4ALL]
   S --> J[public/data/tenders.json]
@@ -20,10 +24,11 @@ flowchart LR
 ## Provozní rozhodnutí
 
 - **Bez databáze:** několik stovek otevřených tipů se bezpečně vejde do verzovaného JSON. Historie změn je přímo v Gitu a hosting nemá serverovou část.
-- **Bez tajných klíčů:** oba výchozí zdroje jsou veřejné. První nasazení proto funguje bez správy secrets.
+- **Bez tajných klíčů:** hlavní zdroje jsou veřejné. První nasazení proto funguje bez správy secrets.
 - **Překryv TEDu:** dotaz sahá osm dní zpět, aby krátký výpadek workflow nevytvořil mezeru. Deduplikace zabrání opakovanému publikování.
 - **Český agregátor:** Zakázky GOV uvádí zakázky z různých systémů na jednom místě a poskytuje stručný popis, zadavatele, publikaci a lhůtu.
-- **Fail-safe:** když selžou oba síťové zdroje, agent skončí chybou a nepřepíše data prázdným souborem. Při výpadku jediného zdroje použije druhý a stav zapíše do `sources`.
+- **Fail-safe:** když selžou všechny oficiální síťové zdroje, agent skončí chybou a nepřepíše data prázdným souborem. Při výpadku jednotlivého zdroje použije ostatní a stav zapíše do `sources`.
+- **Agregátory nejsou autorita:** Poptávky.cz a Poptávej.cz pouze vytvoří lead. Přímý oficiální odkaz nebo shoda s oficiálním záznamem jej povýší na ověřený původ; nejisté tipy zůstávají viditelně označené.
 
 ## Denní běh
 

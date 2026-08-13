@@ -33,9 +33,11 @@ const formatMoney = (value) => {
 
 const sourceLabel = (source) => ({
   "zakazky-gov": "Zakázky GOV", nen: "NEN", ted: "TED", manual: "Ruční tip",
+  tenderarena: "TenderArena", "ezak-jmk": "E-ZAK Jihomoravský kraj",
   poptavky: "Poptávky.cz", poptavej: "Poptávej.cz", mediaguru: "MediaGuru",
   mediar: "Médiář", mam: "MAM",
   "ezak-sz": "E-ZAK Správa železnic",
+  "official-profile": "Profil zadavatele", "official-web": "Web zadavatele",
 }[source] || source);
 const typeLabel = (type) => ({
   "public-tender": "Veřejná zakázka", "commercial-demand": "Poptávka", "market-signal": "Komerční tendr",
@@ -66,6 +68,14 @@ function cardTemplate(tender) {
   const summaryId = `summary-${tender.id}`;
   const days = tender.relevance.deadlineDays;
   const deadlineLabel = days === null ? "Neuvedeno" : days < 0 ? "Po termínu" : days === 0 ? "Dnes" : `${days} ${days === 1 ? "den" : days < 5 ? "dny" : "dní"}`;
+  const discoveredVia = tender.discoverySource ? sourceLabel(tender.discoverySource) : null;
+  const originUnresolved = tender.originStatus === "unresolved";
+  const provenance = originUnresolved
+    ? `<p class="provenance provenance-warning">Tip zachycen přes ${escapeHtml(discoveredVia || sourceLabel(tender.source))}. Původní veřejný zdroj se zatím nepodařilo spolehlivě dohledat.</p>`
+    : discoveredVia
+      ? `<p class="provenance">Zachyceno přes ${escapeHtml(discoveredVia)} · odkaz vede na ověřený původní zdroj</p>`
+      : "";
+  const linkLabel = originUnresolved ? "Otevřít zachycený tip ↗" : "Otevřít originální zdroj ↗";
   return `
     <article class="tender-card" data-id="${escapeHtml(tender.id)}">
       <div class="score" style="--score:${tender.relevance.score};--score-color:${scoreColor}" aria-label="Shoda ${tender.relevance.score} ze 100">
@@ -81,6 +91,7 @@ function cardTemplate(tender) {
         <p class="buyer">${escapeHtml(tender.buyer)}</p>
         <p class="summary${isExpanded ? " expanded" : ""}" id="${escapeHtml(summaryId)}">${escapeHtml(summary)}</p>
         ${canExpand ? `<button class="summary-toggle" type="button" data-expand="${escapeHtml(tender.id)}" aria-controls="${escapeHtml(summaryId)}" aria-expanded="${isExpanded}">${isExpanded ? "Skrýt popis ↑" : "Zobrazit více ↓"}</button>` : ""}
+        ${provenance}
         <div class="match-tags">${tender.relevance.categories.map((category) => `<span>${escapeHtml(category.label)}</span>`).join("")}</div>
         ${tender.relevance.reasons[0] ? `<p class="reason">${escapeHtml(tender.relevance.reasons[0])}</p>` : ""}
       </div>
@@ -91,7 +102,7 @@ function cardTemplate(tender) {
           <div class="side-row"><span>Hodnota</span><strong>${escapeHtml(formatMoney(tender.value))}</strong></div>
           <div class="side-row"><span>Zveřejněno</span><strong>${escapeHtml(formatDate(tender.publishedAt))}</strong></div>
         </div>
-        <a class="source-link" href="${escapeHtml(tender.url)}" target="_blank" rel="noreferrer">Otevřít u zdroje ↗</a>
+        <a class="source-link${originUnresolved ? " unresolved" : ""}" href="${escapeHtml(tender.url)}" target="_blank" rel="noreferrer">${linkLabel}</a>
       </div>
       <button class="save-button" type="button" aria-label="${isSaved ? "Odebrat z uložených" : "Uložit zakázku"}" aria-pressed="${isSaved}" data-save="${escapeHtml(tender.id)}">${isSaved ? "★" : "☆"}</button>
     </article>`;
