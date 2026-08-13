@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-12T05:50:00.478Z",
+  "generatedAt": "2026-08-13T05:52:29.541Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -9,14 +9,14 @@
   "stats": {
     "total": 4,
     "newThisRun": 0,
-    "strong": 1,
+    "strong": 0,
     "closingSoon": 3
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 128
+      "count": 114
     },
     {
       "id": "nen",
@@ -26,7 +26,7 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 497
+      "count": 494
     },
     {
       "id": "poptavky",
@@ -78,19 +78,18 @@
       "lastSeenAt": "2026-08-12T05:50:00.478Z",
       "status": "open",
       "fingerprint": "36bdb84cb4290686f55d",
-      "duplicateSources": [
-        "poptavky"
-      ],
       "relevance": {
-        "score": 82,
-        "level": "strong",
+        "score": 74,
+        "level": "good",
         "reasons": [
           "Tvorba obsahu: sociálních sítí, marketingového obsahu",
           "Marketing & eventy: marketingové služby, marketingové strategie",
           "klíčové téma je přímo v názvu",
           "jde o zakázku na služby"
         ],
-        "negativeSignals": [],
+        "negativeSignals": [
+          "velmi krátká lhůta"
+        ],
         "categories": [
           {
             "id": "marketing",
@@ -108,60 +107,7 @@
             "score": 16
           }
         ],
-        "deadlineDays": 4
-      }
-    },
-    {
-      "id": "poptavej:VZ142853",
-      "source": "poptavej",
-      "sourceId": "VZ142853",
-      "url": "https://www.poptavej.cz/verejna-zakazka/VZ142853/reklamni-a-marketingove-sluzby",
-      "title": "Reklamní a marketingové služby",
-      "buyer": "Zadavatel z Poptávej.cz",
-      "summary": "Předmět plnění: - plánování a koordinace obchodních a komunikačních aktivit léčebny - rozvoj komunikace směrem k rodičům, pediatrům, odborné veřejnosti, školám, obcím a dalším relevantním partnerům - přípravy textů, informačních materiálů, prezentací, tiskových zpráv a podkladů pro média - aktivní vyhledávání a oslovování vhodných partnerů, institucí, médií a dalších kontaktů - podpora naplňování kapacity léčebných pobytů a propagace jednotlivých termínů - koordinace kampaní, akcí, konferencí, dnů otevřených dveří a dalších aktivit léčebny - rozvoj PR a mediálních příležitostí včetně komunikace s redakcemi a přípravy odborných témat - obsahová a projektová koordinace webových stránek a dalších online komunikačních kanálů - koordinace externích dodavatelů zapojených do marketingu, grafiky, webů, reklamy nebo dalších navazujících činností - rozvoj spolupráce s odbornými pracovišti a partnery zapojenými do následné péče o dětské pacienty - průběžné vyhodnocování realizovaných aktivit a přípravu měsíčního přehledu dalšího postupu - osobní schůzky s lékaři, partnery, dodavateli po celé ČR dle individuálních potřeb léčebny - osobní účast na pravidelných poradách v místě objednatele Hodnotící kritéria: - nabídková cena - 40 % - kvalita návrhu řešení - 30 % - zkušenosti a reference - 20 % - přidaná hodnota a inovativnost - 10 % Lokalita: - okres Blansko Termín: - po dobu 48 měsíců",
-      "country": "CZ",
-      "region": "okres Blansko",
-      "publishedAt": "2026-07-31T10:00:00.000Z",
-      "deadline": "2026-08-15T10:00:00.000Z",
-      "value": {
-        "amount": 2000000,
-        "currency": "CZK"
-      },
-      "cpv": [],
-      "procedureType": "Zakázka na služby",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-11T05:31:46.823Z",
-      "status": "open",
-      "fingerprint": "ba32df76c8b751d0a6bd",
-      "relevance": {
-        "score": 74,
-        "level": "good",
-        "reasons": [
-          "Marketing & eventy: marketingové služby",
-          "PR & komunikace: propagace, tiskových zpráv",
-          "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 47
-          },
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 17
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 12
-          }
-        ],
-        "deadlineDays": 4
+        "deadlineDays": 3
       }
     },
     {
@@ -186,7 +132,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-12T05:50:00.478Z",
+      "lastSeenAt": "2026-08-13T05:52:29.541Z",
       "status": "open",
       "fingerprint": "77c15abc52aa267105b9",
       "duplicateSources": [
@@ -215,7 +161,62 @@
             "score": 24
           }
         ],
-        "deadlineDays": 21
+        "deadlineDays": 20
+      }
+    },
+    {
+      "id": "poptavej:VZ142853",
+      "source": "poptavej",
+      "sourceId": "VZ142853",
+      "url": "https://www.poptavej.cz/verejna-zakazka/VZ142853/reklamni-a-marketingove-sluzby",
+      "title": "Reklamní a marketingové služby",
+      "buyer": "Zadavatel z Poptávej.cz",
+      "summary": "Předmět plnění: - plánování a koordinace obchodních a komunikačních aktivit léčebny - rozvoj komunikace směrem k rodičům, pediatrům, odborné veřejnosti, školám, obcím a dalším relevantním partnerům - přípravy textů, informačních materiálů, prezentací, tiskových zpráv a podkladů pro média - aktivní vyhledávání a oslovování vhodných partnerů, institucí, médií a dalších kontaktů - podpora naplňování kapacity léčebných pobytů a propagace jednotlivých termínů - koordinace kampaní, akcí, konferencí, dnů otevřených dveří a dalších aktivit léčebny - rozvoj PR a mediálních příležitostí včetně komunikace s redakcemi a přípravy odborných témat - obsahová a projektová koordinace webových stránek a dalších online komunikačních kanálů - koordinace externích dodavatelů zapojených do marketingu, grafiky, webů, reklamy nebo dalších navazujících činností - rozvoj spolupráce s odbornými pracovišti a partnery zapojenými do následné péče o dětské pacienty - průběžné vyhodnocování realizovaných aktivit a přípravu měsíčního přehledu dalšího postupu - osobní schůzky s lékaři, partnery, dodavateli po celé ČR dle individuálních potřeb léčebny - osobní účast na pravidelných poradách v místě objednatele Hodnotící kritéria: - nabídková cena - 40 % - kvalita návrhu řešení - 30 % - zkušenosti a reference - 20 % - přidaná hodnota a inovativnost - 10 % Lokalita: - okres Blansko Termín: - po dobu 48 měsíců",
+      "country": "CZ",
+      "region": "okres Blansko",
+      "publishedAt": "2026-07-31T10:00:00.000Z",
+      "deadline": "2026-08-15T10:00:00.000Z",
+      "value": {
+        "amount": 2000000,
+        "currency": "CZK"
+      },
+      "cpv": [],
+      "procedureType": "Zakázka na služby",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-09T08:00:00.000Z",
+      "lastSeenAt": "2026-08-11T05:31:46.823Z",
+      "status": "open",
+      "fingerprint": "ba32df76c8b751d0a6bd",
+      "relevance": {
+        "score": 66,
+        "level": "good",
+        "reasons": [
+          "Marketing & eventy: marketingové služby",
+          "PR & komunikace: propagace, tiskových zpráv",
+          "klíčové téma je přímo v názvu",
+          "jde o zakázku na služby"
+        ],
+        "negativeSignals": [
+          "velmi krátká lhůta"
+        ],
+        "categories": [
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 47
+          },
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 17
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 12
+          }
+        ],
+        "deadlineDays": 3
       }
     },
     {
@@ -235,7 +236,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-12T05:50:00.478Z",
+      "lastSeenAt": "2026-08-13T05:52:29.541Z",
       "status": "signal",
       "fingerprint": "15b58812da73e9ffa3a8",
       "duplicateSources": [
