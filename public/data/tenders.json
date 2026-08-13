@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T21:00:51.545Z",
+  "generatedAt": "2026-08-13T21:34:03.300Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 3,
-    "newThisRun": 0,
+    "total": 4,
+    "newThisRun": 1,
     "strong": 1,
     "closingSoon": 1,
     "unresolvedOrigin": 0
@@ -91,7 +91,7 @@
       "procedureType": "Služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-13T20:58:44.387Z",
-      "lastSeenAt": "2026-08-13T21:00:51.545Z",
+      "lastSeenAt": "2026-08-13T21:34:03.300Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -151,7 +151,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-13T21:00:51.545Z",
+      "lastSeenAt": "2026-08-13T21:34:03.300Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -185,6 +185,65 @@
       }
     },
     {
+      "id": "nen:N006/26/V00021850",
+      "source": "nen",
+      "sourceId": "N006/26/V00021850",
+      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00021850",
+      "title": "Zajištění informovanosti veřejnosti prostřednictvím tištěných, elektronických a outdoorových médií",
+      "buyer": "Dům zahraniční spolupráce",
+      "summary": "Předmětem veřejné zakázky je uzavření rámcové dohody s jedním dodavatelem, přičemž předmětem rámcové dohody je zajištění informačních a propagačních kampaní programů administrovaných zadavatelem, a to jak v České republice, tak v zahraničí, včetně zajištění nákupu mediálního prostoru ve všech relevantních typech médií.",
+      "country": "CZ",
+      "region": "Česká republika",
+      "publishedAt": "2026-07-13T14:30:21.000Z",
+      "deadline": "2026-09-03T07:00:00.000Z",
+      "value": {
+        "amount": 90000000,
+        "currency": "CZK"
+      },
+      "cpv": [
+        "79341200"
+      ],
+      "procedureType": "Sluzby / Otevřené řízení",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-13T21:34:03.300Z",
+      "lastSeenAt": "2026-08-13T21:34:03.300Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "fingerprint": "f061a0c3390b19d7b49a",
+      "relevance": {
+        "score": 66,
+        "level": "good",
+        "reasons": [
+          "Tvorba obsahu: odpovídající CPV",
+          "Marketing & eventy: mediálního prostoru",
+          "jde o zakázku na služby",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 41
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 24
+          },
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 24
+          }
+        ],
+        "deadlineDays": 21
+      }
+    },
+    {
       "id": "mediaguru:pivovary-zubr-eventova-agentura-2027",
       "source": "mediaguru",
       "sourceId": "pivovary-zubr-eventova-agentura-2027",
@@ -201,7 +260,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-13T21:00:51.545Z",
+      "lastSeenAt": "2026-08-13T21:34:03.300Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,

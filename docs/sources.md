@@ -7,7 +7,7 @@
 - Hlavní zdroj projektu: státní portál [Zakázky GOV](https://zakazky.gov.cz/verejne-zakazky).
 - Výchozí endpoint poskytuje nové zakázky za posledních 24 hodin napříč zapojenými systémy.
 - Vrací NIPEZ identifikátor, název, zadavatele, popis, datum publikace, lhůtu a stav.
-- Denní workflow je záměrně navázané na 24hodinové okno. Při plánované odstávce delší než den je vhodné workflow po obnově doplnit ručními tipy.
+- Denní feed doplňují přímé dotazy do zdrojových profilů (zejména NEN a E-ZAK), které kontrolují i starší stále otevřené zakázky. Tím se pokryje první spuštění projektu i výpadek delší než 24 hodin.
 
 ### TenderArena
 
@@ -34,7 +34,7 @@
 ### NEN
 
 - Veřejný seznam Národního elektronického nástroje doplňuje hlavně zakázky malého rozsahu.
-- Adaptér používá několik úzkých dotazů podle služeb 4ALL, spojí výsledky a stáhne nejvýše 60 detailů za běh.
+- Adaptér používá několik úzkých dotazů podle služeb 4ALL a stáhne nejvýše 60 detailů za běh. Limit rozděluje napříč dotazy po jednotlivých pozicích, takže širší výraz nemůže vytlačit pozdější specializované dotazy.
 - Z detailu čte popis, CPV, předpokládanou hodnotu, datum publikace a lhůtu. Vše následně projde stejným scoringem; samotná shoda vyhledávacího dotazu nestačí k publikaci.
 
 ## Poptávky.cz a Poptávej.cz: pouze radar

@@ -6,6 +6,7 @@ import { parseMediaFeed } from "../src/sources/media-signals.mjs";
 import { parseTenderArenaList } from "../src/sources/tenderarena.mjs";
 import { parseEzakDetail, parseEzakList } from "../src/sources/ezak-watchlist.mjs";
 import { extractCandidateOriginUrls, resolveAggregatorLeads } from "../src/origin-resolver.mjs";
+import { selectNenSummaries } from "../src/sources/nen.mjs";
 
 test("Poptávky.cz přečte JSON-LD, cenu a deadline", () => {
   const demand = { "@type": "Demand", identifier: "2050851", name: "Reklamní a marketingové služby", description: "Lokalita:\n- Křetín\nTermín pro podání nabídek:\n- 15. 08. 2026 12:00", mainEntityOfPage: { url: "https://example.test/1" } };
@@ -54,6 +55,15 @@ test("E-ZAK načte zadavatele, hodnotu, termín a CPV", () => {
   assert.equal(row.value.amount, 2_000_000);
   assert.match(row.deadline, /^2026-08-21/);
   assert.deepEqual(row.cpv, ["79340000"]);
+});
+
+test("NEN rozdělí limit mezi všechny cílené dotazy", () => {
+  const rows = selectNenSummaries([
+    [{ kod: "A1" }, { kod: "A2" }, { kod: "A3" }],
+    [{ kod: "B1" }, { kod: "A1" }, { kod: "B2" }],
+    [{ kod: "C1" }],
+  ], 5);
+  assert.deepEqual(rows.map((row) => row.kod), ["A1", "B1", "C1", "A2", "B2"]);
 });
 
 test("agregátor povýší jen konkrétní oficiální detail", () => {

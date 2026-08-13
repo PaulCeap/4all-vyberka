@@ -9,7 +9,7 @@ Denně aktualizovaný předvýběr veřejných zakázek, poptávek a komerčníc
 
 - oficiální český zdroj **Zakázky GOV** (novinky za posledních 24 hodin),
 - přímý veřejný seznam nových zakázek **TenderArena**,
-- cílený průběžný výběr z **NEN** pro menší české zakázky,
+- cílený průběžný výběr stále otevřených zakázek z **NEN**, včetně starších položek mimo denní feed,
 - evropský **TED Search API** jako doplňkový a záložní zdroj,
 - **Poptávky.cz** a **Poptávej.cz** pouze jako radar s automatickým dohledáním původního zdroje,
 - přímý watchlist **E-ZAK Jihomoravského kraje** a **Správy železnic**,
