@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T21:34:03.300Z",
+  "generatedAt": "2026-08-14T05:50:26.078Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -8,7 +8,7 @@
   },
   "stats": {
     "total": 4,
-    "newThisRun": 1,
+    "newThisRun": 0,
     "strong": 1,
     "closingSoon": 1,
     "unresolvedOrigin": 0
@@ -17,12 +17,12 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 141
+      "count": 145
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 76
+      "count": 78
     },
     {
       "id": "nen",
@@ -32,7 +32,7 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 494
+      "count": 490
     },
     {
       "id": "ezak-watchlist",
@@ -91,7 +91,7 @@
       "procedureType": "Služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-13T20:58:44.387Z",
-      "lastSeenAt": "2026-08-13T21:34:03.300Z",
+      "lastSeenAt": "2026-08-14T05:50:26.078Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -139,8 +139,8 @@
       "summary": "Část 1 Veřejné zakázky zahrnuje nákup mediálního prostoru v televizích (TV) s celoplošným (celorepublikovým) dosahem a související služby. Předmětem plnění je zejm. následující: - příprava plánu pro každou kampaň dle požadavků Zadavatele na nákup mediálního prostoru; - rezervace a potvrzení o rezervaci mediálního prostoru dle schváleného zadání Zadavatelem; - zajištění umístění mediálního obsahu dle potvrzené rezervace mediálního prostoru v příslušném televizním vysílání; - zpracování a předání zprávy o uskutečnění objednávky a využití mediálního prostoru v příslušném televizním vysílání; - předání reklamních formátů Zadavatele k vysílání; - zpracování komplexního zhodnocení kampaní Zadavatele pro potřeby vyhodnocení efektivity jednotlivých fází kampaní; - zpracování a dodání dokladů o realizaci plnění pro každou kampaň; - zajištění datové podpory pro analýzu vzájemné synergie mediálních výkonů kampaní. Část 2 Veřejné zakázky zahrnuje nákup mediálního prostoru v rádiích vysílajících v Moravskoslezském, Olomouckém, Zlínském, Jihomoravském a Ústeckém kraji dle vzorového media plánu, který tvoří dokument Příloha č. 19 ZD, a související služby. Předmětem plnění je zejm. následující: - rezervace a potvrzení o rezervaci mediálního prostoru dle schváleného zadání Zadavatelem; - zajištění umístění mediálního obsahu dle potvrzené rezervace mediálního prostoru v příslušném rozhlasovém vysílání; - zpracování a předání zprávy o uskutečnění objednávky a využití mediálního prostoru v příslušném rozhlasovém vysílání; - předání reklamních formátů Zadavatele k vysílání; - zpracování komplexního zhodnocení kampaní Zadavatele pro potřeby vyhodnocení efektivity jednotlivých fází kampaní; - zpracování a dodání dokladů o realizaci plnění pro každou kampaň; - zajištění datové podpory pro analýzu vzájemné synergie mediálních výkonů kampaní.",
       "country": "CZ",
       "region": "Moravskoslezský kraj",
-      "publishedAt": "2026-07-30T15:41:39.000Z",
-      "deadline": "2026-09-01T07:30:00.000Z",
+      "publishedAt": "2026-07-30T17:41:39.000Z",
+      "deadline": "2026-09-01T09:30:00.000Z",
       "value": {
         "amount": 21500000,
         "currency": "CZK"
@@ -151,7 +151,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-13T21:34:03.300Z",
+      "lastSeenAt": "2026-08-14T05:50:26.078Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -194,8 +194,8 @@
       "summary": "Předmětem veřejné zakázky je uzavření rámcové dohody s jedním dodavatelem, přičemž předmětem rámcové dohody je zajištění informačních a propagačních kampaní programů administrovaných zadavatelem, a to jak v České republice, tak v zahraničí, včetně zajištění nákupu mediálního prostoru ve všech relevantních typech médií.",
       "country": "CZ",
       "region": "Česká republika",
-      "publishedAt": "2026-07-13T14:30:21.000Z",
-      "deadline": "2026-09-03T07:00:00.000Z",
+      "publishedAt": "2026-07-13T16:30:21.000Z",
+      "deadline": "2026-09-03T09:00:00.000Z",
       "value": {
         "amount": 90000000,
         "currency": "CZK"
@@ -206,7 +206,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-13T21:34:03.300Z",
-      "lastSeenAt": "2026-08-13T21:34:03.300Z",
+      "lastSeenAt": "2026-08-14T05:50:26.078Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -260,7 +260,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-13T21:34:03.300Z",
+      "lastSeenAt": "2026-08-14T05:50:26.078Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
