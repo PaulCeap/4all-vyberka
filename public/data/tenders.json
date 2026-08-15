@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-14T05:50:26.078Z",
+  "generatedAt": "2026-08-15T04:51:48.428Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -10,19 +10,19 @@
     "total": 4,
     "newThisRun": 0,
     "strong": 1,
-    "closingSoon": 1,
+    "closingSoon": 2,
     "unresolvedOrigin": 0
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 145
+      "count": 118
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 78
+      "count": 65
     },
     {
       "id": "nen",
@@ -32,12 +32,12 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 490
+      "count": 410
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 100
+      "count": 108
     },
     {
       "id": "media-signals",
@@ -91,7 +91,7 @@
       "procedureType": "Služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-13T20:58:44.387Z",
-      "lastSeenAt": "2026-08-14T05:50:26.078Z",
+      "lastSeenAt": "2026-08-15T04:51:48.428Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -126,7 +126,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": 8
+        "deadlineDays": 7
       }
     },
     {
@@ -151,7 +151,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-14T05:50:26.078Z",
+      "lastSeenAt": "2026-08-15T04:51:48.428Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -181,7 +181,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 19
+        "deadlineDays": 18
       }
     },
     {
@@ -206,7 +206,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-13T21:34:03.300Z",
-      "lastSeenAt": "2026-08-14T05:50:26.078Z",
+      "lastSeenAt": "2026-08-15T04:51:48.428Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -240,7 +240,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 21
+        "deadlineDays": 20
       }
     },
     {
@@ -260,7 +260,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-14T05:50:26.078Z",
+      "lastSeenAt": "2026-08-15T04:51:48.428Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
