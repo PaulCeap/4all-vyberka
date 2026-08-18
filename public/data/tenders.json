@@ -1,39 +1,38 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-17T05:02:42.151Z",
+  "generatedAt": "2026-08-18T04:56:15.419Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 4,
-    "newThisRun": 0,
+    "total": 5,
+    "newThisRun": 1,
     "strong": 1,
-    "closingSoon": 2,
+    "closingSoon": 3,
     "unresolvedOrigin": 0
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 3
+      "count": 139
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 1
+      "count": 78
     },
     {
       "id": "nen",
-      "ok": false,
-      "count": 0,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 60
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 427
+      "count": 478
     },
     {
       "id": "ezak-watchlist",
@@ -43,7 +42,7 @@
     {
       "id": "media-signals",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "id": "manual",
@@ -54,7 +53,7 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 0
+      "resolved": 1
     },
     {
       "id": "poptavej",
@@ -92,7 +91,7 @@
       "procedureType": "Služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-13T20:58:44.387Z",
-      "lastSeenAt": "2026-08-17T05:02:42.151Z",
+      "lastSeenAt": "2026-08-18T04:56:15.419Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -126,7 +125,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": 5
+        "deadlineDays": 4
       }
     },
     {
@@ -151,12 +150,12 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-16T04:54:27.539Z",
+      "lastSeenAt": "2026-08-18T04:56:15.419Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": 0,
+      "originConfidence": null,
       "fingerprint": "77c15abc52aa267105b9",
       "relevance": {
         "score": 73,
@@ -181,7 +180,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 16
+        "deadlineDays": 15
       }
     },
     {
@@ -206,12 +205,12 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-13T21:34:03.300Z",
-      "lastSeenAt": "2026-08-16T04:54:27.539Z",
+      "lastSeenAt": "2026-08-18T04:56:15.419Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": 0,
+      "originConfidence": null,
       "fingerprint": "f061a0c3390b19d7b49a",
       "relevance": {
         "score": 66,
@@ -240,7 +239,66 @@
             "score": 24
           }
         ],
-        "deadlineDays": 18
+        "deadlineDays": 17
+      }
+    },
+    {
+      "id": "ted:570768-2026",
+      "source": "ted",
+      "sourceId": "570768-2026",
+      "url": "https://ted.europa.eu/cs/notice/-/detail/570768-2026",
+      "title": "Dynamický nákupní systém – Zajištění regionálních komunikačních akcí a eventů MŽP",
+      "buyer": "Česká republika – Ministerstvo životního prostředí",
+      "summary": "Předmětem plnění veřejných zakázek zadávaných v tomto DNS je poskytnutí služeb spočívající v přípravě, propagaci, zajištění a vyhodnocení eventů/akcí za účelem propagace mj. Operačního programu Spravedlivá transformace především v Karlovarském, Ústeckém a Moravskoslezském kraji. V rámci těchto eventů/akcí vybraný dodavatel zajistí přípravu, propagaci a vykonání modelových akcí a jejich vyhodnocení v návaznosti na centrální aktivity kampaně. Přípravou se rozumí zajištění odpovídajících povolení, vyhledání a nájem vhodných prostor, technické zázemí (ozvučení, osvětlení, připojení na internet, vybavení pro live-streaming atd.), vnitřní nebo venkovní mobiliář (párty stany, stoly, židle a další dle akce), catering/občerstvení (jídlo, nápoje dle specifikace akce) a jiné související služby nutné pro vykonání akce (např. personální zajištění: hostesky, technik, personál cateringu, ostraha, administrativa spojená s registracemi). Požadavky na rozsah předmětu plnění a místo realizace veřejné zakázky budou vždy specifikovány v rámci konkrétní výzvy dle čtyř základních modelových akcí: 1.Velká krajská akce - významná akce outdoor/indoor pro více jak 150 účastníků s plným zajištěním celé akce v místě. 2.Akce spojená s existujícím návštěvnicky atraktivním eventem, formou prezentace stánkem a vlastní aktivitou v rámci jiného eventu. 3.Hybridní akce - zajištění konference online. Fyzická konference s plným zajištěním přenášená live na digitálních kanálech OPST, MŽP a SFŽP. 4.Online záznam videokonference. Organizace eventu pro online video konferenci s plným technickým zabezpečením.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": null,
+      "deadline": null,
+      "value": {
+        "amount": 9000000,
+        "currency": "CZK"
+      },
+      "cpv": [
+        "79950000",
+        "79800000"
+      ],
+      "procedureType": "services, services",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-18T04:56:15.419Z",
+      "lastSeenAt": "2026-08-18T04:56:15.419Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "fingerprint": "ce22389aa66c244d6b84",
+      "relevance": {
+        "score": 64,
+        "level": "good",
+        "reasons": [
+          "Tvorba obsahu: video",
+          "Marketing & eventy: event, konference",
+          "klíčové téma je přímo v názvu"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 46
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 9
+          },
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 9
+          }
+        ],
+        "deadlineDays": null
       }
     },
     {
@@ -260,7 +318,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-17T05:02:42.151Z",
+      "lastSeenAt": "2026-08-18T04:56:15.419Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
