@@ -1,43 +1,43 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-19T04:56:25.158Z",
+  "generatedAt": "2026-08-20T04:58:29.167Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 7,
-    "newThisRun": 2,
-    "strong": 3,
+    "total": 10,
+    "newThisRun": 4,
+    "strong": 5,
     "closingSoon": 4,
-    "unresolvedOrigin": 0
+    "unresolvedOrigin": 1
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 135
+      "count": 152
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 93
+      "count": 68
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 60
+      "count": 59
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 512
+      "count": 511
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 106
+      "count": 107
     },
     {
       "id": "media-signals",
@@ -59,10 +59,63 @@
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 1
+      "resolved": 4
     }
   ],
   "tenders": [
+    {
+      "id": "poptavej:VZ552951",
+      "source": "poptavej",
+      "sourceId": "VZ552951",
+      "url": "https://www.poptavej.cz/verejna-zakazka/VZ552951/poskytovani-sluzeb-v-oblasti-public-relations",
+      "title": "Poskytování služeb v oblasti Public Relations",
+      "buyer": "Zadavatel z Poptávej.cz",
+      "summary": "Předmět plnění: - poskytování služeb v oblasti Public Relations - cílem je zajistit soustavnou, odbornou, věcnou a důvěryhodnou komunikaci zadavatele vůči veřejnosti, médiím, zaměstnancům, zřizovateli a dalším stakeholderům - výkon role tiskového mluvčího a operativní mediální servis, včetně osobního vystupování na kameru zpravodajských médií po předchozím schválení zadavatelem - strategické public relations, medializace činnosti TSML, návrh témat a dlouhodobé budování reputace - tvorba, editace a distribuce tiskových zpráv, stanovisek, odpovědí médiím, článků, podkladů pro radniční a obdobná média a dalších textových výstupů - komunikace k cílovým skupinám a stakeholderům, včetně koordinace komunikace se zřizovatelem - správa sociálních sítí zadavatele, tvorba redakčního plánu, příspěvků a základního foto, video a grafického obsahu - příprava a aktualizace PR obsahu webu zadavatele - monitoring médií a sociálních sítí, vyhodnocování dopadu komunikace, včasná identifikace reputačních rizik a reporting - krizová komunikace, pohotovost pro mimořádné situace a příprava podkladů pro vedení zadavatele - organizace tiskových konferencí, briefingů a dalších mediálních akcí podle pokynů zadavatele - podpora interní komunikace a metodická příprava zaměstnanců a vedoucích pracovníků pro kontakt s médii Hodnotící kritéria: - kvalita lokální komunikační strategie pro TSM a město - 25% - praktická znalost mediálního a komunikačního prostředí - 20% - nabídková cena - měsíční paušál bez DPH - 20% - rozsah služeb, měřitelné výstupy, reporting a lokální dopad - 15% - osobní prezentace a modelová lokální mediální situace - 10% Lokalita: - Liberecký kraj Termín: - po nabytí účinnosti smlouvy po dobu 12 měsíců",
+      "country": "CZ",
+      "region": "Liberecký kraj",
+      "publishedAt": "2026-08-18T10:00:00.000Z",
+      "deadline": "2026-08-31T10:00:00.000Z",
+      "value": {
+        "amount": 1440000,
+        "currency": "CZK"
+      },
+      "cpv": [],
+      "procedureType": "Zakázka na služby",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-20T04:58:29.167Z",
+      "lastSeenAt": "2026-08-20T04:58:29.167Z",
+      "status": "open",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ552951/poskytovani-sluzeb-v-oblasti-public-relations",
+      "originStatus": "unresolved",
+      "originConfidence": 25,
+      "fingerprint": "f8b2410f3481ccec139e",
+      "relevance": {
+        "score": 89,
+        "level": "strong",
+        "reasons": [
+          "Tvorba obsahu: video, redakční",
+          "PR & komunikace: public relations, krizová komunikace",
+          "klíčové téma je přímo v názvu",
+          "jde o zakázku na služby",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 50
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 46
+          }
+        ],
+        "deadlineDays": 12
+      }
+    },
     {
       "id": "ezak-jmk:P26V00003164",
       "source": "ezak-jmk",
@@ -91,7 +144,7 @@
       "procedureType": "Služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-13T20:58:44.387Z",
-      "lastSeenAt": "2026-08-19T04:56:25.158Z",
+      "lastSeenAt": "2026-08-20T04:58:29.167Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -127,7 +180,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": 3
+        "deadlineDays": 2
       }
     },
     {
@@ -152,12 +205,8 @@
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": null,
+      "originConfidence": 0,
       "fingerprint": "aa37c0e50cd530ee1271",
-      "duplicateSources": [
-        "zakazky-gov",
-        "tenderarena"
-      ],
       "relevance": {
         "score": 84,
         "level": "strong",
@@ -180,7 +229,70 @@
             "score": 46
           }
         ],
-        "deadlineDays": 13
+        "deadlineDays": 12
+      }
+    },
+    {
+      "id": "zakazky-gov:RVZ2600118024",
+      "source": "zakazky-gov",
+      "sourceId": "RVZ2600118024",
+      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600118024",
+      "title": "Mediální prostor pro kontinuální kampaň Podívejte se Kde fondy EU pomáhají",
+      "buyer": "Ministerstvo pro místní rozvoj",
+      "summary": "Předmětem veřejné zakázky je plán, realizace a nákup mediálního prostoru pro kampaň „Podívejte se Kde fondy EU pomáhají“ dle technické specifikace zadavatele (bod 2.2. zadávací dokumentace a v souladu s Přílohou č. 1 zadávací dokumentace – Cenový list) a to v termínu, který začne nejdéle do 10 týdnů od zveřejnění smlouvy v registru smluv.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": "2026-08-19T07:51:56.480Z",
+      "deadline": "2026-09-21T08:00:00.000Z",
+      "value": {
+        "amount": 10000000,
+        "currency": "CZK"
+      },
+      "cpv": [
+        "79341400"
+      ],
+      "procedureType": "VEREJNA ZAKAZKA",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-20T04:58:29.167Z",
+      "lastSeenAt": "2026-08-20T04:58:29.167Z",
+      "status": "open",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
+      "originStatus": "resolved",
+      "originConfidence": 73,
+      "fingerprint": "e763ae482fb0e9f974b1",
+      "duplicateSources": [
+        "zakazky-gov",
+        "nen"
+      ],
+      "relevance": {
+        "score": 82,
+        "level": "strong",
+        "reasons": [
+          "Tvorba obsahu: odpovídající CPV",
+          "Marketing & eventy: mediální prostor, mediálního prostoru",
+          "klíčové téma je přímo v názvu",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 50
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 24
+          },
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 24
+          }
+        ],
+        "deadlineDays": 33
       }
     },
     {
@@ -206,7 +318,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-19T04:56:25.158Z",
-      "lastSeenAt": "2026-08-19T04:56:25.158Z",
+      "lastSeenAt": "2026-08-20T04:58:29.167Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -264,7 +376,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-19T04:56:25.158Z",
+      "lastSeenAt": "2026-08-20T04:58:29.167Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -294,7 +406,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 14
+        "deadlineDays": 13
       }
     },
     {
@@ -319,7 +431,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-13T21:34:03.300Z",
-      "lastSeenAt": "2026-08-19T04:56:25.158Z",
+      "lastSeenAt": "2026-08-20T04:58:29.167Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -353,7 +465,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 16
+        "deadlineDays": 15
       }
     },
     {
@@ -379,7 +491,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-18T04:56:15.419Z",
-      "lastSeenAt": "2026-08-19T04:56:25.158Z",
+      "lastSeenAt": "2026-08-20T04:58:29.167Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -432,7 +544,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-19T04:56:25.158Z",
+      "lastSeenAt": "2026-08-20T04:58:29.167Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -456,6 +568,60 @@
           }
         ],
         "deadlineDays": null
+      }
+    },
+    {
+      "id": "ezak-jmk:P26V00003435",
+      "source": "ezak-jmk",
+      "sourceId": "P26V00003435",
+      "url": "https://zakazky.krajbezkorupce.cz/contract_display_46731.html",
+      "title": "Zajištění realizace a medializace projektu České ručičky 2027–2028",
+      "buyer": "Střední škola stavebních řemesel Brno-Bosonohy, příspěvková organizace",
+      "summary": "Zajištění realizace a medializace projektu České ručičky 2027–2028",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": "2026-08-19T10:00:00.000Z",
+      "deadline": "2026-08-28T05:00:00.000Z",
+      "value": {
+        "amount": 960000,
+        "currency": "CZK"
+      },
+      "cpv": [
+        "79340000"
+      ],
+      "procedureType": "Služby",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-20T04:58:29.167Z",
+      "lastSeenAt": "2026-08-20T04:58:29.167Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "fingerprint": "a14067b740cd57235a0b",
+      "relevance": {
+        "score": 44,
+        "level": "watch",
+        "reasons": [
+          "Marketing & eventy: odpovídající CPV",
+          "Tvorba obsahu: odpovídající CPV",
+          "jde o zakázku na služby",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 24
+          },
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 24
+          }
+        ],
+        "deadlineDays": 9
       }
     }
   ]
