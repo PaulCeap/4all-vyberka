@@ -1,43 +1,43 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-20T04:58:29.167Z",
+  "generatedAt": "2026-08-21T04:58:21.740Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 10,
-    "newThisRun": 4,
+    "total": 11,
+    "newThisRun": 2,
     "strong": 5,
     "closingSoon": 4,
-    "unresolvedOrigin": 1
+    "unresolvedOrigin": 2
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 152
+      "count": 132
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 68
+      "count": 67
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 59
+      "count": 60
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 511
+      "count": 496
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 107
+      "count": 104
     },
     {
       "id": "media-signals",
@@ -59,7 +59,7 @@
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 4
+      "resolved": 3
     }
   ],
   "tenders": [
@@ -83,13 +83,16 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-20T04:58:29.167Z",
+      "lastSeenAt": "2026-08-21T04:58:21.740Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ552951/poskytovani-sluzeb-v-oblasti-public-relations",
       "originStatus": "unresolved",
-      "originConfidence": 25,
+      "originConfidence": 18,
       "fingerprint": "f8b2410f3481ccec139e",
+      "duplicateSources": [
+        "poptavej"
+      ],
       "relevance": {
         "score": 89,
         "level": "strong",
@@ -113,7 +116,7 @@
             "score": 46
           }
         ],
-        "deadlineDays": 12
+        "deadlineDays": 11
       }
     },
     {
@@ -144,7 +147,7 @@
       "procedureType": "Služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-13T20:58:44.387Z",
-      "lastSeenAt": "2026-08-20T04:58:29.167Z",
+      "lastSeenAt": "2026-08-21T04:58:21.740Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -180,7 +183,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": 2
+        "deadlineDays": 1
       }
     },
     {
@@ -229,7 +232,7 @@
             "score": 46
           }
         ],
-        "deadlineDays": 12
+        "deadlineDays": 11
       }
     },
     {
@@ -254,12 +257,12 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-20T04:58:29.167Z",
+      "lastSeenAt": "2026-08-21T04:58:21.740Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
       "originStatus": "resolved",
-      "originConfidence": 73,
+      "originConfidence": 92,
       "fingerprint": "e763ae482fb0e9f974b1",
       "duplicateSources": [
         "zakazky-gov",
@@ -292,7 +295,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 33
+        "deadlineDays": 32
       }
     },
     {
@@ -318,7 +321,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-19T04:56:25.158Z",
-      "lastSeenAt": "2026-08-20T04:58:29.167Z",
+      "lastSeenAt": "2026-08-21T04:58:21.740Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -376,7 +379,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-20T04:58:29.167Z",
+      "lastSeenAt": "2026-08-21T04:58:21.740Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -406,7 +409,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 13
+        "deadlineDays": 12
       }
     },
     {
@@ -431,7 +434,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-13T21:34:03.300Z",
-      "lastSeenAt": "2026-08-20T04:58:29.167Z",
+      "lastSeenAt": "2026-08-21T04:58:21.740Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -465,7 +468,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 15
+        "deadlineDays": 14
       }
     },
     {
@@ -491,7 +494,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-18T04:56:15.419Z",
-      "lastSeenAt": "2026-08-20T04:58:29.167Z",
+      "lastSeenAt": "2026-08-21T04:58:21.740Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -544,7 +547,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-20T04:58:29.167Z",
+      "lastSeenAt": "2026-08-21T04:58:21.740Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -571,6 +574,59 @@
       }
     },
     {
+      "id": "poptavky:2065899",
+      "source": "poptavky",
+      "sourceId": "2065899",
+      "url": "https://www.poptavky.cz/poptavka/2065899-poskytovani-sluzeb-v-oblasti-public-relations",
+      "title": "Poskytování služeb v oblasti Public Relations",
+      "buyer": "Zadavatel z Poptávky.cz",
+      "summary": "Podrobný popis: - předmětem veřejné zakázky je výkon role tiskového mluvčího a operativní mediální servis, včetně osobního vystupování na kameru zpravodajských médií po předchozím schválení zadavatelem - strategické public relations, medializace činnosti TSML, návrh témat a dlouhodobé budování reputace - tvorba, editace a distribuce tiskových zpráv, stanovisek, odpovědí médiím, článků, podkladů pro radniční a obdobná média a dalších textových výstupů apod. - veškeré podrobnosti naleznete v příloze Lokalita: - Liberec Termín pro podání nabídek: - 31. 08. 2026 09:00",
+      "country": "CZ",
+      "region": "Liberec",
+      "publishedAt": "2026-08-20T05:00:00.000Z",
+      "deadline": "2026-08-31T07:00:00.000Z",
+      "value": {
+        "amount": 600000,
+        "currency": "CZK"
+      },
+      "cpv": [],
+      "procedureType": "Veřejná zakázka na služby",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-21T04:58:21.740Z",
+      "lastSeenAt": "2026-08-21T04:58:21.740Z",
+      "status": "open",
+      "discoverySource": "poptavky",
+      "discoveryUrl": "https://www.poptavky.cz/poptavka/2065899-poskytovani-sluzeb-v-oblasti-public-relations",
+      "originStatus": "unresolved",
+      "originConfidence": 18,
+      "fingerprint": "37a8c94ff9d12dd97775",
+      "relevance": {
+        "score": 58,
+        "level": "good",
+        "reasons": [
+          "Tvorba obsahu: tiskových zpráv",
+          "PR & komunikace: public relations, tiskových zpráv",
+          "klíčové téma je přímo v názvu",
+          "jde o zakázku na služby",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 32
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 12
+          }
+        ],
+        "deadlineDays": 11
+      }
+    },
+    {
       "id": "ezak-jmk:P26V00003435",
       "source": "ezak-jmk",
       "sourceId": "P26V00003435",
@@ -592,7 +648,7 @@
       "procedureType": "Služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-20T04:58:29.167Z",
+      "lastSeenAt": "2026-08-21T04:58:21.740Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -621,7 +677,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       }
     }
   ]
