@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-21T04:58:21.740Z",
+  "generatedAt": "2026-08-22T04:54:36.045Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -8,21 +8,21 @@
   },
   "stats": {
     "total": 11,
-    "newThisRun": 2,
+    "newThisRun": 1,
     "strong": 5,
-    "closingSoon": 4,
+    "closingSoon": 5,
     "unresolvedOrigin": 2
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 132
+      "count": 85
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 67
+      "count": 56
     },
     {
       "id": "nen",
@@ -32,12 +32,12 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 496
+      "count": 432
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 104
+      "count": 106
     },
     {
       "id": "media-signals",
@@ -83,12 +83,12 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-21T04:58:21.740Z",
+      "lastSeenAt": "2026-08-22T04:54:36.045Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ552951/poskytovani-sluzeb-v-oblasti-public-relations",
       "originStatus": "unresolved",
-      "originConfidence": 18,
+      "originConfidence": 30,
       "fingerprint": "f8b2410f3481ccec139e",
       "duplicateSources": [
         "poptavej"
@@ -116,7 +116,7 @@
             "score": 46
           }
         ],
-        "deadlineDays": 11
+        "deadlineDays": 10
       }
     },
     {
@@ -152,7 +152,7 @@
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": null,
+      "originConfidence": 0,
       "fingerprint": "4f4133051f0c6edfb62a",
       "relevance": {
         "score": 85,
@@ -183,7 +183,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": 1
+        "deadlineDays": 0
       }
     },
     {
@@ -232,7 +232,7 @@
             "score": 46
           }
         ],
-        "deadlineDays": 11
+        "deadlineDays": 10
       }
     },
     {
@@ -257,7 +257,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-21T04:58:21.740Z",
+      "lastSeenAt": "2026-08-22T04:54:36.045Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
@@ -295,7 +295,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 32
+        "deadlineDays": 31
       }
     },
     {
@@ -321,7 +321,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-19T04:56:25.158Z",
-      "lastSeenAt": "2026-08-21T04:58:21.740Z",
+      "lastSeenAt": "2026-08-22T04:54:36.045Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -379,7 +379,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-21T04:58:21.740Z",
+      "lastSeenAt": "2026-08-22T04:54:36.045Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -409,7 +409,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 12
+        "deadlineDays": 11
       }
     },
     {
@@ -439,7 +439,7 @@
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": null,
+      "originConfidence": 0,
       "fingerprint": "f061a0c3390b19d7b49a",
       "relevance": {
         "score": 66,
@@ -468,7 +468,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 14
+        "deadlineDays": 13
       }
     },
     {
@@ -494,7 +494,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-18T04:56:15.419Z",
-      "lastSeenAt": "2026-08-21T04:58:21.740Z",
+      "lastSeenAt": "2026-08-22T04:54:36.045Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -547,7 +547,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-21T04:58:21.740Z",
+      "lastSeenAt": "2026-08-22T04:54:36.045Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -593,13 +593,16 @@
       "procedureType": "Veřejná zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-21T04:58:21.740Z",
-      "lastSeenAt": "2026-08-21T04:58:21.740Z",
+      "lastSeenAt": "2026-08-22T04:54:36.045Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2065899-poskytovani-sluzeb-v-oblasti-public-relations",
       "originStatus": "unresolved",
-      "originConfidence": 18,
+      "originConfidence": 30,
       "fingerprint": "37a8c94ff9d12dd97775",
+      "duplicateSources": [
+        "poptavky"
+      ],
       "relevance": {
         "score": 58,
         "level": "good",
@@ -623,7 +626,7 @@
             "score": 12
           }
         ],
-        "deadlineDays": 11
+        "deadlineDays": 10
       }
     },
     {
@@ -648,7 +651,7 @@
       "procedureType": "Služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-21T04:58:21.740Z",
+      "lastSeenAt": "2026-08-22T04:54:36.045Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -677,7 +680,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 8
+        "deadlineDays": 7
       }
     }
   ]
