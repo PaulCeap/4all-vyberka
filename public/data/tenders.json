@@ -1,38 +1,38 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-22T04:54:36.045Z",
+  "generatedAt": "2026-08-23T04:56:38.488Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 11,
+    "total": 10,
     "newThisRun": 1,
-    "strong": 5,
-    "closingSoon": 5,
+    "strong": 4,
+    "closingSoon": 3,
     "unresolvedOrigin": 2
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 85
+      "count": 2
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 56
+      "count": 1
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 60
+      "count": 58
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 432
+      "count": 365
     },
     {
       "id": "ezak-watchlist",
@@ -83,12 +83,12 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-22T04:54:36.045Z",
+      "lastSeenAt": "2026-08-23T04:56:38.488Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ552951/poskytovani-sluzeb-v-oblasti-public-relations",
       "originStatus": "unresolved",
-      "originConfidence": 30,
+      "originConfidence": 18,
       "fingerprint": "f8b2410f3481ccec139e",
       "duplicateSources": [
         "poptavej"
@@ -116,74 +116,7 @@
             "score": 46
           }
         ],
-        "deadlineDays": 10
-      }
-    },
-    {
-      "id": "ezak-jmk:P26V00003164",
-      "source": "ezak-jmk",
-      "sourceId": "P26V00003164",
-      "url": "https://zakazky.krajbezkorupce.cz/contract_display_46460.html",
-      "title": "Reklamní a marketingové služby",
-      "buyer": "Jihomoravské dětské léčebny, příspěvková organizace",
-      "summary": "Předmětem veřejné zakázky je poskytování reklamních a marketingových služeb spočívajících zejména v návrhu a realizaci marketingové strategie, správě sociálních sítí, tvorbě a distribuci marketingového obsahu, přípravě a realizaci reklamních kampaní, podpoře komunikace s veřejností a průběžném vyhodnocování efektivity marketingových aktivit. Služby budou poskytovány podle aktuálních potřeb zadavatele po dobu 48 měsíců.",
-      "country": "CZ",
-      "region": "Jihomoravský kraj",
-      "publishedAt": "2026-07-31T10:00:00.000Z",
-      "deadline": "2026-08-21T10:00:00.000Z",
-      "value": {
-        "amount": 2000000,
-        "currency": "CZK"
-      },
-      "cpv": [
-        "79340000",
-        "79341000",
-        "79341400",
-        "79342000",
-        "79342200",
-        "79413000",
-        "79416000"
-      ],
-      "procedureType": "Služby",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-13T20:58:44.387Z",
-      "lastSeenAt": "2026-08-21T04:58:21.740Z",
-      "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": 0,
-      "fingerprint": "4f4133051f0c6edfb62a",
-      "relevance": {
-        "score": 85,
-        "level": "strong",
-        "reasons": [
-          "Marketing & eventy: marketingové služby, marketingové strategie",
-          "Tvorba obsahu: sociálních sítí, marketingového obsahu",
-          "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [
-          "velmi krátká lhůta"
-        ],
-        "categories": [
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 50
-          },
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 50
-          },
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 40
-          }
-        ],
-        "deadlineDays": 0
+        "deadlineDays": 9
       }
     },
     {
@@ -232,7 +165,7 @@
             "score": 46
           }
         ],
-        "deadlineDays": 10
+        "deadlineDays": 9
       }
     },
     {
@@ -257,7 +190,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-22T04:54:36.045Z",
+      "lastSeenAt": "2026-08-23T04:56:38.488Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
@@ -295,7 +228,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 31
+        "deadlineDays": 30
       }
     },
     {
@@ -321,7 +254,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-19T04:56:25.158Z",
-      "lastSeenAt": "2026-08-22T04:54:36.045Z",
+      "lastSeenAt": "2026-08-23T04:56:38.488Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -379,7 +312,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-22T04:54:36.045Z",
+      "lastSeenAt": "2026-08-23T04:56:38.488Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -409,7 +342,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 11
+        "deadlineDays": 10
       }
     },
     {
@@ -468,7 +401,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 13
+        "deadlineDays": 12
       }
     },
     {
@@ -494,7 +427,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-18T04:56:15.419Z",
-      "lastSeenAt": "2026-08-22T04:54:36.045Z",
+      "lastSeenAt": "2026-08-23T04:56:38.488Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -547,7 +480,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-22T04:54:36.045Z",
+      "lastSeenAt": "2026-08-23T04:56:38.488Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -593,12 +526,12 @@
       "procedureType": "Veřejná zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-21T04:58:21.740Z",
-      "lastSeenAt": "2026-08-22T04:54:36.045Z",
+      "lastSeenAt": "2026-08-23T04:56:38.488Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2065899-poskytovani-sluzeb-v-oblasti-public-relations",
       "originStatus": "unresolved",
-      "originConfidence": 30,
+      "originConfidence": 18,
       "fingerprint": "37a8c94ff9d12dd97775",
       "duplicateSources": [
         "poptavky"
@@ -626,61 +559,72 @@
             "score": 12
           }
         ],
-        "deadlineDays": 10
+        "deadlineDays": 9
       }
     },
     {
-      "id": "ezak-jmk:P26V00003435",
+      "id": "ezak-jmk:P26V00003164",
       "source": "ezak-jmk",
-      "sourceId": "P26V00003435",
-      "url": "https://zakazky.krajbezkorupce.cz/contract_display_46731.html",
-      "title": "Zajištění realizace a medializace projektu České ručičky 2027–2028",
-      "buyer": "Střední škola stavebních řemesel Brno-Bosonohy, příspěvková organizace",
-      "summary": "Zajištění realizace a medializace projektu České ručičky 2027–2028",
+      "sourceId": "P26V00003164",
+      "url": "https://zakazky.krajbezkorupce.cz/contract_display_46460.html",
+      "title": "Reklamní a marketingové služby",
+      "buyer": "Jihomoravské dětské léčebny, příspěvková organizace",
+      "summary": "Předmětem veřejné zakázky je poskytování reklamních a marketingových služeb spočívajících zejména v návrhu a realizaci marketingové strategie, správě sociálních sítí, tvorbě a distribuci marketingového obsahu, přípravě a realizaci reklamních kampaní, podpoře komunikace s veřejností a průběžném vyhodnocování efektivity marketingových aktivit. Služby budou poskytovány podle aktuálních potřeb zadavatele po dobu 48 měsíců.",
       "country": "CZ",
-      "region": "Česko",
-      "publishedAt": "2026-08-19T10:00:00.000Z",
-      "deadline": "2026-08-28T05:00:00.000Z",
+      "region": "Jihomoravský kraj",
+      "publishedAt": "2026-07-31T10:00:00.000Z",
+      "deadline": "2026-08-21T10:00:00.000Z",
       "value": {
-        "amount": 960000,
+        "amount": 2000000,
         "currency": "CZK"
       },
       "cpv": [
-        "79340000"
+        "79340000",
+        "79341000",
+        "79341400",
+        "79342000",
+        "79342200",
+        "79413000",
+        "79416000"
       ],
       "procedureType": "Služby",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-22T04:54:36.045Z",
+      "firstSeenAt": "2026-08-13T20:58:44.387Z",
+      "lastSeenAt": "2026-08-21T04:58:21.740Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": null,
-      "fingerprint": "a14067b740cd57235a0b",
+      "originConfidence": 0,
+      "fingerprint": "4f4133051f0c6edfb62a",
       "relevance": {
-        "score": 44,
+        "score": 43,
         "level": "watch",
         "reasons": [
-          "Marketing & eventy: odpovídající CPV",
-          "Tvorba obsahu: odpovídající CPV",
-          "jde o zakázku na služby",
-          "zbývá alespoň týden na reakci"
+          "Marketing & eventy: marketingové služby, marketingové strategie",
+          "Tvorba obsahu: sociálních sítí, marketingového obsahu",
+          "klíčové téma je přímo v názvu",
+          "jde o zakázku na služby"
         ],
         "negativeSignals": [],
         "categories": [
           {
             "id": "content",
             "label": "Tvorba obsahu",
-            "score": 24
+            "score": 50
           },
           {
             "id": "marketing",
             "label": "Marketing & eventy",
-            "score": 24
+            "score": 50
+          },
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 40
           }
         ],
-        "deadlineDays": 7
+        "deadlineDays": -1
       }
     }
   ]
