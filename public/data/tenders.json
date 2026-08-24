@@ -1,38 +1,38 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-23T04:56:38.488Z",
+  "generatedAt": "2026-08-24T05:06:14.964Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 10,
-    "newThisRun": 1,
+    "total": 11,
+    "newThisRun": 2,
     "strong": 4,
-    "closingSoon": 3,
+    "closingSoon": 4,
     "unresolvedOrigin": 2
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 2
+      "count": 6
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 1
+      "count": 2
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 58
+      "count": 60
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 365
+      "count": 418
     },
     {
       "id": "ezak-watchlist",
@@ -83,7 +83,7 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-23T04:56:38.488Z",
+      "lastSeenAt": "2026-08-24T05:06:14.964Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ552951/poskytovani-sluzeb-v-oblasti-public-relations",
@@ -116,7 +116,7 @@
             "score": 46
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       }
     },
     {
@@ -165,7 +165,7 @@
             "score": 46
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       }
     },
     {
@@ -190,7 +190,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-23T04:56:38.488Z",
+      "lastSeenAt": "2026-08-24T05:06:14.964Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
@@ -228,7 +228,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 30
+        "deadlineDays": 29
       }
     },
     {
@@ -254,7 +254,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-19T04:56:25.158Z",
-      "lastSeenAt": "2026-08-23T04:56:38.488Z",
+      "lastSeenAt": "2026-08-24T05:06:14.964Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -312,7 +312,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-23T04:56:38.488Z",
+      "lastSeenAt": "2026-08-24T05:06:14.964Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -342,7 +342,65 @@
             "score": 24
           }
         ],
-        "deadlineDays": 10
+        "deadlineDays": 9
+      }
+    },
+    {
+      "id": "ted:583447-2026",
+      "source": "ted",
+      "sourceId": "583447-2026",
+      "url": "https://ted.europa.eu/cs/notice/-/detail/583447-2026",
+      "title": "Nákup mediálního prostoru pro kampaň na podporu digitálních služeb DIA",
+      "buyer": "Digitální a informační agentura",
+      "summary": "Předmětem veřejné zakázky je nákup mediálního prostoru pro realizaci komunikační kampaně zaměřené primárně na informování veřejnosti o výhodách stávajících vybraných produktů a služeb zadavatele a motivování občanů k jejich využívání (např. Portál občana, Datové schránky, Czech POINT, REZA, Identita občana/NIA, mobilní klíč eGovernmentu).",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": null,
+      "deadline": null,
+      "value": {
+        "amount": 2000000,
+        "currency": "CZK"
+      },
+      "cpv": [
+        "79340000"
+      ],
+      "procedureType": "services, services",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-24T05:06:14.964Z",
+      "lastSeenAt": "2026-08-24T05:06:14.964Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "fingerprint": "bb0b87dbb1132ddb7556",
+      "relevance": {
+        "score": 67,
+        "level": "good",
+        "reasons": [
+          "Tvorba obsahu: odpovídající CPV",
+          "Marketing & eventy: mediálního prostoru",
+          "klíčové téma je přímo v názvu"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 41
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 24
+          },
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 17
+          }
+        ],
+        "deadlineDays": null
       }
     },
     {
@@ -401,7 +459,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 12
+        "deadlineDays": 11
       }
     },
     {
@@ -427,7 +485,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-18T04:56:15.419Z",
-      "lastSeenAt": "2026-08-23T04:56:38.488Z",
+      "lastSeenAt": "2026-08-24T05:06:14.964Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -480,7 +538,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-23T04:56:38.488Z",
+      "lastSeenAt": "2026-08-24T05:06:14.964Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -526,7 +584,7 @@
       "procedureType": "Veřejná zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-21T04:58:21.740Z",
-      "lastSeenAt": "2026-08-23T04:56:38.488Z",
+      "lastSeenAt": "2026-08-24T05:06:14.964Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2065899-poskytovani-sluzeb-v-oblasti-public-relations",
@@ -559,7 +617,7 @@
             "score": 12
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       }
     },
     {
@@ -624,7 +682,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -1
+        "deadlineDays": -2
       }
     }
   ]
