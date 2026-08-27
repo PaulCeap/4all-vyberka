@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-26T05:00:19.663Z",
+  "generatedAt": "2026-08-27T15:20:09.738Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -10,19 +10,19 @@
     "total": 12,
     "newThisRun": 1,
     "strong": 5,
-    "closingSoon": 8,
+    "closingSoon": 9,
     "unresolvedOrigin": 2
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 133
+      "count": 153
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 74
+      "count": 67
     },
     {
       "id": "nen",
@@ -32,7 +32,7 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 477
+      "count": 494
     },
     {
       "id": "ezak-watchlist",
@@ -53,13 +53,13 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 3
+      "resolved": 1
     },
     {
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 4
+      "resolved": 5
     }
   ],
   "tenders": [
@@ -90,9 +90,6 @@
       "originStatus": "unresolved",
       "originConfidence": 21,
       "fingerprint": "f8b2410f3481ccec139e",
-      "duplicateSources": [
-        "poptavej"
-      ],
       "relevance": {
         "score": 85,
         "level": "strong",
@@ -115,7 +112,7 @@
             "score": 46
           }
         ],
-        "deadlineDays": 6
+        "deadlineDays": 4
       }
     },
     {
@@ -140,7 +137,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-26T05:00:19.663Z",
+      "lastSeenAt": "2026-08-27T15:20:09.738Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
@@ -178,7 +175,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 27
+        "deadlineDays": 25
       }
     },
     {
@@ -226,7 +223,7 @@
             "score": 46
           }
         ],
-        "deadlineDays": 6
+        "deadlineDays": 4
       }
     },
     {
@@ -251,7 +248,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-25T04:58:49.649Z",
-      "lastSeenAt": "2026-08-26T05:00:19.663Z",
+      "lastSeenAt": "2026-08-27T15:20:09.738Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2071179-nakup-medialniho-prostoru-pro-kampan-na-podporu-digitalnich-sluzeb-dia",
@@ -289,7 +286,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 27
+        "deadlineDays": 25
       }
     },
     {
@@ -315,7 +312,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-19T04:56:25.158Z",
-      "lastSeenAt": "2026-08-26T05:00:19.663Z",
+      "lastSeenAt": "2026-08-27T15:20:09.738Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -373,7 +370,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-26T05:00:19.663Z",
+      "lastSeenAt": "2026-08-27T15:20:09.738Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -381,14 +378,13 @@
       "originConfidence": null,
       "fingerprint": "77c15abc52aa267105b9",
       "relevance": {
-        "score": 73,
+        "score": 69,
         "level": "good",
         "reasons": [
           "Tvorba obsahu: odpovídající CPV",
           "Marketing & eventy: mediálního prostoru",
           "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby",
-          "zbývá alespoň týden na reakci"
+          "jde o zakázku na služby"
         ],
         "negativeSignals": [],
         "categories": [
@@ -403,7 +399,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 7
+        "deadlineDays": 5
       }
     },
     {
@@ -428,7 +424,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-24T05:06:14.964Z",
-      "lastSeenAt": "2026-08-26T05:00:19.663Z",
+      "lastSeenAt": "2026-08-27T15:20:09.738Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -520,7 +516,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 7
       }
     },
     {
@@ -551,7 +547,7 @@
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": null,
+      "originConfidence": 0,
       "fingerprint": "ce22389aa66c244d6b84",
       "relevance": {
         "score": 64,
@@ -599,7 +595,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-26T05:00:19.663Z",
+      "lastSeenAt": "2026-08-27T15:20:09.738Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -652,9 +648,6 @@
       "originStatus": "unresolved",
       "originConfidence": 21,
       "fingerprint": "37a8c94ff9d12dd97775",
-      "duplicateSources": [
-        "poptavky"
-      ],
       "relevance": {
         "score": 54,
         "level": "watch",
@@ -677,7 +670,7 @@
             "score": 12
           }
         ],
-        "deadlineDays": 6
+        "deadlineDays": 4
       }
     },
     {
@@ -742,7 +735,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -4
+        "deadlineDays": -6
       }
     }
   ]
