@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-27T15:20:09.738Z",
+  "generatedAt": "2026-08-28T16:43:36.234Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 12,
-    "newThisRun": 1,
-    "strong": 5,
+    "total": 14,
+    "newThisRun": 3,
+    "strong": 4,
     "closingSoon": 9,
-    "unresolvedOrigin": 2
+    "unresolvedOrigin": 4
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 153
+      "count": 121
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 67
+      "count": 80
     },
     {
       "id": "nen",
@@ -32,12 +32,12 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 494
+      "count": 476
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 110
+      "count": 112
     },
     {
       "id": "media-signals",
@@ -53,68 +53,16 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 1
+      "resolved": 0
     },
     {
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 5
+      "resolved": 2
     }
   ],
   "tenders": [
-    {
-      "id": "poptavej:VZ552951",
-      "source": "poptavej",
-      "sourceId": "VZ552951",
-      "url": "https://www.poptavej.cz/verejna-zakazka/VZ552951/poskytovani-sluzeb-v-oblasti-public-relations",
-      "title": "Poskytování služeb v oblasti Public Relations",
-      "buyer": "Zadavatel z Poptávej.cz",
-      "summary": "Předmět plnění: - poskytování služeb v oblasti Public Relations - cílem je zajistit soustavnou, odbornou, věcnou a důvěryhodnou komunikaci zadavatele vůči veřejnosti, médiím, zaměstnancům, zřizovateli a dalším stakeholderům - výkon role tiskového mluvčího a operativní mediální servis, včetně osobního vystupování na kameru zpravodajských médií po předchozím schválení zadavatelem - strategické public relations, medializace činnosti TSML, návrh témat a dlouhodobé budování reputace - tvorba, editace a distribuce tiskových zpráv, stanovisek, odpovědí médiím, článků, podkladů pro radniční a obdobná média a dalších textových výstupů - komunikace k cílovým skupinám a stakeholderům, včetně koordinace komunikace se zřizovatelem - správa sociálních sítí zadavatele, tvorba redakčního plánu, příspěvků a základního foto, video a grafického obsahu - příprava a aktualizace PR obsahu webu zadavatele - monitoring médií a sociálních sítí, vyhodnocování dopadu komunikace, včasná identifikace reputačních rizik a reporting - krizová komunikace, pohotovost pro mimořádné situace a příprava podkladů pro vedení zadavatele - organizace tiskových konferencí, briefingů a dalších mediálních akcí podle pokynů zadavatele - podpora interní komunikace a metodická příprava zaměstnanců a vedoucích pracovníků pro kontakt s médii Hodnotící kritéria: - kvalita lokální komunikační strategie pro TSM a město - 25% - praktická znalost mediálního a komunikačního prostředí - 20% - nabídková cena - měsíční paušál bez DPH - 20% - rozsah služeb, měřitelné výstupy, reporting a lokální dopad - 15% - osobní prezentace a modelová lokální mediální situace - 10% Lokalita: - Liberecký kraj Termín: - po nabytí účinnosti smlouvy po dobu 12 měsíců",
-      "country": "CZ",
-      "region": "Liberecký kraj",
-      "publishedAt": "2026-08-18T10:00:00.000Z",
-      "deadline": "2026-08-31T10:00:00.000Z",
-      "value": {
-        "amount": 1440000,
-        "currency": "CZK"
-      },
-      "cpv": [],
-      "procedureType": "Zakázka na služby",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-26T05:00:19.663Z",
-      "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ552951/poskytovani-sluzeb-v-oblasti-public-relations",
-      "originStatus": "unresolved",
-      "originConfidence": 21,
-      "fingerprint": "f8b2410f3481ccec139e",
-      "relevance": {
-        "score": 85,
-        "level": "strong",
-        "reasons": [
-          "Tvorba obsahu: video, redakční",
-          "PR & komunikace: public relations, krizová komunikace",
-          "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 50
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 46
-          }
-        ],
-        "deadlineDays": 4
-      }
-    },
     {
       "id": "zakazky-gov:RVZ2600118024",
       "source": "zakazky-gov",
@@ -137,7 +85,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-27T15:20:09.738Z",
+      "lastSeenAt": "2026-08-28T16:43:36.234Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
@@ -175,55 +123,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 25
-      }
-    },
-    {
-      "id": "zakazky-gov:RVZ2600117886",
-      "source": "zakazky-gov",
-      "sourceId": "RVZ2600117886",
-      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600117886",
-      "title": "Poskytování služeb v oblasti Public Relations",
-      "buyer": "Technické služby města Liberec, p.o.",
-      "summary": "Předmětem veřejné zakázky je poskytování služeb, a to: • výkon role tiskového mluvčího a operativní mediální servis, včetně osobního vystupování na kameru zpravodajských médií po předchozím schválení zadavatelem, • strategické public relations, medializace činnosti TSML, návrh témat a dlouhodobé budování reputace, • tvorba, editace a distribuce tiskových zpráv, stanovisek, odpovědí médiím, článků, podkladů pro radniční a obdobná média a dalších textových výstupů, • komunikace k cílovým skupinám a stakeholderům, včetně koordinace komunikace se zřizovatelem, • správa sociálních sítí zadavatele, tvorba redakčního plánu, příspěvků a základního foto, video a grafického obsahu, • příprava a aktualizace PR obsahu webu zadavatele, • monitoring médií a sociálních sítí, vyhodnocování dopadu komunikace, včasná identifikace reputačních rizik a reporting, • krizová komunikace, pohotovost pro mimořádné situace a příprava podkladů pro vedení zadavatele, • organizace tiskových konferencí, briefingů a dalších mediálních akcí podle pokynů zadavatele, • podpora interní komunikace a metodická příprava zaměstnanců a vedoucích pracovníků pro kontakt s médii.",
-      "country": "CZ",
-      "region": "Česko",
-      "publishedAt": "2026-08-18T19:06:57.789Z",
-      "deadline": "2026-08-31T07:00:00.000Z",
-      "value": null,
-      "cpv": [],
-      "procedureType": "VEREJNA ZAKAZKA",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-19T04:56:25.158Z",
-      "lastSeenAt": "2026-08-19T04:56:25.158Z",
-      "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": 0,
-      "fingerprint": "aa37c0e50cd530ee1271",
-      "relevance": {
-        "score": 80,
-        "level": "strong",
-        "reasons": [
-          "Tvorba obsahu: video, redakční",
-          "PR & komunikace: public relations, krizová komunikace",
-          "klíčové téma je přímo v názvu"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 50
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 46
-          }
-        ],
-        "deadlineDays": 4
+        "deadlineDays": 24
       }
     },
     {
@@ -248,7 +148,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-25T04:58:49.649Z",
-      "lastSeenAt": "2026-08-27T15:20:09.738Z",
+      "lastSeenAt": "2026-08-28T16:43:36.234Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2071179-nakup-medialniho-prostoru-pro-kampan-na-podporu-digitalnich-sluzeb-dia",
@@ -286,7 +186,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 25
+        "deadlineDays": 24
       }
     },
     {
@@ -317,7 +217,7 @@
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": null,
+      "originConfidence": 0,
       "fingerprint": "1e3b512a0d79d1f5e773",
       "relevance": {
         "score": 78,
@@ -349,6 +249,110 @@
       }
     },
     {
+      "id": "poptavej:VZ552951",
+      "source": "poptavej",
+      "sourceId": "VZ552951",
+      "url": "https://www.poptavej.cz/verejna-zakazka/VZ552951/poskytovani-sluzeb-v-oblasti-public-relations",
+      "title": "Poskytování služeb v oblasti Public Relations",
+      "buyer": "Zadavatel z Poptávej.cz",
+      "summary": "Předmět plnění: - poskytování služeb v oblasti Public Relations - cílem je zajistit soustavnou, odbornou, věcnou a důvěryhodnou komunikaci zadavatele vůči veřejnosti, médiím, zaměstnancům, zřizovateli a dalším stakeholderům - výkon role tiskového mluvčího a operativní mediální servis, včetně osobního vystupování na kameru zpravodajských médií po předchozím schválení zadavatelem - strategické public relations, medializace činnosti TSML, návrh témat a dlouhodobé budování reputace - tvorba, editace a distribuce tiskových zpráv, stanovisek, odpovědí médiím, článků, podkladů pro radniční a obdobná média a dalších textových výstupů - komunikace k cílovým skupinám a stakeholderům, včetně koordinace komunikace se zřizovatelem - správa sociálních sítí zadavatele, tvorba redakčního plánu, příspěvků a základního foto, video a grafického obsahu - příprava a aktualizace PR obsahu webu zadavatele - monitoring médií a sociálních sítí, vyhodnocování dopadu komunikace, včasná identifikace reputačních rizik a reporting - krizová komunikace, pohotovost pro mimořádné situace a příprava podkladů pro vedení zadavatele - organizace tiskových konferencí, briefingů a dalších mediálních akcí podle pokynů zadavatele - podpora interní komunikace a metodická příprava zaměstnanců a vedoucích pracovníků pro kontakt s médii Hodnotící kritéria: - kvalita lokální komunikační strategie pro TSM a město - 25% - praktická znalost mediálního a komunikačního prostředí - 20% - nabídková cena - měsíční paušál bez DPH - 20% - rozsah služeb, měřitelné výstupy, reporting a lokální dopad - 15% - osobní prezentace a modelová lokální mediální situace - 10% Lokalita: - Liberecký kraj Termín: - po nabytí účinnosti smlouvy po dobu 12 měsíců",
+      "country": "CZ",
+      "region": "Liberecký kraj",
+      "publishedAt": "2026-08-18T10:00:00.000Z",
+      "deadline": "2026-08-31T10:00:00.000Z",
+      "value": {
+        "amount": 1440000,
+        "currency": "CZK"
+      },
+      "cpv": [],
+      "procedureType": "Zakázka na služby",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-20T04:58:29.167Z",
+      "lastSeenAt": "2026-08-26T05:00:19.663Z",
+      "status": "open",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ552951/poskytovani-sluzeb-v-oblasti-public-relations",
+      "originStatus": "unresolved",
+      "originConfidence": 21,
+      "fingerprint": "f8b2410f3481ccec139e",
+      "relevance": {
+        "score": 77,
+        "level": "strong",
+        "reasons": [
+          "Tvorba obsahu: video, redakční",
+          "PR & komunikace: public relations, krizová komunikace",
+          "klíčové téma je přímo v názvu",
+          "jde o zakázku na služby"
+        ],
+        "negativeSignals": [
+          "velmi krátká lhůta"
+        ],
+        "categories": [
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 50
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 46
+          }
+        ],
+        "deadlineDays": 3
+      }
+    },
+    {
+      "id": "zakazky-gov:RVZ2600117886",
+      "source": "zakazky-gov",
+      "sourceId": "RVZ2600117886",
+      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600117886",
+      "title": "Poskytování služeb v oblasti Public Relations",
+      "buyer": "Technické služby města Liberec, p.o.",
+      "summary": "Předmětem veřejné zakázky je poskytování služeb, a to: • výkon role tiskového mluvčího a operativní mediální servis, včetně osobního vystupování na kameru zpravodajských médií po předchozím schválení zadavatelem, • strategické public relations, medializace činnosti TSML, návrh témat a dlouhodobé budování reputace, • tvorba, editace a distribuce tiskových zpráv, stanovisek, odpovědí médiím, článků, podkladů pro radniční a obdobná média a dalších textových výstupů, • komunikace k cílovým skupinám a stakeholderům, včetně koordinace komunikace se zřizovatelem, • správa sociálních sítí zadavatele, tvorba redakčního plánu, příspěvků a základního foto, video a grafického obsahu, • příprava a aktualizace PR obsahu webu zadavatele, • monitoring médií a sociálních sítí, vyhodnocování dopadu komunikace, včasná identifikace reputačních rizik a reporting, • krizová komunikace, pohotovost pro mimořádné situace a příprava podkladů pro vedení zadavatele, • organizace tiskových konferencí, briefingů a dalších mediálních akcí podle pokynů zadavatele, • podpora interní komunikace a metodická příprava zaměstnanců a vedoucích pracovníků pro kontakt s médii.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": "2026-08-18T19:06:57.789Z",
+      "deadline": "2026-08-31T07:00:00.000Z",
+      "value": null,
+      "cpv": [],
+      "procedureType": "VEREJNA ZAKAZKA",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-19T04:56:25.158Z",
+      "lastSeenAt": "2026-08-19T04:56:25.158Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": 0,
+      "fingerprint": "aa37c0e50cd530ee1271",
+      "relevance": {
+        "score": 72,
+        "level": "good",
+        "reasons": [
+          "Tvorba obsahu: video, redakční",
+          "PR & komunikace: public relations, krizová komunikace",
+          "klíčové téma je přímo v názvu"
+        ],
+        "negativeSignals": [
+          "velmi krátká lhůta"
+        ],
+        "categories": [
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 50
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 46
+          }
+        ],
+        "deadlineDays": 3
+      }
+    },
+    {
       "id": "nen:N006/26/V00023914",
       "source": "nen",
       "sourceId": "N006/26/V00023914",
@@ -370,7 +374,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-27T15:20:09.738Z",
+      "lastSeenAt": "2026-08-28T16:43:36.234Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -399,7 +403,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 5
+        "deadlineDays": 4
       }
     },
     {
@@ -424,7 +428,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-24T05:06:14.964Z",
-      "lastSeenAt": "2026-08-27T15:20:09.738Z",
+      "lastSeenAt": "2026-08-28T16:43:36.234Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -458,65 +462,6 @@
           }
         ],
         "deadlineDays": null
-      }
-    },
-    {
-      "id": "nen:N006/26/V00021850",
-      "source": "nen",
-      "sourceId": "N006/26/V00021850",
-      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00021850",
-      "title": "Zajištění informovanosti veřejnosti prostřednictvím tištěných, elektronických a outdoorových médií",
-      "buyer": "Dům zahraniční spolupráce",
-      "summary": "Předmětem veřejné zakázky je uzavření rámcové dohody s jedním dodavatelem, přičemž předmětem rámcové dohody je zajištění informačních a propagačních kampaní programů administrovaných zadavatelem, a to jak v České republice, tak v zahraničí, včetně zajištění nákupu mediálního prostoru ve všech relevantních typech médií.",
-      "country": "CZ",
-      "region": "Česká republika",
-      "publishedAt": "2026-07-13T16:30:21.000Z",
-      "deadline": "2026-09-03T09:00:00.000Z",
-      "value": {
-        "amount": 90000000,
-        "currency": "CZK"
-      },
-      "cpv": [
-        "79341200"
-      ],
-      "procedureType": "Sluzby / Otevřené řízení",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-13T21:34:03.300Z",
-      "lastSeenAt": "2026-08-21T04:58:21.740Z",
-      "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": 0,
-      "fingerprint": "f061a0c3390b19d7b49a",
-      "relevance": {
-        "score": 66,
-        "level": "good",
-        "reasons": [
-          "Tvorba obsahu: odpovídající CPV",
-          "Marketing & eventy: mediálního prostoru",
-          "jde o zakázku na služby",
-          "zbývá alespoň týden na reakci"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 41
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 24
-          },
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 24
-          }
-        ],
-        "deadlineDays": 7
       }
     },
     {
@@ -595,7 +540,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-27T15:20:09.738Z",
+      "lastSeenAt": "2026-08-28T16:43:36.234Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -619,6 +564,117 @@
           }
         ],
         "deadlineDays": null
+      }
+    },
+    {
+      "id": "nen:N006/26/V00021850",
+      "source": "nen",
+      "sourceId": "N006/26/V00021850",
+      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00021850",
+      "title": "Zajištění informovanosti veřejnosti prostřednictvím tištěných, elektronických a outdoorových médií",
+      "buyer": "Dům zahraniční spolupráce",
+      "summary": "Předmětem veřejné zakázky je uzavření rámcové dohody s jedním dodavatelem, přičemž předmětem rámcové dohody je zajištění informačních a propagačních kampaní programů administrovaných zadavatelem, a to jak v České republice, tak v zahraničí, včetně zajištění nákupu mediálního prostoru ve všech relevantních typech médií.",
+      "country": "CZ",
+      "region": "Česká republika",
+      "publishedAt": "2026-07-13T16:30:21.000Z",
+      "deadline": "2026-09-03T09:00:00.000Z",
+      "value": {
+        "amount": 90000000,
+        "currency": "CZK"
+      },
+      "cpv": [
+        "79341200"
+      ],
+      "procedureType": "Sluzby / Otevřené řízení",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-13T21:34:03.300Z",
+      "lastSeenAt": "2026-08-21T04:58:21.740Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": 0,
+      "fingerprint": "f061a0c3390b19d7b49a",
+      "relevance": {
+        "score": 62,
+        "level": "good",
+        "reasons": [
+          "Tvorba obsahu: odpovídající CPV",
+          "Marketing & eventy: mediálního prostoru",
+          "jde o zakázku na služby"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 41
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 24
+          },
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 24
+          }
+        ],
+        "deadlineDays": 6
+      }
+    },
+    {
+      "id": "poptavky:2076681",
+      "source": "poptavky",
+      "sourceId": "2076681",
+      "url": "https://www.poptavky.cz/poptavka/2076681-strategicke-a-vykonove-marketingove-sluzby",
+      "title": "Strategické a výkonové marketingové služby",
+      "buyer": "Zadavatel z Poptávky.cz",
+      "summary": "Podrobný popis: - předmětem veřejné zakázky je návrh komunikační strategie pro osobní vozidla značky DR Automobiles s ohledem na komunikační cíle - veškeré informace naleznete v příloze Lokalita: - Hustopeče Termín pro podání nabídek: - 15. 09. 2026 13:00",
+      "country": "CZ",
+      "region": "Hustopeče",
+      "publishedAt": "2026-08-28T08:40:00.000Z",
+      "deadline": "2026-09-15T11:00:00.000Z",
+      "value": {
+        "amount": 600000,
+        "currency": "CZK"
+      },
+      "cpv": [],
+      "procedureType": "Veřejná zakázka na služby",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-28T16:43:36.234Z",
+      "lastSeenAt": "2026-08-28T16:43:36.234Z",
+      "status": "open",
+      "discoverySource": "poptavky",
+      "discoveryUrl": "https://www.poptavky.cz/poptavka/2076681-strategicke-a-vykonove-marketingove-sluzby",
+      "originStatus": "unresolved",
+      "originConfidence": 16,
+      "fingerprint": "ea1682470ec40459115b",
+      "relevance": {
+        "score": 47,
+        "level": "watch",
+        "reasons": [
+          "Marketing & eventy: marketingové služby",
+          "PR & komunikace: komunikační strategie",
+          "klíčové téma je přímo v názvu",
+          "jde o zakázku na služby",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 18
+          },
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 17
+          }
+        ],
+        "deadlineDays": 18
       }
     },
     {
@@ -649,7 +705,7 @@
       "originConfidence": 21,
       "fingerprint": "37a8c94ff9d12dd97775",
       "relevance": {
-        "score": 54,
+        "score": 46,
         "level": "watch",
         "reasons": [
           "Tvorba obsahu: tiskových zpráv",
@@ -657,7 +713,9 @@
           "klíčové téma je přímo v názvu",
           "jde o zakázku na služby"
         ],
-        "negativeSignals": [],
+        "negativeSignals": [
+          "velmi krátká lhůta"
+        ],
         "categories": [
           {
             "id": "pr",
@@ -670,7 +728,7 @@
             "score": 12
           }
         ],
-        "deadlineDays": 4
+        "deadlineDays": 3
       }
     },
     {
@@ -735,7 +793,56 @@
             "score": 40
           }
         ],
-        "deadlineDays": -6
+        "deadlineDays": -7
+      }
+    },
+    {
+      "id": "poptavej:VZ658880",
+      "source": "poptavej",
+      "sourceId": "VZ658880",
+      "url": "https://www.poptavej.cz/verejna-zakazka/VZ658880/strategicke-a-vykonove-marketingove-sluzby",
+      "title": "Strategické a výkonové marketingové služby",
+      "buyer": "Zadavatel z Poptávej.cz",
+      "summary": "Předmět plnění: - návrh komunikační strategie pro osobní vozidla - cíl: - do konce 2026 bychom chtěli mít prodejní partnery na všech místech v ČR - rozšíření servisní sítě ve všech oblastech na více míst, než prodejní síť - hledáme agenturního partnera, který: - disponuje know-how automotive trhu - umí kombinovat brand building a performance - dokáže pracovat pragmaticky v podmínkách omezené distribuce - navrhněte komunikační mix s marketingovým budgetem 20 MIO CZK pro CZ a SK trh - stanovte KPI s ohledem na obchodní plán 2027 celkem 800 prodaných vozů a odůvodněte rozložení mezi online a offline aktivity - uveďte cenovou kalkulaci za agenturní služby při realizaci uvedených aktivit Hodnotící kritéria: - kvalita návrhu řešení a efektivita využití rozpočtu Lokalita: - okres Břeclav Termín: - do 31.12.2027",
+      "country": "CZ",
+      "region": "okres Břeclav",
+      "publishedAt": "2026-08-28T10:00:00.000Z",
+      "deadline": "2026-10-15T10:00:00.000Z",
+      "value": null,
+      "cpv": [],
+      "procedureType": "Veřejná zakázka",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-28T16:43:36.234Z",
+      "lastSeenAt": "2026-08-28T16:43:36.234Z",
+      "status": "open",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ658880/strategicke-a-vykonove-marketingove-sluzby",
+      "originStatus": "unresolved",
+      "originConfidence": 16,
+      "fingerprint": "6fb363bc0512b8f63408",
+      "relevance": {
+        "score": 42,
+        "level": "watch",
+        "reasons": [
+          "Marketing & eventy: marketingové služby",
+          "PR & komunikace: komunikační strategie",
+          "klíčové téma je přímo v názvu",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 18
+          },
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 17
+          }
+        ],
+        "deadlineDays": 48
       }
     }
   ]
