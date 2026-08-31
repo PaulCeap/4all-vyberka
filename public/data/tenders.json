@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-30T09:59:39.606Z",
+  "generatedAt": "2026-08-31T10:57:45.298Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -17,12 +17,12 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 3
+      "count": 79
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 2
+      "count": 38
     },
     {
       "id": "nen",
@@ -32,12 +32,12 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 343
+      "count": 404
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 112
+      "count": 107
     },
     {
       "id": "media-signals",
@@ -53,7 +53,7 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 0
+      "resolved": 1
     },
     {
       "id": "poptavej",
@@ -85,7 +85,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-30T09:59:39.606Z",
+      "lastSeenAt": "2026-08-31T10:57:45.298Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
@@ -123,7 +123,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 22
+        "deadlineDays": 21
       }
     },
     {
@@ -148,7 +148,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-25T04:58:49.649Z",
-      "lastSeenAt": "2026-08-30T09:59:39.606Z",
+      "lastSeenAt": "2026-08-31T10:57:45.298Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2071179-nakup-medialniho-prostoru-pro-kampan-na-podporu-digitalnich-sluzeb-dia",
@@ -186,7 +186,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 22
+        "deadlineDays": 21
       }
     },
     {
@@ -299,7 +299,7 @@
             "score": 46
           }
         ],
-        "deadlineDays": 2
+        "deadlineDays": 0
       }
     },
     {
@@ -349,7 +349,7 @@
             "score": 46
           }
         ],
-        "deadlineDays": 1
+        "deadlineDays": 0
       }
     },
     {
@@ -374,7 +374,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-24T05:06:14.964Z",
-      "lastSeenAt": "2026-08-30T09:59:39.606Z",
+      "lastSeenAt": "2026-08-31T10:57:45.298Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -486,7 +486,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-08-30T09:59:39.606Z",
+      "lastSeenAt": "2026-08-31T10:57:45.298Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -510,6 +510,62 @@
           }
         ],
         "deadlineDays": null
+      }
+    },
+    {
+      "id": "nen:N006/26/V00023914",
+      "source": "nen",
+      "sourceId": "N006/26/V00023914",
+      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00023914",
+      "title": "Zajištění nákupu mediálního prostoru v televizích a rádiích a souvisejících služeb pro RBP, zdravotní pojišťovnu na roky 2027-2029",
+      "buyer": "RBP, zdravotní pojišťovna",
+      "summary": "Část 1 Veřejné zakázky zahrnuje nákup mediálního prostoru v televizích (TV) s celoplošným (celorepublikovým) dosahem a související služby. Předmětem plnění je zejm. následující: - příprava plánu pro každou kampaň dle požadavků Zadavatele na nákup mediálního prostoru; - rezervace a potvrzení o rezervaci mediálního prostoru dle schváleného zadání Zadavatelem; - zajištění umístění mediálního obsahu dle potvrzené rezervace mediálního prostoru v příslušném televizním vysílání; - zpracování a předání zprávy o uskutečnění objednávky a využití mediálního prostoru v příslušném televizním vysílání; - předání reklamních formátů Zadavatele k vysílání; - zpracování komplexního zhodnocení kampaní Zadavatele pro potřeby vyhodnocení efektivity jednotlivých fází kampaní; - zpracování a dodání dokladů o realizaci plnění pro každou kampaň; - zajištění datové podpory pro analýzu vzájemné synergie mediálních výkonů kampaní. Část 2 Veřejné zakázky zahrnuje nákup mediálního prostoru v rádiích vysílajících v Moravskoslezském, Olomouckém, Zlínském, Jihomoravském a Ústeckém kraji dle vzorového media plánu, který tvoří dokument Příloha č. 19 ZD, a související služby. Předmětem plnění je zejm. následující: - rezervace a potvrzení o rezervaci mediálního prostoru dle schváleného zadání Zadavatelem; - zajištění umístění mediálního obsahu dle potvrzené rezervace mediálního prostoru v příslušném rozhlasovém vysílání; - zpracování a předání zprávy o uskutečnění objednávky a využití mediálního prostoru v příslušném rozhlasovém vysílání; - předání reklamních formátů Zadavatele k vysílání; - zpracování komplexního zhodnocení kampaní Zadavatele pro potřeby vyhodnocení efektivity jednotlivých fází kampaní; - zpracování a dodání dokladů o realizaci plnění pro každou kampaň; - zajištění datové podpory pro analýzu vzájemné synergie mediálních výkonů kampaní.",
+      "country": "CZ",
+      "region": "Moravskoslezský kraj",
+      "publishedAt": "2026-07-30T17:41:39.000Z",
+      "deadline": "2026-09-01T09:30:00.000Z",
+      "value": {
+        "amount": 21500000,
+        "currency": "CZK"
+      },
+      "cpv": [
+        "79340000"
+      ],
+      "procedureType": "Sluzby / Otevřené řízení",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-09T14:42:44.439Z",
+      "lastSeenAt": "2026-08-31T10:57:45.298Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "fingerprint": "77c15abc52aa267105b9",
+      "relevance": {
+        "score": 61,
+        "level": "good",
+        "reasons": [
+          "Tvorba obsahu: odpovídající CPV",
+          "Marketing & eventy: mediálního prostoru",
+          "klíčové téma je přímo v názvu",
+          "jde o zakázku na služby"
+        ],
+        "negativeSignals": [
+          "velmi krátká lhůta"
+        ],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 41
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 24
+          }
+        ],
+        "deadlineDays": 1
       }
     },
     {
@@ -542,14 +598,16 @@
       "originConfidence": 0,
       "fingerprint": "f061a0c3390b19d7b49a",
       "relevance": {
-        "score": 62,
-        "level": "good",
+        "score": 54,
+        "level": "watch",
         "reasons": [
           "Tvorba obsahu: odpovídající CPV",
           "Marketing & eventy: mediálního prostoru",
           "jde o zakázku na služby"
         ],
-        "negativeSignals": [],
+        "negativeSignals": [
+          "velmi krátká lhůta"
+        ],
         "categories": [
           {
             "id": "marketing",
@@ -567,63 +625,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 4
-      }
-    },
-    {
-      "id": "nen:N006/26/V00023914",
-      "source": "nen",
-      "sourceId": "N006/26/V00023914",
-      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00023914",
-      "title": "Zajištění nákupu mediálního prostoru v televizích a rádiích a souvisejících služeb pro RBP, zdravotní pojišťovnu na roky 2027-2029",
-      "buyer": "RBP, zdravotní pojišťovna",
-      "summary": "Část 1 Veřejné zakázky zahrnuje nákup mediálního prostoru v televizích (TV) s celoplošným (celorepublikovým) dosahem a související služby. Předmětem plnění je zejm. následující: - příprava plánu pro každou kampaň dle požadavků Zadavatele na nákup mediálního prostoru; - rezervace a potvrzení o rezervaci mediálního prostoru dle schváleného zadání Zadavatelem; - zajištění umístění mediálního obsahu dle potvrzené rezervace mediálního prostoru v příslušném televizním vysílání; - zpracování a předání zprávy o uskutečnění objednávky a využití mediálního prostoru v příslušném televizním vysílání; - předání reklamních formátů Zadavatele k vysílání; - zpracování komplexního zhodnocení kampaní Zadavatele pro potřeby vyhodnocení efektivity jednotlivých fází kampaní; - zpracování a dodání dokladů o realizaci plnění pro každou kampaň; - zajištění datové podpory pro analýzu vzájemné synergie mediálních výkonů kampaní. Část 2 Veřejné zakázky zahrnuje nákup mediálního prostoru v rádiích vysílajících v Moravskoslezském, Olomouckém, Zlínském, Jihomoravském a Ústeckém kraji dle vzorového media plánu, který tvoří dokument Příloha č. 19 ZD, a související služby. Předmětem plnění je zejm. následující: - rezervace a potvrzení o rezervaci mediálního prostoru dle schváleného zadání Zadavatelem; - zajištění umístění mediálního obsahu dle potvrzené rezervace mediálního prostoru v příslušném rozhlasovém vysílání; - zpracování a předání zprávy o uskutečnění objednávky a využití mediálního prostoru v příslušném rozhlasovém vysílání; - předání reklamních formátů Zadavatele k vysílání; - zpracování komplexního zhodnocení kampaní Zadavatele pro potřeby vyhodnocení efektivity jednotlivých fází kampaní; - zpracování a dodání dokladů o realizaci plnění pro každou kampaň; - zajištění datové podpory pro analýzu vzájemné synergie mediálních výkonů kampaní.",
-      "country": "CZ",
-      "region": "Moravskoslezský kraj",
-      "publishedAt": "2026-07-30T17:41:39.000Z",
-      "deadline": "2026-09-01T09:30:00.000Z",
-      "value": {
-        "amount": 21500000,
-        "currency": "CZK"
-      },
-      "cpv": [
-        "79340000"
-      ],
-      "procedureType": "Sluzby / Otevřené řízení",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-08-30T09:59:39.606Z",
-      "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": null,
-      "fingerprint": "77c15abc52aa267105b9",
-      "relevance": {
-        "score": 61,
-        "level": "good",
-        "reasons": [
-          "Tvorba obsahu: odpovídající CPV",
-          "Marketing & eventy: mediálního prostoru",
-          "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [
-          "velmi krátká lhůta"
-        ],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 41
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 24
-          }
-        ],
-        "deadlineDays": 2
+        "deadlineDays": 3
       }
     },
     {
@@ -646,7 +648,7 @@
       "procedureType": "Veřejná zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-28T16:43:36.234Z",
-      "lastSeenAt": "2026-08-30T09:59:39.606Z",
+      "lastSeenAt": "2026-08-31T10:57:45.298Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2076681-strategicke-a-vykonove-marketingove-sluzby",
@@ -679,7 +681,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 17
+        "deadlineDays": 16
       }
     },
     {
@@ -733,7 +735,7 @@
             "score": 12
           }
         ],
-        "deadlineDays": 1
+        "deadlineDays": 0
       }
     },
     {
@@ -798,7 +800,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -8
+        "deadlineDays": -10
       }
     },
     {
@@ -818,7 +820,7 @@
       "procedureType": "Veřejná zakázka",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-28T16:43:36.234Z",
-      "lastSeenAt": "2026-08-30T09:59:39.606Z",
+      "lastSeenAt": "2026-08-31T10:57:45.298Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ658880/strategicke-a-vykonove-marketingove-sluzby",
@@ -850,7 +852,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 47
+        "deadlineDays": 45
       }
     }
   ]
