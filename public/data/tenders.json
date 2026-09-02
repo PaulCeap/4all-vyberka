@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T09:29:14.769Z",
+  "generatedAt": "2026-09-02T08:51:29.529Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 12,
+    "total": 11,
     "newThisRun": 0,
-    "strong": 4,
-    "closingSoon": 7,
-    "unresolvedOrigin": 3
+    "strong": 3,
+    "closingSoon": 6,
+    "unresolvedOrigin": 2
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 120
+      "count": 104
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 79
+      "count": 56
     },
     {
       "id": "nen",
@@ -53,13 +53,13 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 2
+      "resolved": 0
     },
     {
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 3
+      "resolved": 1
     }
   ],
   "tenders": [
@@ -85,7 +85,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-09-01T09:29:14.769Z",
+      "lastSeenAt": "2026-09-02T08:51:29.529Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
@@ -123,7 +123,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 20
+        "deadlineDays": 19
       }
     },
     {
@@ -148,7 +148,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-25T04:58:49.649Z",
-      "lastSeenAt": "2026-09-01T09:29:14.769Z",
+      "lastSeenAt": "2026-09-02T08:51:29.529Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2071179-nakup-medialniho-prostoru-pro-kampan-na-podporu-digitalnich-sluzeb-dia",
@@ -186,7 +186,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 20
+        "deadlineDays": 19
       }
     },
     {
@@ -249,60 +249,6 @@
       }
     },
     {
-      "id": "poptavej:VZ552951",
-      "source": "poptavej",
-      "sourceId": "VZ552951",
-      "url": "https://www.poptavej.cz/verejna-zakazka/VZ552951/poskytovani-sluzeb-v-oblasti-public-relations",
-      "title": "Poskytování služeb v oblasti Public Relations",
-      "buyer": "Zadavatel z Poptávej.cz",
-      "summary": "Předmět plnění: - poskytování služeb v oblasti Public Relations - cílem je zajistit soustavnou, odbornou, věcnou a důvěryhodnou komunikaci zadavatele vůči veřejnosti, médiím, zaměstnancům, zřizovateli a dalším stakeholderům - výkon role tiskového mluvčího a operativní mediální servis, včetně osobního vystupování na kameru zpravodajských médií po předchozím schválení zadavatelem - strategické public relations, medializace činnosti TSML, návrh témat a dlouhodobé budování reputace - tvorba, editace a distribuce tiskových zpráv, stanovisek, odpovědí médiím, článků, podkladů pro radniční a obdobná média a dalších textových výstupů - komunikace k cílovým skupinám a stakeholderům, včetně koordinace komunikace se zřizovatelem - správa sociálních sítí zadavatele, tvorba redakčního plánu, příspěvků a základního foto, video a grafického obsahu - příprava a aktualizace PR obsahu webu zadavatele - monitoring médií a sociálních sítí, vyhodnocování dopadu komunikace, včasná identifikace reputačních rizik a reporting - krizová komunikace, pohotovost pro mimořádné situace a příprava podkladů pro vedení zadavatele - organizace tiskových konferencí, briefingů a dalších mediálních akcí podle pokynů zadavatele - podpora interní komunikace a metodická příprava zaměstnanců a vedoucích pracovníků pro kontakt s médii Hodnotící kritéria: - kvalita lokální komunikační strategie pro TSM a město - 25% - praktická znalost mediálního a komunikačního prostředí - 20% - nabídková cena - měsíční paušál bez DPH - 20% - rozsah služeb, měřitelné výstupy, reporting a lokální dopad - 15% - osobní prezentace a modelová lokální mediální situace - 10% Lokalita: - Liberecký kraj Termín: - po nabytí účinnosti smlouvy po dobu 12 měsíců",
-      "country": "CZ",
-      "region": "Liberecký kraj",
-      "publishedAt": "2026-08-18T10:00:00.000Z",
-      "deadline": "2026-08-31T10:00:00.000Z",
-      "value": {
-        "amount": 1440000,
-        "currency": "CZK"
-      },
-      "cpv": [],
-      "procedureType": "Zakázka na služby",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-08-26T05:00:19.663Z",
-      "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ552951/poskytovani-sluzeb-v-oblasti-public-relations",
-      "originStatus": "unresolved",
-      "originConfidence": 21,
-      "fingerprint": "f8b2410f3481ccec139e",
-      "relevance": {
-        "score": 77,
-        "level": "strong",
-        "reasons": [
-          "Tvorba obsahu: video, redakční",
-          "PR & komunikace: public relations, krizová komunikace",
-          "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [
-          "velmi krátká lhůta"
-        ],
-        "categories": [
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 50
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 46
-          }
-        ],
-        "deadlineDays": 0
-      }
-    },
-    {
       "id": "ted:583447-2026",
       "source": "ted",
       "sourceId": "583447-2026",
@@ -329,7 +275,7 @@
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": null,
+      "originConfidence": 0,
       "fingerprint": "bb0b87dbb1132ddb7556",
       "relevance": {
         "score": 67,
@@ -436,7 +382,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-01T09:29:14.769Z",
+      "lastSeenAt": "2026-09-02T08:51:29.529Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -484,7 +430,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-09T14:42:44.439Z",
-      "lastSeenAt": "2026-09-01T09:29:14.769Z",
+      "lastSeenAt": "2026-09-02T08:51:29.529Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -515,7 +461,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 1
+        "deadlineDays": 0
       }
     },
     {
@@ -598,7 +544,7 @@
       "procedureType": "Veřejná zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-28T16:43:36.234Z",
-      "lastSeenAt": "2026-09-01T09:29:14.769Z",
+      "lastSeenAt": "2026-09-02T08:51:29.529Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2076681-strategicke-a-vykonove-marketingove-sluzby",
@@ -631,7 +577,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 15
+        "deadlineDays": 14
       }
     },
     {
@@ -696,7 +642,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -10
+        "deadlineDays": -11
       }
     },
     {
@@ -716,7 +662,7 @@
       "procedureType": "Veřejná zakázka",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-28T16:43:36.234Z",
-      "lastSeenAt": "2026-09-01T09:29:14.769Z",
+      "lastSeenAt": "2026-09-02T08:51:29.529Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ658880/strategicke-a-vykonove-marketingove-sluzby",
@@ -748,7 +694,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 45
+        "deadlineDays": 44
       }
     }
   ]
