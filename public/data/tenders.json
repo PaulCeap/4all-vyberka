@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-03T09:00:44.457Z",
+  "generatedAt": "2026-09-04T08:54:34.506Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -17,27 +17,27 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 110
+      "count": 125
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 66
+      "count": 74
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 59
+      "count": 60
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 442
+      "count": 438
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 101
+      "count": 100
     },
     {
       "id": "media-signals",
@@ -53,13 +53,13 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 1
+      "resolved": 0
     },
     {
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 1
+      "resolved": 2
     }
   ],
   "tenders": [
@@ -85,7 +85,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-09-03T09:00:44.457Z",
+      "lastSeenAt": "2026-09-04T08:54:34.506Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
@@ -123,7 +123,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 18
+        "deadlineDays": 17
       }
     },
     {
@@ -148,7 +148,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-25T04:58:49.649Z",
-      "lastSeenAt": "2026-09-03T09:00:44.457Z",
+      "lastSeenAt": "2026-09-04T08:54:34.506Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2071179-nakup-medialniho-prostoru-pro-kampan-na-podporu-digitalnich-sluzeb-dia",
@@ -186,7 +186,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 18
+        "deadlineDays": 17
       }
     },
     {
@@ -382,7 +382,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-03T09:00:44.457Z",
+      "lastSeenAt": "2026-09-04T08:54:34.506Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -488,7 +488,7 @@
       "procedureType": "Veřejná zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-28T16:43:36.234Z",
-      "lastSeenAt": "2026-09-03T09:00:44.457Z",
+      "lastSeenAt": "2026-09-04T08:54:34.506Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2076681-strategicke-a-vykonove-marketingove-sluzby",
@@ -521,7 +521,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 13
+        "deadlineDays": 12
       }
     },
     {
@@ -586,7 +586,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -12
+        "deadlineDays": -13
       }
     },
     {
@@ -606,7 +606,7 @@
       "procedureType": "Veřejná zakázka",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-28T16:43:36.234Z",
-      "lastSeenAt": "2026-09-03T09:00:44.457Z",
+      "lastSeenAt": "2026-09-04T08:54:34.506Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ658880/strategicke-a-vykonove-marketingove-sluzby",
@@ -638,7 +638,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 43
+        "deadlineDays": 42
       }
     }
   ]
