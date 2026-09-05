@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-04T08:54:34.506Z",
+  "generatedAt": "2026-09-05T08:25:06.189Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 10,
+    "total": 9,
     "newThisRun": 0,
     "strong": 3,
-    "closingSoon": 5,
+    "closingSoon": 4,
     "unresolvedOrigin": 2
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 125
+      "count": 499
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 74
+      "count": 56
     },
     {
       "id": "nen",
@@ -32,12 +32,12 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 438
+      "count": 370
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 100
+      "count": 102
     },
     {
       "id": "media-signals",
@@ -53,7 +53,7 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 0
+      "resolved": 1
     },
     {
       "id": "poptavej",
@@ -85,7 +85,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-09-04T08:54:34.506Z",
+      "lastSeenAt": "2026-09-05T08:25:06.189Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
@@ -123,7 +123,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 17
+        "deadlineDays": 16
       }
     },
     {
@@ -148,7 +148,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-25T04:58:49.649Z",
-      "lastSeenAt": "2026-09-04T08:54:34.506Z",
+      "lastSeenAt": "2026-09-05T08:25:06.189Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2071179-nakup-medialniho-prostoru-pro-kampan-na-podporu-digitalnich-sluzeb-dia",
@@ -186,7 +186,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 17
+        "deadlineDays": 16
       }
     },
     {
@@ -382,7 +382,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-04T08:54:34.506Z",
+      "lastSeenAt": "2026-09-05T08:25:06.189Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -409,66 +409,6 @@
       }
     },
     {
-      "id": "nen:N006/26/V00021850",
-      "source": "nen",
-      "sourceId": "N006/26/V00021850",
-      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00021850",
-      "title": "Zajištění informovanosti veřejnosti prostřednictvím tištěných, elektronických a outdoorových médií",
-      "buyer": "Dům zahraniční spolupráce",
-      "summary": "Předmětem veřejné zakázky je uzavření rámcové dohody s jedním dodavatelem, přičemž předmětem rámcové dohody je zajištění informačních a propagačních kampaní programů administrovaných zadavatelem, a to jak v České republice, tak v zahraničí, včetně zajištění nákupu mediálního prostoru ve všech relevantních typech médií.",
-      "country": "CZ",
-      "region": "Česká republika",
-      "publishedAt": "2026-07-13T16:30:21.000Z",
-      "deadline": "2026-09-03T09:00:00.000Z",
-      "value": {
-        "amount": 90000000,
-        "currency": "CZK"
-      },
-      "cpv": [
-        "79341200"
-      ],
-      "procedureType": "Sluzby / Otevřené řízení",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-13T21:34:03.300Z",
-      "lastSeenAt": "2026-08-21T04:58:21.740Z",
-      "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": 0,
-      "fingerprint": "f061a0c3390b19d7b49a",
-      "relevance": {
-        "score": 54,
-        "level": "watch",
-        "reasons": [
-          "Tvorba obsahu: odpovídající CPV",
-          "Marketing & eventy: mediálního prostoru",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [
-          "velmi krátká lhůta"
-        ],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 41
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 24
-          },
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 24
-          }
-        ],
-        "deadlineDays": 0
-      }
-    },
-    {
       "id": "poptavky:2076681",
       "source": "poptavky",
       "sourceId": "2076681",
@@ -488,7 +428,7 @@
       "procedureType": "Veřejná zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-28T16:43:36.234Z",
-      "lastSeenAt": "2026-09-04T08:54:34.506Z",
+      "lastSeenAt": "2026-09-05T08:25:06.189Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2076681-strategicke-a-vykonove-marketingove-sluzby",
@@ -521,7 +461,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 12
+        "deadlineDays": 11
       }
     },
     {
@@ -586,7 +526,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -13
+        "deadlineDays": -14
       }
     },
     {
@@ -606,7 +546,7 @@
       "procedureType": "Veřejná zakázka",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-28T16:43:36.234Z",
-      "lastSeenAt": "2026-09-04T08:54:34.506Z",
+      "lastSeenAt": "2026-09-05T08:25:06.189Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ658880/strategicke-a-vykonove-marketingove-sluzby",
@@ -638,7 +578,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 42
+        "deadlineDays": 41
       }
     }
   ]
