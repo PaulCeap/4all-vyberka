@@ -1,38 +1,38 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-12T08:41:51.267Z",
+  "generatedAt": "2026-09-13T09:36:43.727Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 9,
+    "total": 8,
     "newThisRun": 0,
     "strong": 3,
-    "closingSoon": 5,
-    "unresolvedOrigin": 2
+    "closingSoon": 4,
+    "unresolvedOrigin": 1
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 430
+      "count": 216
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 40
+      "count": 0
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 60
+      "count": 59
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 457
+      "count": 393
     },
     {
       "id": "ezak-watchlist",
@@ -59,7 +59,7 @@
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 2
+      "resolved": 1
     }
   ],
   "tenders": [
@@ -85,7 +85,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-09-12T08:41:51.267Z",
+      "lastSeenAt": "2026-09-13T09:36:43.727Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
@@ -123,7 +123,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       }
     },
     {
@@ -148,7 +148,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-25T04:58:49.649Z",
-      "lastSeenAt": "2026-09-12T08:41:51.267Z",
+      "lastSeenAt": "2026-09-13T09:36:43.727Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2071179-nakup-medialniho-prostoru-pro-kampan-na-podporu-digitalnich-sluzeb-dia",
@@ -186,7 +186,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       }
     },
     {
@@ -382,7 +382,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-12T08:41:51.267Z",
+      "lastSeenAt": "2026-09-13T09:36:43.727Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -470,59 +470,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -21
-      }
-    },
-    {
-      "id": "poptavky:2076681",
-      "source": "poptavky",
-      "sourceId": "2076681",
-      "url": "https://www.poptavky.cz/poptavka/2076681-strategicke-a-vykonove-marketingove-sluzby",
-      "title": "Strategické a výkonové marketingové služby",
-      "buyer": "Zadavatel z Poptávky.cz",
-      "summary": "Podrobný popis: - předmětem veřejné zakázky je návrh komunikační strategie pro osobní vozidla značky DR Automobiles s ohledem na komunikační cíle - veškeré informace naleznete v příloze Lokalita: - Hustopeče Termín pro podání nabídek: - 15. 09. 2026 13:00",
-      "country": "CZ",
-      "region": "Hustopeče",
-      "publishedAt": "2026-08-28T08:40:00.000Z",
-      "deadline": "2026-09-15T11:00:00.000Z",
-      "value": {
-        "amount": 600000,
-        "currency": "CZK"
-      },
-      "cpv": [],
-      "procedureType": "Veřejná zakázka na služby",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-28T16:43:36.234Z",
-      "lastSeenAt": "2026-09-06T08:43:55.357Z",
-      "status": "open",
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2076681-strategicke-a-vykonove-marketingove-sluzby",
-      "originStatus": "unresolved",
-      "originConfidence": 10,
-      "fingerprint": "ea1682470ec40459115b",
-      "relevance": {
-        "score": 43,
-        "level": "watch",
-        "reasons": [
-          "Marketing & eventy: marketingové služby",
-          "PR & komunikace: komunikační strategie",
-          "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 18
-          },
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 17
-          }
-        ],
-        "deadlineDays": 4
+        "deadlineDays": -22
       }
     },
     {
@@ -571,7 +519,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 34
+        "deadlineDays": 33
       }
     }
   ]
