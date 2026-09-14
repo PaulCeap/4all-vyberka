@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T09:36:43.727Z",
+  "generatedAt": "2026-09-14T09:58:46.385Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -10,34 +10,34 @@
     "total": 8,
     "newThisRun": 0,
     "strong": 3,
-    "closingSoon": 4,
+    "closingSoon": 6,
     "unresolvedOrigin": 1
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 216
+      "count": 94
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 0
+      "count": 33
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 59
+      "count": 41
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 393
+      "count": 463
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 95
+      "count": 82
     },
     {
       "id": "media-signals",
@@ -85,7 +85,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-09-13T09:36:43.727Z",
+      "lastSeenAt": "2026-09-14T09:58:46.385Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
@@ -123,7 +123,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 8
+        "deadlineDays": 7
       }
     },
     {
@@ -155,10 +155,6 @@
       "originStatus": "resolved",
       "originConfidence": 94,
       "fingerprint": "08fa87ebca3962280111",
-      "duplicateSources": [
-        "zakazky-gov",
-        "nen"
-      ],
       "relevance": {
         "score": 80,
         "level": "strong",
@@ -186,7 +182,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 8
+        "deadlineDays": 7
       }
     },
     {
@@ -382,7 +378,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-13T09:36:43.727Z",
+      "lastSeenAt": "2026-09-14T09:58:46.385Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -470,7 +466,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -22
+        "deadlineDays": -23
       }
     },
     {
@@ -519,7 +515,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 33
+        "deadlineDays": 32
       }
     }
   ]
