@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T09:58:46.385Z",
+  "generatedAt": "2026-09-15T09:29:32.198Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -17,27 +17,27 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 94
+      "count": 192
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 33
+      "count": 89
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 41
+      "count": 58
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 463
+      "count": 529
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 82
+      "count": 79
     },
     {
       "id": "media-signals",
@@ -53,13 +53,13 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 0
+      "resolved": 1
     },
     {
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 1
+      "resolved": 2
     }
   ],
   "tenders": [
@@ -85,7 +85,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-09-14T09:58:46.385Z",
+      "lastSeenAt": "2026-09-15T09:29:32.198Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
@@ -97,13 +97,12 @@
         "nen"
       ],
       "relevance": {
-        "score": 82,
+        "score": 78,
         "level": "strong",
         "reasons": [
           "Tvorba obsahu: odpovídající CPV",
           "Marketing & eventy: mediální prostor, mediálního prostoru",
-          "klíčové téma je přímo v názvu",
-          "zbývá alespoň týden na reakci"
+          "klíčové téma je přímo v názvu"
         ],
         "negativeSignals": [],
         "categories": [
@@ -123,66 +122,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 7
-      }
-    },
-    {
-      "id": "zakazky-gov:RVZ2600118923",
-      "source": "zakazky-gov",
-      "sourceId": "RVZ2600118923",
-      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600118923",
-      "title": "Nákup mediálního prostoru pro kampaň na podporu digitálních služeb DIA",
-      "buyer": "Digitální a informační agentura",
-      "summary": "Předmětem veřejné zakázky je nákup mediálního prostoru pro realizaci komunikační kampaně zaměřené primárně na představení výhod stávajících vybraných produktů a služeb zadavatele a motivování občanů k jejich využívání (například Portál občana, Datové schránky, Czech POINT, REZA, Identita občana/NIA, Mobilní klíč eGovernmentu). Mediální prostor je blíže vymezen ve specifikaci, která je přílohou č. 3zadávací dokumentace a která stanoví podrobnosti předmětu plnění, včetně předběžného termínů plnění.",
-      "country": "CZ",
-      "region": "Česko",
-      "publishedAt": "2026-08-24T07:32:00.281Z",
-      "deadline": "2026-09-21T08:00:00.000Z",
-      "value": {
-        "amount": 2000000,
-        "currency": "CZK"
-      },
-      "cpv": [
-        "79340000"
-      ],
-      "procedureType": "VEREJNA ZAKAZKA",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-25T04:58:49.649Z",
-      "lastSeenAt": "2026-09-13T09:36:43.727Z",
-      "status": "open",
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2071179-nakup-medialniho-prostoru-pro-kampan-na-podporu-digitalnich-sluzeb-dia",
-      "originStatus": "resolved",
-      "originConfidence": 94,
-      "fingerprint": "08fa87ebca3962280111",
-      "relevance": {
-        "score": 80,
-        "level": "strong",
-        "reasons": [
-          "Tvorba obsahu: odpovídající CPV",
-          "Marketing & eventy: mediální prostor, mediálního prostoru",
-          "klíčové téma je přímo v názvu",
-          "zbývá alespoň týden na reakci"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 50
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 24
-          },
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 17
-          }
-        ],
-        "deadlineDays": 7
+        "deadlineDays": 6
       }
     },
     {
@@ -242,6 +182,68 @@
           }
         ],
         "deadlineDays": null
+      }
+    },
+    {
+      "id": "zakazky-gov:RVZ2600118923",
+      "source": "zakazky-gov",
+      "sourceId": "RVZ2600118923",
+      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600118923",
+      "title": "Nákup mediálního prostoru pro kampaň na podporu digitálních služeb DIA",
+      "buyer": "Digitální a informační agentura",
+      "summary": "Předmětem veřejné zakázky je nákup mediálního prostoru pro realizaci komunikační kampaně zaměřené primárně na představení výhod stávajících vybraných produktů a služeb zadavatele a motivování občanů k jejich využívání (například Portál občana, Datové schránky, Czech POINT, REZA, Identita občana/NIA, Mobilní klíč eGovernmentu). Mediální prostor je blíže vymezen ve specifikaci, která je přílohou č. 3zadávací dokumentace a která stanoví podrobnosti předmětu plnění, včetně předběžného termínů plnění.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": "2026-08-24T07:32:00.281Z",
+      "deadline": "2026-09-21T08:00:00.000Z",
+      "value": {
+        "amount": 2000000,
+        "currency": "CZK"
+      },
+      "cpv": [
+        "79340000"
+      ],
+      "procedureType": "VEREJNA ZAKAZKA",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-25T04:58:49.649Z",
+      "lastSeenAt": "2026-09-15T09:29:32.198Z",
+      "status": "open",
+      "discoverySource": "poptavky",
+      "discoveryUrl": "https://www.poptavky.cz/poptavka/2071179-nakup-medialniho-prostoru-pro-kampan-na-podporu-digitalnich-sluzeb-dia",
+      "originStatus": "resolved",
+      "originConfidence": 94,
+      "fingerprint": "08fa87ebca3962280111",
+      "duplicateSources": [
+        "zakazky-gov",
+        "nen"
+      ],
+      "relevance": {
+        "score": 76,
+        "level": "strong",
+        "reasons": [
+          "Tvorba obsahu: odpovídající CPV",
+          "Marketing & eventy: mediální prostor, mediálního prostoru",
+          "klíčové téma je přímo v názvu"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 50
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 24
+          },
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 17
+          }
+        ],
+        "deadlineDays": 6
       }
     },
     {
@@ -378,7 +380,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-14T09:58:46.385Z",
+      "lastSeenAt": "2026-09-15T09:29:32.198Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -466,7 +468,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -23
+        "deadlineDays": -24
       }
     },
     {
@@ -515,7 +517,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 32
+        "deadlineDays": 31
       }
     }
   ]
