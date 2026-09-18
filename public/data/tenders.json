@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-17T09:31:26.236Z",
+  "generatedAt": "2026-09-18T09:04:06.638Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -9,7 +9,7 @@
   "stats": {
     "total": 8,
     "newThisRun": 0,
-    "strong": 3,
+    "strong": 1,
     "closingSoon": 6,
     "unresolvedOrigin": 1
   },
@@ -17,27 +17,27 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 125
+      "count": 152
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 65
+      "count": 86
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 59
+      "count": 55
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 500
+      "count": 494
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 74
+      "count": 76
     },
     {
       "id": "media-signals",
@@ -59,72 +59,10 @@
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 2
+      "resolved": 0
     }
   ],
   "tenders": [
-    {
-      "id": "zakazky-gov:RVZ2600118024",
-      "source": "zakazky-gov",
-      "sourceId": "RVZ2600118024",
-      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600118024",
-      "title": "Mediální prostor pro kontinuální kampaň Podívejte se Kde fondy EU pomáhají",
-      "buyer": "Ministerstvo pro místní rozvoj",
-      "summary": "Předmětem veřejné zakázky je plán, realizace a nákup mediálního prostoru pro kampaň „Podívejte se Kde fondy EU pomáhají“ dle technické specifikace zadavatele (bod 2.2. zadávací dokumentace a v souladu s Přílohou č. 1 zadávací dokumentace – Cenový list) a to v termínu, který začne nejdéle do 10 týdnů od zveřejnění smlouvy v registru smluv.",
-      "country": "CZ",
-      "region": "Česko",
-      "publishedAt": "2026-08-19T07:51:56.480Z",
-      "deadline": "2026-09-21T08:00:00.000Z",
-      "value": {
-        "amount": 10000000,
-        "currency": "CZK"
-      },
-      "cpv": [
-        "79341400"
-      ],
-      "procedureType": "VEREJNA ZAKAZKA",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-09-17T09:31:26.236Z",
-      "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
-      "originStatus": "resolved",
-      "originConfidence": 92,
-      "fingerprint": "e763ae482fb0e9f974b1",
-      "duplicateSources": [
-        "zakazky-gov",
-        "nen"
-      ],
-      "relevance": {
-        "score": 78,
-        "level": "strong",
-        "reasons": [
-          "Tvorba obsahu: odpovídající CPV",
-          "Marketing & eventy: mediální prostor, mediálního prostoru",
-          "klíčové téma je přímo v názvu"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 50
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 24
-          },
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 24
-          }
-        ],
-        "deadlineDays": 4
-      }
-    },
     {
       "id": "ted:573237-2026",
       "source": "ted",
@@ -185,6 +123,70 @@
       }
     },
     {
+      "id": "zakazky-gov:RVZ2600118024",
+      "source": "zakazky-gov",
+      "sourceId": "RVZ2600118024",
+      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600118024",
+      "title": "Mediální prostor pro kontinuální kampaň Podívejte se Kde fondy EU pomáhají",
+      "buyer": "Ministerstvo pro místní rozvoj",
+      "summary": "Předmětem veřejné zakázky je plán, realizace a nákup mediálního prostoru pro kampaň „Podívejte se Kde fondy EU pomáhají“ dle technické specifikace zadavatele (bod 2.2. zadávací dokumentace a v souladu s Přílohou č. 1 zadávací dokumentace – Cenový list) a to v termínu, který začne nejdéle do 10 týdnů od zveřejnění smlouvy v registru smluv.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": "2026-08-19T07:51:56.480Z",
+      "deadline": "2026-09-21T08:00:00.000Z",
+      "value": {
+        "amount": 10000000,
+        "currency": "CZK"
+      },
+      "cpv": [
+        "79341400"
+      ],
+      "procedureType": "VEREJNA ZAKAZKA",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-08-20T04:58:29.167Z",
+      "lastSeenAt": "2026-09-18T09:04:06.638Z",
+      "status": "open",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
+      "originStatus": "resolved",
+      "originConfidence": 92,
+      "fingerprint": "e763ae482fb0e9f974b1",
+      "duplicateSources": [
+        "zakazky-gov",
+        "nen"
+      ],
+      "relevance": {
+        "score": 70,
+        "level": "good",
+        "reasons": [
+          "Tvorba obsahu: odpovídající CPV",
+          "Marketing & eventy: mediální prostor, mediálního prostoru",
+          "klíčové téma je přímo v názvu"
+        ],
+        "negativeSignals": [
+          "velmi krátká lhůta"
+        ],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 50
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 24
+          },
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 24
+          }
+        ],
+        "deadlineDays": 3
+      }
+    },
+    {
       "id": "zakazky-gov:RVZ2600118923",
       "source": "zakazky-gov",
       "sourceId": "RVZ2600118923",
@@ -206,7 +208,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-25T04:58:49.649Z",
-      "lastSeenAt": "2026-09-17T09:31:26.236Z",
+      "lastSeenAt": "2026-09-18T09:04:06.638Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2071179-nakup-medialniho-prostoru-pro-kampan-na-podporu-digitalnich-sluzeb-dia",
@@ -218,14 +220,16 @@
         "nen"
       ],
       "relevance": {
-        "score": 76,
-        "level": "strong",
+        "score": 68,
+        "level": "good",
         "reasons": [
           "Tvorba obsahu: odpovídající CPV",
           "Marketing & eventy: mediální prostor, mediálního prostoru",
           "klíčové téma je přímo v názvu"
         ],
-        "negativeSignals": [],
+        "negativeSignals": [
+          "velmi krátká lhůta"
+        ],
         "categories": [
           {
             "id": "marketing",
@@ -243,7 +247,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 4
+        "deadlineDays": 3
       }
     },
     {
@@ -380,7 +384,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-17T09:31:26.236Z",
+      "lastSeenAt": "2026-09-18T09:04:06.638Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -468,7 +472,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -26
+        "deadlineDays": -27
       }
     },
     {
@@ -517,7 +521,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 29
+        "deadlineDays": 28
       }
     }
   ]
