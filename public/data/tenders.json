@@ -1,43 +1,43 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T09:04:06.638Z",
+  "generatedAt": "2026-09-19T08:52:03.829Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 8,
-    "newThisRun": 0,
+    "total": 9,
+    "newThisRun": 1,
     "strong": 1,
     "closingSoon": 6,
-    "unresolvedOrigin": 1
+    "unresolvedOrigin": 2
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 152
+      "count": 89
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 86
+      "count": 45
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 55
+      "count": 60
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 494
+      "count": 416
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 76
+      "count": 75
     },
     {
       "id": "media-signals",
@@ -59,7 +59,7 @@
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 0
+      "resolved": 1
     }
   ],
   "tenders": [
@@ -144,7 +144,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-09-18T09:04:06.638Z",
+      "lastSeenAt": "2026-09-19T08:52:03.829Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
@@ -183,7 +183,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 3
+        "deadlineDays": 2
       }
     },
     {
@@ -208,7 +208,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-25T04:58:49.649Z",
-      "lastSeenAt": "2026-09-18T09:04:06.638Z",
+      "lastSeenAt": "2026-09-19T08:52:03.829Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2071179-nakup-medialniho-prostoru-pro-kampan-na-podporu-digitalnich-sluzeb-dia",
@@ -247,7 +247,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 3
+        "deadlineDays": 2
       }
     },
     {
@@ -384,7 +384,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-18T09:04:06.638Z",
+      "lastSeenAt": "2026-09-19T08:52:03.829Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -408,6 +408,55 @@
           }
         ],
         "deadlineDays": null
+      }
+    },
+    {
+      "id": "poptavej:VZ963740",
+      "source": "poptavej",
+      "sourceId": "VZ963740",
+      "url": "https://www.poptavej.cz/verejna-zakazka/VZ963740/pr-agentura",
+      "title": "PR agentura",
+      "buyer": "Zadavatel z Poptávej.cz",
+      "summary": "Předmět plnění: - konzultační, poradenská a realizační činnost v oblasti marketingové komunikace s důrazem na oblast PR - mediální aktivity v otázkách monitoringu mediálního pokrytí - příprava a realizace PR koncepce v rámci mediálních aktivit a mediálního prostoru (on-line/off-line) - vypracování a průběžné předkládání rozpočtů marketingových aktivit zaměřených na segment novinářů, redaktorů, tvorby obsahu - návrh systému průběžné práce s médii - návrh dalších doporučených PR aktivit a témat - tvorba obsahu, a to zejména v textové formě - návrh systému krizové komunikace včetně doporučených postupů pro různé komunikační scénáře - konzultační, poradenská a realizační činnost v oblasti legislativy, budování vztahu s veřejnými institucemi, médii, stakeholders - realizace tiskových konferencí - další specifikace v příloze Hodnoticí kritéria: - celková nabídková cena K1 - 40% - kvalita vzorového plnění K2 - 40% - zkušenost realizačního týmu K3 - 20% Lokalita: - Praha Termín: - od 1. 1. 2027 do 31. 12. 2027",
+      "country": "CZ",
+      "region": "Praha",
+      "publishedAt": "2026-09-18T10:00:00.000Z",
+      "deadline": "2026-10-09T10:00:00.000Z",
+      "value": null,
+      "cpv": [],
+      "procedureType": "Zakázka na služby",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-09-19T08:52:03.829Z",
+      "lastSeenAt": "2026-09-19T08:52:03.829Z",
+      "status": "open",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ963740/pr-agentura",
+      "originStatus": "unresolved",
+      "originConfidence": 15,
+      "fingerprint": "fc7eda885177bf9f4980",
+      "relevance": {
+        "score": 46,
+        "level": "watch",
+        "reasons": [
+          "Tvorba obsahu: tvorba obsahu",
+          "Marketing & eventy: marketingových aktivit, mediálního prostoru",
+          "jde o zakázku na služby",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 29
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 18
+          }
+        ],
+        "deadlineDays": 21
       }
     },
     {
@@ -472,7 +521,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -27
+        "deadlineDays": -28
       }
     },
     {
@@ -521,7 +570,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 28
+        "deadlineDays": 27
       }
     }
   ]
