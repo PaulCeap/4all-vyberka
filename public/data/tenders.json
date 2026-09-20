@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-19T08:52:03.829Z",
+  "generatedAt": "2026-09-20T09:21:04.317Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -8,7 +8,7 @@
   },
   "stats": {
     "total": 9,
-    "newThisRun": 1,
+    "newThisRun": 0,
     "strong": 1,
     "closingSoon": 6,
     "unresolvedOrigin": 2
@@ -17,12 +17,12 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 89
+      "count": 0
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 45
+      "count": 0
     },
     {
       "id": "nen",
@@ -32,7 +32,7 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 416
+      "count": 342
     },
     {
       "id": "ezak-watchlist",
@@ -59,7 +59,7 @@
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 1
+      "resolved": 0
     }
   ],
   "tenders": [
@@ -144,7 +144,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-09-19T08:52:03.829Z",
+      "lastSeenAt": "2026-09-20T09:21:04.317Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
@@ -183,7 +183,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 2
+        "deadlineDays": 1
       }
     },
     {
@@ -208,7 +208,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-08-25T04:58:49.649Z",
-      "lastSeenAt": "2026-09-19T08:52:03.829Z",
+      "lastSeenAt": "2026-09-20T09:21:04.317Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2071179-nakup-medialniho-prostoru-pro-kampan-na-podporu-digitalnich-sluzeb-dia",
@@ -247,7 +247,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 2
+        "deadlineDays": 1
       }
     },
     {
@@ -384,7 +384,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-19T08:52:03.829Z",
+      "lastSeenAt": "2026-09-20T09:21:04.317Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -427,13 +427,16 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-19T08:52:03.829Z",
-      "lastSeenAt": "2026-09-19T08:52:03.829Z",
+      "lastSeenAt": "2026-09-20T09:21:04.317Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ963740/pr-agentura",
       "originStatus": "unresolved",
       "originConfidence": 15,
       "fingerprint": "fc7eda885177bf9f4980",
+      "duplicateSources": [
+        "poptavej"
+      ],
       "relevance": {
         "score": 46,
         "level": "watch",
@@ -456,7 +459,7 @@
             "score": 18
           }
         ],
-        "deadlineDays": 21
+        "deadlineDays": 20
       }
     },
     {
@@ -521,7 +524,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -28
+        "deadlineDays": -29
       }
     },
     {
@@ -570,7 +573,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 27
+        "deadlineDays": 26
       }
     }
   ]
