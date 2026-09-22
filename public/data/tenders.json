@@ -1,44 +1,43 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T10:03:31.810Z",
+  "generatedAt": "2026-09-22T09:22:15.782Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 9,
-    "newThisRun": 0,
+    "total": 8,
+    "newThisRun": 1,
     "strong": 1,
-    "closingSoon": 6,
+    "closingSoon": 5,
     "unresolvedOrigin": 2
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 53
+      "count": 149
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 29
+      "count": 66
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 59
+      "count": 57
     },
     {
       "id": "ted",
-      "ok": false,
-      "count": 0,
-      "error": "TED odpověděl 429."
+      "ok": true,
+      "count": 526
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 72
+      "count": 70
     },
     {
       "id": "media-signals",
@@ -60,7 +59,7 @@
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 0
+      "resolved": 2
     }
   ],
   "tenders": [
@@ -124,131 +123,61 @@
       }
     },
     {
-      "id": "zakazky-gov:RVZ2600118024",
-      "source": "zakazky-gov",
-      "sourceId": "RVZ2600118024",
-      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600118024",
-      "title": "Mediální prostor pro kontinuální kampaň Podívejte se Kde fondy EU pomáhají",
-      "buyer": "Ministerstvo pro místní rozvoj",
-      "summary": "Předmětem veřejné zakázky je plán, realizace a nákup mediálního prostoru pro kampaň „Podívejte se Kde fondy EU pomáhají“ dle technické specifikace zadavatele (bod 2.2. zadávací dokumentace a v souladu s Přílohou č. 1 zadávací dokumentace – Cenový list) a to v termínu, který začne nejdéle do 10 týdnů od zveřejnění smlouvy v registru smluv.",
+      "id": "ted:646731-2026",
+      "source": "ted",
+      "sourceId": "646731-2026",
+      "url": "https://ted.europa.eu/cs/notice/-/detail/646731-2026",
+      "title": "DNS NA MARKETINGOVÉ SLUŽBY",
+      "buyer": "LOM PRAHA s.p.",
+      "summary": "Předmětem zadávacího řízení je zavedení DNS na dodávku a realizaci marketingových, propagačních a prezentačních materiálů a služeb dle potřeb zadavatele, přičemž zadavatel v souladu s § 138 odst. 1 ZZVZ rozděluje DNS do čtyř (4) kategorií podle druhu plnění veřejných zakázek zadávaných v rámci DNS. Předmětem veřejných zakázek jsou zejména dodávky reklamních propisek, dárkových sad, diářů a zápisníků, termohrnků, deštníků, svíček, aroma difuzérů, textilu a reklamního ošacení, modelů letadel, reklamních a prezentačních předmětů, dárkových předmětů pro obchodní partnery a dalších obdobných propagačních předmětů. Předmětem veřejných zakázek jsou zejména grafické návrhy, DTP práce, tvorba vizuálních identit, zpracování marketingových podkladů, fotografické služby, produktová fotografie, reportážní fotografie, natáčení videí, střih videí, animace, postprodukční práce, tvorba audiovizuálního obsahu pro marketingové a prezentační účely. Předmětem veřejných zakázek jsou zejména návrhy výstavních expozic, výroba výstavních stánků, montáž a demontáž expozic, zajištění vybavení stánků, logistika a doprava expozic, technické zabezpečení prezentací, zajištění účasti na veletrzích a výstavách, související marketingová a organizační podpora. Předmětem veřejných zakázek jsou zejména dodávky letáků, brožur, katalogů, PF karet, samolepek, bannerů, roll-upů, plakátů, reklamních cedulí, informačních tabulí, polepů vozidel, velkoformátového tisku, ostatních tiskových a prezentační materiálů.",
       "country": "CZ",
       "region": "Česko",
-      "publishedAt": "2026-08-19T07:51:56.480Z",
-      "deadline": "2026-09-21T08:00:00.000Z",
+      "publishedAt": null,
+      "deadline": null,
       "value": {
-        "amount": 10000000,
+        "amount": 50000000,
         "currency": "CZK"
       },
       "cpv": [
-        "79341400"
+        "22462000",
+        "79810000",
+        "39294100",
+        "79822500",
+        "79956000",
+        "79800000"
       ],
-      "procedureType": "VEREJNA ZAKAZKA",
+      "procedureType": "supplies, services, supplies, services, services, services",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-20T04:58:29.167Z",
-      "lastSeenAt": "2026-09-21T10:03:31.810Z",
+      "firstSeenAt": "2026-09-22T09:22:15.782Z",
+      "lastSeenAt": "2026-09-22T09:22:15.782Z",
       "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ946775/medialni-prostor-pro-kontinualni-kampan",
-      "originStatus": "resolved",
-      "originConfidence": 92,
-      "fingerprint": "e763ae482fb0e9f974b1",
-      "duplicateSources": [
-        "zakazky-gov",
-        "nen"
-      ],
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "fingerprint": "1e6603be0d57f34ad045",
       "relevance": {
-        "score": 70,
+        "score": 74,
         "level": "good",
         "reasons": [
-          "Tvorba obsahu: odpovídající CPV",
-          "Marketing & eventy: mediální prostor, mediálního prostoru",
+          "Marketing & eventy: marketingové služby",
+          "Tvorba obsahu: fotograf, audiovizuální",
           "klíčové téma je přímo v názvu"
         ],
-        "negativeSignals": [
-          "velmi krátká lhůta"
-        ],
+        "negativeSignals": [],
         "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 50
-          },
           {
             "id": "content",
             "label": "Tvorba obsahu",
-            "score": 24
+            "score": 44
           },
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 24
-          }
-        ],
-        "deadlineDays": 0
-      }
-    },
-    {
-      "id": "zakazky-gov:RVZ2600118923",
-      "source": "zakazky-gov",
-      "sourceId": "RVZ2600118923",
-      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600118923",
-      "title": "Nákup mediálního prostoru pro kampaň na podporu digitálních služeb DIA",
-      "buyer": "Digitální a informační agentura",
-      "summary": "Předmětem veřejné zakázky je nákup mediálního prostoru pro realizaci komunikační kampaně zaměřené primárně na představení výhod stávajících vybraných produktů a služeb zadavatele a motivování občanů k jejich využívání (například Portál občana, Datové schránky, Czech POINT, REZA, Identita občana/NIA, Mobilní klíč eGovernmentu). Mediální prostor je blíže vymezen ve specifikaci, která je přílohou č. 3zadávací dokumentace a která stanoví podrobnosti předmětu plnění, včetně předběžného termínů plnění.",
-      "country": "CZ",
-      "region": "Česko",
-      "publishedAt": "2026-08-24T07:32:00.281Z",
-      "deadline": "2026-09-21T08:00:00.000Z",
-      "value": {
-        "amount": 2000000,
-        "currency": "CZK"
-      },
-      "cpv": [
-        "79340000"
-      ],
-      "procedureType": "VEREJNA ZAKAZKA",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-25T04:58:49.649Z",
-      "lastSeenAt": "2026-09-21T10:03:31.810Z",
-      "status": "open",
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2071179-nakup-medialniho-prostoru-pro-kampan-na-podporu-digitalnich-sluzeb-dia",
-      "originStatus": "resolved",
-      "originConfidence": 94,
-      "fingerprint": "08fa87ebca3962280111",
-      "duplicateSources": [
-        "zakazky-gov",
-        "nen"
-      ],
-      "relevance": {
-        "score": 68,
-        "level": "good",
-        "reasons": [
-          "Tvorba obsahu: odpovídající CPV",
-          "Marketing & eventy: mediální prostor, mediálního prostoru",
-          "klíčové téma je přímo v názvu"
-        ],
-        "negativeSignals": [
-          "velmi krátká lhůta"
-        ],
-        "categories": [
           {
             "id": "marketing",
             "label": "Marketing & eventy",
-            "score": 50
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 24
-          },
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 17
+            "score": 41
           }
         ],
-        "deadlineDays": 0
+        "deadlineDays": null
       }
     },
     {
@@ -385,7 +314,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-21T10:03:31.810Z",
+      "lastSeenAt": "2026-09-22T09:22:15.782Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -428,7 +357,7 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-19T08:52:03.829Z",
-      "lastSeenAt": "2026-09-21T10:03:31.810Z",
+      "lastSeenAt": "2026-09-22T09:22:15.782Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ963740/pr-agentura",
@@ -550,7 +479,7 @@
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ658880/strategicke-a-vykonove-marketingove-sluzby",
       "originStatus": "unresolved",
-      "originConfidence": 10,
+      "originConfidence": 33,
       "fingerprint": "6fb363bc0512b8f63408",
       "relevance": {
         "score": 42,
