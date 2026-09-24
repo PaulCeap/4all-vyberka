@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T09:22:55.404Z",
+  "generatedAt": "2026-09-24T09:23:13.139Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -17,27 +17,27 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 147
+      "count": 155
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 78
+      "count": 79
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 58
+      "count": 60
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 537
+      "count": 532
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 69
+      "count": 64
     },
     {
       "id": "media-signals",
@@ -123,39 +123,43 @@
       }
     },
     {
-      "id": "ted:646731-2026",
-      "source": "ted",
-      "sourceId": "646731-2026",
-      "url": "https://ted.europa.eu/cs/notice/-/detail/646731-2026",
+      "id": "nen:N006/26/V00030271",
+      "source": "nen",
+      "sourceId": "N006/26/V00030271",
+      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00030271",
       "title": "DNS NA MARKETINGOVÉ SLUŽBY",
       "buyer": "LOM PRAHA s.p.",
       "summary": "Předmětem zadávacího řízení je zavedení DNS na dodávku a realizaci marketingových, propagačních a prezentačních materiálů a služeb dle potřeb zadavatele, přičemž zadavatel v souladu s § 138 odst. 1 ZZVZ rozděluje DNS do čtyř (4) kategorií podle druhu plnění veřejných zakázek zadávaných v rámci DNS. Předmětem veřejných zakázek jsou zejména dodávky reklamních propisek, dárkových sad, diářů a zápisníků, termohrnků, deštníků, svíček, aroma difuzérů, textilu a reklamního ošacení, modelů letadel, reklamních a prezentačních předmětů, dárkových předmětů pro obchodní partnery a dalších obdobných propagačních předmětů. Předmětem veřejných zakázek jsou zejména grafické návrhy, DTP práce, tvorba vizuálních identit, zpracování marketingových podkladů, fotografické služby, produktová fotografie, reportážní fotografie, natáčení videí, střih videí, animace, postprodukční práce, tvorba audiovizuálního obsahu pro marketingové a prezentační účely. Předmětem veřejných zakázek jsou zejména návrhy výstavních expozic, výroba výstavních stánků, montáž a demontáž expozic, zajištění vybavení stánků, logistika a doprava expozic, technické zabezpečení prezentací, zajištění účasti na veletrzích a výstavách, související marketingová a organizační podpora. Předmětem veřejných zakázek jsou zejména dodávky letáků, brožur, katalogů, PF karet, samolepek, bannerů, roll-upů, plakátů, reklamních cedulí, informačních tabulí, polepů vozidel, velkoformátového tisku, ostatních tiskových a prezentační materiálů.",
       "country": "CZ",
-      "region": "Česko",
-      "publishedAt": null,
+      "region": "Česká republika",
+      "publishedAt": "2026-09-24T10:57:40.000Z",
       "deadline": null,
       "value": {
-        "amount": 50000000,
+        "amount": 60000000,
         "currency": "CZK"
       },
       "cpv": [
+        "39294100",
         "22462000",
         "79810000",
-        "39294100",
         "79822500",
         "79956000",
         "79800000"
       ],
-      "procedureType": "supplies, services, supplies, services, services, services",
+      "procedureType": "Dodavky / Zavedení DNS",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-22T09:22:15.782Z",
-      "lastSeenAt": "2026-09-23T09:22:55.404Z",
+      "lastSeenAt": "2026-09-24T09:23:13.139Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
       "originConfidence": null,
       "fingerprint": "1e6603be0d57f34ad045",
+      "duplicateSources": [
+        "nen",
+        "ted"
+      ],
       "relevance": {
         "score": 74,
         "level": "good",
@@ -314,7 +318,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-23T09:22:55.404Z",
+      "lastSeenAt": "2026-09-24T09:23:13.139Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -357,7 +361,7 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-19T08:52:03.829Z",
-      "lastSeenAt": "2026-09-23T09:22:55.404Z",
+      "lastSeenAt": "2026-09-24T09:23:13.139Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ963740/pr-agentura",
@@ -389,7 +393,7 @@
             "score": 18
           }
         ],
-        "deadlineDays": 17
+        "deadlineDays": 16
       }
     },
     {
@@ -454,7 +458,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -32
+        "deadlineDays": -33
       }
     },
     {
@@ -503,7 +507,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 23
+        "deadlineDays": 22
       }
     }
   ]
