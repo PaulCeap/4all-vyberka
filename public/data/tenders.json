@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-24T09:23:13.139Z",
+  "generatedAt": "2026-09-25T09:40:57.570Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 8,
-    "newThisRun": 0,
+    "total": 9,
+    "newThisRun": 1,
     "strong": 1,
     "closingSoon": 5,
-    "unresolvedOrigin": 2
+    "unresolvedOrigin": 3
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 155
+      "count": 140
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 79
+      "count": 67
     },
     {
       "id": "nen",
@@ -32,12 +32,12 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 532
+      "count": 538
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 64
+      "count": 61
     },
     {
       "id": "media-signals",
@@ -53,13 +53,13 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 0
+      "resolved": 2
     },
     {
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 1
+      "resolved": 2
     }
   ],
   "tenders": [
@@ -149,12 +149,12 @@
       "procedureType": "Dodavky / Zavedení DNS",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-22T09:22:15.782Z",
-      "lastSeenAt": "2026-09-24T09:23:13.139Z",
+      "lastSeenAt": "2026-09-25T09:40:57.570Z",
       "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": null,
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ861003/dns-marketingove-sluzby",
+      "originStatus": "resolved",
+      "originConfidence": 90,
       "fingerprint": "1e6603be0d57f34ad045",
       "duplicateSources": [
         "nen",
@@ -318,7 +318,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-24T09:23:13.139Z",
+      "lastSeenAt": "2026-09-25T09:40:57.570Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -345,6 +345,64 @@
       }
     },
     {
+      "id": "poptavej:VZ133280",
+      "source": "poptavej",
+      "sourceId": "VZ133280",
+      "url": "https://www.poptavej.cz/verejna-zakazka/VZ133280/reklama-a-propagace",
+      "title": "Reklama a propagace",
+      "buyer": "Zadavatel z Poptávej.cz",
+      "summary": "Předmět plnění: - zajištění nákupu reklamy a propagace - festival: zviditelnění v místě konání (logo na LED obrazovkách a roll-up panelech, přehrání spotů a radiospotů, zajištění 5 hostesek, distribuce edukativních karet) a marketingová podpora (online kampaň, PR články, umístění loga na webu, příspěvky na sociálních sítích, začlenění do tiskové konference, natočení videopozvánky, článek na herním portálu) - umístění loga (v tiskové zprávě, programu/pozvánce, internetových stránkách, informačním panelu, projekci v hlavním sále a foyer), umístění 1 ks roll-upu, 3x volný vstup na odbornou konferenci - marketingová podpora - samostatná online kampaň, PR články a - umístění loga na webu festivalu Life! - příspěvky na sociálních sítích festivalu Life! s tematikou podpory aktivního přístupu ke zdraví a bezpečného gamingu - natočení samostatné videopozvánky před festivalem - článek na herním portálu PLAYzone.cz - další specifikace v příloze Hodnoticí kritéria: - nejnižší nabídková cena Lokalita: - okres Brno-město, Ostrava-město, Svitavy, Pardubice, Náchod Termín: - od 23.10.2026 do 27.11.2026",
+      "country": "CZ",
+      "region": "okres Brno-město, Ostrava-město, Svitavy, Pardubice, Náchod",
+      "publishedAt": "2026-09-25T10:00:00.000Z",
+      "deadline": "2026-10-06T10:00:00.000Z",
+      "value": {
+        "amount": 586000,
+        "currency": "CZK"
+      },
+      "cpv": [],
+      "procedureType": "Zakázka na služby",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-09-25T09:40:57.570Z",
+      "lastSeenAt": "2026-09-25T09:40:57.570Z",
+      "status": "open",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ133280/reklama-a-propagace",
+      "originStatus": "unresolved",
+      "originConfidence": 27,
+      "fingerprint": "73f4ce0302b7628ff0bd",
+      "relevance": {
+        "score": 56,
+        "level": "good",
+        "reasons": [
+          "Marketing & eventy: konference, festival",
+          "Tvorba obsahu: video, sociálních sítí",
+          "klíčové téma je přímo v názvu",
+          "jde o zakázku na služby",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 24
+          },
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 19
+          },
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 9
+          }
+        ],
+        "deadlineDays": 12
+      }
+    },
+    {
       "id": "poptavej:VZ963740",
       "source": "poptavej",
       "sourceId": "VZ963740",
@@ -361,7 +419,7 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-19T08:52:03.829Z",
-      "lastSeenAt": "2026-09-24T09:23:13.139Z",
+      "lastSeenAt": "2026-09-25T09:40:57.570Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ963740/pr-agentura",
@@ -393,7 +451,7 @@
             "score": 18
           }
         ],
-        "deadlineDays": 16
+        "deadlineDays": 15
       }
     },
     {
@@ -458,7 +516,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -33
+        "deadlineDays": -34
       }
     },
     {
@@ -507,7 +565,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 22
+        "deadlineDays": 21
       }
     }
   ]
