@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T09:25:11.435Z",
+  "generatedAt": "2026-09-27T10:04:50.611Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -17,22 +17,22 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 66
+      "count": 0
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 33
+      "count": 0
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 59
+      "count": 60
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 481
+      "count": 412
     },
     {
       "id": "ezak-watchlist",
@@ -59,7 +59,7 @@
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 3
+      "resolved": 2
     }
   ],
   "tenders": [
@@ -149,7 +149,7 @@
       "procedureType": "Dodavky / Zavedení DNS",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-22T09:22:15.782Z",
-      "lastSeenAt": "2026-09-26T09:25:11.435Z",
+      "lastSeenAt": "2026-09-27T10:04:50.611Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ861003/dns-marketingove-sluzby",
@@ -318,7 +318,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-26T09:25:11.435Z",
+      "lastSeenAt": "2026-09-27T10:04:50.611Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -364,7 +364,7 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-25T09:40:57.570Z",
-      "lastSeenAt": "2026-09-26T09:25:11.435Z",
+      "lastSeenAt": "2026-09-27T10:04:50.611Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ133280/reklama-a-propagace",
@@ -402,7 +402,7 @@
             "score": 9
           }
         ],
-        "deadlineDays": 11
+        "deadlineDays": 9
       }
     },
     {
@@ -422,7 +422,7 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-19T08:52:03.829Z",
-      "lastSeenAt": "2026-09-26T09:25:11.435Z",
+      "lastSeenAt": "2026-09-27T10:04:50.611Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ963740/pr-agentura",
@@ -454,7 +454,7 @@
             "score": 18
           }
         ],
-        "deadlineDays": 14
+        "deadlineDays": 12
       }
     },
     {
@@ -519,7 +519,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -35
+        "deadlineDays": -37
       }
     },
     {
@@ -568,7 +568,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 20
+        "deadlineDays": 18
       }
     }
   ]
