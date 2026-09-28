@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T10:04:50.611Z",
+  "generatedAt": "2026-09-28T11:02:59.792Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 9,
-    "newThisRun": 0,
+    "total": 10,
+    "newThisRun": 1,
     "strong": 1,
-    "closingSoon": 5,
+    "closingSoon": 6,
     "unresolvedOrigin": 3
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 0
+      "count": 4
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 0
+      "count": 4
     },
     {
       "id": "nen",
@@ -32,7 +32,7 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 412
+      "count": 489
     },
     {
       "id": "ezak-watchlist",
@@ -149,7 +149,7 @@
       "procedureType": "Dodavky / Zavedení DNS",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-22T09:22:15.782Z",
-      "lastSeenAt": "2026-09-27T10:04:50.611Z",
+      "lastSeenAt": "2026-09-28T11:02:59.792Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ861003/dns-marketingove-sluzby",
@@ -302,6 +302,58 @@
       }
     },
     {
+      "id": "ted:665741-2026",
+      "source": "ted",
+      "sourceId": "665741-2026",
+      "url": "https://ted.europa.eu/cs/notice/-/detail/665741-2026",
+      "title": "Zajištění realizace marketingové strategie pro rok 2027",
+      "buyer": "Oborová zdravotní pojišťovna zaměstnanců bank, pojišťoven a stavebnictví",
+      "summary": "Předmětem plnění této veřejné zakázky je poskytování služeb souvisejících s realizací marketingové strategie objednatele, zejména nákup a administrace reklamy, tvorba mediálních plánů, tisk reklamních a propagačních materiálů, zajištění cen do soutěží, realizace kampaňových průzkumů a poskytování kreativních, produkčních a dalších souvisejících marketingových služeb.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": null,
+      "deadline": null,
+      "value": null,
+      "cpv": [
+        "79340000",
+        "79342000",
+        "92200000"
+      ],
+      "procedureType": "services, services",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-09-28T11:02:59.792Z",
+      "lastSeenAt": "2026-09-28T11:02:59.792Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "fingerprint": "b21c259eac9e7bd15f37",
+      "relevance": {
+        "score": 64,
+        "level": "good",
+        "reasons": [
+          "Tvorba obsahu: odpovídající CPV",
+          "Marketing & eventy: marketingové strategie",
+          "klíčové téma je přímo v názvu"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 41
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 24
+          }
+        ],
+        "deadlineDays": null
+      }
+    },
+    {
       "id": "mediaguru:pivovary-zubr-eventova-agentura-2027",
       "source": "mediaguru",
       "sourceId": "pivovary-zubr-eventova-agentura-2027",
@@ -318,7 +370,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-27T10:04:50.611Z",
+      "lastSeenAt": "2026-09-28T11:02:59.792Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -364,7 +416,7 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-25T09:40:57.570Z",
-      "lastSeenAt": "2026-09-27T10:04:50.611Z",
+      "lastSeenAt": "2026-09-28T11:02:59.792Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ133280/reklama-a-propagace",
@@ -402,7 +454,7 @@
             "score": 9
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       }
     },
     {
@@ -422,7 +474,7 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-19T08:52:03.829Z",
-      "lastSeenAt": "2026-09-27T10:04:50.611Z",
+      "lastSeenAt": "2026-09-28T11:02:59.792Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ963740/pr-agentura",
@@ -454,7 +506,7 @@
             "score": 18
           }
         ],
-        "deadlineDays": 12
+        "deadlineDays": 11
       }
     },
     {
@@ -519,7 +571,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -37
+        "deadlineDays": -38
       }
     },
     {
@@ -568,7 +620,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 18
+        "deadlineDays": 17
       }
     }
   ]
