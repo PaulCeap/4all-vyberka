@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T10:46:49.295Z",
+  "generatedAt": "2026-09-30T10:34:22.622Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 10,
+    "total": 9,
     "newThisRun": 0,
     "strong": 1,
-    "closingSoon": 7,
+    "closingSoon": 6,
     "unresolvedOrigin": 3
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 94
+      "count": 134
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 41
+      "count": 60
     },
     {
       "id": "nen",
@@ -32,12 +32,12 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 506
+      "count": 468
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 32
+      "count": 0
     },
     {
       "id": "media-signals",
@@ -53,13 +53,13 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 0
+      "resolved": 1
     },
     {
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 3
+      "resolved": 4
     }
   ],
   "tenders": [
@@ -117,68 +117,6 @@
             "id": "pr",
             "label": "PR & komunikace",
             "score": 24
-          }
-        ],
-        "deadlineDays": null
-      }
-    },
-    {
-      "id": "nen:N006/26/V00030271",
-      "source": "nen",
-      "sourceId": "N006/26/V00030271",
-      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00030271",
-      "title": "DNS NA MARKETINGOVÉ SLUŽBY",
-      "buyer": "LOM PRAHA s.p.",
-      "summary": "Předmětem zadávacího řízení je zavedení DNS na dodávku a realizaci marketingových, propagačních a prezentačních materiálů a služeb dle potřeb zadavatele, přičemž zadavatel v souladu s § 138 odst. 1 ZZVZ rozděluje DNS do čtyř (4) kategorií podle druhu plnění veřejných zakázek zadávaných v rámci DNS. Předmětem veřejných zakázek jsou zejména dodávky reklamních propisek, dárkových sad, diářů a zápisníků, termohrnků, deštníků, svíček, aroma difuzérů, textilu a reklamního ošacení, modelů letadel, reklamních a prezentačních předmětů, dárkových předmětů pro obchodní partnery a dalších obdobných propagačních předmětů. Předmětem veřejných zakázek jsou zejména grafické návrhy, DTP práce, tvorba vizuálních identit, zpracování marketingových podkladů, fotografické služby, produktová fotografie, reportážní fotografie, natáčení videí, střih videí, animace, postprodukční práce, tvorba audiovizuálního obsahu pro marketingové a prezentační účely. Předmětem veřejných zakázek jsou zejména návrhy výstavních expozic, výroba výstavních stánků, montáž a demontáž expozic, zajištění vybavení stánků, logistika a doprava expozic, technické zabezpečení prezentací, zajištění účasti na veletrzích a výstavách, související marketingová a organizační podpora. Předmětem veřejných zakázek jsou zejména dodávky letáků, brožur, katalogů, PF karet, samolepek, bannerů, roll-upů, plakátů, reklamních cedulí, informačních tabulí, polepů vozidel, velkoformátového tisku, ostatních tiskových a prezentační materiálů.",
-      "country": "CZ",
-      "region": "Česká republika",
-      "publishedAt": "2026-09-24T10:57:40.000Z",
-      "deadline": null,
-      "value": {
-        "amount": 60000000,
-        "currency": "CZK"
-      },
-      "cpv": [
-        "39294100",
-        "22462000",
-        "79810000",
-        "79822500",
-        "79956000",
-        "79800000"
-      ],
-      "procedureType": "Dodavky / Zavedení DNS",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-09-22T09:22:15.782Z",
-      "lastSeenAt": "2026-09-29T10:46:49.295Z",
-      "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ861003/dns-marketingove-sluzby",
-      "originStatus": "resolved",
-      "originConfidence": 90,
-      "fingerprint": "1e6603be0d57f34ad045",
-      "duplicateSources": [
-        "nen",
-        "ted"
-      ],
-      "relevance": {
-        "score": 74,
-        "level": "good",
-        "reasons": [
-          "Marketing & eventy: marketingové služby",
-          "Tvorba obsahu: fotograf, audiovizuální",
-          "klíčové téma je přímo v názvu"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 44
-          },
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 41
           }
         ],
         "deadlineDays": null
@@ -322,12 +260,12 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-28T11:02:59.792Z",
-      "lastSeenAt": "2026-09-29T10:46:49.295Z",
+      "lastSeenAt": "2026-09-30T10:34:22.622Z",
       "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ828112/zajisteni-realizace-marketingove-strategie",
+      "discoverySource": "poptavky",
+      "discoveryUrl": "https://www.poptavky.cz/poptavka/2111483-zajisteni-realizace-marketingove-strategie-pro-rok-2027",
       "originStatus": "resolved",
-      "originConfidence": 72,
+      "originConfidence": 92,
       "fingerprint": "b21c259eac9e7bd15f37",
       "duplicateSources": [
         "ted"
@@ -373,7 +311,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-29T10:46:49.295Z",
+      "lastSeenAt": "2026-09-30T10:34:22.622Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -419,7 +357,7 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-25T09:40:57.570Z",
-      "lastSeenAt": "2026-09-29T10:46:49.295Z",
+      "lastSeenAt": "2026-09-30T10:34:22.622Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ133280/reklama-a-propagace",
@@ -430,14 +368,13 @@
         "poptavej"
       ],
       "relevance": {
-        "score": 56,
-        "level": "good",
+        "score": 52,
+        "level": "watch",
         "reasons": [
           "Marketing & eventy: konference, festival",
           "Tvorba obsahu: video, sociálních sítí",
           "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby",
-          "zbývá alespoň týden na reakci"
+          "jde o zakázku na služby"
         ],
         "negativeSignals": [],
         "categories": [
@@ -457,7 +394,7 @@
             "score": 9
           }
         ],
-        "deadlineDays": 7
+        "deadlineDays": 6
       }
     },
     {
@@ -506,7 +443,7 @@
             "score": 18
           }
         ],
-        "deadlineDays": 10
+        "deadlineDays": 9
       }
     },
     {
@@ -571,7 +508,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -39
+        "deadlineDays": -40
       }
     },
     {
@@ -620,7 +557,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 16
+        "deadlineDays": 15
       }
     }
   ]
