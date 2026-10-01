@@ -1,43 +1,44 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-30T10:34:22.622Z",
+  "generatedAt": "2026-10-01T11:02:17.830Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 9,
-    "newThisRun": 0,
+    "total": 10,
+    "newThisRun": 1,
     "strong": 1,
     "closingSoon": 6,
-    "unresolvedOrigin": 3
+    "unresolvedOrigin": 4
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 134
+      "count": 156
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 60
+      "count": 82
     },
     {
       "id": "nen",
-      "ok": true,
-      "count": 60
+      "ok": false,
+      "count": 0,
+      "error": "NEN odpověděl 503."
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 468
+      "count": 439
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 0
+      "count": 30
     },
     {
       "id": "media-signals",
@@ -59,7 +60,7 @@
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 4
+      "resolved": 1
     }
   ],
   "tenders": [
@@ -260,7 +261,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-28T11:02:59.792Z",
-      "lastSeenAt": "2026-09-30T10:34:22.622Z",
+      "lastSeenAt": "2026-10-01T11:02:17.830Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2111483-zajisteni-realizace-marketingove-strategie-pro-rok-2027",
@@ -311,7 +312,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-09-30T10:34:22.622Z",
+      "lastSeenAt": "2026-10-01T11:02:17.830Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -357,12 +358,12 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-25T09:40:57.570Z",
-      "lastSeenAt": "2026-09-30T10:34:22.622Z",
+      "lastSeenAt": "2026-10-01T11:02:17.830Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ133280/reklama-a-propagace",
       "originStatus": "unresolved",
-      "originConfidence": 27,
+      "originConfidence": 10,
       "fingerprint": "73f4ce0302b7628ff0bd",
       "duplicateSources": [
         "poptavej"
@@ -394,7 +395,60 @@
             "score": 9
           }
         ],
-        "deadlineDays": 6
+        "deadlineDays": 5
+      }
+    },
+    {
+      "id": "poptavej:VZ861003",
+      "source": "poptavej",
+      "sourceId": "VZ861003",
+      "url": "https://www.poptavej.cz/verejna-zakazka/VZ861003/dns-marketingove-sluzby",
+      "title": "DNS - Marketingové služby",
+      "buyer": "Zadavatel z Poptávej.cz",
+      "summary": "Předmět plnění: - zavedení DNS na marketingové služby - zakázka je rozdělena na 4 části: - 1. Kategorie DNS č. 1 - Propagační a reklamní předměty - 2. Kategorie DNS č. 2 - Tiskoviny a reklamní nosiče - 3. Kategorie DNS č. 3 - Veletrhy, výstavy a prezentační akce - 4. Kategorie DNS č. 4 - Grafické, fotografické a audiovizuální služby Hodnotící kritéria: - kritéria hodnocení - metoda vyhodnocení nabídek v jednotlivých kritériích - váha nebo jiný matematický vztah mezi kritérii Lokalita: - Praha a okresy Třebíč, Pardubice, Přerov, Plzeň-sever Termín: - na dobu 10 let",
+      "country": "CZ",
+      "region": "Praha a okresy Třebíč, Pardubice, Přerov, Plzeň-sever",
+      "publishedAt": "2026-09-24T10:00:00.000Z",
+      "deadline": "2026-10-30T10:00:00.000Z",
+      "value": {
+        "amount": 50000000,
+        "currency": "CZK"
+      },
+      "cpv": [],
+      "procedureType": "Zakázka na služby",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-01T11:02:17.830Z",
+      "lastSeenAt": "2026-10-01T11:02:17.830Z",
+      "status": "open",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ861003/dns-marketingove-sluzby",
+      "originStatus": "unresolved",
+      "originConfidence": 23,
+      "fingerprint": "84476be61731c24dae66",
+      "relevance": {
+        "score": 49,
+        "level": "watch",
+        "reasons": [
+          "Marketing & eventy: marketingové služby",
+          "Tvorba obsahu: fotograf, audiovizuální",
+          "klíčové téma je přímo v názvu",
+          "jde o zakázku na služby",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 20
+          },
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 17
+          }
+        ],
+        "deadlineDays": 29
       }
     },
     {
@@ -419,7 +473,7 @@
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ963740/pr-agentura",
       "originStatus": "unresolved",
-      "originConfidence": 15,
+      "originConfidence": 10,
       "fingerprint": "fc7eda885177bf9f4980",
       "relevance": {
         "score": 46,
@@ -443,7 +497,7 @@
             "score": 18
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       }
     },
     {
@@ -508,7 +562,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -40
+        "deadlineDays": -41
       }
     },
     {
@@ -533,7 +587,7 @@
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ658880/strategicke-a-vykonove-marketingove-sluzby",
       "originStatus": "unresolved",
-      "originConfidence": 33,
+      "originConfidence": 21,
       "fingerprint": "6fb363bc0512b8f63408",
       "relevance": {
         "score": 42,
@@ -557,7 +611,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 15
+        "deadlineDays": 14
       }
     }
   ]
