@@ -1,44 +1,43 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-01T11:02:17.830Z",
+  "generatedAt": "2026-10-02T10:35:09.508Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 10,
-    "newThisRun": 1,
+    "total": 8,
+    "newThisRun": 0,
     "strong": 1,
     "closingSoon": 6,
-    "unresolvedOrigin": 4
+    "unresolvedOrigin": 3
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 156
+      "count": 161
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 82
+      "count": 87
     },
     {
       "id": "nen",
-      "ok": false,
-      "count": 0,
-      "error": "NEN odpověděl 503."
+      "ok": true,
+      "count": 58
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 439
+      "count": 421
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 30
+      "count": 61
     },
     {
       "id": "media-signals",
@@ -54,13 +53,13 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 1
+      "resolved": 2
     },
     {
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 1
+      "resolved": 4
     }
   ],
   "tenders": [
@@ -182,65 +181,6 @@
       }
     },
     {
-      "id": "ted:570768-2026",
-      "source": "ted",
-      "sourceId": "570768-2026",
-      "url": "https://ted.europa.eu/cs/notice/-/detail/570768-2026",
-      "title": "Dynamický nákupní systém – Zajištění regionálních komunikačních akcí a eventů MŽP",
-      "buyer": "Česká republika – Ministerstvo životního prostředí",
-      "summary": "Předmětem plnění veřejných zakázek zadávaných v tomto DNS je poskytnutí služeb spočívající v přípravě, propagaci, zajištění a vyhodnocení eventů/akcí za účelem propagace mj. Operačního programu Spravedlivá transformace především v Karlovarském, Ústeckém a Moravskoslezském kraji. V rámci těchto eventů/akcí vybraný dodavatel zajistí přípravu, propagaci a vykonání modelových akcí a jejich vyhodnocení v návaznosti na centrální aktivity kampaně. Přípravou se rozumí zajištění odpovídajících povolení, vyhledání a nájem vhodných prostor, technické zázemí (ozvučení, osvětlení, připojení na internet, vybavení pro live-streaming atd.), vnitřní nebo venkovní mobiliář (párty stany, stoly, židle a další dle akce), catering/občerstvení (jídlo, nápoje dle specifikace akce) a jiné související služby nutné pro vykonání akce (např. personální zajištění: hostesky, technik, personál cateringu, ostraha, administrativa spojená s registracemi). Požadavky na rozsah předmětu plnění a místo realizace veřejné zakázky budou vždy specifikovány v rámci konkrétní výzvy dle čtyř základních modelových akcí: 1.Velká krajská akce - významná akce outdoor/indoor pro více jak 150 účastníků s plným zajištěním celé akce v místě. 2.Akce spojená s existujícím návštěvnicky atraktivním eventem, formou prezentace stánkem a vlastní aktivitou v rámci jiného eventu. 3.Hybridní akce - zajištění konference online. Fyzická konference s plným zajištěním přenášená live na digitálních kanálech OPST, MŽP a SFŽP. 4.Online záznam videokonference. Organizace eventu pro online video konferenci s plným technickým zabezpečením.",
-      "country": "CZ",
-      "region": "Česko",
-      "publishedAt": null,
-      "deadline": null,
-      "value": {
-        "amount": 9000000,
-        "currency": "CZK"
-      },
-      "cpv": [
-        "79950000",
-        "79800000"
-      ],
-      "procedureType": "services, services",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-18T04:56:15.419Z",
-      "lastSeenAt": "2026-08-26T05:00:19.663Z",
-      "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": 0,
-      "fingerprint": "ce22389aa66c244d6b84",
-      "relevance": {
-        "score": 64,
-        "level": "good",
-        "reasons": [
-          "Tvorba obsahu: video",
-          "Marketing & eventy: event, konference",
-          "klíčové téma je přímo v názvu"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 46
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 9
-          },
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 9
-          }
-        ],
-        "deadlineDays": null
-      }
-    },
-    {
       "id": "ted:665741-2026",
       "source": "ted",
       "sourceId": "665741-2026",
@@ -261,7 +201,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-28T11:02:59.792Z",
-      "lastSeenAt": "2026-10-01T11:02:17.830Z",
+      "lastSeenAt": "2026-10-02T10:35:09.508Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2111483-zajisteni-realizace-marketingove-strategie-pro-rok-2027",
@@ -312,7 +252,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-10-01T11:02:17.830Z",
+      "lastSeenAt": "2026-10-02T10:35:09.508Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -358,12 +298,12 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-25T09:40:57.570Z",
-      "lastSeenAt": "2026-10-01T11:02:17.830Z",
+      "lastSeenAt": "2026-10-02T10:35:09.508Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ133280/reklama-a-propagace",
       "originStatus": "unresolved",
-      "originConfidence": 10,
+      "originConfidence": 27,
       "fingerprint": "73f4ce0302b7628ff0bd",
       "duplicateSources": [
         "poptavej"
@@ -395,60 +335,7 @@
             "score": 9
           }
         ],
-        "deadlineDays": 5
-      }
-    },
-    {
-      "id": "poptavej:VZ861003",
-      "source": "poptavej",
-      "sourceId": "VZ861003",
-      "url": "https://www.poptavej.cz/verejna-zakazka/VZ861003/dns-marketingove-sluzby",
-      "title": "DNS - Marketingové služby",
-      "buyer": "Zadavatel z Poptávej.cz",
-      "summary": "Předmět plnění: - zavedení DNS na marketingové služby - zakázka je rozdělena na 4 části: - 1. Kategorie DNS č. 1 - Propagační a reklamní předměty - 2. Kategorie DNS č. 2 - Tiskoviny a reklamní nosiče - 3. Kategorie DNS č. 3 - Veletrhy, výstavy a prezentační akce - 4. Kategorie DNS č. 4 - Grafické, fotografické a audiovizuální služby Hodnotící kritéria: - kritéria hodnocení - metoda vyhodnocení nabídek v jednotlivých kritériích - váha nebo jiný matematický vztah mezi kritérii Lokalita: - Praha a okresy Třebíč, Pardubice, Přerov, Plzeň-sever Termín: - na dobu 10 let",
-      "country": "CZ",
-      "region": "Praha a okresy Třebíč, Pardubice, Přerov, Plzeň-sever",
-      "publishedAt": "2026-09-24T10:00:00.000Z",
-      "deadline": "2026-10-30T10:00:00.000Z",
-      "value": {
-        "amount": 50000000,
-        "currency": "CZK"
-      },
-      "cpv": [],
-      "procedureType": "Zakázka na služby",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-01T11:02:17.830Z",
-      "lastSeenAt": "2026-10-01T11:02:17.830Z",
-      "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ861003/dns-marketingove-sluzby",
-      "originStatus": "unresolved",
-      "originConfidence": 23,
-      "fingerprint": "84476be61731c24dae66",
-      "relevance": {
-        "score": 49,
-        "level": "watch",
-        "reasons": [
-          "Marketing & eventy: marketingové služby",
-          "Tvorba obsahu: fotograf, audiovizuální",
-          "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby",
-          "zbývá alespoň týden na reakci"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 20
-          },
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 17
-          }
-        ],
-        "deadlineDays": 29
+        "deadlineDays": 4
       }
     },
     {
@@ -473,7 +360,7 @@
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ963740/pr-agentura",
       "originStatus": "unresolved",
-      "originConfidence": 10,
+      "originConfidence": 15,
       "fingerprint": "fc7eda885177bf9f4980",
       "relevance": {
         "score": 46,
@@ -497,7 +384,7 @@
             "score": 18
           }
         ],
-        "deadlineDays": 8
+        "deadlineDays": 7
       }
     },
     {
@@ -562,7 +449,7 @@
             "score": 40
           }
         ],
-        "deadlineDays": -41
+        "deadlineDays": -42
       }
     },
     {
@@ -587,7 +474,7 @@
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ658880/strategicke-a-vykonove-marketingove-sluzby",
       "originStatus": "unresolved",
-      "originConfidence": 21,
+      "originConfidence": 33,
       "fingerprint": "6fb363bc0512b8f63408",
       "relevance": {
         "score": 42,
@@ -611,7 +498,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 14
+        "deadlineDays": 13
       }
     }
   ]
