@@ -1,43 +1,43 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T10:35:09.508Z",
+  "generatedAt": "2026-10-03T09:56:13.274Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 8,
+    "total": 7,
     "newThisRun": 0,
-    "strong": 1,
-    "closingSoon": 6,
+    "strong": 0,
+    "closingSoon": 5,
     "unresolvedOrigin": 3
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 161
+      "count": 72
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 87
+      "count": 34
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 58
+      "count": 60
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 421
+      "count": 360
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 61
+      "count": 34
     },
     {
       "id": "media-signals",
@@ -53,75 +53,16 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 2
+      "resolved": 0
     },
     {
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 4
+      "resolved": 3
     }
   ],
   "tenders": [
-    {
-      "id": "ted:573237-2026",
-      "source": "ted",
-      "sourceId": "573237-2026",
-      "url": "https://ted.europa.eu/cs/notice/-/detail/573237-2026",
-      "title": "Mediální prostor pro kontinuální kampaň Podívejte se Kde fondy EU pomáhají",
-      "buyer": "Ministerstvo pro místní rozvoj",
-      "summary": "Předmětem veřejné zakázky je plán, realizace a nákup mediálního prostoru pro kampaň „Podívejte se Kde fondy EU pomáhají“ dle technické specifikace zadavatele (bod 2.2. této zadávací dokumentace a v souladu s Přílohou č. 1 této zadávací dokumentace – Cenový list) a to v termínu, který začne nejdéle do 10 týdnů od zveřejnění smlouvy v registru smluv.",
-      "country": "CZ",
-      "region": "Česko",
-      "publishedAt": null,
-      "deadline": null,
-      "value": {
-        "amount": 10000000,
-        "currency": "CZK"
-      },
-      "cpv": [
-        "79341400",
-        "79342200"
-      ],
-      "procedureType": "services, services",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-19T04:56:25.158Z",
-      "lastSeenAt": "2026-08-27T15:20:09.738Z",
-      "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": 0,
-      "fingerprint": "1e3b512a0d79d1f5e773",
-      "relevance": {
-        "score": 78,
-        "level": "strong",
-        "reasons": [
-          "Tvorba obsahu: odpovídající CPV",
-          "Marketing & eventy: mediální prostor, mediálního prostoru",
-          "klíčové téma je přímo v názvu"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 50
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 24
-          },
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 24
-          }
-        ],
-        "deadlineDays": null
-      }
-    },
     {
       "id": "ted:583447-2026",
       "source": "ted",
@@ -201,12 +142,12 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-28T11:02:59.792Z",
-      "lastSeenAt": "2026-10-02T10:35:09.508Z",
+      "lastSeenAt": "2026-10-03T09:56:13.274Z",
       "status": "open",
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2111483-zajisteni-realizace-marketingove-strategie-pro-rok-2027",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ828112/zajisteni-realizace-marketingove-strategie",
       "originStatus": "resolved",
-      "originConfidence": 92,
+      "originConfidence": 72,
       "fingerprint": "b21c259eac9e7bd15f37",
       "duplicateSources": [
         "ted"
@@ -252,7 +193,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-10-02T10:35:09.508Z",
+      "lastSeenAt": "2026-10-03T09:56:13.274Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -298,7 +239,7 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-25T09:40:57.570Z",
-      "lastSeenAt": "2026-10-02T10:35:09.508Z",
+      "lastSeenAt": "2026-10-03T09:56:13.274Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ133280/reklama-a-propagace",
