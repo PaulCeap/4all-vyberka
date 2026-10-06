@@ -8,10 +8,10 @@
   },
   "stats": {
     "total": 7,
-    "newThisRun": 1,
+    "newThisRun": 0,
     "strong": 0,
-    "closingSoon": 5,
-    "unresolvedOrigin": 4
+    "closingSoon": 6,
+    "unresolvedOrigin": 3
   },
   "sources": [
     {
@@ -64,6 +64,64 @@
     }
   ],
   "tenders": [
+    {
+      "id": "ted:646731-2026",
+      "source": "ted",
+      "sourceId": "646731-2026",
+      "url": "https://ted.europa.eu/cs/notice/-/detail/646731-2026",
+      "title": "DNS NA MARKETINGOVÉ SLUŽBY",
+      "buyer": "LOM PRAHA s.p.",
+      "summary": "Předmětem zadávacího řízení je zavedení DNS na dodávku a realizaci marketingových, propagačních a prezentačních materiálů a služeb dle potřeb zadavatele, přičemž zadavatel v souladu s § 138 odst. 1 ZZVZ rozděluje DNS do čtyř (4) kategorií podle druhu plnění veřejných zakázek zadávaných v rámci DNS. Předmětem veřejných zakázek jsou zejména dodávky reklamních propisek, dárkových sad, diářů a zápisníků, termohrnků, deštníků, svíček, aroma difuzérů, textilu a reklamního ošacení, modelů letadel, reklamních a prezentačních předmětů, dárkových předmětů pro obchodní partnery a dalších obdobných propagačních předmětů. Předmětem veřejných zakázek jsou zejména grafické návrhy, DTP práce, tvorba vizuálních identit, zpracování marketingových podkladů, fotografické služby, produktová fotografie, reportážní fotografie, natáčení videí, střih videí, animace, postprodukční práce, tvorba audiovizuálního obsahu pro marketingové a prezentační účely. Předmětem veřejných zakázek jsou zejména návrhy výstavních expozic, výroba výstavních stánků, montáž a demontáž expozic, zajištění vybavení stánků, logistika a doprava expozic, technické zabezpečení prezentací, zajištění účasti na veletrzích a výstavách, související marketingová a organizační podpora. Předmětem veřejných zakázek jsou zejména dodávky letáků, brožur, katalogů, PF karet, samolepek, bannerů, roll-upů, plakátů, reklamních cedulí, informačních tabulí, polepů vozidel, velkoformátového tisku, ostatních tiskových a prezentační materiálů.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": null,
+      "deadline": null,
+      "value": {
+        "amount": 50000000,
+        "currency": "CZK"
+      },
+      "cpv": [
+        "22462000",
+        "79810000",
+        "39294100",
+        "79822500",
+        "79956000",
+        "79800000"
+      ],
+      "procedureType": "supplies, services, supplies, services, services, services",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-09-22T09:22:15.782Z",
+      "lastSeenAt": "2026-10-05T11:38:56.424Z",
+      "status": "open",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ861003/dns-marketingove-sluzby",
+      "originStatus": "resolved",
+      "originConfidence": 90,
+      "fingerprint": "1e6603be0d57f34ad045",
+      "relevance": {
+        "score": 74,
+        "level": "good",
+        "reasons": [
+          "Marketing & eventy: marketingové služby",
+          "Tvorba obsahu: fotograf, audiovizuální",
+          "klíčové téma je přímo v názvu"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 44
+          },
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 41
+          }
+        ],
+        "deadlineDays": null
+      }
+    },
     {
       "id": "ted:583447-2026",
       "source": "ted",
@@ -150,9 +208,6 @@
       "originStatus": "resolved",
       "originConfidence": 72,
       "fingerprint": "b21c259eac9e7bd15f37",
-      "duplicateSources": [
-        "ted"
-      ],
       "relevance": {
         "score": 64,
         "level": "good",
@@ -199,7 +254,7 @@
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": null,
+      "originConfidence": 0,
       "fingerprint": "15b58812da73e9ffa3a8",
       "relevance": {
         "score": 64,
@@ -218,59 +273,6 @@
           }
         ],
         "deadlineDays": null
-      }
-    },
-    {
-      "id": "poptavej:VZ861003",
-      "source": "poptavej",
-      "sourceId": "VZ861003",
-      "url": "https://www.poptavej.cz/verejna-zakazka/VZ861003/dns-marketingove-sluzby",
-      "title": "DNS - Marketingové služby",
-      "buyer": "Zadavatel z Poptávej.cz",
-      "summary": "Předmět plnění: - zavedení DNS na marketingové služby - zakázka je rozdělena na 4 části: - 1. Kategorie DNS č. 1 - Propagační a reklamní předměty - 2. Kategorie DNS č. 2 - Tiskoviny a reklamní nosiče - 3. Kategorie DNS č. 3 - Veletrhy, výstavy a prezentační akce - 4. Kategorie DNS č. 4 - Grafické, fotografické a audiovizuální služby Hodnotící kritéria: - kritéria hodnocení - metoda vyhodnocení nabídek v jednotlivých kritériích - váha nebo jiný matematický vztah mezi kritérii Lokalita: - Praha a okresy Třebíč, Pardubice, Přerov, Plzeň-sever Termín: - na dobu 10 let",
-      "country": "CZ",
-      "region": "Praha a okresy Třebíč, Pardubice, Přerov, Plzeň-sever",
-      "publishedAt": "2026-09-24T10:00:00.000Z",
-      "deadline": "2026-10-30T10:00:00.000Z",
-      "value": {
-        "amount": 50000000,
-        "currency": "CZK"
-      },
-      "cpv": [],
-      "procedureType": "Zakázka na služby",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-05T11:38:56.424Z",
-      "lastSeenAt": "2026-10-05T11:38:56.424Z",
-      "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ861003/dns-marketingove-sluzby",
-      "originStatus": "unresolved",
-      "originConfidence": 27,
-      "fingerprint": "84476be61731c24dae66",
-      "relevance": {
-        "score": 49,
-        "level": "watch",
-        "reasons": [
-          "Marketing & eventy: marketingové služby",
-          "Tvorba obsahu: fotograf, audiovizuální",
-          "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby",
-          "zbývá alespoň týden na reakci"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 20
-          },
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 17
-          }
-        ],
-        "deadlineDays": 25
       }
     },
     {
@@ -300,9 +302,6 @@
       "originStatus": "unresolved",
       "originConfidence": 10,
       "fingerprint": "73f4ce0302b7628ff0bd",
-      "duplicateSources": [
-        "poptavej"
-      ],
       "relevance": {
         "score": 44,
         "level": "watch",
