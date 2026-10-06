@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-05T11:38:56.424Z",
+  "generatedAt": "2026-10-06T11:21:57.039Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -11,18 +11,18 @@
     "newThisRun": 1,
     "strong": 0,
     "closingSoon": 5,
-    "unresolvedOrigin": 4
+    "unresolvedOrigin": 3
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 97
+      "count": 168
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 54
+      "count": 99
     },
     {
       "id": "nen",
@@ -33,17 +33,17 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 373
+      "count": 445
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 62
+      "count": 63
     },
     {
       "id": "media-signals",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "id": "manual",
@@ -60,7 +60,7 @@
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 3
+      "resolved": 5
     }
   ],
   "tenders": [
@@ -143,7 +143,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-28T11:02:59.792Z",
-      "lastSeenAt": "2026-10-05T11:38:56.424Z",
+      "lastSeenAt": "2026-10-06T11:21:57.039Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ828112/zajisteni-realizace-marketingove-strategie",
@@ -194,7 +194,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-10-05T11:38:56.424Z",
+      "lastSeenAt": "2026-10-06T11:21:57.039Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -240,13 +240,16 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-05T11:38:56.424Z",
-      "lastSeenAt": "2026-10-05T11:38:56.424Z",
+      "lastSeenAt": "2026-10-06T11:21:57.039Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ861003/dns-marketingove-sluzby",
       "originStatus": "unresolved",
       "originConfidence": 27,
       "fingerprint": "84476be61731c24dae66",
+      "duplicateSources": [
+        "poptavej"
+      ],
       "relevance": {
         "score": 49,
         "level": "watch",
@@ -270,7 +273,59 @@
             "score": 17
           }
         ],
-        "deadlineDays": 25
+        "deadlineDays": 24
+      }
+    },
+    {
+      "id": "ted:687952-2026",
+      "source": "ted",
+      "sourceId": "687952-2026",
+      "url": "https://ted.europa.eu/cs/notice/-/detail/687952-2026",
+      "title": "Dodavatel audiovizuálního obsahu účasti ČR na Mezinárodní specializované výstavě EXPO 2027, Bělehrad",
+      "buyer": "CzechBusiness",
+      "summary": "Předmětem plnění se rozumí výkon činností vedoucích k realizaci a zajištění kompletního AV obsahu expozice a jeho následnou implementaci do ekosystému generálního dodavatele expozice. A to po celou dobu trvání výstavy, přičemž tento obsah vytvoří naprosto zásadní prvek (audiovizuální autorské dílo) na české expozici na EXPO Bělehrad 2027. Předmětem tohoto výběrového řízení je výběr klíčového kreativně-technologického partnera - dodavatele (dále jen dodavatel), který zajistí komplexní kreativní, obsahovou, produkční a personální realizaci audiovizuálního obsahu včetně světelného scénáře, animací, autorské hudby a zvukových stop (voiceover) pro expozici České republiky na EXPO 2027 v Bělehradě.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": null,
+      "deadline": null,
+      "value": {
+        "amount": 5000000,
+        "currency": "CZK"
+      },
+      "cpv": [
+        "92111000",
+        "92111200",
+        "92112000"
+      ],
+      "procedureType": "services, services",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-06T11:21:57.039Z",
+      "lastSeenAt": "2026-10-06T11:21:57.039Z",
+      "status": "open",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ326386/dodavatel-audiovizualniho-obsahu-na-mezinarodni-specializovane-vystave",
+      "originStatus": "resolved",
+      "originConfidence": 80,
+      "fingerprint": "9b939af5574b43e722aa",
+      "duplicateSources": [
+        "ted"
+      ],
+      "relevance": {
+        "score": 47,
+        "level": "watch",
+        "reasons": [
+          "Tvorba obsahu: audiovizuální",
+          "klíčové téma je přímo v názvu"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 35
+          }
+        ],
+        "deadlineDays": null
       }
     },
     {
@@ -293,7 +348,7 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-25T09:40:57.570Z",
-      "lastSeenAt": "2026-10-05T11:38:56.424Z",
+      "lastSeenAt": "2026-10-06T11:21:57.039Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ133280/reklama-a-propagace",
@@ -332,55 +387,7 @@
             "score": 9
           }
         ],
-        "deadlineDays": 1
-      }
-    },
-    {
-      "id": "poptavej:VZ963740",
-      "source": "poptavej",
-      "sourceId": "VZ963740",
-      "url": "https://www.poptavej.cz/verejna-zakazka/VZ963740/pr-agentura",
-      "title": "PR agentura",
-      "buyer": "Zadavatel z Poptávej.cz",
-      "summary": "Předmět plnění: - konzultační, poradenská a realizační činnost v oblasti marketingové komunikace s důrazem na oblast PR - mediální aktivity v otázkách monitoringu mediálního pokrytí - příprava a realizace PR koncepce v rámci mediálních aktivit a mediálního prostoru (on-line/off-line) - vypracování a průběžné předkládání rozpočtů marketingových aktivit zaměřených na segment novinářů, redaktorů, tvorby obsahu - návrh systému průběžné práce s médii - návrh dalších doporučených PR aktivit a témat - tvorba obsahu, a to zejména v textové formě - návrh systému krizové komunikace včetně doporučených postupů pro různé komunikační scénáře - konzultační, poradenská a realizační činnost v oblasti legislativy, budování vztahu s veřejnými institucemi, médii, stakeholders - realizace tiskových konferencí - další specifikace v příloze Hodnoticí kritéria: - celková nabídková cena K1 - 40% - kvalita vzorového plnění K2 - 40% - zkušenost realizačního týmu K3 - 20% Lokalita: - Praha Termín: - od 1. 1. 2027 do 31. 12. 2027",
-      "country": "CZ",
-      "region": "Praha",
-      "publishedAt": "2026-09-18T10:00:00.000Z",
-      "deadline": "2026-10-09T10:00:00.000Z",
-      "value": null,
-      "cpv": [],
-      "procedureType": "Zakázka na služby",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-09-19T08:52:03.829Z",
-      "lastSeenAt": "2026-09-28T11:02:59.792Z",
-      "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ963740/pr-agentura",
-      "originStatus": "unresolved",
-      "originConfidence": 10,
-      "fingerprint": "fc7eda885177bf9f4980",
-      "relevance": {
-        "score": 42,
-        "level": "watch",
-        "reasons": [
-          "Tvorba obsahu: tvorba obsahu",
-          "Marketing & eventy: marketingových aktivit, mediálního prostoru",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 29
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 18
-          }
-        ],
-        "deadlineDays": 4
+        "deadlineDays": 0
       }
     },
     {
@@ -429,7 +436,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 10
+        "deadlineDays": 9
       }
     }
   ]
