@@ -1,4 +1,5 @@
 import { searchable } from "./model.mjs";
+import { isWithinHistory } from "./history.mjs";
 
 const AGGREGATORS = new Set(["poptavky", "poptavej"]);
 const STOP_WORDS = new Set([
@@ -80,7 +81,18 @@ function directOrigin(lead) {
   };
 }
 
-export function resolveAggregatorLeads(leads, officialRows) {
+export function resolveAggregatorLeads(leads, officialRows, { previousRows = [], now = new Date() } = {}) {
+  // Aktuální údaje mají přednost před historií stejného oficiálního záznamu.
+  const currentKeys = new Set(officialRows.map((row) => `${row.source}:${row.sourceId}`));
+  const historicalRows = previousRows.filter((row) =>
+    !currentKeys.has(`${row.source}:${row.sourceId}`)
+    && !isAggregatorSource(row.source)
+    && ["verified", "resolved"].includes(row.originStatus)
+    && sourceFromOfficialUrl(row.url)
+    && row.opportunityType !== "market-signal"
+    && !["closed", "cancelled", "canceled", "awarded"].includes(row.status)
+    && isWithinHistory(row, now));
+  const candidatesPool = [...officialRows, ...historicalRows];
   const resolved = [];
   const matchedKeys = new Set();
 
@@ -91,7 +103,7 @@ export function resolveAggregatorLeads(leads, officialRows) {
       continue;
     }
 
-    const candidates = officialRows
+    const candidates = candidatesPool
       .map((official) => ({ official, confidence: matchConfidence(lead, official) }))
       .sort((a, b) => b.confidence - a.confidence);
     const match = candidates[0];
@@ -99,6 +111,7 @@ export function resolveAggregatorLeads(leads, officialRows) {
       matchedKeys.add(`${match.official.source}:${match.official.sourceId}`);
       resolved.push({
         ...match.official,
+        lastSeenAt: now.toISOString(),
         discoverySource: lead.source,
         discoveryUrl: lead.url,
         originStatus: "resolved",
