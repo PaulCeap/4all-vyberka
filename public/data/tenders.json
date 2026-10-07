@@ -1,49 +1,48 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T11:21:57.039Z",
+  "generatedAt": "2026-10-07T11:10:11.547Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 7,
-    "newThisRun": 1,
+    "total": 5,
+    "newThisRun": 0,
     "strong": 0,
-    "closingSoon": 5,
-    "unresolvedOrigin": 3
+    "closingSoon": 4,
+    "unresolvedOrigin": 1
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 168
+      "count": 145
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 99
+      "count": 88
     },
     {
       "id": "nen",
-      "ok": false,
-      "count": 0,
-      "error": "NEN odpověděl 503."
+      "ok": true,
+      "count": 53
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 445
+      "count": 458
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 63
+      "count": 58
     },
     {
       "id": "media-signals",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "manual",
@@ -150,9 +149,6 @@
       "originStatus": "resolved",
       "originConfidence": 72,
       "fingerprint": "b21c259eac9e7bd15f37",
-      "duplicateSources": [
-        "ted"
-      ],
       "relevance": {
         "score": 64,
         "level": "good",
@@ -194,7 +190,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-10-06T11:21:57.039Z",
+      "lastSeenAt": "2026-10-07T11:10:11.547Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -221,62 +217,6 @@
       }
     },
     {
-      "id": "poptavej:VZ861003",
-      "source": "poptavej",
-      "sourceId": "VZ861003",
-      "url": "https://www.poptavej.cz/verejna-zakazka/VZ861003/dns-marketingove-sluzby",
-      "title": "DNS - Marketingové služby",
-      "buyer": "Zadavatel z Poptávej.cz",
-      "summary": "Předmět plnění: - zavedení DNS na marketingové služby - zakázka je rozdělena na 4 části: - 1. Kategorie DNS č. 1 - Propagační a reklamní předměty - 2. Kategorie DNS č. 2 - Tiskoviny a reklamní nosiče - 3. Kategorie DNS č. 3 - Veletrhy, výstavy a prezentační akce - 4. Kategorie DNS č. 4 - Grafické, fotografické a audiovizuální služby Hodnotící kritéria: - kritéria hodnocení - metoda vyhodnocení nabídek v jednotlivých kritériích - váha nebo jiný matematický vztah mezi kritérii Lokalita: - Praha a okresy Třebíč, Pardubice, Přerov, Plzeň-sever Termín: - na dobu 10 let",
-      "country": "CZ",
-      "region": "Praha a okresy Třebíč, Pardubice, Přerov, Plzeň-sever",
-      "publishedAt": "2026-09-24T10:00:00.000Z",
-      "deadline": "2026-10-30T10:00:00.000Z",
-      "value": {
-        "amount": 50000000,
-        "currency": "CZK"
-      },
-      "cpv": [],
-      "procedureType": "Zakázka na služby",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-05T11:38:56.424Z",
-      "lastSeenAt": "2026-10-06T11:21:57.039Z",
-      "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ861003/dns-marketingove-sluzby",
-      "originStatus": "unresolved",
-      "originConfidence": 27,
-      "fingerprint": "84476be61731c24dae66",
-      "duplicateSources": [
-        "poptavej"
-      ],
-      "relevance": {
-        "score": 49,
-        "level": "watch",
-        "reasons": [
-          "Marketing & eventy: marketingové služby",
-          "Tvorba obsahu: fotograf, audiovizuální",
-          "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby",
-          "zbývá alespoň týden na reakci"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 20
-          },
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 17
-          }
-        ],
-        "deadlineDays": 24
-      }
-    },
-    {
       "id": "ted:687952-2026",
       "source": "ted",
       "sourceId": "687952-2026",
@@ -300,7 +240,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-06T11:21:57.039Z",
-      "lastSeenAt": "2026-10-06T11:21:57.039Z",
+      "lastSeenAt": "2026-10-07T11:10:11.547Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ326386/dodavatel-audiovizualniho-obsahu-na-mezinarodni-specializovane-vystave",
@@ -329,68 +269,6 @@
       }
     },
     {
-      "id": "poptavej:VZ133280",
-      "source": "poptavej",
-      "sourceId": "VZ133280",
-      "url": "https://www.poptavej.cz/verejna-zakazka/VZ133280/reklama-a-propagace",
-      "title": "Reklama a propagace",
-      "buyer": "Zadavatel z Poptávej.cz",
-      "summary": "Předmět plnění: - zajištění nákupu reklamy a propagace - festival: zviditelnění v místě konání (logo na LED obrazovkách a roll-up panelech, přehrání spotů a radiospotů, zajištění 5 hostesek, distribuce edukativních karet) a marketingová podpora (online kampaň, PR články, umístění loga na webu, příspěvky na sociálních sítích, začlenění do tiskové konference, natočení videopozvánky, článek na herním portálu) - umístění loga (v tiskové zprávě, programu/pozvánce, internetových stránkách, informačním panelu, projekci v hlavním sále a foyer), umístění 1 ks roll-upu, 3x volný vstup na odbornou konferenci - marketingová podpora - samostatná online kampaň, PR články a - umístění loga na webu festivalu Life! - příspěvky na sociálních sítích festivalu Life! s tematikou podpory aktivního přístupu ke zdraví a bezpečného gamingu - natočení samostatné videopozvánky před festivalem - článek na herním portálu PLAYzone.cz - další specifikace v příloze Hodnoticí kritéria: - nejnižší nabídková cena Lokalita: - okres Brno-město, Ostrava-město, Svitavy, Pardubice, Náchod Termín: - od 23.10.2026 do 27.11.2026",
-      "country": "CZ",
-      "region": "okres Brno-město, Ostrava-město, Svitavy, Pardubice, Náchod",
-      "publishedAt": "2026-09-25T10:00:00.000Z",
-      "deadline": "2026-10-06T10:00:00.000Z",
-      "value": {
-        "amount": 586000,
-        "currency": "CZK"
-      },
-      "cpv": [],
-      "procedureType": "Zakázka na služby",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-09-25T09:40:57.570Z",
-      "lastSeenAt": "2026-10-06T11:21:57.039Z",
-      "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ133280/reklama-a-propagace",
-      "originStatus": "unresolved",
-      "originConfidence": 10,
-      "fingerprint": "73f4ce0302b7628ff0bd",
-      "duplicateSources": [
-        "poptavej"
-      ],
-      "relevance": {
-        "score": 44,
-        "level": "watch",
-        "reasons": [
-          "Marketing & eventy: konference, festival",
-          "Tvorba obsahu: video, sociálních sítí",
-          "klíčové téma je přímo v názvu",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [
-          "velmi krátká lhůta"
-        ],
-        "categories": [
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 24
-          },
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 19
-          },
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 9
-          }
-        ],
-        "deadlineDays": 0
-      }
-    },
-    {
       "id": "poptavej:VZ658880",
       "source": "poptavej",
       "sourceId": "VZ658880",
@@ -412,7 +290,7 @@
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ658880/strategicke-a-vykonove-marketingove-sluzby",
       "originStatus": "unresolved",
-      "originConfidence": 21,
+      "originConfidence": 33,
       "fingerprint": "6fb363bc0512b8f63408",
       "relevance": {
         "score": 42,
@@ -436,7 +314,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       }
     }
   ]
