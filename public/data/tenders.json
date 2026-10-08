@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T11:10:11.547Z",
+  "generatedAt": "2026-10-08T11:27:58.583Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 5,
+    "total": 4,
     "newThisRun": 0,
     "strong": 0,
     "closingSoon": 4,
@@ -17,27 +17,28 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 145
+      "count": 149
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 88
+      "count": 85
     },
     {
       "id": "nen",
-      "ok": true,
-      "count": 53
+      "ok": false,
+      "count": 0,
+      "error": "NEN odpověděl 503."
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 458
+      "count": 520
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 58
+      "count": 61
     },
     {
       "id": "media-signals",
@@ -59,68 +60,10 @@
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 5
+      "resolved": 3
     }
   ],
   "tenders": [
-    {
-      "id": "ted:583447-2026",
-      "source": "ted",
-      "sourceId": "583447-2026",
-      "url": "https://ted.europa.eu/cs/notice/-/detail/583447-2026",
-      "title": "Nákup mediálního prostoru pro kampaň na podporu digitálních služeb DIA",
-      "buyer": "Digitální a informační agentura",
-      "summary": "Předmětem veřejné zakázky je nákup mediálního prostoru pro realizaci komunikační kampaně zaměřené primárně na informování veřejnosti o výhodách stávajících vybraných produktů a služeb zadavatele a motivování občanů k jejich využívání (např. Portál občana, Datové schránky, Czech POINT, REZA, Identita občana/NIA, mobilní klíč eGovernmentu).",
-      "country": "CZ",
-      "region": "Česko",
-      "publishedAt": null,
-      "deadline": null,
-      "value": {
-        "amount": 2000000,
-        "currency": "CZK"
-      },
-      "cpv": [
-        "79340000"
-      ],
-      "procedureType": "services, services",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-24T05:06:14.964Z",
-      "lastSeenAt": "2026-09-01T09:29:14.769Z",
-      "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": 0,
-      "fingerprint": "bb0b87dbb1132ddb7556",
-      "relevance": {
-        "score": 67,
-        "level": "good",
-        "reasons": [
-          "Tvorba obsahu: odpovídající CPV",
-          "Marketing & eventy: mediálního prostoru",
-          "klíčové téma je přímo v názvu"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 41
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 24
-          },
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 17
-          }
-        ],
-        "deadlineDays": null
-      }
-    },
     {
       "id": "ted:665741-2026",
       "source": "ted",
@@ -190,7 +133,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-10-07T11:10:11.547Z",
+      "lastSeenAt": "2026-10-08T11:27:58.583Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -240,7 +183,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-06T11:21:57.039Z",
-      "lastSeenAt": "2026-10-07T11:10:11.547Z",
+      "lastSeenAt": "2026-10-08T11:27:58.583Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ326386/dodavatel-audiovizualniho-obsahu-na-mezinarodni-specializovane-vystave",
@@ -290,7 +233,7 @@
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ658880/strategicke-a-vykonove-marketingove-sluzby",
       "originStatus": "unresolved",
-      "originConfidence": 33,
+      "originConfidence": 10,
       "fingerprint": "6fb363bc0512b8f63408",
       "relevance": {
         "score": 42,
@@ -314,7 +257,7 @@
             "score": 17
           }
         ],
-        "deadlineDays": 8
+        "deadlineDays": 7
       }
     }
   ]
