@@ -1,44 +1,43 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T11:27:58.583Z",
+  "generatedAt": "2026-10-09T11:23:54.913Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 4,
+    "total": 3,
     "newThisRun": 0,
     "strong": 0,
-    "closingSoon": 4,
-    "unresolvedOrigin": 1
+    "closingSoon": 3,
+    "unresolvedOrigin": 0
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 149
+      "count": 143
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 85
+      "count": 78
     },
     {
       "id": "nen",
-      "ok": false,
-      "count": 0,
-      "error": "NEN odpověděl 503."
+      "ok": true,
+      "count": 60
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 520
+      "count": 540
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 61
+      "count": 66
     },
     {
       "id": "media-signals",
@@ -133,7 +132,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-10-08T11:27:58.583Z",
+      "lastSeenAt": "2026-10-09T11:23:54.913Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -183,7 +182,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-06T11:21:57.039Z",
-      "lastSeenAt": "2026-10-08T11:27:58.583Z",
+      "lastSeenAt": "2026-10-09T11:23:54.913Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ326386/dodavatel-audiovizualniho-obsahu-na-mezinarodni-specializovane-vystave",
@@ -209,55 +208,6 @@
           }
         ],
         "deadlineDays": null
-      }
-    },
-    {
-      "id": "poptavej:VZ658880",
-      "source": "poptavej",
-      "sourceId": "VZ658880",
-      "url": "https://www.poptavej.cz/verejna-zakazka/VZ658880/strategicke-a-vykonove-marketingove-sluzby",
-      "title": "Strategické a výkonové marketingové služby",
-      "buyer": "Zadavatel z Poptávej.cz",
-      "summary": "Předmět plnění: - návrh komunikační strategie pro osobní vozidla - cíl: - do konce 2026 bychom chtěli mít prodejní partnery na všech místech v ČR - rozšíření servisní sítě ve všech oblastech na více míst, než prodejní síť - hledáme agenturního partnera, který: - disponuje know-how automotive trhu - umí kombinovat brand building a performance - dokáže pracovat pragmaticky v podmínkách omezené distribuce - navrhněte komunikační mix s marketingovým budgetem 20 MIO CZK pro CZ a SK trh - stanovte KPI s ohledem na obchodní plán 2027 celkem 800 prodaných vozů a odůvodněte rozložení mezi online a offline aktivity - uveďte cenovou kalkulaci za agenturní služby při realizaci uvedených aktivit Hodnotící kritéria: - kvalita návrhu řešení a efektivita využití rozpočtu Lokalita: - okres Břeclav Termín: - do 31.12.2027",
-      "country": "CZ",
-      "region": "okres Břeclav",
-      "publishedAt": "2026-08-28T10:00:00.000Z",
-      "deadline": "2026-10-15T10:00:00.000Z",
-      "value": null,
-      "cpv": [],
-      "procedureType": "Veřejná zakázka",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-08-28T16:43:36.234Z",
-      "lastSeenAt": "2026-09-10T09:00:59.295Z",
-      "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ658880/strategicke-a-vykonove-marketingove-sluzby",
-      "originStatus": "unresolved",
-      "originConfidence": 10,
-      "fingerprint": "6fb363bc0512b8f63408",
-      "relevance": {
-        "score": 42,
-        "level": "watch",
-        "reasons": [
-          "Marketing & eventy: marketingové služby",
-          "PR & komunikace: komunikační strategie",
-          "klíčové téma je přímo v názvu",
-          "zbývá alespoň týden na reakci"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 18
-          },
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 17
-          }
-        ],
-        "deadlineDays": 7
       }
     }
   ]
