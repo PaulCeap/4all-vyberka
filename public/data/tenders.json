@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-10T10:41:21.793Z",
+  "generatedAt": "2026-10-11T10:54:09.361Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -17,22 +17,22 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 44
+      "count": 0
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 33
+      "count": 0
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 53
+      "count": 60
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 473
+      "count": 410
     },
     {
       "id": "ezak-watchlist",
@@ -59,7 +59,7 @@
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 3
+      "resolved": 2
     }
   ],
   "tenders": [
@@ -132,7 +132,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-10-10T10:41:21.793Z",
+      "lastSeenAt": "2026-10-11T10:54:09.361Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -182,7 +182,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-06T11:21:57.039Z",
-      "lastSeenAt": "2026-10-10T10:41:21.793Z",
+      "lastSeenAt": "2026-10-11T10:54:09.361Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ326386/dodavatel-audiovizualniho-obsahu-na-mezinarodni-specializovane-vystave",
