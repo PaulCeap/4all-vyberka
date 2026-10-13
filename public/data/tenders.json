@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T12:11:56.351Z",
+  "generatedAt": "2026-10-13T11:56:13.295Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -8,7 +8,7 @@
   },
   "stats": {
     "total": 3,
-    "newThisRun": 0,
+    "newThisRun": 1,
     "strong": 0,
     "closingSoon": 3,
     "unresolvedOrigin": 0
@@ -17,27 +17,27 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 112
+      "count": 173
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 63
+      "count": 92
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 55
+      "count": 60
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 506
+      "count": 577
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 65
+      "count": 68
     },
     {
       "id": "media-signals",
@@ -53,13 +53,14 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 0
+      "resolved": 1
     },
     {
       "id": "poptavej",
-      "ok": true,
-      "count": 20,
-      "resolved": 3
+      "ok": false,
+      "count": 0,
+      "error": "fetch failed",
+      "resolved": 0
     }
   ],
   "tenders": [
@@ -84,13 +85,16 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-28T11:02:59.792Z",
-      "lastSeenAt": "2026-10-06T11:21:57.039Z",
+      "lastSeenAt": "2026-10-13T11:56:13.295Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ828112/zajisteni-realizace-marketingove-strategie",
       "originStatus": "resolved",
       "originConfidence": 72,
       "fingerprint": "b21c259eac9e7bd15f37",
+      "duplicateSources": [
+        "ted"
+      ],
       "relevance": {
         "score": 64,
         "level": "good",
@@ -116,46 +120,62 @@
       }
     },
     {
-      "id": "mediaguru:pivovary-zubr-eventova-agentura-2027",
-      "source": "mediaguru",
-      "sourceId": "pivovary-zubr-eventova-agentura-2027",
-      "url": "https://www.mediaguru.cz/pivovary-zubr-hledaji-eventovou-agenturu-pro-rok-2027",
-      "title": "Pivovary Zubr hledají eventovou agenturu pro rok 2027",
-      "buyer": "Pivovary Zubr",
-      "summary": "Výběrové řízení na strategickou eventovou agenturu pro festivaly, promo a samplingové akce, roadshow, firemní události, promotérské týmy, logistiku a POS materiály po celé ČR.",
+      "id": "zakazky-gov:RVZ2600290805",
+      "source": "zakazky-gov",
+      "sourceId": "RVZ2600290805",
+      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600290805",
+      "title": "Zajištění reklamních ploch pro potřeby propagace výstav, expozic a dalších akcí UPM",
+      "buyer": "Uměleckoprůmyslové museum v Praze",
+      "summary": "Předmětem veřejné zakázky je: Zajištění reklamních nosičů - CLV – metro, sítě, rotundy - Billboardy - Rámečky a další formáty v příměstské dopravě - Polepy tram - Plochy na Letišti Praha - A1 mokrý výlep v krajských a okresních městech - Další navržené kombinace reklamy",
       "country": "CZ",
-      "region": "Česká republika",
-      "publishedAt": "2026-06-15T06:00:00.000Z",
-      "deadline": null,
+      "region": "Česko",
+      "publishedAt": "2026-10-12T12:41:18.416Z",
+      "deadline": "2026-10-19T08:00:00.000Z",
       "value": null,
-      "cpv": [],
-      "procedureType": "Komerční výběrové řízení — mediální signál",
-      "opportunityType": "market-signal",
-      "firstSeenAt": "2026-08-09T08:00:00.000Z",
-      "lastSeenAt": "2026-10-12T12:11:56.351Z",
-      "status": "signal",
+      "cpv": [
+        "79341000"
+      ],
+      "procedureType": "VEREJNA ZAKAZKA",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-13T11:56:13.295Z",
+      "lastSeenAt": "2026-10-13T11:56:13.295Z",
+      "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
       "originConfidence": null,
-      "fingerprint": "15b58812da73e9ffa3a8",
+      "fingerprint": "6af45b8bc5b3173adeef",
+      "duplicateSources": [
+        "zakazky-gov",
+        "nen"
+      ],
       "relevance": {
-        "score": 64,
+        "score": 61,
         "level": "good",
         "reasons": [
-          "Marketing & eventy: event, festival",
-          "klíčové téma je přímo v názvu",
-          "aktivní komerční výběrové řízení zachycené v médiích"
+          "Tvorba obsahu: odpovídající CPV",
+          "PR & komunikace: propagace",
+          "klíčové téma je přímo v názvu"
         ],
         "negativeSignals": [],
         "categories": [
           {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 33
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 24
+          },
+          {
             "id": "marketing",
             "label": "Marketing & eventy",
-            "score": 32
+            "score": 24
           }
         ],
-        "deadlineDays": null
+        "deadlineDays": 6
       }
     },
     {
@@ -182,16 +202,13 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-06T11:21:57.039Z",
-      "lastSeenAt": "2026-10-12T12:11:56.351Z",
+      "lastSeenAt": "2026-10-13T11:56:13.295Z",
       "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ326386/dodavatel-audiovizualniho-obsahu-na-mezinarodni-specializovane-vystave",
-      "originStatus": "resolved",
-      "originConfidence": 80,
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
       "fingerprint": "9b939af5574b43e722aa",
-      "duplicateSources": [
-        "ted"
-      ],
       "relevance": {
         "score": 47,
         "level": "watch",
