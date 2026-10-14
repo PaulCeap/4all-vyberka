@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T11:56:13.295Z",
+  "generatedAt": "2026-10-14T09:35:49.633Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 3,
+    "total": 4,
     "newThisRun": 1,
     "strong": 0,
     "closingSoon": 3,
-    "unresolvedOrigin": 0
+    "unresolvedOrigin": 1
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 173
+      "count": 127
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 92
+      "count": 61
     },
     {
       "id": "nen",
@@ -32,12 +32,12 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 577
+      "count": 564
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 68
+      "count": 77
     },
     {
       "id": "media-signals",
@@ -53,14 +53,13 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 1
+      "resolved": 2
     },
     {
       "id": "poptavej",
-      "ok": false,
-      "count": 0,
-      "error": "fetch failed",
-      "resolved": 0
+      "ok": true,
+      "count": 20,
+      "resolved": 6
     }
   ],
   "tenders": [
@@ -85,7 +84,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-28T11:02:59.792Z",
-      "lastSeenAt": "2026-10-13T11:56:13.295Z",
+      "lastSeenAt": "2026-10-14T09:35:49.633Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ828112/zajisteni-realizace-marketingove-strategie",
@@ -138,12 +137,12 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-13T11:56:13.295Z",
-      "lastSeenAt": "2026-10-13T11:56:13.295Z",
+      "lastSeenAt": "2026-10-14T09:35:49.633Z",
       "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": null,
+      "discoverySource": "poptavky",
+      "discoveryUrl": "https://www.poptavky.cz/poptavka/2128705-zajisteni-reklamnich-ploch-pro-potreby-propagace-vystav-expozic",
+      "originStatus": "resolved",
+      "originConfidence": 88,
       "fingerprint": "6af45b8bc5b3173adeef",
       "duplicateSources": [
         "zakazky-gov",
@@ -175,7 +174,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 6
+        "deadlineDays": 5
       }
     },
     {
@@ -202,13 +201,16 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-06T11:21:57.039Z",
-      "lastSeenAt": "2026-10-13T11:56:13.295Z",
+      "lastSeenAt": "2026-10-14T09:35:49.633Z",
       "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": null,
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ326386/dodavatel-audiovizualniho-obsahu-na-mezinarodni-specializovane-vystave",
+      "originStatus": "resolved",
+      "originConfidence": 80,
       "fingerprint": "9b939af5574b43e722aa",
+      "duplicateSources": [
+        "ted"
+      ],
       "relevance": {
         "score": 47,
         "level": "watch",
@@ -225,6 +227,53 @@
           }
         ],
         "deadlineDays": null
+      }
+    },
+    {
+      "id": "poptavej:VZ115731",
+      "source": "poptavej",
+      "sourceId": "VZ115731",
+      "url": "https://www.poptavej.cz/verejna-zakazka/VZ115731/zajisteni-mezinarodni-staticke-konference",
+      "title": "Zajištění mezinárodní statické konference",
+      "buyer": "Zadavatel z Poptávej.cz",
+      "summary": "Předmět plnění: - příprava a organizace konference - jedná se o zajištění ubytování - dále zajištění pronájmu prostor - zajištění realizačního týmu - zajištění cateringu - administrativní a organizační zajištění konference - zajištění doprovodného programu atd. - podrobná specifikace je v příloze Hodnoticí kritéria: - hodnocení návrhu řešení (Atraktivita, kreativita, kvalita a proveditelnost předloženého návrhu) - 40 % - počet referencí v posledních 3 letech nad rámec 3 požadovaných v rámci technické kvalifikace - 30 % - zkušenosti event managera (počet referencí na zajištění obdobné (nebo větší) odborné konference v posledních 3 letech) - 30 % Lokalita: - Praha Termín: - od 1. listopadu 2026 do 30. listopadu 2027",
+      "country": "CZ",
+      "region": "Praha",
+      "publishedAt": "2026-10-13T10:00:00.000Z",
+      "deadline": "2026-11-03T10:00:00.000Z",
+      "value": {
+        "amount": 900000,
+        "currency": "CZK"
+      },
+      "cpv": [],
+      "procedureType": "Zakázka na služby",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-14T09:35:49.633Z",
+      "lastSeenAt": "2026-10-14T09:35:49.633Z",
+      "status": "open",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ115731/zajisteni-mezinarodni-staticke-konference",
+      "originStatus": "unresolved",
+      "originConfidence": 59,
+      "fingerprint": "3662d9dd9a6154527a47",
+      "relevance": {
+        "score": 43,
+        "level": "watch",
+        "reasons": [
+          "Marketing & eventy: event, konference",
+          "klíčové téma je přímo v názvu",
+          "jde o zakázku na služby",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 22
+          }
+        ],
+        "deadlineDays": 21
       }
     }
   ]
