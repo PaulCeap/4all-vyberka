@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T09:35:49.633Z",
+  "generatedAt": "2026-10-15T09:13:56.166Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -17,22 +17,22 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 127
+      "count": 160
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 61
+      "count": 85
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 60
+      "count": 59
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 564
+      "count": 575
     },
     {
       "id": "ezak-watchlist",
@@ -53,13 +53,14 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 2
+      "resolved": 4
     },
     {
       "id": "poptavej",
-      "ok": true,
-      "count": 20,
-      "resolved": 6
+      "ok": false,
+      "count": 0,
+      "error": "fetch failed",
+      "resolved": 0
     }
   ],
   "tenders": [
@@ -84,7 +85,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-28T11:02:59.792Z",
-      "lastSeenAt": "2026-10-14T09:35:49.633Z",
+      "lastSeenAt": "2026-10-15T09:13:56.166Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ828112/zajisteni-realizace-marketingove-strategie",
@@ -137,7 +138,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-13T11:56:13.295Z",
-      "lastSeenAt": "2026-10-14T09:35:49.633Z",
+      "lastSeenAt": "2026-10-15T09:13:56.166Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2128705-zajisteni-reklamnich-ploch-pro-potreby-propagace-vystav-expozic",
@@ -174,7 +175,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 5
+        "deadlineDays": 4
       }
     },
     {
@@ -208,9 +209,6 @@
       "originStatus": "resolved",
       "originConfidence": 80,
       "fingerprint": "9b939af5574b43e722aa",
-      "duplicateSources": [
-        "ted"
-      ],
       "relevance": {
         "score": 47,
         "level": "watch",
@@ -254,7 +252,7 @@
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ115731/zajisteni-mezinarodni-staticke-konference",
       "originStatus": "unresolved",
-      "originConfidence": 59,
+      "originConfidence": 27,
       "fingerprint": "3662d9dd9a6154527a47",
       "relevance": {
         "score": 43,
@@ -273,7 +271,7 @@
             "score": 22
           }
         ],
-        "deadlineDays": 21
+        "deadlineDays": 20
       }
     }
   ]
