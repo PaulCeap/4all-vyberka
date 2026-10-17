@@ -26,7 +26,7 @@ Publikovaný soubor `public/data/tenders.json` má `schemaVersion: 1` a následu
 |---|---|---|
 | `id` | string | Stabilní klíč `source:sourceId` |
 | `source`, `sourceId` | string | Původ a identifikátor u zdroje |
-| `url` | string | Odkaz na zdroj; u neověřeného radarového tipu může vést na agregátor |
+| `url` | string | Odkaz na původní záznam; radarové agregátory se do publikovaného souboru nedostanou |
 | `title`, `buyer`, `summary` | string | Normalizované texty |
 | `country`, `region` | string | Místo plnění |
 | `publishedAt`, `deadline` | ISO datetime / null | Klíčové termíny |
@@ -40,7 +40,7 @@ Publikovaný soubor `public/data/tenders.json` má `schemaVersion: 1` a následu
 | `fingerprint` | string | Krátký SHA-256 pro mezizdrojovou deduplikaci |
 | `duplicateSources` | string[] / undefined | Zdroje sloučeného záznamu |
 | `discoverySource`, `discoveryUrl` | string / null | Radarový agregátor a URL, přes kterou byl tip zachycen |
-| `originStatus` | string | `verified`, `resolved` nebo `unresolved` |
+| `originStatus` | string | V publikovaných datech `verified` nebo `resolved`; `unresolved` je jen v interním `data/radar-leads.json` |
 | `originConfidence` | number / null | Jistota automatického spojení s originálem 0–100 |
 | `relevance` | object | Výsledek scoringu |
 

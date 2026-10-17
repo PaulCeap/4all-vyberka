@@ -33,6 +33,53 @@ function currency(value) {
   return "CZK";
 }
 
+export function parseNenDetail(html, url, summary = {}) {
+  const state = reduxState(html);
+  const container = Object.values(state.detailObjectStore?.objects || {})[0];
+  const item = container?.object;
+  if (!item?.kod || !item?.nazev) return null;
+  return {
+    source: "nen",
+    sourceId: item.kod,
+    url,
+    title: item.nazev,
+    buyer: item.zadavatelNazev || summary.zadavatelNazev,
+    summary: item.popisPredmet || "",
+    country: "CZ",
+    region: item.hlavniMistoNUTS || "Česko",
+    publishedAt: item.datumProfil || null,
+    deadline: item.podaniLhuta || summary.podaniLhuta || null,
+    deadlineTimeKnown: /T\d{2}:\d{2}|\b\d{1,2}:\d{2}\b/.test(String(item.podaniLhuta || summary.podaniLhuta || "")),
+    value: item.predpokladHodnota
+      ? { amount: Number(item.predpokladHodnota), currency: currency(item.predpokladMenaNazev) }
+      : null,
+    cpv: [item.cpvPredmetuKod || item.nipezPredmetuKod].filter(Boolean),
+    procedureType: [item.druhVZ, item.druhZRNazev].filter(Boolean).join(" / "),
+    status: item.stavZP === "neukoncena" ? "open" : "unknown",
+    originStatus: "verified",
+  };
+}
+
+export async function fetchNenDetail(url, { fetchImpl = fetch } = {}) {
+  return parseNenDetail(await getHtml(url, fetchImpl), url);
+}
+
+export async function searchNenForOrigin(title, { fetchImpl = fetch, limit = 5 } = {}) {
+  const route = encodeURIComponent(`p:vz:stavZP=neukoncena&query=${title}`);
+  const state = reduxState(await getHtml(`${NEN_BASE}/verejne-zakazky/${route}`, fetchImpl));
+  const collection = state.collectionStore?.collections?.["verejne-zakazky-seznam"]?.collection;
+  if (!Array.isArray(collection)) throw new Error("NEN změnil formát vyhledávání.");
+  const results = [];
+  for (const row of collection.slice(0, limit)) {
+    try {
+      const url = detailUrl(row.kod);
+      const detail = parseNenDetail(await getHtml(url, fetchImpl), url, row);
+      if (detail) results.push(detail);
+    } catch { /* další kandidát může být dostupný */ }
+  }
+  return results;
+}
+
 export function selectNenSummaries(buckets, limit) {
   const selected = [];
   const seen = new Set();
@@ -87,29 +134,9 @@ export async function fetchNen({ fetchImpl = fetch } = {}) {
     const batch = rows.slice(index, index + 6);
     const details = await Promise.allSettled(batch.map(async (row) => {
       const url = detailUrl(row.kod);
-      const state = reduxState(await getHtml(url, fetchImpl));
-      const container = Object.values(state.detailObjectStore?.objects || {})[0];
-      const item = container?.object;
-      if (!item) throw new Error(`NEN detail ${row.kod} je prázdný.`);
-      return {
-        source: "nen",
-        sourceId: item.kod || row.kod,
-        url,
-        title: item.nazev || row.nazev,
-        buyer: item.zadavatelNazev || row.zadavatelNazev,
-        summary: item.popisPredmet || "",
-        country: "CZ",
-        region: item.hlavniMistoNUTS || "Česko",
-        publishedAt: item.datumProfil || null,
-        deadline: item.podaniLhuta || row.podaniLhuta || null,
-        deadlineTimeKnown: /T\d{2}:\d{2}|\b\d{1,2}:\d{2}\b/.test(String(item.podaniLhuta || row.podaniLhuta || "")),
-        value: item.predpokladHodnota
-          ? { amount: Number(item.predpokladHodnota), currency: currency(item.predpokladMenaNazev) }
-          : null,
-        cpv: [item.cpvPredmetuKod || item.nipezPredmetuKod].filter(Boolean),
-        procedureType: [item.druhVZ, item.druhZRNazev].filter(Boolean).join(" / "),
-        status: item.stavZP === "neukoncena" ? "open" : "unknown",
-      };
+      const detail = parseNenDetail(await getHtml(url, fetchImpl), url, row);
+      if (!detail) throw new Error(`NEN detail ${row.kod} je prázdný.`);
+      return detail;
     }));
     for (const detail of details) if (detail.status === "fulfilled") results.push(detail.value);
   }

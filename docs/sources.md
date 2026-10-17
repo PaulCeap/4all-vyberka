@@ -40,9 +40,9 @@
 ## Poptávky.cz a Poptávej.cz: pouze radar
 
 - Agent denně čte veřejně dostupné kategorie reklamy a tisku, ale tyto weby nepovažuje za původní zdroj.
-- U relevantního tipu nejprve hledá konkrétní odchozí odkaz na oficiální profil. Když chybí, porovná název, identifikátor, lhůtu a hodnotu s položkami ze Zakázky GOV, TenderArena, NEN, TED a E-ZAK.
-- Při bezpečné shodě karta odkazuje přímo na originál a jen uvádí „zachyceno přes Poptávky.cz/Poptávej.cz“.
-- Když se původ nepodaří spolehlivě určit, tip může zůstat v přehledu, ale je výrazně označený jako neověřený a tlačítko nepředstírá, že vede na zadavatele.
+- U tipu nejprve hledá konkrétní odchozí odkaz na profil zadavatele. Podporovaný profil otevře a přečte jeho detail. Jinak porovná název, identifikátor, zadavatele, lhůtu a hodnotu s položkami z oficiálních zdrojů; u dosud nenalezených veřejných zakázek zkusí i cílené hledání v NEN.
+- Do veřejného přehledu a bodování vstupují jen údaje získané z původního zdroje. Text ani odhad ceny agregátoru se do ověřeného záznamu nekopírují.
+- Nejednoznačné a nedohledané tipy zůstávají v `data/radar-leads.json` pro další denní pokus; na webu se nezobrazí.
 - Kontakty za paywallem agregátorů nejsou součástí sběru a agent se je nepokouší obcházet.
 
 ## MediaGuru, Médiář a Marketing & Media

@@ -2,7 +2,7 @@ import { PROJECT } from "./config.mjs";
 import { deduplicateTenders } from "./deduplicate.mjs";
 import { normalizeTender, validateDataset } from "./model.mjs";
 import { scoreTender } from "./scoring.mjs";
-import { isAggregatorSource } from "./origin-resolver.mjs";
+import { isAggregatorSource, sourceFromOfficialUrl } from "./origin-resolver.mjs";
 
 const OFFICIAL_SOURCES = new Set([
   "zakazky-gov", "tenderarena", "nen", "ted", "ezak-jmk", "ezak-sz",
@@ -16,6 +16,7 @@ export function buildDataset({ rows, sources, previous, now, fixturesMode = fals
   const invalidRows = [];
 
   for (const row of rows) {
+    if (!fixturesMode && (isAggregatorSource(row?.source) || row?.originStatus === "unresolved")) continue;
     try {
       const draft = normalizeTender(row, now);
       const old = previousById.get(draft.id);
@@ -32,6 +33,8 @@ export function buildDataset({ rows, sources, previous, now, fixturesMode = fals
   const currentKeys = new Set(normalized.map((tender) => tender.id));
   const previousNormalized = previousTenders
     .filter((tender) => !isAggregatorSource(tender.source))
+    .filter((tender) => !tender.discoverySource ||
+      (sourceFromOfficialUrl(tender.url) && !/^(neuveden|zadavatel z)/i.test(tender.buyer || "")))
     .filter((tender) => !currentKeys.has(tender.id))
     .map((tender) => normalizeTender(tender, now));
   const tenders = deduplicateTenders([...previousNormalized, ...normalized])

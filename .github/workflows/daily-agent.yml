@@ -27,13 +27,13 @@ jobs:
         run: npm run agent
       - name: Uložit aktualizovaná data
         run: |
-          if git diff --quiet -- public/data/tenders.json; then
+          if git diff --quiet -- public/data/tenders.json data/radar-leads.json; then
             echo "Žádná změna dat."
             exit 0
           fi
           git config user.name "4ALL Výběrka Bot"
           git config user.email "actions@users.noreply.github.com"
-          git add public/data/tenders.json
+          git add public/data/tenders.json data/radar-leads.json
           git commit -m "data: denní aktualizace zakázek"
           git push
       - name: Upozornit e-mailem na nové příležitosti

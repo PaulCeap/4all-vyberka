@@ -91,13 +91,8 @@ function cardTemplate(tender) {
   const deadlineLabel = days === null ? "Neuvedeno" : deadlineDay === today ? "Dnes" : `${days} ${days === 1 ? "den" : days < 5 ? "dny" : "dní"}`;
   const sourceUrl = safeExternalUrl(tender.url);
   const discoveredVia = tender.discoverySource ? sourceLabel(tender.discoverySource) : null;
-  const originUnresolved = tender.originStatus === "unresolved";
-  const provenance = originUnresolved
-    ? `<p class="provenance provenance-warning">Tip zachycen přes ${escapeHtml(discoveredVia || sourceLabel(tender.source))}. Původní veřejný zdroj se zatím nepodařilo spolehlivě dohledat.</p>`
-    : discoveredVia
-      ? `<p class="provenance">Zachyceno přes ${escapeHtml(discoveredVia)} · odkaz vede na ověřený původní zdroj</p>`
-      : "";
-  const linkLabel = originUnresolved ? "Otevřít zachycený tip ↗" : "Otevřít originální zdroj ↗";
+  const provenance = discoveredVia
+    ? `<p class="provenance">Nalezeno přes ${escapeHtml(discoveredVia)}</p>` : "";
   return `
     <article class="tender-card" data-id="${escapeHtml(tender.id)}">
       <div class="score" style="--score:${tender.relevance.score};--score-color:${scoreColor}" aria-label="Shoda ${tender.relevance.score} ze 100">
@@ -124,7 +119,7 @@ function cardTemplate(tender) {
           <div class="side-row"><span>Hodnota</span><strong>${escapeHtml(formatMoney(tender.value))}</strong></div>
           <div class="side-row"><span>Zveřejněno</span><strong>${escapeHtml(formatDate(tender.publishedAt))}</strong></div>
         </div>
-        ${sourceUrl ? `<a class="source-link${originUnresolved ? " unresolved" : ""}" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noreferrer">${linkLabel}</a>` : ""}
+        ${sourceUrl ? `<a class="source-link" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noreferrer">Otevřít původní zdroj ↗</a>` : ""}
       </div>
       <button class="save-button" type="button" aria-label="${isSaved ? "Odebrat z uložených" : "Uložit zakázku"}" aria-pressed="${isSaved}" data-save="${escapeHtml(tender.id)}">${isSaved ? "★" : "☆"}</button>
     </article>`;

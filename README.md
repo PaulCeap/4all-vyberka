@@ -52,7 +52,7 @@ Scoring je záměrně čitelný a verzovaný v `src/config.mjs` a `src/scoring.m
 2. přidává body za shodu přímo v názvu, zakázku na služby a použitelnou lhůtu,
 3. odečítá body za stavebnictví, právní služby, hardware a další zjevně nerelevantní předměty,
 4. publikuje jen zakázky se skóre alespoň 42 a s dosud neuplynulým termínem,
-5. u radarových tipů dohledá oficiální originál nebo jasně označí, že zatím ověřený není,
+5. radarové tipy pustí do hodnocení až po dohledání původního záznamu; nedohledané ponechá mimo web pro další pokus,
 6. u každé zakázky uloží důvody, kategorie a negativní signály.
 
 Skóre je předvýběr, nikoli automatické doporučení k podání nabídky. Před rozhodnutím je nutné otevřít původní zdroj a ověřit kvalifikaci, dokumentaci, lhůty, rozpočet a kapacitu týmu.

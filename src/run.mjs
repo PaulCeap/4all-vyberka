@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { buildDataset } from "./dataset.mjs";
+import { findOriginalRows } from "./origin-discovery.mjs";
 import { isAggregatorSource, resolveAggregatorLeads } from "./origin-resolver.mjs";
 import { fetchManual } from "./sources/manual.mjs";
 import { fetchNen } from "./sources/nen.mjs";
@@ -12,6 +13,7 @@ import { fetchTenderArena } from "./sources/tenderarena.mjs";
 import { fetchZakazkyGov } from "./sources/zakazky-gov.mjs";
 
 const OUTPUT = "public/data/tenders.json";
+const RADAR_STATE = "data/radar-leads.json";
 const FIXTURES = "data/fixtures/incoming.json";
 const now = process.env.AGENT_NOW ? new Date(process.env.AGENT_NOW) : new Date();
 const fixturesMode = process.argv.includes("--fixtures");
@@ -39,9 +41,9 @@ async function runCollectors(collectors) {
   };
 }
 
-async function collect(previous = { tenders: [] }) {
+async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }) {
   if (fixturesMode) {
-    return { rows: await loadJson(FIXTURES, []), sources: [{ id: "fixtures", ok: true }] };
+    return { rows: await loadJson(FIXTURES, []), sources: [{ id: "fixtures", ok: true }], pendingLeads: [] };
   }
   const officialCollectors = [
     ["zakazky-gov", () => fetchZakazkyGov()],
@@ -69,17 +71,42 @@ async function collect(previous = { tenders: [] }) {
     throw new Error(`Oficiální zdroje nevrátily žádnou zakázku: ${official.sources.map((source) => `${source.id}: ${source.error || `${source.count} položek`}`).join("; ")}`);
   }
 
-  const previousUnresolved = previous.tenders.filter((tender) =>
-    isAggregatorSource(tender.source) && tender.originStatus !== "resolved");
-  const resolution = resolveAggregatorLeads([...radar.rows, ...previousUnresolved], official.rows);
+  const previousUnresolved = [
+    ...previousRadar.leads,
+    ...previous.tenders.filter((tender) => isAggregatorSource(tender.source) && tender.originStatus !== "resolved"),
+  ].filter((lead) => {
+    if (lead.deadline && new Date(lead.deadline) <= now) return false;
+    return new Date(lead.lastSeenAt || lead.firstSeenAt || 0) >= new Date(now.valueOf() - 45 * 86_400_000);
+  });
+  const leadMap = new Map();
+  for (const lead of previousUnresolved) leadMap.set(`${lead.source}:${lead.sourceId}`, lead);
+  for (const lead of radar.rows.filter(Boolean)) {
+    const key = `${lead.source}:${lead.sourceId}`;
+    leadMap.set(key, {
+      ...lead,
+      firstSeenAt: leadMap.get(key)?.firstSeenAt || now.toISOString(),
+      lastSeenAt: now.toISOString(),
+    });
+  }
+  const leads = [...leadMap.values()];
+  const firstPass = resolveAggregatorLeads(leads, official.rows);
+  const unmatched = firstPass.rows.filter((row) => row.originStatus === "unresolved");
+  const originalRows = await findOriginalRows(unmatched, official.rows, { now });
+  const resolution = resolveAggregatorLeads(leads, [...official.rows, ...originalRows]);
   const aggregatorSource = sources.find((source) => source.id === "poptavky");
   if (aggregatorSource) aggregatorSource.resolved = resolution.rows.filter((row) => row.discoverySource === "poptavky" && row.originStatus === "resolved").length;
   const poptavejSource = sources.find((source) => source.id === "poptavej");
   if (poptavejSource) poptavejSource.resolved = resolution.rows.filter((row) => row.discoverySource === "poptavej" && row.originStatus === "resolved").length;
 
+  const pendingLeads = resolution.rows.filter((row) => row.originStatus === "unresolved");
+  for (const source of sources.filter((item) => isAggregatorSource(item.id))) {
+    source.pending = pendingLeads.filter((lead) => lead.discoverySource === source.id).length;
+  }
   return {
-    rows: [...official.rows, ...supporting.rows, ...resolution.rows],
+    rows: [...official.rows, ...originalRows, ...supporting.rows,
+      ...resolution.rows.filter((row) => row.originStatus === "resolved")],
     sources,
+    pendingLeads,
   };
 }
 
@@ -88,10 +115,15 @@ const demoIds = new Set(["zakazky-gov:RVZ-DEMO-001", "manual:DEMO-002", "manual:
 const previous = fixturesMode
   ? { ...loadedPrevious, tenders: [] }
   : { ...loadedPrevious, tenders: loadedPrevious.tenders.filter((tender) => !demoIds.has(tender.id)) };
-const { rows, sources } = await collect(previous);
+const previousRadar = fixturesMode ? { leads: [] } : await loadJson(RADAR_STATE, { leads: [] });
+const { rows, sources, pendingLeads } = await collect(previous, previousRadar);
 const { dataset, invalidRows } = buildDataset({ rows, sources, previous, now, fixturesMode });
 await mkdir("public/data", { recursive: true });
 await writeFile(OUTPUT, `${JSON.stringify(dataset, null, 2)}\n`);
+if (!fixturesMode) {
+  await mkdir("data", { recursive: true });
+  await writeFile(RADAR_STATE, `${JSON.stringify({ updatedAt: now.toISOString(), leads: pendingLeads }, null, 2)}\n`);
+}
 console.log(`Uloženo ${dataset.tenders.length} relevantních zakázek (${dataset.stats.newThisRun} nových).`);
 if (invalidRows.length) console.warn(`Přeskočeno ${invalidRows.length} neplatných položek: ${JSON.stringify(invalidRows.slice(0, 5))}`);
 for (const source of sources) {

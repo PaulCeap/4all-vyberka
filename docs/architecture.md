@@ -31,7 +31,7 @@ flowchart LR
 - **Český agregátor:** Zakázky GOV uvádí zakázky z různých systémů na jednom místě a poskytuje stručný popis, zadavatele, publikaci a lhůtu.
 - **Fail-safe:** když oficiální zdroje nevrátí žádnou použitelnou položku, agent skončí chybou a nepřepíše data prázdným souborem. Při výpadku jednotlivého zdroje použije ostatní a stav zapíše do `sources`. Neplatný jednotlivý řádek přeskočí a započte do diagnostiky.
 - **Termíny:** prošlé zakázky se nezobrazují. Chybějící termín se nepočítá mezi blížící se lhůty; česká data se převádějí podle letního nebo zimního času a čas se v přehledu ukazuje jen tehdy, když ho zdroj skutečně uvedl.
-- **Agregátory nejsou autorita:** Poptávky.cz a Poptávej.cz pouze vytvoří lead. Přímý oficiální odkaz nebo shoda s oficiálním záznamem jej povýší na ověřený původ; nejisté tipy zůstávají viditelně označené.
+- **Agregátory nejsou autorita:** Poptávky.cz a Poptávej.cz pouze vytvoří lead. Odkaz se musí otevřít a přečíst nebo se lead musí jednoznačně spojit s již načteným oficiálním záznamem. Teprve údaje oficiálního záznamu se bodují a publikují. Nedohledané tipy čekají mimo web na další pokus.
 
 ## Denní běh
 

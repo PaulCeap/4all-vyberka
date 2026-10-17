@@ -42,3 +42,11 @@ test("bez použitelného oficiálního zdroje se nový přehled nevydá", () => 
   assert.throws(() => make([{ ...tender("rucni", null), source: "manual" }]), /Oficiální zdroje/);
   assert.throws(() => make([{ ...tender("neplatna", null), title: "" }]), /Oficiální zdroje/);
 });
+
+test("tipy z Poptávej a Poptávky se nikdy nehodnotí ani nezobrazí samy", () => {
+  const radar = { ...tender("radar", "2026-10-25T10:00:00Z"), source: "poptavej",
+    url: "https://www.poptavej.cz/verejna-zakazka/VZ123/x", summary: "Velmi lákavý popis z radaru." };
+  const previous = { tenders: [radar] };
+  const { dataset } = make([radar, tender("original", "2026-10-25T10:00:00Z")], previous);
+  assert.deepEqual(dataset.tenders.map((item) => item.sourceId), ["original"]);
+});
