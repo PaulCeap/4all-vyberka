@@ -85,6 +85,33 @@ test("stručné oznámení TED se nahradí původním profilem NEN", async () =>
   assert.ok(result.supersededIds.has("ted:687952-2026"));
 });
 
+test("TED s odkazem na profil zadavatele vybere jeho konkrétní zakázku", async () => {
+  const profile = "https://www.e-zakazky.cz/profil-zadavatele/01d47fe3-916b-4869-bc75-c097dc0eefe1";
+  const primary = {
+    source: "official-profile", sourceId: "P26V00000072",
+    url: `${profile}/zakazka/P26V00000072`,
+    title: "Zajištění realizace marketingové strategie pro rok 2027",
+    buyer: "Oborová zdravotní pojišťovna",
+    deadline: "2026-11-02T09:00:00.000Z", documents: [],
+  };
+  const ted = {
+    source: "ted", sourceId: "706257-2026", title: primary.title, buyer: primary.buyer,
+    url: "https://ted.europa.eu/cs/notice/-/detail/706257-2026",
+    summary: "Oficiální oznámení", candidateProfileUrls: [profile],
+  };
+  let nenCalls = 0;
+  const result = await preferPrimaryProfiles([ted], {
+    minimumScore: 0,
+    searchProfile: async (url) => { assert.equal(url, profile); return [primary]; },
+    searchNen: async () => { nenCalls += 1; return []; },
+  });
+  assert.equal(result.rows[0].url, primary.url);
+  assert.equal(result.rows[0].deadline, primary.deadline);
+  assert.equal(result.rows[0].summary, ted.summary);
+  assert.equal(nenCalls, 0);
+  assert.ok(result.supersededIds.has("ted:706257-2026"));
+});
+
 test("NEN podklady se načtou jen k relevantní zakázce", async () => {
   const rows = await attachNenDocuments([original], {
     minimumScore: 0,

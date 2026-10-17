@@ -93,8 +93,6 @@ h1 { margin: 0; font-size: clamp(32px, 4vw, 48px); font-weight: 600; line-height
 .verified-facts ul { margin: 5px 0 0; padding-left: 17px; }
 .verified-facts li + li { margin-top: 5px; }
 .verified-facts a { font-weight: 600; }
-.provenance { margin: 10px 0 0; color: #267d24; font-size: 11px; }
-.provenance-warning { padding: 8px 10px; border-left: 3px solid var(--yellow); background: #fffbea; color: #5a4d24; }
 .match-tags { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 12px; }
 .match-tags span { padding: 3px 7px; border-radius: 2px; background: #e8fbe5; font-size: 10px; }
 .reason { margin: 9px 0 0; color: var(--muted); font-size: 11px; }

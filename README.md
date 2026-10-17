@@ -12,6 +12,7 @@ Denně aktualizovaný předvýběr veřejných zakázek, poptávek a komerčníc
 - cílený průběžný výběr stále otevřených zakázek z **NEN**, včetně starších položek mimo denní feed,
 - evropský **TED Search API** jako doplňkový a záložní zdroj,
 - **Poptávky.cz** a **Poptávej.cz** pouze jako radar s automatickým dohledáním původního zdroje,
+- interní evidence, odkud tip přišel, je oddělena od veřejných dat; na webu se uvádí pouze ověřený záznam,
 - přímý watchlist **E-ZAK Jihomoravského kraje** a **Správy železnic**,
 - komerční tendry z RSS **MediaGuru**, **Médiáře** a **Marketing & Media**,
 - volitelný ruční vstup přes JSON v `data/manual/`,

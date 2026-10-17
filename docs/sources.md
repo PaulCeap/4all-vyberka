@@ -28,8 +28,13 @@
 - Oficiální Search API Úředního věstníku EU: `POST https://api.ted.europa.eu/v3/notices/search`.
 - Nevyžaduje autentizaci.
 - Dotaz vybírá soutěžní oznámení českých zadavatelů za posledních osm dní.
-- Zachytí hlavně nadlimitní zakázky, proto doplňuje, ale nenahrazuje český agregátor.
-- API může vracet několik lotů; adaptér vezme nejbližší lhůtu a sloučí popisy.
+- Zachytí hlavně nadlimitní zakázky. Oznámení je oficiální zdroj a zároveň vodítko ke konkrétnímu profilu zadavatele; pokud profil najdeme, karta vede přímo na něj.
+- API může vracet několik lotů; adaptér vezme nejbližší lhůtu včetně času, sloučí popisy a přečte odkazy na profil a dokumentaci.
+
+### E-ZAKAZKY
+
+- Je-li v oznámení TED odkaz na profil v E-ZAKAZKY, agent na profilu vyhledá konkrétní zakázku, přečte její detail, aktuální lhůtu a seznam příloh.
+- Veřejná karta pak odkazuje na zakázku na profilu zadavatele; oznámení TED slouží jako doplňující oficiální popis, pokud profil vlastní souhrn nemá.
 
 ### NEN
 
@@ -41,7 +46,7 @@
 
 - Agent denně čte veřejně dostupné kategorie reklamy a tisku, ale tyto weby nepovažuje za původní zdroj.
 - U tipu nejprve hledá konkrétní odchozí odkaz na profil zadavatele. Podporovaný profil otevře a přečte jeho detail. Jinak porovná název, identifikátor, zadavatele, lhůtu a hodnotu s položkami z oficiálních zdrojů; u dosud nenalezených veřejných zakázek zkusí i cílené hledání v NEN.
-- Do veřejného přehledu a bodování vstupují jen údaje získané z původního zdroje. Text ani odhad ceny agregátoru se do ověřeného záznamu nekopírují.
+- Do veřejného přehledu a bodování vstupují jen údaje získané z původního nebo jiného oficiálního zdroje. Text ani odhad ceny agregátoru se do ověřeného záznamu nekopírují. Veřejný datový soubor neobsahuje ani název a odkaz agregátoru; informace o cestě nalezení zůstává pouze v interní evidenci.
 - Nejednoznačné a nedohledané tipy zůstávají v `data/radar-leads.json` pro další denní pokus; na webu se nezobrazí.
 - Kontakty za paywallem agregátorů nejsou součástí sběru a agent se je nepokouší obcházet.
 

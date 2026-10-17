@@ -2,11 +2,12 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { fetchPoptavky, parsePoptavkyDetail } from "../src/sources/poptavky.mjs";
 import { fetchPoptavej, parsePoptavejDetail } from "../src/sources/poptavej.mjs";
-import { czechDate, getText } from "../src/sources/html-utils.mjs";
+import { czechDate, getText, plainText } from "../src/sources/html-utils.mjs";
 import { parseMediaFeed } from "../src/sources/media-signals.mjs";
 import { fetchTenderArena, parseTenderArenaList } from "../src/sources/tenderarena.mjs";
 import { fetchZakazkyGov } from "../src/sources/zakazky-gov.mjs";
-import { fetchTed } from "../src/sources/ted.mjs";
+import { fetchTed, parseTedNotice } from "../src/sources/ted.mjs";
+import { fetchEzakazkyDocuments, parseEzakazkyDetail, searchEzakazkyProfile } from "../src/sources/e-zakazky.mjs";
 import { parseEzakDetail, parseEzakList } from "../src/sources/ezak-watchlist.mjs";
 import { extractCandidateOriginUrls, resolveAggregatorLeads } from "../src/origin-resolver.mjs";
 import { fetchNen, parseNenDetail, parseNenDocuments, selectNenSummaries } from "../src/sources/nen.mjs";
@@ -35,6 +36,57 @@ test("český termín se správně převede v letním i zimním čase", () => {
   assert.equal(czechDate("31. 10. 2026"), "2026-10-31T11:00:00.000Z");
   assert.equal(czechDate("3. 11. 2026", true), "2026-11-03T22:59:00.000Z");
   assert.equal(czechDate("32. 10. 2026"), null);
+});
+
+test("číselné HTML entity v původním zadání zachovají český text", () => {
+  assert.equal(plainText("Zaji&#353;t&#283;n&#237; slu&#382;eb"), "Zajištění služeb");
+});
+
+test("TED vrátí profil zadavatele a přesný čas lhůty", () => {
+  const tender = parseTedNotice({
+    "publication-number": "706257-2026", "notice-title": { ces: "Marketingová strategie" },
+    "buyer-name": { ces: "Oborová zdravotní pojišťovna" },
+    "deadline-receipt-tender-date-lot": ["2026-11-02"],
+    "deadline-receipt-tender-time-lot": ["10:00:00+01:00"],
+    "document-url-lot": ["https://www.e-zakazky.cz/profil-zadavatele/01d47fe3-916b-4869-bc75-c097dc0eefe1"],
+  });
+  assert.equal(tender.deadline, "2026-11-02T10:00:00+01:00");
+  assert.equal(tender.deadlineTimeKnown, true);
+  assert.equal(tender.candidateProfileUrls.length, 1);
+});
+
+test("profil E-ZAKAZKY poskytne detail a přílohy přímo od zadavatele", async () => {
+  const profile = "https://www.e-zakazky.cz/profil-zadavatele/01d47fe3-916b-4869-bc75-c097dc0eefe1";
+  const detailUrl = `${profile}/zakazka/P26V00000072`;
+  const detailHtml = `<h1>Detail zakázky <span>Oborová zdravotní pojišťovna</span></h1>
+    <tr class="hlavicka"><th>Marketingová strategie</th></tr>
+    <tr><th>Identifikátor:</th><td>P26V00000072</td></tr>
+    <tr><th>Datum uveřejnění na profilu:</th><td>10. 10. 2026</td></tr>
+    <tr><th>Konec lhůty pro podání nabídek:</th><td>2. 11. 2026 10:00</td></tr>
+    <tr><th>Hlavní CPV kód:</th><td>79340000-9</td></tr>
+    <tr><th>Status:</th><td>Neukončena</td></tr>
+    <script>{"loadParams":{"zakazkaId":66285}}</script>`;
+  const fetchImpl = async (url) => {
+    const target = String(url);
+    if (target === profile) return new Response('<script>{"loadParams":{"zadavatelId":861,"statusId":1}}</script>');
+    if (target.includes("GetZakazkyZadavatel")) return Response.json({ data: [
+      { Nazev: "Marketingová strategie", ZakazkaIdentifikator: "P26V00000072" },
+    ] });
+    if (target === detailUrl) return new Response(detailHtml);
+    if (target.includes("GetDokumenty")) return Response.json({ data: [
+      { NazevDokumentu: "Zadávací dokumentace.pdf", TypDokumentu: "Zadání", GuidSouboru: "file-1" },
+    ] });
+    throw new Error(`Nečekaná adresa ${target}`);
+  };
+  const [row] = await searchEzakazkyProfile(profile, "Marketingová strategie", { fetchImpl });
+  assert.deepEqual(row, parseEzakazkyDetail(detailHtml, detailUrl));
+  assert.equal(row.deadline, "2026-11-02T09:00:00.000Z");
+  assert.equal(row.status, "open");
+  const documents = await fetchEzakazkyDocuments(detailUrl, { fetchImpl });
+  assert.deepEqual(documents.documents, [{
+    name: "Zadávací dokumentace.pdf", type: "Zadání",
+    url: "https://www.e-zakazky.cz/stazenisouboru/file-1",
+  }]);
 });
 
 test("dočasný výpadek zdroje se jednou zopakuje", async () => {

@@ -1,6 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { buildDataset } from "./dataset.mjs";
-import { attachNenDocuments, findOriginalRows, preferPrimaryProfiles, refreshSavedNenProfiles } from "./origin-discovery.mjs";
+import { attachEzakazkyDocuments, attachNenDocuments, findOriginalRows, preferPrimaryProfiles, refreshSavedNenProfiles, refreshSavedProfiles } from "./origin-discovery.mjs";
 import { isAggregatorSource, resolveAggregatorLeads } from "./origin-resolver.mjs";
 import { fetchManual } from "./sources/manual.mjs";
 import { fetchNen } from "./sources/nen.mjs";
@@ -8,12 +8,15 @@ import { fetchPoptavky } from "./sources/poptavky.mjs";
 import { fetchPoptavej } from "./sources/poptavej.mjs";
 import { fetchMediaSignals } from "./sources/media-signals.mjs";
 import { fetchEzakWatchlist } from "./sources/ezak-watchlist.mjs";
-import { fetchTed } from "./sources/ted.mjs";
+import { fetchEzakazkyDetail } from "./sources/e-zakazky.mjs";
+import { fetchTed, fetchTedNotice } from "./sources/ted.mjs";
 import { fetchTenderArena } from "./sources/tenderarena.mjs";
 import { fetchZakazkyGov } from "./sources/zakazky-gov.mjs";
 import { attachVerifiedNotes } from "./verified-notes.mjs";
+import { publicDataset } from "./publication.mjs";
 
 const OUTPUT = "public/data/tenders.json";
+const STATE = "data/tender-state.json";
 const RADAR_STATE = "data/radar-leads.json";
 const FIXTURES = "data/fixtures/incoming.json";
 const now = process.env.AGENT_NOW ? new Date(process.env.AGENT_NOW) : new Date();
@@ -75,9 +78,24 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
   const currentIds = new Set(currentOfficial.map((row) => `${row.source}:${row.sourceId}`));
   const savedSecondary = previous.tenders.filter((row) =>
     ["ted", "zakazky-gov"].includes(row.source) && !currentIds.has(row.id));
+  const refreshedSecondary = [];
+  for (const old of savedSecondary) {
+    if (old.source !== "ted") { refreshedSecondary.push(old); continue; }
+    let fresh = null;
+    try { fresh = await fetchTedNotice(old.sourceId); }
+    catch { /* starší oznámení lze stále dohledávat podle uložených údajů */ }
+    refreshedSecondary.push(fresh ? {
+      ...old, ...fresh, firstSeenAt: old.firstSeenAt,
+      discoverySource: old.discoverySource, discoveryUrl: old.discoveryUrl,
+      originStatus: old.originStatus, originConfidence: old.originConfidence,
+    } : old);
+  }
   const savedNen = previous.tenders.filter((row) => row.source === "nen" && !currentIds.has(row.id));
   const refreshedNen = await refreshSavedNenProfiles(savedNen);
-  const primary = await preferPrimaryProfiles([...currentOfficial, ...refreshedNen, ...savedSecondary], {
+  const savedProfiles = previous.tenders.filter((row) => row.source === "official-profile" &&
+    /e-zakazky\.cz\/profil-zadavatele\//i.test(row.url || "") && !currentIds.has(row.id));
+  const refreshedProfiles = await refreshSavedProfiles(savedProfiles, { fetchDetail: fetchEzakazkyDetail });
+  const primary = await preferPrimaryProfiles([...refreshedProfiles, ...refreshedNen, ...refreshedSecondary, ...currentOfficial], {
     previousTenders: previous.tenders, now,
   });
 
@@ -107,7 +125,8 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
   const originalRows = await findOriginalRows(unmatched, primary.rows, {
     now, onChecked: (lead) => checkedIds.add(`${lead.source}:${lead.sourceId}`),
   });
-  const documentsRows = await attachNenDocuments([...primary.rows, ...originalRows], { now });
+  const nenDocumentsRows = await attachNenDocuments([...primary.rows, ...originalRows], { now });
+  const documentsRows = await attachEzakazkyDocuments(nenDocumentsRows, { now });
   const officialRows = attachVerifiedNotes(documentsRows, await loadJson("data/verified-notes.json", {}));
   const resolution = resolveAggregatorLeads(leads, officialRows);
   const aggregatorSource = sources.find((source) => source.id === "poptavky");
@@ -132,7 +151,7 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
   };
 }
 
-const loadedPrevious = await loadJson(OUTPUT, { schemaVersion: 1, tenders: [] });
+const loadedPrevious = await loadJson(STATE, await loadJson(OUTPUT, { schemaVersion: 1, tenders: [] }));
 const demoIds = new Set(["zakazky-gov:RVZ-DEMO-001", "manual:DEMO-002", "manual:DEMO-003"]);
 const previous = fixturesMode
   ? { ...loadedPrevious, tenders: [] }
@@ -142,9 +161,10 @@ const { rows, sources, pendingLeads, supersededIds = new Set() } = await collect
 const currentPrevious = { ...previous, tenders: previous.tenders.filter((row) => !supersededIds.has(row.id)) };
 const { dataset, invalidRows } = buildDataset({ rows, sources, previous: currentPrevious, now, fixturesMode });
 await mkdir("public/data", { recursive: true });
-await writeFile(OUTPUT, `${JSON.stringify(dataset, null, 2)}\n`);
+await writeFile(OUTPUT, `${JSON.stringify(publicDataset(dataset), null, 2)}\n`);
 if (!fixturesMode) {
   await mkdir("data", { recursive: true });
+  await writeFile(STATE, `${JSON.stringify(dataset, null, 2)}\n`);
   await writeFile(RADAR_STATE, `${JSON.stringify({ updatedAt: now.toISOString(), leads: pendingLeads }, null, 2)}\n`);
 }
 console.log(`Uloženo ${dataset.tenders.length} relevantních zakázek (${dataset.stats.newThisRun} nových).`);

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T22:17:27.671Z",
+  "generatedAt": "2026-10-17T22:29:26.802Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -28,7 +28,7 @@
     {
       "id": "nen",
       "ok": true,
-      "count": 54
+      "count": 46
     },
     {
       "id": "ted",
@@ -49,64 +49,106 @@
       "id": "manual",
       "ok": true,
       "count": 1
-    },
-    {
-      "id": "poptavky",
-      "ok": true,
-      "count": 20,
-      "resolved": 1,
-      "pending": 19
-    },
-    {
-      "id": "poptavej",
-      "ok": true,
-      "count": 20,
-      "resolved": 1,
-      "pending": 19
     }
   ],
   "tenders": [
     {
-      "id": "ted:706257-2026",
-      "source": "ted",
-      "sourceId": "706257-2026",
-      "url": "https://ted.europa.eu/cs/notice/-/detail/706257-2026",
+      "id": "official-profile:P26V00000072",
+      "source": "official-profile",
+      "sourceId": "P26V00000072",
+      "url": "https://www.e-zakazky.cz/profil-zadavatele/01d47fe3-916b-4869-bc75-c097dc0eefe1/zakazka/P26V00000072",
       "title": "Zajištění realizace marketingové strategie pro rok 2027",
       "buyer": "Oborová zdravotní pojišťovna zaměstnanců bank, pojišťoven a stavebnictví",
       "summary": "Předmětem plnění této veřejné zakázky je poskytování služeb souvisejících s realizací marketingové strategie objednatele, zejména nákup a administrace reklamy, tvorba mediálních plánů, tisk reklamních a propagačních materiálů, zajištění cen do soutěží, realizace kampaňových průzkumů a poskytování kreativních, produkčních a dalších souvisejících marketingových služeb.",
       "country": "CZ",
       "region": "Česko",
-      "publishedAt": null,
-      "deadline": null,
+      "publishedAt": "2026-09-29T10:00:00.000Z",
+      "deadline": "2026-11-02T09:00:00.000Z",
       "deadlineTimeKnown": true,
       "value": null,
       "valueSource": null,
-      "documentsUrl": null,
-      "documents": [],
+      "documentsUrl": "https://www.e-zakazky.cz/profil-zadavatele/01d47fe3-916b-4869-bc75-c097dc0eefe1/zakazka/P26V00000072",
+      "documents": [
+        {
+          "name": "sifrovaninabidek_publickey.txt",
+          "type": "Veřejný klíč pro šifrování nabídek",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/9277893e-6892-4c8d-ab37-8c83c83ec35e"
+        },
+        {
+          "name": "00_Zadavaci_dokumentace.pdf",
+          "type": "Zadávací dokumentace (podle § 53 odstavce 3, § 96 odstavce 1 a § 164 odstavce 2 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/e643955b-a247-43d0-8e5c-6a381f39630c"
+        },
+        {
+          "name": "01_Krycí list nabídky.docx",
+          "type": "Zadávací dokumentace (podle § 53 odstavce 3, § 96 odstavce 1 a § 164 odstavce 2 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/63a7d75b-f3ae-47a3-8072-209526ec4a06"
+        },
+        {
+          "name": "02_Soupis plnění.xlsx",
+          "type": "Zadávací dokumentace (podle § 53 odstavce 3, § 96 odstavce 1 a § 164 odstavce 2 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/ab3f0d32-7f46-46f4-bf73-0151aed0292f"
+        },
+        {
+          "name": "03_Závazný vzor rámcove dohody.pdf",
+          "type": "Zadávací dokumentace (podle § 53 odstavce 3, § 96 odstavce 1 a § 164 odstavce 2 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/9b51f6d7-c775-4fdc-b012-721a267afa81"
+        },
+        {
+          "name": "03a_Vzor dílčí smlouvy.pdf",
+          "type": "Zadávací dokumentace (podle § 53 odstavce 3, § 96 odstavce 1 a § 164 odstavce 2 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/f8934113-0402-4ba3-b52c-d4b074ba0378"
+        },
+        {
+          "name": "04_Požadavky na prokázání kvalifikace.docx",
+          "type": "Zadávací dokumentace (podle § 53 odstavce 3, § 96 odstavce 1 a § 164 odstavce 2 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/0fbe2a09-ffc3-4d88-ae37-3bbfed798836"
+        },
+        {
+          "name": "05_Seznam poddodavatelů.docx",
+          "type": "Zadávací dokumentace (podle § 53 odstavce 3, § 96 odstavce 1 a § 164 odstavce 2 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/665cc605-ee67-4aa0-aad9-3ced2c9f55f6"
+        },
+        {
+          "name": "06_ČP o neexistenci dopadu mezinárodních sankcí.docx",
+          "type": "Zadávací dokumentace (podle § 53 odstavce 3, § 96 odstavce 1 a § 164 odstavce 2 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/59b975c1-80f1-4bde-b866-df84fee9e6d0"
+        },
+        {
+          "name": "07_ČP o neexistenci střetu zájmů.docx",
+          "type": "Zadávací dokumentace (podle § 53 odstavce 3, § 96 odstavce 1 a § 164 odstavce 2 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/3a70f275-7590-490e-a788-05e4b9b39014"
+        },
+        {
+          "name": "Vysvětlení zadávací dokumentace č. 1-3.pdf",
+          "type": "Vysvětlení zadávací dokumentace (podle § 98 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/a9cd3950-7ce6-41a0-bfb3-05096e1ba5c9"
+        },
+        {
+          "name": "02_Soupis plnění_oprava.xlsx",
+          "type": "Vysvětlení zadávací dokumentace (podle § 98 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/30779b49-090d-45b1-91f8-8df7355feb5d"
+        }
+      ],
       "verifiedFacts": [],
       "factsReviewedAt": null,
       "cpv": [
-        "79340000",
-        "79342000",
-        "92200000"
+        "79340000"
       ],
-      "procedureType": "services, services",
+      "procedureType": "Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-28T11:02:59.792Z",
-      "lastSeenAt": "2026-10-17T22:17:27.671Z",
+      "lastSeenAt": "2026-10-17T22:29:26.802Z",
       "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": null,
-      "fingerprint": "b21c259eac9e7bd15f37",
+      "fingerprint": "d202cf916abc112977cb",
       "relevance": {
-        "score": 64,
+        "score": 68,
         "level": "good",
         "reasons": [
           "Tvorba obsahu: odpovídající CPV",
           "Marketing & eventy: marketingové strategie",
-          "klíčové téma je přímo v názvu"
+          "klíčové téma je přímo v názvu",
+          "zbývá alespoň týden na reakci"
         ],
         "negativeSignals": [],
         "categories": [
@@ -121,7 +163,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": null
+        "deadlineDays": 16
       }
     },
     {
@@ -160,16 +202,9 @@
       "procedureType": "Sluzby / Otevřená výzva",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-13T11:56:13.295Z",
-      "lastSeenAt": "2026-10-17T22:17:27.671Z",
+      "lastSeenAt": "2026-10-17T22:29:26.802Z",
       "status": "open",
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2128705-zajisteni-reklamnich-ploch-pro-potreby-propagace-vystav-expozic",
-      "originStatus": "resolved",
-      "originConfidence": 91,
       "fingerprint": "6af45b8bc5b3173adeef",
-      "duplicateSources": [
-        "nen"
-      ],
       "relevance": {
         "score": 58,
         "level": "good",
@@ -288,10 +323,6 @@
       "firstSeenAt": "2026-10-06T11:21:57.039Z",
       "lastSeenAt": "2026-10-17T22:15:00.460Z",
       "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ326386/dodavatel-audiovizualniho-obsahu-na-mezinarodni-specializovane-vystave",
-      "originStatus": "verified",
-      "originConfidence": 0,
       "fingerprint": "07d7d41f902b7cb18da8",
       "relevance": {
         "score": 56,

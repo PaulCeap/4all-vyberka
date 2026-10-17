@@ -82,6 +82,9 @@ export function normalizeTender(input, now = new Date()) {
       ? "unresolved"
       : suppliedOriginStatus || "verified",
     originConfidence: Number.isFinite(Number(input.originConfidence)) ? Number(input.originConfidence) : null,
+    candidateProfileUrls: (input.candidateProfileUrls || []).filter((url) => {
+      try { return new URL(url).protocol === "https:"; } catch { return false; }
+    }).slice(0, 10),
   };
 
   tender.fingerprint = tenderFingerprint(tender);

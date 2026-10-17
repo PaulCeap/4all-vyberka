@@ -3,17 +3,19 @@ import { scoreTender } from "./scoring.mjs";
 import { matchConfidence, sourceFromOfficialUrl } from "./origin-resolver.mjs";
 import { getText } from "./sources/html-utils.mjs";
 import { parseEzakDetail } from "./sources/ezak-watchlist.mjs";
+import { fetchEzakazkyDetail, fetchEzakazkyDocuments, searchEzakazkyProfile } from "./sources/e-zakazky.mjs";
 import { fetchNenDetail, fetchNenDocuments, searchNenForOrigin } from "./sources/nen.mjs";
 
 export async function preferPrimaryProfiles(rows, {
   searchNen = (title) => searchNenForOrigin(title),
+  searchProfile = (url, title) => searchEzakazkyProfile(url, title),
   previousTenders = [],
   now = new Date(),
   minimumScore = 42,
   searchLimit = 20,
 } = {}) {
   const previousById = new Map(previousTenders.map((row) => [row.id, row]));
-  const primaryRows = rows.filter((row) => row.source === "nen" || row.source?.startsWith("ezak-"));
+  const primaryRows = rows.filter((row) => row.source === "nen" || row.source === "official-profile" || row.source?.startsWith("ezak-"));
   const output = [];
   const supersededIds = new Set();
   let searched = 0;
@@ -27,6 +29,18 @@ export async function preferPrimaryProfiles(rows, {
       continue;
     }
     let matches = primaryRows.filter((candidate) => matchConfidence(row, candidate) >= 72);
+    if (!matches.length && searched < searchLimit) {
+      for (const profileUrl of row.candidateProfileUrls || []) {
+        if (searched >= searchLimit) break;
+        if (!/^https:\/\/www\.e-zakazky\.cz\/profil-zadavatele\//i.test(profileUrl)) continue;
+        searched += 1;
+        try {
+          matches = (await searchProfile(profileUrl, row.title))
+            .filter((candidate) => matchConfidence(row, candidate) >= 72);
+          if (matches.length) break;
+        } catch { /* zkusíme další profil nebo NEN */ }
+      }
+    }
     if (!matches.length && searched < searchLimit) {
       searched += 1;
       try {
@@ -45,6 +59,8 @@ export async function preferPrimaryProfiles(rows, {
     primaryRows.push(primary);
     output.push({
       ...primary,
+      summary: primary.summary || row.summary,
+      cpv: primary.cpv?.length ? primary.cpv : row.cpv,
       value: primary.value || row.value,
       valueSource: primary.value ? primary.source : row.value ? row.source : null,
       firstSeenAt: old?.firstSeenAt || row.firstSeenAt,
@@ -56,6 +72,35 @@ export async function preferPrimaryProfiles(rows, {
     });
   }
   return { rows: output, supersededIds };
+}
+
+export async function attachEzakazkyDocuments(rows, {
+  fetchDocuments = (url) => fetchEzakazkyDocuments(url),
+  now = new Date(),
+  minimumScore = 42,
+} = {}) {
+  const output = [];
+  for (const row of rows) {
+    if (row.source !== "official-profile" || !/e-zakazky\.cz\/profil-zadavatele\//i.test(row.url || "")) {
+      output.push(row);
+      continue;
+    }
+    let relevant = false;
+    try { relevant = scoreTender(normalizeTender(row, now), now).score >= minimumScore; }
+    catch { /* neúplný detail se neobohacuje */ }
+    if (!relevant) { output.push(row); continue; }
+    let result = null;
+    try { result = await fetchDocuments(row.url); }
+    catch { /* detail zůstane dostupný i při výpadku souborů */ }
+    output.push({
+      ...row,
+      documentsUrl: result?.url || row.url,
+      documents: result?.documents || [],
+      verifiedFacts: [],
+      factsReviewedAt: null,
+    });
+  }
+  return output;
 }
 
 export async function attachNenDocuments(rows, {
@@ -89,9 +134,7 @@ export async function attachNenDocuments(rows, {
   });
 }
 
-export async function refreshSavedNenProfiles(rows, {
-  fetchDetail = (url) => fetchNenDetail(url),
-} = {}) {
+export async function refreshSavedProfiles(rows, { fetchDetail } = {}) {
   const refreshed = [];
   for (let index = 0; index < rows.length; index += 6) {
     const batch = rows.slice(index, index + 6);
@@ -116,10 +159,17 @@ export async function refreshSavedNenProfiles(rows, {
   return refreshed;
 }
 
+export async function refreshSavedNenProfiles(rows, options = {}) {
+  return refreshSavedProfiles(rows, { fetchDetail: (url) => fetchNenDetail(url), ...options });
+}
+
 export async function fetchOriginalDetail(url, { fetchImpl = fetch } = {}) {
   const source = sourceFromOfficialUrl(url);
   if (source === "nen" && /\/detail-zakazky\//.test(new URL(url).pathname)) {
     return fetchNenDetail(url, { fetchImpl });
+  }
+  if (source === "official-profile" && /e-zakazky\.cz\/profil-zadavatele\//i.test(url)) {
+    return fetchEzakazkyDetail(url, { fetchImpl });
   }
   if (["ezak-jmk", "ezak-sz", "official-profile"].includes(source) &&
       /\/contract_display_\d+\.html$/.test(new URL(url).pathname)) {

@@ -10,6 +10,13 @@ export function isAggregatorSource(source) {
   return AGGREGATORS.has(source);
 }
 
+export function isAggregatorUrl(value) {
+  try {
+    const host = new URL(value).hostname.toLowerCase();
+    return ["poptavej.cz", "poptavky.cz"].some((domain) => host === domain || host.endsWith(`.${domain}`));
+  } catch { return false; }
+}
+
 export function sourceFromOfficialUrl(value) {
   try {
     const parsed = new URL(value);

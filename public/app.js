@@ -52,7 +52,7 @@ const formatMoney = (value) => {
 const sourceLabel = (source) => ({
   "zakazky-gov": "Zakázky GOV", nen: "NEN", ted: "TED", manual: "Ruční tip",
   tenderarena: "TenderArena", "ezak-jmk": "E-ZAK Jihomoravský kraj",
-  poptavky: "Poptávky.cz", poptavej: "Poptávej.cz", mediaguru: "MediaGuru",
+  mediaguru: "MediaGuru",
   mediar: "Médiář", mam: "MAM",
   "ezak-sz": "E-ZAK Správa železnic",
   "official-profile": "Profil zadavatele", "official-web": "Web zadavatele",
@@ -93,9 +93,6 @@ function cardTemplate(tender) {
   const documentsUrl = safeExternalUrl(tender.documentsUrl);
   const documents = (tender.documents || []).filter((document) => safeExternalUrl(document.url));
   const facts = (tender.verifiedFacts || []).filter((fact) => safeExternalUrl(fact.url));
-  const discoveredVia = tender.discoverySource ? sourceLabel(tender.discoverySource) : null;
-  const provenance = discoveredVia
-    ? `<p class="provenance">Nalezeno přes ${escapeHtml(discoveredVia)}</p>` : "";
   return `
     <article class="tender-card" data-id="${escapeHtml(tender.id)}">
       <div class="score" style="--score:${tender.relevance.score};--score-color:${scoreColor}" aria-label="Shoda ${tender.relevance.score} ze 100">
@@ -112,7 +109,6 @@ function cardTemplate(tender) {
         <p class="summary${isExpanded ? " expanded" : ""}" id="${escapeHtml(summaryId)}">${escapeHtml(summary)}</p>
         ${canExpand ? `<button class="summary-toggle" type="button" data-expand="${escapeHtml(tender.id)}" aria-controls="${escapeHtml(summaryId)}" aria-expanded="${isExpanded}">${isExpanded ? "Skrýt popis ↑" : "Zobrazit více ↓"}</button>` : ""}
         ${facts.length ? `<div class="verified-facts"><strong>Podstatné ze zadání</strong><ul>${facts.map((fact) => `<li>${escapeHtml(fact.text)} <a href="${escapeHtml(safeExternalUrl(fact.url))}" target="_blank" rel="noreferrer" aria-label="Zdroj: ${escapeHtml(fact.text)}">↗</a></li>`).join("")}</ul></div>` : ""}
-        ${provenance}
         <div class="match-tags">${tender.relevance.categories.map((category) => `<span>${escapeHtml(category.label)}</span>`).join("")}</div>
         ${tender.relevance.reasons[0] ? `<p class="reason">${escapeHtml(tender.relevance.reasons[0])}</p>` : ""}
       </div>
