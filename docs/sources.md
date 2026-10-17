@@ -34,7 +34,7 @@
 ### NEN
 
 - Veřejný seznam Národního elektronického nástroje doplňuje hlavně zakázky malého rozsahu.
-- Adaptér používá několik úzkých dotazů podle služeb 4ALL a stáhne nejvýše 60 detailů za běh. Limit rozděluje napříč dotazy po jednotlivých pozicích, takže širší výraz nemůže vytlačit pozdější specializované dotazy.
+- Adaptér používá několik úzkých dotazů podle služeb 4ALL a stáhne nejvýše 60 detailů za běh. Limit rozděluje napříč dotazy po jednotlivých pozicích, takže širší výraz nemůže vytlačit pozdější specializované dotazy. Dotazy běží postupně, protože souběžné dotazy NEN vracely chybu 503; timeout jednoho nezahodí ostatní výsledky.
 - Z detailu čte popis, CPV, předpokládanou hodnotu, datum publikace a lhůtu. Vše následně projde stejným scoringem; samotná shoda vyhledávacího dotazu nestačí k publikaci.
 
 ## Poptávky.cz a Poptávej.cz: pouze radar

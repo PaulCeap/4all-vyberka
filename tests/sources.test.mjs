@@ -1,12 +1,15 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { parsePoptavkyDetail } from "../src/sources/poptavky.mjs";
-import { parsePoptavejDetail } from "../src/sources/poptavej.mjs";
+import { fetchPoptavky, parsePoptavkyDetail } from "../src/sources/poptavky.mjs";
+import { fetchPoptavej, parsePoptavejDetail } from "../src/sources/poptavej.mjs";
+import { czechDate, getText } from "../src/sources/html-utils.mjs";
 import { parseMediaFeed } from "../src/sources/media-signals.mjs";
-import { parseTenderArenaList } from "../src/sources/tenderarena.mjs";
+import { fetchTenderArena, parseTenderArenaList } from "../src/sources/tenderarena.mjs";
+import { fetchZakazkyGov } from "../src/sources/zakazky-gov.mjs";
+import { fetchTed } from "../src/sources/ted.mjs";
 import { parseEzakDetail, parseEzakList } from "../src/sources/ezak-watchlist.mjs";
 import { extractCandidateOriginUrls, resolveAggregatorLeads } from "../src/origin-resolver.mjs";
-import { selectNenSummaries } from "../src/sources/nen.mjs";
+import { fetchNen, selectNenSummaries } from "../src/sources/nen.mjs";
 
 test("Poptávky.cz přečte JSON-LD, cenu a deadline", () => {
   const demand = { "@type": "Demand", identifier: "2050851", name: "Reklamní a marketingové služby", description: "Lokalita:\n- Křetín\nTermín pro podání nabídek:\n- 15. 08. 2026 12:00", mainEntityOfPage: { url: "https://example.test/1" } };
@@ -15,6 +18,7 @@ test("Poptávky.cz přečte JSON-LD, cenu a deadline", () => {
   assert.equal(row.sourceId, "2050851");
   assert.equal(row.value.amount, 3_000_000);
   assert.match(row.deadline, /^2026-08-15/);
+  assert.equal(row.deadlineTimeKnown, true);
 });
 
 test("Poptávej.cz přečte veřejnou zakázku", () => {
@@ -22,6 +26,61 @@ test("Poptávej.cz přečte veřejnou zakázku", () => {
   const row = parsePoptavejDetail(html, "https://example.test/verejna-zakazka/VZ697018/x");
   assert.equal(row.sourceId, "VZ697018");
   assert.match(row.deadline, /^2026-08-14/);
+  assert.equal(row.deadlineTimeKnown, false);
+});
+
+test("český termín se správně převede v letním i zimním čase", () => {
+  assert.equal(czechDate("15. 8. 2026 12:00"), "2026-08-15T10:00:00.000Z");
+  assert.equal(czechDate("31. 10. 2026 12:00"), "2026-10-31T11:00:00.000Z");
+  assert.equal(czechDate("31. 10. 2026"), "2026-10-31T11:00:00.000Z");
+  assert.equal(czechDate("3. 11. 2026", true), "2026-11-03T22:59:00.000Z");
+  assert.equal(czechDate("32. 10. 2026"), null);
+});
+
+test("dočasný výpadek zdroje se jednou zopakuje", async () => {
+  let calls = 0;
+  const text = await getText("https://example.test/", {
+    retryDelayMs: 0,
+    fetchImpl: async () => {
+      calls += 1;
+      return calls === 1 ? new Response("Chyba", { status: 503 }) : new Response("Zakázky");
+    },
+  });
+  assert.equal(text, "Zakázky");
+  assert.equal(calls, 2);
+});
+
+test("neexistující stránka se zbytečně neopakuje", async () => {
+  let calls = 0;
+  await assert.rejects(() => getText("https://example.test/", {
+    retryDelayMs: 0,
+    fetchImpl: async () => { calls += 1; return new Response("Nenalezeno", { status: 404 }); },
+  }), /HTTP 404/);
+  assert.equal(calls, 1);
+});
+
+test("nefunkční detaily agregátorů jsou označené jako chyba zdroje", async () => {
+  await assert.rejects(() => fetchPoptavej({ limit: 1, fetchImpl: async (url) => new Response(
+    String(url).includes("reklama-a-tisk")
+      ? '<a href="/verejna-zakazka/VZ123/test">Zakázka</a>'
+      : "Nenalezeno",
+    { status: String(url).includes("reklama-a-tisk") ? 200 : 404 },
+  ) }), /žádný detail/);
+  await assert.rejects(() => fetchPoptavky({ limit: 1, fetchImpl: async (url) => new Response(
+    String(url).endsWith("reklama-tisk")
+      ? '<a href="https://www.poptavky.cz/poptavka/123">Zakázka</a>'
+      : "Nenalezeno",
+    { status: String(url).endsWith("reklama-tisk") ? 200 : 404 },
+  ) }), /žádný detail/);
+});
+
+test("změněný formát oficiálních API se nepočítá jako prázdný úspěch", async () => {
+  const fetchImpl = async () => new Response(JSON.stringify({ unexpected: [] }), {
+    headers: { "content-type": "application/json" },
+  });
+  await assert.rejects(() => fetchZakazkyGov({ fetchImpl }), /formát/);
+  await assert.rejects(() => fetchTenderArena({ fetchImpl }), /formát/);
+  await assert.rejects(() => fetchTed({ now: new Date("2026-10-17T10:00:00Z"), fetchImpl }), /formát/);
 });
 
 test("mediální RSS propustí aktivní tendr a vyřadí výsledek tendru", () => {
@@ -66,6 +125,23 @@ test("NEN rozdělí limit mezi všechny cílené dotazy", () => {
   assert.deepEqual(rows.map((row) => row.kod), ["A1", "B1", "C1", "A2", "B2"]);
 });
 
+test("výpadek jednoho vyhledávání NEN nezahodí ostatní výsledky", async () => {
+  const list = { collectionStore: { collections: { "verejne-zakazky-seznam": {
+    collection: [{ kod: "N006/26/V00012345", nazev: "Komunikační kampaň", zadavatelNazev: "Město Test" }],
+  } } } };
+  const detail = { detailObjectStore: { objects: { item: { object: {
+    kod: "N006/26/V00012345", nazev: "Komunikační kampaň", zadavatelNazev: "Město Test",
+    podaniLhuta: "2026-11-05T10:00:00Z",
+  } } } } };
+  const html = (state) => `<meta name="initialReduxState" content="${encodeURIComponent(JSON.stringify(state))}">`;
+  const rows = await fetchNen({ fetchImpl: async (url) => {
+    if (String(url).includes("komunika%C4%8Dn%C3%AD%20strategie")) throw new Error("timeout");
+    return new Response(html(String(url).includes("detail-zakazky") ? detail : list));
+  } });
+  assert.equal(rows.length, 1);
+  assert.equal(rows[0].deadlineTimeKnown, true);
+});
+
 test("agregátor povýší jen konkrétní oficiální detail", () => {
   const html = `<a href="https://zakazky.gov.cz/">portál</a><a href="https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/N006-26-V00012345">zdroj</a>`;
   assert.deepEqual(extractCandidateOriginUrls(html, "https://www.poptavky.cz/poptavka/1"), [
@@ -81,9 +157,11 @@ test("radarový tip se spojí s odpovídajícím oficiálním záznamem", () => 
   const lead = {
     source: "poptavky", sourceId: "123", url: "https://www.poptavky.cz/poptavka/123",
     title: "Tvorba komunikační strategie a marketingové kampaně", buyer: "Zadavatel z Poptávky.cz", deadline: "2026-08-31T12:00:00+02:00",
+    firstSeenAt: "2026-08-09T10:00:00Z",
   };
   const { rows } = resolveAggregatorLeads([lead], [official]);
   assert.equal(rows[0].source, "tenderarena");
   assert.equal(rows[0].discoverySource, "poptavky");
   assert.equal(rows[0].originStatus, "resolved");
+  assert.equal(rows[0].firstSeenAt, lead.firstSeenAt);
 });

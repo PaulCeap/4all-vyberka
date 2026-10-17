@@ -26,7 +26,8 @@ export function parsePoptavejDetail(html, url) {
     summary,
     region: plainText(location || "Česko"),
     publishedAt: czechDate(published),
-    deadline: czechDate(deadline),
+    deadline: czechDate(deadline, true),
+    deadlineTimeKnown: /\b\d{1,2}:\d{2}\b/.test(deadline),
     value: money(expectedValue),
     procedureType: field(html, "Druh veřejné zakázky") || "Veřejná zakázka",
     opportunityType: "public-tender",
@@ -38,8 +39,11 @@ export function parsePoptavejDetail(html, url) {
 export async function fetchPoptavej({ fetchImpl = fetch, limit = Number(process.env.POPTAVEJ_DETAIL_LIMIT || 30) } = {}) {
   const html = await getText(CATEGORY_URL, { fetchImpl });
   const paths = [...new Set([...html.matchAll(/href=["'](\/verejna-zakazka\/[^"'#?]+)/gi)].map((match) => match[1]))].slice(0, limit);
-  return mapLimited(paths, async (path) => {
+  if (limit > 0 && !paths.length) throw new Error("Poptávej.cz změnil formát seznamu.");
+  const rows = await mapLimited(paths, async (path) => {
     const url = new URL(path, CATEGORY_URL).href;
     return parsePoptavejDetail(await getText(url, { fetchImpl }), url);
   });
+  if (paths.length && !rows.length) throw new Error("Poptávej.cz: nepodařilo se načíst žádný detail.");
+  return rows;
 }

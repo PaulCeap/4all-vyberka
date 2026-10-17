@@ -1,3 +1,9 @@
+let savedIds = [];
+try {
+  const stored = JSON.parse(localStorage.getItem("4all-saved-tenders") || "[]");
+  if (Array.isArray(stored)) savedIds = stored.filter((id) => typeof id === "string");
+} catch { /* Poškozené lokální uložení nesmí zablokovat celý přehled. */ }
+
 const state = {
   tenders: [],
   query: "",
@@ -6,7 +12,7 @@ const state = {
   minScore: 42,
   sort: "score",
   savedOnly: false,
-  saved: new Set(JSON.parse(localStorage.getItem("4all-saved-tenders") || "[]")),
+  saved: new Set(savedIds),
   expanded: new Set(),
 };
 
@@ -20,8 +26,20 @@ const escapeHtml = (value = "") => String(value).replace(/[&<>'"]/g, (character)
 const formatDate = (value, includeTime = false) => {
   if (!value) return "Neuvedeno";
   return new Intl.DateTimeFormat("cs-CZ", includeTime
-    ? { dateStyle: "medium", timeStyle: "short" }
-    : { day: "numeric", month: "short", year: "numeric" }).format(new Date(value));
+    ? { dateStyle: "medium", timeStyle: "short", timeZone: "Europe/Prague" }
+    : { day: "numeric", month: "short", year: "numeric", timeZone: "Europe/Prague" }).format(new Date(value));
+};
+
+const daysUntil = (value) => value ? Math.ceil((new Date(value).valueOf() - Date.now()) / 86_400_000) : null;
+const isActive = (tender) => !tender.deadline || new Date(tender.deadline).valueOf() > Date.now();
+const localDay = (value) => new Intl.DateTimeFormat("en-CA", {
+  timeZone: "Europe/Prague", year: "numeric", month: "2-digit", day: "2-digit",
+}).format(value);
+const safeExternalUrl = (value) => {
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" || url.protocol === "http:" ? url.href : null;
+  } catch { return null; }
 };
 
 const formatMoney = (value) => {
@@ -46,6 +64,7 @@ const typeLabel = (type) => ({
 function filteredTenders() {
   const query = state.query.toLocaleLowerCase("cs").trim();
   return state.tenders
+    .filter(isActive)
     .filter((tender) => tender.relevance.score >= state.minScore)
     .filter((tender) => state.category === "all" || tender.relevance.categories.some((category) => category.id === state.category))
     .filter((tender) => state.type === "all" || tender.opportunityType === state.type)
@@ -66,8 +85,11 @@ function cardTemplate(tender) {
   const summary = tender.summary || "Zdroj neposkytl stručný popis. Ověřte zadávací dokumentaci.";
   const canExpand = summary.length > 210;
   const summaryId = `summary-${tender.id}`;
-  const days = tender.relevance.deadlineDays;
-  const deadlineLabel = days === null ? "Neuvedeno" : days < 0 ? "Po termínu" : days === 0 ? "Dnes" : `${days} ${days === 1 ? "den" : days < 5 ? "dny" : "dní"}`;
+  const days = daysUntil(tender.deadline);
+  const deadlineDay = tender.deadline ? localDay(new Date(tender.deadline)) : null;
+  const today = localDay(new Date());
+  const deadlineLabel = days === null ? "Neuvedeno" : deadlineDay === today ? "Dnes" : `${days} ${days === 1 ? "den" : days < 5 ? "dny" : "dní"}`;
+  const sourceUrl = safeExternalUrl(tender.url);
   const discoveredVia = tender.discoverySource ? sourceLabel(tender.discoverySource) : null;
   const originUnresolved = tender.originStatus === "unresolved";
   const provenance = originUnresolved
@@ -98,11 +120,11 @@ function cardTemplate(tender) {
       <div class="card-side">
         <div>
           <div class="side-row ${days !== null && days <= 7 ? "deadline-soon" : ""}"><span>Deadline</span><strong>${escapeHtml(deadlineLabel)}</strong></div>
-          <div class="side-row"><span>Termín</span><strong>${escapeHtml(formatDate(tender.deadline))}</strong></div>
+          <div class="side-row"><span>Termín</span><strong>${escapeHtml(formatDate(tender.deadline, tender.deadlineTimeKnown))}</strong></div>
           <div class="side-row"><span>Hodnota</span><strong>${escapeHtml(formatMoney(tender.value))}</strong></div>
           <div class="side-row"><span>Zveřejněno</span><strong>${escapeHtml(formatDate(tender.publishedAt))}</strong></div>
         </div>
-        <a class="source-link${originUnresolved ? " unresolved" : ""}" href="${escapeHtml(tender.url)}" target="_blank" rel="noreferrer">${linkLabel}</a>
+        ${sourceUrl ? `<a class="source-link${originUnresolved ? " unresolved" : ""}" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noreferrer">${linkLabel}</a>` : ""}
       </div>
       <button class="save-button" type="button" aria-label="${isSaved ? "Odebrat z uložených" : "Uložit zakázku"}" aria-pressed="${isSaved}" data-save="${escapeHtml(tender.id)}">${isSaved ? "★" : "☆"}</button>
     </article>`;
@@ -110,6 +132,13 @@ function cardTemplate(tender) {
 
 function render() {
   const items = filteredTenders();
+  const active = state.tenders.filter(isActive);
+  $("#stat-total").textContent = active.length;
+  $("#stat-strong").textContent = active.filter((tender) => tender.relevance.level === "strong").length;
+  $("#stat-soon").textContent = active.filter((tender) => {
+    const days = daysUntil(tender.deadline);
+    return days !== null && days >= 0 && days <= 7;
+  }).length;
   list.innerHTML = items.map(cardTemplate).join("");
   list.setAttribute("aria-busy", "false");
   $("#result-count").textContent = `${items.length} ${items.length === 1 ? "zakázka" : items.length < 5 ? "zakázky" : "zakázek"} odpovídá filtru`;
@@ -142,13 +171,15 @@ async function init() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const dataset = await response.json();
     state.tenders = dataset.tenders || [];
-    $("#stat-total").textContent = dataset.stats?.total ?? state.tenders.length;
-    $("#stat-strong").textContent = dataset.stats?.strong ?? "0";
-    $("#stat-soon").textContent = dataset.stats?.closingSoon ?? "0";
-    $("#updated-at").textContent = `Aktualizováno ${formatDate(dataset.generatedAt, true)}`;
+    const updatedAt = $("#updated-at");
+    const stale = Date.now() - new Date(dataset.generatedAt).valueOf() > 36 * 60 * 60 * 1000;
+    updatedAt.textContent = stale
+      ? `Poslední data ${formatDate(dataset.generatedAt, true)} · sběr se zpožďuje`
+      : `Aktualizováno ${formatDate(dataset.generatedAt, true)}`;
+    updatedAt.classList.toggle("stale", stale);
     render();
   } catch (error) {
-    list.innerHTML = `<div class="empty-state"><span>!</span><h3>Data se nepodařilo načíst.</h3><p>Zkuste stránku obnovit. Pokud problém trvá, zkontrolujte poslední denní běh.</p></div>`;
+    list.innerHTML = `<div class="empty-state"><span>!</span><h3>Zakázky se teď nepodařilo načíst.</h3><p>Obnovte stránku.</p></div>`;
     list.setAttribute("aria-busy", "false");
     $("#updated-at").textContent = "Aktualizace není dostupná";
   }
@@ -188,7 +219,7 @@ list.addEventListener("click", (event) => {
   if (!button) return;
   const id = button.dataset.save;
   state.saved.has(id) ? state.saved.delete(id) : state.saved.add(id);
-  localStorage.setItem("4all-saved-tenders", JSON.stringify([...state.saved]));
+  try { localStorage.setItem("4all-saved-tenders", JSON.stringify([...state.saved])); } catch { /* Výběr zůstane funkční i bez úložiště. */ }
   render();
 });
 $("#reset-filters").addEventListener("click", resetFilters);

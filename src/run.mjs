@@ -1,8 +1,5 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { PROJECT } from "./config.mjs";
-import { deduplicateTenders } from "./deduplicate.mjs";
-import { normalizeTender, validateDataset } from "./model.mjs";
-import { scoreTender } from "./scoring.mjs";
+import { buildDataset } from "./dataset.mjs";
 import { isAggregatorSource, resolveAggregatorLeads } from "./origin-resolver.mjs";
 import { fetchManual } from "./sources/manual.mjs";
 import { fetchNen } from "./sources/nen.mjs";
@@ -68,8 +65,8 @@ async function collect(previous = { tenders: [] }) {
     runCollectors(radarCollectors),
   ]);
   const sources = [...official.sources, ...supporting.sources, ...radar.sources];
-  if (!official.sources.some((source) => source.ok)) {
-    throw new Error(`Selhaly všechny oficiální síťové zdroje: ${official.sources.map((source) => `${source.id}: ${source.error || "ok"}`).join("; ")}`);
+  if (!official.rows.some(Boolean)) {
+    throw new Error(`Oficiální zdroje nevrátily žádnou zakázku: ${official.sources.map((source) => `${source.id}: ${source.error || `${source.count} položek`}`).join("; ")}`);
   }
 
   const previousUnresolved = previous.tenders.filter((tender) =>
@@ -92,51 +89,11 @@ const previous = fixturesMode
   ? { ...loadedPrevious, tenders: [] }
   : { ...loadedPrevious, tenders: loadedPrevious.tenders.filter((tender) => !demoIds.has(tender.id)) };
 const { rows, sources } = await collect(previous);
-const previousById = new Map(previous.tenders.map((tender) => [tender.id, tender]));
-const normalized = rows.map((row) => {
-  const draft = normalizeTender(row, now);
-  const old = previousById.get(draft.id);
-  return old ? { ...draft, firstSeenAt: old.firstSeenAt } : draft;
-});
-// Radarové položky už prošly novým pokusem o dohledání originálu výše.
-// Starou kopii nepřidáváme znovu, jinak by po úspěšném spojení zůstal i placený agregátorový duplikát.
-const currentKeys = new Set(normalized.map((tender) => `${tender.source}:${tender.sourceId}`));
-const previousNormalized = previous.tenders
-  .filter((tender) => !isAggregatorSource(tender.source))
-  .filter((tender) => !currentKeys.has(`${tender.source}:${tender.sourceId}`))
-  .map((tender) => normalizeTender(tender, now));
-const tenders = deduplicateTenders([...previousNormalized, ...normalized])
-  .map((tender) => ({ ...tender, relevance: scoreTender(tender, now) }))
-  .filter((tender) => tender.relevance.score >= PROJECT.minimumScore)
-  .filter((tender) => {
-    const historyDays = tender.opportunityType === "market-signal" ? PROJECT.signalHistoryDays : PROJECT.historyDays;
-    const itemCutoff = new Date(now.valueOf() - historyDays * 86_400_000);
-    if (tender.deadline) return new Date(tender.deadline) >= itemCutoff;
-    return new Date(tender.publishedAt || tender.firstSeenAt) >= itemCutoff;
-  })
-  .sort((a, b) => b.relevance.score - a.relevance.score || String(a.deadline).localeCompare(String(b.deadline)))
-  .slice(0, 400);
-
-const dataset = {
-  schemaVersion: 1,
-  generatedAt: now.toISOString(),
-  project: PROJECT.name,
-  filters: { minimumScore: PROJECT.minimumScore, historyDays: PROJECT.historyDays },
-  stats: {
-    total: tenders.length,
-    newThisRun: tenders.filter((tender) => tender.firstSeenAt === tender.lastSeenAt).length,
-    strong: tenders.filter((tender) => tender.relevance.level === "strong").length,
-    closingSoon: tenders.filter((tender) => tender.relevance.deadlineDays >= 0 && tender.relevance.deadlineDays <= 7).length,
-    unresolvedOrigin: tenders.filter((tender) => tender.originStatus === "unresolved").length,
-  },
-  sources,
-  tenders,
-};
-
-validateDataset(dataset);
+const { dataset, invalidRows } = buildDataset({ rows, sources, previous, now, fixturesMode });
 await mkdir("public/data", { recursive: true });
 await writeFile(OUTPUT, `${JSON.stringify(dataset, null, 2)}\n`);
-console.log(`Uloženo ${tenders.length} relevantních zakázek (${dataset.stats.newThisRun} nových).`);
+console.log(`Uloženo ${dataset.tenders.length} relevantních zakázek (${dataset.stats.newThisRun} nových).`);
+if (invalidRows.length) console.warn(`Přeskočeno ${invalidRows.length} neplatných položek: ${JSON.stringify(invalidRows.slice(0, 5))}`);
 for (const source of sources) {
   console.log(`${source.ok ? "✓" : "!"} ${source.id}: ${source.count || 0}${source.error ? ` — ${source.error}` : ""}`);
 }

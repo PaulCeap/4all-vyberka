@@ -48,6 +48,7 @@ main { width: min(calc(100% - 64px), var(--max)); margin: 0 auto; }
 .eyebrow { margin: 0 0 8px; color: var(--muted); font: 500 11px 'DM Mono', monospace; letter-spacing: .1em; }
 h1 { margin: 0; font-size: clamp(32px, 4vw, 48px); font-weight: 600; line-height: 1.12; letter-spacing: -.045em; }
 .updated { margin: 0 0 3px; color: var(--muted); font: 400 11px 'DM Mono', monospace; text-align: right; }
+.updated.stale { color: #a54430; }
 .overview-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 20px; border: 1px solid var(--line); background: var(--card); }
 .overview-stats div { display: flex; align-items: baseline; gap: 12px; padding: 16px 20px; border-right: 1px solid var(--line); }
 .overview-stats div:last-child { border-right: 0; }

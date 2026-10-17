@@ -7,7 +7,8 @@ export async function fetchZakazkyGov({ fetchImpl = fetch } = {}) {
   });
   if (!response.ok) throw new Error(`Zakázky GOV odpověděly ${response.status}.`);
   const payload = await response.json();
-  const rows = payload.zakazky_za_24_h || [];
+  const rows = payload.zakazky_za_24_h;
+  if (!Array.isArray(rows)) throw new Error("Zakázky GOV změnily formát odpovědi.");
   return rows.map((row) => ({
     source: "zakazky-gov",
     sourceId: row.identifikator_NIPEZ,
@@ -19,6 +20,7 @@ export async function fetchZakazkyGov({ fetchImpl = fetch } = {}) {
     region: "Česko",
     publishedAt: row.datum_uverejneni_na_zakazky_gov,
     deadline: row.lhuta_pro_podani,
+    deadlineTimeKnown: /T\d{2}:\d{2}/.test(String(row.lhuta_pro_podani || "")),
     procedureType: row.typ_zadavaciho_postupu?.replaceAll("_", " ") || "Veřejná zakázka",
     status: row.stav?.includes("AKTIVNI") ? "open" : "unknown",
     cpv: [],

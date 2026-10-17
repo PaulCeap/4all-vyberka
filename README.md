@@ -18,7 +18,7 @@ Denně aktualizovaný předvýběr veřejných zakázek, poptávek a komerčníc
 - jednotný datový model a spojování duplikátů napříč zdroji,
 - vysvětlitelné skóre 0–100 podle nabídky 4ALL,
 - responzivní web s hledáním, filtry, řazením a lokálně uloženými favority,
-- denní GitHub Actions workflow a automatické nasazení na GitHub Pages,
+- denní GitHub Actions workflow a automatické nasazení na `vyberka.4all.cz`,
 - volitelný e-mailový souhrn, který odejde pouze při nálezu nových relevantních položek,
 - testy scoringu a deduplikace.
 
@@ -51,7 +51,7 @@ Scoring je záměrně čitelný a verzovaný v `src/config.mjs` a `src/scoring.m
 1. hledá silné fráze a CPV kódy v šesti oblastech služeb 4ALL,
 2. přidává body za shodu přímo v názvu, zakázku na služby a použitelnou lhůtu,
 3. odečítá body za stavebnictví, právní služby, hardware a další zjevně nerelevantní předměty,
-4. publikuje jen zakázky se skóre alespoň 42,
+4. publikuje jen zakázky se skóre alespoň 42 a s dosud neuplynulým termínem,
 5. u radarových tipů dohledá oficiální originál nebo jasně označí, že zatím ověřený není,
 6. u každé zakázky uloží důvody, kategorie a negativní signály.
 

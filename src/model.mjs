@@ -57,6 +57,7 @@ export function normalizeTender(input, now = new Date()) {
     region: cleanText(input.region || "Česko"),
     publishedAt: isoOrNull(input.publishedAt),
     deadline: isoOrNull(input.deadline),
+    deadlineTimeKnown: input.deadlineTimeKnown === true,
     value: input.value?.amount
       ? { amount: Number(input.value.amount), currency: input.value.currency || "CZK" }
       : null,

@@ -30,6 +30,7 @@ export async function fetchTed({ now = new Date(), fetchImpl = fetch } = {}) {
     });
     if (!response.ok) throw new Error(`TED odpověděl ${response.status}.`);
     const payload = await response.json();
+    if (!Array.isArray(payload?.notices)) throw new Error("TED změnil formát odpovědi.");
     for (const row of payload.notices || []) {
       const deadline = (row["deadline-receipt-tender-date-lot"] || []).filter(Boolean).sort()[0] || null;
       const descriptions = [i18n(row["description-proc"]), i18n(row["description-lot"])].filter(Boolean);
@@ -45,6 +46,7 @@ export async function fetchTed({ now = new Date(), fetchImpl = fetch } = {}) {
         region: "Česko",
         publishedAt: row["publication-date"],
         deadline,
+        deadlineTimeKnown: /T\d{2}:\d{2}|\b\d{1,2}:\d{2}\b/.test(String(deadline || "")),
         value: Number.isFinite(value) && value > 0
           ? { amount: value, currency: row["estimated-value-cur-proc"] || "CZK" }
           : null,

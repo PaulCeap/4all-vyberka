@@ -4,12 +4,17 @@ function richness(tender) {
 
 function mergeTender(primary, secondary) {
   const richer = richness(secondary) > richness(primary) ? secondary : primary;
+  const deadlineSource = secondary.deadline && (!primary.deadline ||
+    secondary.deadlineTimeKnown && !primary.deadlineTimeKnown &&
+    secondary.deadline.slice(0, 10) === primary.deadline.slice(0, 10))
+    ? secondary : primary;
   return {
     ...primary,
     summary: richer.summary || primary.summary,
     cpv: [...new Set([...(primary.cpv || []), ...(secondary.cpv || [])])],
     value: primary.value || secondary.value,
-    deadline: primary.deadline || secondary.deadline,
+    deadline: deadlineSource.deadline || null,
+    deadlineTimeKnown: Boolean(deadlineSource.deadlineTimeKnown),
     publishedAt: primary.publishedAt || secondary.publishedAt,
     firstSeenAt: [primary.firstSeenAt, secondary.firstSeenAt].filter(Boolean).sort()[0],
     lastSeenAt: [primary.lastSeenAt, secondary.lastSeenAt].filter(Boolean).sort().at(-1),

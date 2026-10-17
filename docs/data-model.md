@@ -10,7 +10,8 @@ Publikovaný soubor `public/data/tenders.json` má `schemaVersion: 1` a následu
     "total": 12,
     "newThisRun": 3,
     "strong": 4,
-    "closingSoon": 2
+    "closingSoon": 2,
+    "invalidRows": 0
   },
   "sources": [
     { "id": "zakazky-gov", "ok": true, "count": 23 }
@@ -25,10 +26,11 @@ Publikovaný soubor `public/data/tenders.json` má `schemaVersion: 1` a následu
 |---|---|---|
 | `id` | string | Stabilní klíč `source:sourceId` |
 | `source`, `sourceId` | string | Původ a identifikátor u zdroje |
-| `url` | string | Odkaz na oficiální detail |
+| `url` | string | Odkaz na zdroj; u neověřeného radarového tipu může vést na agregátor |
 | `title`, `buyer`, `summary` | string | Normalizované texty |
 | `country`, `region` | string | Místo plnění |
 | `publishedAt`, `deadline` | ISO datetime / null | Klíčové termíny |
+| `deadlineTimeKnown` | boolean | Čas lhůty byl ve zdroji uveden přesně; jinak web ukáže jen datum |
 | `value` | object / null | `amount` a `currency` bez DPH dle zdroje |
 | `cpv` | string[] | CPV bez pomlček |
 | `procedureType` | string | Typ řízení / charakter zakázky |
@@ -58,3 +60,4 @@ Publikovaný soubor `public/data/tenders.json` má `schemaVersion: 1` a následu
 ```
 
 Úrovně: `strong` od 75, `good` od 55, `watch` od 42 a `low` pod publikačním prahem.
+Statistika `closingSoon` zahrnuje jen položky se známým termínem do sedmi dní. Prošlé zakázky se nepublikují.

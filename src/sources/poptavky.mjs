@@ -27,7 +27,8 @@ export function parsePoptavkyDetail(html, url) {
     summary: description,
     region: plainText(location || "Česko"),
     publishedAt: czechDate(publishedBlock),
-    deadline: czechDate(deadlineBlock),
+    deadline: czechDate(deadlineBlock, true),
+    deadlineTimeKnown: /\b\d{1,2}:\d{2}\b/.test(deadlineBlock || ""),
     value: money(priceBlock),
     procedureType: /veřejn[éá] zakáz/i.test(description) ? "Veřejná zakázka na služby" : "Komerční poptávka",
     opportunityType: /veřejn[éá] zakáz/i.test(description) ? "public-tender" : "commercial-demand",
@@ -39,5 +40,8 @@ export function parsePoptavkyDetail(html, url) {
 export async function fetchPoptavky({ fetchImpl = fetch, limit = Number(process.env.POPTAVKY_DETAIL_LIMIT || 30) } = {}) {
   const html = await getText(CATEGORY_URL, { fetchImpl });
   const urls = [...new Set([...html.matchAll(/href=["'](https:\/\/www\.poptavky\.cz\/poptavka\/[^"'#?]+)/gi)].map((match) => match[1]))].slice(0, limit);
-  return mapLimited(urls, async (url) => parsePoptavkyDetail(await getText(url, { fetchImpl }), url));
+  if (limit > 0 && !urls.length) throw new Error("Poptávky.cz změnily formát seznamu.");
+  const rows = await mapLimited(urls, async (url) => parsePoptavkyDetail(await getText(url, { fetchImpl }), url));
+  if (urls.length && !rows.length) throw new Error("Poptávky.cz: nepodařilo se načíst žádný detail.");
+  return rows;
 }

@@ -46,3 +46,11 @@ test("odeslání používá Resend API a idempotentní klíč běhu", async () =
   assert.equal(request.options.headers["idempotency-key"], `4all-vyberka-${dataset.generatedAt}`);
   assert.deepEqual(JSON.parse(request.options.body).to, ["team@example.test"]);
 });
+
+test("neplatný odkaz ze zdroje se nedostane do e-mailu", () => {
+  const unsafe = structuredClone(dataset);
+  unsafe.tenders[0].url = "javascript:alert(1)";
+  const message = buildNotification(unsafe);
+  assert.doesNotMatch(message.html, /javascript:/i);
+  assert.match(message.html, /Otevřít přehled/);
+});

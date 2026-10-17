@@ -19,3 +19,17 @@ test("různí anonymní zadavatelé se stejným názvem a termínem se neslouč�
   const second = normalizeTender({ ...common, source: "poptavej", sourceId: "VZ142853", buyer: "Zadavatel z Poptávej.cz", summary: "Dětská léčebna" });
   assert.equal(deduplicateTenders([first, second]).length, 2);
 });
+
+test("při sloučení se zachová přesný čas termínu", () => {
+  const rough = normalizeTender({
+    source: "poptavej", sourceId: "1", title: "Komunikační kampaň", buyer: "Město Demo",
+    deadline: "2026-10-31T11:00:00Z", deadlineTimeKnown: false,
+  });
+  const precise = normalizeTender({
+    source: "nen", sourceId: "2", title: "Komunikační kampaň", buyer: "Město Demo",
+    deadline: "2026-10-31T12:00:00Z", deadlineTimeKnown: true,
+  });
+  const [merged] = deduplicateTenders([rough, precise]);
+  assert.equal(merged.deadline, precise.deadline);
+  assert.equal(merged.deadlineTimeKnown, true);
+});

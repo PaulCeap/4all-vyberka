@@ -99,6 +99,7 @@ export function resolveAggregatorLeads(leads, officialRows) {
       matchedKeys.add(`${match.official.source}:${match.official.sourceId}`);
       resolved.push({
         ...match.official,
+        firstSeenAt: lead.firstSeenAt || match.official.firstSeenAt,
         discoverySource: lead.source,
         discoveryUrl: lead.url,
         originStatus: "resolved",

@@ -66,12 +66,20 @@ export function selectNenSummaries(buckets, limit) {
 
 export async function fetchNen({ fetchImpl = fetch } = {}) {
   const buckets = [];
+  let successfulSearches = 0;
   for (const term of SEARCH_TERMS) {
-    const route = encodeURIComponent(`p:vz:stavZP=neukoncena&query=${term}`);
-    const state = reduxState(await getHtml(`${NEN_BASE}/verejne-zakazky/${route}`, fetchImpl));
-    const collection = state.collectionStore?.collections?.["verejne-zakazky-seznam"]?.collection || [];
-    buckets.push(collection);
+    try {
+      const route = encodeURIComponent(`p:vz:stavZP=neukoncena&query=${term}`);
+      const state = reduxState(await getHtml(`${NEN_BASE}/verejne-zakazky/${route}`, fetchImpl));
+      const collection = state.collectionStore?.collections?.["verejne-zakazky-seznam"]?.collection;
+      if (!Array.isArray(collection)) throw new Error("NEN změnil formát vyhledávání.");
+      buckets.push(collection);
+      successfulSearches += 1;
+    } catch (error) {
+      console.warn(`NEN: jeden vyhledávací dotaz selhal: ${error.message}`);
+    }
   }
+  if (!successfulSearches) throw new Error("NEN: selhaly všechny vyhledávací dotazy.");
 
   const rows = selectNenSummaries(buckets, Number(process.env.NEN_DETAIL_LIMIT || 60));
   const results = [];
@@ -94,6 +102,7 @@ export async function fetchNen({ fetchImpl = fetch } = {}) {
         region: item.hlavniMistoNUTS || "Česko",
         publishedAt: item.datumProfil || null,
         deadline: item.podaniLhuta || row.podaniLhuta || null,
+        deadlineTimeKnown: /T\d{2}:\d{2}|\b\d{1,2}:\d{2}\b/.test(String(item.podaniLhuta || row.podaniLhuta || "")),
         value: item.predpokladHodnota
           ? { amount: Number(item.predpokladHodnota), currency: currency(item.predpokladMenaNazev) }
           : null,
@@ -104,5 +113,6 @@ export async function fetchNen({ fetchImpl = fetch } = {}) {
     }));
     for (const detail of details) if (detail.status === "fulfilled") results.push(detail.value);
   }
+  if (rows.length && !results.length) throw new Error("NEN: nepodařilo se načíst žádný detail zakázky.");
   return results;
 }

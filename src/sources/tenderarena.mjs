@@ -18,6 +18,7 @@ export function parseTenderArenaList(payload) {
     region: "Česko",
     publishedAt: null,
     deadline: epochOrNull(row.lhutaProPodaniNabidek || row.lhutaProDoruceniZadostiOUcast),
+    deadlineTimeKnown: Boolean(row.lhutaProPodaniNabidek || row.lhutaProDoruceniZadostiOUcast),
     procedureType: "Veřejná zakázka v TenderArena",
     opportunityType: "public-tender",
     status: row.stav === "NEUKONCENA" ? "open" : "unknown",
@@ -32,5 +33,7 @@ export async function fetchTenderArena({ fetchImpl = fetch } = {}) {
     signal: AbortSignal.timeout(25_000),
   });
   if (!response.ok) throw new Error(`TenderArena odpověděla ${response.status}.`);
-  return parseTenderArenaList(await response.json());
+  const payload = await response.json();
+  if (!Array.isArray(payload?.polozky)) throw new Error("TenderArena změnila formát odpovědi.");
+  return parseTenderArenaList(payload);
 }

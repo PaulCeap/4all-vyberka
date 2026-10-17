@@ -6,6 +6,13 @@ function escapeHtml(value = "") {
   })[character]);
 }
 
+function safeExternalUrl(value) {
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" || url.protocol === "http:" ? url.href : null;
+  } catch { return null; }
+}
+
 function formatDate(value) {
   if (!value) return "neuvedeno";
   return new Intl.DateTimeFormat("cs-CZ", {
@@ -44,6 +51,7 @@ export function buildNotification(dataset) {
   const subject = `4ALL Výběrka: ${title}`;
   const rows = shown.map((tender) => {
     const categories = (tender.relevance?.categories || []).map((item) => item.label).join(" · ");
+    const sourceUrl = safeExternalUrl(tender.url);
     return `
       <tr><td style="padding:0 0 18px">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-top:1px solid #d8d2c8">
@@ -53,11 +61,11 @@ export function buildNotification(dataset) {
             </td>
             <td valign="top" style="padding:22px 0 0">
               <div style="margin-bottom:7px;color:#6d6a64;font:700 10px/1.4 Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase">${escapeHtml(categories || "Příležitost")}</div>
-              <a href="${escapeHtml(tender.url)}" style="color:#171717;text-decoration:none;font:800 22px/1.1 Arial,sans-serif;letter-spacing:-.03em">${escapeHtml(tender.title)}</a>
+              <a href="${escapeHtml(sourceUrl || SITE_URL)}" style="color:#171717;text-decoration:none;font:800 22px/1.1 Arial,sans-serif;letter-spacing:-.03em">${escapeHtml(tender.title)}</a>
               <div style="margin-top:7px;color:#2b5672;font:700 14px/1.4 Arial,sans-serif">${escapeHtml(tender.buyer)}</div>
               <p style="margin:12px 0;color:#5a5752;font:400 14px/1.55 Arial,sans-serif">${escapeHtml(truncate(tender.summary))}</p>
               <div style="color:#6d6a64;font:400 12px/1.5 Arial,sans-serif">Termín: <strong style="color:#171717">${escapeHtml(formatDate(tender.deadline))}</strong> &nbsp;·&nbsp; Hodnota: <strong style="color:#171717">${escapeHtml(formatMoney(tender.value))}</strong></div>
-              <a href="${escapeHtml(tender.url)}" style="display:inline-block;margin-top:13px;color:#2b5672;font:800 13px/1.4 Arial,sans-serif;text-underline-offset:4px">Otevřít originální zdroj ↗</a>
+              <a href="${escapeHtml(sourceUrl || SITE_URL)}" style="display:inline-block;margin-top:13px;color:#2b5672;font:800 13px/1.4 Arial,sans-serif;text-underline-offset:4px">${sourceUrl ? "Otevřít zdroj ↗" : "Otevřít přehled ↗"}</a>
             </td>
           </tr>
         </table>
@@ -89,7 +97,7 @@ export function buildNotification(dataset) {
     `${tender.relevance?.score ?? "—"}/100 — ${tender.title}`,
     tender.buyer,
     `Termín: ${formatDate(tender.deadline)} · Hodnota: ${formatMoney(tender.value)}`,
-    tender.url,
+    safeExternalUrl(tender.url) || SITE_URL,
   ].join("\n")).join("\n\n");
   const text = `${title}\n\n${textRows}${hiddenCount > 0 ? `\n\nA dalších ${hiddenCount}: ${SITE_URL}` : `\n\nCelý přehled: ${SITE_URL}`}`;
   return { count: allNew.length, subject, html, text };

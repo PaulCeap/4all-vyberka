@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T08:39:10.490Z",
+  "generatedAt": "2026-10-17T20:24:40.986Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -10,24 +10,25 @@
     "total": 4,
     "newThisRun": 0,
     "strong": 0,
-    "closingSoon": 3,
-    "unresolvedOrigin": 1
+    "closingSoon": 1,
+    "unresolvedOrigin": 1,
+    "invalidRows": 0
   },
   "sources": [
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 73
+      "count": 2
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 47
+      "count": 1
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 59
+      "count": 55
     },
     {
       "id": "ted",
@@ -53,14 +54,13 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 1
+      "resolved": 0
     },
     {
       "id": "poptavej",
-      "ok": false,
-      "count": 0,
-      "error": "fetch failed",
-      "resolved": 0
+      "ok": true,
+      "count": 20,
+      "resolved": 2
     }
   ],
   "tenders": [
@@ -76,6 +76,7 @@
       "region": "Česko",
       "publishedAt": null,
       "deadline": null,
+      "deadlineTimeKnown": false,
       "value": null,
       "cpv": [
         "79340000",
@@ -85,7 +86,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-28T11:02:59.792Z",
-      "lastSeenAt": "2026-10-17T08:39:10.490Z",
+      "lastSeenAt": "2026-10-17T20:24:40.986Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ828112/zajisteni-realizace-marketingove-strategie",
@@ -131,6 +132,7 @@
       "region": "Česko",
       "publishedAt": "2026-10-12T12:41:18.416Z",
       "deadline": "2026-10-19T08:00:00.000Z",
+      "deadlineTimeKnown": true,
       "value": null,
       "cpv": [
         "79341000"
@@ -138,17 +140,13 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-13T11:56:13.295Z",
-      "lastSeenAt": "2026-10-17T08:39:10.490Z",
+      "lastSeenAt": "2026-10-17T20:21:49.494Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2128705-zajisteni-reklamnich-ploch-pro-potreby-propagace-vystav-expozic",
       "originStatus": "resolved",
       "originConfidence": 88,
       "fingerprint": "6af45b8bc5b3173adeef",
-      "duplicateSources": [
-        "zakazky-gov",
-        "nen"
-      ],
       "relevance": {
         "score": 53,
         "level": "watch",
@@ -192,6 +190,7 @@
       "region": "Česko",
       "publishedAt": null,
       "deadline": null,
+      "deadlineTimeKnown": false,
       "value": {
         "amount": 5000000,
         "currency": "CZK"
@@ -240,7 +239,8 @@
       "country": "CZ",
       "region": "Praha",
       "publishedAt": "2026-10-13T10:00:00.000Z",
-      "deadline": "2026-11-03T10:00:00.000Z",
+      "deadline": "2026-11-03T22:59:00.000Z",
+      "deadlineTimeKnown": false,
       "value": {
         "amount": 900000,
         "currency": "CZK"
@@ -249,13 +249,16 @@
       "procedureType": "Zakázka na služby",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-14T09:35:49.633Z",
-      "lastSeenAt": "2026-10-16T09:06:26.998Z",
+      "lastSeenAt": "2026-10-17T20:24:40.986Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ115731/zajisteni-mezinarodni-staticke-konference",
       "originStatus": "unresolved",
       "originConfidence": 30,
       "fingerprint": "3662d9dd9a6154527a47",
+      "duplicateSources": [
+        "poptavej"
+      ],
       "relevance": {
         "score": 43,
         "level": "watch",
