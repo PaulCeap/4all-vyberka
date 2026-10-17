@@ -9,7 +9,7 @@ import { fetchZakazkyGov } from "../src/sources/zakazky-gov.mjs";
 import { fetchTed } from "../src/sources/ted.mjs";
 import { parseEzakDetail, parseEzakList } from "../src/sources/ezak-watchlist.mjs";
 import { extractCandidateOriginUrls, resolveAggregatorLeads } from "../src/origin-resolver.mjs";
-import { fetchNen, selectNenSummaries } from "../src/sources/nen.mjs";
+import { fetchNen, parseNenDetail, parseNenDocuments, selectNenSummaries } from "../src/sources/nen.mjs";
 
 test("Poptávky.cz přečte JSON-LD, cenu a deadline", () => {
   const demand = { "@type": "Demand", identifier: "2050851", name: "Reklamní a marketingové služby", description: "Lokalita:\n- Křetín\nTermín pro podání nabídek:\n- 15. 08. 2026 12:00", mainEntityOfPage: { url: "https://example.test/1" } };
@@ -123,6 +123,22 @@ test("NEN rozdělí limit mezi všechny cílené dotazy", () => {
     [{ kod: "C1" }],
   ], 5);
   assert.deepEqual(rows.map((row) => row.kod), ["A1", "B1", "C1", "A2", "B2"]);
+});
+
+test("NEN datum bez časového pásma je pražský čas", () => {
+  const state = { detailObjectStore: { objects: { item: { object: {
+    kod: "N006/26/V00032165", nazev: "EXPO 2027", podaniLhuta: "2026-11-06T10:00:00",
+  } } } } };
+  const html = `<meta name="initialReduxState" content="${encodeURIComponent(JSON.stringify(state))}">`;
+  const row = parseNenDetail(html, "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032165");
+  assert.equal(row.deadline, "2026-11-06T09:00:00.000Z");
+});
+
+test("NEN seznam dokumentů vrací přímé soubory a druh dokumentu", () => {
+  const html = `<tr><td data-title="Typ dokumentu">Zadávací dokumentace</td><td><a href="/file?id=4778453882">ZD EXPO 2027 AV.pdf</a></td></tr>`;
+  assert.deepEqual(parseNenDocuments(html, "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032165"), [{
+    name: "ZD EXPO 2027 AV.pdf", type: "Zadávací dokumentace", url: "https://nen.nipez.cz/file?id=4778453882",
+  }]);
 });
 
 test("výpadek jednoho vyhledávání NEN nezahodí ostatní výsledky", async () => {

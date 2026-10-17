@@ -1,7 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { findOriginalRows, fetchOriginalDetail } from "../src/origin-discovery.mjs";
+import { attachNenDocuments, findOriginalRows, fetchOriginalDetail, preferPrimaryProfiles, refreshSavedNenProfiles } from "../src/origin-discovery.mjs";
 import { resolveAggregatorLeads } from "../src/origin-resolver.mjs";
+import { attachVerifiedNotes } from "../src/verified-notes.mjs";
 
 const original = {
   source: "nen", sourceId: "N006/26/V00012345",
@@ -64,4 +65,75 @@ test("nepřístupný detail zůstane interním tipem a hledá se další oficiá
     minimumScore: 0,
   });
   assert.deepEqual(found, [original]);
+});
+
+test("stručné oznámení TED se nahradí původním profilem NEN", async () => {
+  const ted = {
+    source: "ted", sourceId: "687952-2026", title: original.title,
+    buyer: original.buyer, url: "https://ted.europa.eu/cs/notice/-/detail/687952-2026",
+    value: { amount: 5_000_000, currency: "CZK" },
+  };
+  const result = await preferPrimaryProfiles([ted], {
+    minimumScore: 0, searchNen: async () => [original],
+    previousTenders: [{ id: "ted:687952-2026", firstSeenAt: "2026-10-06T09:00:00Z", originStatus: "resolved" }],
+  });
+  assert.equal(result.rows[0].source, "nen");
+  assert.equal(result.rows[0].deadline, original.deadline);
+  assert.equal(result.rows[0].value.amount, 5_000_000);
+  assert.equal(result.rows[0].firstSeenAt, "2026-10-06T09:00:00Z");
+  assert.equal(result.rows[0].originStatus, "resolved");
+  assert.ok(result.supersededIds.has("ted:687952-2026"));
+});
+
+test("NEN podklady se načtou jen k relevantní zakázce", async () => {
+  const rows = await attachNenDocuments([original], {
+    minimumScore: 0,
+    fetchDocuments: async (url) => ({
+      url: `${url}/zadavaci-dokumentace`, documents: [{ name: "Zadání.pdf", url: "https://nen.nipez.cz/file?id=1" }],
+    }),
+  });
+  assert.equal(rows[0].documents.length, 1);
+  assert.match(rows[0].documentsUrl, /zadavaci-dokumentace$/);
+});
+
+test("starší NEN zakázka se znovu čte, ale bez starých poznámek", async () => {
+  const [row] = await refreshSavedNenProfiles([{
+    ...original, firstSeenAt: "2026-10-06T09:00:00Z", verifiedFacts: [{ text: "Starý údaj" }],
+  }], { fetchDetail: async () => ({ ...original, deadline: "2026-11-07T09:00:00Z" }) });
+  assert.equal(row.deadline, "2026-11-07T09:00:00Z");
+  assert.equal(row.firstSeenAt, "2026-10-06T09:00:00Z");
+  assert.deepEqual(row.verifiedFacts, []);
+});
+
+test("nedostupná dokumentace nezachová dříve ověřené poznámky", async () => {
+  const [row] = await attachNenDocuments([{
+    ...original, documents: [{ name: "Staré zadání", url: "https://nen.nipez.cz/file?id=1" }],
+    verifiedFacts: [{ text: "Starý údaj", url: "https://nen.nipez.cz/file?id=1" }],
+  }], { minimumScore: 0, fetchDocuments: async () => { throw new Error("503"); } });
+  assert.deepEqual(row.documents, []);
+  assert.deepEqual(row.verifiedFacts, []);
+  assert.match(row.documentsUrl, /zadavaci-dokumentace$/);
+});
+
+test("poznámky z dokumentace zmizí, pokud přibude nové vysvětlení", () => {
+  const notes = { "nen:N006/26/V00012345": {
+    reviewedAt: "2026-10-18T00:00:00Z",
+    documentSnapshot: ["https://nen.nipez.cz/file?id=1"],
+    facts: [{ text: "Limit 5 mil. Kč", url: "https://nen.nipez.cz/file?id=1" }],
+  } };
+  const row = { ...original, documents: [{ url: "https://nen.nipez.cz/file?id=1" }] };
+  assert.equal(attachVerifiedNotes([row], notes)[0].verifiedFacts.length, 1);
+  assert.equal(attachVerifiedNotes([{ ...row, documents: [...row.documents, { url: "https://nen.nipez.cz/file?id=2" }] }], notes)[0].verifiedFacts, undefined);
+});
+
+test("denní limit hledání dává přednost nejdéle neprověřenému tipu", async () => {
+  const checked = [];
+  await findOriginalRows([
+    { ...lead, candidateOriginUrls: [], lastOriginCheckAt: "2026-10-17T00:00:00Z" },
+    { ...lead, sourceId: "VZ124", title: "Nová komunikační kampaň města", candidateOriginUrls: [], lastOriginCheckAt: null },
+  ], [], {
+    minimumScore: 0, searchLimit: 1, searchNen: async () => [],
+    onChecked: (row) => checked.push(row.sourceId),
+  });
+  assert.deepEqual(checked, ["VZ124"]);
 });

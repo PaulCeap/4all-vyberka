@@ -61,6 +61,15 @@ export function normalizeTender(input, now = new Date()) {
     value: input.value?.amount
       ? { amount: Number(input.value.amount), currency: input.value.currency || "CZK" }
       : null,
+    valueSource: cleanText(input.valueSource || "") || null,
+    documentsUrl: String(input.documentsUrl || "").trim() || null,
+    documents: (input.documents || []).slice(0, 30).map((document) => ({
+      name: cleanText(document.name), type: cleanText(document.type), url: String(document.url || "").trim(),
+    })).filter((document) => document.name && document.url),
+    verifiedFacts: (input.verifiedFacts || []).slice(0, 8).map((fact) => ({
+      text: cleanText(fact.text), url: String(fact.url || "").trim(),
+    })).filter((fact) => fact.text && fact.url),
+    factsReviewedAt: isoOrNull(input.factsReviewedAt),
     cpv: [...new Set((input.cpv || []).map((code) => cleanText(code).replace(/\D/g, "").slice(0, 8)).filter(Boolean))],
     procedureType: cleanText(input.procedureType || "Neuvedeno"),
     opportunityType: cleanText(input.opportunityType || "public-tender"),

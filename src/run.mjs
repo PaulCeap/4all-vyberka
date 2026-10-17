@@ -1,6 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { buildDataset } from "./dataset.mjs";
-import { findOriginalRows } from "./origin-discovery.mjs";
+import { attachNenDocuments, findOriginalRows, preferPrimaryProfiles, refreshSavedNenProfiles } from "./origin-discovery.mjs";
 import { isAggregatorSource, resolveAggregatorLeads } from "./origin-resolver.mjs";
 import { fetchManual } from "./sources/manual.mjs";
 import { fetchNen } from "./sources/nen.mjs";
@@ -11,6 +11,7 @@ import { fetchEzakWatchlist } from "./sources/ezak-watchlist.mjs";
 import { fetchTed } from "./sources/ted.mjs";
 import { fetchTenderArena } from "./sources/tenderarena.mjs";
 import { fetchZakazkyGov } from "./sources/zakazky-gov.mjs";
+import { attachVerifiedNotes } from "./verified-notes.mjs";
 
 const OUTPUT = "public/data/tenders.json";
 const RADAR_STATE = "data/radar-leads.json";
@@ -70,6 +71,15 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
   if (!official.rows.some(Boolean)) {
     throw new Error(`Oficiální zdroje nevrátily žádnou zakázku: ${official.sources.map((source) => `${source.id}: ${source.error || `${source.count} položek`}`).join("; ")}`);
   }
+  const currentOfficial = official.rows.filter(Boolean);
+  const currentIds = new Set(currentOfficial.map((row) => `${row.source}:${row.sourceId}`));
+  const savedSecondary = previous.tenders.filter((row) =>
+    ["ted", "zakazky-gov"].includes(row.source) && !currentIds.has(row.id));
+  const savedNen = previous.tenders.filter((row) => row.source === "nen" && !currentIds.has(row.id));
+  const refreshedNen = await refreshSavedNenProfiles(savedNen);
+  const primary = await preferPrimaryProfiles([...currentOfficial, ...refreshedNen, ...savedSecondary], {
+    previousTenders: previous.tenders, now,
+  });
 
   const previousUnresolved = [
     ...previousRadar.leads,
@@ -86,27 +96,39 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
       ...lead,
       firstSeenAt: leadMap.get(key)?.firstSeenAt || now.toISOString(),
       lastSeenAt: now.toISOString(),
+      lastOriginCheckAt: leadMap.get(key)?.lastOriginCheckAt || null,
+      originCheckAttempts: leadMap.get(key)?.originCheckAttempts || 0,
     });
   }
   const leads = [...leadMap.values()];
-  const firstPass = resolveAggregatorLeads(leads, official.rows);
+  const firstPass = resolveAggregatorLeads(leads, primary.rows);
   const unmatched = firstPass.rows.filter((row) => row.originStatus === "unresolved");
-  const originalRows = await findOriginalRows(unmatched, official.rows, { now });
-  const resolution = resolveAggregatorLeads(leads, [...official.rows, ...originalRows]);
+  const checkedIds = new Set();
+  const originalRows = await findOriginalRows(unmatched, primary.rows, {
+    now, onChecked: (lead) => checkedIds.add(`${lead.source}:${lead.sourceId}`),
+  });
+  const documentsRows = await attachNenDocuments([...primary.rows, ...originalRows], { now });
+  const officialRows = attachVerifiedNotes(documentsRows, await loadJson("data/verified-notes.json", {}));
+  const resolution = resolveAggregatorLeads(leads, officialRows);
   const aggregatorSource = sources.find((source) => source.id === "poptavky");
   if (aggregatorSource) aggregatorSource.resolved = resolution.rows.filter((row) => row.discoverySource === "poptavky" && row.originStatus === "resolved").length;
   const poptavejSource = sources.find((source) => source.id === "poptavej");
   if (poptavejSource) poptavejSource.resolved = resolution.rows.filter((row) => row.discoverySource === "poptavej" && row.originStatus === "resolved").length;
 
-  const pendingLeads = resolution.rows.filter((row) => row.originStatus === "unresolved");
+  const pendingLeads = resolution.rows.filter((row) => row.originStatus === "unresolved")
+    .map((row) => checkedIds.has(`${row.source}:${row.sourceId}`) ? {
+      ...row, lastOriginCheckAt: now.toISOString(),
+      originCheckAttempts: (row.originCheckAttempts || 0) + 1,
+    } : row);
   for (const source of sources.filter((item) => isAggregatorSource(item.id))) {
     source.pending = pendingLeads.filter((lead) => lead.discoverySource === source.id).length;
   }
   return {
-    rows: [...official.rows, ...originalRows, ...supporting.rows,
+    rows: [...officialRows, ...supporting.rows,
       ...resolution.rows.filter((row) => row.originStatus === "resolved")],
     sources,
     pendingLeads,
+    supersededIds: primary.supersededIds,
   };
 }
 
@@ -116,8 +138,9 @@ const previous = fixturesMode
   ? { ...loadedPrevious, tenders: [] }
   : { ...loadedPrevious, tenders: loadedPrevious.tenders.filter((tender) => !demoIds.has(tender.id)) };
 const previousRadar = fixturesMode ? { leads: [] } : await loadJson(RADAR_STATE, { leads: [] });
-const { rows, sources, pendingLeads } = await collect(previous, previousRadar);
-const { dataset, invalidRows } = buildDataset({ rows, sources, previous, now, fixturesMode });
+const { rows, sources, pendingLeads, supersededIds = new Set() } = await collect(previous, previousRadar);
+const currentPrevious = { ...previous, tenders: previous.tenders.filter((row) => !supersededIds.has(row.id)) };
+const { dataset, invalidRows } = buildDataset({ rows, sources, previous: currentPrevious, now, fixturesMode });
 await mkdir("public/data", { recursive: true });
 await writeFile(OUTPUT, `${JSON.stringify(dataset, null, 2)}\n`);
 if (!fixturesMode) {

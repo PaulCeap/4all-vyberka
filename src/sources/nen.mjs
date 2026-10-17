@@ -1,3 +1,5 @@
+import { czechDate, plainText } from "./html-utils.mjs";
+
 const NEN_BASE = "https://nen.nipez.cz";
 const SEARCH_TERMS = [
   "komunikační strategie", "komunikační kampaň", "public relations", "marketingové služby",
@@ -33,6 +35,14 @@ function currency(value) {
   return "CZK";
 }
 
+function nenDateTime(value) {
+  if (!value) return null;
+  const text = String(value);
+  if (/[zZ]$|[+-]\d{2}:?\d{2}$/.test(text)) return text;
+  const match = text.match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
+  return match ? czechDate(`${match[3]}. ${match[2]}. ${match[1]} ${match[4]}:${match[5]}`) : text;
+}
+
 export function parseNenDetail(html, url, summary = {}) {
   const state = reduxState(html);
   const container = Object.values(state.detailObjectStore?.objects || {})[0];
@@ -47,8 +57,8 @@ export function parseNenDetail(html, url, summary = {}) {
     summary: item.popisPredmet || "",
     country: "CZ",
     region: item.hlavniMistoNUTS || "Česko",
-    publishedAt: item.datumProfil || null,
-    deadline: item.podaniLhuta || summary.podaniLhuta || null,
+    publishedAt: nenDateTime(item.datumProfil),
+    deadline: nenDateTime(item.podaniLhuta || summary.podaniLhuta),
     deadlineTimeKnown: /T\d{2}:\d{2}|\b\d{1,2}:\d{2}\b/.test(String(item.podaniLhuta || summary.podaniLhuta || "")),
     value: item.predpokladHodnota
       ? { amount: Number(item.predpokladHodnota), currency: currency(item.predpokladMenaNazev) }
@@ -62,6 +72,26 @@ export function parseNenDetail(html, url, summary = {}) {
 
 export async function fetchNenDetail(url, { fetchImpl = fetch } = {}) {
   return parseNenDetail(await getHtml(url, fetchImpl), url);
+}
+
+export function parseNenDocuments(html, detailUrlValue) {
+  const documents = [];
+  for (const [, row] of String(html).matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)) {
+    const link = row.match(/<a\b[^>]*href=["']([^"']*\/file\?id=\d+)["'][^>]*>([\s\S]*?)<\/a>/i);
+    if (!link) continue;
+    const type = plainText(row.match(/data-title=["']Typ dokumentu["'][^>]*>([\s\S]*?)<\/td>/i)?.[1]);
+    documents.push({
+      name: plainText(link[2]),
+      type: type || "Dokument",
+      url: new URL(link[1], detailUrlValue).href,
+    });
+  }
+  return documents;
+}
+
+export async function fetchNenDocuments(detailUrlValue, { fetchImpl = fetch } = {}) {
+  const url = `${detailUrlValue.replace(/\/$/, "")}/zadavaci-dokumentace`;
+  return { url, documents: parseNenDocuments(await getHtml(url, fetchImpl), detailUrlValue) };
 }
 
 export async function searchNenForOrigin(title, { fetchImpl = fetch, limit = 5 } = {}) {
