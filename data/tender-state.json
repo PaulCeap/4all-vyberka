@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T22:39:21.807Z",
+  "generatedAt": "2026-10-17T22:46:31.805Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -181,12 +181,11 @@
         "official-profile"
       ],
       "relevance": {
-        "score": 68,
+        "score": 65,
         "level": "good",
         "reasons": [
-          "Tvorba obsahu: odpovídající CPV",
-          "Marketing & eventy: marketingové strategie",
-          "klíčové téma je přímo v názvu",
+          "Marketing & eventy: marketingových služeb, nákup médií",
+          "obor potvrzuje ověřený výtah zadání",
           "zbývá alespoň týden na reakci"
         ],
         "negativeSignals": [],
@@ -194,12 +193,7 @@
           {
             "id": "marketing",
             "label": "Marketing & eventy",
-            "score": 41
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 24
+            "score": 49
           }
         ],
         "deadlineDays": 16
@@ -266,12 +260,11 @@
         "nen"
       ],
       "relevance": {
-        "score": 58,
-        "level": "good",
+        "score": 42,
+        "level": "watch",
         "reasons": [
-          "Tvorba obsahu: odpovídající CPV",
-          "PR & komunikace: propagace",
-          "klíčové téma je přímo v názvu",
+          "Marketing & eventy: reklamní plochy",
+          "obor potvrzuje ověřený výtah zadání",
           "jde o zakázku na služby"
         ],
         "negativeSignals": [
@@ -279,19 +272,9 @@
         ],
         "categories": [
           {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 33
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 24
-          },
-          {
             "id": "marketing",
             "label": "Marketing & eventy",
-            "score": 24
+            "score": 33
           }
         ],
         "deadlineDays": 2
@@ -394,11 +377,11 @@
       "candidateProfileUrls": [],
       "fingerprint": "07d7d41f902b7cb18da8",
       "relevance": {
-        "score": 56,
-        "level": "good",
+        "score": 47,
+        "level": "watch",
         "reasons": [
           "Tvorba obsahu: audiovizuální",
-          "klíčové téma je přímo v názvu",
+          "obor potvrzuje ověřený výtah zadání",
           "jde o zakázku na služby",
           "zbývá alespoň týden na reakci"
         ],
@@ -407,7 +390,7 @@
           {
             "id": "content",
             "label": "Tvorba obsahu",
-            "score": 35
+            "score": 26
           }
         ],
         "deadlineDays": 20

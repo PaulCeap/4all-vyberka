@@ -33,3 +33,19 @@ test("při sloučení se zachová přesný čas termínu", () => {
   assert.equal(merged.deadline, precise.deadline);
   assert.equal(merged.deadlineTimeKnown, true);
 });
+
+test("ověřený výtah má při sloučení přednost před delším neověřeným popisem", () => {
+  const common = { title: "Kampaň města", buyer: "Město Demo", deadline: "2026-10-31T12:00:00Z" };
+  const reviewed = normalizeTender({
+    ...common, source: "nen", sourceId: "1", summary: "Tvorba PR kampaně.",
+    factsReviewedAt: "2026-10-17T12:00:00Z",
+    verifiedFacts: [{ text: "Zakázka zahrnuje tiskové zprávy.", url: "https://example.test/zadani.pdf" }],
+  });
+  const raw = normalizeTender({
+    ...common, source: "ted", sourceId: "2",
+    summary: "Dlouhý automaticky složený popis, který má výrazně více znaků, ale nebyl ověřen v zadání.",
+  });
+  const [merged] = deduplicateTenders([reviewed, raw]);
+  assert.equal(merged.summary, reviewed.summary);
+  assert.deepEqual(merged.verifiedFacts, reviewed.verifiedFacts);
+});

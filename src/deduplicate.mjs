@@ -3,7 +3,8 @@ function richness(tender) {
 }
 
 function mergeTender(primary, secondary) {
-  const richer = richness(secondary) > richness(primary) ? secondary : primary;
+  const reviewed = [primary, secondary].find((tender) => tender.factsReviewedAt && tender.verifiedFacts?.length);
+  const richer = reviewed || (richness(secondary) > richness(primary) ? secondary : primary);
   const deadlineSource = secondary.deadline && (!primary.deadline ||
     secondary.deadlineTimeKnown && !primary.deadlineTimeKnown &&
     secondary.deadline.slice(0, 10) === primary.deadline.slice(0, 10))
@@ -16,8 +17,8 @@ function mergeTender(primary, secondary) {
     valueSource: primary.valueSource || secondary.valueSource || null,
     documentsUrl: primary.documentsUrl || secondary.documentsUrl || null,
     documents: (primary.documents?.length ? primary.documents : secondary.documents) || [],
-    verifiedFacts: (primary.verifiedFacts?.length ? primary.verifiedFacts : secondary.verifiedFacts) || [],
-    factsReviewedAt: primary.factsReviewedAt || secondary.factsReviewedAt || null,
+    verifiedFacts: reviewed?.verifiedFacts || [],
+    factsReviewedAt: reviewed?.factsReviewedAt || null,
     deadline: deadlineSource.deadline || null,
     deadlineTimeKnown: Boolean(deadlineSource.deadlineTimeKnown),
     publishedAt: primary.publishedAt || secondary.publishedAt,

@@ -49,14 +49,17 @@ AGENT_NOW=2026-08-09T10:00:00Z npm run agent:fixtures
 
 Scoring je záměrně čitelný a verzovaný v `src/config.mjs` a `src/scoring.mjs`:
 
-1. hledá silné fráze a CPV kódy v šesti oblastech služeb 4ALL,
-2. přidává body za shodu přímo v názvu, zakázku na služby a použitelnou lhůtu,
-3. odečítá body za stavebnictví, právní služby, hardware a další zjevně nerelevantní předměty,
-4. publikuje jen zakázky se skóre alespoň 42 a s dosud neuplynulým termínem,
-5. radarové tipy pustí do hodnocení až po dohledání původního záznamu; nedohledané ponechá mimo web pro další pokus,
-6. u každé zakázky uloží důvody, kategorie a negativní signály.
+1. hledá silné fráze hlavně v popisu zakázky; je-li k dispozici ověřený výtah z podkladů, používá jej a doplňující ověřené věcné body,
+2. název a CPV používá jako slabší podpůrné signály; samotné bez věcné shody v popisu či výtahu na zveřejnění nestačí,
+3. při prvním hledání ponechává širší záchyt podle názvu a CPV, aby mohl otevřít původní zadání,
+4. přihlíží k typu zakázky a lhůtě a odečítá body za stavebnictví, právní služby, hardware a další zjevně nerelevantní předměty,
+5. publikuje jen zakázky se skóre alespoň 42 a s dosud neuplynulým termínem,
+6. radarové tipy pustí do hodnocení až po dohledání původního záznamu; nedohledané ponechá mimo web pro další pokus,
+7. u každé zakázky uloží důvody, kategorie a negativní signály.
 
 Skóre a stručný výtah slouží k rozhodnutí, zda se zakázce věnovat dál. Agent u relevantních zakázek eviduje přílohy, k výtahu vybírá věcné podklady a ověřené poznatky uvádí s odkazy na konkrétní dokumenty. Před podáním nabídky je rozhodující aktuální úplné zadání na profilu zadavatele.
+
+Při přepočtu shody se dokumenty znovu nestahují; hodnotí se uložený popis, výtah a ověřené body. Skóre vyjadřuje oborovou relevanci, nikoli automatické potvrzení, že 4ALL splňuje všechny kvalifikační podmínky.
 
 Příkaz `npm run review:queue` vypíše nové nebo změněné věcné dokumenty čekající na přečtení. Tato kontrola běží také po denním sběru. Výstup zůstává v provozním logu; neověřené závěry se do veřejné karty nevkládají.
 

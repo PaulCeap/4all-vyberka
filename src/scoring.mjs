@@ -10,26 +10,44 @@ function cpvMatches(codes, prefixes) {
   return codes.some((code) => prefixes.some((prefix) => code.startsWith(prefix)));
 }
 
-export function scoreTender(tender, now = new Date()) {
-  const haystack = searchable(`${tender.title}. ${tender.summary}`);
+export function scoreTender(tender, now = new Date(), { preliminary = false } = {}) {
+  const titleText = searchable(tender.title);
+  const summaryText = searchable(tender.summary);
+  const factsText = tender.factsReviewedAt
+    ? searchable((tender.verifiedFacts || []).map((fact) => fact.text).join(". ")) : "";
+  const haystack = searchable(`${tender.title}. ${tender.summary}. ${factsText}`);
   const categoryScores = [];
   const reasons = [];
+  let hasContentMatch = false;
+  let hasTitleMatch = false;
 
   for (const area of SERVICE_AREAS) {
     let categoryScore = 0;
+    let contentMatched = false;
     const matched = [];
     for (const [keyword, points] of area.keywords) {
-      if (haystack.includes(searchable(keyword))) {
+      const term = searchable(keyword);
+      if (titleText.includes(term)) hasTitleMatch = true;
+      if (summaryText.includes(term)) {
         categoryScore += points;
         matched.push(keyword);
+        hasContentMatch = true;
+        contentMatched = true;
+      } else if (factsText.includes(term)) {
+        categoryScore += preliminary ? points : Math.ceil(points * 0.5);
+        matched.push(keyword);
+        hasContentMatch = true;
+        contentMatched = true;
+      } else if (titleText.includes(term)) {
+        categoryScore += preliminary ? points : Math.ceil(points * 0.25);
       }
     }
     if (cpvMatches(tender.cpv || [], area.cpvPrefixes)) {
-      categoryScore += 24;
+      categoryScore += preliminary ? 24 : 10;
       matched.push("odpovídající CPV");
     }
     categoryScore = Math.min(categoryScore, 50);
-    if (categoryScore > 0) {
+    if (categoryScore > 0 && (preliminary || contentMatched)) {
       categoryScores.push({ id: area.id, label: area.label, score: categoryScore, matched });
     }
   }
@@ -39,10 +57,11 @@ export function scoreTender(tender, now = new Date()) {
   if (categoryScores[1]) score += Math.min(18, Math.round(categoryScores[1].score * 0.45));
   if (categoryScores[2]) score += Math.min(8, Math.round(categoryScores[2].score * 0.2));
 
-  const titleText = searchable(tender.title);
-  if (categoryScores.some((category) => category.matched.some((word) => titleText.includes(searchable(word))))) {
+  if (preliminary && hasTitleMatch) {
     score += 12;
-    reasons.push("klíčové téma je přímo v názvu");
+  } else if (hasContentMatch) {
+    score += 12;
+    reasons.push(tender.factsReviewedAt ? "obor potvrzuje ověřený výtah zadání" : "obor potvrzuje popis zakázky");
   }
   if (searchable(tender.procedureType).includes("sluzb")) {
     score += 5;
@@ -73,18 +92,21 @@ export function scoreTender(tender, now = new Date()) {
     }
   }
 
+  // Název a CPV pomáhají najít kandidáta. Samy o sobě nepotvrdí shodu pro veřejnou kartu.
+  if (!preliminary && !hasContentMatch) score = Math.min(score, 39);
+
   score = Math.max(0, Math.min(100, Math.round(score)));
   const categories = categoryScores.slice(0, 3).map(({ id, label, score: categoryScore }) => ({
     id,
     label,
     score: categoryScore,
   }));
+  const topicReasons = [];
   for (const category of categoryScores.slice(0, 2)) {
     const words = category.matched.filter((word) => word !== "odpovídající CPV").slice(0, 2);
-    reasons.unshift(words.length
-      ? `${category.label}: ${words.join(", ")}`
-      : `${category.label}: odpovídající CPV`);
+    if (words.length) topicReasons.push(`${category.label}: ${words.join(", ")}`);
   }
+  reasons.unshift(...topicReasons);
 
   return {
     score,

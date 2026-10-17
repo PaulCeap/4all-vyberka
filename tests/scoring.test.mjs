@@ -45,3 +45,37 @@ test("aktivní komerční tendr z médií dostane vysvětlitelný bonus", () => 
   assert.ok(result.score >= 42);
   assert.ok(result.reasons.some((reason) => reason.includes("komerční")));
 });
+
+test("ověřený obsah rozhoduje i při obecném názvu", () => {
+  const tender = normalizeTender({
+    source: "test", sourceId: "4", title: "Rámcová dohoda pro rok 2027",
+    buyer: "Město", summary: "PR služby, komunikační strategie, správa sociálních sítí a tvorba obsahu.",
+    factsReviewedAt: "2026-08-08T10:00:00Z",
+    verifiedFacts: [{ text: "Dodavatel zajistí tiskové zprávy.", url: "https://example.test/zadani.pdf" }],
+    deadline: "2026-08-30T10:00:00Z", procedureType: "Služby",
+  }, now);
+  const result = scoreTender(tender, now);
+  assert.ok(result.score >= 55);
+  assert.ok(result.reasons.some((reason) => reason.includes("ověřený výtah")));
+});
+
+test("samotný lákavý název a CPV nestačí k publikované shodě", () => {
+  const tender = normalizeTender({
+    source: "test", sourceId: "5", title: "PR služby a marketingová kampaň",
+    buyer: "Město", summary: "Zadání je v příloze.", cpv: ["79340000"],
+    deadline: "2026-08-30T10:00:00Z", procedureType: "Služby",
+  }, now);
+  assert.ok(scoreTender(tender, now).score < 42);
+  assert.ok(scoreTender(tender, now, { preliminary: true }).score >= 42);
+});
+
+test("věcný údaj z ověřených podkladů může zvýšit shodu", () => {
+  const tender = normalizeTender({
+    source: "test", sourceId: "6", title: "Zakázka na služby",
+    buyer: "Město", summary: "Zajištění odborných služeb.",
+    factsReviewedAt: "2026-08-08T10:00:00Z",
+    verifiedFacts: [{ text: "Součástí je tvorba obsahu a správa sociálních sítí.", url: "https://example.test/zadani.pdf" }],
+    deadline: "2026-08-30T10:00:00Z", procedureType: "Služby",
+  }, now);
+  assert.ok(scoreTender(tender, now).score > scoreTender({ ...tender, factsReviewedAt: null }, now).score);
+});

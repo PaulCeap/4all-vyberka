@@ -22,7 +22,7 @@ export async function preferPrimaryProfiles(rows, {
 
   for (const row of rows) {
     let relevant = false;
-    try { relevant = scoreTender(normalizeTender(row, now), now).score >= minimumScore; }
+    try { relevant = scoreTender(normalizeTender(row, now), now, { preliminary: true }).score >= minimumScore; }
     catch { /* neúplný záznam vyřadí validace datové sady */ }
     if (!["ted", "zakazky-gov"].includes(row.source) || !relevant) {
       output.push(row);
@@ -86,7 +86,7 @@ export async function attachEzakazkyDocuments(rows, {
       continue;
     }
     let relevant = false;
-    try { relevant = scoreTender(normalizeTender(row, now), now).score >= minimumScore; }
+    try { relevant = scoreTender(normalizeTender(row, now), now, { preliminary: true }).score >= minimumScore; }
     catch { /* neúplný detail se neobohacuje */ }
     if (!relevant) { output.push(row); continue; }
     let result = null;
@@ -112,7 +112,7 @@ export async function attachNenDocuments(rows, {
   for (const row of rows) {
     if (row.source !== "nen" || !row.url) continue;
     let relevant = false;
-    try { relevant = scoreTender(normalizeTender(row, now), now).score >= minimumScore; }
+    try { relevant = scoreTender(normalizeTender(row, now), now, { preliminary: true }).score >= minimumScore; }
     catch { /* neúplný záznam neobohacujeme */ }
     if (!relevant || byUrl.has(row.url)) continue;
     byUrl.set(row.url, null);
@@ -210,7 +210,7 @@ export async function findOriginalRows(leads, officialRows, {
   for (const lead of ordered) {
     if (lead.opportunityType !== "public-tender" || searched >= searchLimit) continue;
     try {
-      if (scoreTender(normalizeTender(lead, now), now).score < minimumScore) continue;
+      if (scoreTender(normalizeTender(lead, now), now, { preliminary: true }).score < minimumScore) continue;
     } catch { continue; }
     const alreadyFound = [...officialRows, ...discovered]
       .some((official) => matchConfidence(lead, official) >= 72);

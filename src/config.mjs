@@ -15,7 +15,7 @@ export const SERVICE_AREAS = [
     keywords: [
       ["tvorba obsahu", 18], ["obsahová strategie", 16], ["copywriting", 15],
       ["video", 9], ["podcast", 13], ["fotograf", 9], ["redakční", 10],
-      ["sociální sítě", 15], ["social media", 15], ["audiovizuální", 11],
+      ["sociální sítě", 15], ["social media", 15], ["audiovizuální", 16],
       ["tisková zpráva", 12], ["newsletter", 10], ["grafické práce", 10],
       ["tiskových zpráv", 12], ["sociálních sítí", 15], ["marketingového obsahu", 12],
     ],
@@ -39,9 +39,10 @@ export const SERVICE_AREAS = [
     label: "Marketing & eventy",
     keywords: [
       ["marketingová kampaň", 18], ["marketingové služby", 17], ["marketingová strategie", 17],
-      ["marketingové strategie", 17], ["marketingových aktivit", 12], ["reklamních kampaní", 16],
+      ["marketingové strategie", 17], ["marketingových služeb", 17], ["marketingových aktivit", 12], ["reklamních kampaní", 16],
       ["reklamní kampaň", 16], ["kreativní kampaň", 17], ["branding", 15],
       ["mediální prostor", 17], ["mediálního prostoru", 17], ["media buying", 17], ["influencer", 14],
+      ["nákup médií", 17], ["reklamní plochy", 18], ["reklamních ploch", 18],
       ["event", 12], ["konference", 10], ["produkce akce", 14],
       ["eventová agentura", 20], ["festival", 9], ["sampling", 11],
       ["organizace akce", 14], ["veřejná akce", 9], ["ppc", 12], ["online reklama", 13],

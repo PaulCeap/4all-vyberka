@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { buildDataset } from "./dataset.mjs";
+import { pendingDocumentReviews } from "./document-review.mjs";
 import { attachEzakazkyDocuments, attachNenDocuments, findOriginalRows, preferPrimaryProfiles, refreshSavedNenProfiles, refreshSavedProfiles } from "./origin-discovery.mjs";
 import { isAggregatorSource, resolveAggregatorLeads } from "./origin-resolver.mjs";
 import { fetchManual } from "./sources/manual.mjs";
@@ -14,10 +15,12 @@ import { fetchTenderArena } from "./sources/tenderarena.mjs";
 import { fetchZakazkyGov } from "./sources/zakazky-gov.mjs";
 import { attachVerifiedNotes } from "./verified-notes.mjs";
 import { publicDataset } from "./publication.mjs";
+import { normalizeTender } from "./model.mjs";
 
 const OUTPUT = "public/data/tenders.json";
 const STATE = "data/tender-state.json";
 const RADAR_STATE = "data/radar-leads.json";
+const REVIEW_QUEUE = "data/review-queue.json";
 const FIXTURES = "data/fixtures/incoming.json";
 const now = process.env.AGENT_NOW ? new Date(process.env.AGENT_NOW) : new Date();
 const fixturesMode = process.argv.includes("--fixtures");
@@ -166,6 +169,19 @@ if (!fixturesMode) {
   await mkdir("data", { recursive: true });
   await writeFile(STATE, `${JSON.stringify(dataset, null, 2)}\n`);
   await writeFile(RADAR_STATE, `${JSON.stringify({ updatedAt: now.toISOString(), leads: pendingLeads }, null, 2)}\n`);
+  const reviewCandidates = new Map();
+  for (const row of rows) {
+    if (isAggregatorSource(row?.source) || row?.originStatus === "unresolved") continue;
+    try {
+      const candidate = normalizeTender(row, now);
+      if ((candidate.documents?.length || 0) > (reviewCandidates.get(candidate.id)?.documents?.length || 0)) {
+        reviewCandidates.set(candidate.id, candidate);
+      }
+    } catch { /* neúplný kandidát nemá podklady k posouzení */ }
+  }
+  const notes = await loadJson("data/verified-notes.json", {});
+  const pending = pendingDocumentReviews([...reviewCandidates.values()], notes);
+  await writeFile(REVIEW_QUEUE, `${JSON.stringify({ updatedAt: now.toISOString(), pendingCount: pending.length, tenders: pending }, null, 2)}\n`);
 }
 console.log(`Uloženo ${dataset.tenders.length} relevantních zakázek (${dataset.stats.newThisRun} nových).`);
 if (invalidRows.length) console.warn(`Přeskočeno ${invalidRows.length} neplatných položek: ${JSON.stringify(invalidRows.slice(0, 5))}`);
