@@ -25,6 +25,7 @@ export function sourceFromOfficialUrl(value) {
     if (host === "zakazky.gov.cz" || host.endsWith(".zakazky.gov.cz")) return "zakazky-gov";
     if (host === "tenderarena.cz" || host.endsWith(".tenderarena.cz")) return "tenderarena";
     if (host === "nen.nipez.cz") return "nen";
+    if (host === "profily.proebiz.com") return "proebiz";
     if (host === "ted.europa.eu") return "ted";
     if (host === "zakazky.krajbezkorupce.cz") return "ezak-jmk";
     if (host === "zakazky.spravazeleznic.cz") return "ezak-sz";

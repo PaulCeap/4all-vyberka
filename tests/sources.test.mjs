@@ -11,6 +11,7 @@ import { fetchEzakazkyDocuments, parseEzakazkyDetail, searchEzakazkyProfile } fr
 import { parseEzakDetail, parseEzakList } from "../src/sources/ezak-watchlist.mjs";
 import { extractCandidateOriginUrls, resolveAggregatorLeads } from "../src/origin-resolver.mjs";
 import { fetchNen, parseNenDetail, parseNenDocuments, selectNenSummaries } from "../src/sources/nen.mjs";
+import { fetchProebiz, parseProebizDetail, parseProebizList } from "../src/sources/proebiz.mjs";
 
 test("Poptávky.cz přečte JSON-LD, cenu a deadline", () => {
   const demand = { "@type": "Demand", identifier: "2050851", name: "Reklamní a marketingové služby", description: "Lokalita:\n- Křetín\nTermín pro podání nabídek:\n- 15. 08. 2026 12:00", mainEntityOfPage: { url: "https://example.test/1" } };
@@ -140,6 +141,27 @@ test("mediální RSS propustí aktivní tendr a vyřadí výsledek tendru", () =
   const rows = parseMediaFeed(xml, "mediaguru");
   assert.equal(rows.length, 1);
   assert.equal(rows[0].opportunityType, "market-signal");
+});
+
+test("mediální RSS zachytí i výběr PR agentury a nevydá oznámení vítěze", () => {
+  const xml = `<rss><item><title>Firma si vybírá PR agenturu</title><link>https://example.test/otevreno</link><description>Chystá novou komunikaci.</description></item><item><title>Firma vypsala tendr na kampaň</title><link>https://example.test/tendr</link><description>Hledá dodavatele kampaně.</description></item><item><title>Firma vybrala partnera ve výběrovém řízení</title><link>https://example.test/hotovo</link><description>Výběr skončil.</description></item><item><title>Agentura vyhrála výběrové řízení</title><link>https://example.test/vitez</link><description>Klient oznámil výsledek.</description></item></rss>`;
+  assert.deepEqual(parseMediaFeed(xml, "mediar").map((row) => row.url), [
+    "https://example.test/otevreno", "https://example.test/tendr",
+  ]);
+});
+
+test("původní profil Proebiz poskytne popis, termín a přílohy", async () => {
+  const url = "https://profily.proebiz.com/verejne-zakazky/6297";
+  const list = `<tr><td><a href="/verejne-zakazky/6297">Kyjovské noviny - externí redaktor</a></td><td><a href="/profile/00285030">Město Kyjov</a></td><td>Služby</td><td>15.10.2026 14:46:24</td><td>30.10.2026 09:00:00</td></tr>`;
+  const detail = `<dt>Název veřejné zakázky</dt><dd>Kyjovské noviny - externí redaktor</dd><dt>Název zadavatele</dt><dd>Město Kyjov</dd><dt>Stručný popis předmětu</dt><dd>Samostatná redakční činnost a tvorba článků.</dd><dt>Lhůta pro podání nabídek</dt><dd>30.10.2026 09:00:00</dd><dt>Stav zakázky</dt><dd>Neukončená</dd><dt>Druh veřejné zakázky</dt><dd>Služby</dd><a href="/tender/6297/attachments/download/48484">Výzva k podání nabídky</a>`;
+  assert.equal(parseProebizList(list)[0].url, url);
+  const parsed = parseProebizDetail(detail, url);
+  assert.equal(parsed.deadline, "2026-10-30T08:00:00.000Z");
+  assert.equal(parsed.documents.length, 1);
+  const rows = await fetchProebiz({ now: new Date("2026-10-18T10:00:00Z"), pageLimit: 2,
+    fetchImpl: async (requested) => new Response(String(requested).includes("/6297") ? detail : list) });
+  assert.equal(rows.length, 1);
+  assert.equal(rows[0].summary, "Samostatná redakční činnost a tvorba článků.");
 });
 
 test("TenderArena převede veřejný seznam na přímé detaily", () => {

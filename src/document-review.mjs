@@ -3,7 +3,7 @@ import { searchable } from "./model.mjs";
 function reviewPriority(document) {
   const name = searchable(document.name).replace(/[_-]+/g, " ");
   if (/\.(cer|txt)$/.test(name) ||
-      /sifrovac|verejny klic|kryci list|cestne prohlasen|pod-dodavatel|poddodavatel|stret zajmu|sankc|vzor smlouv|navrh smlouv|provozni rad/.test(name)) return -1;
+      /sifrovac|verejny klic|kryci list|cestne prohlasen|pod-dodavatel|poddodavatel|stret zajmu|sankc|vzor smlouv|navrh smlouv|provozni rad|pozadavky na elektronickou komunikaci/.test(name)) return -1;
   if (/vysvetleni|(^|\W)vzd(\W|$)|zmena zadavac/.test(name)) return 95;
   if (/priloh/.test(name)) return 60;
   if (/zadavaci dokumentace|(^|\W)zd(\W|$)/.test(name)) return 100;

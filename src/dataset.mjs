@@ -6,7 +6,7 @@ import { isAggregatorSource, sourceFromOfficialUrl } from "./origin-resolver.mjs
 
 const OFFICIAL_SOURCES = new Set([
   "zakazky-gov", "tenderarena", "nen", "ted", "ezak-jmk", "ezak-sz",
-  "official-profile", "official-web",
+  "official-profile", "official-web", "proebiz",
 ]);
 
 export function buildDataset({ rows, sources, previous, now, fixturesMode = false, project = PROJECT }) {

@@ -153,7 +153,7 @@ export async function fetchNen({ fetchImpl = fetch } = {}) {
       buckets.push(collection);
       successfulSearches += 1;
     } catch (error) {
-      console.warn(`NEN: jeden vyhledávací dotaz selhal: ${error.message}`);
+      console.warn(`NEN: dotaz „${term}“ selhal: ${error.message}`);
     }
   }
   if (!successfulSearches) throw new Error("NEN: selhaly všechny vyhledávací dotazy.");

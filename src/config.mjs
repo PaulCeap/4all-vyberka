@@ -89,6 +89,7 @@ export const NEGATIVE_SIGNALS = [
   ["právní služby", 32], ["účetní audit", 26], ["kybernetická bezpečnost", 24],
   ["penetration test", 30], ["penetrační test", 30], ["softwarové licence", 28],
   ["dodávka hardware", 30], ["pojištění", 30], ["stravování", 30],
+  ["externí redaktor", 30],
 ];
 
 export const NATIONAL_SEARCH_URL =

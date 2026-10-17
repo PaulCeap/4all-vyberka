@@ -26,6 +26,16 @@ test("stavební zakázka neprojde ani s obecným slovem komunikace", () => {
   assert.ok(scoreTender(tender, now).score < 42);
 });
 
+test("samostatná pozice redaktora novin není marketingový tendr", () => {
+  const tender = normalizeTender({
+    source: "proebiz", sourceId: "6297", title: "Kyjovské noviny - externí redaktor",
+    buyer: "Město Kyjov",
+    summary: "Samostatná redakční činnost, tvorba článků, grafická stránka vydání a výběr fotografií pro městské noviny.",
+    deadline: "2026-10-30T08:00:00Z", procedureType: "Služby",
+  }, new Date("2026-10-18T00:00:00Z"));
+  assert.ok(scoreTender(tender, new Date("2026-10-18T00:00:00Z")).score < 42);
+});
+
 test("prošlá zakázka dostane výraznou penalizaci", () => {
   const tender = normalizeTender({
     source: "test", sourceId: "3", title: "Marketingová kampaň a PR služby",

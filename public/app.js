@@ -52,6 +52,7 @@ const formatMoney = (value) => {
 const sourceLabel = (source) => ({
   "zakazky-gov": "Zakázky GOV", nen: "NEN", ted: "TED", manual: "Ruční tip",
   tenderarena: "TenderArena", "ezak-jmk": "E-ZAK Jihomoravský kraj",
+  proebiz: "Profil zadavatele",
   mediaguru: "MediaGuru",
   mediar: "Médiář", mam: "MAM",
   "ezak-sz": "E-ZAK Správa železnic",

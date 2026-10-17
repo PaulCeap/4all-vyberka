@@ -5,6 +5,7 @@ import { getText } from "./sources/html-utils.mjs";
 import { parseEzakDetail } from "./sources/ezak-watchlist.mjs";
 import { fetchEzakazkyDetail, fetchEzakazkyDocuments, searchEzakazkyProfile } from "./sources/e-zakazky.mjs";
 import { fetchNenDetail, fetchNenDocuments, searchNenForOrigin } from "./sources/nen.mjs";
+import { fetchProebizDetail } from "./sources/proebiz.mjs";
 
 export async function preferPrimaryProfiles(rows, {
   searchNen = (title) => searchNenForOrigin(title),
@@ -150,7 +151,7 @@ export async function refreshSavedProfiles(rows, { fetchDetail } = {}) {
         discoveryUrl: old.discoveryUrl,
         originStatus: old.originStatus,
         originConfidence: old.originConfidence,
-        documents: [],
+        documents: fresh?.documents || [],
         verifiedFacts: [],
         factsReviewedAt: null,
       });
@@ -167,6 +168,9 @@ export async function fetchOriginalDetail(url, { fetchImpl = fetch } = {}) {
   const source = sourceFromOfficialUrl(url);
   if (source === "nen" && /\/detail-zakazky\//.test(new URL(url).pathname)) {
     return fetchNenDetail(url, { fetchImpl });
+  }
+  if (source === "proebiz" && /^\/verejne-zakazky\/\d+\/?$/.test(new URL(url).pathname)) {
+    return fetchProebizDetail(url, { fetchImpl });
   }
   if (source === "official-profile" && /e-zakazky\.cz\/profil-zadavatele\//i.test(url)) {
     return fetchEzakazkyDetail(url, { fetchImpl });

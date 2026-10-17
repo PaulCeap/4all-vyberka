@@ -1,5 +1,11 @@
 # Zdroje dat a limity
 
+## Co znamená nalezený a ověřený tip
+
+Sběr původního záznamu a posouzení, zda jde o marketingový nebo komunikační tendr, jsou dvě různé kontroly. `originStatus: verified` znamená, že záznam přišel přímo z původního systému nebo oficiálního oznámení. `originStatus: resolved` znamená, že tip z agregátoru byl spárován s konkrétním původním záznamem (shoda alespoň 72 bodů bez nejednoznačného konkurenta). Ani jeden stav nepotvrzuje oborovou vhodnost nebo splnění kvalifikace.
+
+Oborovou shodu počítá samostatně `scoreTender` hlavně z popisu a případného ověřeného výtahu. Název a CPV slouží v prvním průchodu k nalezení kandidáta; samy o sobě veřejnou kartu nezaloží. Veřejný práh je 42 bodů. Relevance dnes nemá samostatnou tvrdou podmínku „marketing nebo komunikace“; je to známé omezení váhového modelu a hranice pro další upřesnění zadání.
+
 ## Hlavní oficiální zdroje
 
 ### Zakázky GOV
@@ -42,6 +48,11 @@
 - Adaptér používá několik úzkých dotazů podle služeb 4ALL a stáhne nejvýše 60 detailů za běh. Limit rozděluje napříč dotazy po jednotlivých pozicích, takže širší výraz nemůže vytlačit pozdější specializované dotazy. Dotazy běží postupně, protože souběžné dotazy NEN vracely chybu 503; timeout jednoho nezahodí ostatní výsledky.
 - Z detailu čte popis, CPV, předpokládanou hodnotu, datum publikace a lhůtu. Vše následně projde stejným scoringem; samotná shoda vyhledávacího dotazu nestačí k publikaci.
 
+### Profily Proebiz
+
+- Agent kontroluje poslední tři stránky veřejného seznamu původních profilů zadavatelů na [Proebiz](https://profily.proebiz.com/verejne-zakazky) a u stále otevřených zakázek čte přímo detail, popis, lhůtu a seznam příloh.
+- Tím zachytí i menší zakázky, které v dosavadních sledovaných nástrojích nebyly. Starší otevřené zakázky, které ze seznamu vypadnou, se kontrolují přes uložený přímý odkaz.
+
 ## Poptávky.cz a Poptávej.cz: pouze radar
 
 - Agent denně čte veřejně dostupné kategorie reklamy a tisku, ale tyto weby nepovažuje za původní zdroj.
@@ -52,7 +63,7 @@
 
 ## MediaGuru, Médiář a Marketing & Media
 
-- RSS kanály se kontrolují na aktivní formulace jako „hledá agenturu“ nebo „vyhlašuje tendr“.
+- RSS kanály se kontrolují na aktivní formulace jako „hledá agenturu“, „vybírá partnera“ nebo „vypsala tendr“. Vedle obecného kanálu MediaGuru se čtou jeho tematické kanály marketingu, reklamy a PR; duplicitní články se sloučí podle odkazu.
 - Oznámení o již vybraném vítězi se vyřazují. Tyto položky jsou označené jako komerční tendry / mediální signály.
 - Protože často nemají veřejný deadline, zůstávají v přehledu nejvýše 120 dní a před reakcí vyžadují ruční ověření.
 

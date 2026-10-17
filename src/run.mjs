@@ -12,10 +12,13 @@ import { fetchEzakWatchlist } from "./sources/ezak-watchlist.mjs";
 import { fetchEzakazkyDetail } from "./sources/e-zakazky.mjs";
 import { fetchTed, fetchTedNotice } from "./sources/ted.mjs";
 import { fetchTenderArena } from "./sources/tenderarena.mjs";
+import { fetchProebiz, fetchProebizDetail } from "./sources/proebiz.mjs";
 import { fetchZakazkyGov } from "./sources/zakazky-gov.mjs";
 import { attachVerifiedNotes } from "./verified-notes.mjs";
 import { publicDataset } from "./publication.mjs";
 import { normalizeTender } from "./model.mjs";
+import { scoreTender } from "./scoring.mjs";
+import { PROJECT } from "./config.mjs";
 
 const OUTPUT = "public/data/tenders.json";
 const STATE = "data/tender-state.json";
@@ -58,6 +61,7 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
     ["nen", () => fetchNen()],
     ["ted", () => fetchTed({ now })],
     ["ezak-watchlist", () => fetchEzakWatchlist()],
+    ["proebiz", () => fetchProebiz({ now })],
   ];
   const supportingCollectors = [
     ["media-signals", () => fetchMediaSignals()],
@@ -98,7 +102,9 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
   const savedProfiles = previous.tenders.filter((row) => row.source === "official-profile" &&
     /e-zakazky\.cz\/profil-zadavatele\//i.test(row.url || "") && !currentIds.has(row.id));
   const refreshedProfiles = await refreshSavedProfiles(savedProfiles, { fetchDetail: fetchEzakazkyDetail });
-  const primary = await preferPrimaryProfiles([...refreshedProfiles, ...refreshedNen, ...refreshedSecondary, ...currentOfficial], {
+  const savedProebiz = previous.tenders.filter((row) => row.source === "proebiz" && !currentIds.has(row.id));
+  const refreshedProebiz = await refreshSavedProfiles(savedProebiz, { fetchDetail: fetchProebizDetail });
+  const primary = await preferPrimaryProfiles([...refreshedProfiles, ...refreshedProebiz, ...refreshedNen, ...refreshedSecondary, ...currentOfficial], {
     previousTenders: previous.tenders, now,
   });
 
@@ -174,6 +180,7 @@ if (!fixturesMode) {
     if (isAggregatorSource(row?.source) || row?.originStatus === "unresolved") continue;
     try {
       const candidate = normalizeTender(row, now);
+      if (scoreTender(candidate, now, { preliminary: true }).score < PROJECT.minimumScore) continue;
       if ((candidate.documents?.length || 0) > (reviewCandidates.get(candidate.id)?.documents?.length || 0)) {
         reviewCandidates.set(candidate.id, candidate);
       }

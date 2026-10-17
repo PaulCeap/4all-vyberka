@@ -169,6 +169,7 @@ test("ke čtení se vyberou věcné podklady bez administrativních formulářů
     { name: "Vysvětlení zadávací dokumentace č. 1.pdf" },
     { name: "04_Požadavky na prokázání kvalifikace.docx" },
     { name: "05_Seznam poddodavatelů.docx" },
+    { name: "Příloha č. 4 - Požadavky na elektronickou komunikaci.pdf" },
   ]);
   assert.deepEqual(selected.map((document) => document.name), [
     "00_Zadavaci_dokumentace.pdf",
