@@ -36,3 +36,15 @@ test("záznam nalezený přes agregátor bez ověřeného odkazu se nepublikuje"
   ] };
   assert.equal(publicDataset(dataset).tenders.length, 0);
 });
+
+test("zpráva z oborového média je samostatný komerční signál", () => {
+  const report = {
+    source: "mediar", sourceId: "1", opportunityType: "market-signal",
+    originStatus: "media-report", url: "https://www.mediar.cz/firma-hleda-pr-agenturu/",
+    title: "Firma hledá PR agenturu", summary: "Výběr nového partnera pro public relations.",
+  };
+  assert.deepEqual(publicDataset({ sources: [{ id: "media-signals", count: 1 }], tenders: [report] }).tenders, [
+    { source: report.source, sourceId: report.sourceId, opportunityType: report.opportunityType,
+      url: report.url, title: report.title, summary: report.summary },
+  ]);
+});

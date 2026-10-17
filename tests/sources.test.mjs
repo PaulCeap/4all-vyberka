@@ -150,6 +150,13 @@ test("mediální RSS zachytí i výběr PR agentury a nevydá oznámení vítěz
   ]);
 });
 
+test("oborové médium zachytí také hledání video produkce", () => {
+  const xml = `<rss><item><title>Značka hledá video produkci</title><link>https://example.test/video</link><description>Poptává výrobu série videí.</description></item></rss>`;
+  const [row] = parseMediaFeed(xml, "mediar");
+  assert.equal(row.url, "https://example.test/video");
+  assert.equal(row.originStatus, "media-report");
+});
+
 test("původní profil Proebiz poskytne popis, termín a přílohy", async () => {
   const url = "https://profily.proebiz.com/verejne-zakazky/6297";
   const list = `<tr><td><a href="/verejne-zakazky/6297">Kyjovské noviny - externí redaktor</a></td><td><a href="/profile/00285030">Město Kyjov</a></td><td>Služby</td><td>15.10.2026 14:46:24</td><td>30.10.2026 09:00:00</td></tr>`;

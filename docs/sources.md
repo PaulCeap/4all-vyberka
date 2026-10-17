@@ -4,7 +4,7 @@
 
 Sběr původního záznamu a posouzení, zda jde o marketingový nebo komunikační tendr, jsou dvě různé kontroly. `originStatus: verified` znamená, že záznam přišel přímo z původního systému nebo oficiálního oznámení. `originStatus: resolved` znamená, že tip z agregátoru byl spárován s konkrétním původním záznamem (shoda alespoň 72 bodů bez nejednoznačného konkurenta). Ani jeden stav nepotvrzuje oborovou vhodnost nebo splnění kvalifikace.
 
-Oborovou shodu počítá samostatně `scoreTender` hlavně z popisu a případného ověřeného výtahu. Název a CPV slouží v prvním průchodu k nalezení kandidáta; samy o sobě veřejnou kartu nezaloží. Veřejný práh je 42 bodů. Relevance dnes nemá samostatnou tvrdou podmínku „marketing nebo komunikace“; je to známé omezení váhového modelu a hranice pro další upřesnění zadání.
+Před bodovým řazením se ověřuje věcný předmět: marketing, PR a vztahy s médii, komunikace, obsah, grafické a produkční služby, samostatná výroba videí, podcastů a fotografií, eventy a související strategie či školení. Zakázka nemusí být součástí kampaně. Samotná vedlejší zmínka o videu, textu nebo fotografii nestačí; pozice externího redaktora či provoz novin jsou mimo záběr. `scoreTender` potom řadí způsobilé kandidáty z popisu a případného ověřeného výtahu. Název a CPV slouží v prvním průchodu k nalezení kandidáta; samy o sobě veřejnou kartu nezaloží. Veřejný práh je 42 bodů. Konkrétní obchodní nebo kvalifikační vhodnost se automaticky nepotvrzuje.
 
 ## Hlavní oficiální zdroje
 
@@ -45,7 +45,7 @@ Oborovou shodu počítá samostatně `scoreTender` hlavně z popisu a případn�
 ### NEN
 
 - Veřejný seznam Národního elektronického nástroje doplňuje hlavně zakázky malého rozsahu.
-- Adaptér používá několik úzkých dotazů podle služeb 4ALL a stáhne nejvýše 60 detailů za běh. Limit rozděluje napříč dotazy po jednotlivých pozicích, takže širší výraz nemůže vytlačit pozdější specializované dotazy. Dotazy běží postupně, protože souběžné dotazy NEN vracely chybu 503; timeout jednoho nezahodí ostatní výsledky.
+- Adaptér používá 20 cílených dotazů podle služeb 4ALL, včetně videa, natáčení, podcastů a focení, a stáhne nejvýše 80 detailů za běh. Limit rozděluje napříč dotazy po jednotlivých pozicích, takže širší výraz nemůže vytlačit pozdější specializované dotazy. Dotazy běží postupně, protože souběžné dotazy NEN vracely chybu 503; timeout jednoho nezahodí ostatní výsledky.
 - Z detailu čte popis, CPV, předpokládanou hodnotu, datum publikace a lhůtu. Vše následně projde stejným scoringem; samotná shoda vyhledávacího dotazu nestačí k publikaci.
 
 ### Profily Proebiz
@@ -64,6 +64,7 @@ Oborovou shodu počítá samostatně `scoreTender` hlavně z popisu a případn�
 ## MediaGuru, Médiář a Marketing & Media
 
 - RSS kanály se kontrolují na aktivní formulace jako „hledá agenturu“, „vybírá partnera“ nebo „vypsala tendr“. Vedle obecného kanálu MediaGuru se čtou jeho tematické kanály marketingu, reklamy a PR; duplicitní články se sloučí podle odkazu.
+- Článek je samostatný zdroj zprávy o komerčním tendru. U těchto médií se nevyžaduje veřejná stránka zadavatele; ta ani nemusí existovat. Původ se interně označuje `media-report`, nikoli jako ověřené úřední zadání.
 - Oznámení o již vybraném vítězi se vyřazují. Tyto položky jsou označené jako komerční tendry / mediální signály.
 - Protože často nemají veřejný deadline, zůstávají v přehledu nejvýše 120 dní a před reakcí vyžadují ruční ověření.
 

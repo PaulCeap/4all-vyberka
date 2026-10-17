@@ -1,5 +1,6 @@
 import { NEGATIVE_SIGNALS, SERVICE_AREAS } from "./config.mjs";
 import { searchable } from "./model.mjs";
+import { assessScope } from "./scope.mjs";
 
 function daysUntil(value, now) {
   if (!value) return null;
@@ -11,6 +12,7 @@ function cpvMatches(codes, prefixes) {
 }
 
 export function scoreTender(tender, now = new Date(), { preliminary = false } = {}) {
+  const scope = assessScope(tender);
   const titleText = searchable(tender.title);
   const summaryText = searchable(tender.summary);
   const factsText = tender.factsReviewedAt
@@ -45,6 +47,12 @@ export function scoreTender(tender, now = new Date(), { preliminary = false } = 
     if (cpvMatches(tender.cpv || [], area.cpvPrefixes)) {
       categoryScore += preliminary ? 24 : 10;
       matched.push("odpovídající CPV");
+    }
+    if (scope.contentAreas.includes(area.id)) {
+      categoryScore = Math.max(categoryScore, 28);
+      if (!matched.length) matched.push("přímá poptávka služby");
+      hasContentMatch = true;
+      contentMatched = true;
     }
     categoryScore = Math.min(categoryScore, 50);
     if (categoryScore > 0 && (preliminary || contentMatched)) {
@@ -94,6 +102,8 @@ export function scoreTender(tender, now = new Date(), { preliminary = false } = 
 
   // Název a CPV pomáhají najít kandidáta. Samy o sobě nepotvrdí shodu pro veřejnou kartu.
   if (!preliminary && !hasContentMatch) score = Math.min(score, 39);
+  // Skóre řadí zakázky až poté, co jejich předmět spadá do služeb 4ALL.
+  if (!preliminary && !scope.eligible) score = Math.min(score, 39);
 
   score = Math.max(0, Math.min(100, Math.round(score)));
   const categories = categoryScores.slice(0, 3).map(({ id, label, score: categoryScore }) => ({

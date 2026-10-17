@@ -10,7 +10,7 @@ const FEEDS = [
   { source: "mam", url: "https://www.mam.cz/feed/" },
 ];
 const ACTIVE = [
-  /\b(?:hleda|hledaji|poptava|poptavaji|vybira|vybiraji|shani)\b.{0,50}\b(?:agenturu|partnera|dodavatele)\b/,
+  /\b(?:hleda|hledaji|poptava|poptavaji|vybira|vybiraji|shani)\b.{0,60}\b(?:agenturu|partnera|dodavatele|produkci|produkcni spolecnost|studio)\b/,
   /\b(?:vypsal|vypsala|vyhlasuje|vyhlasila|vypisuje|otevrel|otevrela)\b.{0,35}\b(?:tendr|vyberove rizeni)\b/,
   /\b(?:vyberove rizeni|tendr na)\b/,
 ];
@@ -45,6 +45,7 @@ export function parseMediaFeed(xml, source) {
       procedureType: "Komerční výběrové řízení — mediální signál",
       opportunityType: "market-signal",
       status: "signal",
+      originStatus: "media-report",
     }];
   });
 }

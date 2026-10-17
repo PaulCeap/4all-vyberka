@@ -2,9 +2,10 @@ import { czechDate, plainText } from "./html-utils.mjs";
 
 const NEN_BASE = "https://nen.nipez.cz";
 const SEARCH_TERMS = [
-  "komunikační strategie", "komunikační kampaň", "public relations", "marketingové služby",
-  "propagace", "sociální sítě", "tvorba obsahu", "mediální", "médií", "reklamní kampaň",
-  "event", "moderování", "mediální trénink", "AI školení",
+  "komunikační strategie", "komunikační kampaň", "public relations", "PR služby",
+  "marketingové služby", "propagace", "sociální sítě", "tvorba obsahu",
+  "mediální", "reklamní kampaň", "event", "produkční", "mediální trénink",
+  "video", "natáčení", "audiovizuální", "podcast", "fotografické", "focení", "grafické práce",
 ];
 
 function reduxState(html) {
@@ -158,7 +159,7 @@ export async function fetchNen({ fetchImpl = fetch } = {}) {
   }
   if (!successfulSearches) throw new Error("NEN: selhaly všechny vyhledávací dotazy.");
 
-  const rows = selectNenSummaries(buckets, Number(process.env.NEN_DETAIL_LIMIT || 60));
+  const rows = selectNenSummaries(buckets, Number(process.env.NEN_DETAIL_LIMIT || 80));
   const results = [];
   for (let index = 0; index < rows.length; index += 6) {
     const batch = rows.slice(index, index + 6);

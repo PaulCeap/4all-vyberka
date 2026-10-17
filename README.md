@@ -50,13 +50,14 @@ AGENT_NOW=2026-08-09T10:00:00Z npm run agent:fixtures
 
 Scoring je záměrně čitelný a verzovaný v `src/config.mjs` a `src/scoring.mjs`:
 
-1. hledá silné fráze hlavně v popisu zakázky; je-li k dispozici ověřený výtah z podkladů, používá jej a doplňující ověřené věcné body,
-2. název a CPV používá jako slabší podpůrné signály; samotné bez věcné shody v popisu či výtahu na zveřejnění nestačí,
-3. při prvním hledání ponechává širší záchyt podle názvu a CPV, aby mohl otevřít původní zadání,
-4. přihlíží k typu zakázky a lhůtě a odečítá body za stavebnictví, právní služby, hardware a další zjevně nerelevantní předměty,
-5. publikuje jen zakázky se skóre alespoň 42 a s dosud neuplynulým termínem,
-6. radarové tipy pustí do hodnocení až po dohledání původního záznamu; nedohledané ponechá mimo web pro další pokus,
-7. u každé zakázky uloží důvody, kategorie a negativní signály.
+1. nejprve odliší skutečně poptávané marketingové, PR, komunikační, obsahové a produkční služby; samostatná výroba videí, podcastů a fotografií se počítá i bez kampaně,
+2. hledá silné fráze hlavně v popisu zakázky; je-li k dispozici ověřený výtah z podkladů, používá jej a doplňující ověřené věcné body,
+3. název a CPV používá jako slabší podpůrné signály; samotné bez věcné shody v popisu či výtahu na zveřejnění nestačí,
+4. při prvním hledání ponechává širší záchyt podle názvu a CPV, aby mohl otevřít původní zadání,
+5. přihlíží k typu zakázky a lhůtě a odečítá body za stavebnictví, právní služby, hardware a další zjevně nerelevantní předměty,
+6. publikuje jen zakázky se skóre alespoň 42 a s dosud neuplynulým termínem,
+7. radarové tipy z přebírajících webů pustí do hodnocení až po dohledání původního záznamu; zprávy z oborových médií jsou samostatné komerční signály,
+8. u každé zakázky uloží důvody, kategorie a negativní signály.
 
 Skóre a stručný výtah slouží k rozhodnutí, zda se zakázce věnovat dál. Agent u relevantních zakázek eviduje přílohy, k výtahu vybírá věcné podklady a ověřené poznatky uvádí s odkazy na konkrétní dokumenty. Před podáním nabídky je rozhodující aktuální úplné zadání na profilu zadavatele.
 
@@ -72,7 +73,7 @@ Příkaz `npm run review:queue` vypíše nové nebo změněné věcné dokumenty
 | `HISTORY_DAYS` | `45` | Jak dlouho držet starší tipy |
 | `SIGNAL_HISTORY_DAYS` | `120` | Jak dlouho držet komerční mediální signály |
 | `TED_LOOKBACK_DAYS` | `8` | Překryv dotazu do TEDu pro odolnost proti výpadku |
-| `NEN_DETAIL_LIMIT` | `60` | Nejvyšší počet NEN detailů načtených v jednom běhu |
+| `NEN_DETAIL_LIMIT` | `80` | Nejvyšší počet NEN detailů načtených v jednom běhu |
 | `POPTAVKY_DETAIL_LIMIT` | `30` | Nejvyšší počet detailů z Poptávky.cz |
 | `POPTAVEJ_DETAIL_LIMIT` | `30` | Nejvyšší počet detailů z Poptávej.cz |
 | `EZAK_DETAIL_LIMIT` | `80` | Nejvyšší počet detailů z jednoho E-ZAK profilu napříč stránkami |
