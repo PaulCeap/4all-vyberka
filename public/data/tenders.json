@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T09:06:26.998Z",
+  "generatedAt": "2026-10-17T08:39:10.490Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -17,27 +17,27 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 154
+      "count": 73
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 81
+      "count": 47
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 55
+      "count": 59
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 548
+      "count": 469
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 76
+      "count": 79
     },
     {
       "id": "media-signals",
@@ -53,13 +53,14 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 2
+      "resolved": 1
     },
     {
       "id": "poptavej",
-      "ok": true,
-      "count": 20,
-      "resolved": 4
+      "ok": false,
+      "count": 0,
+      "error": "fetch failed",
+      "resolved": 0
     }
   ],
   "tenders": [
@@ -84,7 +85,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-09-28T11:02:59.792Z",
-      "lastSeenAt": "2026-10-16T09:06:26.998Z",
+      "lastSeenAt": "2026-10-17T08:39:10.490Z",
       "status": "open",
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ828112/zajisteni-realizace-marketingove-strategie",
@@ -137,7 +138,7 @@
       "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-13T11:56:13.295Z",
-      "lastSeenAt": "2026-10-16T09:06:26.998Z",
+      "lastSeenAt": "2026-10-17T08:39:10.490Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2128705-zajisteni-reklamnich-ploch-pro-potreby-propagace-vystav-expozic",
@@ -176,7 +177,7 @@
             "score": 24
           }
         ],
-        "deadlineDays": 3
+        "deadlineDays": 2
       }
     },
     {
@@ -255,9 +256,6 @@
       "originStatus": "unresolved",
       "originConfidence": 30,
       "fingerprint": "3662d9dd9a6154527a47",
-      "duplicateSources": [
-        "poptavej"
-      ],
       "relevance": {
         "score": 43,
         "level": "watch",
@@ -275,7 +273,7 @@
             "score": 22
           }
         ],
-        "deadlineDays": 19
+        "deadlineDays": 18
       }
     }
   ]
