@@ -25,6 +25,8 @@ jobs:
       - run: npm test
       - name: Načíst a vyhodnotit nové zakázky
         run: npm run agent
+      - name: Vypsat zakázky s novými věcnými podklady
+        run: npm run review:queue
       - name: Uložit aktualizovaná data
         run: |
           if git diff --quiet -- public/data/tenders.json data/radar-leads.json data/tender-state.json; then

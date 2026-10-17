@@ -82,7 +82,7 @@ function cardTemplate(tender) {
   const isNew = Date.now() - new Date(tender.firstSeenAt).valueOf() < 36 * 60 * 60 * 1000;
   const isSaved = state.saved.has(tender.id);
   const isExpanded = state.expanded.has(tender.id);
-  const summary = tender.summary || "Zdroj neposkytl stručný popis. Ověřte zadávací dokumentaci.";
+  const summary = tender.summary || "";
   const canExpand = summary.length > 210;
   const summaryId = `summary-${tender.id}`;
   const days = daysUntil(tender.deadline);
@@ -90,8 +90,6 @@ function cardTemplate(tender) {
   const today = localDay(new Date());
   const deadlineLabel = days === null ? "Neuvedeno" : deadlineDay === today ? "Dnes" : `${days} ${days === 1 ? "den" : days < 5 ? "dny" : "dní"}`;
   const sourceUrl = safeExternalUrl(tender.url);
-  const documentsUrl = safeExternalUrl(tender.documentsUrl);
-  const documents = (tender.documents || []).filter((document) => safeExternalUrl(document.url));
   const facts = (tender.verifiedFacts || []).filter((fact) => safeExternalUrl(fact.url));
   return `
     <article class="tender-card" data-id="${escapeHtml(tender.id)}">
@@ -106,9 +104,9 @@ function cardTemplate(tender) {
         </div>
         <h3>${escapeHtml(tender.title)}</h3>
         <p class="buyer">${escapeHtml(tender.buyer)}</p>
-        <p class="summary${isExpanded ? " expanded" : ""}" id="${escapeHtml(summaryId)}">${escapeHtml(summary)}</p>
+        ${summary ? `<p class="summary${isExpanded ? " expanded" : ""}" id="${escapeHtml(summaryId)}">${escapeHtml(summary)}</p>` : ""}
         ${canExpand ? `<button class="summary-toggle" type="button" data-expand="${escapeHtml(tender.id)}" aria-controls="${escapeHtml(summaryId)}" aria-expanded="${isExpanded}">${isExpanded ? "Skrýt popis ↑" : "Zobrazit více ↓"}</button>` : ""}
-        ${facts.length ? `<div class="verified-facts"><strong>Podstatné ze zadání</strong><ul>${facts.map((fact) => `<li>${escapeHtml(fact.text)} <a href="${escapeHtml(safeExternalUrl(fact.url))}" target="_blank" rel="noreferrer" aria-label="Zdroj: ${escapeHtml(fact.text)}">↗</a></li>`).join("")}</ul></div>` : ""}
+        ${facts.length ? `<div class="verified-facts"><strong>Co je důležité</strong><ul>${facts.map((fact) => `<li>${escapeHtml(fact.text)} <a href="${escapeHtml(safeExternalUrl(fact.url))}" target="_blank" rel="noreferrer" aria-label="Zdroj: ${escapeHtml(fact.text)}">↗</a></li>`).join("")}</ul></div>` : ""}
         <div class="match-tags">${tender.relevance.categories.map((category) => `<span>${escapeHtml(category.label)}</span>`).join("")}</div>
         ${tender.relevance.reasons[0] ? `<p class="reason">${escapeHtml(tender.relevance.reasons[0])}</p>` : ""}
       </div>
@@ -121,8 +119,6 @@ function cardTemplate(tender) {
         </div>
         <div class="source-links">
           ${sourceUrl ? `<a class="source-link" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noreferrer">Původní zakázka ↗</a>` : ""}
-          ${documentsUrl ? `<a class="source-link" href="${escapeHtml(documentsUrl)}" target="_blank" rel="noreferrer">Zadání a přílohy (${documents.length || "?"}) ↗</a>` : ""}
-          ${documents.length ? `<details class="document-list"><summary>Jednotlivé soubory</summary><ul>${documents.map((document) => `<li><a href="${escapeHtml(safeExternalUrl(document.url))}" target="_blank" rel="noreferrer">${escapeHtml(document.name)}</a></li>`).join("")}</ul></details>` : ""}
         </div>
       </div>
       <button class="save-button" type="button" aria-label="${isSaved ? "Odebrat z uložených" : "Uložit zakázku"}" aria-pressed="${isSaved}" data-save="${escapeHtml(tender.id)}">${isSaved ? "★" : "☆"}</button>

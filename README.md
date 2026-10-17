@@ -56,7 +56,9 @@ Scoring je záměrně čitelný a verzovaný v `src/config.mjs` a `src/scoring.m
 5. radarové tipy pustí do hodnocení až po dohledání původního záznamu; nedohledané ponechá mimo web pro další pokus,
 6. u každé zakázky uloží důvody, kategorie a negativní signály.
 
-Skóre je předvýběr, nikoli automatické doporučení k podání nabídky. Před rozhodnutím je nutné otevřít původní zdroj a ověřit kvalifikaci, dokumentaci, lhůty, rozpočet a kapacitu týmu.
+Skóre a stručný výtah slouží k rozhodnutí, zda se zakázce věnovat dál. Agent u relevantních zakázek eviduje přílohy, k výtahu vybírá věcné podklady a ověřené poznatky uvádí s odkazy na konkrétní dokumenty. Před podáním nabídky je rozhodující aktuální úplné zadání na profilu zadavatele.
+
+Příkaz `npm run review:queue` vypíše nové nebo změněné věcné dokumenty čekající na přečtení. Tato kontrola běží také po denním sběru. Výstup zůstává v provozním logu; neověřené závěry se do veřejné karty nevkládají.
 
 ## Konfigurace
 

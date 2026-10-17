@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T22:29:26.802Z",
+  "generatedAt": "2026-10-17T22:39:21.807Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -28,7 +28,7 @@
     {
       "id": "nen",
       "ok": true,
-      "count": 46
+      "count": 39
     },
     {
       "id": "ted",
@@ -73,7 +73,7 @@
       "url": "https://www.e-zakazky.cz/profil-zadavatele/01d47fe3-916b-4869-bc75-c097dc0eefe1/zakazka/P26V00000072",
       "title": "Zajištění realizace marketingové strategie pro rok 2027",
       "buyer": "Oborová zdravotní pojišťovna zaměstnanců bank, pojišťoven a stavebnictví",
-      "summary": "Předmětem plnění této veřejné zakázky je poskytování služeb souvisejících s realizací marketingové strategie objednatele, zejména nákup a administrace reklamy, tvorba mediálních plánů, tisk reklamních a propagačních materiálů, zajištění cen do soutěží, realizace kampaňových průzkumů a poskytování kreativních, produkčních a dalších souvisejících marketingových služeb.",
+      "summary": "OZP hledá dodavatele marketingových služeb pro rok 2027: nákup médií, kreativní a produkční práce, tisk, průzkumy a správu kampaní.",
       "country": "CZ",
       "region": "Česko",
       "publishedAt": "2026-09-29T10:00:00.000Z",
@@ -144,8 +144,25 @@
           "url": "https://www.e-zakazky.cz/stazenisouboru/30779b49-090d-45b1-91f8-8df7355feb5d"
         }
       ],
-      "verifiedFacts": [],
-      "factsReviewedAt": null,
+      "verifiedFacts": [
+        {
+          "text": "Rámcová dohoda bude na 12 měsíců se 3 až 7 dodavateli. O jejich výběru rozhoduje nejnižší nabídková cena.",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/e643955b-a247-43d0-8e5c-6a381f39630c"
+        },
+        {
+          "text": "Kvalifikace: obrat alespoň 15 mil. Kč v každém ze 3 posledních uzavřených období a 5 marketingových referencí z posledních 3 let po nejméně 1 mil. Kč bez DPH.",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/0fbe2a09-ffc3-4d88-ae37-3bbfed798836"
+        },
+        {
+          "text": "Šest klíčových rolí včetně accounta, mediálního plánovače, copywritera, grafika a analytika nesmí zajišťovat poddodavatelé.",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/0fbe2a09-ffc3-4d88-ae37-3bbfed798836"
+        },
+        {
+          "text": "Zadavatel opravil Soupis plnění; v nabídce se musí použít nová verze. Lhůta byla posunuta na 2. 11. 2026 v 10:00.",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/a9cd3950-7ce6-41a0-bfb3-05096e1ba5c9"
+        }
+      ],
+      "factsReviewedAt": "2026-10-17T22:37:48.000Z",
       "cpv": [
         "79340000"
       ],
@@ -157,9 +174,12 @@
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": 0,
+      "originConfidence": null,
       "candidateProfileUrls": [],
       "fingerprint": "d202cf916abc112977cb",
+      "duplicateSources": [
+        "official-profile"
+      ],
       "relevance": {
         "score": 68,
         "level": "good",
@@ -192,7 +212,7 @@
       "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00033177",
       "title": "Zajištění reklamních ploch pro potřeby propagace výstav, expozic a dalších akcí UPM",
       "buyer": "Uměleckoprůmyslové museum v Praze",
-      "summary": "Předmětem veřejné zakázky je: Zajištění reklamních nosičů - CLV – metro, sítě, rotundy - Billboardy - Rámečky a další formáty v příměstské dopravě - Polepy tram - Plochy na Letišti Praha - A1 mokrý výlep v krajských a okresních městech - Další navržené kombinace reklamy",
+      "summary": "Uměleckoprůmyslové museum v Praze poptává reklamní plochy pro výstavy a expozice: metro, billboardy, tramvaje, letiště a další formáty.",
       "country": "CZ",
       "region": "Hlavní město Praha",
       "publishedAt": "2026-10-12T12:40:00.000Z",
@@ -213,15 +233,28 @@
           "url": "https://nen.nipez.cz/file?id=4786082029"
         }
       ],
-      "verifiedFacts": [],
-      "factsReviewedAt": null,
+      "verifiedFacts": [
+        {
+          "text": "Maximální cena je 800 tis. Kč bez DPH. Plnění trvá do konce roku 2027 nebo do vyčerpání limitu.",
+          "url": "https://nen.nipez.cz/file?id=4786082029"
+        },
+        {
+          "text": "Požadují se 2 srovnatelné zakázky z posledních 3 let, každá v hodnotě alespoň 800 tis. Kč bez DPH.",
+          "url": "https://nen.nipez.cz/file?id=4786082029"
+        },
+        {
+          "text": "Hodnotí se pouze nejnižší celková nabídková cena bez DPH.",
+          "url": "https://nen.nipez.cz/file?id=4786082029"
+        }
+      ],
+      "factsReviewedAt": "2026-10-17T22:37:48.000Z",
       "cpv": [
         "79341000"
       ],
       "procedureType": "Sluzby / Otevřená výzva",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-13T11:56:13.295Z",
-      "lastSeenAt": "2026-10-17T22:29:26.802Z",
+      "lastSeenAt": "2026-10-17T22:39:21.807Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2128705-zajisteni-reklamnich-ploch-pro-potreby-propagace-vystav-expozic",
@@ -271,7 +304,7 @@
       "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032165",
       "title": "Dodavatel audiovizuálního obsahu účasti ČR na Mezinárodní specializované výstavě EXPO 2027, Bělehrad",
       "buyer": "CzechBusiness",
-      "summary": "Předmětem plnění se rozumí výkon činností vedoucích k realizaci a zajištění kompletního AV obsahu expozice a jeho následnou implementaci do ekosystému generálního dodavatele expozice. A to po celou dobu trvání výstavy, přičemž tento obsah vytvoří naprosto zásadní prvek (audiovizuální autorské dílo) na české expozici na EXPO Bělehrad 2027. Předmětem tohoto výběrového řízení je výběr klíčového kreativně-technologického partnera - dodavatele (dále jen dodavatel), který zajistí komplexní kreativní, obsahovou, produkční a personální realizaci audiovizuálního obsahu včetně světelného scénáře, animací, autorské hudby a zvukových stop (voiceover) pro expozici České republiky na EXPO 2027 v Bělehradě.",
+      "summary": "Česká expozice na EXPO 2027 hledá kreativně-technologického partnera pro vytvoření a provoz kompletního audiovizuálního obsahu.",
       "country": "CZ",
       "region": "Hlavní město Praha",
       "publishedAt": "2026-10-06T07:16:00.000Z",
@@ -339,6 +372,10 @@
         {
           "text": "Požadují se tři relevantní reference za posledních osm let a kreativní manažer. Vysvětlení č. 2 upřesňuje rozsah referencí i hranici odpovědnosti za technickou infrastrukturu.",
           "url": "https://nen.nipez.cz/file?id=4787723430"
+        },
+        {
+          "text": "Přiložené libreto je jen inspirace: vlastní autorské libreto je přípustné, má být v angličtině s úvodním srbským pozdravem.",
+          "url": "https://nen.nipez.cz/file?id=4782970335"
         }
       ],
       "factsReviewedAt": "2026-10-17T22:11:00.000Z",

@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { attachNenDocuments, findOriginalRows, fetchOriginalDetail, preferPrimaryProfiles, refreshSavedNenProfiles } from "../src/origin-discovery.mjs";
 import { resolveAggregatorLeads } from "../src/origin-resolver.mjs";
 import { attachVerifiedNotes } from "../src/verified-notes.mjs";
+import { pendingDocumentReviews, reviewDocuments } from "../src/document-review.mjs";
 
 const original = {
   source: "nen", sourceId: "N006/26/V00012345",
@@ -146,11 +147,49 @@ test("poznámky z dokumentace zmizí, pokud přibude nové vysvětlení", () => 
   const notes = { "nen:N006/26/V00012345": {
     reviewedAt: "2026-10-18T00:00:00Z",
     documentSnapshot: ["https://nen.nipez.cz/file?id=1"],
+    summary: "Krátký ověřený popis.",
     facts: [{ text: "Limit 5 mil. Kč", url: "https://nen.nipez.cz/file?id=1" }],
   } };
-  const row = { ...original, documents: [{ url: "https://nen.nipez.cz/file?id=1" }] };
+  const row = { ...original, documents: [{ name: "Zadávací dokumentace.pdf", url: "https://nen.nipez.cz/file?id=1" }] };
   assert.equal(attachVerifiedNotes([row], notes)[0].verifiedFacts.length, 1);
-  assert.equal(attachVerifiedNotes([{ ...row, documents: [...row.documents, { url: "https://nen.nipez.cz/file?id=2" }] }], notes)[0].verifiedFacts, undefined);
+  assert.equal(attachVerifiedNotes([row], notes)[0].summary, "Krátký ověřený popis.");
+  assert.equal(attachVerifiedNotes([{ ...row, documents: [...row.documents, {
+    name: "Vysvětlení zadávací dokumentace.pdf", url: "https://nen.nipez.cz/file?id=2",
+  }] }], notes)[0].verifiedFacts, undefined);
+  assert.equal(attachVerifiedNotes([{ ...row, documents: [...row.documents, {
+    name: "Krycí list nabídky.docx", url: "https://nen.nipez.cz/file?id=3",
+  }] }], notes)[0].verifiedFacts.length, 1);
+});
+
+test("ke čtení se vyberou věcné podklady bez administrativních formulářů", () => {
+  const selected = reviewDocuments([
+    { name: "Šifrovací klíč.txt" },
+    { name: "00_Zadavaci_dokumentace.pdf" },
+    { name: "01_Krycí list nabídky.docx" },
+    { name: "Vysvětlení zadávací dokumentace č. 1.pdf" },
+    { name: "04_Požadavky na prokázání kvalifikace.docx" },
+    { name: "05_Seznam poddodavatelů.docx" },
+  ]);
+  assert.deepEqual(selected.map((document) => document.name), [
+    "00_Zadavaci_dokumentace.pdf",
+    "Vysvětlení zadávací dokumentace č. 1.pdf",
+    "04_Požadavky na prokázání kvalifikace.docx",
+  ]);
+});
+
+test("fronta pro čtení hlásí pouze nové nebo změněné věcné dokumenty", () => {
+  const row = { id: "nen:1", title: "Kampaň", documents: [
+    { name: "Zadávací dokumentace.pdf", url: "https://nen.nipez.cz/file?id=1" },
+  ] };
+  assert.equal(pendingDocumentReviews([row], {}).length, 1);
+  const notes = { "nen:1": { documentSnapshot: [row.documents[0].url] } };
+  assert.equal(pendingDocumentReviews([row], notes).length, 0);
+  assert.equal(pendingDocumentReviews([{ ...row, documents: [...row.documents, {
+    name: "Krycí list.docx", url: "https://nen.nipez.cz/file?id=2",
+  }] }], notes).length, 0);
+  assert.equal(pendingDocumentReviews([{ ...row, documents: [...row.documents, {
+    name: "Vysvětlení zadání.pdf", url: "https://nen.nipez.cz/file?id=3",
+  }] }], notes).length, 1);
 });
 
 test("denní limit hledání dává přednost nejdéle neprověřenému tipu", async () => {

@@ -12,6 +12,8 @@ test("veřejná data obsahují původní zakázku, nikoli agregátor nebo jeho o
         summary: "Úplný popis zadavatele", discoverySource: "poptavej",
         discoveryUrl: "https://www.poptavej.cz/verejna-zakazka/VZ326386/x", originConfidence: 99,
         candidateProfileUrls: ["https://www.poptavej.cz/verejna-zakazka/VZ326386/x"],
+        documents: [{ name: "Krycí list.docx", url: "https://nen.nipez.cz/file?id=1" }],
+        documentsUrl: "https://nen.nipez.cz/zadavaci-dokumentace",
       },
       { source: "poptavej", url: "https://www.poptavej.cz/verejna-zakazka/VZ123/x" },
     ],
@@ -21,6 +23,8 @@ test("veřejná data obsahují původní zakázku, nikoli agregátor nebo jeho o
   assert.equal(published.tenders.length, 1);
   assert.equal(published.tenders[0].summary, "Úplný popis zadavatele");
   assert.match(published.tenders[0].url, /nen\.nipez\.cz/);
+  assert.equal(published.tenders[0].documents, undefined);
+  assert.equal(published.tenders[0].documentsUrl, undefined);
   assert.equal(JSON.stringify(published).includes("poptavej"), false);
   assert.equal(dataset.tenders[0].discoverySource, "poptavej");
 });

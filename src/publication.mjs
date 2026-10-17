@@ -10,7 +10,7 @@ export function publicDataset(dataset) {
       .filter((tender) => !tender.discoverySource || sourceFromOfficialUrl(tender.url))
       .map((tender) => {
         const { discoverySource, discoveryUrl, originStatus, originConfidence,
-          candidateProfileUrls, duplicateSources, ...publicTender } = tender;
+          candidateProfileUrls, duplicateSources, documentsUrl, documents, ...publicTender } = tender;
         return publicTender;
       }),
   };

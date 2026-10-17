@@ -1,17 +1,61 @@
 {
+  "official-profile:P26V00000072": {
+    "reviewedAt": "2026-10-17T22:37:48Z",
+    "documentSnapshot": [
+      "https://www.e-zakazky.cz/stazenisouboru/e643955b-a247-43d0-8e5c-6a381f39630c",
+      "https://www.e-zakazky.cz/stazenisouboru/a9cd3950-7ce6-41a0-bfb3-05096e1ba5c9",
+      "https://www.e-zakazky.cz/stazenisouboru/0fbe2a09-ffc3-4d88-ae37-3bbfed798836"
+    ],
+    "summary": "OZP hledá dodavatele marketingových služeb pro rok 2027: nákup médií, kreativní a produkční práce, tisk, průzkumy a správu kampaní.",
+    "facts": [
+      {
+        "text": "Rámcová dohoda bude na 12 měsíců se 3 až 7 dodavateli. O jejich výběru rozhoduje nejnižší nabídková cena.",
+        "url": "https://www.e-zakazky.cz/stazenisouboru/e643955b-a247-43d0-8e5c-6a381f39630c"
+      },
+      {
+        "text": "Kvalifikace: obrat alespoň 15 mil. Kč v každém ze 3 posledních uzavřených období a 5 marketingových referencí z posledních 3 let po nejméně 1 mil. Kč bez DPH.",
+        "url": "https://www.e-zakazky.cz/stazenisouboru/0fbe2a09-ffc3-4d88-ae37-3bbfed798836"
+      },
+      {
+        "text": "Šest klíčových rolí včetně accounta, mediálního plánovače, copywritera, grafika a analytika nesmí zajišťovat poddodavatelé.",
+        "url": "https://www.e-zakazky.cz/stazenisouboru/0fbe2a09-ffc3-4d88-ae37-3bbfed798836"
+      },
+      {
+        "text": "Zadavatel opravil Soupis plnění; v nabídce se musí použít nová verze. Lhůta byla posunuta na 2. 11. 2026 v 10:00.",
+        "url": "https://www.e-zakazky.cz/stazenisouboru/a9cd3950-7ce6-41a0-bfb3-05096e1ba5c9"
+      }
+    ]
+  },
+  "nen:N006/26/V00033177": {
+    "reviewedAt": "2026-10-17T22:37:48Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4786082029",
+      "https://nen.nipez.cz/file?id=4786082034"
+    ],
+    "summary": "Uměleckoprůmyslové museum v Praze poptává reklamní plochy pro výstavy a expozice: metro, billboardy, tramvaje, letiště a další formáty.",
+    "facts": [
+      {
+        "text": "Maximální cena je 800 tis. Kč bez DPH. Plnění trvá do konce roku 2027 nebo do vyčerpání limitu.",
+        "url": "https://nen.nipez.cz/file?id=4786082029"
+      },
+      {
+        "text": "Požadují se 2 srovnatelné zakázky z posledních 3 let, každá v hodnotě alespoň 800 tis. Kč bez DPH.",
+        "url": "https://nen.nipez.cz/file?id=4786082029"
+      },
+      {
+        "text": "Hodnotí se pouze nejnižší celková nabídková cena bez DPH.",
+        "url": "https://nen.nipez.cz/file?id=4786082029"
+      }
+    ]
+  },
   "nen:N006/26/V00032165": {
     "reviewedAt": "2026-10-17T22:11:00Z",
     "documentSnapshot": [
-      "https://nen.nipez.cz/file?id=4778453894",
-      "https://nen.nipez.cz/file?id=4782970335",
-      "https://nen.nipez.cz/file?id=4787723430",
-      "https://nen.nipez.cz/file?id=4778453874",
       "https://nen.nipez.cz/file?id=4778453882",
-      "https://nen.nipez.cz/file?id=4778453869",
-      "https://nen.nipez.cz/file?id=4778453887",
-      "https://nen.nipez.cz/file?id=4778453863",
-      "https://nen.nipez.cz/file?id=4778453900"
+      "https://nen.nipez.cz/file?id=4782970335",
+      "https://nen.nipez.cz/file?id=4787723430"
     ],
+    "summary": "Česká expozice na EXPO 2027 hledá kreativně-technologického partnera pro vytvoření a provoz kompletního audiovizuálního obsahu.",
     "facts": [
       {
         "text": "15minutová AV show: 9 minut hlavní film, 6 minut odpočinkový režim; součástí je synchronizace LED ploch, prostorového zvuku, světel a klavíru Petrof.",
@@ -24,6 +68,10 @@
       {
         "text": "Požadují se tři relevantní reference za posledních osm let a kreativní manažer. Vysvětlení č. 2 upřesňuje rozsah referencí i hranici odpovědnosti za technickou infrastrukturu.",
         "url": "https://nen.nipez.cz/file?id=4787723430"
+      },
+      {
+        "text": "Přiložené libreto je jen inspirace: vlastní autorské libreto je přípustné, má být v angličtině s úvodním srbským pozdravem.",
+        "url": "https://nen.nipez.cz/file?id=4782970335"
       }
     ]
   }
