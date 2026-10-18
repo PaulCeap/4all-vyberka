@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T11:17:19.918Z",
+  "generatedAt": "2026-10-18T18:38:54.908Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 5,
+    "total": 3,
     "newThisRun": 0,
     "strong": 0,
     "closingSoon": 1,
@@ -18,17 +18,17 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 1
+      "count": 2
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 57
+      "count": 42
     },
     {
       "id": "ted",
@@ -120,68 +120,6 @@
       }
     },
     {
-      "id": "nen:N006/26/V00017937",
-      "source": "nen",
-      "sourceId": "N006/26/V00017937",
-      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00017937",
-      "title": "SLUŽBY REKLAMNÍCH AGENTUR A TVORBA AUDIOVIZUÁLNÍCH DĚL PRO ČEZ, A. S. A VYBRANÉ IDS",
-      "buyer": "ČEZ, a. s.",
-      "summary": "Předmětem veřejné zakázky je: a) zajištění služeb reklamních agentur pro Zadavatele, tedy zajištění veškerých reklamních, propagačních a komunikačních činností Zadavatele ke všem jeho reklamním kampaním. Služby reklamních agentur přitom zahrnují koncepční, kreativní a produkční činnosti Dodavatele. b) poskytování služeb v oblasti autorské či audiovizuální tvorby, prostřednictvím které budou propagovány společnosti ze Skupiny ČEZ, a to u různých cílových skupin.",
-      "country": "CZ",
-      "region": "Česká republika",
-      "publishedAt": "2026-06-11T09:59:00.000Z",
-      "deadline": null,
-      "deadlineTimeKnown": false,
-      "value": {
-        "amount": 660000000,
-        "currency": "CZK"
-      },
-      "valueSource": null,
-      "verifiedFacts": [
-        {
-          "text": "Předmětem veřejných zakázek zadávaných na základě Rámcových dohod je poskytování těchto služeb: a) zajištění služeb reklamních agentur pro Zadavatele, tedy zajištění veškerých reklamních, propagačních a komunikačních činností Zadavatele ke všem jeho reklamním kampaním.",
-          "url": "https://nen.nipez.cz/file?id=4503999530"
-        },
-        {
-          "text": "Váha Hodnotící kritérium 30 % A) Hodinové sazby členů realizačního týmu 20 % B) Výše provize za poskytované služby (dále také „produkční přirážka“) 10% C) Licenční odměna za typizované dílo (dále také „licenční odměna“) 40 % D) Kvalita vypracování zadaného úkolu Hodnotící kritérium A): Hodinové sazby členů realizačního týmu.",
-          "url": "https://nen.nipez.cz/file?id=4503999530"
-        }
-      ],
-      "factsReviewedAt": "2026-10-18T11:10:46.262Z",
-      "cpv": [
-        "79340000"
-      ],
-      "procedureType": "Sluzby / Jednací řízení s uveřejněním",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-18T11:08:23.064Z",
-      "lastSeenAt": "2026-10-18T11:10:46.262Z",
-      "status": "open",
-      "fingerprint": "2fdbb9ca59896a4e5ce3",
-      "relevance": {
-        "score": 57,
-        "level": "good",
-        "reasons": [
-          "Tvorba obsahu: audiovizuální",
-          "obor potvrzuje ověřený výtah zadání",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 28
-          },
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 26
-          }
-        ],
-        "deadlineDays": null
-      }
-    },
-    {
       "id": "nen:N006/26/V00032165",
       "source": "nen",
       "sourceId": "N006/26/V00032165",
@@ -245,63 +183,6 @@
       }
     },
     {
-      "id": "nen:N006/26/V00000973",
-      "source": "nen",
-      "sourceId": "N006/26/V00000973",
-      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00000973",
-      "title": "Zajištění služeb v oblasti organizace a realizace eventových akcí a interních akcí obdobného charakteru na území České republiky v letech 2026 - 2032",
-      "buyer": "ČEZ, a. s.",
-      "summary": "Předmětem veřejné zakázky je komplexní zajištění eventových akcí na území celé České republiky zejména v rozsahu návrhu, přípravy, organizačního a technického zajištění a realizace eventových setkání organizovaných Zadavatelem a pro interní i externí potřeby Zadavatele. Eventovými akcemi se rozumí jakékoliv akce společenského, pracovního, vzdělávacího či prezentačního charakteru, včetně interních porad, teambuildingových aktivit, konferencí, školení, odborových a jiných setkání, pořádaných pro různé cílové skupiny Zadavatele a v rozsahu specifikovaném v Zadávací dokumentaci.",
-      "country": "CZ",
-      "region": "Česká republika",
-      "publishedAt": "2026-03-04T08:24:00.000Z",
-      "deadline": null,
-      "deadlineTimeKnown": false,
-      "value": {
-        "amount": 882000000,
-        "currency": "CZK"
-      },
-      "valueSource": null,
-      "verifiedFacts": [
-        {
-          "text": "Předmětem veřejné zakázky zadávané na základě Rámcové dohody je komplexní zajištění eventových akcí na území celé České republiky zejména v rozsahu návrhu, přípravy, organizačního a technického zajištění a realizace eventových setkání organizovaných Zadavatelem a pro interní i externí potřeby Zadavatele.",
-          "url": "https://nen.nipez.cz/file?id=4070313589"
-        },
-        {
-          "text": "Zadavatel bude hodnotit Předběžné nabídky/Nabídky následovně: Váha: Hodnotící kritérium: 25% Výše produkční přirážky 25% Hodinové sazby členů realizačního týmu 40% Kvalita vypracování zadaného úkolu pro zadání eventu 10% Zapojení sociálního podniku Předběžné nabídky/Nabídky jednotlivých Účastníků budou hodnoceny za použití níže uvedených hodnotících kritérií.",
-          "url": "https://nen.nipez.cz/file?id=4070313589"
-        }
-      ],
-      "factsReviewedAt": "2026-10-18T11:14:49.308Z",
-      "cpv": [
-        "79952000"
-      ],
-      "procedureType": "Sluzby / Jednací řízení s uveřejněním",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-18T11:14:49.308Z",
-      "lastSeenAt": "2026-10-18T11:17:19.918Z",
-      "status": "open",
-      "fingerprint": "d76fc1cbefd9c76e2850",
-      "relevance": {
-        "score": 45,
-        "level": "watch",
-        "reasons": [
-          "Marketing & eventy: event",
-          "obor potvrzuje ověřený výtah zadání",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 28
-          }
-        ],
-        "deadlineDays": null
-      }
-    },
-    {
       "id": "nen:N006/26/V00033177",
       "source": "nen",
       "sourceId": "N006/26/V00033177",
@@ -337,7 +218,7 @@
       "procedureType": "Sluzby / Otevřená výzva",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-13T11:56:13.295Z",
-      "lastSeenAt": "2026-10-18T11:08:23.064Z",
+      "lastSeenAt": "2026-10-18T18:38:54.908Z",
       "status": "open",
       "fingerprint": "6af45b8bc5b3173adeef",
       "relevance": {
