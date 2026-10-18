@@ -75,7 +75,7 @@ export function normalizeTender(input, now = new Date()) {
     opportunityType: cleanText(input.opportunityType || "public-tender"),
     firstSeenAt: isoOrNull(input.firstSeenAt) || now.toISOString(),
     lastSeenAt: isoOrNull(input.lastSeenAt) || now.toISOString(),
-    status: input.status || "open",
+    status: input.status || "unknown",
     discoverySource: cleanText(input.discoverySource || "").toLowerCase() || null,
     discoveryUrl: String(input.discoveryUrl || "").trim() || null,
     originStatus: aggregatorSource && suppliedOriginStatus !== "resolved"

@@ -8,6 +8,7 @@ const SERVICES = [
       /\b(?:marketingov\w*|reklamn\w*)\s+(?:kampan\w*|sluzb\w*|strateg\w*|aktiv\w*)\b/,
       /\b(?:branding|strategie znack\w*|medialn\w* prostor\w*|nakup medii|media buying|reklamn\w* ploch\w*|online reklam\w*|ppc kampan\w*)\b/,
       /\b(?:eventov\w* agentur\w*|eventov\w* marketing|produkce akc\w*|produkce event\w*|produkcni zajisteni akc\w*|produkcni zajisteni konferenc\w*|organizac\w* akc\w*|organizac\w* event\w*|organizac\w* konferenc\w*)\b/,
+      /\b(?:zajisten\w*|organizac\w*|realizac\w*)\s+eventov\w* akc\w*\b/,
     ],
   },
   {

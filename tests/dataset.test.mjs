@@ -5,7 +5,7 @@ import { normalizeTender } from "../src/model.mjs";
 import { scoreTender } from "../src/scoring.mjs";
 
 const now = new Date("2026-10-17T10:00:00Z");
-const project = { name: "Test", minimumScore: 42, historyDays: 45, signalHistoryDays: 120 };
+const project = { name: "Test", minimumScore: 42, historyDays: 45, openNoDeadlineDays: 365, signalHistoryDays: 120 };
 const tender = (sourceId, deadline) => ({
   source: "zakazky-gov", sourceId,
   url: `https://zakazky.gov.cz/test/${sourceId}`,
@@ -29,6 +29,14 @@ test("do týdne se nepočítá chybějící termín a prošlá zakázka se nezob
   assert.deepEqual(dataset.tenders.map((item) => item.sourceId).sort(), ["bez-terminu", "brzy"]);
   assert.equal(dataset.stats.total, 2);
   assert.equal(dataset.stats.closingSoon, 1);
+});
+
+test("výslovně otevřená letošní zakázka bez termínu se neztratí po 45 dnech", () => {
+  const active = { ...tender("dlouhodoba", null), status: "open", publishedAt: "2026-03-04T08:00:00Z" };
+  const stale = { ...tender("historicka", null), status: "open", publishedAt: "2021-03-04T08:00:00Z" };
+  const unknown = { ...tender("nejista", null), status: "unknown", publishedAt: "2026-03-04T08:00:00Z" };
+  const { dataset } = make([active, stale, unknown]);
+  assert.deepEqual(dataset.tenders.map((item) => item.sourceId), ["dlouhodoba"]);
 });
 
 test("chybný řádek se přeskočí, ale platná oficiální zakázka zůstane", () => {

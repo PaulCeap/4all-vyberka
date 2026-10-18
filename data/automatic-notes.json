@@ -1,0 +1,42 @@
+{
+  "nen:N006/26/V00017937": {
+    "reviewedAt": "2026-10-18T11:10:46.262Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4503999530",
+      "https://nen.nipez.cz/file?id=4537382495",
+      "https://nen.nipez.cz/file?id=4538878011"
+    ],
+    "method": "automatic-extraction",
+    "summary": "Předmětem veřejných zakázek zadávaných na základě Rámcových dohod je poskytování těchto služeb: a) zajištění služeb reklamních agentur pro Zadavatele, tedy zajištění veškerých reklamních, propagačních a komunikačních činností Zadavatele ke všem jeho reklamním kampaním.",
+    "facts": [
+      {
+        "text": "Předmětem veřejných zakázek zadávaných na základě Rámcových dohod je poskytování těchto služeb: a) zajištění služeb reklamních agentur pro Zadavatele, tedy zajištění veškerých reklamních, propagačních a komunikačních činností Zadavatele ke všem jeho reklamním kampaním.",
+        "url": "https://nen.nipez.cz/file?id=4503999530"
+      },
+      {
+        "text": "Váha Hodnotící kritérium 30 % A) Hodinové sazby členů realizačního týmu 20 % B) Výše provize za poskytované služby (dále také „produkční přirážka“) 10% C) Licenční odměna za typizované dílo (dále také „licenční odměna“) 40 % D) Kvalita vypracování zadaného úkolu Hodnotící kritérium A): Hodinové sazby členů realizačního týmu.",
+        "url": "https://nen.nipez.cz/file?id=4503999530"
+      }
+    ]
+  },
+  "nen:N006/26/V00000973": {
+    "reviewedAt": "2026-10-18T11:14:49.308Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4070313589",
+      "https://nen.nipez.cz/file?id=4226789743",
+      "https://nen.nipez.cz/file?id=4759990724"
+    ],
+    "method": "automatic-extraction",
+    "summary": "Předmětem veřejné zakázky zadávané na základě Rámcové dohody je komplexní zajištění eventových akcí na území celé České republiky zejména v rozsahu návrhu, přípravy, organizačního a technického zajištění a realizace eventových setkání organizovaných Zadavatelem a pro interní i externí potřeby Zadavatele.",
+    "facts": [
+      {
+        "text": "Předmětem veřejné zakázky zadávané na základě Rámcové dohody je komplexní zajištění eventových akcí na území celé České republiky zejména v rozsahu návrhu, přípravy, organizačního a technického zajištění a realizace eventových setkání organizovaných Zadavatelem a pro interní i externí potřeby Zadavatele.",
+        "url": "https://nen.nipez.cz/file?id=4070313589"
+      },
+      {
+        "text": "Zadavatel bude hodnotit Předběžné nabídky/Nabídky následovně: Váha: Hodnotící kritérium: 25% Výše produkční přirážky 25% Hodinové sazby členů realizačního týmu 40% Kvalita vypracování zadaného úkolu pro zadání eventu 10% Zapojení sociálního podniku Předběžné nabídky/Nabídky jednotlivých Účastníků budou hodnoceny za použití níže uvedených hodnotících kritérií.",
+        "url": "https://nen.nipez.cz/file?id=4070313589"
+      }
+    ]
+  }
+}

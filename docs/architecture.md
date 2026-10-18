@@ -40,7 +40,7 @@ Workflow běží v 04:20 UTC (v Praze podle sezóny 05:20 nebo 06:20). Pořadí:
 1. čistá instalace a testy,
 2. načtení zdrojů,
 3. spojení s existující historií,
-4. normalizace, deduplikace a přepočet relevance,
+4. vyřazení starých kandidátů, přečtení nových věcných příloh a přepočet relevance,
 5. commit pouze při změně dat,
 6. server synchronizuje nová data a web z GitHubu do minuty; GitHub Pages zůstává záložním výstupem.
 

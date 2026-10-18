@@ -1,53 +1,21 @@
 {
-  "updatedAt": "2026-10-18T08:55:29.173Z",
-  "pendingCount": 7,
+  "updatedAt": "2026-10-18T11:14:49.308Z",
+  "reviewedCount": 1,
+  "pendingCount": 2,
+  "failedCount": 2,
+  "sourceErrors": [
+    {
+      "id": "nen:N006/26/V00017937",
+      "title": "SLUŽBY REKLAMNÍCH AGENTUR A TVORBA AUDIOVIZUÁLNÍCH DĚL PRO ČEZ, A. S. A VYBRANÉ IDS",
+      "error": "NEN odpověděl 503."
+    },
+    {
+      "id": "nen:N006/26/V00033177",
+      "title": "Zajištění reklamních ploch pro potřeby propagace výstav, expozic a dalších akcí UPM",
+      "error": "NEN odpověděl 503."
+    }
+  ],
   "tenders": [
-    {
-      "id": "nen:N006/26/V00000973",
-      "title": "Zajištění služeb v oblasti organizace a realizace eventových akcí a interních akcí obdobného charakteru na území České republiky v letech 2026 - 2032",
-      "documents": [
-        {
-          "name": "ZD_Eventové akce ČR 2026 - 2032",
-          "url": "https://nen.nipez.cz/file?id=4070313589"
-        },
-        {
-          "name": "Vysvětlení k ZD č. 1.pdf",
-          "url": "https://nen.nipez.cz/file?id=4226789743"
-        },
-        {
-          "name": "Vysvětlení k ZD č. 2.pdf",
-          "url": "https://nen.nipez.cz/file?id=4759990724"
-        }
-      ]
-    },
-    {
-      "id": "nen:N006/25/P00000123",
-      "title": "Fotografické služby pro IROP 2025",
-      "documents": [
-        {
-          "name": "Příloha č. 2 Dotazník PTK.docx",
-          "url": "https://nen.nipez.cz/file?id=2972754619"
-        }
-      ]
-    },
-    {
-      "id": "nen:N006/21/P00000121",
-      "title": "Předběžná tržní konzultace k zajištění propagace datových schránek",
-      "documents": [
-        {
-          "name": "VÝZVA K ÚČASTI NA PŘEDBĚŽNÉ TRŽNÍ KONZULTACI_final.pdf",
-          "url": "https://nen.nipez.cz/file?id=1229196366"
-        },
-        {
-          "name": "ZÁKLADNÍ INFORMACE O PROJEKTU_příloha č.1.pdf",
-          "url": "https://nen.nipez.cz/file?id=1229196358"
-        },
-        {
-          "name": "Žádost o informace_příloha č.2_final.pdf",
-          "url": "https://nen.nipez.cz/file?id=1229196373"
-        }
-      ]
-    },
     {
       "id": "nen:N006/26/V00017937",
       "title": "SLUŽBY REKLAMNÍCH AGENTUR A TVORBA AUDIOVIZUÁLNÍCH DĚL PRO ČEZ, A. S. A VYBRANÉ IDS",
@@ -64,37 +32,16 @@
           "name": "Vysvětlení ZD č. 1.zip",
           "url": "https://nen.nipez.cz/file?id=4537382495"
         }
-      ]
+      ],
+      "status": "source-error",
+      "error": "NEN odpověděl 503."
     },
     {
-      "id": "nen:N006/19/V00036263",
-      "title": "Poskytnutí audiovizuálních materiálů za účelem propagace venkova České republiky Jaromírem Jágrem.",
-      "documents": [
-        {
-          "name": "výzva_PTP_Jágr_final.docx",
-          "url": "https://nen.nipez.cz/file?id=775887803"
-        }
-      ]
-    },
-    {
-      "id": "nen:N006/19/V00036260",
-      "title": "Poskytnutí audiovizuálních materiálů za účelem propagace gastronomie České republiky Ondřejem Synkem",
-      "documents": [
-        {
-          "name": "výzva_PTP_Synek_final.docx",
-          "url": "https://nen.nipez.cz/file?id=775879770"
-        }
-      ]
-    },
-    {
-      "id": "nen:N006/19/V00036254",
-      "title": "Poskytnutí audiovizuálních materiálů za účelem propagace hor České republiky Jaroslavem Kulhavým",
-      "documents": [
-        {
-          "name": "výzva_PTP_Kulhavý_final.docx",
-          "url": "https://nen.nipez.cz/file?id=775868307"
-        }
-      ]
+      "id": "nen:N006/26/V00033177",
+      "title": "Zajištění reklamních ploch pro potřeby propagace výstav, expozic a dalších akcí UPM",
+      "documents": [],
+      "status": "source-error",
+      "error": "NEN odpověděl 503."
     }
   ]
 }

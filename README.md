@@ -63,7 +63,7 @@ Skóre a stručný výtah slouží k rozhodnutí, zda se zakázce věnovat dál.
 
 Při přepočtu shody se dokumenty znovu nestahují; hodnotí se uložený popis, výtah a ověřené body. Skóre vyjadřuje oborovou relevanci, nikoli automatické potvrzení, že 4ALL splňuje všechny kvalifikační podmínky.
 
-Příkaz `npm run review:queue` vypíše nové nebo změněné věcné dokumenty čekající na přečtení. Tato kontrola běží také po denním sběru. Výstup zůstává v provozním logu; neověřené závěry se do veřejné karty nevkládají.
+Denní agent vybere jen aktuální zakázky s dosud nepřečtenými věcnými podklady. Z vybraných PDF a DOCX (i uvnitř ZIP) vytáhne strojově čitelný text, dohledatelné úryvky uloží do `data/automatic-notes.json` a podle nich ještě v témže běhu přepočítá shodu. Čte nanejvýš osm zakázek za běh, aby výpadek zdroje nezablokoval celý monitoring. Nepřístupný nebo nečitelný dokument zůstane ve `data/review-queue.json` s chybou a zkusí se znovu při dalším běhu. Při výpadku seznamu dokumentů použije poslední známé odkazy a chybu zaznamená. Otevřené zakázky bez termínu sleduje nejvýše rok od zveřejnění; starší historické záznamy automaticky vyřadí. Ručně ověřené poznámky v `data/verified-notes.json` mají před automatickým výtahem přednost. `npm run review:queue` vypíše stav této fronty do provozního logu.
 
 ## Konfigurace
 
@@ -71,6 +71,7 @@ Příkaz `npm run review:queue` vypíše nové nebo změněné věcné dokumenty
 |---|---:|---|
 | `MIN_RELEVANCE_SCORE` | `42` | Minimální publikované skóre |
 | `HISTORY_DAYS` | `45` | Jak dlouho držet starší tipy |
+| `OPEN_NO_DEADLINE_DAYS` | `365` | Jak dlouho sledovat výslovně otevřené zakázky bez zveřejněného termínu |
 | `SIGNAL_HISTORY_DAYS` | `120` | Jak dlouho držet komerční mediální signály |
 | `TED_LOOKBACK_DAYS` | `8` | Překryv dotazu do TEDu pro odolnost proti výpadku |
 | `NEN_DETAIL_LIMIT` | `80` | Nejvyšší počet NEN detailů načtených v jednom běhu |

@@ -68,6 +68,17 @@ test("nepřístupný detail zůstane interním tipem a hledá se další oficiá
   assert.deepEqual(found, [original]);
 });
 
+test("výpadek seznamu podkladů nezahodí dříve nalezený dokument", async () => {
+  const saved = [{ name: "Zadávací dokumentace", url: "https://nen.nipez.cz/file?id=123" }];
+  const rows = await attachNenDocuments([original], {
+    now: new Date("2026-10-18T10:00:00Z"),
+    fetchDocuments: async () => { throw new Error("HTTP 503"); },
+    previousDocuments: new Map([[`${original.source}:${original.sourceId}`, saved]]),
+  });
+  assert.deepEqual(rows[0].documents, saved);
+  assert.equal(rows[0].documentsFetchError, "HTTP 503");
+});
+
 test("stručné oznámení TED se nahradí původním profilem NEN", async () => {
   const ted = {
     source: "ted", sourceId: "687952-2026", title: original.title,

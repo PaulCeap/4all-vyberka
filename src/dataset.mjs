@@ -43,7 +43,8 @@ export function buildDataset({ rows, sources, previous, now, fixturesMode = fals
     .filter((tender) => {
       if (tender.status === "closed") return false;
       if (tender.deadline) return new Date(tender.deadline).valueOf() > now.valueOf();
-      const historyDays = tender.opportunityType === "market-signal" ? project.signalHistoryDays : project.historyDays;
+      const historyDays = tender.opportunityType === "market-signal" ? project.signalHistoryDays :
+        tender.status === "open" ? project.openNoDeadlineDays : project.historyDays;
       const itemCutoff = now.valueOf() - historyDays * 86_400_000;
       return new Date(tender.publishedAt || tender.firstSeenAt).valueOf() >= itemCutoff;
     })

@@ -9,7 +9,8 @@ export function attachVerifiedNotes(rows, notes = {}) {
     if (JSON.stringify(current) !== JSON.stringify(snapshot)) return row;
     return {
       ...row,
-      summary: note.summary || row.summary,
+      summary: note.method === "automatic-extraction" && (row.summary || "").length >= 120
+        ? row.summary : note.summary || row.summary,
       verifiedFacts: note.facts,
       factsReviewedAt: note.reviewedAt,
     };

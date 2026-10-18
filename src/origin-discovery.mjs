@@ -79,6 +79,7 @@ export async function attachEzakazkyDocuments(rows, {
   fetchDocuments = (url) => fetchEzakazkyDocuments(url),
   now = new Date(),
   minimumScore = 42,
+  previousDocuments = new Map(),
 } = {}) {
   const output = [];
   for (const row of rows) {
@@ -91,12 +92,16 @@ export async function attachEzakazkyDocuments(rows, {
     catch { /* neúplný detail se neobohacuje */ }
     if (!relevant) { output.push(row); continue; }
     let result = null;
+    let error = null;
     try { result = await fetchDocuments(row.url); }
-    catch { /* detail zůstane dostupný i při výpadku souborů */ }
+    catch (failure) { error = failure.message || String(failure); }
+    const fallback = previousDocuments.get(`${row.source}:${row.sourceId}`) || [];
+    if (!result?.documents?.length && fallback.length) error ||= "Zdroj vrátil prázdný seznam podkladů.";
     output.push({
       ...row,
       documentsUrl: result?.url || row.url,
-      documents: result?.documents || [],
+      documents: result?.documents?.length ? result.documents : fallback,
+      documentsFetchError: error,
       verifiedFacts: [],
       factsReviewedAt: null,
     });
@@ -108,6 +113,7 @@ export async function attachNenDocuments(rows, {
   fetchDocuments = (url) => fetchNenDocuments(url),
   now = new Date(),
   minimumScore = 42,
+  previousDocuments = new Map(),
 } = {}) {
   const byUrl = new Map();
   for (const row of rows) {
@@ -120,15 +126,17 @@ export async function attachNenDocuments(rows, {
   }
   for (const url of byUrl.keys()) {
     try { byUrl.set(url, await fetchDocuments(url)); }
-    catch { /* odkaz na dokumentaci zůstává dostupný i při výpadku seznamu */ }
+    catch (failure) { byUrl.set(url, { error: failure.message || String(failure) }); }
   }
   return rows.map((row) => {
     if (!byUrl.has(row.url)) return row;
     const result = byUrl.get(row.url);
+    const fallback = previousDocuments.get(`${row.source}:${row.sourceId}`) || [];
     return {
       ...row,
       documentsUrl: result?.url || `${row.url.replace(/\/$/, "")}/zadavaci-dokumentace`,
-      documents: result?.documents || [],
+      documents: result?.documents?.length ? result.documents : fallback,
+      documentsFetchError: result?.error || (!result?.documents?.length && fallback.length ? "Zdroj vrátil prázdný seznam podkladů." : null),
       verifiedFacts: [],
       factsReviewedAt: null,
     };

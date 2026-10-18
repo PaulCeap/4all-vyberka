@@ -4,6 +4,7 @@ export const PROJECT = {
   country: "CZE",
   minimumScore: Number(process.env.MIN_RELEVANCE_SCORE || 42),
   historyDays: Number(process.env.HISTORY_DAYS || 45),
+  openNoDeadlineDays: Number(process.env.OPEN_NO_DEADLINE_DAYS || 365),
   signalHistoryDays: Number(process.env.SIGNAL_HISTORY_DAYS || 120),
   tedLookbackDays: Number(process.env.TED_LOOKBACK_DAYS || 8),
 };
