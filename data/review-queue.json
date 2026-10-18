@@ -1,47 +1,8 @@
 {
-  "updatedAt": "2026-10-18T11:14:49.308Z",
-  "reviewedCount": 1,
-  "pendingCount": 2,
-  "failedCount": 2,
-  "sourceErrors": [
-    {
-      "id": "nen:N006/26/V00017937",
-      "title": "SLUŽBY REKLAMNÍCH AGENTUR A TVORBA AUDIOVIZUÁLNÍCH DĚL PRO ČEZ, A. S. A VYBRANÉ IDS",
-      "error": "NEN odpověděl 503."
-    },
-    {
-      "id": "nen:N006/26/V00033177",
-      "title": "Zajištění reklamních ploch pro potřeby propagace výstav, expozic a dalších akcí UPM",
-      "error": "NEN odpověděl 503."
-    }
-  ],
-  "tenders": [
-    {
-      "id": "nen:N006/26/V00017937",
-      "title": "SLUŽBY REKLAMNÍCH AGENTUR A TVORBA AUDIOVIZUÁLNÍCH DĚL PRO ČEZ, A. S. A VYBRANÉ IDS",
-      "documents": [
-        {
-          "name": "01_ZD_Reklamní agentura ČEZ, ČPR a ESCO.zip",
-          "url": "https://nen.nipez.cz/file?id=4503999530"
-        },
-        {
-          "name": "Vysvětlení k ZD č. 2.pdf",
-          "url": "https://nen.nipez.cz/file?id=4538878011"
-        },
-        {
-          "name": "Vysvětlení ZD č. 1.zip",
-          "url": "https://nen.nipez.cz/file?id=4537382495"
-        }
-      ],
-      "status": "source-error",
-      "error": "NEN odpověděl 503."
-    },
-    {
-      "id": "nen:N006/26/V00033177",
-      "title": "Zajištění reklamních ploch pro potřeby propagace výstav, expozic a dalších akcí UPM",
-      "documents": [],
-      "status": "source-error",
-      "error": "NEN odpověděl 503."
-    }
-  ]
+  "updatedAt": "2026-10-18T11:17:19.918Z",
+  "reviewedCount": 0,
+  "pendingCount": 0,
+  "failedCount": 0,
+  "sourceErrors": [],
+  "tenders": []
 }
