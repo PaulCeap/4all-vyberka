@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T22:46:31.805Z",
+  "generatedAt": "2026-10-18T08:55:29.173Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -18,27 +18,32 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 2
+      "count": 1
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 39
+      "count": 78
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 469
+      "count": 399
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
       "count": 79
+    },
+    {
+      "id": "proebiz",
+      "ok": true,
+      "count": 38
     },
     {
       "id": "media-signals",
@@ -61,8 +66,8 @@
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 1,
-      "pending": 19
+      "resolved": 3,
+      "pending": 17
     }
   ],
   "tenders": [
@@ -200,87 +205,6 @@
       }
     },
     {
-      "id": "nen:N006/26/V00033177",
-      "source": "nen",
-      "sourceId": "N006/26/V00033177",
-      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00033177",
-      "title": "Zajištění reklamních ploch pro potřeby propagace výstav, expozic a dalších akcí UPM",
-      "buyer": "Uměleckoprůmyslové museum v Praze",
-      "summary": "Uměleckoprůmyslové museum v Praze poptává reklamní plochy pro výstavy a expozice: metro, billboardy, tramvaje, letiště a další formáty.",
-      "country": "CZ",
-      "region": "Hlavní město Praha",
-      "publishedAt": "2026-10-12T12:40:00.000Z",
-      "deadline": "2026-10-19T08:00:00.000Z",
-      "deadlineTimeKnown": true,
-      "value": null,
-      "valueSource": null,
-      "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00033177/zadavaci-dokumentace",
-      "documents": [
-        {
-          "name": "Výzva obecná OR.pdf",
-          "type": "Blíže nespecifikovaný dokument",
-          "url": "https://nen.nipez.cz/file?id=4786082034"
-        },
-        {
-          "name": "ZD OR .zip",
-          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4786082029"
-        }
-      ],
-      "verifiedFacts": [
-        {
-          "text": "Maximální cena je 800 tis. Kč bez DPH. Plnění trvá do konce roku 2027 nebo do vyčerpání limitu.",
-          "url": "https://nen.nipez.cz/file?id=4786082029"
-        },
-        {
-          "text": "Požadují se 2 srovnatelné zakázky z posledních 3 let, každá v hodnotě alespoň 800 tis. Kč bez DPH.",
-          "url": "https://nen.nipez.cz/file?id=4786082029"
-        },
-        {
-          "text": "Hodnotí se pouze nejnižší celková nabídková cena bez DPH.",
-          "url": "https://nen.nipez.cz/file?id=4786082029"
-        }
-      ],
-      "factsReviewedAt": "2026-10-17T22:37:48.000Z",
-      "cpv": [
-        "79341000"
-      ],
-      "procedureType": "Sluzby / Otevřená výzva",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-13T11:56:13.295Z",
-      "lastSeenAt": "2026-10-17T22:39:21.807Z",
-      "status": "open",
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2128705-zajisteni-reklamnich-ploch-pro-potreby-propagace-vystav-expozic",
-      "originStatus": "resolved",
-      "originConfidence": 91,
-      "candidateProfileUrls": [],
-      "fingerprint": "6af45b8bc5b3173adeef",
-      "duplicateSources": [
-        "nen"
-      ],
-      "relevance": {
-        "score": 42,
-        "level": "watch",
-        "reasons": [
-          "Marketing & eventy: reklamní plochy",
-          "obor potvrzuje ověřený výtah zadání",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [
-          "velmi krátká lhůta"
-        ],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 33
-          }
-        ],
-        "deadlineDays": 2
-      }
-    },
-    {
       "id": "nen:N006/26/V00032165",
       "source": "nen",
       "sourceId": "N006/26/V00032165",
@@ -294,7 +218,7 @@
       "deadline": "2026-11-06T09:00:00.000Z",
       "deadlineTimeKnown": true,
       "value": null,
-      "valueSource": "ted",
+      "valueSource": null,
       "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032165/zadavaci-dokumentace",
       "documents": [
         {
@@ -368,16 +292,16 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-06T11:21:57.039Z",
-      "lastSeenAt": "2026-10-17T22:15:00.460Z",
+      "lastSeenAt": "2026-10-18T08:55:29.173Z",
       "status": "open",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ326386/dodavatel-audiovizualniho-obsahu-na-mezinarodni-specializovane-vystave",
+      "discoverySource": null,
+      "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": 0,
+      "originConfidence": null,
       "candidateProfileUrls": [],
       "fingerprint": "07d7d41f902b7cb18da8",
       "relevance": {
-        "score": 47,
+        "score": 49,
         "level": "watch",
         "reasons": [
           "Tvorba obsahu: audiovizuální",
@@ -390,10 +314,91 @@
           {
             "id": "content",
             "label": "Tvorba obsahu",
-            "score": 26
+            "score": 28
           }
         ],
         "deadlineDays": 20
+      }
+    },
+    {
+      "id": "nen:N006/26/V00033177",
+      "source": "nen",
+      "sourceId": "N006/26/V00033177",
+      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00033177",
+      "title": "Zajištění reklamních ploch pro potřeby propagace výstav, expozic a dalších akcí UPM",
+      "buyer": "Uměleckoprůmyslové museum v Praze",
+      "summary": "Uměleckoprůmyslové museum v Praze poptává reklamní plochy pro výstavy a expozice: metro, billboardy, tramvaje, letiště a další formáty.",
+      "country": "CZ",
+      "region": "Hlavní město Praha",
+      "publishedAt": "2026-10-12T12:40:00.000Z",
+      "deadline": "2026-10-19T08:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": null,
+      "valueSource": null,
+      "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00033177/zadavaci-dokumentace",
+      "documents": [
+        {
+          "name": "Výzva obecná OR.pdf",
+          "type": "Blíže nespecifikovaný dokument",
+          "url": "https://nen.nipez.cz/file?id=4786082034"
+        },
+        {
+          "name": "ZD OR .zip",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4786082029"
+        }
+      ],
+      "verifiedFacts": [
+        {
+          "text": "Maximální cena je 800 tis. Kč bez DPH. Plnění trvá do konce roku 2027 nebo do vyčerpání limitu.",
+          "url": "https://nen.nipez.cz/file?id=4786082029"
+        },
+        {
+          "text": "Požadují se 2 srovnatelné zakázky z posledních 3 let, každá v hodnotě alespoň 800 tis. Kč bez DPH.",
+          "url": "https://nen.nipez.cz/file?id=4786082029"
+        },
+        {
+          "text": "Hodnotí se pouze nejnižší celková nabídková cena bez DPH.",
+          "url": "https://nen.nipez.cz/file?id=4786082029"
+        }
+      ],
+      "factsReviewedAt": "2026-10-17T22:37:48.000Z",
+      "cpv": [
+        "79341000"
+      ],
+      "procedureType": "Sluzby / Otevřená výzva",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-13T11:56:13.295Z",
+      "lastSeenAt": "2026-10-18T08:55:29.173Z",
+      "status": "open",
+      "discoverySource": "poptavky",
+      "discoveryUrl": "https://www.poptavky.cz/poptavka/2128705-zajisteni-reklamnich-ploch-pro-potreby-propagace-vystav-expozic",
+      "originStatus": "resolved",
+      "originConfidence": 91,
+      "candidateProfileUrls": [],
+      "fingerprint": "6af45b8bc5b3173adeef",
+      "duplicateSources": [
+        "nen"
+      ],
+      "relevance": {
+        "score": 42,
+        "level": "watch",
+        "reasons": [
+          "Marketing & eventy: reklamní plochy",
+          "obor potvrzuje ověřený výtah zadání",
+          "jde o zakázku na služby"
+        ],
+        "negativeSignals": [
+          "velmi krátká lhůta"
+        ],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 33
+          }
+        ],
+        "deadlineDays": 1
       }
     }
   ]

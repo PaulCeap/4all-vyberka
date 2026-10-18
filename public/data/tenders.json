@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T22:46:31.805Z",
+  "generatedAt": "2026-10-18T08:55:29.173Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -18,27 +18,32 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 2
+      "count": 1
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 39
+      "count": 78
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 469
+      "count": 399
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
       "count": 79
+    },
+    {
+      "id": "proebiz",
+      "ok": true,
+      "count": 38
     },
     {
       "id": "media-signals",
@@ -115,6 +120,69 @@
       }
     },
     {
+      "id": "nen:N006/26/V00032165",
+      "source": "nen",
+      "sourceId": "N006/26/V00032165",
+      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032165",
+      "title": "Dodavatel audiovizuálního obsahu účasti ČR na Mezinárodní specializované výstavě EXPO 2027, Bělehrad",
+      "buyer": "CzechBusiness",
+      "summary": "Česká expozice na EXPO 2027 hledá kreativně-technologického partnera pro vytvoření a provoz kompletního audiovizuálního obsahu.",
+      "country": "CZ",
+      "region": "Hlavní město Praha",
+      "publishedAt": "2026-10-06T07:16:00.000Z",
+      "deadline": "2026-11-06T09:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": null,
+      "valueSource": null,
+      "verifiedFacts": [
+        {
+          "text": "15minutová AV show: 9 minut hlavní film, 6 minut odpočinkový režim; součástí je synchronizace LED ploch, prostorového zvuku, světel a klavíru Petrof.",
+          "url": "https://nen.nipez.cz/file?id=4778453882"
+        },
+        {
+          "text": "Maximální nepřekročitelná cena je 5 mil. Kč bez DPH. Kvalita a koncepce tvoří 80 % hodnocení, cena 20 %.",
+          "url": "https://nen.nipez.cz/file?id=4778453882"
+        },
+        {
+          "text": "Požadují se tři relevantní reference za posledních osm let a kreativní manažer. Vysvětlení č. 2 upřesňuje rozsah referencí i hranici odpovědnosti za technickou infrastrukturu.",
+          "url": "https://nen.nipez.cz/file?id=4787723430"
+        },
+        {
+          "text": "Přiložené libreto je jen inspirace: vlastní autorské libreto je přípustné, má být v angličtině s úvodním srbským pozdravem.",
+          "url": "https://nen.nipez.cz/file?id=4782970335"
+        }
+      ],
+      "factsReviewedAt": "2026-10-17T22:11:00.000Z",
+      "cpv": [
+        "92111200"
+      ],
+      "procedureType": "Sluzby / Otevřené řízení",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-06T11:21:57.039Z",
+      "lastSeenAt": "2026-10-18T08:55:29.173Z",
+      "status": "open",
+      "fingerprint": "07d7d41f902b7cb18da8",
+      "relevance": {
+        "score": 49,
+        "level": "watch",
+        "reasons": [
+          "Tvorba obsahu: audiovizuální",
+          "obor potvrzuje ověřený výtah zadání",
+          "jde o zakázku na služby",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 28
+          }
+        ],
+        "deadlineDays": 20
+      }
+    },
+    {
       "id": "nen:N006/26/V00033177",
       "source": "nen",
       "sourceId": "N006/26/V00033177",
@@ -150,7 +218,7 @@
       "procedureType": "Sluzby / Otevřená výzva",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-13T11:56:13.295Z",
-      "lastSeenAt": "2026-10-17T22:39:21.807Z",
+      "lastSeenAt": "2026-10-18T08:55:29.173Z",
       "status": "open",
       "fingerprint": "6af45b8bc5b3173adeef",
       "relevance": {
@@ -171,70 +239,7 @@
             "score": 33
           }
         ],
-        "deadlineDays": 2
-      }
-    },
-    {
-      "id": "nen:N006/26/V00032165",
-      "source": "nen",
-      "sourceId": "N006/26/V00032165",
-      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032165",
-      "title": "Dodavatel audiovizuálního obsahu účasti ČR na Mezinárodní specializované výstavě EXPO 2027, Bělehrad",
-      "buyer": "CzechBusiness",
-      "summary": "Česká expozice na EXPO 2027 hledá kreativně-technologického partnera pro vytvoření a provoz kompletního audiovizuálního obsahu.",
-      "country": "CZ",
-      "region": "Hlavní město Praha",
-      "publishedAt": "2026-10-06T07:16:00.000Z",
-      "deadline": "2026-11-06T09:00:00.000Z",
-      "deadlineTimeKnown": true,
-      "value": null,
-      "valueSource": "ted",
-      "verifiedFacts": [
-        {
-          "text": "15minutová AV show: 9 minut hlavní film, 6 minut odpočinkový režim; součástí je synchronizace LED ploch, prostorového zvuku, světel a klavíru Petrof.",
-          "url": "https://nen.nipez.cz/file?id=4778453882"
-        },
-        {
-          "text": "Maximální nepřekročitelná cena je 5 mil. Kč bez DPH. Kvalita a koncepce tvoří 80 % hodnocení, cena 20 %.",
-          "url": "https://nen.nipez.cz/file?id=4778453882"
-        },
-        {
-          "text": "Požadují se tři relevantní reference za posledních osm let a kreativní manažer. Vysvětlení č. 2 upřesňuje rozsah referencí i hranici odpovědnosti za technickou infrastrukturu.",
-          "url": "https://nen.nipez.cz/file?id=4787723430"
-        },
-        {
-          "text": "Přiložené libreto je jen inspirace: vlastní autorské libreto je přípustné, má být v angličtině s úvodním srbským pozdravem.",
-          "url": "https://nen.nipez.cz/file?id=4782970335"
-        }
-      ],
-      "factsReviewedAt": "2026-10-17T22:11:00.000Z",
-      "cpv": [
-        "92111200"
-      ],
-      "procedureType": "Sluzby / Otevřené řízení",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-06T11:21:57.039Z",
-      "lastSeenAt": "2026-10-17T22:15:00.460Z",
-      "status": "open",
-      "fingerprint": "07d7d41f902b7cb18da8",
-      "relevance": {
-        "score": 47,
-        "level": "watch",
-        "reasons": [
-          "Tvorba obsahu: audiovizuální",
-          "obor potvrzuje ověřený výtah zadání",
-          "jde o zakázku na služby",
-          "zbývá alespoň týden na reakci"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 26
-          }
-        ],
-        "deadlineDays": 20
+        "deadlineDays": 1
       }
     }
   ]
