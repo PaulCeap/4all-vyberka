@@ -215,6 +215,22 @@ test("NEN datum bez časového pásma je pražský čas", () => {
   assert.equal(row.deadline, "2026-11-06T09:00:00.000Z");
 });
 
+test("NEN bere první lhůtu pro vstup do řízení, i když pozdější nabídky ještě běží", () => {
+  const state = { detailObjectStore: { objects: { item: { object: {
+    kod: "N006/26/V00000973", nazev: "Eventy ČEZ", stavZP: "neukoncena",
+    podaniZadostLhuta: "2026-04-09T13:00:00",
+    podaniPredNabLhuta: "2026-10-06T14:00:00", podaniLhuta: null,
+  } } } } };
+  const html = `<meta name="initialReduxState" content="${encodeURIComponent(JSON.stringify(state))}">`;
+  const row = parseNenDetail(html, "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00000973");
+  assert.equal(row.deadline, "2026-04-09T11:00:00.000Z");
+  assert.equal(row.status, "open");
+  state.detailObjectStore.objects.item.object.podaniPredNabLhuta = null;
+  state.detailObjectStore.objects.item.object.podaniZadostLhuta = "2026-07-14T14:00:00";
+  const advertising = parseNenDetail(`<meta name="initialReduxState" content="${encodeURIComponent(JSON.stringify(state))}">`, row.url);
+  assert.equal(advertising.deadline, "2026-07-14T12:00:00.000Z");
+});
+
 test("NEN seznam dokumentů vrací přímé soubory a druh dokumentu", () => {
   const html = `<tr><td data-title="Typ dokumentu">Zadávací dokumentace</td><td><a href="/file?id=4778453882">ZD EXPO 2027 AV.pdf</a></td></tr>`;
   assert.deepEqual(parseNenDocuments(html, "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032165"), [{

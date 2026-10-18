@@ -44,11 +44,22 @@ function nenDateTime(value) {
   return match ? czechDate(`${match[3]}. ${match[2]}. ${match[1]} ${match[4]}:${match[5]}`) : text;
 }
 
+function firstParticipationDeadline(item, summary) {
+  // NEN keeps the procedure "unfinished" after entry has closed. Later
+  // preliminary bids can be submitted only by admitted participants.
+  const entryFields = ["podaniPredZajemLhuta", "podaniZadostLhuta", "podaniPredNabLhuta", "podaniLhuta", "podaniNavrhLhuta"];
+  const entry = entryFields.map((field) => item[field]).filter(Boolean);
+  const candidates = entry.length ? entry : [summary.podaniLhuta].filter(Boolean);
+  return candidates.map(nenDateTime).filter((value) => value && Number.isFinite(new Date(value).valueOf()))
+    .sort((left, right) => new Date(left) - new Date(right))[0] || null;
+}
+
 export function parseNenDetail(html, url, summary = {}) {
   const state = reduxState(html);
   const container = Object.values(state.detailObjectStore?.objects || {})[0];
   const item = container?.object;
   if (!item?.kod || !item?.nazev) return null;
+  const deadline = firstParticipationDeadline(item, summary);
   return {
     source: "nen",
     sourceId: item.kod,
@@ -59,8 +70,8 @@ export function parseNenDetail(html, url, summary = {}) {
     country: "CZ",
     region: item.hlavniMistoNUTS || "Česko",
     publishedAt: nenDateTime(item.datumProfil),
-    deadline: nenDateTime(item.podaniLhuta || summary.podaniLhuta),
-    deadlineTimeKnown: /T\d{2}:\d{2}|\b\d{1,2}:\d{2}\b/.test(String(item.podaniLhuta || summary.podaniLhuta || "")),
+    deadline,
+    deadlineTimeKnown: Boolean(deadline && /T\d{2}:\d{2}/.test(deadline)),
     value: item.predpokladHodnota
       ? { amount: Number(item.predpokladHodnota), currency: currency(item.predpokladMenaNazev) }
       : null,

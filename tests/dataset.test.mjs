@@ -39,6 +39,14 @@ test("výslovně otevřená letošní zakázka bez termínu se neztratí po 45 d
   assert.deepEqual(dataset.tenders.map((item) => item.sourceId), ["dlouhodoba"]);
 });
 
+test("NEN bez lhůty není aktuální tip jen proto, že řízení ještě není ukončené", () => {
+  const undated = { ...tender("nen-bez-lhuty", null), source: "nen", status: "open" };
+  const expired = { ...tender("nen-prosly", "2026-07-14T12:00:00Z"), source: "nen", status: "open" };
+  const active = { ...tender("nen-aktivni", "2026-10-30T12:00:00Z"), source: "nen", status: "open" };
+  const { dataset } = make([undated, expired, active]);
+  assert.deepEqual(dataset.tenders.map((item) => item.sourceId), ["nen-aktivni"]);
+});
+
 test("chybný řádek se přeskočí, ale platná oficiální zakázka zůstane", () => {
   const { dataset, invalidRows } = make([null, tender("platna", "2026-10-25T10:00:00Z")]);
   assert.equal(dataset.tenders.length, 1);
