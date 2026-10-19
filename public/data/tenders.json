@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T18:38:54.908Z",
+  "generatedAt": "2026-10-19T10:03:31.222Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -8,9 +8,9 @@
   },
   "stats": {
     "total": 3,
-    "newThisRun": 0,
+    "newThisRun": 1,
     "strong": 0,
-    "closingSoon": 1,
+    "closingSoon": 0,
     "unresolvedOrigin": 0,
     "invalidRows": 0
   },
@@ -18,32 +18,32 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 2
+      "count": 74
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 1
+      "count": 49
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 42
+      "count": 7
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 399
+      "count": 477
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 79
+      "count": 75
     },
     {
       "id": "proebiz",
       "ok": true,
-      "count": 38
+      "count": 39
     },
     {
       "id": "media-signals",
@@ -116,7 +116,67 @@
             "score": 49
           }
         ],
-        "deadlineDays": 15
+        "deadlineDays": 14
+      }
+    },
+    {
+      "id": "nen:N006/26/V00033172",
+      "source": "nen",
+      "sourceId": "N006/26/V00033172",
+      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00033172",
+      "title": "PRODUKČNÍ A VIZUÁLNÍ AGENTURA PRO SÚRAO",
+      "buyer": "Správa úložišť radioaktivních odpadů",
+      "summary": "Předmětem plnění veřejné zakázky je poskytování reklamních, kreativních, konzultačních a grafických služeb, včetně příprav a realizací kampaní určených pro veškeré marketingové aktivity na podporu produktů, image zadavatele. Do předmětu plnění je zahrnuta i doprava dodavatele na různá místa plnění. Předmětem této veřejné zakázky budou zejména následující činnosti: - tvorba vizuálního obsahu, tedy zejména: animace a 3D vizualizace stávajících úložišť Richard, Bratrství, Dukovany a budoucího hlubinného úložiště, vizualizace projektů, modely, virtuální prohlídky, interaktivní prvky, - tvorba podcastů, tedy zejména: příprava scénářů, rešerše, moderování, technická realizace, střih, postprodukce, zveřejnění, - produkce veřejných a odborných akcí, tedy zejména: organizace seminářů, workshopy, prezentace, diskuse, Dny otevřených dveří, konference, bude se jednat o organizační a technickou podporu při těchto akcích, které budou probíhat po celé ČR, - podpora výjezdních informačních aktivit, tedy zejména: mobilní expozice, akce v regionech.",
+      "country": "CZ",
+      "region": "Česká republika",
+      "publishedAt": "2026-10-19T07:40:00.000Z",
+      "deadline": "2026-11-18T09:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": {
+        "amount": 8600000,
+        "currency": "CZK"
+      },
+      "valueSource": "ted",
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "cpv": [
+        "79342000"
+      ],
+      "procedureType": "Sluzby / Otevřené řízení",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-19T10:03:31.222Z",
+      "lastSeenAt": "2026-10-19T10:03:31.222Z",
+      "status": "open",
+      "fingerprint": "cf3c66cb12610ef963dd",
+      "relevance": {
+        "score": 64,
+        "level": "good",
+        "reasons": [
+          "Tvorba obsahu: podcast",
+          "Marketing & eventy: konference",
+          "obor potvrzuje popis zakázky",
+          "jde o zakázku na služby",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 28
+          },
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 28
+          },
+          {
+            "id": "training",
+            "label": "Školení & media training",
+            "score": 11
+          }
+        ],
+        "deadlineDays": 30
       }
     },
     {
@@ -179,67 +239,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 19
-      }
-    },
-    {
-      "id": "nen:N006/26/V00033177",
-      "source": "nen",
-      "sourceId": "N006/26/V00033177",
-      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00033177",
-      "title": "Zajištění reklamních ploch pro potřeby propagace výstav, expozic a dalších akcí UPM",
-      "buyer": "Uměleckoprůmyslové museum v Praze",
-      "summary": "Uměleckoprůmyslové museum v Praze poptává reklamní plochy pro výstavy a expozice: metro, billboardy, tramvaje, letiště a další formáty.",
-      "country": "CZ",
-      "region": "Hlavní město Praha",
-      "publishedAt": "2026-10-12T12:40:00.000Z",
-      "deadline": "2026-10-19T08:00:00.000Z",
-      "deadlineTimeKnown": true,
-      "value": null,
-      "valueSource": null,
-      "verifiedFacts": [
-        {
-          "text": "Maximální cena je 800 tis. Kč bez DPH. Plnění trvá do konce roku 2027 nebo do vyčerpání limitu.",
-          "url": "https://nen.nipez.cz/file?id=4786082029"
-        },
-        {
-          "text": "Požadují se 2 srovnatelné zakázky z posledních 3 let, každá v hodnotě alespoň 800 tis. Kč bez DPH.",
-          "url": "https://nen.nipez.cz/file?id=4786082029"
-        },
-        {
-          "text": "Hodnotí se pouze nejnižší celková nabídková cena bez DPH.",
-          "url": "https://nen.nipez.cz/file?id=4786082029"
-        }
-      ],
-      "factsReviewedAt": "2026-10-17T22:37:48.000Z",
-      "cpv": [
-        "79341000"
-      ],
-      "procedureType": "Sluzby / Otevřená výzva",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-13T11:56:13.295Z",
-      "lastSeenAt": "2026-10-18T18:38:54.908Z",
-      "status": "open",
-      "fingerprint": "6af45b8bc5b3173adeef",
-      "relevance": {
-        "score": 42,
-        "level": "watch",
-        "reasons": [
-          "Marketing & eventy: reklamní plochy",
-          "obor potvrzuje ověřený výtah zadání",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [
-          "velmi krátká lhůta"
-        ],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 33
-          }
-        ],
-        "deadlineDays": 1
+        "deadlineDays": 18
       }
     }
   ]
