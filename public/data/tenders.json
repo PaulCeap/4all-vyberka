@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T09:30:46.339Z",
+  "generatedAt": "2026-10-21T09:26:42.561Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -8,7 +8,7 @@
   },
   "stats": {
     "total": 4,
-    "newThisRun": 1,
+    "newThisRun": 0,
     "strong": 0,
     "closingSoon": 0,
     "unresolvedOrigin": 0,
@@ -18,27 +18,27 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 128
+      "count": 142
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 74
+      "count": 84
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 55
+      "count": 63
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 560
+      "count": 526
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 72
+      "count": 65
     },
     {
       "id": "proebiz",
@@ -119,7 +119,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 29
+        "deadlineDays": 28
       }
     },
     {
@@ -147,7 +147,7 @@
       "procedureType": "services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-20T09:30:46.339Z",
-      "lastSeenAt": "2026-10-20T09:30:46.339Z",
+      "lastSeenAt": "2026-10-21T09:26:42.561Z",
       "status": "open",
       "fingerprint": "d202cf916abc112977cb",
       "relevance": {
@@ -166,7 +166,7 @@
             "score": 44
           }
         ],
-        "deadlineDays": 13
+        "deadlineDays": 12
       }
     },
     {
@@ -229,7 +229,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 17
+        "deadlineDays": 16
       }
     },
     {
@@ -257,7 +257,7 @@
           "url": "https://www.e-zakazky.cz/stazenisouboru/e643955b-a247-43d0-8e5c-6a381f39630c"
         }
       ],
-      "factsReviewedAt": "2026-10-20T09:30:46.339Z",
+      "factsReviewedAt": "2026-10-21T09:26:42.561Z",
       "cpv": [
         "79340000"
       ],
@@ -283,7 +283,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 34
+        "deadlineDays": 33
       }
     }
   ]
