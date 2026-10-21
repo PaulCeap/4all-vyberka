@@ -1,5 +1,7 @@
 import { searchable } from "./model.mjs";
 
+const eventNoun = String.raw`(?:akc(?:e|i|ich|im|emi)|konferenc(?:e|i|ich|im|emi)|seminar(?:e|u|um|ich|em|y)|workshop(?:u|y|um|ech|em)?|zasedan(?:i|im))`;
+
 // Věcný předmět zakázky je oddělený od bodového řazení i od ověření zdroje.
 const SERVICES = [
   {
@@ -9,6 +11,8 @@ const SERVICES = [
       /\b(?:branding|strategie znack\w*|medialn\w* prostor\w*|nakup medii|media buying|reklamn\w* ploch\w*|online reklam\w*|ppc kampan\w*)\b/,
       /\b(?:eventov\w* agentur\w*|eventov\w* marketing|produkce akc\w*|produkce event\w*|produkcni zajisteni akc\w*|produkcni zajisteni konferenc\w*|organizac\w* akc\w*|organizac\w* event\w*|organizac\w* konferenc\w*)\b/,
       /\b(?:zajisten\w*|organizac\w*|realizac\w*)\s+eventov\w* akc\w*\b/,
+      new RegExp(String.raw`\b(?:technick\w* a organizacn\w*|organizacn\w* a technick\w*) (?:zajisten\w*|podpor\w*)\b[^.!?;]{0,65}\b${eventNoun}\b`),
+      new RegExp(String.raw`\b(?:poradan\w*|organizacn\w* zajisten\w*)\s+${eventNoun}\b`),
     ],
   },
   {

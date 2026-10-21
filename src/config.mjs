@@ -89,7 +89,7 @@ export const NEGATIVE_SIGNALS = [
   ["úklidové služby", 35], ["dodávka vozidel", 35], ["zdravotnický materiál", 35],
   ["právní služby", 32], ["účetní audit", 26], ["kybernetická bezpečnost", 24],
   ["penetration test", 30], ["penetrační test", 30], ["softwarové licence", 28],
-  ["dodávka hardware", 30], ["pojištění", 30], ["stravování", 30],
+  ["dodávka hardware", 30], ["pojišťovací služby", 30], ["stravování", 30],
   ["externí redaktor", 30],
 ];
 

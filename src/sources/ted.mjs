@@ -82,12 +82,29 @@ export async function fetchTedNotice(publicationNumber, { fetchImpl = fetch } = 
 
 export async function fetchTed({ now = new Date(), fetchImpl = fetch } = {}) {
   const since = new Date(now.valueOf() - PROJECT.tedLookbackDays * 86_400_000);
-  const query = `publication-date >= ${compactDate(since)} AND buyer-country = CZE AND form-type = competition`;
-  const tenders = [];
-  for (let page = 1; page <= 4; page += 1) {
-    const notices = await searchTed(query, { fetchImpl, page });
-    for (const row of notices) tenders.push(parseTedNotice(row));
-    if (notices.length < 250) break;
+  const recoverySince = new Date(now.valueOf() - PROJECT.historyDays * 86_400_000);
+  const queries = [`publication-date >= ${compactDate(since)} AND buyer-country = CZE AND form-type = competition`];
+  // Event notices often use Czech administrative wording rather than "event".
+  // Revisit older notices after a missed run or a relevance-rule correction.
+  if (recoverySince < since) {
+    const eventCodes = ["79950000", "79951000", "79952000"];
+    queries.push(`publication-date >= ${compactDate(recoverySince)} AND publication-date < ${compactDate(since)} AND buyer-country = CZE AND form-type = competition AND (${eventCodes.map((code) => `classification-cpv = ${code}`).join(" OR ")})`);
   }
-  return tenders;
+  const tenders = new Map();
+  for (const [index, query] of queries.entries()) {
+    try {
+      for (let page = 1; page <= 4; page += 1) {
+        const notices = await searchTed(query, { fetchImpl, page });
+        for (const row of notices) {
+          const tender = parseTedNotice(row);
+          tenders.set(tender.sourceId, tender);
+        }
+        if (notices.length < 250) break;
+      }
+    } catch (error) {
+      if (index === 0) throw error;
+      console.warn(`TED: zpětná kontrola akcí selhala: ${error.message}`);
+    }
+  }
+  return [...tenders.values()];
 }

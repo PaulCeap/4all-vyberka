@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T09:26:42.561Z",
+  "generatedAt": "2026-10-21T15:08:39.037Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 4,
-    "newThisRun": 0,
+    "total": 5,
+    "newThisRun": 1,
     "strong": 0,
     "closingSoon": 0,
     "unresolvedOrigin": 0,
@@ -18,56 +18,72 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 142
+      "count": 142,
+      "checkedAt": "2026-10-21T09:26:42.561Z"
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 84
+      "count": 84,
+      "checkedAt": "2026-10-21T09:26:42.561Z"
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 63
+      "count": 63,
+      "checkedAt": "2026-10-21T09:26:42.561Z"
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 526
+      "count": 526,
+      "checkedAt": "2026-10-21T09:26:42.561Z"
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 65
+      "count": 65,
+      "checkedAt": "2026-10-21T09:26:42.561Z"
     },
     {
       "id": "proebiz",
       "ok": true,
-      "count": 39
+      "count": 39,
+      "checkedAt": "2026-10-21T09:26:42.561Z"
     },
     {
       "id": "media-signals",
       "ok": true,
-      "count": 0
+      "count": 0,
+      "checkedAt": "2026-10-21T09:26:42.561Z"
     },
     {
       "id": "manual",
       "ok": true,
-      "count": 1
+      "count": 1,
+      "checkedAt": "2026-10-21T09:26:42.561Z"
     },
     {
       "id": "poptavky",
       "ok": true,
       "count": 20,
       "resolved": 2,
-      "pending": 34
+      "pending": 34,
+      "checkedAt": "2026-10-21T09:26:42.561Z"
     },
     {
       "id": "poptavej",
       "ok": true,
       "count": 20,
       "resolved": 2,
-      "pending": 25
+      "pending": 25,
+      "checkedAt": "2026-10-21T09:26:42.561Z"
+    },
+    {
+      "id": "verified-import",
+      "ok": true,
+      "count": 1,
+      "checkedAt": "2026-10-21T15:08:39.037Z"
     }
   ],
   "tenders": [
@@ -248,6 +264,147 @@
             "id": "marketing",
             "label": "Marketing & eventy",
             "score": 44
+          }
+        ],
+        "deadlineDays": 12
+      }
+    },
+    {
+      "id": "nen:N006/26/V00021404",
+      "source": "nen",
+      "sourceId": "N006/26/V00021404",
+      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00021404",
+      "title": "Technické a organizační zajištění akcí OPŽP a OPST 2027 - 2029",
+      "buyer": "Česká republika - Ministerstvo životního prostředí",
+      "summary": "MŽP hledá kompletní technické a organizační zajištění konferencí, seminářů, workshopů a jednání OPŽP a OPST do konce roku 2029: prostory, audiovizuální techniku, streaming a záznamy, tlumočení, přepisy, catering, dopravu, ubytování a moderování.",
+      "country": "CZ",
+      "region": "Česká republika",
+      "publishedAt": "2026-10-02T09:11:00.000Z",
+      "deadline": "2026-11-02T07:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": {
+        "amount": 12892561.98,
+        "currency": "CZK"
+      },
+      "valueSource": "verified-documents",
+      "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00021404/zadavaci-dokumentace",
+      "documents": [
+        {
+          "name": "Šifrovací N006-26-V00021404 Technické a organizační zajištění akcí OPŽ.cer",
+          "type": "Certifikát",
+          "url": "https://nen.nipez.cz/file?id=4774320139"
+        },
+        {
+          "name": "ZADÁVACÍ DOKUMENTACE_SIGN.pdf",
+          "type": "Zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4774320163"
+        },
+        {
+          "name": "ZD_P1_Smluvní vzor OPŽP.docx",
+          "type": "Zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4774322192"
+        },
+        {
+          "name": "ZD_P2_Smluvní vzor OPST.docx",
+          "type": "Zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4774322174"
+        },
+        {
+          "name": "ZD_P3_Seznam významných služeb dodavatele.docx",
+          "type": "Zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4774322181"
+        },
+        {
+          "name": "ZD_P4_Požadavky na vzdělání a odbornou kvalifikaci členů realizačního týmu.docx",
+          "type": "Zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4774322186"
+        },
+        {
+          "name": "ZD_P5_Tabulka pro výpočet nabídkové ceny.xlsx",
+          "type": "Zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4774320144"
+        },
+        {
+          "name": "ZD_P6_ČP o neexistenci střetu zájmu, pojištění odpovědnosti a mez. sankcích.docx",
+          "type": "Zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4774322197"
+        }
+      ],
+      "verifiedFacts": [
+        {
+          "text": "Dvě smlouvy po 6 446 280,99 Kč bez DPH, celkem 12 892 561,98 Kč. Končí vyčerpáním limitu nebo 31. 12. 2029; minimální odběr není garantován.",
+          "url": "https://nen.nipez.cz/file?id=4774322192"
+        },
+        {
+          "text": "Čtyři různé reference za poslední 3 roky: 2× alespoň dvoudenní akce pro 60 lidí s občerstvením a ubytováním v ČR a 2× celodenní akce pro 80 lidí s cizojazyčným tlumočením a občerstvením.",
+          "url": "https://nen.nipez.cz/file?id=4774320163"
+        },
+        {
+          "text": "Čtyřčlenný tým: senior event manager (5 let praxe, AJ B1), junior (3 roky, AJ B1), kvalifikovaný tlumočník AJ a technik. Nutné jsou i konkrétní zkušenosti s akcemi podle přílohy č. 4.",
+          "url": "https://nen.nipez.cz/file?id=4774322186"
+        },
+        {
+          "text": "Hodnotí se pouze ceny: kategorie A 80 %, B 20 %. Příloha 5 má 86 položek, jednotkové ceny se násobí tříletým modelem; do NEN se zadává součet D95.",
+          "url": "https://nen.nipez.cz/file?id=4774320163"
+        },
+        {
+          "text": "Roční model: 4 akce po 10 hodinách technika, 1 samostatný stream, 10 hodin moderátora a 200 NS českých přepisů. Počty služeb nelze sčítat jako samostatné akce.",
+          "url": "https://nen.nipez.cz/file?id=4774320144"
+        },
+        {
+          "text": "Bez záloh, splatnost obvykle 30 dnů, po 10. prosinci až 60 dnů. Bezplatné storno akce 30 dnů předem, tlumočení 14 dnů. Za porušení povinnosti k týmu pokuta 250 tis. Kč za dílčí plnění. Pojištění odpovědnosti min. 2 mil. Kč, spoluúčast nejvýše 5 %.",
+          "url": "https://nen.nipez.cz/file?id=4774322192"
+        },
+        {
+          "text": "Obchodní posouzení pro 4ALL: podmíněné GO s eventovým partnerem po doložení referencí, týmu a kalkulace. Samostatné splnění kvalifikace 4ALL zatím není doloženo; nabídku pouze na AV část podat nelze.",
+          "url": "https://nen.nipez.cz/file?id=4774320163"
+        },
+        {
+          "text": "Lhůta 2. 11. 2026 v 8:00 českého času. Hodnotu potvrzuje i oficiální oznámení TED 680377-2026 z 2. 10. 2026.",
+          "url": "https://ted.europa.eu/cs/notice/-/detail/680377-2026"
+        }
+      ],
+      "factsReviewedAt": "2026-10-21T15:08:38.621Z",
+      "cpv": [
+        "79950000"
+      ],
+      "procedureType": "Sluzby / Otevřené řízení",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-21T15:08:39.037Z",
+      "lastSeenAt": "2026-10-21T15:08:39.037Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "candidateProfileUrls": [],
+      "fingerprint": "a8ba347cd0340c4c022f",
+      "relevance": {
+        "score": 58,
+        "level": "good",
+        "reasons": [
+          "Marketing & eventy: event",
+          "Tvorba obsahu: audiovizuální",
+          "obor potvrzuje ověřený výtah zadání",
+          "jde o zakázku na služby",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 28
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 16
+          },
+          {
+            "id": "training",
+            "label": "Školení & media training",
+            "score": 11
           }
         ],
         "deadlineDays": 12

@@ -74,5 +74,53 @@
         "url": "https://nen.nipez.cz/file?id=4782970335"
       }
     ]
+  },
+  "nen:N006/26/V00021404": {
+    "reviewedAt": "2026-10-21T15:08:38.621260+00:00",
+    "summary": "MŽP hledá kompletní technické a organizační zajištění konferencí, seminářů, workshopů a jednání OPŽP a OPST do konce roku 2029: prostory, audiovizuální techniku, streaming a záznamy, tlumočení, přepisy, catering, dopravu, ubytování a moderování.",
+    "value": {
+      "amount": 12892561.98,
+      "currency": "CZK"
+    },
+    "valueSource": "verified-documents",
+    "facts": [
+      {
+        "text": "Dvě smlouvy po 6 446 280,99 Kč bez DPH, celkem 12 892 561,98 Kč. Končí vyčerpáním limitu nebo 31. 12. 2029; minimální odběr není garantován.",
+        "url": "https://nen.nipez.cz/file?id=4774322192"
+      },
+      {
+        "text": "Čtyři různé reference za poslední 3 roky: 2× alespoň dvoudenní akce pro 60 lidí s občerstvením a ubytováním v ČR a 2× celodenní akce pro 80 lidí s cizojazyčným tlumočením a občerstvením.",
+        "url": "https://nen.nipez.cz/file?id=4774320163"
+      },
+      {
+        "text": "Čtyřčlenný tým: senior event manager (5 let praxe, AJ B1), junior (3 roky, AJ B1), kvalifikovaný tlumočník AJ a technik. Nutné jsou i konkrétní zkušenosti s akcemi podle přílohy č. 4.",
+        "url": "https://nen.nipez.cz/file?id=4774322186"
+      },
+      {
+        "text": "Hodnotí se pouze ceny: kategorie A 80 %, B 20 %. Příloha 5 má 86 položek, jednotkové ceny se násobí tříletým modelem; do NEN se zadává součet D95.",
+        "url": "https://nen.nipez.cz/file?id=4774320163"
+      },
+      {
+        "text": "Roční model: 4 akce po 10 hodinách technika, 1 samostatný stream, 10 hodin moderátora a 200 NS českých přepisů. Počty služeb nelze sčítat jako samostatné akce.",
+        "url": "https://nen.nipez.cz/file?id=4774320144"
+      },
+      {
+        "text": "Bez záloh, splatnost obvykle 30 dnů, po 10. prosinci až 60 dnů. Bezplatné storno akce 30 dnů předem, tlumočení 14 dnů. Za porušení povinnosti k týmu pokuta 250 tis. Kč za dílčí plnění. Pojištění odpovědnosti min. 2 mil. Kč, spoluúčast nejvýše 5 %.",
+        "url": "https://nen.nipez.cz/file?id=4774322192"
+      },
+      {
+        "text": "Obchodní posouzení pro 4ALL: podmíněné GO s eventovým partnerem po doložení referencí, týmu a kalkulace. Samostatné splnění kvalifikace 4ALL zatím není doloženo; nabídku pouze na AV část podat nelze.",
+        "url": "https://nen.nipez.cz/file?id=4774320163"
+      },
+      {
+        "text": "Lhůta 2. 11. 2026 v 8:00 českého času. Hodnotu potvrzuje i oficiální oznámení TED 680377-2026 z 2. 10. 2026.",
+        "url": "https://ted.europa.eu/cs/notice/-/detail/680377-2026"
+      }
+    ],
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4774320163",
+      "https://nen.nipez.cz/file?id=4774322174",
+      "https://nen.nipez.cz/file?id=4774322192"
+    ]
   }
 }

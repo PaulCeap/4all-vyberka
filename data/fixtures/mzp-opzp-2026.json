@@ -1,0 +1,24 @@
+{
+  "source": "nen",
+  "sourceId": "N006/26/V00021404",
+  "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00021404",
+  "title": "Technické a organizační zajištění akcí OPŽP a OPST 2027 - 2029",
+  "buyer": "Česká republika - Ministerstvo životního prostředí",
+  "summary": "Předmětem veřejné zakázky je zajištění technické a organizační podpory při přípravě a realizaci akcí pořádaných za účelem implementace Operačního programu Životní prostředí 2021–2027 (dále „OPŽP“) a nástroje pro využití prostředků EU v oblasti politiky soudržnosti v gesci MŽP v programovém období 2028-2034 a Operačního programu Spravedlivá transformace (dále „OPST“) 2021–2027 a nástroje pro využití prostředků EU v oblasti politiky soudržnosti v gesci MŽP v programovém období 2028-2034. Jedná se především o zajištění zasedání monitorovacích výborů, jednání zástupců implementační struktury vč. Evropské komise, konferencí, seminářů či workshopů pro žadatele a příjemce dotace atp. Technická a organizační podpora akcí zahrnuje zejména zajištění jednacích prostor, techniky (tlumočnická technika, ozvučení prostor, projekční technika), tlumočení (do anglického jazyka: simultánní, konsekutivní nebo AI technologiemi), nahrávání či streamování jednání včetně přepisu záznamu, zajištění občerstvení, přepravy, případně rezervace ubytování pro účastníky zasedání či zajištění moderování akce a další služby spojené se zajištěním akcí.",
+  "publishedAt": "2026-10-02T09:11:00Z",
+  "deadline": "2026-11-02T07:00:00Z",
+  "deadlineTimeKnown": true,
+  "cpv": [
+    "79950000",
+    "79951000",
+    "79952000"
+  ],
+  "procedureType": "Sluzby / Otevřené řízení",
+  "status": "open",
+  "originStatus": "verified",
+  "value": {
+    "amount": 12892561.98,
+    "currency": "CZK"
+  },
+  "valueSource": "ted"
+}

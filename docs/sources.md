@@ -34,6 +34,7 @@ Před bodovým řazením se ověřuje věcný předmět: marketing, PR a vztahy 
 - Oficiální Search API Úředního věstníku EU: `POST https://api.ted.europa.eu/v3/notices/search`.
 - Nevyžaduje autentizaci.
 - Dotaz vybírá soutěžní oznámení českých zadavatelů za posledních osm dní.
+- Eventové CPV 79950000, 79951000 a 79952000 se navíc kontrolují ve starší části uchovávané historie (standardně 45 dnů). Doplňkový dotaz obnoví příležitosti zmeškané při výpadku nebo změně pravidel relevance; jeho chyba nezahodí denní výsledky.
 - Zachytí hlavně nadlimitní zakázky. Oznámení je oficiální zdroj a zároveň vodítko ke konkrétnímu profilu zadavatele; pokud profil najdeme, karta vede přímo na něj.
 - API může vracet několik lotů; adaptér vezme nejbližší lhůtu včetně času, sloučí popisy a přečte odkazy na profil a dokumentaci.
 
@@ -45,7 +46,7 @@ Před bodovým řazením se ověřuje věcný předmět: marketing, PR a vztahy 
 ### NEN
 
 - Veřejný seznam Národního elektronického nástroje doplňuje hlavně zakázky malého rozsahu.
-- Adaptér používá 20 cílených dotazů podle služeb 4ALL, včetně videa, natáčení, podcastů a focení, a stáhne nejvýše 80 detailů za běh. Limit rozděluje napříč dotazy po jednotlivých pozicích, takže širší výraz nemůže vytlačit pozdější specializované dotazy. Dotazy běží postupně, protože souběžné dotazy NEN vracely chybu 503; timeout jednoho nezahodí ostatní výsledky.
+- Adaptér používá 24 cílených dotazů podle služeb 4ALL, včetně videa, natáčení, podcastů, focení a českých formulací pro organizaci a zajištění akcí a konferencí, a stáhne nejvýše 80 detailů za běh. Limit rozděluje napříč dotazy po jednotlivých pozicích, takže širší výraz nemůže vytlačit pozdější specializované dotazy. Dotazy běží postupně, protože souběžné dotazy NEN vracely chybu 503; timeout jednoho nezahodí ostatní výsledky.
 - Z detailu čte popis, CPV, předpokládanou hodnotu, datum publikace a lhůtu. Vše následně projde stejným scoringem; samotná shoda vyhledávacího dotazu nestačí k publikaci.
 
 ### Profily Proebiz

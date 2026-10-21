@@ -89,6 +89,7 @@ Ruční tip vložte jako jeden objekt nebo pole objektů do `data/manual/*.json`
 - [Datový model](docs/data-model.md)
 - [Nasazení na GitHub Pages a DNS](docs/deployment.md)
 - [Zdroje dat a limity](docs/sources.md)
+- [MŽP: prověření akcí OPŽP a OPST 2027–2029](docs/mzp-opzp-opst-2027-2029.md)
 
 ## Struktura
 

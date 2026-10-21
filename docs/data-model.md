@@ -44,6 +44,8 @@ Publikovaný soubor `public/data/tenders.json` má `schemaVersion: 1` a následu
 
 Úplný seznam příloh a původ radarového tipu zůstávají v pracovním souboru `data/tender-state.json`. Veřejná karta obsahuje jen odkaz na zakázku a na podklady ke konkrétním poznatkům. Změna důležitých dokumentů zneplatní starý výtah, zatímco přidaný formulář nikoli.
 
+Ručně ověřená poznámka v `data/verified-notes.json` může obsahovat také `value` a `valueSource`, pokud profil částku neuvádí a je doložena v přezkoumaných podkladech. Tato hodnota doplňuje pouze chybějící údaj a platí jen při shodě sledovaného otisku dokumentace. Aktuální hodnota přímo z profilu má přednost.
+
 ## Relevance
 
 ```json

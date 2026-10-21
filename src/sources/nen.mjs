@@ -5,6 +5,7 @@ const SEARCH_TERMS = [
   "komunikační strategie", "komunikační kampaň", "public relations", "PR služby",
   "marketingové služby", "propagace", "sociální sítě", "tvorba obsahu",
   "mediální", "reklamní kampaň", "event", "produkční", "mediální trénink",
+  "zajištění akcí", "organizace akcí", "organizace konferencí", "pořádání akcí",
   "video", "natáčení", "audiovizuální", "podcast", "fotografické", "focení", "grafické práce",
 ];
 
