@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T15:08:39.037Z",
+  "generatedAt": "2026-10-22T09:29:46.460Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 5,
-    "newThisRun": 1,
+    "total": 6,
+    "newThisRun": 2,
     "strong": 0,
     "closingSoon": 0,
     "unresolvedOrigin": 0,
@@ -18,56 +18,42 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 142,
-      "checkedAt": "2026-10-21T09:26:42.561Z"
+      "count": 154
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 84,
-      "checkedAt": "2026-10-21T09:26:42.561Z"
+      "count": 78
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 63,
-      "checkedAt": "2026-10-21T09:26:42.561Z"
+      "count": 41
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 526,
-      "checkedAt": "2026-10-21T09:26:42.561Z"
+      "count": 533
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 65,
-      "checkedAt": "2026-10-21T09:26:42.561Z"
+      "count": 65
     },
     {
       "id": "proebiz",
       "ok": true,
-      "count": 39,
-      "checkedAt": "2026-10-21T09:26:42.561Z"
+      "count": 38
     },
     {
       "id": "media-signals",
       "ok": true,
-      "count": 0,
-      "checkedAt": "2026-10-21T09:26:42.561Z"
+      "count": 0
     },
     {
       "id": "manual",
       "ok": true,
-      "count": 1,
-      "checkedAt": "2026-10-21T09:26:42.561Z"
-    },
-    {
-      "id": "verified-import",
-      "ok": true,
-      "count": 1,
-      "checkedAt": "2026-10-21T15:08:39.037Z"
+      "count": 1
     }
   ],
   "tenders": [
@@ -133,7 +119,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 28
+        "deadlineDays": 27
       }
     },
     {
@@ -180,7 +166,7 @@
             "score": 44
           }
         ],
-        "deadlineDays": 12
+        "deadlineDays": 11
       }
     },
     {
@@ -273,7 +259,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 12
+        "deadlineDays": 11
       }
     },
     {
@@ -336,7 +322,59 @@
             "score": 28
           }
         ],
-        "deadlineDays": 16
+        "deadlineDays": 15
+      }
+    },
+    {
+      "id": "ted:646731-2026",
+      "source": "ted",
+      "sourceId": "646731-2026",
+      "url": "https://ted.europa.eu/cs/notice/-/detail/646731-2026",
+      "title": "DNS NA MARKETINGOVÉ SLUŽBY",
+      "buyer": "LOM PRAHA s.p.",
+      "summary": "Předmětem zadávacího řízení je zavedení DNS na dodávku a realizaci marketingových, propagačních a prezentačních materiálů a služeb dle potřeb zadavatele, přičemž zadavatel v souladu s § 138 odst. 1 ZZVZ rozděluje DNS do čtyř (4) kategorií podle druhu plnění veřejných zakázek zadávaných v rámci DNS. Předmětem veřejných zakázek jsou zejména dodávky reklamních propisek, dárkových sad, diářů a zápisníků, termohrnků, deštníků, svíček, aroma difuzérů, textilu a reklamního ošacení, modelů letadel, reklamních a prezentačních předmětů, dárkových předmětů pro obchodní partnery a dalších obdobných propagačních předmětů. Předmětem veřejných zakázek jsou zejména grafické návrhy, DTP práce, tvorba vizuálních identit, zpracování marketingových podkladů, fotografické služby, produktová fotografie, reportážní fotografie, natáčení videí, střih videí, animace, postprodukční práce, tvorba audiovizuálního obsahu pro marketingové a prezentační účely. Předmětem veřejných zakázek jsou zejména návrhy výstavních expozic, výroba výstavních stánků, montáž a demontáž expozic, zajištění vybavení stánků, logistika a doprava expozic, technické zabezpečení prezentací, zajištění účasti na veletrzích a výstavách, související marketingová a organizační podpora. Předmětem veřejných zakázek jsou zejména dodávky letáků, brožur, katalogů, PF karet, samolepek, bannerů, roll-upů, plakátů, reklamních cedulí, informačních tabulí, polepů vozidel, velkoformátového tisku, ostatních tiskových a prezentační materiálů.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": null,
+      "deadline": null,
+      "deadlineTimeKnown": false,
+      "value": {
+        "amount": 50000000,
+        "currency": "CZK"
+      },
+      "valueSource": null,
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "cpv": [
+        "22462000",
+        "79810000",
+        "39294100",
+        "79822500",
+        "79956000",
+        "79800000"
+      ],
+      "procedureType": "supplies, services, supplies, services, services, services",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-22T09:29:46.460Z",
+      "lastSeenAt": "2026-10-22T09:29:46.460Z",
+      "status": "open",
+      "fingerprint": "1e6603be0d57f34ad045",
+      "relevance": {
+        "score": 47,
+        "level": "watch",
+        "reasons": [
+          "Tvorba obsahu: fotograf, audiovizuální",
+          "obor potvrzuje popis zakázky"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 35
+          }
+        ],
+        "deadlineDays": null
       }
     },
     {
@@ -364,7 +402,7 @@
           "url": "https://www.e-zakazky.cz/stazenisouboru/e643955b-a247-43d0-8e5c-6a381f39630c"
         }
       ],
-      "factsReviewedAt": "2026-10-21T09:26:42.561Z",
+      "factsReviewedAt": "2026-10-22T09:29:46.460Z",
       "cpv": [
         "79340000"
       ],
@@ -390,7 +428,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 33
+        "deadlineDays": 32
       }
     }
   ]
