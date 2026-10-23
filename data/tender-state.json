@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T09:29:46.460Z",
+  "generatedAt": "2026-10-23T09:25:34.534Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 6,
-    "newThisRun": 2,
+    "total": 7,
+    "newThisRun": 1,
     "strong": 0,
     "closingSoon": 0,
     "unresolvedOrigin": 0,
@@ -18,32 +18,32 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 154
+      "count": 149
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 78
+      "count": 69
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 41
+      "count": 71
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 533
+      "count": 521
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 65
+      "count": 63
     },
     {
       "id": "proebiz",
       "ok": true,
-      "count": 38
+      "count": 36
     },
     {
       "id": "media-signals",
@@ -59,15 +59,15 @@
       "id": "poptavky",
       "ok": true,
       "count": 20,
-      "resolved": 4,
-      "pending": 38
+      "resolved": 2,
+      "pending": 39
     },
     {
       "id": "poptavej",
       "ok": true,
       "count": 20,
-      "resolved": 3,
-      "pending": 25
+      "resolved": 1,
+      "pending": 28
     }
   ],
   "tenders": [
@@ -95,6 +95,11 @@
           "name": "Šifrovací N006-26-V00033172 PRODUKČNÍ A VIZUÁLNÍ AGENTURA PRO SÚRAO.cer",
           "type": "Certifikát",
           "url": "https://nen.nipez.cz/file?id=4793292617"
+        },
+        {
+          "name": "SÚRAO_PR Agentura_VZD č.1_final.pdf",
+          "type": "Vysvětlení zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4798880109"
         },
         {
           "name": "PR Agentura_Příloha č. 1_Krycí list nabídky.docx",
@@ -135,30 +140,25 @@
           "name": "PR Agentura_Příloha č. 8_Modelová cenová nabídka_v2.xlsx",
           "type": "Zadávací dokumentace",
           "url": "https://nen.nipez.cz/file?id=4793292604"
-        },
-        {
-          "name": "PR Agentura_ZD_podepsana.pdf",
-          "type": "Zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4793292585"
         }
       ],
       "verifiedFacts": [
         {
-          "text": "Předmětem plnění veřejné zakázky je poskytování reklamních, kreativních, konzultačních a grafických služeb, včetně příprav a realizací kampaní určených pro veškeré marketingové aktivity na podporu produktů, image zadavatele.",
-          "url": "https://nen.nipez.cz/file?id=4793292585"
+          "text": "Produkce tematických podcasty (příprava scénář, rešerše, moderování, technická realizace, střih, postprodukce, zveřejnění) - Max délka dílu je cca30 min) cca 5–10 dílů za rok produkce veřejných a odborných akcí (semináře, workshopy, prezentace, diskuse, Dny otevřených dveří, konference – organizační a technická podpora při těchto akcích) po celé ČR podpora výjezdních informačních aktivit (mobilní expozice, akce v regionech).",
+          "url": "https://nen.nipez.cz/file?id=4793292458"
         }
       ],
-      "factsReviewedAt": "2026-10-20T09:30:46.339Z",
+      "factsReviewedAt": "2026-10-23T09:25:34.534Z",
       "cpv": [
         "79342000"
       ],
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-19T10:03:31.222Z",
-      "lastSeenAt": "2026-10-20T09:30:46.339Z",
+      "lastSeenAt": "2026-10-23T09:25:34.534Z",
       "status": "open",
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2135583-produkcni-a-vizualni-agentura",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ345419/produkcni-a-vizualni-agentura",
       "originStatus": "resolved",
       "originConfidence": 83,
       "candidateProfileUrls": [],
@@ -194,7 +194,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 27
+        "deadlineDays": 26
       }
     },
     {
@@ -250,7 +250,7 @@
             "score": 44
           }
         ],
-        "deadlineDays": 11
+        "deadlineDays": 10
       }
     },
     {
@@ -355,7 +355,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-21T15:08:39.037Z",
-      "lastSeenAt": "2026-10-21T15:08:39.037Z",
+      "lastSeenAt": "2026-10-23T09:25:34.534Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -394,7 +394,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 11
+        "deadlineDays": 10
       }
     },
     {
@@ -485,12 +485,12 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-06T11:21:57.039Z",
-      "lastSeenAt": "2026-10-20T09:30:46.339Z",
+      "lastSeenAt": "2026-10-23T09:25:34.534Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": 0,
+      "originConfidence": null,
       "candidateProfileUrls": [],
       "fingerprint": "07d7d41f902b7cb18da8",
       "relevance": {
@@ -510,7 +510,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 15
+        "deadlineDays": 14
       }
     },
     {
@@ -546,7 +546,7 @@
       "procedureType": "supplies, services, supplies, services, services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-22T09:29:46.460Z",
-      "lastSeenAt": "2026-10-22T09:29:46.460Z",
+      "lastSeenAt": "2026-10-23T09:25:34.534Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -677,7 +677,7 @@
           "url": "https://www.e-zakazky.cz/stazenisouboru/e643955b-a247-43d0-8e5c-6a381f39630c"
         }
       ],
-      "factsReviewedAt": "2026-10-22T09:29:46.460Z",
+      "factsReviewedAt": "2026-10-23T09:25:34.534Z",
       "cpv": [
         "79340000"
       ],
@@ -708,6 +708,63 @@
           {
             "id": "marketing",
             "label": "Marketing & eventy",
+            "score": 28
+          }
+        ],
+        "deadlineDays": 31
+      }
+    },
+    {
+      "id": "ted:736640-2026",
+      "source": "ted",
+      "sourceId": "736640-2026",
+      "url": "https://ted.europa.eu/cs/notice/-/detail/736640-2026",
+      "title": "Video bronchoskop ultrazvukový",
+      "buyer": "Všeobecná fakultní nemocnice v Praze",
+      "summary": "Předmětem plnění veřejné zakázky je dodávka ultrazvukového video bronchoskopu pro Všeobecnou fakultní nemocnici v Praze. Předmět plnění veřejné zakázky je vymezen i závazným návrhem smlouvy, který je přílohou č. 2 zadávacích podmínek.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": null,
+      "deadline": "2026-11-23T10:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": {
+        "amount": 1487603,
+        "currency": "CZK"
+      },
+      "valueSource": null,
+      "documentsUrl": null,
+      "documents": [],
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "cpv": [
+        "33168100"
+      ],
+      "procedureType": "supplies, supplies",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-23T09:25:34.534Z",
+      "lastSeenAt": "2026-10-23T09:25:34.534Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "candidateProfileUrls": [
+        "https://www.tenderarena.cz/profil/detail.jsf?identifikator=vfn"
+      ],
+      "fingerprint": "3002dbd1a1a220374d16",
+      "relevance": {
+        "score": 44,
+        "level": "watch",
+        "reasons": [
+          "Tvorba obsahu: video",
+          "obor potvrzuje popis zakázky",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
             "score": 28
           }
         ],
