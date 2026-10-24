@@ -40,39 +40,185 @@
     ]
   },
   "official-profile:P26V00000072": {
-    "reviewedAt": "2026-10-24T08:57:21.033Z",
+    "reviewedAt": "2026-10-24T09:34:04.116Z",
     "documentSnapshot": [
       "https://www.e-zakazky.cz/stazenisouboru/a9cd3950-7ce6-41a0-bfb3-05096e1ba5c9",
       "https://www.e-zakazky.cz/stazenisouboru/e643955b-a247-43d0-8e5c-6a381f39630c",
       "https://www.e-zakazky.cz/stazenisouboru/e6fa8036-ba19-488a-b9e5-0e28aaf5e874"
     ],
     "method": "automatic-extraction",
-    "summary": "ZADÁVACÍ DOKUMENTACE ve smyslu zákona č. 134/2016 Sb., o zadávání veřejných zakázek, v účinném znění (dále „ZZVZ“) Zajištění realizace marketingové strategie pro rok 2027 ZADAVATEL Oborová zdravotní pojišťovna zaměstnanců bank, pojišťoven a stavebnictví Sídlo: Roškotova 1225/1, 140 00 Praha 4 IČO: 47114321 Právní forma: 391 – zdravotní pojišťovna Zastupuje: Ing.",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Předmětem plnění této veřejné zakázky je poskytování služeb souvisejících s realizací marketingové strategie objednatele, zejména nákup a administrace reklamy, tvorba mediálních plánů, tisk reklamních a propagačních materiálů, zajištění cen do soutěží, realizace kampaňových průzkumů a poskytování kreativních, produkčních a dalších souvisejících marketingových služeb.",
     "facts": [
       {
-        "text": "ZADÁVACÍ DOKUMENTACE ve smyslu zákona č. 134/2016 Sb., o zadávání veřejných zakázek, v účinném znění (dále „ZZVZ“) Zajištění realizace marketingové strategie pro rok 2027 ZADAVATEL Oborová zdravotní pojišťovna zaměstnanců bank, pojišťoven a stavebnictví Sídlo: Roškotova 1225/1, 140 00 Praha 4 IČO: 47114321 Právní forma: 391 – zdravotní pojišťovna Zastupuje: Ing.",
-        "url": "https://www.e-zakazky.cz/stazenisouboru/e643955b-a247-43d0-8e5c-6a381f39630c"
+        "text": "Předmětem plnění této veřejné zakázky je poskytování služeb souvisejících s realizací marketingové strategie objednatele, zejména nákup a administrace reklamy, tvorba mediálních plánů, tisk reklamních a propagačních materiálů, zajištění cen do soutěží, realizace kampaňových průzkumů a poskytování kreativních, produkčních a dalších souvisejících marketingových služeb.",
+        "url": "https://www.e-zakazky.cz/stazenisouboru/e643955b-a247-43d0-8e5c-6a381f39630c",
+        "kind": "scope"
       },
       {
         "text": "Kč bez DPH v rámci jedné objednávky a současně souhrnná hodnota plnění požadovaného v rámci postupu bez obnovení soutěže nesmí přesáhnout 2 mil.",
-        "url": "https://www.e-zakazky.cz/stazenisouboru/e643955b-a247-43d0-8e5c-6a381f39630c"
+        "url": "https://www.e-zakazky.cz/stazenisouboru/e643955b-a247-43d0-8e5c-6a381f39630c",
+        "kind": "price"
       }
-    ]
+    ],
+    "complete": true,
+    "warnings": []
   },
   "nen:N006/26/V00033172": {
-    "reviewedAt": "2026-10-23T09:25:34.534Z",
+    "reviewedAt": "2026-10-24T09:34:04.116Z",
     "documentSnapshot": [
       "https://nen.nipez.cz/file?id=4793292458",
       "https://nen.nipez.cz/file?id=4793292469",
       "https://nen.nipez.cz/file?id=4798880109"
     ],
     "method": "automatic-extraction",
-    "summary": "Produkce tematických podcasty (příprava scénář, rešerše, moderování, technická realizace, střih, postprodukce, zveřejnění) - Max délka dílu je cca30 min) cca 5–10 dílů za rok produkce veřejných a odborných akcí (semináře, workshopy, prezentace, diskuse, Dny otevřených dveří, konference – organizační a technická podpora při těchto akcích) po celé ČR podpora výjezdních informačních aktivit (mobilní expozice, akce v regionech).",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Odpověď na dotaz č. 1 Zadavatel uvádí, že v souladu s čl. 11.3 zadávací dokumentace je možné doložit alespoň jednu významnou službu v oblasti tvorby podcastu s minimální délkou 20 min, přičemž tématika tohoto podcastu byla v oblasti energetiky, stavebnictví nebo ochrany životního prostředí nebo na libovolné téma, které mělo za účel popularizaci vědy.",
     "facts": [
       {
-        "text": "Produkce tematických podcasty (příprava scénář, rešerše, moderování, technická realizace, střih, postprodukce, zveřejnění) - Max délka dílu je cca30 min) cca 5–10 dílů za rok produkce veřejných a odborných akcí (semináře, workshopy, prezentace, diskuse, Dny otevřených dveří, konference – organizační a technická podpora při těchto akcích) po celé ČR podpora výjezdních informačních aktivit (mobilní expozice, akce v regionech).",
-        "url": "https://nen.nipez.cz/file?id=4793292458"
+        "text": "Odpověď na dotaz č. 1 Zadavatel uvádí, že v souladu s čl. 11.3 zadávací dokumentace je možné doložit alespoň jednu významnou službu v oblasti tvorby podcastu s minimální délkou 20 min, přičemž tématika tohoto podcastu byla v oblasti energetiky, stavebnictví nebo ochrany životního prostředí nebo na libovolné téma, které mělo za účel popularizaci vědy.",
+        "url": "https://nen.nipez.cz/file?id=4798880109",
+        "kind": "scope"
       }
-    ]
+    ],
+    "complete": true,
+    "warnings": []
+  },
+  "nen:N006/26/V00030271": {
+    "reviewedAt": "2026-10-24T09:34:04.116Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4764778596"
+    ],
+    "method": "automatic-extraction",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Kategorie DNS č. 4 – Grafické, fotografické a audiovizuální služby Předmětem veřejných zakázek jsou zejména grafické návrhy, DTP práce, tvorba vizuálních identit, zpracování marketingových podkladů, fotografické služby, produktová fotografie, reportážní fotografie, natáčení videí, střih videí, animace, postprodukční práce, tvorba audiovizuálního obsahu pro marketingové a prezentační účely.",
+    "facts": [
+      {
+        "text": "Kategorie DNS č. 4 – Grafické, fotografické a audiovizuální služby Předmětem veřejných zakázek jsou zejména grafické návrhy, DTP práce, tvorba vizuálních identit, zpracování marketingových podkladů, fotografické služby, produktová fotografie, reportážní fotografie, natáčení videí, střih videí, animace, postprodukční práce, tvorba audiovizuálního obsahu pro marketingové a prezentační účely.",
+        "url": "https://nen.nipez.cz/file?id=4764778596",
+        "kind": "scope"
+      },
+      {
+        "text": "Doba trvání DNS 10 let Předpokládaná hodnota 50 000 000,00 Kč bez DPH Rozdělení DNS do kategorií ANO Způsob podání žádostí Elektronicky, prostřednictvím elektronického nástroje NEN o účast Jazyk, ve kterém mohou být český žádostí o účast podány Lhůta pro doručení žádostí kdykoli v době trvání zavedeného DNS o účast Lhůta pro podání nabídek od odeslání výzvy k podání nejméně 10 dnů od odeslání Výzvy nabídky",
+        "url": "https://nen.nipez.cz/file?id=4764778596",
+        "kind": "price"
+      }
+    ],
+    "value": {
+      "amount": 50000000,
+      "currency": "CZK"
+    },
+    "valueSource": "https://nen.nipez.cz/file?id=4764778596",
+    "complete": true,
+    "warnings": []
+  },
+  "nen:N006/26/V00031545": {
+    "reviewedAt": "2026-10-24T09:34:04.116Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4778360395",
+      "https://nen.nipez.cz/file?id=4790911863",
+      "https://nen.nipez.cz/file?id=4799880625"
+    ],
+    "method": "automatic-extraction",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Předmětem veřejných zakázek zadávaných na základě Rámcové dohody je poskytování služeb v oblasti výzkumu trhu pro Zadavatele.",
+    "facts": [
+      {
+        "text": "Předmětem veřejných zakázek zadávaných na základě Rámcové dohody je poskytování služeb v oblasti výzkumu trhu pro Zadavatele.",
+        "url": "https://nen.nipez.cz/file?id=4778360395",
+        "kind": "scope"
+      },
+      {
+        "text": "Hodnotící kritérium: Váha: A) Nabídková cena 40% B) Kvalita vypracování zadaných úkolů 60%",
+        "url": "https://nen.nipez.cz/file?id=4778360395",
+        "kind": "evaluation"
+      }
+    ],
+    "complete": true,
+    "warnings": []
+  },
+  "nen:N006/26/V00033336": {
+    "reviewedAt": "2026-10-24T09:34:04.116Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4796251190",
+      "https://nen.nipez.cz/file?id=4796251212",
+      "https://nen.nipez.cz/file?id=4796251230"
+    ],
+    "method": "automatic-extraction",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Popis nabízených služeb Přílohou č. 2 smlouvy se stane podrobnější popis předmětu plnění, kde podrobněji specifikuje reklamní plochy a případně další parametry nabízeného reklamního a propagačního plnění v návaznosti na jednotlivé položky obsažené v kalkulačním modelu obsaženém v části 4 zadávací dokumentace, a to pro každou část veřejné zakázky samostatně.",
+    "facts": [
+      {
+        "text": "Popis nabízených služeb Přílohou č. 2 smlouvy se stane podrobnější popis předmětu plnění, kde podrobněji specifikuje reklamní plochy a případně další parametry nabízeného reklamního a propagačního plnění v návaznosti na jednotlivé položky obsažené v kalkulačním modelu obsaženém v části 4 zadávací dokumentace, a to pro každou část veřejné zakázky samostatně.",
+        "url": "https://nen.nipez.cz/file?id=4796251190",
+        "kind": "scope"
+      },
+      {
+        "text": "• 1. část – Propagace statutárního města Zlína prostřednictvím ledního hokeje: 12 100 000 Kč bez DPH • 2. část – Propagace statutárního města Zlína prostřednictvím fotbalu: 12 100 000 Kč bez DPH • 3. část – Propagace statutárního města Zlína prostřednictvím házené: 2 200 000 Kč bez DPH • 4. část – Propagace statutárního města Zlína prostřednictvím volejbalu: 1 452 000 Kč bez DPH Zbývající části veřejné zakázky v souhrnné předpokládané hodnotě 800 000 Kč bez DPH budou zadány samostatně postupy odpovídajícími předpokládané hodnotě jednotlivých částí, za podmínek § 18 odst. 3 ZZVZ.",
+        "url": "https://nen.nipez.cz/file?id=4796251190",
+        "kind": "price"
+      }
+    ],
+    "complete": true,
+    "warnings": []
+  },
+  "nen:N006/26/V00034098": {
+    "reviewedAt": "2026-10-24T09:34:04.116Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4796337415",
+      "https://nen.nipez.cz/file?id=4796337433",
+      "https://nen.nipez.cz/file?id=4796337439"
+    ],
+    "method": "automatic-extraction",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Výzvy k předmětné veřejné zakázce, tedy že v posledních 3 letech před zahájením výběrového řízení poskytl alespoň 2 významné služby, z nichž každá splňuje následující požadavky: Za významnou službu se považuje služba obdobného charakteru jako předmět plnění veřejné zakázky, jejímž předmětem bylo pravidelné poskytování monitoringu médií, zahrnující vyhledávání, výběr a třídění mediálních výstupů ve více typech médií (např. tisk, internetová média, rozhlas nebo televize), zpracování pravidelných mediálních přehledů a souvisejících mediálních analýz.",
+    "facts": [
+      {
+        "text": "Výzvy k předmětné veřejné zakázce, tedy že v posledních 3 letech před zahájením výběrového řízení poskytl alespoň 2 významné služby, z nichž každá splňuje následující požadavky: Za významnou službu se považuje služba obdobného charakteru jako předmět plnění veřejné zakázky, jejímž předmětem bylo pravidelné poskytování monitoringu médií, zahrnující vyhledávání, výběr a třídění mediálních výstupů ve více typech médií (např. tisk, internetová média, rozhlas nebo televize), zpracování pravidelných mediálních přehledů a souvisejících mediálních analýz.",
+        "url": "https://nen.nipez.cz/file?id=4796337433",
+        "kind": "scope"
+      },
+      {
+        "text": "Dosažený počet bodů kritéria B1 je získán po převážení vahou daného kritéria (20 %), která je uvedena ve sloupci Váha subkritéria v Tabulce hodnotících subkritérií v Kvalita nabízeného řešení, výsledkem tohoto vážení je počet vážených bodů.",
+        "url": "https://nen.nipez.cz/file?id=4796337415",
+        "kind": "evaluation"
+      },
+      {
+        "text": "Předpokládaná hodnota veřejné zakázky Předpokládaná hodnota veřejné zakázky činí 1 500 000,- Kč bez DPH (celková cena za tři roky), tedy 500 000 Kč bez DPH ročně.",
+        "url": "https://nen.nipez.cz/file?id=4796337415",
+        "kind": "price"
+      }
+    ],
+    "value": {
+      "amount": 1500000,
+      "currency": "CZK"
+    },
+    "valueSource": "https://nen.nipez.cz/file?id=4796337415",
+    "complete": true,
+    "warnings": []
+  },
+  "nen:N006/26/V00034249": {
+    "reviewedAt": "2026-10-24T09:34:04.116Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4795184699",
+      "https://nen.nipez.cz/file?id=4795184724"
+    ],
+    "method": "automatic-extraction",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Odběratel je oprávněn v průběhu plnění požadovat změnu parametrů, filtrů, sledovaných subjektů, témat, časových období a struktury těchto analytických výstupů, pokud jsou takové výstupy vytvořitelné v rámci standardních funkcionalit monitorovacího a analytického systému Dodavatele. zajištění online analytického dashboardu umožňujícího průběžné vyhodnocování monitorovaných mediálních výstupů a jejich vizualizaci, zahrnujícího zejména přehled vývoje počtu mediálních zmínek, analýzu sentimentu, podíl mediálního prostoru (Share of Voice), potenciální mediální zásah, přehled nejvýznamnějších médií, autorů a monitorovaných témat, časové trendy a další analytické přehledy dle požadavků Odběratele, včetně možnosti exportu dat minimálně ve formátech PDF, XLSX, CSV a další běžné.",
+    "facts": [
+      {
+        "text": "Odběratel je oprávněn v průběhu plnění požadovat změnu parametrů, filtrů, sledovaných subjektů, témat, časových období a struktury těchto analytických výstupů, pokud jsou takové výstupy vytvořitelné v rámci standardních funkcionalit monitorovacího a analytického systému Dodavatele. zajištění online analytického dashboardu umožňujícího průběžné vyhodnocování monitorovaných mediálních výstupů a jejich vizualizaci, zahrnujícího zejména přehled vývoje počtu mediálních zmínek, analýzu sentimentu, podíl mediálního prostoru (Share of Voice), potenciální mediální zásah, přehled nejvýznamnějších médií, autorů a monitorovaných témat, časové trendy a další analytické přehledy dle požadavků Odběratele, včetně možnosti exportu dat minimálně ve formátech PDF, XLSX, CSV a další běžné.",
+        "url": "https://nen.nipez.cz/file?id=4795184699",
+        "kind": "scope"
+      }
+    ],
+    "value": {
+      "amount": 475000,
+      "currency": "CZK"
+    },
+    "valueSource": "https://nen.nipez.cz/file?id=4795184724",
+    "complete": true,
+    "warnings": []
   }
 }

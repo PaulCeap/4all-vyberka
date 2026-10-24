@@ -1,5 +1,12 @@
 {
-  "updatedAt": "2026-10-24T08:57:21.033Z",
+  "updatedAt": "2026-10-24T09:34:04.116Z",
+  "counts": {
+    "pending": 11,
+    "resolved": 4,
+    "rejected": 51,
+    "expired": 3,
+    "needs-verification": 2
+  },
   "leads": [
     {
       "source": "poptavej",
@@ -22,11 +29,15 @@
       "originStatus": "unresolved",
       "firstSeenAt": "2026-10-14T09:35:49.633Z",
       "lastSeenAt": "2026-10-20T09:30:46.339Z",
-      "lastOriginCheckAt": "2026-10-24T08:57:21.033Z",
-      "originCheckAttempts": 19,
+      "lastOriginCheckAt": "2026-10-24T09:34:04.116Z",
+      "originCheckAttempts": 1,
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ115731/zajisteni-mezinarodni-staticke-konference",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 51,
+      "processingStatus": "pending",
+      "processingReason": "Čeká na dohledání oficiálního zadání."
     },
     {
       "source": "poptavky",
@@ -49,11 +60,15 @@
       "originStatus": "unresolved",
       "firstSeenAt": "2026-10-17T22:01:38.650Z",
       "lastSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastOriginCheckAt": null,
-      "originCheckAttempts": 0,
+      "lastOriginCheckAt": "2026-10-24T09:34:04.116Z",
+      "originCheckAttempts": 1,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2133605-zajisteni-zaverecne-konference",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 51,
+      "processingStatus": "pending",
+      "processingReason": "Čeká na dohledání oficiálního zadání."
     },
     {
       "source": "poptavky",
@@ -80,7 +95,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2131695-poptavka-laminat-ci-preklizka-uv-tisk-praha",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -107,7 +126,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2132441-dodavani-ceskych-casopisu-a-denniho-tisku",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -134,7 +157,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2132639-poptavam-papirove-tasky-s-uchem-500-1000-ks",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -161,7 +188,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2132419-dodavka-odbornych-casopisu-predplatne-na-rok-2027",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -188,7 +219,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2131439-poptavka-technologie-na-potisk-laminovanych-desek-otice",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -215,7 +250,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2130993-sada-publikaci-pro-rozvoj-op-jak-phd",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -242,7 +281,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2129927-poptavka-externi-marketingovy-manazer-praha",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 42,
+      "processingStatus": "needs-verification",
+      "processingReason": "Komerční poptávka: doplnit ověřeného zadavatele a původní zadání; agregátor je pouze tip."
     },
     {
       "source": "poptavky",
@@ -269,7 +312,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2130353-zhotoveni-sportovniho-osaceni-pro-reprezentaci-zlinskeho-kraje-na-hry-xii-zimni-olympiady-deti-a-mladeze-ceske-republiky-2027",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -296,7 +343,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2129733-poptavam-reklamni-agenturu-na-prodej-bytu-bez-realitky",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -323,7 +374,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2129183-poptavam-polep-automobilu",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -346,11 +401,15 @@
       "originStatus": "unresolved",
       "firstSeenAt": "2026-10-17T22:01:38.650Z",
       "lastSeenAt": "2026-10-19T10:03:31.222Z",
-      "lastOriginCheckAt": null,
-      "originCheckAttempts": 0,
+      "lastOriginCheckAt": "2026-10-24T09:34:04.116Z",
+      "originCheckAttempts": 1,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2128827-graficka-priprava-a-tisk-ostrovskeho-mesicniku-24-vydani",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 51,
+      "processingStatus": "pending",
+      "processingReason": "Čeká na dohledání oficiálního zadání."
     },
     {
       "source": "poptavky",
@@ -377,7 +436,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2128777-zpracovani-a-tisk-cyklomap",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -404,7 +467,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2128639-poptavam-polepeni-sklenenych-panelu-mlecnou-folii-pro-efekt-mlecneho-skla-6-ks",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -425,13 +492,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-17T22:01:38.650Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ996780/statisticka-rocenka-cr",
-      "originConfidence": 0
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -455,7 +523,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ123756/dodavka-reklamnich-predmetu-s-potiskem-laserovym-gravirovanim",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 4,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -476,13 +548,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-17T22:01:38.650Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
-      "lastOriginCheckAt": null,
-      "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ462672/zajisteni-zaverecne-konference",
-      "originConfidence": 0
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastOriginCheckAt": "2026-10-24T09:34:04.116Z",
+      "originCheckAttempts": 1,
+      "preliminaryScore": 51,
+      "processingStatus": "pending",
+      "processingReason": "Čeká na dohledání oficiálního zadání."
     },
     {
       "source": "poptavej",
@@ -506,7 +579,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ361671/dodavani-ceskych-casopisu-a-denniho-tisku",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -530,7 +607,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ559631/monitoring-medii-a-socialnich-siti",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 39,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -557,7 +638,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ656286/zpracovani-a-tisk-cyklomap-a-tisk-mapy-zakempuj",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -584,7 +669,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ228907/poskytovani-konferencnich-a-souvisejicich-sluzeb",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -608,7 +697,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ056964/mereni-prepravni-doby-zasilek",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -635,7 +728,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ559819/realizace-expozice",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 4,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -662,7 +759,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavej",
       "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ277748/zajisteni-dodavatele-reklamnich-predmetu-a-poskytovatele-tiskarskych-sluzeb",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 4,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -689,7 +790,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2134229-dodavka-reklamnich-predmetu-s-potiskem-laserovym-gravirovanim",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 5,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -716,7 +821,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2134013-statisticka-rocenka-cr-2026",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -736,14 +845,18 @@
       "procedureType": "Veřejná zakázka na služby",
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
-      "originStatus": "unresolved",
+      "originStatus": "resolved",
       "firstSeenAt": "2026-10-19T10:03:31.222Z",
       "lastSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastOriginCheckAt": null,
-      "originCheckAttempts": 0,
+      "lastOriginCheckAt": "2026-10-24T09:34:04.116Z",
+      "originCheckAttempts": 1,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2133791-vyzkumy-trhu",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "resolvedId": "nen:N006/26/V00031545",
+      "processingStatus": "resolved",
+      "processingReason": "Spojeno s ověřeným originálem."
     },
     {
       "source": "poptavky",
@@ -770,7 +883,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2135065-poptavam-vyrobu-a-montaz-reklamniho-banneru",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -797,7 +914,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2135409-poptavka-tisk-tricek-cca-200-ks-raspenava",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -818,13 +939,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-20T09:30:46.339Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ771060/dodavky-reklamnich-a-propagacnich-predmetu",
-      "originConfidence": 0
+      "preliminaryScore": 4,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -845,13 +967,14 @@
       "opportunityType": "commercial-demand",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2138125-poptavam-tisk-vstupenek-10000-ks",
-      "originConfidence": 0
+      "preliminaryScore": 42,
+      "processingStatus": "needs-verification",
+      "processingReason": "Komerční poptávka: doplnit ověřeného zadavatele a původní zadání; agregátor je pouze tip."
     },
     {
       "source": "poptavky",
@@ -872,13 +995,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2137381-dodavky-reklamnich-a-propagacnich-predmetu-20262027",
-      "originConfidence": 0
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -899,13 +1023,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2137265-tisk-programove-skladacky",
-      "originConfidence": 0
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -932,7 +1057,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2136595-poptavam-darkovy-balici-papir",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -959,7 +1088,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2136441-poptavka-design-koberec-litomerice",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -986,7 +1119,11 @@
       "originCheckAttempts": 0,
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2136371-poptavam-design-koberec",
-      "originConfidence": 0
+      "originConfidence": 0,
+      "processingVersion": "2026-10-24-2",
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -1007,13 +1144,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2137741-tisk-a-vazba-knihy-almanachy",
-      "originConfidence": 0
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -1034,13 +1172,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
-      "lastOriginCheckAt": null,
-      "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2137861-priprava-grafickych-materialu",
-      "originConfidence": 0
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastOriginCheckAt": "2026-10-24T09:34:04.116Z",
+      "originCheckAttempts": 1,
+      "preliminaryScore": 51,
+      "processingStatus": "pending",
+      "processingReason": "Čeká na dohledání oficiálního zadání."
     },
     {
       "source": "poptavky",
@@ -1061,13 +1200,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2137623-tiskarske-sluzby-v-letech-2027-2028",
-      "originConfidence": 0
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -1088,13 +1228,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
-      "lastOriginCheckAt": "2026-10-24T08:57:21.033Z",
-      "originCheckAttempts": 4,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2137617-reklama-a-propagace",
-      "originConfidence": 0
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastOriginCheckAt": "2026-10-24T09:34:04.116Z",
+      "originCheckAttempts": 1,
+      "preliminaryScore": 53,
+      "processingStatus": "pending",
+      "processingReason": "Čeká na dohledání oficiálního zadání."
     },
     {
       "source": "poptavej",
@@ -1115,13 +1256,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
-      "lastOriginCheckAt": "2026-10-24T08:57:21.033Z",
-      "originCheckAttempts": 4,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ010662/monitoring-medii-a-analyza-medialniho-obsahu",
-      "originConfidence": 0
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastOriginCheckAt": "2026-10-24T09:34:04.116Z",
+      "originCheckAttempts": 1,
+      "preliminaryScore": 51,
+      "processingStatus": "pending",
+      "processingReason": "Čeká na dohledání oficiálního zadání."
     },
     {
       "source": "poptavej",
@@ -1142,13 +1284,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ269321/tisk-programove-skladacky",
-      "originConfidence": 0
+      "preliminaryScore": 4,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -1166,13 +1309,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ477374/tiskarske-sluzby",
-      "originConfidence": 0
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -1193,13 +1337,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ903255/reklamni-predmety-drevo",
-      "originConfidence": 0
+      "preliminaryScore": 4,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -1220,13 +1365,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ256008/propagace-mesta-prostrednictvim-sportu",
-      "originConfidence": 0
+      "preliminaryScore": 30,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -1247,13 +1393,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ562551/setkani-vedeni-se-starosty-mest-a-obci",
-      "originConfidence": 0
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -1271,13 +1418,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
-      "lastOriginCheckAt": null,
-      "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ499072/priprava-grafickych-materialu-pro-potreby-prezentace",
-      "originConfidence": 0
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastOriginCheckAt": "2026-10-24T09:34:04.116Z",
+      "originCheckAttempts": 1,
+      "preliminaryScore": 51,
+      "processingStatus": "pending",
+      "processingReason": "Čeká na dohledání oficiálního zadání."
     },
     {
       "source": "poptavej",
@@ -1298,13 +1446,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-21T09:26:42.561Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ099012/reklamni-predmety-textil",
-      "originConfidence": 0
+      "preliminaryScore": 4,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -1325,13 +1474,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-22T09:29:46.460Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
-      "lastOriginCheckAt": "2026-10-24T08:57:21.033Z",
-      "originCheckAttempts": 3,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2139546-zajisteni-realizace-marketingove-strategie",
-      "originConfidence": 0
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastOriginCheckAt": "2026-10-24T09:34:04.116Z",
+      "originCheckAttempts": 1,
+      "preliminaryScore": 55,
+      "processingStatus": "pending",
+      "processingReason": "Čeká na dohledání oficiálního zadání."
     },
     {
       "source": "poptavky",
@@ -1352,13 +1502,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-22T09:29:46.460Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2139154-d5-reklamni-zarizeni-odstranovani-2026",
-      "originConfidence": 0
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -1379,13 +1530,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-22T09:29:46.460Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
-      "lastOriginCheckAt": null,
-      "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2139326-monitoring-medii-a-analyza-medialniho-obsahu",
-      "originConfidence": 0
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastOriginCheckAt": "2026-10-24T09:34:04.116Z",
+      "originCheckAttempts": 1,
+      "preliminaryScore": 51,
+      "processingStatus": "pending",
+      "processingReason": "Čeká na dohledání oficiálního zadání."
     },
     {
       "source": "poptavky",
@@ -1406,13 +1558,14 @@
       "opportunityType": "commercial-demand",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-22T09:29:46.460Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2138441-poptavam-vyrobu-papirovych-tacku-s-vlastnim-potiskem-pro-podavani-mini-koblizku",
-      "originConfidence": 0
+      "preliminaryScore": 21,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -1433,13 +1586,14 @@
       "opportunityType": "commercial-demand",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-23T09:25:34.534Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2140590-poptavka-tisk-sborniku-praha",
-      "originConfidence": 0
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -1460,13 +1614,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-23T09:25:34.534Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2139040-nakup-denniho-tisku-zahranicniho-tisku-a-casopisu",
-      "originConfidence": 0
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -1487,13 +1642,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-23T09:25:34.534Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2140374-nakup-pametni-kroniky",
-      "originConfidence": 0
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -1514,13 +1670,14 @@
       "opportunityType": "commercial-demand",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-23T09:25:34.534Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2140172-poptavam-vyrobu-reklamnich-materialu",
-      "originConfidence": 0
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -1541,13 +1698,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-23T09:25:34.534Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2140096-propagace-statutarniho-mesta",
-      "originConfidence": 0
+      "preliminaryScore": 30,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -1568,13 +1726,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-23T09:25:34.534Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ325989/tisk-a-distribuce-periodika-zpravodaje",
-      "originConfidence": 0
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -1595,13 +1754,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-23T09:25:34.534Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ498427/tisk-a-vazba-knihy",
-      "originConfidence": 0
+      "preliminaryScore": 4,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -1619,13 +1779,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-23T09:25:34.534Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
-      "lastOriginCheckAt": "2026-10-24T08:57:21.033Z",
-      "originCheckAttempts": 2,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ805917/turisticke-informacni-centrum-vybaveni",
-      "originConfidence": 0
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastOriginCheckAt": "2026-10-24T09:34:04.116Z",
+      "originCheckAttempts": 1,
+      "preliminaryScore": 57,
+      "processingStatus": "pending",
+      "processingReason": "Čeká na dohledání oficiálního zadání."
     },
     {
       "source": "poptavej",
@@ -1643,13 +1804,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-23T09:25:34.534Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ827501/dodavka-kancelarskych-potreb-a-reklamnich-predmetu",
-      "originConfidence": 0
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -1667,13 +1829,14 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-23T09:25:34.534Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ481348/nakup-pametni-kroniky",
-      "originConfidence": 0
+      "preliminaryScore": 4,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -1694,13 +1857,14 @@
       "opportunityType": "commercial-demand",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-24T08:57:21.033Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2141440-poptavka-dodani-textilu-s-potiskem-loga-praha",
-      "originConfidence": 0
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -1721,13 +1885,13 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
-      "firstSeenAt": "2026-10-24T08:57:21.033Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "processingVersion": "2026-10-24-2",
+      "firstSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2137247-tisk-informacniho-zpravodaje",
-      "originConfidence": 0
+      "processingStatus": "expired",
+      "processingReason": "Lhůta již uplynula."
     },
     {
       "source": "poptavej",
@@ -1748,13 +1912,13 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
-      "firstSeenAt": "2026-10-24T08:57:21.033Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "processingVersion": "2026-10-24-2",
+      "firstSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ722862/dodavky-na-propagaci",
-      "originConfidence": 0
+      "processingStatus": "expired",
+      "processingReason": "Lhůta již uplynula."
     },
     {
       "source": "poptavej",
@@ -1775,13 +1939,13 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
-      "firstSeenAt": "2026-10-24T08:57:21.033Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "processingVersion": "2026-10-24-2",
+      "firstSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ395390/realizace-expozice-tic-c-p-6-etapa-1",
-      "originConfidence": 0
+      "processingStatus": "expired",
+      "processingReason": "Lhůta již uplynula."
     },
     {
       "source": "poptavej",
@@ -1802,13 +1966,98 @@
       "opportunityType": "public-tender",
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-10-24T08:57:21.033Z",
-      "lastSeenAt": "2026-10-24T08:57:21.033Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ951295/zajisteni-tisku-zdravotne-vychovnych-materialu",
-      "originConfidence": 0
+      "preliminaryScore": 9,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
+    },
+    {
+      "source": "poptavky",
+      "sourceId": "2139342",
+      "url": "https://www.poptavky.cz/poptavka/2139342-propagace-statutarniho-mesta-prostrednictvim-sportu-na-obdobi-roku-2027",
+      "title": "Propagace statutárního města prostřednictvím sportu na období roku 2027",
+      "buyer": "Zadavatel z Poptávky.cz",
+      "summary": "Podrobný popis: - předmětem veřejné zakázky je propagace statutárního města ve spojení s jednotlivými odvětvími sportu - více informací u zadavatele Lokalita: - Zlín Termín pro podání nabídek: - 19. 11. 2026 10:00",
+      "region": "Zlín",
+      "publishedAt": "2026-10-22T06:19:00.000Z",
+      "deadline": "2026-11-19T09:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": {
+        "amount": 3000000,
+        "currency": "CZK"
+      },
+      "procedureType": "Veřejná zakázka na služby",
+      "opportunityType": "public-tender",
+      "candidateOriginUrls": [],
+      "originStatus": "resolved",
+      "processingVersion": "2026-10-24-2",
+      "firstSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastOriginCheckAt": null,
+      "originCheckAttempts": 0,
+      "resolvedId": "nen:N006/26/V00033336",
+      "processingStatus": "resolved",
+      "processingReason": "Spojeno s ověřeným originálem."
+    },
+    {
+      "source": "poptavky",
+      "sourceId": "2137655",
+      "url": "https://www.poptavky.cz/poptavka/2137655-monitoring-medii",
+      "title": "Monitoring médií",
+      "buyer": "Zadavatel z Poptávky.cz",
+      "summary": "Podrobný popis: - předmětem veřejné zakázky jsou služby spočívající v monitoringu médií, tj. poskytování denního monitoringu vnitrostátních tištěných a elektronických médií včetně audio a audiovizuálních médií, sociálních sítí, analýzy, benchmarking a další služby Lokalita: - Hlavní město Praha Termín pro podání nabídek: - 04. 11. 2026 09:00",
+      "region": "Hlavní město Praha",
+      "publishedAt": "2026-10-21T06:53:00.000Z",
+      "deadline": "2026-11-04T08:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": {
+        "amount": 600000,
+        "currency": "CZK"
+      },
+      "procedureType": "Veřejná zakázka na služby",
+      "opportunityType": "public-tender",
+      "candidateOriginUrls": [],
+      "originStatus": "resolved",
+      "processingVersion": "2026-10-24-2",
+      "firstSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastOriginCheckAt": null,
+      "originCheckAttempts": 0,
+      "resolvedId": "nen:N006/26/V00034249",
+      "processingStatus": "resolved",
+      "processingReason": "Spojeno s ověřeným originálem."
+    },
+    {
+      "source": "poptavej",
+      "sourceId": "VZ345419",
+      "url": "https://www.poptavej.cz/verejna-zakazka/VZ345419/produkcni-a-vizualni-agentura",
+      "title": "Produkční a vizuální agentura",
+      "buyer": "Zadavatel z Poptávej.cz",
+      "summary": "Předmět plnění: - poskytování reklamních, kreativních, konzultačních a grafických služeb - příprava a realizace kampaní určených pro veškeré marketingové aktivity na podporu produktů a image zadavatele - doprava dodavatele na různá místa plnění - tvorba vizuálního obsahu - tvorba podcastů (příprava scénářů, rešerše, moderování, technická realizace, střih, postprodukce, zveřejnění) - produkce veřejných a odborných akcí (organizace seminářů, workshopů, prezentací, diskusí, Dnů otevřených dveří, konferencí, organizační a technická podpora těchto akcí - podpora výjezdních informačních aktivit (mobilní expozice, akce v regionech) - Marketingové služby - Služby v oblasti grafického designu - Výroba filmů a videa a související služby - další specifikace v příloze Hodnoticí kritéria: - celková nabídková cena za modelovou cenovou nabídku - 55 % - kvalita zpracování návrhu podcastu - 45 % Lokalita: - celá Česká republika Termín: - na dobu 48 kalendářních měsíců od okamžiku nabytí účinnosti dohody",
+      "region": "celá Česká republika",
+      "publishedAt": "2026-10-19T10:00:00.000Z",
+      "deadline": "2026-11-18T22:59:00.000Z",
+      "deadlineTimeKnown": false,
+      "value": {
+        "amount": 9116000,
+        "currency": "CZK"
+      },
+      "procedureType": "Zakázka na služby",
+      "opportunityType": "public-tender",
+      "candidateOriginUrls": [],
+      "originStatus": "resolved",
+      "processingVersion": "2026-10-24-2",
+      "firstSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastOriginCheckAt": null,
+      "originCheckAttempts": 0,
+      "resolvedId": "nen:N006/26/V00033172",
+      "processingStatus": "resolved",
+      "processingReason": "Spojeno s ověřeným originálem."
     }
   ]
 }
