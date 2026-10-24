@@ -1,15 +1,9 @@
 {
-  "updatedAt": "2026-10-23T09:25:34.534Z",
-  "reviewedCount": 2,
-  "pendingCount": 4,
-  "failedCount": 3,
-  "sourceErrors": [
-    {
-      "id": "nen:N006/26/V00032165",
-      "title": "Dodavatel audiovizuálního obsahu účasti ČR na Mezinárodní specializované výstavě EXPO 2027, Bělehrad",
-      "error": "NEN odpověděl 503."
-    }
-  ],
+  "updatedAt": "2026-10-24T08:57:21.033Z",
+  "reviewedCount": 1,
+  "pendingCount": 3,
+  "failedCount": 2,
+  "sourceErrors": [],
   "tenders": [
     {
       "id": "official-profile:P26V00000072",
@@ -70,13 +64,6 @@
       ],
       "status": "failed",
       "error": "1 z 3 podkladů se nepodařilo přečíst: Archiv neobsahuje čitelné věcné PDF nebo DOCX."
-    },
-    {
-      "id": "nen:N006/26/V00032165",
-      "title": "Dodavatel audiovizuálního obsahu účasti ČR na Mezinárodní specializované výstavě EXPO 2027, Bělehrad",
-      "documents": [],
-      "status": "source-error",
-      "error": "NEN odpověděl 503."
     }
   ]
 }

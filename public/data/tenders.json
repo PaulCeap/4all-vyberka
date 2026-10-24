@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T09:25:34.534Z",
+  "generatedAt": "2026-10-24T08:57:21.033Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -8,7 +8,7 @@
   },
   "stats": {
     "total": 7,
-    "newThisRun": 1,
+    "newThisRun": 0,
     "strong": 0,
     "closingSoon": 0,
     "unresolvedOrigin": 0,
@@ -18,32 +18,32 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 149
+      "count": 61
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 69
+      "count": 36
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 71
+      "count": 79
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 521
+      "count": 438
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 63
+      "count": 65
     },
     {
       "id": "proebiz",
       "ok": true,
-      "count": 36
+      "count": 37
     },
     {
       "id": "media-signals",
@@ -88,7 +88,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-19T10:03:31.222Z",
-      "lastSeenAt": "2026-10-23T09:25:34.534Z",
+      "lastSeenAt": "2026-10-24T08:57:21.033Z",
       "status": "open",
       "fingerprint": "cf3c66cb12610ef963dd",
       "relevance": {
@@ -228,7 +228,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-21T15:08:39.037Z",
-      "lastSeenAt": "2026-10-23T09:25:34.534Z",
+      "lastSeenAt": "2026-10-24T08:57:21.033Z",
       "status": "open",
       "fingerprint": "a8ba347cd0340c4c022f",
       "relevance": {
@@ -259,7 +259,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 10
+        "deadlineDays": 9
       }
     },
     {
@@ -356,7 +356,7 @@
       "procedureType": "supplies, services, supplies, services, services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-22T09:29:46.460Z",
-      "lastSeenAt": "2026-10-23T09:25:34.534Z",
+      "lastSeenAt": "2026-10-24T08:57:21.033Z",
       "status": "open",
       "fingerprint": "1e6603be0d57f34ad045",
       "relevance": {
@@ -402,7 +402,7 @@
           "url": "https://www.e-zakazky.cz/stazenisouboru/e643955b-a247-43d0-8e5c-6a381f39630c"
         }
       ],
-      "factsReviewedAt": "2026-10-23T09:25:34.534Z",
+      "factsReviewedAt": "2026-10-24T08:57:21.033Z",
       "cpv": [
         "79340000"
       ],
@@ -432,16 +432,16 @@
       }
     },
     {
-      "id": "ted:736640-2026",
-      "source": "ted",
-      "sourceId": "736640-2026",
-      "url": "https://ted.europa.eu/cs/notice/-/detail/736640-2026",
+      "id": "zakazky-gov:RVZ2600294622",
+      "source": "zakazky-gov",
+      "sourceId": "RVZ2600294622",
+      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600294622",
       "title": "Video bronchoskop ultrazvukový",
       "buyer": "Všeobecná fakultní nemocnice v Praze",
       "summary": "Předmětem plnění veřejné zakázky je dodávka ultrazvukového video bronchoskopu pro Všeobecnou fakultní nemocnici v Praze. Předmět plnění veřejné zakázky je vymezen i závazným návrhem smlouvy, který je přílohou č. 2 zadávacích podmínek.",
       "country": "CZ",
       "region": "Česko",
-      "publishedAt": null,
+      "publishedAt": "2026-10-23T12:35:51.856Z",
       "deadline": "2026-11-23T10:00:00.000Z",
       "deadlineTimeKnown": true,
       "value": {
@@ -454,10 +454,10 @@
       "cpv": [
         "33168100"
       ],
-      "procedureType": "supplies, supplies",
+      "procedureType": "VEREJNA ZAKAZKA",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-23T09:25:34.534Z",
-      "lastSeenAt": "2026-10-23T09:25:34.534Z",
+      "lastSeenAt": "2026-10-24T08:57:21.033Z",
       "status": "open",
       "fingerprint": "3002dbd1a1a220374d16",
       "relevance": {
@@ -476,7 +476,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 32
+        "deadlineDays": 31
       }
     }
   ]
