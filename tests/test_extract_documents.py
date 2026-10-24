@@ -21,6 +21,20 @@ def zipped(files):
 
 
 class ExtractionTests(unittest.TestCase):
+    def test_xlsx_shared_inline_numeric_and_cached_formula(self):
+        data = zipped({
+            'xl/workbook.xml': '<workbook/>',
+            'xl/sharedStrings.xml': '<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><si><t>Výroba videí</t></si></sst>',
+            'xl/worksheets/sheet1.xml': '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetData><row>'
+                '<c t="s"><v>0</v></c><c t="inlineStr"><is><t>Cena</t></is></c><c><v>200000</v></c>'
+                '<c><f>SUM(C1)</f><v>200000</v></c></row></sheetData></worksheet>',
+        })
+        self.assertEqual(extractor.extract(data), 'Výroba videí | Cena | 200000 | 200000')
+
+    def test_login_html_is_not_treated_as_document(self):
+        with self.assertRaisesRegex(ValueError, 'webovou stránku'):
+            extractor.extract(b'<!doctype html><html>Login</html>')
+
     def test_docx_and_nested_zip_preserve_document_text(self):
         docx = zipped({
             "word/document.xml": (

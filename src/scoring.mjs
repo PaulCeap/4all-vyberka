@@ -71,6 +71,10 @@ export function scoreTender(tender, now = new Date(), { preliminary = false } = 
     score += 12;
     reasons.push(tender.factsReviewedAt ? "obor potvrzuje ověřený výtah zadání" : "obor potvrzuje popis zakázky");
   }
+
+  // Discovery needs a broader gate than publication: short notices often
+  // contain a service only in their title, before the detail is fetched.
+  if (preliminary && scope.eligible) score = Math.max(score, 42);
   if (searchable(tender.procedureType).includes("sluzb")) {
     score += 5;
     reasons.push("jde o zakázku na služby");
@@ -104,6 +108,7 @@ export function scoreTender(tender, now = new Date(), { preliminary = false } = 
   if (!preliminary && !hasContentMatch) score = Math.min(score, 39);
   // Skóre řadí zakázky až poté, co jejich předmět spadá do služeb 4ALL.
   if (!preliminary && !scope.eligible) score = Math.min(score, 39);
+  if (scope.excluded) score = Math.min(score, 39);
 
   score = Math.max(0, Math.min(100, Math.round(score)));
   const categories = categoryScores.slice(0, 3).map(({ id, label, score: categoryScore }) => ({

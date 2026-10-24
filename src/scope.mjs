@@ -13,6 +13,7 @@ const SERVICES = [
       /\b(?:zajisten\w*|organizac\w*|realizac\w*)\s+eventov\w* akc\w*\b/,
       new RegExp(String.raw`\b(?:technick\w* a organizacn\w*|organizacn\w* a technick\w*) (?:zajisten\w*|podpor\w*)\b[^.!?;]{0,65}\b${eventNoun}\b`),
       new RegExp(String.raw`\b(?:poradan\w*|organizacn\w* zajisten\w*)\s+${eventNoun}\b`),
+      /\b(?:zajisten\w*|organizac\w*|produkce)\s+(?:mezinarodn\w*\s+|zaverecn\w*\s+|odborn\w*\s+)?konferenc(?:e|i|im|ich|emi)\b/,
     ],
   },
   {
@@ -21,18 +22,22 @@ const SERVICES = [
       /\b(?:public relations|pr sluzb\w*|pr agentur\w*|vztah\w* s medi\w*|media relations|medialn\w* komunikac\w*|medialn\w* monitoring\w*|krizov\w* komunikac\w*)\b/,
       /\b(?:komunikacn\w*)\s+(?:kampan\w*|strateg\w*|sluzb\w*|aktiv\w*|audit\w*)\b/,
       /\b(?:tiskov\w* zpr\w*)\b/,
+      /\bmonitoring\w*\s+(?:medi\w*|tisk\w*|socialn\w* sit\w*)\b/,
+      /\banalyz\w*\s+medialn\w*\s+obsah\w*\b/,
     ],
   },
   {
     id: "content",
     patterns: [
       /\b(?:sprav\w* socialn\w* sit\w*|sprav\w* social media|tvorb\w* obsahu|tvorb\w* text\w*|tvorb\w* newsletter\w*|obsahov\w* strateg\w*|copywriting|grafick\w* prac\w*|grafick\w* sluzb\w*)\b/,
+      /\b(?:grafick\w* priprav\w*|priprav\w* grafick\w* material\w*|grafick\w* zpracovan\w*)\b/,
     ],
   },
   {
     id: "strategy",
     patterns: [
       /\b(?:marketingov\w* vyzkum\w*|analyz\w* trhu|medialn\w* analyz\w*|evaluac\w* kampan\w*|vyzkum\w* verejn\w* minen\w*)\b/,
+      /\b(?:vyzkum\w*|pruzkum\w*) trhu\b/,
     ],
   },
   {
@@ -70,7 +75,10 @@ export function assessScope(tender) {
   const title = searchable(tender.title);
   const content = searchable(`${tender.summary || ""} ${tender.factsReviewedAt
     ? (tender.verifiedFacts || []).map((fact) => fact.text).join(" ") : ""}`);
-  const excluded = matches(OUTSIDE, `${title} ${content}`);
+  const device = /\b(?:bronchoskop|endoskop|gastroskop|kolonoskop)\w*\b/.test(title) ||
+    /\b(?:pc|pocitac\w*|notebook\w*|videotechnik\w*)\b/.test(title) &&
+    /dodavk|nakup|porizen|^(?:pc|pocitac\w*|notebook\w*|videotechnik\w*)\b/.test(title);
+  const excluded = device || matches(OUTSIDE, `${title} ${content}`);
   const titleAreas = SERVICES.filter((service) => matches(service.patterns, title)).map((service) => service.id);
   const contentAreas = SERVICES.filter((service) => matches(service.patterns, content)).map((service) => service.id);
   if (matches(PRODUCTION, title)) titleAreas.push("content");

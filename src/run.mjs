@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { buildDataset } from "./dataset.mjs";
 import { pendingDocumentReviews } from "./document-review.mjs";
 import { isCurrentReviewCandidate, reviewPendingDocuments } from "./automatic-review.mjs";
-import { attachEzakazkyDocuments, attachNenDocuments, findOriginalRows, preferPrimaryProfiles, refreshSavedNenProfiles, refreshSavedProfiles } from "./origin-discovery.mjs";
+import { attachEzakazkyDocuments, attachNenDocuments, findOriginalRows, preferPrimaryProfiles, refreshSavedNenProfiles, refreshSavedProfiles, fetchOriginalDetail } from "./origin-discovery.mjs";
 import { isAggregatorSource, resolveAggregatorLeads } from "./origin-resolver.mjs";
 import { fetchManual } from "./sources/manual.mjs";
 import { fetchNen, fetchNenDetail } from "./sources/nen.mjs";
@@ -15,11 +15,12 @@ import { fetchTed, fetchTedNotice } from "./sources/ted.mjs";
 import { fetchTenderArena } from "./sources/tenderarena.mjs";
 import { fetchProebiz, fetchProebizDetail } from "./sources/proebiz.mjs";
 import { fetchZakazkyGov } from "./sources/zakazky-gov.mjs";
-import { attachVerifiedNotes } from "./verified-notes.mjs";
+import { attachVerifiedNotes, currentNotes } from "./verified-notes.mjs";
 import { publicDataset } from "./publication.mjs";
 import { normalizeTender } from "./model.mjs";
 import { scoreTender } from "./scoring.mjs";
 import { PROJECT } from "./config.mjs";
+import { PROCESSING_VERSION, dueReviews, buildReviewState, classifyLead, radarDataset, processingOverview } from "./processing-state.mjs";
 
 const OUTPUT = "public/data/tenders.json";
 const STATE = "data/tender-state.json";
@@ -48,6 +49,7 @@ async function runCollectors(collectors) {
       ok: result.status === "fulfilled",
       count: result.status === "fulfilled" ? result.value.length : 0,
       error: result.status === "rejected" ? result.reason.message : undefined,
+      warnings: result.status === "fulfilled" ? result.value.warnings || [] : [],
     })),
     rows: settled.flatMap((result) => result.status === "fulfilled" ? result.value : []),
   };
@@ -80,6 +82,7 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
     runCollectors(radarCollectors),
   ]);
   const sources = [...official.sources, ...supporting.sources, ...radar.sources];
+  console.log(`Sběr zdrojů dokončen: ${sources.map((s) => `${s.id} ${s.count}`).join(", ")}.`);
   if (!official.rows.some(Boolean)) {
     throw new Error(`Oficiální zdroje nevrátily žádnou zakázku: ${official.sources.map((source) => `${source.id}: ${source.error || `${source.count} položek`}`).join("; ")}`);
   }
@@ -101,21 +104,23 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
   }
   const savedNen = previous.tenders.filter((row) => row.source === "nen" && !currentIds.has(row.id));
   const refreshedNen = await refreshSavedNenProfiles(savedNen);
-  const reviewNen = (previousReview.tenders || []).filter((item) => {
-    if (!item.id?.startsWith("nen:") || currentIds.has(item.id) || previous.tenders.some((row) => row.id === item.id)) return false;
-    const year = Number(item.id.match(/^nen:N\d{3}\/(\d{2})\//)?.[1]);
-    return year >= now.getUTCFullYear() % 100;
-  }).slice(0, 10);
-  const recoveredReviews = await Promise.allSettled(reviewNen.map((item) => {
-    const url = `https://nen.nipez.cz/verejne-zakazky/detail-zakazky/${item.id.slice(4).replaceAll("/", "-")}`;
-    return fetchNenDetail(url);
+  const recoveryItems = (previousReview.tenders || []).filter((item) => {
+    if (currentIds.has(item.id) || previous.tenders.some((row) => row.id === item.id)) return false;
+    if (item.deadline && new Date(item.deadline) <= now) return false;
+    const year = Number(item.id?.match(/^nen:N\d+\/(\d{2})\//)?.[1]);
+    return item.url || year >= now.getUTCFullYear() % 100;
+  }).sort((a, b) => String(a.lastAttemptAt || "").localeCompare(String(b.lastAttemptAt || ""))).slice(0, 20);
+  const recoveredReviews = await Promise.allSettled(recoveryItems.map((item) => {
+    const url = item.url || `https://nen.nipez.cz/verejne-zakazky/detail-zakazky/${item.id.slice(4).replaceAll("/", "-")}`;
+    return fetchOriginalDetail(url);
   }));
   const reviewSourceErrors = [];
   const recoveredNen = recoveredReviews.flatMap((result, index) => {
-    if (result.status === "fulfilled" && result.value) return [result.value];
-    reviewSourceErrors.push({ id: reviewNen[index].id, title: reviewNen[index].title,
+    const old = recoveryItems[index];
+    if (result.status === "fulfilled" && result.value) return [{ ...result.value, firstSeenAt: old.firstSeenAt }];
+    reviewSourceErrors.push({ id: old.id, title: old.title,
       error: result.status === "rejected" ? result.reason.message : "Původní detail se nenačetl." });
-    return [];
+    return old.source && old.url ? [old] : [];
   });
   const savedProfiles = previous.tenders.filter((row) => row.source === "official-profile" &&
     /e-zakazky\.cz\/profil-zadavatele\//i.test(row.url || "") && !currentIds.has(row.id));
@@ -127,7 +132,7 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
   });
 
   const previousUnresolved = [
-    ...previousRadar.leads,
+    ...previousRadar.leads.filter((lead) => lead.originStatus !== "resolved"),
     ...previous.tenders.filter((tender) => isAggregatorSource(tender.source) && tender.originStatus !== "resolved"),
   ].filter((lead) => {
     if (lead.deadline && new Date(lead.deadline) <= now) return false;
@@ -137,17 +142,25 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
   for (const lead of previousUnresolved) leadMap.set(`${lead.source}:${lead.sourceId}`, lead);
   for (const lead of radar.rows.filter(Boolean)) {
     const key = `${lead.source}:${lead.sourceId}`;
+    const old = leadMap.get(key);
+    const unchanged = old && old.processingVersion === PROCESSING_VERSION &&
+      old.title === lead.title && old.summary === lead.summary && old.deadline === lead.deadline;
     leadMap.set(key, {
       ...lead,
+      processingVersion: PROCESSING_VERSION,
       firstSeenAt: leadMap.get(key)?.firstSeenAt || now.toISOString(),
       lastSeenAt: now.toISOString(),
       lastOriginCheckAt: leadMap.get(key)?.lastOriginCheckAt || null,
-      originCheckAttempts: leadMap.get(key)?.originCheckAttempts || 0,
+      originCheckAttempts: unchanged ? old.originCheckAttempts || 0 : 0,
     });
   }
   const leads = [...leadMap.values()];
+  for (const lead of leads) if (lead.processingVersion !== PROCESSING_VERSION) {
+    lead.originCheckAttempts = 0;
+    lead.processingVersion = PROCESSING_VERSION;
+  }
   const firstPass = resolveAggregatorLeads(leads, primary.rows);
-  const unmatched = firstPass.rows.filter((row) => row.originStatus === "unresolved");
+  const unmatched = firstPass.rows.filter((row) => row.originStatus === "unresolved" && classifyLead(row, now).processingStatus === "pending");
   const checkedIds = new Set();
   const originalRows = await findOriginalRows(unmatched, primary.rows, {
     now, onChecked: (lead) => checkedIds.add(`${lead.source}:${lead.sourceId}`),
@@ -163,13 +176,14 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
   const poptavejSource = sources.find((source) => source.id === "poptavej");
   if (poptavejSource) poptavejSource.resolved = resolution.rows.filter((row) => row.discoverySource === "poptavej" && row.originStatus === "resolved").length;
 
-  const pendingLeads = resolution.rows.filter((row) => row.originStatus === "unresolved")
+  const pendingLeads = leads.map((lead, index) => resolution.rows[index]?.originStatus === "resolved"
+    ? { ...lead, originStatus: "resolved", resolvedId: `${resolution.rows[index].source}:${resolution.rows[index].sourceId}` } : lead)
     .map((row) => checkedIds.has(`${row.source}:${row.sourceId}`) ? {
       ...row, lastOriginCheckAt: now.toISOString(),
       originCheckAttempts: (row.originCheckAttempts || 0) + 1,
     } : row);
   for (const source of sources.filter((item) => isAggregatorSource(item.id))) {
-    source.pending = pendingLeads.filter((lead) => lead.discoverySource === source.id).length;
+    source.pending = pendingLeads.filter((lead) => lead.source === source.id && classifyLead(lead, now).processingStatus === "pending").length;
   }
   return {
     rows: [...officialRows, ...supporting.rows,
@@ -202,48 +216,37 @@ if (!fixturesMode) {
       const candidate = normalizeTender(row, now);
       if (!isCurrentReviewCandidate(candidate, now, PROJECT.historyDays, PROJECT.openNoDeadlineDays)) continue;
       if (scoreTender(candidate, now, { preliminary: true }).score < PROJECT.minimumScore) continue;
-      if ((candidate.documents?.length || 0) > (candidates.get(candidate.id)?.documents?.length || 0)) {
+      if (!candidates.has(candidate.id) || (candidate.documents?.length || 0) > (candidates.get(candidate.id)?.documents?.length || 0)) {
         candidates.set(candidate.id, candidate);
       }
     } catch { /* neúplný kandidát nemá podklady k posouzení */ }
   }
-  const pending = pendingDocumentReviews([...candidates.values()], { ...automaticNotes, ...manualNotes });
-  reviewResult = await reviewPendingDocuments(pending, [...candidates.values()], now);
+  const pending = pendingDocumentReviews([...candidates.values()], currentNotes([...candidates.values()], automaticNotes, manualNotes));
+  const due = dueReviews(pending, [...candidates.values()], previousReview, now);
+  reviewResult = await reviewPendingDocuments(due, [...candidates.values()], now);
   const updatedNotes = { ...automaticNotes, ...reviewResult.notes };
-  enrichedRows = attachVerifiedNotes(rows, updatedNotes);
+  enrichedRows = attachVerifiedNotes(rows, currentNotes(rows, updatedNotes, manualNotes));
   await writeFile(AUTOMATIC_NOTES, `${JSON.stringify(updatedNotes, null, 2)}\n`);
-  const remaining = pendingDocumentReviews([...candidates.values()], { ...updatedNotes, ...manualNotes });
-  const results = new Map(reviewResult.results.map((item) => [item.id, item]));
-  const remainingById = new Map(remaining.map((item) => [item.id, { ...item,
-    status: results.get(item.id)?.status || "pending", error: results.get(item.id)?.error || null }]));
-  const sourceErrors = [...new Map([...reviewSourceErrors, ...rows.filter((row) => row.documentsFetchError).flatMap((row) => {
+  const remaining = pendingDocumentReviews([...candidates.values()], currentNotes([...candidates.values()], updatedNotes, manualNotes));
+  const sourceErrors = [...new Map([...reviewSourceErrors, ...rows.filter((row) => row.documentsFetchError || row.profileFetchError).flatMap((row) => {
     try {
       return isCurrentReviewCandidate(normalizeTender(row, now), now, PROJECT.historyDays, PROJECT.openNoDeadlineDays)
-        ? [{ id: `${row.source}:${row.sourceId}`, title: row.title, error: row.documentsFetchError }] : [];
+        ? [{ id: `${row.source}:${row.sourceId}`, title: row.title, error: row.documentsFetchError || row.profileFetchError }] : [];
     } catch { return []; }
   })].map((item) => [item.id, item])).values()];
-  for (const error of sourceErrors) if (!remainingById.has(error.id)) {
-    const previousItem = (previousReview.tenders || []).find((item) => item.id === error.id);
-    remainingById.set(error.id, { ...previousItem, id: error.id, title: error.title,
-      documents: previousItem?.documents || [], status: "source-error", error: error.error });
-  }
-  reviewQueue = {
-    updatedAt: now.toISOString(),
-    reviewedCount: reviewResult.results.filter((item) => item.status === "reviewed").length,
-    pendingCount: remainingById.size,
-    failedCount: reviewResult.results.filter((item) => item.status === "failed").length + sourceErrors.length,
-    sourceErrors,
-    tenders: [...remainingById.values()],
-  };
+  reviewQueue = buildReviewState({ candidates: [...candidates.values()], remaining,
+    results: reviewResult.results, sourceErrors, previous: previousReview, now });
 }
 const currentPrevious = { ...previous, tenders: previous.tenders.filter((row) => !supersededIds.has(row.id)) };
 const { dataset, invalidRows } = buildDataset({ rows: enrichedRows, sources, previous: currentPrevious, now, fixturesMode });
+const radarState = radarDataset(pendingLeads, previousRadar, now);
+dataset.processing = processingOverview(reviewQueue, radarState, sources, dataset.tenders, now);
 await mkdir("public/data", { recursive: true });
 await writeFile(OUTPUT, `${JSON.stringify(publicDataset(dataset), null, 2)}\n`);
 if (!fixturesMode) {
   await mkdir("data", { recursive: true });
   await writeFile(STATE, `${JSON.stringify(dataset, null, 2)}\n`);
-  await writeFile(RADAR_STATE, `${JSON.stringify({ updatedAt: now.toISOString(), leads: pendingLeads }, null, 2)}\n`);
+  await writeFile(RADAR_STATE, `${JSON.stringify(radarState, null, 2)}\n`);
   await writeFile(REVIEW_QUEUE, `${JSON.stringify(reviewQueue, null, 2)}\n`);
 }
 console.log(`Uloženo ${dataset.tenders.length} relevantních zakázek (${dataset.stats.newThisRun} nových).`);

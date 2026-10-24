@@ -85,6 +85,30 @@ export function matchConfidence(lead, official) {
   return Math.min(100, Math.round(score));
 }
 
+// A secondary official notice may contain an older deadline. Accept the
+// current primary profile only with an exact named buyer/title and a profile
+// link from that notice. Aggregator matching remains deliberately stricter.
+export function primaryMatchConfidence(notice, primary) {
+  const confidence = matchConfidence(notice, primary);
+  if (confidence >= 72) return confidence;
+  if (!["ted", "zakazky-gov"].includes(notice.source)) return confidence;
+  if (!searchable(notice.buyer) || /^(neuveden|zadavatel z)/.test(searchable(notice.buyer))) return 0;
+  if (searchable(notice.buyer) !== searchable(primary.buyer) || searchable(notice.title) !== searchable(primary.title)) return 0;
+  if (words(notice.title).size < 4) return 0;
+  const linked = (notice.candidateProfileUrls || []).some((url) => {
+    try {
+      const profile = new URL(url), detail = new URL(primary.url);
+      // E-zakazky publishes both /Profil-Zadavatele and /profil-zadavatele.
+      const path = (u) => /(^|\.)e-zakazky\.cz$/.test(u.hostname) ? u.pathname.toLowerCase() : u.pathname;
+      const prefix = path(profile).replace(/\/$/, "");
+      return profile.origin === detail.origin && prefix.length > 1 &&
+        (path(detail) === prefix || path(detail).startsWith(`${prefix}/`));
+    } catch { return false; }
+  });
+  const distance = Math.abs(new Date(notice.deadline) - new Date(primary.deadline));
+  return linked && distance <= 90 * 86400_000 ? 96 : 0;
+}
+
 export function resolveAggregatorLeads(leads, officialRows) {
   const resolved = [];
   const matchedKeys = new Set();

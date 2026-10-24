@@ -57,3 +57,35 @@ První klíč je `source + sourceId`. Druhý, mezizdrojový klíč je SHA-256 fi
 - LLM druhý průchod nad zadávací dokumentací až po levném pravidlovém filtru,
 - sběr z placeného zdroje přes nový adaptér v `src/sources/`,
 - zpětná vazba z vyhraných/prohraných příležitostí pro kalibraci vah.
+
+## Zpracování a diagnostika od 24. 10. 2026
+
+- `data/radar-leads.json` uchovává také výsledky dohledání: `pending`, `resolved`,
+  `rejected`, `expired`, `needs-verification`. Vyřazení má důvod a není čekáním.
+  Relevantní komerční tip bez ověřeného zadavatele je viditelný k doplnění zdroje;
+  agregátor se tím nestává autoritou a tip se nezveřejní jako ověřená zakázka.
+- `data/review-queue.json` uchovává kandidáty, historii pokusů, otisk podkladů,
+  další termín pokusu a jednoznačné stavy. Úspěch uzavírá čekání. Po třech
+  neúspěšných pokusech následuje věcná kontrola; změna podkladů/pravidel dovolí
+  nový pokus. Nejdéle nezkoušené položky mají přednost, limit je osm za běh.
+- Platná ruční kontrola má přednost. Stará ruční kontrola jiných příloh nesmí
+  přepsat novější automatický výsledek. Verze extrakce umožňuje přehodnocení
+  po opravě pravidel. Částečná extrakce zachová doložená fakta i upozornění,
+  ale neuzavírá kontrolu chybějících podkladů.
+- PDF, DOCX, XLSX a ZIP se čtou bez spouštění obsahu; tabulky používají jen
+  uložené hodnoty, nikdy nepočítají makra ani externí odkazy. Starý DOC/RTF
+  a obrazové PDF bez textu vyžadují doplnění čitelného podkladu. Administrativní
+  formuláře a duplicitní podepsané kopie nespotřebovávají limit věcných příloh.
+- NEN a stahování příloh opakují přechodné síťové chyby s odstupem. Dílčí
+  výpadky NEN jsou vidět ve výsledku. Vyčerpané pokusy označí workflow chybou
+  až po uložení úspěšně zpracovaných dat.
+- `processing` v publikovaném JSON zpřístupňuje stav v obou webových přehledech.
+  Ukazuje i rozdíl mezi novým tipem a aktualizací zveřejněné zakázky. Výpadek
+  sběru nelze zaměnit za aktuální prázdný seznam; web upozorní i na stáří dat.
+- `assessment` odděluje oborové skóre od podkladů pro obchodní rozhodnutí:
+  doložený rozpočet, kvalifikaci, hodnocení a chybějící informace. Náklady,
+  marže, kapacity a vlastní reference se bez interních dat neodhadují.
+  Rozporuplné rozpočty se automaticky neslučují.
+- Denní rozvrh zůstává 04:20 UTC. E-mailový digest stále vyžaduje vlastní
+  nastavení Resend a adresátů; nová diagnostika je dostupná přímo na webu
+  a v souhrnu běhu GitHub Actions i bez této integrace.

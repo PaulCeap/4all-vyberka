@@ -1,6 +1,6 @@
 import { normalizeTender } from "./model.mjs";
 import { scoreTender } from "./scoring.mjs";
-import { matchConfidence, sourceFromOfficialUrl } from "./origin-resolver.mjs";
+import { matchConfidence, primaryMatchConfidence, sourceFromOfficialUrl } from "./origin-resolver.mjs";
 import { getText } from "./sources/html-utils.mjs";
 import { parseEzakDetail } from "./sources/ezak-watchlist.mjs";
 import { fetchEzakazkyDetail, fetchEzakazkyDocuments, searchEzakazkyProfile } from "./sources/e-zakazky.mjs";
@@ -29,7 +29,7 @@ export async function preferPrimaryProfiles(rows, {
       output.push(row);
       continue;
     }
-    let matches = primaryRows.filter((candidate) => matchConfidence(row, candidate) >= 72);
+    let matches = primaryRows.filter((candidate) => primaryMatchConfidence(row, candidate) >= 72);
     if (!matches.length && searched < searchLimit) {
       for (const profileUrl of row.candidateProfileUrls || []) {
         if (searched >= searchLimit) break;
@@ -37,7 +37,7 @@ export async function preferPrimaryProfiles(rows, {
         searched += 1;
         try {
           matches = (await searchProfile(profileUrl, row.title))
-            .filter((candidate) => matchConfidence(row, candidate) >= 72);
+            .filter((candidate) => primaryMatchConfidence(row, candidate) >= 72);
           if (matches.length) break;
         } catch { /* zkusíme další profil nebo NEN */ }
       }
@@ -46,7 +46,7 @@ export async function preferPrimaryProfiles(rows, {
       searched += 1;
       try {
         matches = (await searchNen(row.title))
-          .filter((candidate) => matchConfidence(row, candidate) >= 72);
+          .filter((candidate) => primaryMatchConfidence(row, candidate) >= 72);
       } catch { /* oficiální oznámení zůstane dostupné i při výpadku profilu */ }
     }
     matches = [...new Map(matches.map((candidate) => [candidate.url, candidate])).values()];
@@ -154,6 +154,8 @@ export async function refreshSavedProfiles(rows, { fetchDetail } = {}) {
       refreshed.push({
         ...old,
         ...(fresh || {}),
+        profileFetchError: fresh ? null : results[offset].status === "rejected"
+          ? results[offset].reason.message : "Profil nevrátil aktuální detail zakázky.",
         firstSeenAt: old.firstSeenAt,
         discoverySource: old.discoverySource,
         discoveryUrl: old.discoveryUrl,

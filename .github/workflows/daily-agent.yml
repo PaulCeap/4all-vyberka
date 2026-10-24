@@ -51,3 +51,5 @@ jobs:
           ALERT_EMAILS: ${{ secrets.ALERT_EMAILS }}
           RESEND_FROM: ${{ vars.RESEND_FROM }}
         run: npm run notify
+      - name: Ověřit, že nezůstaly zaseknuté automatické pokusy
+        run: npm run review:queue -- --check

@@ -68,8 +68,11 @@ export function normalizeTender(input, now = new Date()) {
     })).filter((document) => document.name && document.url),
     verifiedFacts: (input.verifiedFacts || []).slice(0, 8).map((fact) => ({
       text: cleanText(fact.text), url: String(fact.url || "").trim(),
+      ...(fact.kind ? { kind: cleanText(fact.kind) } : {}),
     })).filter((fact) => fact.text && fact.url),
     factsReviewedAt: isoOrNull(input.factsReviewedAt),
+    reviewComplete: input.reviewComplete !== false,
+    reviewWarnings: (input.reviewWarnings || []).map(cleanText).slice(0, 5),
     cpv: [...new Set((input.cpv || []).map((code) => cleanText(code).replace(/\D/g, "").slice(0, 8)).filter(Boolean))],
     procedureType: cleanText(input.procedureType || "Neuvedeno"),
     opportunityType: cleanText(input.opportunityType || "public-tender"),

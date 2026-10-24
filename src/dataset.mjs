@@ -3,6 +3,7 @@ import { deduplicateTenders } from "./deduplicate.mjs";
 import { normalizeTender, validateDataset } from "./model.mjs";
 import { scoreTender } from "./scoring.mjs";
 import { isAggregatorSource, sourceFromOfficialUrl } from "./origin-resolver.mjs";
+import { assessOpportunity } from "./assessment.mjs";
 
 const OFFICIAL_SOURCES = new Set([
   "zakazky-gov", "tenderarena", "nen", "ted", "ezak-jmk", "ezak-sz",
@@ -51,7 +52,8 @@ export function buildDataset({ rows, sources, previous, now, fixturesMode = fals
       return new Date(tender.publishedAt || tender.firstSeenAt).valueOf() >= itemCutoff;
     })
     .sort((a, b) => b.relevance.score - a.relevance.score || String(a.deadline).localeCompare(String(b.deadline)))
-    .slice(0, 400);
+    .slice(0, 400)
+    .map((tender) => ({ ...tender, assessment: assessOpportunity(tender) }));
 
   const dataset = {
     schemaVersion: 1,

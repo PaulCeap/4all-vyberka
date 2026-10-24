@@ -58,6 +58,25 @@ const sourceLabel = (source) => ({
   "ezak-sz": "E-ZAK Správa železnic",
   "official-profile": "Profil zadavatele", "official-web": "Web zadavatele",
 }[source] || source);
+const processingLabel = (status) => ({ pending: "Čeká na zpracování", retry: "Automaticky zopakujeme",
+  "needs-review": "Vyžaduje kontrolu", "needs-verification": "Doplnit původní zadání",
+  rejected: "Vyřazeno", expired: "Po termínu / zastaralé", resolved: "Originál ověřen" }[status] || "Ke kontrole");
+function processingRows(items = []) {
+  return items.map((item) => `<div class="processing-item"><strong>${escapeHtml(item.title)}</strong>
+    <span>${escapeHtml(processingLabel(item.status))}${item.published ? " · aktualizace zveřejněné zakázky" : ""}</span>
+    <p>${escapeHtml(item.reason)}</p>${item.nextAttemptAt ? `<small>Další pokus nejdříve ${escapeHtml(formatDate(item.nextAttemptAt, true))}</small>` : ""}
+    ${safeExternalUrl(item.url) ? `<a href="${escapeHtml(safeExternalUrl(item.url))}" target="_blank" rel="noreferrer">Otevřít zdroj ↗</a>` : ""}</div>`).join("");
+}
+function renderProcessing(processing) {
+  const panel = $("#processing");
+  if (!processing || !panel) return;
+  panel.hidden = false;
+  panel.innerHTML = `<summary>Zpracování zdrojů · ${(processing.items || []).length} k dořešení · ${(processing.history || []).length} uzavřených tipů</summary>
+    <p>Ověřené zakázky jsou níže. Zde vidíte další pokusy, chybějící podklady a důvody vyřazení. Opakování proběhne při nejbližším denním sběru po uvedeném čase.</p>
+    ${(processing.sources || []).map((item) => `<p>${escapeHtml(item.id)}: ${escapeHtml(item.error)}</p>`).join("")}
+    <div class="processing-items">${processingRows(processing.items) || "Žádné nevyřízené položky."}</div>
+    <details><summary>Vyřízené a vyřazené tipy</summary><div class="processing-items">${processingRows(processing.history)}</div></details>`;
+}
 const typeLabel = (type) => ({
   "public-tender": "Veřejná zakázka", "commercial-demand": "Poptávka", "market-signal": "Komerční tendr",
 }[type] || "Příležitost");
@@ -108,6 +127,10 @@ function cardTemplate(tender) {
         ${summary ? `<p class="summary${isExpanded ? " expanded" : ""}" id="${escapeHtml(summaryId)}">${escapeHtml(summary)}</p>` : ""}
         ${canExpand ? `<button class="summary-toggle" type="button" data-expand="${escapeHtml(tender.id)}" aria-controls="${escapeHtml(summaryId)}" aria-expanded="${isExpanded}">${isExpanded ? "Skrýt popis ↑" : "Zobrazit více ↓"}</button>` : ""}
         ${facts.length ? `<div class="verified-facts"><strong>Co je důležité</strong><ul>${facts.map((fact) => `<li>${escapeHtml(fact.text)} <a href="${escapeHtml(safeExternalUrl(fact.url))}" target="_blank" rel="noreferrer" aria-label="Zdroj: ${escapeHtml(fact.text)}">↗</a></li>`).join("")}</ul></div>` : ""}
+        ${tender.assessment ? `<details class="business-assessment"><summary>${escapeHtml(tender.assessment.label)}</summary>
+          <p>${escapeHtml(tender.assessment.explanation)}</p><ul>${(tender.assessment.gaps || []).map((text) => `<li>${escapeHtml(text)}</li>`).join("")}</ul>
+          <strong>Před rozhodnutím</strong><ul>${(tender.assessment.internalChecks || []).map((text) => `<li>${escapeHtml(text)}</li>`).join("")}</ul></details>` : ""}
+        ${(tender.reviewWarnings || []).map((text) => `<p class="review-warning">${escapeHtml(text)}</p>`).join("")}
         <div class="match-tags">${tender.relevance.categories.map((category) => `<span>${escapeHtml(category.label)}</span>`).join("")}</div>
         ${tender.relevance.reasons[0] ? `<p class="reason">${escapeHtml(tender.relevance.reasons[0])}</p>` : ""}
       </div>
@@ -167,6 +190,7 @@ async function init() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const dataset = await response.json();
     state.tenders = dataset.tenders || [];
+    renderProcessing(dataset.processing);
     const updatedAt = $("#updated-at");
     const stale = Date.now() - new Date(dataset.generatedAt).valueOf() > 36 * 60 * 60 * 1000;
     updatedAt.textContent = stale

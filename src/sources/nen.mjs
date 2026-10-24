@@ -1,4 +1,4 @@
-import { czechDate, plainText } from "./html-utils.mjs";
+import { czechDate, plainText, getText } from "./html-utils.mjs";
 
 const NEN_BASE = "https://nen.nipez.cz";
 const SEARCH_TERMS = [
@@ -18,12 +18,7 @@ function reduxState(html) {
 }
 
 async function getHtml(url, fetchImpl) {
-  const response = await fetchImpl(url, {
-    headers: { accept: "text/html", "user-agent": "4ALL-vyberka/1.0 (hello@4all.cz)" },
-    signal: AbortSignal.timeout(25_000),
-  });
-  if (!response.ok) throw new Error(`NEN odpověděl ${response.status}.`);
-  return response.text();
+  return getText(url, { fetchImpl, retries: 2, timeoutMs: 25_000, retryDelayMs: 1000 });
 }
 
 function detailUrl(code) {
@@ -156,6 +151,7 @@ export function selectNenSummaries(buckets, limit) {
 
 export async function fetchNen({ fetchImpl = fetch } = {}) {
   const buckets = [];
+  const warnings = [];
   let successfulSearches = 0;
   for (const term of SEARCH_TERMS) {
     try {
@@ -166,6 +162,7 @@ export async function fetchNen({ fetchImpl = fetch } = {}) {
       buckets.push(collection);
       successfulSearches += 1;
     } catch (error) {
+      warnings.push(`Dotaz ${term}: ${error.message}`);
       console.warn(`NEN: dotaz „${term}“ selhal: ${error.message}`);
     }
   }
@@ -181,8 +178,12 @@ export async function fetchNen({ fetchImpl = fetch } = {}) {
       if (!detail) throw new Error(`NEN detail ${row.kod} je prázdný.`);
       return detail;
     }));
-    for (const detail of details) if (detail.status === "fulfilled") results.push(detail.value);
+    for (const detail of details) {
+      if (detail.status === "fulfilled") results.push(detail.value);
+      else warnings.push(`Detail: ${detail.reason.message}`);
+    }
   }
   if (rows.length && !results.length) throw new Error("NEN: nepodařilo se načíst žádný detail zakázky.");
+  results.warnings = warnings;
   return results;
 }
