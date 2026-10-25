@@ -33,6 +33,14 @@ export function selectNenRetries(queue, limit = 20) {
   ).slice(0, Math.max(0, limit));
 }
 
+export function removeRefreshedNenRetries(source, refreshedRows) {
+  // A saved detail can recover in the later profile refresh of the same run.
+  // A retained stale row must never be mistaken for successful retrieval.
+  const recovered = new Set(refreshedRows.filter((row) => row.source === "nen" && row.profileFetchError === null)
+    .map((row) => row.sourceId));
+  return { ...source, retryQueue: (source.retryQueue || []).filter((entry) => !recovered.has(entry.code)) };
+}
+
 export function failedNenDetail(summary, error, old, now) {
   const code = summary.kod;
   const url = nenDetailUrl(code);

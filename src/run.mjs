@@ -20,6 +20,7 @@ import { publicDataset } from "./publication.mjs";
 import { normalizeTender } from "./model.mjs";
 import { scoreTender } from "./scoring.mjs";
 import { PROJECT } from "./config.mjs";
+import { removeRefreshedNenRetries } from "./nen-retries.mjs";
 import { PROCESSING_VERSION, dueReviews, buildReviewState, classifyLead, radarDataset, processingOverview } from "./processing-state.mjs";
 
 const OUTPUT = "public/data/tenders.json";
@@ -106,6 +107,8 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
   }
   const savedNen = previous.tenders.filter((row) => row.source === "nen" && !currentIds.has(row.id));
   const refreshedNen = await refreshSavedNenProfiles(savedNen);
+  const nenSource = sources.find((source) => source.id === "nen");
+  if (nenSource?.retryQueue) Object.assign(nenSource, removeRefreshedNenRetries(nenSource, refreshedNen));
   const recoveryItems = (previousReview.tenders || []).filter((item) => {
     if (currentIds.has(item.id) || previous.tenders.some((row) => row.id === item.id)) return false;
     if (item.deadline && new Date(item.deadline) <= now) return false;

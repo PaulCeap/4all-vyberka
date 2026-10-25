@@ -193,7 +193,7 @@ export async function fetchNen({ fetchImpl = fetch, previousSource = {}, now = n
       } else {
         const failed = failedNenDetail(summary, detail.reason, retryQueue.get(summary.kod), now);
         retryQueue.set(summary.kod, failed);
-        warnings.push(`Detail: ${failed.url}: ${detail.reason.message}`);
+        warnings.push(`Detail: ${failed.url}: ${failed.error}`);
       }
     }
   }

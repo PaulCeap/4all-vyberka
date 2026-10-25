@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { fetchNen } from "../src/sources/nen.mjs";
-import { restoreNenRetries, nenDetailUrl, failedNenDetail, selectNenRetries } from "../src/nen-retries.mjs";
+import { restoreNenRetries, nenDetailUrl, failedNenDetail, selectNenRetries, removeRefreshedNenRetries } from "../src/nen-retries.mjs";
 import { processingOverview } from "../src/processing-state.mjs";
 
 const now = new Date("2026-10-25T10:00:00Z"), tomorrow = new Date("2026-10-26T10:00:00Z");
@@ -92,4 +92,15 @@ test("processing overview exposes failed details independently of document revie
   assert.equal(overview.items[0].status, "retry");
   assert.equal(overview.items[0].url, failed.url);
   assert.match(overview.items[0].reason, /při dalším denním sběru/);
+});
+
+test("a successful later profile refresh clears its retry, but a cached stale row does not", () => {
+  const source = { retryQueue: [1, 2, 3].map((n) => failedNenDetail(row(n), new Error("HTTP 503"), null, now)) };
+  const result = removeRefreshedNenRetries(source, [
+    { source: "nen", sourceId: row(1).kod, profileFetchError: null },
+    { source: "nen", sourceId: row(2).kod, profileFetchError: "HTTP 503" },
+    { source: "nen", sourceId: row(3).kod },
+  ]);
+  assert.deepEqual(result.retryQueue.map((entry) => entry.code), [row(2).kod, row(3).kod]);
+  assert.equal(source.retryQueue.length, 3);
 });
