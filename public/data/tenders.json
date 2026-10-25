@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T09:34:04.116Z",
+  "generatedAt": "2026-10-25T09:14:16.174Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -8,7 +8,7 @@
   },
   "stats": {
     "total": 9,
-    "newThisRun": 3,
+    "newThisRun": 2,
     "strong": 0,
     "closingSoon": 0,
     "unresolvedOrigin": 0,
@@ -18,31 +18,42 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 52,
+      "count": 2,
       "warnings": []
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 31,
+      "count": 1,
       "warnings": []
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 80,
-      "warnings": []
+      "count": 70,
+      "warnings": [
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-19-V00010974: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00034098: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00033995: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-23-V00030430: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00033177: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032530: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-23-V00020184: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-21-P00000121: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-19-V00036263: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-22-P00000204: HTTP 503"
+      ]
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 438,
+      "count": 375,
       "warnings": []
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 65,
+      "count": 26,
       "warnings": []
     },
     {
@@ -130,7 +141,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 11
+        "deadlineDays": 10
       },
       "assessment": {
         "status": "needs-information",
@@ -182,7 +193,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-19T10:03:31.222Z",
-      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastSeenAt": "2026-10-25T09:14:16.174Z",
       "status": "open",
       "fingerprint": "cf3c66cb12610ef963dd",
       "relevance": {
@@ -213,7 +224,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 25
+        "deadlineDays": 24
       },
       "assessment": {
         "status": "needs-information",
@@ -301,7 +312,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 17
+        "deadlineDays": 16
       },
       "assessment": {
         "status": "needs-information",
@@ -379,7 +390,7 @@
             "score": 44
           }
         ],
-        "deadlineDays": 30
+        "deadlineDays": 29
       },
       "assessment": {
         "status": "needs-information",
@@ -459,7 +470,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-21T15:08:39.037Z",
-      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastSeenAt": "2026-10-25T09:14:16.174Z",
       "status": "open",
       "fingerprint": "a8ba347cd0340c4c022f",
       "relevance": {
@@ -490,7 +501,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       },
       "assessment": {
         "status": "needs-information",
@@ -555,7 +566,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-24T09:34:04.116Z",
-      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastSeenAt": "2026-10-25T09:14:16.174Z",
       "status": "open",
       "fingerprint": "ce6e7c4be58391508075",
       "relevance": {
@@ -581,7 +592,7 @@
             "score": 19
           }
         ],
-        "deadlineDays": 26
+        "deadlineDays": 25
       },
       "assessment": {
         "status": "needs-information",
@@ -641,7 +652,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-06T11:21:57.039Z",
-      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastSeenAt": "2026-10-25T09:14:16.174Z",
       "status": "open",
       "fingerprint": "07d7d41f902b7cb18da8",
       "relevance": {
@@ -661,7 +672,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 13
+        "deadlineDays": 12
       },
       "assessment": {
         "status": "needs-information",
@@ -746,7 +757,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 17
+        "deadlineDays": 16
       },
       "assessment": {
         "status": "needs-information",
@@ -802,7 +813,7 @@
       "procedureType": "supplies, services, supplies, services, services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-22T09:29:46.460Z",
-      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastSeenAt": "2026-10-25T09:14:16.174Z",
       "status": "open",
       "fingerprint": "1e6603be0d57f34ad045",
       "relevance": {
@@ -841,7 +852,7 @@
     }
   ],
   "processing": {
-    "updatedAt": "2026-10-24T09:34:04.116Z",
+    "updatedAt": "2026-10-25T09:14:16.174Z",
     "status": "attention",
     "reviews": {
       "pending": 0,
@@ -855,10 +866,15 @@
       "pending": 11,
       "resolved": 4,
       "rejected": 51,
-      "expired": 3,
+      "expired": 4,
       "needs-verification": 2
     },
-    "sources": [],
+    "sources": [
+      {
+        "id": "nen",
+        "error": "10 dotazů nebo detailů se nepodařilo načíst; ostatní výsledky byly zpracovány."
+      }
+    ],
     "items": [
       {
         "id": "ted:646731-2026",
@@ -876,7 +892,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ115731/zajisteni-mezinarodni-staticke-konference",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       },
       {
@@ -885,7 +901,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavky.cz/poptavka/2133605-zajisteni-zaverecne-konference",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       },
       {
@@ -903,7 +919,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavky.cz/poptavka/2128827-graficka-priprava-a-tisk-ostrovskeho-mesicniku-24-vydani",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       },
       {
@@ -912,7 +928,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ462672/zajisteni-zaverecne-konference",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       },
       {
@@ -930,7 +946,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavky.cz/poptavka/2137861-priprava-grafickych-materialu",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       },
       {
@@ -939,7 +955,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavky.cz/poptavka/2137617-reklama-a-propagace",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       },
       {
@@ -948,7 +964,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ010662/monitoring-medii-a-analyza-medialniho-obsahu",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       },
       {
@@ -957,7 +973,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ499072/priprava-grafickych-materialu-pro-potreby-prezentace",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       },
       {
@@ -966,7 +982,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavky.cz/poptavka/2139546-zajisteni-realizace-marketingove-strategie",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       },
       {
@@ -975,7 +991,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavky.cz/poptavka/2139326-monitoring-medii-a-analyza-medialniho-obsahu",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       },
       {
@@ -984,7 +1000,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ805917/turisticke-informacni-centrum-vybaveni",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       }
     ],
@@ -1394,6 +1410,13 @@
         "status": "resolved",
         "reason": "Spojeno s ověřeným originálem.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ345419/produkcni-a-vizualni-agentura"
+      },
+      {
+        "id": "poptavej:VZ199414",
+        "title": "Průzkum veřejného mínění z oblasti lékové gramotnosti obyvatel ČR a statistiky",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
+        "url": "https://www.poptavej.cz/verejna-zakazka/VZ199414/pruzkum-verejneho-mineni-z-oblasti-lekove-gramotnosti-obyvatel-cr-a-statistiky"
       }
     ]
   }
