@@ -1,4 +1,5 @@
 import { czechDate, plainText, getText } from "./html-utils.mjs";
+import { restoreNenRetries, selectNenRetries, failedNenDetail } from "../nen-retries.mjs";
 
 const NEN_BASE = "https://nen.nipez.cz";
 const SEARCH_TERMS = [
@@ -149,9 +150,11 @@ export function selectNenSummaries(buckets, limit) {
   return selected;
 }
 
-export async function fetchNen({ fetchImpl = fetch } = {}) {
+export async function fetchNen({ fetchImpl = fetch, previousSource = {}, now = new Date(),
+  detailLimit = Number(process.env.NEN_DETAIL_LIMIT || 80), retryLimit = 20 } = {}) {
   const buckets = [];
   const warnings = [];
+  const retryQueue = restoreNenRetries(previousSource, now);
   let successfulSearches = 0;
   for (const term of SEARCH_TERMS) {
     try {
@@ -166,9 +169,13 @@ export async function fetchNen({ fetchImpl = fetch } = {}) {
       console.warn(`NEN: dotaz „${term}“ selhal: ${error.message}`);
     }
   }
-  if (!successfulSearches) throw new Error("NEN: selhaly všechny vyhledávací dotazy.");
+  if (!successfulSearches && !retryQueue.size) throw new Error("NEN: selhaly všechny vyhledávací dotazy.");
 
-  const rows = selectNenSummaries(buckets, Number(process.env.NEN_DETAIL_LIMIT || 80));
+  const current = selectNenSummaries(buckets, detailLimit);
+  const currentByCode = new Map(current.map((row) => [row.kod, row]));
+  const retryRows = selectNenRetries(retryQueue, retryLimit)
+    .map((entry) => currentByCode.get(entry.code) || { ...entry.summary, kod: entry.code });
+  const rows = [...new Map([...retryRows, ...current].map((row) => [row.kod, row])).values()];
   const results = [];
   for (let index = 0; index < rows.length; index += 6) {
     const batch = rows.slice(index, index + 6);
@@ -178,12 +185,22 @@ export async function fetchNen({ fetchImpl = fetch } = {}) {
       if (!detail) throw new Error(`NEN detail ${row.kod} je prázdný.`);
       return detail;
     }));
-    for (const detail of details) {
-      if (detail.status === "fulfilled") results.push(detail.value);
-      else warnings.push(`Detail: ${detail.reason.message}`);
+    for (const [offset, detail] of details.entries()) {
+      const summary = batch[offset];
+      if (detail.status === "fulfilled") {
+        results.push(detail.value);
+        retryQueue.delete(summary.kod);
+      } else {
+        const failed = failedNenDetail(summary, detail.reason, retryQueue.get(summary.kod), now);
+        retryQueue.set(summary.kod, failed);
+        warnings.push(`Detail: ${failed.url}: ${detail.reason.message}`);
+      }
     }
   }
-  if (rows.length && !results.length) throw new Error("NEN: nepodařilo se načíst žádný detail zakázky.");
+  // Returning the failed-address state is essential even during a total NEN
+  // outage; rejecting here would discard newly discovered failures.
+  if (rows.length && !results.length) warnings.push("NEN: nepodařilo se načíst žádný detail; adresy zůstávají uložené pro další běh.");
   results.warnings = warnings;
+  results.retryQueue = [...retryQueue.values()];
   return results;
 }

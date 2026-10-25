@@ -89,3 +89,17 @@ První klíč je `source + sourceId`. Druhý, mezizdrojový klíč je SHA-256 fi
 - Denní rozvrh zůstává 04:20 UTC. E-mailový digest stále vyžaduje vlastní
   nastavení Resend a adresátů; nová diagnostika je dostupná přímo na webu
   a v souhrnu běhu GitHub Actions i bez této integrace.
+
+### Trvalé opakování nedostupných detailů NEN (25. 10. 2026)
+
+`sources[nen].retryQueue` v uloženém `tender-state.json` uchovává kód,
+název, základní údaje z vyhledávání, první chybu, poslední pokus a počet
+neúspěšných běhů. Další sběr načítá tyto detaily přímo; nemusí se znovu
+objevit mezi prvními 80 výsledky hledání. Zkouší až 20 uložených adres navíc,
+nejdéle nezkoušené mají přednost. Adresy se sestavují z validovaného kódu NEN.
+Úspěšně přečtený detail pokračuje běžným vyhodnocováním a z fronty zmizí;
+neúspěšné i dosud nezkoušené adresy zůstávají uložené. Technické výpadky NEN
+se zkoušejí i po třetím neúspěšném běhu. Limit tří pokusů při věcném čtení
+příloh je od této fronty oddělený. Starší chyby uložené jen jako varování se
+jednorázově převedou do fronty. Ve webovém přehledu má každý takový detail
+svůj stav, odkaz, počet pokusů a důvod; výpadek NEN neblokuje ostatní zdroje.

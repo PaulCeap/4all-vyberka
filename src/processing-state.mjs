@@ -89,6 +89,11 @@ export function radarDataset(leads, previous, now) {
 }
 
 export function processingOverview(review, radar, sources, published, now) {
+  const sourceRetries = sources.flatMap((source) => (source.retryQueue || []).map((entry) => ({
+    id: `${source.id}:${entry.code}`, title: entry.title, status: "retry", url: entry.url,
+    attempts: entry.attempts, published: published.some((t) => t.id === `${source.id}:${entry.code}`),
+    reason: `Detail zdroje je nedostupný. Adresa je uložená a zkusí se znovu při dalším denním sběru (${entry.attempts} neúspěšných běhů). ${entry.error}`,
+  })));
   const issues = review.tenders.filter((r) => ["pending", "retry", "needs-review"].includes(r.status)).map((r) => ({
     id: r.id, title: r.title, status: r.status, reason: r.error || "Čeká na přečtení podkladů.",
     url: r.url || null, nextAttemptAt: r.nextAttemptAt, attempts: r.attempts,
@@ -98,11 +103,11 @@ export function processingOverview(review, radar, sources, published, now) {
     id: key(r), title: r.title, status: r.processingStatus, reason: r.processingReason,
     url: r.url, attempts: r.originCheckAttempts || 0, published: false,
   }));
-  return { updatedAt: timestamp(now), status: issues.length || tips.length || sources.some((s) => !s.ok || s.warnings?.length) ? "attention" : "ok",
+  return { updatedAt: timestamp(now), status: issues.length || tips.length || sourceRetries.length || sources.some((s) => !s.ok || s.warnings?.length) ? "attention" : "ok",
     reviews: review.counts || {}, radar: radar.counts || {},
     sources: sources.filter((s) => !s.ok || s.warnings?.length).map((s) => ({ id: s.id,
       error: s.error || `${s.warnings.length} dotazů nebo detailů se nepodařilo načíst; ostatní výsledky byly zpracovány.` })),
-    items: [...issues, ...tips],
+    items: [...issues, ...sourceRetries, ...tips],
     history: radar.leads.filter((r) => ["rejected", "expired", "resolved"].includes(r.processingStatus)).map((r) => ({
       id: key(r), title: r.title, status: r.processingStatus, reason: r.processingReason, url: r.url,
     })) };

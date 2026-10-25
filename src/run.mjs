@@ -50,6 +50,8 @@ async function runCollectors(collectors) {
       count: result.status === "fulfilled" ? result.value.length : 0,
       error: result.status === "rejected" ? result.reason.message : undefined,
       warnings: result.status === "fulfilled" ? result.value.warnings || [] : [],
+      ...(result.status === "fulfilled" && result.value.retryQueue
+        ? { retryQueue: result.value.retryQueue } : {}),
     })),
     rows: settled.flatMap((result) => result.status === "fulfilled" ? result.value : []),
   };
@@ -62,7 +64,7 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
   const officialCollectors = [
     ["zakazky-gov", () => fetchZakazkyGov()],
     ["tenderarena", () => fetchTenderArena()],
-    ["nen", () => fetchNen()],
+    ["nen", () => fetchNen({ previousSource: previous.sources?.find((source) => source.id === "nen") || {}, now })],
     ["ted", () => fetchTed({ now })],
     ["ezak-watchlist", () => fetchEzakWatchlist()],
     ["proebiz", () => fetchProebiz({ now })],
