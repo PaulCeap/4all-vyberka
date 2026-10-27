@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-10-26T10:17:42.064Z",
+  "updatedAt": "2026-10-27T09:54:11.118Z",
   "counts": {
     "pending": 0,
     "retry": 0,
-    "needs-review": 1,
+    "needs-review": 2,
     "reviewed": 9,
     "expired": 0,
-    "inactive": 0
+    "inactive": 1
   },
-  "reviewedCount": 0,
+  "reviewedCount": 2,
   "pendingCount": 0,
-  "attentionCount": 1,
+  "attentionCount": 2,
   "failedCount": 0,
   "sourceErrors": [],
   "tenders": [
@@ -25,7 +25,7 @@
       "country": "CZ",
       "region": "Česko",
       "publishedAt": "2026-09-29T10:00:00.000Z",
-      "deadline": "2026-11-23T09:00:00.000Z",
+      "deadline": "2026-12-01T09:00:00.000Z",
       "deadlineTimeKnown": true,
       "value": null,
       "valueSource": null,
@@ -105,6 +105,21 @@
           "name": "03_Závazný vzor rámcove dohody_oprava.pdf",
           "type": "Vysvětlení zadávací dokumentace (podle § 98 zákona)",
           "url": "https://www.e-zakazky.cz/stazenisouboru/e4e51efe-2b71-4001-bcd2-4117bde5851b"
+        },
+        {
+          "name": "Vysvětlení zadávací dokumentace č. 7-13.pdf",
+          "type": "Vysvětlení zadávací dokumentace (podle § 98 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/b6582871-e71d-46f8-a1aa-9d1c6323d60f"
+        },
+        {
+          "name": "02_Soupis plnění_oprava 3.xlsx",
+          "type": "Vysvětlení zadávací dokumentace (podle § 98 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/4a4c8809-35d3-4f1e-83c8-44af146579ef"
+        },
+        {
+          "name": "03_Závazný vzor rámcove dohody_oprava 2.pdf",
+          "type": "Vysvětlení zadávací dokumentace (podle § 98 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/ecd6a9f9-b61c-4511-8405-23a9638af669"
         }
       ],
       "verifiedFacts": [],
@@ -124,14 +139,14 @@
       "originStatus": "verified",
       "originConfidence": 0,
       "candidateProfileUrls": [],
-      "fingerprint": "0f0f34f02e98189dabdd",
-      "signature": "a2618d2b1b2172f0522c606a4380bf0ebdd55ce455b9a0363ce65ba7a3c1d9f6",
+      "fingerprint": "4f87f37194ebe7f4169d",
+      "signature": "b6584e0e90c4b9438e7c5fa11300e0388fa4e7c9b8bfa4f795d698b103770d39",
       "error": null,
       "attempts": 0,
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-26T10:17:42.064Z"
+      "updatedAt": "2026-10-27T09:54:11.118Z"
     },
     {
       "id": "nen:N006/26/V00034249",
@@ -153,6 +168,11 @@
       "valueSource": null,
       "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00034249/zadavaci-dokumentace",
       "documents": [
+        {
+          "name": "Vysvětlení zadávacích podmínek_Dotaz 1.pdf",
+          "type": "Vysvětlení zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4803676352"
+        },
         {
           "name": "Příloha č. 1 – Vzor krycího listu.docx",
           "type": "Výzva k podání nabídky včetně zadávací dokumentace",
@@ -192,13 +212,13 @@
       "originConfidence": 95,
       "candidateProfileUrls": [],
       "fingerprint": "b28b1097f1bcad4a3eb6",
-      "signature": "7b6b578f02e8de6067bfedb23209ca1453484ff08d5264ab2193f8a0a8eda231",
+      "signature": "3526d5a8ab4cbef39381574d4dfd7f049b185c5406693d7e30baacaa1aa0c844",
       "error": null,
       "attempts": 0,
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-26T10:17:42.064Z"
+      "updatedAt": "2026-10-27T09:54:11.118Z"
     },
     {
       "id": "nen:N006/26/V00033336",
@@ -280,8 +300,8 @@
       ],
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-26T10:17:42.064Z",
-      "lastSeenAt": "2026-10-26T10:17:42.064Z",
+      "firstSeenAt": "2026-10-27T09:54:11.118Z",
+      "lastSeenAt": "2026-10-27T09:54:11.118Z",
       "status": "reviewed",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -295,7 +315,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-26T10:17:42.064Z"
+      "updatedAt": "2026-10-27T09:54:11.118Z"
     },
     {
       "id": "nen:N006/26/V00030271",
@@ -349,7 +369,7 @@
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-26T10:17:42.064Z",
       "lastSeenAt": "2026-10-26T10:17:42.064Z",
-      "status": "reviewed",
+      "status": "inactive",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
@@ -357,12 +377,12 @@
       "candidateProfileUrls": [],
       "fingerprint": "290fbd3f8bc41806afc7",
       "signature": "8e4535eddf318d046b23371574024d57d19724fc678c63afb6dc3c04ffcbb0f8",
-      "error": null,
+      "error": "Zakázka není v aktuálním seznamu kandidátů; předchozí stav zůstal uložený.",
       "attempts": 0,
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-26T10:17:42.064Z"
+      "updatedAt": "2026-10-27T09:54:11.118Z"
     },
     {
       "id": "nen:N006/26/V00034098",
@@ -439,8 +459,8 @@
       ],
       "procedureType": "Sluzby / Otevřená výzva",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-26T10:17:42.064Z",
-      "lastSeenAt": "2026-10-26T10:17:42.064Z",
+      "firstSeenAt": "2026-10-27T09:54:11.118Z",
+      "lastSeenAt": "2026-10-27T09:54:11.118Z",
       "status": "reviewed",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -454,7 +474,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-26T10:17:42.064Z"
+      "updatedAt": "2026-10-27T09:54:11.118Z"
     },
     {
       "id": "nen:N006/26/V00033172",
@@ -533,8 +553,8 @@
       ],
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-26T10:17:42.064Z",
-      "lastSeenAt": "2026-10-26T10:17:42.064Z",
+      "firstSeenAt": "2026-10-27T09:54:11.118Z",
+      "lastSeenAt": "2026-10-27T09:54:11.118Z",
       "status": "reviewed",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -548,7 +568,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-26T10:17:42.064Z"
+      "updatedAt": "2026-10-27T09:54:11.118Z"
     },
     {
       "id": "nen:N006/26/V00021404",
@@ -653,8 +673,8 @@
       ],
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-26T10:17:42.064Z",
-      "lastSeenAt": "2026-10-26T10:17:42.064Z",
+      "firstSeenAt": "2026-10-27T09:54:11.118Z",
+      "lastSeenAt": "2026-10-27T09:54:11.118Z",
       "status": "reviewed",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -668,7 +688,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-26T10:17:42.064Z"
+      "updatedAt": "2026-10-27T09:54:11.118Z"
     },
     {
       "id": "nen:N006/26/V00032165",
@@ -764,8 +784,8 @@
       ],
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-26T10:17:42.064Z",
-      "lastSeenAt": "2026-10-26T10:17:42.064Z",
+      "firstSeenAt": "2026-10-27T09:54:11.118Z",
+      "lastSeenAt": "2026-10-27T09:54:11.118Z",
       "status": "reviewed",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -779,7 +799,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-26T10:17:42.064Z"
+      "updatedAt": "2026-10-27T09:54:11.118Z"
     },
     {
       "id": "ted:646731-2026",
@@ -815,8 +835,8 @@
       ],
       "procedureType": "supplies, services, supplies, services, services, services",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-26T10:17:42.064Z",
-      "lastSeenAt": "2026-10-26T10:17:42.064Z",
+      "firstSeenAt": "2026-10-27T09:54:11.118Z",
+      "lastSeenAt": "2026-10-27T09:54:11.118Z",
       "status": "needs-review",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -832,7 +852,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-26T10:17:42.064Z"
+      "updatedAt": "2026-10-27T09:54:11.118Z"
     },
     {
       "id": "nen:N006/26/V00031545",
@@ -899,7 +919,127 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-26T10:17:42.064Z"
+      "updatedAt": "2026-10-27T09:54:11.118Z"
+    },
+    {
+      "id": "nen:N006/26/V00035168",
+      "source": "nen",
+      "sourceId": "N006/26/V00035168",
+      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035168",
+      "title": "Zpracování audiovizuálního záznamu ze stavby „Novostavba garáží a dílen v areálu Cestmistrovství Frýdek-Místek“",
+      "buyer": "Správa silnic Moravskoslezského kraje, příspěvková organizace",
+      "summary": "Předmětem veřejné zakázky je uzavření smlouvy s jedením dodavatelem na „Zpracování audiovizuálního záznamu ze stavby „Novostavba garáží a dílen v areálu Cestmistrovství Frýdek-Místek“, které je součástí organizace Správa silnic Moravskoslezského kraje, příspěvková organizace, na adrese Horymírova 2287, Frýdek-Místek, na pozemcích parc. č. 729/1, 728/1 a 728/38, vše v katastrálním území Frýdek, obec Frýdek-Místek.",
+      "country": "CZ",
+      "region": "Moravskoslezský kraj",
+      "publishedAt": "2026-10-27T09:09:00.000Z",
+      "deadline": "2026-11-04T07:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": {
+        "amount": 335000,
+        "currency": "CZK"
+      },
+      "valueSource": null,
+      "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035168/zadavaci-dokumentace",
+      "documents": [
+        {
+          "name": "Obchodní podmínky.docx",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4803777368"
+        },
+        {
+          "name": "souhrnné_čp.docx",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4803777353"
+        },
+        {
+          "name": "zd_VZMR_časosběr_FM.pdf",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4803777387"
+        },
+        {
+          "name": "01_krycí_list_.docx",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4803777396"
+        }
+      ],
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [
+        "92110000"
+      ],
+      "procedureType": "Sluzby / Otevřená výzva",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-27T09:54:11.118Z",
+      "lastSeenAt": "2026-10-27T09:54:11.118Z",
+      "status": "reviewed",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "candidateProfileUrls": [],
+      "fingerprint": "e2777fa3f8ec60b13df4",
+      "signature": "315aaa7aec91e81079b0cef377df70aedb00895b9126f6e6795aa2dce99d699f",
+      "error": null,
+      "attempts": 0,
+      "firstQueuedAt": "2026-10-27T09:54:11.118Z",
+      "lastAttemptAt": null,
+      "nextAttemptAt": null,
+      "updatedAt": "2026-10-27T09:54:11.118Z"
+    },
+    {
+      "id": "ted:742978-2026",
+      "source": "ted",
+      "sourceId": "742978-2026",
+      "url": "https://ted.europa.eu/cs/notice/-/detail/742978-2026",
+      "title": "DNS – Komunikační a marketingové aktivity",
+      "buyer": "Ministerstvo zdravotnictví",
+      "summary": "Předmětem této veřejné zakázky je zavedení dynamického nákupního systému za účelem zajišťování komunikačních a marketingových aktivit podporujících informovanost, vzdělávání a osvětu odborné i laické veřejnosti v oblasti digitalizace zdravotnictví a projektů realizovaných Národním centrem elektronického zdravotnictví (NCEZ). Předmětem plnění dílčích veřejných zakázek zadávaných v rámci DNS bude poskytování služeb odpovídajících jednotlivým kategoriím DNS dle aktuálních potřeb zadavatele. Jednotlivé kategorie DNS představují okruhy komunikačních a marketingových aktivit, jejichž podrobnější vymezení je uvedeno v kapitole 3.2 této zadávací dokumentace. Dílčí veřejné zakázky budou zadávány v rámci jednotlivých kategorií DNS podle aktuálních potřeb zadavatele. Zadavatel může současně zadávat veřejné zakázky ve více kategoriích DNS. Podrobná specifikace předmětu plnění, rozsahu požadovaných služeb, technických podmínek, obchodních podmínek a dalších požadavků bude vždy uvedena ve výzvě k podání nabídek dle § 141 ZZVZ a jejích přílohách. DNS je rozdělen do následujících pěti kategorií: - Kategorie 1 – Produkce audiovizuálního obsahu - Kategorie 2 – Organizace komunikačních a prezentačních akcí - Kategorie 3 – Tvorba informačních, edukačních a propagačních materiálů - Kategorie 4 – Mediální komunikace a marketingové kampaně - Kategorie 5 – Odborné kapacity pro komunikační a marketingové aktivity Kategorie 4 – Mediální komunikace a marketingové kampaně Předmětem kategorie je návrh, příprava, realizace a vyhodnocování komunikačních a marketingových kampaní, včetně komunikačních strategií, mediálního plánování, nákupu mediálního prostoru, správy kampaní, komunikace na sociálních sítích, public relations, media relations, monitoringu médií a vyhodnocování komunikačních aktivit. Kategorie 5 – Odborné kapacity pro komunikační a marketingové aktivity Předmětem kategorie je poskytování odborných kapacit pro zajištění komunikačních a marketingových aktivit zadavatele, zejména v oblasti komunikace a marketingu, tvorby obsahu, grafického a vizuálního zpracování, vzdělávání, e-learningu, médií a dalších souvisejících činností podle aktuálních potřeb zadavatele. Přehled odborných kapacit včetně požadavků na vlastnosti jednotlivých odborných kapacit zadavatel stanoví v příloze č. 2 zadávací dokumentace pro zadávání veřejných zakázek v dynamickém nákupním systému. V této příloze jsou definovány minimální požadavky zadavatele na vlastnosti odborných kapacit a způsob jejich splnění (prokázání) dodavatelem v rámci jednotlivých výzev k podání nabídek v rámci DNS. Zadavatel upozorňuje, že jednotlivé odborné kapacity mohou být požadovány jako jednotlivec nebo tým. Každá fyzická osoba, prostřednictvím které dodavatel prokazuje splnění požadavků na vlastnosti konkrétní odborné kapacity, musí kumulativně splňovat všechny požadavky stanovené pro danou odbornou kapacitu. Kategorie 3 – Tvorba informačních, edukačních a propagačních materiálů Předmětem kategorie je návrh, grafické zpracování, výroba a distribuce informačních, edukačních a propagačních materiálů v tištěné i elektronické podobě, zejména letáků, brožur, plakátů, infografik, prezentací, uživatelských návodů, instruktážních materiálů, metodických podkladů a dalších komunikačních výstupů. Kategorie 2 – Organizace komunikačních a prezentačních akcí Předmětem kategorie je příprava, organizační, produkční a technické zajištění konferencí, seminářů, workshopů, kulatých stolů, webinářů, tiskových konferencí, prezentačních akcí, infostánků a dalších obdobných akcí. Kategorie 1 – Produkce audiovizuálního obsahu Předmětem kategorie je tvorba audiovizuálních výstupů, zejména edukačních, instruktážních a propagačních videí, animací, podcastů a dalších multimediálních materiálů, včetně scénáře, produkce, natáčení, postprodukce, grafického zpracování, ozvučení, titulkování a dalších souvisejících služeb.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": null,
+      "deadline": null,
+      "deadlineTimeKnown": false,
+      "value": null,
+      "valueSource": null,
+      "documentsUrl": null,
+      "documents": [],
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [
+        "79340000",
+        "92110000",
+        "79341100",
+        "79341200",
+        "79341400",
+        "79342200",
+        "79413000",
+        "79416000",
+        "79822500",
+        "79823000",
+        "79952000"
+      ],
+      "procedureType": "services, services, services, services, services, services",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-27T09:54:11.118Z",
+      "lastSeenAt": "2026-10-27T09:54:11.118Z",
+      "status": "needs-review",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "candidateProfileUrls": [],
+      "fingerprint": "884fc572f557f10f9e71",
+      "signature": "3ef1cdcf0c4a75078928edc79961933aac7eb382e8eecfc62975c67e3e0d8823",
+      "error": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
+      "attempts": 0,
+      "firstQueuedAt": "2026-10-27T09:54:11.118Z",
+      "lastAttemptAt": null,
+      "nextAttemptAt": null,
+      "updatedAt": "2026-10-27T09:54:11.118Z"
     }
   ]
 }

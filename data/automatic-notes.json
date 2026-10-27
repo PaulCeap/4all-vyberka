@@ -198,10 +198,11 @@
     "warnings": []
   },
   "nen:N006/26/V00034249": {
-    "reviewedAt": "2026-10-24T09:34:04.116Z",
+    "reviewedAt": "2026-10-27T09:54:11.118Z",
     "documentSnapshot": [
       "https://nen.nipez.cz/file?id=4795184699",
-      "https://nen.nipez.cz/file?id=4795184724"
+      "https://nen.nipez.cz/file?id=4795184724",
+      "https://nen.nipez.cz/file?id=4803676352"
     ],
     "method": "automatic-extraction",
     "reviewVersion": "2026-10-24-2",
@@ -218,6 +219,29 @@
       "currency": "CZK"
     },
     "valueSource": "https://nen.nipez.cz/file?id=4795184724",
+    "complete": true,
+    "warnings": []
+  },
+  "nen:N006/26/V00035168": {
+    "reviewedAt": "2026-10-27T09:54:11.118Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4803777387"
+    ],
+    "method": "automatic-extraction",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Doklad, že je oprávněn podnikat v rozsahu od- Dodavatel prokazuje splnění této podmínky povídajícímu předmětu veřejné zakázky, po- předložením živnostenského oprávnění pro kud jiné právní předpisy takové oprávnění vy- živnost „Výroba, obchod a služby neuve- žadují (§ 77 odst. 2 písm. a) ZZVZ) dené v přílohách 1 až 3 živnostenského zá- kona“ pro: • Obor č. 68: Fotografické služby (pokrývá samotné pořizování snímků v čase, digitální zpracování a úpravu).",
+    "facts": [
+      {
+        "text": "Doklad, že je oprávněn podnikat v rozsahu od- Dodavatel prokazuje splnění této podmínky povídajícímu předmětu veřejné zakázky, po- předložením živnostenského oprávnění pro kud jiné právní předpisy takové oprávnění vy- živnost „Výroba, obchod a služby neuve- žadují (§ 77 odst. 2 písm. a) ZZVZ) dené v přílohách 1 až 3 živnostenského zá- kona“ pro: • Obor č. 68: Fotografické služby (pokrývá samotné pořizování snímků v čase, digitální zpracování a úpravu).",
+        "url": "https://nen.nipez.cz/file?id=4803777387",
+        "kind": "scope"
+      }
+    ],
+    "value": {
+      "amount": 335000,
+      "currency": "CZK"
+    },
+    "valueSource": "https://nen.nipez.cz/file?id=4803777387",
     "complete": true,
     "warnings": []
   }
