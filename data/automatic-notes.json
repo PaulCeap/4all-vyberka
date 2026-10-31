@@ -65,11 +65,11 @@
     "warnings": []
   },
   "nen:N006/26/V00033172": {
-    "reviewedAt": "2026-10-24T09:34:04.116Z",
+    "reviewedAt": "2026-10-31T10:28:10.711Z",
     "documentSnapshot": [
-      "https://nen.nipez.cz/file?id=4793292458",
-      "https://nen.nipez.cz/file?id=4793292469",
-      "https://nen.nipez.cz/file?id=4798880109"
+      "https://nen.nipez.cz/file?id=4798880109",
+      "https://nen.nipez.cz/file?id=4806871658",
+      "https://nen.nipez.cz/file?id=4806873552"
     ],
     "method": "automatic-extraction",
     "reviewVersion": "2026-10-24-2",
@@ -79,6 +79,11 @@
         "text": "Odpověď na dotaz č. 1 Zadavatel uvádí, že v souladu s čl. 11.3 zadávací dokumentace je možné doložit alespoň jednu významnou službu v oblasti tvorby podcastu s minimální délkou 20 min, přičemž tématika tohoto podcastu byla v oblasti energetiky, stavebnictví nebo ochrany životního prostředí nebo na libovolné téma, které mělo za účel popularizaci vědy.",
         "url": "https://nen.nipez.cz/file?id=4798880109",
         "kind": "scope"
+      },
+      {
+        "text": "Odpověď na dotaz č. 5 Zadavatel v čl. 11.3 zadávací dokumentace uvádí následující: a) „alespoň dvě významné služby v oblasti tvorby vizuálního obsahu pro marketingové nebo propagační účely s minimální finanční hodnotou alespoň 750 000 Kč bez DPH za každou tuto službu, přičemž předmětem alespoň jedné byla tvorba 3D grafického materiálu a alespoň jedna měla charakter popularizace vědy.“ Zadavatel tedy požaduje, aby alespoň jedna ze dvou doložených služeb měla za předmět tvorba 3D grafického materiálu a aby alespoň jedna ze dvou doložených služeb měla charakter popularizace vědy.",
+        "url": "https://nen.nipez.cz/file?id=4806871658",
+        "kind": "price"
       }
     ],
     "complete": true,
@@ -242,6 +247,31 @@
       "currency": "CZK"
     },
     "valueSource": "https://nen.nipez.cz/file?id=4803777387",
+    "complete": true,
+    "warnings": []
+  },
+  "nen:N006/26/V00035576": {
+    "reviewedAt": "2026-10-31T10:28:10.711Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4806876903",
+      "https://nen.nipez.cz/file?id=4806876922",
+      "https://nen.nipez.cz/file?id=4806877095"
+    ],
+    "method": "automatic-extraction",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Dodání 3 kusů počítačů pro střih videa pro potřeby odborných Popis předmětu zakázky: útvarů Krajského ředitelství policie hl. m.",
+    "facts": [
+      {
+        "text": "Dodání 3 kusů počítačů pro střih videa pro potřeby odborných Popis předmětu zakázky: útvarů Krajského ředitelství policie hl. m.",
+        "url": "https://nen.nipez.cz/file?id=4806877095",
+        "kind": "scope"
+      },
+      {
+        "text": "Ekonomická výhodnost s jediným hodnotícím kritériem nejnižší Ekonomická výhodnost nabídkovou cenou (váha 100 %) obvyklou pro předmět plnění nabídky (hodnotící kritéria) VZ MR v daném čase a místě při splnění zadávacích podmínek zadavatele.",
+        "url": "https://nen.nipez.cz/file?id=4806877095",
+        "kind": "evaluation"
+      }
+    ],
     "complete": true,
     "warnings": []
   }
