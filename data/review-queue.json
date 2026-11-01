@@ -1,22 +1,27 @@
 {
-  "updatedAt": "2026-10-31T10:28:10.711Z",
+  "updatedAt": "2026-11-01T11:22:44.760Z",
   "counts": {
     "pending": 0,
     "retry": 1,
-    "needs-review": 2,
-    "reviewed": 10,
+    "needs-review": 3,
+    "reviewed": 9,
     "expired": 1,
     "inactive": 2
   },
-  "reviewedCount": 2,
+  "reviewedCount": 0,
   "pendingCount": 1,
-  "attentionCount": 2,
-  "failedCount": 1,
+  "attentionCount": 3,
+  "failedCount": 2,
   "sourceErrors": [
     {
       "id": "zakazky-gov:RVZ2600295484",
       "title": "DNS – Komunikační a marketingové aktivity",
       "error": "Původní detail se nenačetl."
+    },
+    {
+      "id": "nen:N006/26/V00032165",
+      "title": "Dodavatel audiovizuálního obsahu účasti ČR na Mezinárodní specializované výstavě EXPO 2027, Bělehrad",
+      "error": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032165/zadavaci-dokumentace: HTTP 503"
     }
   ],
   "tenders": [
@@ -162,7 +167,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "nen:N006/26/V00034249",
@@ -234,7 +239,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": "2026-10-28T10:40:53.265Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "nen:N006/26/V00033336",
@@ -316,8 +321,8 @@
       ],
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-31T10:28:10.711Z",
-      "lastSeenAt": "2026-10-31T10:28:10.711Z",
+      "firstSeenAt": "2026-11-01T11:22:44.760Z",
+      "lastSeenAt": "2026-11-01T11:22:44.760Z",
       "status": "reviewed",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -331,7 +336,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": "2026-10-28T10:40:53.265Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "nen:N006/26/V00030271",
@@ -398,7 +403,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": "2026-10-28T10:40:53.265Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "nen:N006/26/V00034098",
@@ -480,8 +485,8 @@
       ],
       "procedureType": "Sluzby / Otevřená výzva",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-31T10:28:10.711Z",
-      "lastSeenAt": "2026-10-31T10:28:10.711Z",
+      "firstSeenAt": "2026-11-01T11:22:44.760Z",
+      "lastSeenAt": "2026-11-01T11:22:44.760Z",
       "status": "reviewed",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -495,7 +500,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "nen:N006/26/V00033172",
@@ -574,8 +579,8 @@
       ],
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-31T10:28:10.711Z",
-      "lastSeenAt": "2026-10-31T10:28:10.711Z",
+      "firstSeenAt": "2026-11-01T11:22:44.760Z",
+      "lastSeenAt": "2026-11-01T11:22:44.760Z",
       "status": "reviewed",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -589,7 +594,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "nen:N006/26/V00021404",
@@ -699,8 +704,8 @@
       ],
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-31T10:28:10.711Z",
-      "lastSeenAt": "2026-10-31T10:28:10.711Z",
+      "firstSeenAt": "2026-11-01T11:22:44.760Z",
+      "lastSeenAt": "2026-11-01T11:22:44.760Z",
       "status": "reviewed",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -714,7 +719,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "nen:N006/26/V00032165",
@@ -810,9 +815,9 @@
       ],
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-31T10:28:10.711Z",
-      "lastSeenAt": "2026-10-31T10:28:10.711Z",
-      "status": "reviewed",
+      "firstSeenAt": "2026-11-01T11:22:44.760Z",
+      "lastSeenAt": "2026-11-01T11:22:44.760Z",
+      "status": "retry",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
@@ -820,12 +825,12 @@
       "candidateProfileUrls": [],
       "fingerprint": "07d7d41f902b7cb18da8",
       "signature": "5e2fd3c9c7d1c59029108d3a62576c4ef483f482014fc3e3d65ea69924aafb7a",
-      "error": null,
-      "attempts": 1,
+      "error": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032165/zadavaci-dokumentace: HTTP 503",
+      "attempts": 2,
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
-      "lastAttemptAt": "2026-10-28T10:40:53.265Z",
-      "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "lastAttemptAt": "2026-11-01T11:22:44.760Z",
+      "nextAttemptAt": "2026-11-01T15:22:44.760Z",
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "ted:646731-2026",
@@ -861,8 +866,8 @@
       ],
       "procedureType": "supplies, services, supplies, services, services, services",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-31T10:28:10.711Z",
-      "lastSeenAt": "2026-10-31T10:28:10.711Z",
+      "firstSeenAt": "2026-11-01T11:22:44.760Z",
+      "lastSeenAt": "2026-11-01T11:22:44.760Z",
       "status": "needs-review",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -878,7 +883,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "nen:N006/26/V00031545",
@@ -945,7 +950,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "nen:N006/26/V00035168",
@@ -997,8 +1002,8 @@
       ],
       "procedureType": "Sluzby / Otevřená výzva",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-31T10:28:10.711Z",
-      "lastSeenAt": "2026-10-31T10:28:10.711Z",
+      "firstSeenAt": "2026-11-01T11:22:44.760Z",
+      "lastSeenAt": "2026-11-01T11:22:44.760Z",
       "status": "reviewed",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -1012,7 +1017,7 @@
       "firstQueuedAt": "2026-10-27T09:54:11.118Z",
       "lastAttemptAt": "2026-10-28T10:40:53.265Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "ted:742978-2026",
@@ -1050,8 +1055,8 @@
       ],
       "procedureType": "services, services, services, services, services, services",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-31T10:28:10.711Z",
-      "lastSeenAt": "2026-10-31T10:28:10.711Z",
+      "firstSeenAt": "2026-11-01T11:22:44.760Z",
+      "lastSeenAt": "2026-11-01T11:22:44.760Z",
       "status": "needs-review",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -1065,7 +1070,7 @@
       "firstQueuedAt": "2026-10-27T09:54:11.118Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "zakazky-gov:RVZ2600295484",
@@ -1093,7 +1098,7 @@
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-28T10:40:53.265Z",
       "lastSeenAt": "2026-10-28T10:40:53.265Z",
-      "status": "retry",
+      "status": "needs-review",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
@@ -1102,11 +1107,11 @@
       "fingerprint": "835a6ae45fae4b6ebd32",
       "signature": "ca5c7e86c87aa6b2137d8e648d388051fc2a3e6d9999c8acb624b248de1f464c",
       "error": "Původní detail se nenačetl.",
-      "attempts": 2,
+      "attempts": 3,
       "firstQueuedAt": "2026-10-28T10:40:53.265Z",
-      "lastAttemptAt": "2026-10-31T10:28:10.711Z",
-      "nextAttemptAt": "2026-10-31T14:28:10.711Z",
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "lastAttemptAt": "2026-11-01T11:22:44.760Z",
+      "nextAttemptAt": null,
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "tenderarena:P26V00349386",
@@ -1147,7 +1152,7 @@
       "firstQueuedAt": "2026-10-28T10:40:53.265Z",
       "lastAttemptAt": "2026-10-29T10:58:37.476Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "ted:680377-2026",
@@ -1198,7 +1203,7 @@
       "firstQueuedAt": "2026-10-28T10:40:53.265Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     },
     {
       "id": "nen:N006/26/V00035576",
@@ -1262,7 +1267,7 @@
       "firstQueuedAt": "2026-10-31T10:28:10.711Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-10-31T10:28:10.711Z"
+      "updatedAt": "2026-11-01T11:22:44.760Z"
     }
   ]
 }
