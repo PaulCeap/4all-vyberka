@@ -203,19 +203,19 @@
     "warnings": []
   },
   "nen:N006/26/V00034249": {
-    "reviewedAt": "2026-10-27T09:54:11.118Z",
+    "reviewedAt": "2026-11-03T12:04:45.535Z",
     "documentSnapshot": [
-      "https://nen.nipez.cz/file?id=4795184699",
       "https://nen.nipez.cz/file?id=4795184724",
-      "https://nen.nipez.cz/file?id=4803676352"
+      "https://nen.nipez.cz/file?id=4803676352",
+      "https://nen.nipez.cz/file?id=4809229452"
     ],
     "method": "automatic-extraction",
     "reviewVersion": "2026-10-24-2",
-    "summary": "Odběratel je oprávněn v průběhu plnění požadovat změnu parametrů, filtrů, sledovaných subjektů, témat, časových období a struktury těchto analytických výstupů, pokud jsou takové výstupy vytvořitelné v rámci standardních funkcionalit monitorovacího a analytického systému Dodavatele. zajištění online analytického dashboardu umožňujícího průběžné vyhodnocování monitorovaných mediálních výstupů a jejich vizualizaci, zahrnujícího zejména přehled vývoje počtu mediálních zmínek, analýzu sentimentu, podíl mediálního prostoru (Share of Voice), potenciální mediální zásah, přehled nejvýznamnějších médií, autorů a monitorovaných témat, časové trendy a další analytické přehledy dle požadavků Odběratele, včetně možnosti exportu dat minimálně ve formátech PDF, XLSX, CSV a další běžné.",
+    "summary": "Předmě tem plně ní této veřejné zakázky jsou služby spoč ívající v monitoringu médií, tj. poskytování denního monitoringu vnitrostátních tiště ných a elektronických médií vč etně audio a audiovizuálních médií, sociálních sítí, analýzy, benchmarking a další služby.",
     "facts": [
       {
-        "text": "Odběratel je oprávněn v průběhu plnění požadovat změnu parametrů, filtrů, sledovaných subjektů, témat, časových období a struktury těchto analytických výstupů, pokud jsou takové výstupy vytvořitelné v rámci standardních funkcionalit monitorovacího a analytického systému Dodavatele. zajištění online analytického dashboardu umožňujícího průběžné vyhodnocování monitorovaných mediálních výstupů a jejich vizualizaci, zahrnujícího zejména přehled vývoje počtu mediálních zmínek, analýzu sentimentu, podíl mediálního prostoru (Share of Voice), potenciální mediální zásah, přehled nejvýznamnějších médií, autorů a monitorovaných témat, časové trendy a další analytické přehledy dle požadavků Odběratele, včetně možnosti exportu dat minimálně ve formátech PDF, XLSX, CSV a další běžné.",
-        "url": "https://nen.nipez.cz/file?id=4795184699",
+        "text": "Předmě tem plně ní této veřejné zakázky jsou služby spoč ívající v monitoringu médií, tj. poskytování denního monitoringu vnitrostátních tiště ných a elektronických médií vč etně audio a audiovizuálních médií, sociálních sítí, analýzy, benchmarking a další služby.",
+        "url": "https://nen.nipez.cz/file?id=4795184724",
         "kind": "scope"
       }
     ],

@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T12:39:12.795Z",
+  "generatedAt": "2026-11-03T12:04:45.535Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 13,
+    "total": 12,
     "newThisRun": 4,
     "strong": 1,
-    "closingSoon": 3,
+    "closingSoon": 4,
     "unresolvedOrigin": 0,
     "invalidRows": 0
   },
@@ -18,100 +18,53 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 67,
+      "count": 128,
       "warnings": []
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 38,
+      "count": 78,
       "warnings": []
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 75,
+      "count": 78,
       "warnings": [
-        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-24-V00009235: HTTP 503",
-        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-22-P00000048: HTTP 503",
-        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-23-V00015692: HTTP 503",
-        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-25-V00032688: HTTP 503",
-        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-19-V00036254: HTTP 503"
+        "Dotaz zajištění akcí: https://nen.nipez.cz/verejne-zakazky/p%3Avz%3AstavZP%3Dneukoncena%26query%3Dzaji%C5%A1t%C4%9Bn%C3%AD%20akc%C3%AD: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00017937: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-20-V00030887: HTTP 503"
       ],
       "retryQueue": [
         {
-          "code": "N006/24/V00009235",
-          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-24-V00009235",
-          "title": "RD - Preventivní periodické prohlídky a opravy EZS v roce 2024 - 2025",
+          "code": "N006/26/V00017937",
+          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00017937",
+          "title": "SLUŽBY REKLAMNÍCH AGENTUR A TVORBA AUDIOVIZUÁLNÍCH DĚL PRO ČEZ, A. S. A VYBRANÉ IDS",
           "summary": {
-            "kod": "N006/24/V00009235",
-            "nazev": "RD - Preventivní periodické prohlídky a opravy EZS v roce 2024 - 2025",
-            "zadavatelNazev": "Ministerstvo obrany",
-            "podaniLhuta": "2024-04-12T08:00:00"
-          },
-          "attempts": 1,
-          "firstFailedAt": "2026-11-02T12:39:12.795Z",
-          "lastAttemptAt": "2026-11-02T12:39:12.795Z",
-          "error": "HTTP 503"
-        },
-        {
-          "code": "N006/22/P00000048",
-          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-22-P00000048",
-          "title": "Monitoring medií a měření mediální efektivity zahraničních zastoupení agentury CzechTourism 2022 ",
-          "summary": {
-            "kod": "N006/22/P00000048",
-            "nazev": "Monitoring medií a měření mediální efektivity zahraničních zastoupení agentury CzechTourism 2022 ",
-            "zadavatelNazev": "Česká centrála cestovního ruchu - CzechTourism",
+            "kod": "N006/26/V00017937",
+            "nazev": "SLUŽBY REKLAMNÍCH AGENTUR A TVORBA AUDIOVIZUÁLNÍCH DĚL PRO ČEZ, A. S. A VYBRANÉ IDS",
+            "zadavatelNazev": "ČEZ, a. s.",
             "podaniLhuta": null
           },
           "attempts": 1,
-          "firstFailedAt": "2026-11-02T12:39:12.795Z",
-          "lastAttemptAt": "2026-11-02T12:39:12.795Z",
+          "firstFailedAt": "2026-11-03T12:04:45.535Z",
+          "lastAttemptAt": "2026-11-03T12:04:45.535Z",
           "error": "HTTP 503"
         },
         {
-          "code": "N006/23/V00015692",
-          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-23-V00015692",
-          "title": "Zajištění revizí, oprav, pravidelných preventivních prohlídek a servisu klimatizací pro pracoviště ČSSZ Ústí nad Labem a OSSZ v jeho působnosti",
+          "code": "N006/20/V00030887",
+          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-20-V00030887",
+          "title": "Monitoring médií a analýza mediálního obsahu",
           "summary": {
-            "kod": "N006/23/V00015692",
-            "nazev": "Zajištění revizí, oprav, pravidelných preventivních prohlídek a servisu klimatizací pro pracoviště ČSSZ Ústí nad Labem a OSSZ v jeho působnosti",
-            "zadavatelNazev": "Česká správa sociálního zabezpečení",
-            "podaniLhuta": "2023-06-15T15:00:00"
+            "kod": "N006/20/V00030887",
+            "nazev": "Monitoring médií a analýza mediálního obsahu",
+            "zadavatelNazev": "Ministerstvo spravedlnosti",
+            "podaniLhuta": "2020-11-25T11:00:00"
           },
           "attempts": 1,
-          "firstFailedAt": "2026-11-02T12:39:12.795Z",
-          "lastAttemptAt": "2026-11-02T12:39:12.795Z",
-          "error": "HTTP 503"
-        },
-        {
-          "code": "N006/25/V00032688",
-          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-25-V00032688",
-          "title": "Vytvoření animovaných videomanuálů pro projekt EURES+3Z Up!",
-          "summary": {
-            "kod": "N006/25/V00032688",
-            "nazev": "Vytvoření animovaných videomanuálů pro projekt EURES+3Z Up!",
-            "zadavatelNazev": "Ministerstvo práce a sociálních věcí",
-            "podaniLhuta": "2025-10-14T10:00:00"
-          },
-          "attempts": 1,
-          "firstFailedAt": "2026-11-02T12:39:12.795Z",
-          "lastAttemptAt": "2026-11-02T12:39:12.795Z",
-          "error": "HTTP 503"
-        },
-        {
-          "code": "N006/19/V00036254",
-          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-19-V00036254",
-          "title": "Poskytnutí audiovizuálních materiálů za účelem propagace hor České republiky Jaroslavem Kulhavým",
-          "summary": {
-            "kod": "N006/19/V00036254",
-            "nazev": "Poskytnutí audiovizuálních materiálů za účelem propagace hor České republiky Jaroslavem Kulhavým",
-            "zadavatelNazev": "Česká centrála cestovního ruchu - CzechTourism",
-            "podaniLhuta": null
-          },
-          "attempts": 1,
-          "firstFailedAt": "2026-11-02T12:39:12.795Z",
-          "lastAttemptAt": "2026-11-02T12:39:12.795Z",
+          "firstFailedAt": "2026-11-03T12:04:45.535Z",
+          "lastAttemptAt": "2026-11-03T12:04:45.535Z",
           "error": "HTTP 503"
         }
       ]
@@ -119,19 +72,19 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 400,
+      "count": 474,
       "warnings": []
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 65,
+      "count": 66,
       "warnings": []
     },
     {
       "id": "proebiz",
       "ok": true,
-      "count": 26,
+      "count": 27,
       "warnings": []
     },
     {
@@ -156,11 +109,10 @@
     },
     {
       "id": "poptavej",
-      "ok": false,
-      "count": 0,
-      "error": "fetch failed",
+      "ok": true,
+      "count": 20,
       "warnings": [],
-      "resolved": 0,
+      "resolved": 2,
       "pending": 0
     }
   ],
@@ -202,7 +154,7 @@
       "procedureType": "services, services, services, services, services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-27T09:54:11.118Z",
-      "lastSeenAt": "2026-11-02T12:39:12.795Z",
+      "lastSeenAt": "2026-11-03T12:04:45.535Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -297,6 +249,11 @@
           "url": "https://nen.nipez.cz/file?id=4806873552"
         },
         {
+          "name": "SÚRAO_PR Agentura_VZD č.4_final.pdf",
+          "type": "Vysvětlení zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4809355539"
+        },
+        {
           "name": "PR Agentura_Příloha č. 1_Krycí list nabídky.docx",
           "type": "Zadávací dokumentace",
           "url": "https://nen.nipez.cz/file?id=4793292451"
@@ -320,11 +277,6 @@
           "name": "PR Agentura_Příloha č. 5_Specifikace předmětu plnění.docx",
           "type": "Zadávací dokumentace",
           "url": "https://nen.nipez.cz/file?id=4793292458"
-        },
-        {
-          "name": "PR Agentura_Příloha č. 6_Čestné prohlášení ve vztahu k mezinárodním sankcím.docx",
-          "type": "Zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4793292594"
         }
       ],
       "verifiedFacts": [
@@ -348,7 +300,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-19T10:03:31.222Z",
-      "lastSeenAt": "2026-11-02T12:39:12.795Z",
+      "lastSeenAt": "2026-11-03T12:04:45.535Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2149270-produkcni-a-vizualni-agentura",
@@ -387,7 +339,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 17
+        "deadlineDays": 16
       },
       "assessment": {
         "status": "needs-information",
@@ -469,7 +421,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 24
+        "deadlineDays": 23
       },
       "assessment": {
         "status": "needs-information",
@@ -585,7 +537,7 @@
       "procedureType": "Sluzby / Otevřená výzva",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-24T09:34:04.116Z",
-      "lastSeenAt": "2026-11-02T12:39:12.795Z",
+      "lastSeenAt": "2026-11-03T12:04:45.535Z",
       "status": "open",
       "discoverySource": "poptavky",
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2149158-monitoring-medii-a-analyza-medialniho-obsahu-pro-digitalni-a-informacni-agenturu-na-roky-2027-2029",
@@ -619,7 +571,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       },
       "assessment": {
         "status": "needs-information",
@@ -653,7 +605,7 @@
       "country": "CZ",
       "region": "Česko",
       "publishedAt": "2026-09-29T10:00:00.000Z",
-      "deadline": "2026-12-02T09:00:00.000Z",
+      "deadline": "2026-12-03T09:00:00.000Z",
       "deadlineTimeKnown": true,
       "value": null,
       "valueSource": null,
@@ -758,6 +710,11 @@
           "name": "02_Soupis plnění_oprava 4.xlsx",
           "type": "Vysvětlení zadávací dokumentace (podle § 98 zákona)",
           "url": "https://www.e-zakazky.cz/stazenisouboru/832e87d6-6666-4325-a482-50a89975d62d"
+        },
+        {
+          "name": "Vysvětlení zadávací dokumentace č. 18-20.pdf",
+          "type": "Vysvětlení zadávací dokumentace (podle § 98 zákona)",
+          "url": "https://www.e-zakazky.cz/stazenisouboru/4896b9ce-c106-4b96-9a43-87748e927c34"
         }
       ],
       "verifiedFacts": [
@@ -788,7 +745,7 @@
       "originStatus": "verified",
       "originConfidence": null,
       "candidateProfileUrls": [],
-      "fingerprint": "9a99a410dd39b85966fb",
+      "fingerprint": "f08c89c0a081eed6226d",
       "duplicateSources": [
         "official-profile"
       ],
@@ -817,123 +774,6 @@
         "evaluation": [],
         "gaps": [
           "Rozpočet není doložený.",
-          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
-          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
-        ],
-        "internalChecks": [
-          "Porovnat požadované reference s našimi.",
-          "Ověřit kapacitu týmu a náklady realizace."
-        ],
-        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
-      }
-    },
-    {
-      "id": "nen:N006/26/V00034249",
-      "source": "nen",
-      "sourceId": "N006/26/V00034249",
-      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00034249",
-      "title": "Monitoring médií",
-      "buyer": "Ministerstvo dopravy",
-      "summary": "Předmětem veřejné zakázky jsou služby spočívající v monitoringu médií, tj. poskytování denního monitoringu vnitrostátních tištěných a elektronických médií včetně audio a audiovizuálních médií, sociálních sítí, analýzy, benchmarking a další služby.",
-      "country": "CZ",
-      "region": "Hlavní město Praha",
-      "publishedAt": "2026-10-20T11:07:00.000Z",
-      "deadline": "2026-11-04T08:00:00.000Z",
-      "deadlineTimeKnown": true,
-      "value": {
-        "amount": 475000,
-        "currency": "CZK"
-      },
-      "valueSource": null,
-      "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00034249/zadavaci-dokumentace",
-      "documents": [
-        {
-          "name": "Vysvětlení zadávacích podmínek_Dotaz 1.pdf",
-          "type": "Vysvětlení zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4803676352"
-        },
-        {
-          "name": "Příloha č. 1 – Vzor krycího listu.docx",
-          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4795184749"
-        },
-        {
-          "name": "Příloha č. 2 – Vzor čestného prohlášení dodavatele.docx",
-          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4795184670"
-        },
-        {
-          "name": "Příloha č. 3 – Návrh smlouvy.docx",
-          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4795184699"
-        },
-        {
-          "name": "Výzva k podání nabídky.pdf",
-          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4795184724"
-        }
-      ],
-      "verifiedFacts": [
-        {
-          "text": "Odběratel je oprávněn v průběhu plnění požadovat změnu parametrů, filtrů, sledovaných subjektů, témat, časových období a struktury těchto analytických výstupů, pokud jsou takové výstupy vytvořitelné v rámci standardních funkcionalit monitorovacího a analytického systému Dodavatele. zajištění online analytického dashboardu umožňujícího průběžné vyhodnocování monitorovaných mediálních výstupů a jejich vizualizaci, zahrnujícího zejména přehled vývoje počtu mediálních zmínek, analýzu sentimentu, podíl mediálního prostoru (Share of Voice), potenciální mediální zásah, přehled nejvýznamnějších médií, autorů a monitorovaných témat, časové trendy a další analytické přehledy dle požadavků Odběratele, včetně možnosti exportu dat minimálně ve formátech PDF, XLSX, CSV a další běžné.",
-          "url": "https://nen.nipez.cz/file?id=4795184699",
-          "kind": "scope"
-        }
-      ],
-      "factsReviewedAt": "2026-10-27T09:54:11.118Z",
-      "reviewComplete": true,
-      "reviewWarnings": [],
-      "cpv": [
-        "72310000"
-      ],
-      "procedureType": "Sluzby / Otevřená výzva",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-24T09:34:04.116Z",
-      "lastSeenAt": "2026-10-24T09:34:04.116Z",
-      "status": "open",
-      "discoverySource": "poptavky",
-      "discoveryUrl": "https://www.poptavky.cz/poptavka/2137655-monitoring-medii",
-      "originStatus": "resolved",
-      "originConfidence": 95,
-      "candidateProfileUrls": [],
-      "fingerprint": "b28b1097f1bcad4a3eb6",
-      "relevance": {
-        "score": 59,
-        "level": "good",
-        "reasons": [
-          "Tvorba obsahu: audiovizuální, sociálních sítí",
-          "PR & komunikace: přímá poptávka služby",
-          "obor potvrzuje ověřený výtah zadání",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [
-          "velmi krátká lhůta"
-        ],
-        "categories": [
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 31
-          },
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 28
-          },
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 28
-          }
-        ],
-        "deadlineDays": 2
-      },
-      "assessment": {
-        "status": "needs-information",
-        "label": "Doplnit podklady pro rozhodnutí",
-        "requirements": [],
-        "evaluation": [],
-        "gaps": [
           "Kvalifikační požadavky nejsou ve výtahu ověřené.",
           "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
         ],
@@ -1092,7 +932,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 8
+        "deadlineDays": 7
       },
       "assessment": {
         "status": "needs-information",
@@ -1210,7 +1050,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-24T09:34:04.116Z",
-      "lastSeenAt": "2026-11-02T12:39:12.795Z",
+      "lastSeenAt": "2026-11-03T12:04:45.535Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -1241,7 +1081,7 @@
             "score": 19
           }
         ],
-        "deadlineDays": 17
+        "deadlineDays": 16
       },
       "assessment": {
         "status": "needs-information",
@@ -1249,6 +1089,202 @@
         "requirements": [],
         "evaluation": [],
         "gaps": [
+          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
+          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
+        ],
+        "internalChecks": [
+          "Porovnat požadované reference s našimi.",
+          "Ověřit kapacitu týmu a náklady realizace."
+        ],
+        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
+      }
+    },
+    {
+      "id": "nen:N006/26/V00034249",
+      "source": "nen",
+      "sourceId": "N006/26/V00034249",
+      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00034249",
+      "title": "Monitoring médií",
+      "buyer": "Ministerstvo dopravy",
+      "summary": "Předmětem veřejné zakázky jsou služby spočívající v monitoringu médií, tj. poskytování denního monitoringu vnitrostátních tištěných a elektronických médií včetně audio a audiovizuálních médií, sociálních sítí, analýzy, benchmarking a další služby.",
+      "country": "CZ",
+      "region": "Hlavní město Praha",
+      "publishedAt": "2026-10-20T11:07:00.000Z",
+      "deadline": "2026-11-04T08:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": {
+        "amount": 475000,
+        "currency": "CZK"
+      },
+      "valueSource": null,
+      "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00034249/zadavaci-dokumentace",
+      "documents": [
+        {
+          "name": "Vysvětlení zadávacích podmínek_Dotaz 1.pdf",
+          "type": "Vysvětlení zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4803676352"
+        },
+        {
+          "name": "Vysvětlení žádosti dokumentace č. 2.pdf",
+          "type": "Vysvětlení zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4809229452"
+        },
+        {
+          "name": "Příloha č. 1 – Vzor krycího listu.docx",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4795184749"
+        },
+        {
+          "name": "Příloha č. 2 – Vzor čestného prohlášení dodavatele.docx",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4795184670"
+        },
+        {
+          "name": "Příloha č. 3 – Návrh smlouvy.docx",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4795184699"
+        },
+        {
+          "name": "Výzva k podání nabídky.pdf",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4795184724"
+        }
+      ],
+      "verifiedFacts": [
+        {
+          "text": "Předmě tem plně ní této veřejné zakázky jsou služby spoč ívající v monitoringu médií, tj. poskytování denního monitoringu vnitrostátních tiště ných a elektronických médií vč etně audio a audiovizuálních médií, sociálních sítí, analýzy, benchmarking a další služby.",
+          "url": "https://nen.nipez.cz/file?id=4795184724",
+          "kind": "scope"
+        }
+      ],
+      "factsReviewedAt": "2026-11-03T12:04:45.535Z",
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [
+        "72310000"
+      ],
+      "procedureType": "Sluzby / Otevřená výzva",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-24T09:34:04.116Z",
+      "lastSeenAt": "2026-10-24T09:34:04.116Z",
+      "status": "open",
+      "discoverySource": "poptavky",
+      "discoveryUrl": "https://www.poptavky.cz/poptavka/2137655-monitoring-medii",
+      "originStatus": "resolved",
+      "originConfidence": 95,
+      "candidateProfileUrls": [],
+      "fingerprint": "b28b1097f1bcad4a3eb6",
+      "relevance": {
+        "score": 53,
+        "level": "watch",
+        "reasons": [
+          "Tvorba obsahu: audiovizuální, sociálních sítí",
+          "PR & komunikace: přímá poptávka služby",
+          "obor potvrzuje ověřený výtah zadání",
+          "jde o zakázku na služby"
+        ],
+        "negativeSignals": [
+          "velmi krátká lhůta"
+        ],
+        "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 31
+          },
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 28
+          }
+        ],
+        "deadlineDays": 1
+      },
+      "assessment": {
+        "status": "needs-information",
+        "label": "Doplnit podklady pro rozhodnutí",
+        "requirements": [],
+        "evaluation": [],
+        "gaps": [
+          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
+          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
+        ],
+        "internalChecks": [
+          "Porovnat požadované reference s našimi.",
+          "Ověřit kapacitu týmu a náklady realizace."
+        ],
+        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
+      }
+    },
+    {
+      "id": "ted:646731-2026",
+      "source": "ted",
+      "sourceId": "646731-2026",
+      "url": "https://ted.europa.eu/cs/notice/-/detail/646731-2026",
+      "title": "DNS NA MARKETINGOVÉ SLUŽBY",
+      "buyer": "LOM PRAHA s.p.",
+      "summary": "Předmětem zadávacího řízení je zavedení DNS na dodávku a realizaci marketingových, propagačních a prezentačních materiálů a služeb dle potřeb zadavatele, přičemž zadavatel v souladu s § 138 odst. 1 ZZVZ rozděluje DNS do čtyř (4) kategorií podle druhu plnění veřejných zakázek zadávaných v rámci DNS. Předmětem veřejných zakázek jsou zejména dodávky reklamních propisek, dárkových sad, diářů a zápisníků, termohrnků, deštníků, svíček, aroma difuzérů, textilu a reklamního ošacení, modelů letadel, reklamních a prezentačních předmětů, dárkových předmětů pro obchodní partnery a dalších obdobných propagačních předmětů. Předmětem veřejných zakázek jsou zejména grafické návrhy, DTP práce, tvorba vizuálních identit, zpracování marketingových podkladů, fotografické služby, produktová fotografie, reportážní fotografie, natáčení videí, střih videí, animace, postprodukční práce, tvorba audiovizuálního obsahu pro marketingové a prezentační účely. Předmětem veřejných zakázek jsou zejména návrhy výstavních expozic, výroba výstavních stánků, montáž a demontáž expozic, zajištění vybavení stánků, logistika a doprava expozic, technické zabezpečení prezentací, zajištění účasti na veletrzích a výstavách, související marketingová a organizační podpora. Předmětem veřejných zakázek jsou zejména dodávky letáků, brožur, katalogů, PF karet, samolepek, bannerů, roll-upů, plakátů, reklamních cedulí, informačních tabulí, polepů vozidel, velkoformátového tisku, ostatních tiskových a prezentační materiálů.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": null,
+      "deadline": null,
+      "deadlineTimeKnown": false,
+      "value": {
+        "amount": 50000000,
+        "currency": "CZK"
+      },
+      "valueSource": null,
+      "documentsUrl": null,
+      "documents": [],
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [
+        "22462000",
+        "79810000",
+        "39294100",
+        "79822500",
+        "79956000",
+        "79800000"
+      ],
+      "procedureType": "supplies, services, supplies, services, services, services",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-22T09:29:46.460Z",
+      "lastSeenAt": "2026-11-03T12:04:45.535Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "candidateProfileUrls": [
+        "https://nen.nipez.cz/profily-zadavatelu/detail-profilu/00000515/zahajene-zakazky"
+      ],
+      "fingerprint": "1e6603be0d57f34ad045",
+      "relevance": {
+        "score": 47,
+        "level": "watch",
+        "reasons": [
+          "Tvorba obsahu: fotograf, audiovizuální",
+          "obor potvrzuje popis zakázky"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 35
+          }
+        ],
+        "deadlineDays": null
+      },
+      "assessment": {
+        "status": "needs-information",
+        "label": "Doplnit podklady pro rozhodnutí",
+        "requirements": [],
+        "evaluation": [],
+        "gaps": [
+          "Lhůta pro reakci není doložená.",
           "Kvalifikační požadavky nejsou ve výtahu ověřené.",
           "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
         ],
@@ -1330,12 +1366,11 @@
       "candidateProfileUrls": [],
       "fingerprint": "f4fcc9adb6305f2832b6",
       "relevance": {
-        "score": 49,
+        "score": 45,
         "level": "watch",
         "reasons": [
           "obor potvrzuje ověřený výtah zadání",
-          "jde o zakázku na služby",
-          "zbývá alespoň týden na reakci"
+          "jde o zakázku na služby"
         ],
         "negativeSignals": [],
         "categories": [
@@ -1345,7 +1380,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 7
+        "deadlineDays": 6
       },
       "assessment": {
         "status": "needs-information",
@@ -1360,231 +1395,6 @@
         ],
         "gaps": [
           "Kvalifikační požadavky nejsou ve výtahu ověřené."
-        ],
-        "internalChecks": [
-          "Porovnat požadované reference s našimi.",
-          "Ověřit kapacitu týmu a náklady realizace."
-        ],
-        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
-      }
-    },
-    {
-      "id": "ted:646731-2026",
-      "source": "ted",
-      "sourceId": "646731-2026",
-      "url": "https://ted.europa.eu/cs/notice/-/detail/646731-2026",
-      "title": "DNS NA MARKETINGOVÉ SLUŽBY",
-      "buyer": "LOM PRAHA s.p.",
-      "summary": "Předmětem zadávacího řízení je zavedení DNS na dodávku a realizaci marketingových, propagačních a prezentačních materiálů a služeb dle potřeb zadavatele, přičemž zadavatel v souladu s § 138 odst. 1 ZZVZ rozděluje DNS do čtyř (4) kategorií podle druhu plnění veřejných zakázek zadávaných v rámci DNS. Předmětem veřejných zakázek jsou zejména dodávky reklamních propisek, dárkových sad, diářů a zápisníků, termohrnků, deštníků, svíček, aroma difuzérů, textilu a reklamního ošacení, modelů letadel, reklamních a prezentačních předmětů, dárkových předmětů pro obchodní partnery a dalších obdobných propagačních předmětů. Předmětem veřejných zakázek jsou zejména grafické návrhy, DTP práce, tvorba vizuálních identit, zpracování marketingových podkladů, fotografické služby, produktová fotografie, reportážní fotografie, natáčení videí, střih videí, animace, postprodukční práce, tvorba audiovizuálního obsahu pro marketingové a prezentační účely. Předmětem veřejných zakázek jsou zejména návrhy výstavních expozic, výroba výstavních stánků, montáž a demontáž expozic, zajištění vybavení stánků, logistika a doprava expozic, technické zabezpečení prezentací, zajištění účasti na veletrzích a výstavách, související marketingová a organizační podpora. Předmětem veřejných zakázek jsou zejména dodávky letáků, brožur, katalogů, PF karet, samolepek, bannerů, roll-upů, plakátů, reklamních cedulí, informačních tabulí, polepů vozidel, velkoformátového tisku, ostatních tiskových a prezentační materiálů.",
-      "country": "CZ",
-      "region": "Česko",
-      "publishedAt": null,
-      "deadline": null,
-      "deadlineTimeKnown": false,
-      "value": {
-        "amount": 50000000,
-        "currency": "CZK"
-      },
-      "valueSource": null,
-      "documentsUrl": null,
-      "documents": [],
-      "verifiedFacts": [],
-      "factsReviewedAt": null,
-      "reviewComplete": true,
-      "reviewWarnings": [],
-      "cpv": [
-        "22462000",
-        "79810000",
-        "39294100",
-        "79822500",
-        "79956000",
-        "79800000"
-      ],
-      "procedureType": "supplies, services, supplies, services, services, services",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-22T09:29:46.460Z",
-      "lastSeenAt": "2026-11-02T12:39:12.795Z",
-      "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": null,
-      "candidateProfileUrls": [
-        "https://nen.nipez.cz/profily-zadavatelu/detail-profilu/00000515/zahajene-zakazky"
-      ],
-      "fingerprint": "1e6603be0d57f34ad045",
-      "relevance": {
-        "score": 47,
-        "level": "watch",
-        "reasons": [
-          "Tvorba obsahu: fotograf, audiovizuální",
-          "obor potvrzuje popis zakázky"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 35
-          }
-        ],
-        "deadlineDays": null
-      },
-      "assessment": {
-        "status": "needs-information",
-        "label": "Doplnit podklady pro rozhodnutí",
-        "requirements": [],
-        "evaluation": [],
-        "gaps": [
-          "Lhůta pro reakci není doložená.",
-          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
-          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
-        ],
-        "internalChecks": [
-          "Porovnat požadované reference s našimi.",
-          "Ověřit kapacitu týmu a náklady realizace."
-        ],
-        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
-      }
-    },
-    {
-      "id": "nen:N006/26/V00032165",
-      "source": "nen",
-      "sourceId": "N006/26/V00032165",
-      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032165",
-      "title": "Dodavatel audiovizuálního obsahu účasti ČR na Mezinárodní specializované výstavě EXPO 2027, Bělehrad",
-      "buyer": "CzechBusiness",
-      "summary": "Česká expozice na EXPO 2027 hledá kreativně-technologického partnera pro vytvoření a provoz kompletního audiovizuálního obsahu.",
-      "country": "CZ",
-      "region": "Hlavní město Praha",
-      "publishedAt": "2026-10-06T07:16:00.000Z",
-      "deadline": "2026-11-06T09:00:00.000Z",
-      "deadlineTimeKnown": true,
-      "value": null,
-      "valueSource": null,
-      "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032165/zadavaci-dokumentace",
-      "documents": [
-        {
-          "name": "Šifrovací N006-26-V00032165 Dodavatel audiovizuálního obsahu účasti ČR.cer",
-          "type": "Certifikát",
-          "url": "https://nen.nipez.cz/file?id=4778453894"
-        },
-        {
-          "name": "VZD 1.pdf",
-          "type": "Vysvětlení zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4782970335"
-        },
-        {
-          "name": "VZD 2.pdf",
-          "type": "Vysvětlení zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4787723430"
-        },
-        {
-          "name": "VZD 3.pdf",
-          "type": "Vysvětlení zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4796882844"
-        },
-        {
-          "name": "ZD EXPO 2027 AV_final.docx",
-          "type": "Zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4778453874"
-        },
-        {
-          "name": "ZD EXPO 2027 AV.pdf",
-          "type": "Zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4778453882"
-        },
-        {
-          "name": "ZD Expo 2027 prilohy 4_9.doc",
-          "type": "Zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4778453869"
-        },
-        {
-          "name": "1 AV proposal.zip",
-          "type": "Zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4778453887"
-        },
-        {
-          "name": "2 LIBRETO - Expo Mood Film 15 min Fin.pdf",
-          "type": "Zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4778453863"
-        },
-        {
-          "name": "3 Provozní řád skákacího hradu.docx",
-          "type": "Zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4778453900"
-        }
-      ],
-      "verifiedFacts": [
-        {
-          "text": "15minutová AV show: 9 minut hlavní film, 6 minut odpočinkový režim; součástí je synchronizace LED ploch, prostorového zvuku, světel a klavíru Petrof.",
-          "url": "https://nen.nipez.cz/file?id=4778453882"
-        },
-        {
-          "text": "Maximální nepřekročitelná cena je 5 mil. Kč bez DPH. Kvalita a koncepce tvoří 80 % hodnocení, cena 20 %.",
-          "url": "https://nen.nipez.cz/file?id=4778453882"
-        },
-        {
-          "text": "Požadují se tři relevantní reference za posledních osm let a kreativní manažer. Vysvětlení č. 2 upřesňuje rozsah referencí i hranici odpovědnosti za technickou infrastrukturu.",
-          "url": "https://nen.nipez.cz/file?id=4787723430"
-        },
-        {
-          "text": "Přiložené libreto je jen inspirace: vlastní autorské libreto je přípustné, má být v angličtině s úvodním srbským pozdravem.",
-          "url": "https://nen.nipez.cz/file?id=4782970335"
-        }
-      ],
-      "factsReviewedAt": "2026-10-17T22:11:00.000Z",
-      "reviewComplete": true,
-      "reviewWarnings": [],
-      "cpv": [
-        "92111200"
-      ],
-      "procedureType": "Sluzby / Otevřené řízení",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-06T11:21:57.039Z",
-      "lastSeenAt": "2026-11-02T12:39:12.795Z",
-      "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": null,
-      "candidateProfileUrls": [],
-      "fingerprint": "07d7d41f902b7cb18da8",
-      "relevance": {
-        "score": 45,
-        "level": "watch",
-        "reasons": [
-          "Tvorba obsahu: audiovizuální",
-          "obor potvrzuje ověřený výtah zadání",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 28
-          }
-        ],
-        "deadlineDays": 4
-      },
-      "assessment": {
-        "status": "needs-information",
-        "label": "Doplnit podklady pro rozhodnutí",
-        "requirements": [
-          {
-            "text": "Požadují se tři relevantní reference za posledních osm let a kreativní manažer. Vysvětlení č. 2 upřesňuje rozsah referencí i hranici odpovědnosti za technickou infrastrukturu.",
-            "url": "https://nen.nipez.cz/file?id=4787723430"
-          }
-        ],
-        "evaluation": [
-          {
-            "text": "Maximální nepřekročitelná cena je 5 mil. Kč bez DPH. Kvalita a koncepce tvoří 80 % hodnocení, cena 20 %.",
-            "url": "https://nen.nipez.cz/file?id=4778453882"
-          }
-        ],
-        "gaps": [
-          "Rozpočet není doložený."
         ],
         "internalChecks": [
           "Porovnat požadované reference s našimi.",
@@ -1676,7 +1486,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 8
+        "deadlineDays": 7
       },
       "assessment": {
         "status": "needs-information",
@@ -1730,13 +1540,9 @@
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": null,
+      "originConfidence": 0,
       "candidateProfileUrls": [],
       "fingerprint": "02c749a79123a56c90b8",
-      "duplicateSources": [
-        "zakazky-gov",
-        "tenderarena"
-      ],
       "relevance": {
         "score": 44,
         "level": "watch",
@@ -1753,7 +1559,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       },
       "assessment": {
         "status": "needs-information",
@@ -1774,34 +1580,50 @@
     }
   ],
   "processing": {
-    "updatedAt": "2026-11-02T12:39:12.795Z",
+    "updatedAt": "2026-11-03T12:04:45.535Z",
     "status": "attention",
     "reviews": {
       "pending": 0,
-      "retry": 0,
+      "retry": 4,
       "needs-review": 4,
-      "reviewed": 10,
+      "reviewed": 7,
       "expired": 2,
       "inactive": 1
     },
     "radar": {
       "pending": 0,
       "resolved": 8,
-      "rejected": 75,
-      "expired": 30,
+      "rejected": 76,
+      "expired": 35,
       "needs-verification": 12
     },
     "sources": [
       {
         "id": "nen",
-        "error": "5 dotazů nebo detailů se nepodařilo načíst; ostatní výsledky byly zpracovány."
-      },
-      {
-        "id": "poptavej",
-        "error": "fetch failed"
+        "error": "3 dotazů nebo detailů se nepodařilo načíst; ostatní výsledky byly zpracovány."
       }
     ],
     "items": [
+      {
+        "id": "nen:N006/26/V00033336",
+        "title": "Propagace statutárního města Zlína prostřednictvím sportu na období roku 2027",
+        "status": "retry",
+        "reason": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00033336/zadavaci-dokumentace: HTTP 503",
+        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00033336",
+        "nextAttemptAt": "2026-11-03T16:04:45.535Z",
+        "attempts": 2,
+        "published": true
+      },
+      {
+        "id": "nen:N006/26/V00034098",
+        "title": "Monitoring médií a analýza mediálního obsahu pro Digitální a informační agenturu na roky 2027-2029",
+        "status": "retry",
+        "reason": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00034098/zadavaci-dokumentace: HTTP 503",
+        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00034098",
+        "nextAttemptAt": "2026-11-03T14:04:45.535Z",
+        "attempts": 1,
+        "published": true
+      },
       {
         "id": "ted:646731-2026",
         "title": "DNS NA MARKETINGOVÉ SLUŽBY",
@@ -1829,8 +1651,18 @@
         "reason": "Původní detail se nenačetl.",
         "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600295484",
         "nextAttemptAt": null,
-        "attempts": 4,
+        "attempts": 5,
         "published": false
+      },
+      {
+        "id": "nen:N006/26/V00035576",
+        "title": "Dodání počítačů pro střih videa II",
+        "status": "retry",
+        "reason": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035576/zadavaci-dokumentace: HTTP 503",
+        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035576",
+        "nextAttemptAt": "2026-11-03T14:04:45.535Z",
+        "attempts": 1,
+        "published": true
       },
       {
         "id": "zakazky-gov:RVZ2600296161",
@@ -1843,46 +1675,29 @@
         "published": true
       },
       {
-        "id": "nen:N006/24/V00009235",
-        "title": "RD - Preventivní periodické prohlídky a opravy EZS v roce 2024 - 2025",
+        "id": "nen:N006/26/P00000240",
+        "title": "PTK Eventy - Zajištění mediálního prostoru a marketingového plnění v rámci významných sportovních a kulturních akcí v roce 2027",
         "status": "retry",
-        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-24-V00009235",
+        "reason": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-P00000240/zadavaci-dokumentace: HTTP 503",
+        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-P00000240",
+        "nextAttemptAt": "2026-11-03T14:04:45.535Z",
+        "attempts": 1,
+        "published": false
+      },
+      {
+        "id": "nen:N006/26/V00017937",
+        "title": "SLUŽBY REKLAMNÍCH AGENTUR A TVORBA AUDIOVIZUÁLNÍCH DĚL PRO ČEZ, A. S. A VYBRANÉ IDS",
+        "status": "retry",
+        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00017937",
         "attempts": 1,
         "published": false,
         "reason": "Detail zdroje je nedostupný. Adresa je uložená a zkusí se znovu při dalším denním sběru (1 neúspěšných běhů). HTTP 503"
       },
       {
-        "id": "nen:N006/22/P00000048",
-        "title": "Monitoring medií a měření mediální efektivity zahraničních zastoupení agentury CzechTourism 2022 ",
+        "id": "nen:N006/20/V00030887",
+        "title": "Monitoring médií a analýza mediálního obsahu",
         "status": "retry",
-        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-22-P00000048",
-        "attempts": 1,
-        "published": false,
-        "reason": "Detail zdroje je nedostupný. Adresa je uložená a zkusí se znovu při dalším denním sběru (1 neúspěšných běhů). HTTP 503"
-      },
-      {
-        "id": "nen:N006/23/V00015692",
-        "title": "Zajištění revizí, oprav, pravidelných preventivních prohlídek a servisu klimatizací pro pracoviště ČSSZ Ústí nad Labem a OSSZ v jeho působnosti",
-        "status": "retry",
-        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-23-V00015692",
-        "attempts": 1,
-        "published": false,
-        "reason": "Detail zdroje je nedostupný. Adresa je uložená a zkusí se znovu při dalším denním sběru (1 neúspěšných běhů). HTTP 503"
-      },
-      {
-        "id": "nen:N006/25/V00032688",
-        "title": "Vytvoření animovaných videomanuálů pro projekt EURES+3Z Up!",
-        "status": "retry",
-        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-25-V00032688",
-        "attempts": 1,
-        "published": false,
-        "reason": "Detail zdroje je nedostupný. Adresa je uložená a zkusí se znovu při dalším denním sběru (1 neúspěšných běhů). HTTP 503"
-      },
-      {
-        "id": "nen:N006/19/V00036254",
-        "title": "Poskytnutí audiovizuálních materiálů za účelem propagace hor České republiky Jaroslavem Kulhavým",
-        "status": "retry",
-        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-19-V00036254",
+        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-20-V00030887",
         "attempts": 1,
         "published": false,
         "reason": "Detail zdroje je nedostupný. Adresa je uložená a zkusí se znovu při dalším denním sběru (1 neúspěšných běhů). HTTP 503"
@@ -2126,8 +1941,8 @@
       {
         "id": "poptavej:VZ656286",
         "title": "Zpracování a tisk cyklomap a tisk mapy Zakempuj",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ656286/zpracovani-a-tisk-cyklomap-a-tisk-mapy-zakempuj"
       },
       {
@@ -2196,8 +2011,8 @@
       {
         "id": "poptavej:VZ771060",
         "title": "Dodávky reklamních a propagačních předmětů",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ771060/dodavky-reklamnich-a-propagacnich-predmetu"
       },
       {
@@ -2280,8 +2095,8 @@
       {
         "id": "poptavej:VZ562551",
         "title": "Setkání vedení se starosty měst a obcí",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ562551/setkani-vedeni-se-starosty-mest-a-obci"
       },
       {
@@ -2294,8 +2109,8 @@
       {
         "id": "poptavky:2139154",
         "title": "D5 Reklamní zařízení - odstraňování 2026",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavky.cz/poptavka/2139154-d5-reklamni-zarizeni-odstranovani-2026"
       },
       {
@@ -2364,8 +2179,8 @@
       {
         "id": "poptavej:VZ481348",
         "title": "Nákup pamětní kroniky",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ481348/nakup-pametni-kroniky"
       },
       {
@@ -2787,6 +2602,48 @@
         "status": "resolved",
         "reason": "Spojeno s ověřeným originálem.",
         "url": "https://www.poptavky.cz/poptavka/2149158-monitoring-medii-a-analyza-medialniho-obsahu-pro-digitalni-a-informacni-agenturu-na-roky-2027-2029"
+      },
+      {
+        "id": "poptavky:2151734",
+        "title": "Poptávám: montážní partu světelných i nesvětelných reklam a bannerů na dlouhodobou spolupráci",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2151734-poptavam-montazni-partu-svetelnych-i-nesvetelnych-reklam-a-banneru-na-dlouhodobou-spolupraci"
+      },
+      {
+        "id": "poptavky:2151106",
+        "title": "Poptávám: modernizaci firemní prezentace",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2151106-poptavam-modernizaci-firemni-prezentace"
+      },
+      {
+        "id": "poptavky:2150828",
+        "title": "Zajištění dodavatele reklamních předmětů a poskytovatele tiskařských služeb",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2150828-zajisteni-dodavatele-reklamnich-predmetu-a-poskytovatele-tiskarskych-sluzeb"
+      },
+      {
+        "id": "poptavky:2150860",
+        "title": "Dodávky na propagaci",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2150860-dodavky-na-propagaci"
+      },
+      {
+        "id": "poptavky:2150388",
+        "title": "Poptávám: větší reklamní osvětlenou plochu, od 6 m výše",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2150388-poptavam-vetsi-reklamni-osvetlenou-plochu-od-6-m-vyse"
+      },
+      {
+        "id": "poptavky:2150696",
+        "title": "Poptávka: lepení reklam ze samolepicích fólií, Chrudim",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2150696-poptavka-lepeni-reklam-ze-samolepicich-folii-chrudim"
       }
     ]
   }
