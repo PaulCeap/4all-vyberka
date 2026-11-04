@@ -203,29 +203,26 @@
     "warnings": []
   },
   "nen:N006/26/V00034249": {
-    "reviewedAt": "2026-11-03T12:04:45.535Z",
+    "reviewedAt": "2026-11-04T12:18:28.304Z",
     "documentSnapshot": [
-      "https://nen.nipez.cz/file?id=4795184724",
       "https://nen.nipez.cz/file?id=4803676352",
-      "https://nen.nipez.cz/file?id=4809229452"
+      "https://nen.nipez.cz/file?id=4809229452",
+      "https://nen.nipez.cz/file?id=4810488969"
     ],
     "method": "automatic-extraction",
     "reviewVersion": "2026-10-24-2",
-    "summary": "Předmě tem plně ní této veřejné zakázky jsou služby spoč ívající v monitoringu médií, tj. poskytování denního monitoringu vnitrostátních tiště ných a elektronických médií vč etně audio a audiovizuálních médií, sociálních sítí, analýzy, benchmarking a další služby.",
+    "summary": "Na českém mediálním trhu působí několik významných vydavatelů a organizací zastupujících vydavatelskápráva, jejichž obsahpodléhápři poskytování komerčního mediálního monitoringu příslušným licenčním podmínkám.",
     "facts": [
       {
-        "text": "Předmě tem plně ní této veřejné zakázky jsou služby spoč ívající v monitoringu médií, tj. poskytování denního monitoringu vnitrostátních tiště ných a elektronických médií vč etně audio a audiovizuálních médií, sociálních sítí, analýzy, benchmarking a další služby.",
-        "url": "https://nen.nipez.cz/file?id=4795184724",
+        "text": "Na českém mediálním trhu působí několik významných vydavatelů a organizací zastupujících vydavatelskápráva, jejichž obsahpodléhápři poskytování komerčního mediálního monitoringu příslušným licenčním podmínkám.",
+        "url": "https://nen.nipez.cz/file?id=4803676352",
         "kind": "scope"
       }
     ],
-    "value": {
-      "amount": 475000,
-      "currency": "CZK"
-    },
-    "valueSource": "https://nen.nipez.cz/file?id=4795184724",
-    "complete": true,
-    "warnings": []
+    "complete": false,
+    "warnings": [
+      "Vysvětlení zadávací dokumentace 3.pdf: Dokument nemá dost strojově čitelného textu."
+    ]
   },
   "nen:N006/26/V00035168": {
     "reviewedAt": "2026-10-27T09:54:11.118Z",
