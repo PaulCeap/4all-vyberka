@@ -203,7 +203,7 @@
     "warnings": []
   },
   "nen:N006/26/V00034249": {
-    "reviewedAt": "2026-11-04T12:18:28.304Z",
+    "reviewedAt": "2026-11-05T12:32:36.236Z",
     "documentSnapshot": [
       "https://nen.nipez.cz/file?id=4803676352",
       "https://nen.nipez.cz/file?id=4809229452",
@@ -266,6 +266,31 @@
       {
         "text": "Ekonomická výhodnost s jediným hodnotícím kritériem nejnižší Ekonomická výhodnost nabídkovou cenou (váha 100 %) obvyklou pro předmět plnění nabídky (hodnotící kritéria) VZ MR v daném čase a místě při splnění zadávacích podmínek zadavatele.",
         "url": "https://nen.nipez.cz/file?id=4806877095",
+        "kind": "evaluation"
+      }
+    ],
+    "complete": true,
+    "warnings": []
+  },
+  "nen:N006/26/V00021404": {
+    "reviewedAt": "2026-11-05T12:32:36.236Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4774320163",
+      "https://nen.nipez.cz/file?id=4813573675",
+      "https://nen.nipez.cz/file?id=4813573682"
+    ],
+    "method": "automatic-extraction",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Předmětem veřejné zakázky je zajištění technické a organizační podpory při přípravě a realizaci akcí pořádaných za účelem implementace Operačního programu Životní prostředí 2021–2027 (dále „OPŽP“) a nástroje pro využití prostředků EU v oblasti politiky soudržnosti v gesci MŽP v programovém období 2028-2034 a Operačního programu Spravedlivá transformace (dále „OPST“) 2021–2027 a nástroje pro využití prostředků EU v oblasti politiky soudržnosti v gesci MŽP v programovém období 2028- 2034.",
+    "facts": [
+      {
+        "text": "Předmětem veřejné zakázky je zajištění technické a organizační podpory při přípravě a realizaci akcí pořádaných za účelem implementace Operačního programu Životní prostředí 2021–2027 (dále „OPŽP“) a nástroje pro využití prostředků EU v oblasti politiky soudržnosti v gesci MŽP v programovém období 2028-2034 a Operačního programu Spravedlivá transformace (dále „OPST“) 2021–2027 a nástroje pro využití prostředků EU v oblasti politiky soudržnosti v gesci MŽP v programovém období 2028- 2034.",
+        "url": "https://nen.nipez.cz/file?id=4774320163",
+        "kind": "scope"
+      },
+      {
+        "text": "V dílčím hodnotícím kritériu „Nabídková cena za položky Kategorie A “, získá nabídka s nejnižší nabídkovou cenou bodovou hodnotu 100 bodů a bude následně násobena vahou hodnoceného kritéria (80 %); každá další hodnocená nabídka získá bodovou hodnotu, která bude vypočtena takto: nejnižší nabídková cena za položky kategorie A Počet bodů dílčího kritéria č. 1 = × 100 x 0,80 nabídková cena za položky kategorie A účastníka",
+        "url": "https://nen.nipez.cz/file?id=4774320163",
         "kind": "evaluation"
       }
     ],
