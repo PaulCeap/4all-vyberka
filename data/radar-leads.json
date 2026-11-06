@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-05T12:32:36.236Z",
+  "updatedAt": "2026-11-06T12:15:04.866Z",
   "counts": {
-    "pending": 7,
+    "pending": 5,
     "resolved": 9,
-    "rejected": 84,
-    "expired": 46,
-    "needs-verification": 11
+    "rejected": 81,
+    "expired": 52,
+    "needs-verification": 12
   },
   "leads": [
     {
@@ -407,9 +407,9 @@
       "discoveryUrl": "https://www.poptavky.cz/poptavka/2128827-graficka-priprava-a-tisk-ostrovskeho-mesicniku-24-vydani",
       "originConfidence": 0,
       "processingVersion": "2026-10-24-2",
-      "preliminaryScore": 47,
-      "processingStatus": "needs-verification",
-      "processingReason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje."
+      "preliminaryScore": 39,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavky",
@@ -1177,7 +1177,7 @@
       "lastSeenAt": "2026-10-26T10:17:42.064Z",
       "lastOriginCheckAt": "2026-10-25T18:28:18.998Z",
       "originCheckAttempts": 3,
-      "preliminaryScore": 51,
+      "preliminaryScore": 47,
       "processingStatus": "needs-verification",
       "processingReason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje."
     },
@@ -1290,8 +1290,8 @@
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
-      "processingStatus": "rejected",
-      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
+      "processingStatus": "expired",
+      "processingReason": "Lhůta již uplynula."
     },
     {
       "source": "poptavej",
@@ -1343,8 +1343,8 @@
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
-      "processingStatus": "rejected",
-      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
+      "processingStatus": "expired",
+      "processingReason": "Lhůta již uplynula."
     },
     {
       "source": "poptavej",
@@ -1423,7 +1423,7 @@
       "lastSeenAt": "2026-10-27T09:54:11.118Z",
       "lastOriginCheckAt": "2026-10-25T18:28:18.998Z",
       "originCheckAttempts": 3,
-      "preliminaryScore": 51,
+      "preliminaryScore": 47,
       "processingStatus": "needs-verification",
       "processingReason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje."
     },
@@ -1452,8 +1452,8 @@
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
-      "processingStatus": "rejected",
-      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
+      "processingStatus": "expired",
+      "processingReason": "Lhůta již uplynula."
     },
     {
       "source": "poptavky",
@@ -1619,7 +1619,7 @@
       "lastSeenAt": "2026-10-26T10:17:42.064Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "preliminaryScore": 5,
+      "preliminaryScore": 0,
       "processingStatus": "rejected",
       "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
@@ -1971,8 +1971,8 @@
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
-      "processingStatus": "rejected",
-      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
+      "processingStatus": "expired",
+      "processingReason": "Lhůta již uplynula."
     },
     {
       "source": "poptavky",
@@ -2221,7 +2221,7 @@
       "lastSeenAt": "2026-10-28T10:40:53.265Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "preliminaryScore": 5,
+      "preliminaryScore": 0,
       "processingStatus": "rejected",
       "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
@@ -2825,7 +2825,7 @@
       "lastSeenAt": "2026-11-02T12:39:12.795Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "preliminaryScore": 5,
+      "preliminaryScore": 0,
       "processingStatus": "rejected",
       "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
@@ -3018,7 +3018,7 @@
       "lastSeenAt": "2026-11-03T12:04:45.535Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "preliminaryScore": 9,
+      "preliminaryScore": 5,
       "processingStatus": "rejected",
       "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
@@ -3075,8 +3075,8 @@
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
-      "processingStatus": "rejected",
-      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
+      "processingStatus": "expired",
+      "processingReason": "Lhůta již uplynula."
     },
     {
       "source": "poptavky",
@@ -3398,7 +3398,7 @@
       "lastSeenAt": "2026-11-03T12:04:45.535Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "preliminaryScore": 5,
+      "preliminaryScore": 0,
       "processingStatus": "rejected",
       "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
@@ -3622,7 +3622,7 @@
       "lastSeenAt": "2026-11-04T12:18:28.304Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "preliminaryScore": 9,
+      "preliminaryScore": 5,
       "processingStatus": "rejected",
       "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
@@ -3651,8 +3651,8 @@
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
-      "processingStatus": "rejected",
-      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
+      "processingStatus": "expired",
+      "processingReason": "Lhůta již uplynula."
     },
     {
       "source": "poptavky",
@@ -3731,7 +3731,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-04T12:18:28.304Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -3759,12 +3759,12 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-04T12:18:28.304Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastOriginCheckAt": "2026-11-05T12:32:36.236Z",
-      "originCheckAttempts": 2,
-      "preliminaryScore": 51,
-      "processingStatus": "pending",
-      "processingReason": "Čeká na dohledání oficiálního zadání."
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastOriginCheckAt": "2026-11-06T12:15:04.866Z",
+      "originCheckAttempts": 3,
+      "preliminaryScore": 47,
+      "processingStatus": "needs-verification",
+      "processingReason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje."
     },
     {
       "source": "poptavky",
@@ -3787,7 +3787,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-04T12:18:28.304Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 51,
@@ -3815,7 +3815,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-04T12:18:28.304Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -3843,7 +3843,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-04T12:18:28.304Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 5,
@@ -3871,7 +3871,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-04T12:18:28.304Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -3899,7 +3899,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-04T12:18:28.304Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 9,
@@ -3927,7 +3927,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-04T12:18:28.304Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 9,
@@ -3954,8 +3954,8 @@
       "candidateOriginUrls": [],
       "originStatus": "resolved",
       "processingVersion": "2026-10-24-2",
-      "firstSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
+      "firstSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "resolvedId": "nen:N006/26/V00034249",
@@ -3983,12 +3983,12 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-04T12:18:28.304Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastOriginCheckAt": "2026-11-05T12:32:36.236Z",
-      "originCheckAttempts": 2,
-      "preliminaryScore": 51,
-      "processingStatus": "pending",
-      "processingReason": "Čeká na dohledání oficiálního zadání."
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastOriginCheckAt": "2026-11-06T12:15:04.866Z",
+      "originCheckAttempts": 3,
+      "preliminaryScore": 47,
+      "processingStatus": "needs-verification",
+      "processingReason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje."
     },
     {
       "source": "poptavky",
@@ -4011,9 +4011,9 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastOriginCheckAt": "2026-11-05T12:32:36.236Z",
-      "originCheckAttempts": 1,
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastOriginCheckAt": "2026-11-06T12:15:04.866Z",
+      "originCheckAttempts": 2,
       "preliminaryScore": 51,
       "processingStatus": "pending",
       "processingReason": "Čeká na dohledání oficiálního zadání."
@@ -4039,7 +4039,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -4067,7 +4067,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -4095,9 +4095,9 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastOriginCheckAt": "2026-11-05T12:32:36.236Z",
-      "originCheckAttempts": 1,
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastOriginCheckAt": "2026-11-06T12:15:04.866Z",
+      "originCheckAttempts": 2,
       "preliminaryScore": 51,
       "processingStatus": "pending",
       "processingReason": "Čeká na dohledání oficiálního zadání."
@@ -4123,9 +4123,9 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastOriginCheckAt": "2026-11-05T12:32:36.236Z",
-      "originCheckAttempts": 1,
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastOriginCheckAt": "2026-11-06T12:15:04.866Z",
+      "originCheckAttempts": 2,
       "preliminaryScore": 51,
       "processingStatus": "pending",
       "processingReason": "Čeká na dohledání oficiálního zadání."
@@ -4151,10 +4151,10 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "preliminaryScore": 9,
+      "preliminaryScore": 5,
       "processingStatus": "rejected",
       "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
@@ -4179,7 +4179,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -4207,7 +4207,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 5,
@@ -4260,7 +4260,7 @@
       "lastSeenAt": "2026-11-05T12:32:36.236Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "preliminaryScore": 4,
+      "preliminaryScore": 0,
       "processingStatus": "rejected",
       "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
@@ -4420,6 +4420,62 @@
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 4,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
+    },
+    {
+      "source": "poptavky",
+      "sourceId": "2155646",
+      "url": "https://www.poptavky.cz/poptavka/2155646-poptavam-zajisteni-tisku-vcetne-pripadneho-grafickeho-navrhu-a-pripravy-podkladu",
+      "title": "Poptávám: zajištění tisku včetně případného grafického návrhu a přípravy podkladů",
+      "buyer": "Zadavatel z Poptávky.cz",
+      "summary": "Poptávám: tisk Popis: - poptávám zajištění tisku včetně případného grafického návrhu a přípravy podkladů - jedná se o 3D tisk Množství/rozměr: - 3-5 ks Lokalita: - Brno 621 00 Termín: - dle dohody",
+      "region": "Brno 621 00",
+      "publishedAt": "2026-11-06T10:01:00.000Z",
+      "deadline": null,
+      "deadlineTimeKnown": false,
+      "value": {
+        "amount": 12500,
+        "currency": "CZK"
+      },
+      "procedureType": "Komerční poptávka",
+      "opportunityType": "commercial-demand",
+      "candidateOriginUrls": [],
+      "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
+      "firstSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastOriginCheckAt": null,
+      "originCheckAttempts": 0,
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
+    },
+    {
+      "source": "poptavky",
+      "sourceId": "2155252",
+      "url": "https://www.poptavky.cz/poptavka/2155252-dodavka-a-instalace-finalizacnich-stroju-ke-stavajici-velkoformatove-tiskove-sestave-vcetne-zaskoleni-obsluhy",
+      "title": "Dodávka a instalace finalizačních strojů ke stávající velkoformátové tiskové sestavě včetně zaškolení obsluhy",
+      "buyer": "Zadavatel z Poptávky.cz",
+      "summary": "Podrobný popis: - předmětem veřejné zakázky je dodávka produkčního vybavení stávajícího velkoformátové tiskové sestavy o dva finalizační stroje, které umožní rozměrové formátování deskových materiálů určených pro tisk a tvarový výřez již potištěných deskových materiálů Lokalita: - Praha Termín pro podání nabídek: - 18. 11. 2026 09:30",
+      "region": "Praha",
+      "publishedAt": "2026-11-06T05:45:00.000Z",
+      "deadline": "2026-11-18T08:30:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": {
+        "amount": 600000,
+        "currency": "CZK"
+      },
+      "procedureType": "Veřejná zakázka na služby",
+      "opportunityType": "public-tender",
+      "candidateOriginUrls": [],
+      "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
+      "firstSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastOriginCheckAt": null,
+      "originCheckAttempts": 0,
+      "preliminaryScore": 9,
       "processingStatus": "rejected",
       "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     }

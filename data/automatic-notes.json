@@ -168,19 +168,19 @@
     "warnings": []
   },
   "nen:N006/26/V00034098": {
-    "reviewedAt": "2026-10-24T09:34:04.116Z",
+    "reviewedAt": "2026-11-06T12:15:04.866Z",
     "documentSnapshot": [
       "https://nen.nipez.cz/file?id=4796337415",
-      "https://nen.nipez.cz/file?id=4796337433",
-      "https://nen.nipez.cz/file?id=4796337439"
+      "https://nen.nipez.cz/file?id=4796337439",
+      "https://nen.nipez.cz/file?id=4815962376"
     ],
     "method": "automatic-extraction",
     "reviewVersion": "2026-10-24-2",
-    "summary": "Výzvy k předmětné veřejné zakázce, tedy že v posledních 3 letech před zahájením výběrového řízení poskytl alespoň 2 významné služby, z nichž každá splňuje následující požadavky: Za významnou službu se považuje služba obdobného charakteru jako předmět plnění veřejné zakázky, jejímž předmětem bylo pravidelné poskytování monitoringu médií, zahrnující vyhledávání, výběr a třídění mediálních výstupů ve více typech médií (např. tisk, internetová média, rozhlas nebo televize), zpracování pravidelných mediálních přehledů a souvisejících mediálních analýz.",
+    "summary": "Věcné vymezení předmětu veřejné zakázky Předmětem veřejné zakázky je denní monitoring médií, který zajišťuje mediální přehled o tématech spojených s Digitální a informační agenturou (DIA).",
     "facts": [
       {
-        "text": "Výzvy k předmětné veřejné zakázce, tedy že v posledních 3 letech před zahájením výběrového řízení poskytl alespoň 2 významné služby, z nichž každá splňuje následující požadavky: Za významnou službu se považuje služba obdobného charakteru jako předmět plnění veřejné zakázky, jejímž předmětem bylo pravidelné poskytování monitoringu médií, zahrnující vyhledávání, výběr a třídění mediálních výstupů ve více typech médií (např. tisk, internetová média, rozhlas nebo televize), zpracování pravidelných mediálních přehledů a souvisejících mediálních analýz.",
-        "url": "https://nen.nipez.cz/file?id=4796337433",
+        "text": "Věcné vymezení předmětu veřejné zakázky Předmětem veřejné zakázky je denní monitoring médií, který zajišťuje mediální přehled o tématech spojených s Digitální a informační agenturou (DIA).",
+        "url": "https://nen.nipez.cz/file?id=4796337415",
         "kind": "scope"
       },
       {
@@ -203,7 +203,7 @@
     "warnings": []
   },
   "nen:N006/26/V00034249": {
-    "reviewedAt": "2026-11-05T12:32:36.236Z",
+    "reviewedAt": "2026-11-06T12:15:04.866Z",
     "documentSnapshot": [
       "https://nen.nipez.cz/file?id=4803676352",
       "https://nen.nipez.cz/file?id=4809229452",
