@@ -296,5 +296,35 @@
     ],
     "complete": true,
     "warnings": []
+  },
+  "nen:N006/26/V00036531": {
+    "reviewedAt": "2026-11-07T11:11:24.717Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4816296214",
+      "https://nen.nipez.cz/file?id=4816296229",
+      "https://nen.nipez.cz/file?id=4816296234"
+    ],
+    "method": "automatic-extraction",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Předmětem této veřejné zakázky dále není zajištění mediálních vztahů a krizové komunikace, výzkum znalosti a vnímání značky ani technická realizace úprav webu zadavatele; tyto činnosti zajistí zadavatel interně nebo samostatně.",
+    "facts": [
+      {
+        "text": "Předmětem této veřejné zakázky dále není zajištění mediálních vztahů a krizové komunikace, výzkum znalosti a vnímání značky ani technická realizace úprav webu zadavatele; tyto činnosti zajistí zadavatel interně nebo samostatně.",
+        "url": "https://nen.nipez.cz/file?id=4816296214",
+        "kind": "scope"
+      },
+      {
+        "text": "Hodnoticí kritéria a jejich váhy: Kritérium / subkritérium Váha A Kvalita nabídky 60 % A1 Porozumění zadání a cílovým skupinám 10 % A2 Kreativní koncept a klíčový vizuál 20 % A3 Mediální strategie a výběr kanálů 10 % A4 Měření, optimalizace a uživatelská cesta na web 10 % A5 Osobní prezentace 10 % B Cena a nákladová efektivnost 40 % B1 Nabídková cena (celková nabídková cena bez DPH) 20 % B2.1 Cena za bod efektivního zásahu 3+ v cílových skupinách 10 % B2.2 Cena za tisíc kontaktů v cílových skupinách (CPT) 10 %",
+        "url": "https://nen.nipez.cz/file?id=4816296214",
+        "kind": "evaluation"
+      },
+      {
+        "text": "Zdravotní pojišťovna ministerstva vnitra České republiky sídlo Vinohradská 2577/178 | 130 00 Praha 3 | kód pojišťovny 211 | IČO 47114304 zapsána v obchodním rejstříku vedeném Městským soudem v Praze oddíl A, vložka 7216 datová schránka: 9swaix3 | infolinka: 224 211 211 | fax: 233 380 332 | e-mail: info@zpmvcr.cz, www.zpmvcr.cz 7/10 • B2.2 Cena za tisíc kontaktů v cílových skupinách (10 %): 3 300 000 Kč bez DPH / (počet kontaktů v cílových skupinách / 1 000).",
+        "url": "https://nen.nipez.cz/file?id=4816296214",
+        "kind": "price"
+      }
+    ],
+    "complete": true,
+    "warnings": []
   }
 }

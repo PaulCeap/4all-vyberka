@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T12:15:04.866Z",
+  "generatedAt": "2026-11-07T11:11:24.717Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 12,
-    "newThisRun": 4,
+    "total": 13,
+    "newThisRun": 6,
     "strong": 1,
-    "closingSoon": 3,
+    "closingSoon": 2,
     "unresolvedOrigin": 0,
     "invalidRows": 0
   },
@@ -18,13 +18,13 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 157,
+      "count": 58,
       "warnings": []
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 93,
+      "count": 35,
       "warnings": []
     },
     {
@@ -37,13 +37,13 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 468,
+      "count": 445,
       "warnings": []
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 74,
+      "count": 76,
       "warnings": []
     },
     {
@@ -55,7 +55,7 @@
     {
       "id": "media-signals",
       "ok": true,
-      "count": 0,
+      "count": 1,
       "warnings": []
     },
     {
@@ -70,16 +70,15 @@
       "count": 20,
       "warnings": [],
       "resolved": 1,
-      "pending": 4
+      "pending": 1
     },
     {
       "id": "poptavej",
-      "ok": false,
-      "count": 0,
-      "error": "fetch failed",
+      "ok": true,
+      "count": 20,
       "warnings": [],
-      "resolved": 0,
-      "pending": 1
+      "resolved": 3,
+      "pending": 2
     }
   ],
   "tenders": [
@@ -123,7 +122,7 @@
       "procedureType": "services, services, services, services, services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-27T09:54:11.118Z",
-      "lastSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastSeenAt": "2026-11-07T11:11:24.717Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -171,6 +170,135 @@
           "Lhůta pro reakci není doložená.",
           "Kvalifikační požadavky nejsou ve výtahu ověřené.",
           "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
+        ],
+        "internalChecks": [
+          "Porovnat požadované reference s našimi.",
+          "Ověřit kapacitu týmu a náklady realizace."
+        ],
+        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
+      }
+    },
+    {
+      "id": "nen:N006/26/V00036531",
+      "source": "nen",
+      "sourceId": "N006/26/V00036531",
+      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00036531",
+      "title": "Kampaň 2027",
+      "buyer": "Zdravotní pojišťovna ministerstva vnitra České republiky",
+      "summary": "Předmětem veřejné zakázky je vytvoření komunikační strategie Kampaně 2027 zadavatele zaměřené na prevenci. Realizace kampaně bude uskutečněna v období měsíce únor až březen 2027 a bude vycházet z podkladů zadavatele, konkrétně z Přílohy č. II Výzvy – Brief 211 Kampaň 2027, Přílohy č. III Výzvy - Výsledky výzkumu Znalost a vnímání značky ZP MV ČR - říjen 2026 a dalších materiálů poskytnutých dodavateli vzešlému z této veřejné zakázky. Dále je součástí plnění vytvoření strategického a taktického mediálního plánu podle této strategie, příprava hlavních sdělení kampaně, kreativní návrhy kampaně a vytvoření kompletních reklamních materiálů pro online prostor, sociální sítě, rozhlas a tisk podle vytvořené komunikační strategie. Součástí plnění je také kontrola a průběžný monitoring probíhající kampaně a její optimalizace vedoucí k dosažení stanovených cílů. Dodavatel zajistí po ukončení kampaně závěrečné vyhodnocení v rozsahu stanoveném Přílohou č. II Výzvy. Předmětem veřejné zakázky není zajištění nákupu mediálního a reklamního prostoru. Nákup médií podle taktického mediálního plánu zajistí zadavatel samostatně. Bližší popis je uveden ve Výzvě k předložení nabídky a jejích přílohách.",
+      "country": "CZ",
+      "region": "Česká republika",
+      "publishedAt": "2026-11-06T16:33:00.000Z",
+      "deadline": "2026-11-30T09:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": null,
+      "valueSource": null,
+      "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00036531/zadavaci-dokumentace",
+      "documents": [
+        {
+          "name": "Priloha VII_Mezinarodni_sankce a stret zajmu.docx",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4816296241"
+        },
+        {
+          "name": "Priloha_IV_Vyzvy_Formular_nabidky_Kampan_2027.xlsx",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4816296234"
+        },
+        {
+          "name": "Priloha_I_Vyzvy_Smlouva_o_marketingove_spolupraci_Final.docx",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4816296223"
+        },
+        {
+          "name": "Příloha V Výzvy - Prohlášení o mlčenlivosti.docx",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4816296229"
+        },
+        {
+          "name": "Vyzva_VZMR_Kampan_2027_fin_sign.pdf",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4816296214"
+        }
+      ],
+      "verifiedFacts": [
+        {
+          "text": "Předmětem této veřejné zakázky dále není zajištění mediálních vztahů a krizové komunikace, výzkum znalosti a vnímání značky ani technická realizace úprav webu zadavatele; tyto činnosti zajistí zadavatel interně nebo samostatně.",
+          "url": "https://nen.nipez.cz/file?id=4816296214",
+          "kind": "scope"
+        },
+        {
+          "text": "Hodnoticí kritéria a jejich váhy: Kritérium / subkritérium Váha A Kvalita nabídky 60 % A1 Porozumění zadání a cílovým skupinám 10 % A2 Kreativní koncept a klíčový vizuál 20 % A3 Mediální strategie a výběr kanálů 10 % A4 Měření, optimalizace a uživatelská cesta na web 10 % A5 Osobní prezentace 10 % B Cena a nákladová efektivnost 40 % B1 Nabídková cena (celková nabídková cena bez DPH) 20 % B2.1 Cena za bod efektivního zásahu 3+ v cílových skupinách 10 % B2.2 Cena za tisíc kontaktů v cílových skupinách (CPT) 10 %",
+          "url": "https://nen.nipez.cz/file?id=4816296214",
+          "kind": "evaluation"
+        },
+        {
+          "text": "Zdravotní pojišťovna ministerstva vnitra České republiky sídlo Vinohradská 2577/178 | 130 00 Praha 3 | kód pojišťovny 211 | IČO 47114304 zapsána v obchodním rejstříku vedeném Městským soudem v Praze oddíl A, vložka 7216 datová schránka: 9swaix3 | infolinka: 224 211 211 | fax: 233 380 332 | e-mail: info@zpmvcr.cz, www.zpmvcr.cz 7/10 • B2.2 Cena za tisíc kontaktů v cílových skupinách (10 %): 3 300 000 Kč bez DPH / (počet kontaktů v cílových skupinách / 1 000).",
+          "url": "https://nen.nipez.cz/file?id=4816296214",
+          "kind": "price"
+        }
+      ],
+      "factsReviewedAt": "2026-11-07T11:11:24.717Z",
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [
+        "79341000"
+      ],
+      "procedureType": "Sluzby / Otevřená výzva",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-11-07T11:11:24.717Z",
+      "lastSeenAt": "2026-11-07T11:11:24.717Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": 0,
+      "candidateProfileUrls": [],
+      "fingerprint": "84575d4a330ea20091cb",
+      "relevance": {
+        "score": 67,
+        "level": "good",
+        "reasons": [
+          "PR & komunikace: komunikační strategie",
+          "Marketing & eventy: nákup médií",
+          "obor potvrzuje ověřený výtah zadání",
+          "jde o zakázku na služby",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 28
+          },
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 28
+          },
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 25
+          }
+        ],
+        "deadlineDays": 23
+      },
+      "assessment": {
+        "status": "needs-information",
+        "label": "Doplnit podklady pro rozhodnutí",
+        "requirements": [],
+        "evaluation": [
+          {
+            "text": "Hodnoticí kritéria a jejich váhy: Kritérium / subkritérium Váha A Kvalita nabídky 60 % A1 Porozumění zadání a cílovým skupinám 10 % A2 Kreativní koncept a klíčový vizuál 20 % A3 Mediální strategie a výběr kanálů 10 % A4 Měření, optimalizace a uživatelská cesta na web 10 % A5 Osobní prezentace 10 % B Cena a nákladová efektivnost 40 % B1 Nabídková cena (celková nabídková cena bez DPH) 20 % B2.1 Cena za bod efektivního zásahu 3+ v cílových skupinách 10 % B2.2 Cena za tisíc kontaktů v cílových skupinách (CPT) 10 %",
+            "url": "https://nen.nipez.cz/file?id=4816296214",
+            "kind": "evaluation"
+          }
+        ],
+        "gaps": [
+          "Rozpočet není doložený.",
+          "Kvalifikační požadavky nejsou ve výtahu ověřené."
         ],
         "internalChecks": [
           "Porovnat požadované reference s našimi.",
@@ -271,7 +399,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-19T10:03:31.222Z",
-      "lastSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastSeenAt": "2026-11-07T11:11:24.717Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -310,7 +438,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 13
+        "deadlineDays": 12
       },
       "assessment": {
         "status": "needs-information",
@@ -392,7 +520,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 20
+        "deadlineDays": 19
       },
       "assessment": {
         "status": "needs-information",
@@ -587,7 +715,7 @@
             "score": 44
           }
         ],
-        "deadlineDays": 27
+        "deadlineDays": 26
       },
       "assessment": {
         "status": "needs-information",
@@ -596,6 +724,75 @@
         "evaluation": [],
         "gaps": [
           "Rozpočet není doložený.",
+          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
+          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
+        ],
+        "internalChecks": [
+          "Porovnat požadované reference s našimi.",
+          "Ověřit kapacitu týmu a náklady realizace."
+        ],
+        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
+      }
+    },
+    {
+      "id": "mediaguru:https://www.mediaguru.cz/pivovary-zubr-hledaji-pr-agenturu-pro-cesky-a-slovensky-trh",
+      "source": "mediaguru",
+      "sourceId": "https://www.mediaguru.cz/pivovary-zubr-hledaji-pr-agenturu-pro-cesky-a-slovensky-trh",
+      "url": "https://www.mediaguru.cz/pivovary-zubr-hledaji-pr-agenturu-pro-cesky-a-slovensky-trh",
+      "title": "Pivovary Zubr hledají PR agenturu pro český a slovenský trh",
+      "buyer": "Komerční zadavatel",
+      "summary": "Pivovary Zubr vyhlásily tendr na PR agenturu, která bude zajišťovat komunikaci značek Zubr, Holba a Litovel v Česku a na Slovensku. Výběrové řízení má dvě kola, přihlášky mohou agentury podávat do 13. listopadu. Výsledek chce společnost oznámit 17. prosince 2026.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": "2026-11-06T13:05:00.000Z",
+      "deadline": null,
+      "deadlineTimeKnown": false,
+      "value": null,
+      "valueSource": null,
+      "documentsUrl": null,
+      "documents": [],
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [],
+      "procedureType": "Komerční výběrové řízení — mediální signál",
+      "opportunityType": "market-signal",
+      "firstSeenAt": "2026-11-07T11:11:24.717Z",
+      "lastSeenAt": "2026-11-07T11:11:24.717Z",
+      "status": "signal",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "media-report",
+      "originConfidence": null,
+      "candidateProfileUrls": [],
+      "fingerprint": "60494647f08012b9aa3b",
+      "relevance": {
+        "score": 60,
+        "level": "good",
+        "reasons": [
+          "PR & komunikace: přímá poptávka služby",
+          "obor potvrzuje popis zakázky",
+          "aktivní komerční výběrové řízení zachycené v médiích"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 28
+          }
+        ],
+        "deadlineDays": null
+      },
+      "assessment": {
+        "status": "needs-information",
+        "label": "Doplnit podklady pro rozhodnutí",
+        "requirements": [],
+        "evaluation": [],
+        "gaps": [
+          "Rozpočet není doložený.",
+          "Lhůta pro reakci není doložená.",
           "Kvalifikační požadavky nejsou ve výtahu ověřené.",
           "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
         ],
@@ -698,7 +895,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-24T09:34:04.116Z",
-      "lastSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastSeenAt": "2026-11-07T11:11:24.717Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -729,7 +926,7 @@
             "score": 19
           }
         ],
-        "deadlineDays": 13
+        "deadlineDays": 12
       },
       "assessment": {
         "status": "needs-information",
@@ -839,7 +1036,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-21T15:08:39.037Z",
-      "lastSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastSeenAt": "2026-11-07T11:11:24.717Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -872,7 +1069,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 31
+        "deadlineDays": 30
       },
       "assessment": {
         "status": "needs-information",
@@ -1014,7 +1211,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 3
+        "deadlineDays": 2
       },
       "assessment": {
         "status": "needs-information",
@@ -1091,7 +1288,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 10
+        "deadlineDays": 9
       },
       "assessment": {
         "status": "needs-information",
@@ -1179,87 +1376,6 @@
         "evaluation": [],
         "gaps": [
           "Lhůta pro reakci není doložená.",
-          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
-          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
-        ],
-        "internalChecks": [
-          "Porovnat požadované reference s našimi.",
-          "Ověřit kapacitu týmu a náklady realizace."
-        ],
-        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
-      }
-    },
-    {
-      "id": "ted:750434-2026",
-      "source": "ted",
-      "sourceId": "750434-2026",
-      "url": "https://ted.europa.eu/cs/notice/-/detail/750434-2026",
-      "title": "Technické a organizační zajištění akcí OPŽP a OPST 2027 - 2029",
-      "buyer": "Česká republika - Ministerstvo životního prostředí",
-      "summary": "Předmětem veřejné zakázky je zajištění technické a organizační podpory při přípravě a realizaci akcí pořádaných za účelem implementace Operačního programu Životní prostředí 2021–2027 (dále „OPŽP“) a nástroje pro využití prostředků EU v oblasti politiky soudržnosti v gesci MŽP v programovém období 2028-2034 a Operačního programu Spravedlivá transformace (dále „OPST“) 2021–2027 a nástroje pro využití prostředků EU v oblasti politiky soudržnosti v gesci MŽP v programovém období 2028-2034. Jedná se především o zajištění zasedání monitorovacích výborů, jednání zástupců implementační struktury vč. Evropské komise, konferencí, seminářů či workshopů pro žadatele a příjemce dotace atp. Technická a organizační podpora akcí zahrnuje zejména zajištění jednacích prostor, techniky (tlumočnická technika, ozvučení prostor, projekční technika), tlumočení (do anglického jazyka: simultánní, konsekutivní nebo AI technologiemi), nahrávání či streamování jednání včetně přepisu záznamu, zajištění občerstvení, přepravy, případně rezervace ubytování pro účastníky zasedání či zajištění moderování akce a další služby spojené se zajištěním akcí.",
-      "country": "CZ",
-      "region": "Česko",
-      "publishedAt": null,
-      "deadline": "2026-11-09T13:00:00.000Z",
-      "deadlineTimeKnown": true,
-      "value": {
-        "amount": 12892561.98,
-        "currency": "CZK"
-      },
-      "valueSource": null,
-      "documentsUrl": null,
-      "documents": [],
-      "verifiedFacts": [],
-      "factsReviewedAt": null,
-      "reviewComplete": true,
-      "reviewWarnings": [],
-      "cpv": [
-        "79950000",
-        "79951000",
-        "79952000"
-      ],
-      "procedureType": "services, services",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastSeenAt": "2026-11-06T12:15:04.866Z",
-      "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": null,
-      "candidateProfileUrls": [
-        "https://nen.nipez.cz/Zadavaci_postup/N006-26-V00021404",
-        "https://nen.nipez.cz/profil/MZP"
-      ],
-      "fingerprint": "5a7e26511a4edf2263f5",
-      "relevance": {
-        "score": 45,
-        "level": "watch",
-        "reasons": [
-          "Školení & media training: moderování",
-          "obor potvrzuje popis zakázky"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 28
-          },
-          {
-            "id": "training",
-            "label": "Školení & media training",
-            "score": 11
-          }
-        ],
-        "deadlineDays": 4
-      },
-      "assessment": {
-        "status": "needs-information",
-        "label": "Doplnit podklady pro rozhodnutí",
-        "requirements": [],
-        "evaluation": [],
-        "gaps": [
           "Kvalifikační požadavky nejsou ve výtahu ověřené.",
           "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
         ],
@@ -1367,7 +1483,7 @@
       "procedureType": "Sluzby / Otevřená výzva",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-24T09:34:04.116Z",
-      "lastSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastSeenAt": "2026-11-07T11:11:24.717Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -1391,7 +1507,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 6
+        "deadlineDays": 5
       },
       "assessment": {
         "status": "needs-information",
@@ -1441,10 +1557,10 @@
       "firstSeenAt": "2026-11-05T12:32:36.236Z",
       "lastSeenAt": "2026-11-05T12:32:36.236Z",
       "status": "needs-review",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": null,
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ940762/zajisteni-inzertniho-a-pr-medialniho-prostoru-v-ramci-tistenych-titulu",
+      "originStatus": "resolved",
+      "originConfidence": 89,
       "candidateProfileUrls": [],
       "fingerprint": "dc6c88e5453f72a2c1f1",
       "duplicateSources": [
@@ -1467,7 +1583,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 13
+        "deadlineDays": 12
       },
       "assessment": {
         "status": "needs-information",
@@ -1488,29 +1604,24 @@
     }
   ],
   "processing": {
-    "updatedAt": "2026-11-06T12:15:04.866Z",
+    "updatedAt": "2026-11-07T11:11:24.717Z",
     "status": "attention",
     "reviews": {
       "pending": 0,
       "retry": 3,
-      "needs-review": 9,
+      "needs-review": 8,
       "reviewed": 6,
       "expired": 4,
-      "inactive": 2
+      "inactive": 5
     },
     "radar": {
-      "pending": 5,
-      "resolved": 9,
+      "pending": 3,
+      "resolved": 11,
       "rejected": 81,
-      "expired": 52,
-      "needs-verification": 12
+      "expired": 54,
+      "needs-verification": 14
     },
-    "sources": [
-      {
-        "id": "poptavej",
-        "error": "fetch failed"
-      }
-    ],
+    "sources": [],
     "items": [
       {
         "id": "nen:N006/26/V00034249",
@@ -1549,7 +1660,7 @@
         "reason": "Původní detail se nenačetl.",
         "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600295484",
         "nextAttemptAt": null,
-        "attempts": 8,
+        "attempts": 9,
         "published": false
       },
       {
@@ -1558,8 +1669,8 @@
         "status": "retry",
         "reason": "Původní detail se nenačetl.",
         "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600296161",
-        "nextAttemptAt": "2026-11-06T14:15:04.866Z",
-        "attempts": 1,
+        "nextAttemptAt": "2026-11-07T15:11:24.717Z",
+        "attempts": 2,
         "published": false
       },
       {
@@ -1575,11 +1686,11 @@
       {
         "id": "zakazky-gov:RVZ2600297185",
         "title": "Zajištění inzertního a PR mediálního prostoru v rámci tištěných titulů BORGIS",
-        "status": "needs-review",
-        "reason": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
+        "status": "retry",
+        "reason": "Původní detail se nenačetl.",
         "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600297185",
-        "nextAttemptAt": null,
-        "attempts": 0,
+        "nextAttemptAt": "2026-11-07T13:11:24.717Z",
+        "attempts": 1,
         "published": false
       },
       {
@@ -1588,29 +1699,9 @@
         "status": "retry",
         "reason": "Z přečtených podkladů se nepodařilo potvrdit předmět služby; vyžaduje věcnou kontrolu.",
         "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00036193",
-        "nextAttemptAt": "2026-11-06T16:15:04.866Z",
-        "attempts": 2,
-        "published": false
-      },
-      {
-        "id": "tenderarena:P26V00349932",
-        "title": "Zajištění inzertního a PR mediálního prostoru v rámci tištěných titulů BORGIS",
-        "status": "retry",
-        "reason": "Původní detail se nenačetl.",
-        "url": "https://tenderarena.cz/dodavatel/zakazka/926374",
-        "nextAttemptAt": "2026-11-06T14:15:04.866Z",
+        "nextAttemptAt": "2026-11-07T13:11:24.717Z",
         "attempts": 1,
-        "published": true
-      },
-      {
-        "id": "ted:750434-2026",
-        "title": "Technické a organizační zajištění akcí OPŽP a OPST 2027 - 2029",
-        "status": "needs-review",
-        "reason": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
-        "url": "https://ted.europa.eu/cs/notice/-/detail/750434-2026",
-        "nextAttemptAt": null,
-        "attempts": 0,
-        "published": true
+        "published": false
       },
       {
         "id": "nen:N006/26/V00035326",
@@ -1628,6 +1719,16 @@
         "status": "needs-review",
         "reason": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
         "url": "https://ted.europa.eu/cs/notice/-/detail/774958-2026",
+        "nextAttemptAt": null,
+        "attempts": 0,
+        "published": true
+      },
+      {
+        "id": "mediaguru:https://www.mediaguru.cz/pivovary-zubr-hledaji-pr-agenturu-pro-cesky-a-slovensky-trh",
+        "title": "Pivovary Zubr hledají PR agenturu pro český a slovenský trh",
+        "status": "needs-review",
+        "reason": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
+        "url": "https://www.mediaguru.cz/pivovary-zubr-hledaji-pr-agenturu-pro-cesky-a-slovensky-trh",
         "nextAttemptAt": null,
         "attempts": 0,
         "published": true
@@ -1696,15 +1797,6 @@
         "published": false
       },
       {
-        "id": "poptavky:2139326",
-        "title": "Monitoring médií a analýza mediálního obsahu",
-        "status": "needs-verification",
-        "reason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje.",
-        "url": "https://www.poptavky.cz/poptavka/2139326-monitoring-medii-a-analyza-medialniho-obsahu",
-        "attempts": 3,
-        "published": false
-      },
-      {
         "id": "poptavky:2148346",
         "title": "Poptávám: externí marketingový specialista",
         "status": "needs-verification",
@@ -1752,37 +1844,46 @@
       {
         "id": "poptavky:2154624",
         "title": "Zajištění inzertního a PR mediálního prostoru",
-        "status": "pending",
-        "reason": "Čeká na dohledání oficiálního zadání.",
+        "status": "needs-verification",
+        "reason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje.",
         "url": "https://www.poptavky.cz/poptavka/2154624-zajisteni-inzertniho-a-pr-medialniho-prostoru",
-        "attempts": 2,
+        "attempts": 3,
         "published": false
       },
       {
         "id": "poptavky:2154348",
         "title": "Průzkum trhu – 250 kusů triček s krátkým rukávem s logem/potiskem",
-        "status": "pending",
-        "reason": "Čeká na dohledání oficiálního zadání.",
+        "status": "needs-verification",
+        "reason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje.",
         "url": "https://www.poptavky.cz/poptavka/2154348-pruzkum-trhu-250-kusu-tricek-s-kratkym-rukavem-s-logempotiskem",
-        "attempts": 2,
+        "attempts": 3,
         "published": false
       },
       {
         "id": "poptavky:2154346",
         "title": "Průzkum trhu – 250 kusů mikin s logem/potiskem",
-        "status": "pending",
-        "reason": "Čeká na dohledání oficiálního zadání.",
+        "status": "needs-verification",
+        "reason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje.",
         "url": "https://www.poptavky.cz/poptavka/2154346-pruzkum-trhu-250-kusu-mikin-s-logempotiskem",
-        "attempts": 2,
+        "attempts": 3,
         "published": false
       },
       {
-        "id": "poptavej:VZ940762",
-        "title": "Zajištění inzertního a PR mediálního prostoru v rámci tištěných titulů",
+        "id": "poptavej:VZ713651",
+        "title": "Zajištění konference",
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
-        "url": "https://www.poptavej.cz/verejna-zakazka/VZ940762/zajisteni-inzertniho-a-pr-medialniho-prostoru-v-ramci-tistenych-titulu",
-        "attempts": 0,
+        "url": "https://www.poptavej.cz/verejna-zakazka/VZ713651/zajisteni-konference",
+        "attempts": 1,
+        "published": false
+      },
+      {
+        "id": "poptavej:VZ390522",
+        "title": "Příprava galavečera",
+        "status": "pending",
+        "reason": "Čeká na dohledání oficiálního zadání.",
+        "url": "https://www.poptavej.cz/verejna-zakazka/VZ390522/priprava-galavecera",
+        "attempts": 1,
         "published": false
       }
     ],
@@ -2096,6 +2197,13 @@
         "url": "https://www.poptavky.cz/poptavka/2139154-d5-reklamni-zarizeni-odstranovani-2026"
       },
       {
+        "id": "poptavky:2139326",
+        "title": "Monitoring médií a analýza mediálního obsahu",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2139326-monitoring-medii-a-analyza-medialniho-obsahu"
+      },
+      {
         "id": "poptavky:2138441",
         "title": "Poptávám: výrobu papírových tácků s vlastním potiskem pro podávání mini koblížků",
         "status": "rejected",
@@ -2147,8 +2255,8 @@
       {
         "id": "poptavej:VZ498427",
         "title": "Tisk a vazba knihy",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ498427/tisk-a-vazba-knihy"
       },
       {
@@ -2518,8 +2626,8 @@
       {
         "id": "poptavej:VZ637117",
         "title": "Dodávky na propagaci",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ637117/dodavky-na-propagaci"
       },
       {
@@ -2719,6 +2827,13 @@
         "url": "https://www.poptavky.cz/poptavka/2153586-tisk-a-vazba-knih"
       },
       {
+        "id": "poptavej:VZ940762",
+        "title": "Zajištění inzertního a PR mediálního prostoru v rámci tištěných titulů",
+        "status": "resolved",
+        "reason": "Spojeno s ověřeným originálem.",
+        "url": "https://www.poptavej.cz/verejna-zakazka/VZ940762/zajisteni-inzertniho-a-pr-medialniho-prostoru-v-ramci-tistenych-titulu"
+      },
+      {
         "id": "poptavej:VZ643705",
         "title": "Dodávka reklamních předmětů s potiskem / laserovým gravírováním",
         "status": "rejected",
@@ -2780,6 +2895,20 @@
         "status": "rejected",
         "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
         "url": "https://www.poptavky.cz/poptavka/2155252-dodavka-a-instalace-finalizacnich-stroju-ke-stavajici-velkoformatove-tiskove-sestave-vcetne-zaskoleni-obsluhy"
+      },
+      {
+        "id": "poptavky:2156294",
+        "title": "Poptávám: nápis na trička",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2156294-poptavam-napis-na-tricka"
+      },
+      {
+        "id": "poptavej:VZ053165",
+        "title": "Nákup podacích razítek včetně polštářků",
+        "status": "resolved",
+        "reason": "Spojeno s ověřeným originálem.",
+        "url": "https://www.poptavej.cz/verejna-zakazka/VZ053165/nakup-podacich-razitek-vcetne-polstarku"
       }
     ]
   }
