@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T11:11:24.717Z",
+  "generatedAt": "2026-11-08T11:23:21.516Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
@@ -8,7 +8,7 @@
   },
   "stats": {
     "total": 13,
-    "newThisRun": 6,
+    "newThisRun": 5,
     "strong": 1,
     "closingSoon": 2,
     "unresolvedOrigin": 0,
@@ -18,13 +18,13 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 58,
+      "count": 2,
       "warnings": []
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 35,
+      "count": 1,
       "warnings": []
     },
     {
@@ -37,7 +37,7 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 445,
+      "count": 402,
       "warnings": []
     },
     {
@@ -104,7 +104,7 @@
       "procedureType": "services, services, services, services, services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-27T09:54:11.118Z",
-      "lastSeenAt": "2026-11-07T11:11:24.717Z",
+      "lastSeenAt": "2026-11-08T11:23:21.516Z",
       "status": "open",
       "fingerprint": "884fc572f557f10f9e71",
       "relevance": {
@@ -224,7 +224,7 @@
             "score": 25
           }
         ],
-        "deadlineDays": 23
+        "deadlineDays": 22
       },
       "assessment": {
         "status": "needs-information",
@@ -287,7 +287,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-19T10:03:31.222Z",
-      "lastSeenAt": "2026-11-07T11:11:24.717Z",
+      "lastSeenAt": "2026-11-08T11:23:21.516Z",
       "status": "open",
       "fingerprint": "37cc7f04c178dfead51d",
       "relevance": {
@@ -318,7 +318,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 12
+        "deadlineDays": 11
       },
       "assessment": {
         "status": "needs-information",
@@ -389,7 +389,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 19
+        "deadlineDays": 18
       },
       "assessment": {
         "status": "needs-information",
@@ -463,7 +463,7 @@
             "score": 44
           }
         ],
-        "deadlineDays": 26
+        "deadlineDays": 25
       },
       "assessment": {
         "status": "needs-information",
@@ -505,7 +505,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-11-07T11:11:24.717Z",
-      "lastSeenAt": "2026-11-07T11:11:24.717Z",
+      "lastSeenAt": "2026-11-08T11:23:21.516Z",
       "status": "signal",
       "fingerprint": "60494647f08012b9aa3b",
       "relevance": {
@@ -583,7 +583,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-24T09:34:04.116Z",
-      "lastSeenAt": "2026-11-07T11:11:24.717Z",
+      "lastSeenAt": "2026-11-08T11:23:21.516Z",
       "status": "open",
       "fingerprint": "ce6e7c4be58391508075",
       "relevance": {
@@ -609,7 +609,7 @@
             "score": 19
           }
         ],
-        "deadlineDays": 12
+        "deadlineDays": 11
       },
       "assessment": {
         "status": "needs-information",
@@ -666,7 +666,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-21T15:08:39.037Z",
-      "lastSeenAt": "2026-11-07T11:11:24.717Z",
+      "lastSeenAt": "2026-11-08T11:23:21.516Z",
       "status": "open",
       "fingerprint": "0dd620b2c00532ed0017",
       "relevance": {
@@ -691,7 +691,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 30
+        "deadlineDays": 29
       },
       "assessment": {
         "status": "needs-information",
@@ -777,7 +777,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 2
+        "deadlineDays": 1
       },
       "assessment": {
         "status": "needs-information",
@@ -841,7 +841,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       },
       "assessment": {
         "status": "needs-information",
@@ -974,7 +974,7 @@
       "procedureType": "Sluzby / Otevřená výzva",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-24T09:34:04.116Z",
-      "lastSeenAt": "2026-11-07T11:11:24.717Z",
+      "lastSeenAt": "2026-11-08T11:23:21.516Z",
       "status": "open",
       "fingerprint": "44e3daa917c6b2ceac29",
       "relevance": {
@@ -993,7 +993,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 5
+        "deadlineDays": 4
       },
       "assessment": {
         "status": "needs-information",
@@ -1058,7 +1058,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 12
+        "deadlineDays": 11
       },
       "assessment": {
         "status": "needs-information",
@@ -1079,22 +1079,22 @@
     }
   ],
   "processing": {
-    "updatedAt": "2026-11-07T11:11:24.717Z",
+    "updatedAt": "2026-11-08T11:23:21.516Z",
     "status": "attention",
     "reviews": {
       "pending": 0,
-      "retry": 3,
-      "needs-review": 8,
+      "retry": 2,
+      "needs-review": 9,
       "reviewed": 6,
       "expired": 4,
       "inactive": 5
     },
     "radar": {
       "pending": 3,
-      "resolved": 11,
-      "rejected": 81,
+      "resolved": 10,
+      "rejected": 83,
       "expired": 54,
-      "needs-verification": 14
+      "needs-verification": 13
     },
     "sources": [],
     "items": [
@@ -1135,17 +1135,17 @@
         "reason": "Původní detail se nenačetl.",
         "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600295484",
         "nextAttemptAt": null,
-        "attempts": 9,
+        "attempts": 10,
         "published": false
       },
       {
         "id": "zakazky-gov:RVZ2600296161",
         "title": "D7 Postoloprty zkapacitnění obchvatu - prezentace postupu výstavby",
-        "status": "retry",
+        "status": "needs-review",
         "reason": "Původní detail se nenačetl.",
         "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600296161",
-        "nextAttemptAt": "2026-11-07T15:11:24.717Z",
-        "attempts": 2,
+        "nextAttemptAt": null,
+        "attempts": 3,
         "published": false
       },
       {
@@ -1164,8 +1164,8 @@
         "status": "retry",
         "reason": "Původní detail se nenačetl.",
         "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600297185",
-        "nextAttemptAt": "2026-11-07T13:11:24.717Z",
-        "attempts": 1,
+        "nextAttemptAt": "2026-11-08T15:23:21.516Z",
+        "attempts": 2,
         "published": false
       },
       {
@@ -1174,8 +1174,8 @@
         "status": "retry",
         "reason": "Z přečtených podkladů se nepodařilo potvrdit předmět služby; vyžaduje věcnou kontrolu.",
         "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00036193",
-        "nextAttemptAt": "2026-11-07T13:11:24.717Z",
-        "attempts": 1,
+        "nextAttemptAt": "2026-11-08T15:23:21.516Z",
+        "attempts": 2,
         "published": false
       },
       {
@@ -1241,15 +1241,6 @@
         "status": "needs-verification",
         "reason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje.",
         "url": "https://www.poptavky.cz/poptavka/2137617-reklama-a-propagace",
-        "attempts": 3,
-        "published": false
-      },
-      {
-        "id": "poptavej:VZ010662",
-        "title": "Monitoring médií a analýza mediálního obsahu",
-        "status": "needs-verification",
-        "reason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje.",
-        "url": "https://www.poptavej.cz/verejna-zakazka/VZ010662/monitoring-medii-a-analyza-medialniho-obsahu",
         "attempts": 3,
         "published": false
       },
@@ -1349,7 +1340,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ713651/zajisteni-konference",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       },
       {
@@ -1358,7 +1349,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ390522/priprava-galavecera",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       }
     ],
@@ -1621,6 +1612,13 @@
         "status": "expired",
         "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavky.cz/poptavka/2137623-tiskarske-sluzby-v-letech-2027-2028"
+      },
+      {
+        "id": "poptavej:VZ010662",
+        "title": "Monitoring médií a analýza mediálního obsahu",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavej.cz/verejna-zakazka/VZ010662/monitoring-medii-a-analyza-medialniho-obsahu"
       },
       {
         "id": "poptavej:VZ269321",
@@ -2381,8 +2379,8 @@
       {
         "id": "poptavej:VZ053165",
         "title": "Nákup podacích razítek včetně polštářků",
-        "status": "resolved",
-        "reason": "Spojeno s ověřeným originálem.",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ053165/nakup-podacich-razitek-vcetne-polstarku"
       }
     ]
