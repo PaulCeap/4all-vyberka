@@ -21,7 +21,7 @@ import { normalizeTender } from "./model.mjs";
 import { scoreTender } from "./scoring.mjs";
 import { PROJECT } from "./config.mjs";
 import { removeRefreshedNenRetries } from "./nen-retries.mjs";
-import { PROCESSING_VERSION, dueReviews, buildReviewState, classifyLead, radarDataset, processingOverview } from "./processing-state.mjs";
+import { PROCESSING_VERSION, canRecoverQueuedOriginal, dueReviews, buildReviewState, classifyLead, radarDataset, processingOverview } from "./processing-state.mjs";
 
 const OUTPUT = "public/data/tenders.json";
 const STATE = "data/tender-state.json";
@@ -109,9 +109,18 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
   const refreshedNen = await refreshSavedNenProfiles(savedNen);
   const nenSource = sources.find((source) => source.id === "nen");
   if (nenSource?.retryQueue) Object.assign(nenSource, removeRefreshedNenRetries(nenSource, refreshedNen));
-  const recoveryItems = (previousReview.tenders || []).filter((item) => {
+  const queueOnly = (previousReview.tenders || []).filter((item) => {
     if (currentIds.has(item.id) || previous.tenders.some((row) => row.id === item.id)) return false;
     if (item.deadline && new Date(item.deadline) <= now) return false;
+    return true;
+  });
+  // Keep official Zakázky GOV summaries visible while their supporting documents
+  // await editorial review. Their portal URLs are not NEN detail URLs.
+  const carriedGov = queueOnly.filter((item) => item.source === "zakazky-gov" && item.url);
+  const recoveryItems = queueOnly.filter((item) => {
+    // Only NEN has a detail reader for records that exist solely in the review queue.
+    // Trying the GOV portal with that reader creates a false failure every day.
+    if (!canRecoverQueuedOriginal(item)) return false;
     const year = Number(item.id?.match(/^nen:N\d+\/(\d{2})\//)?.[1]);
     return item.url || year >= now.getUTCFullYear() % 100;
   }).sort((a, b) => String(a.lastAttemptAt || "").localeCompare(String(b.lastAttemptAt || ""))).slice(0, 20);
@@ -132,7 +141,7 @@ async function collect(previous = { tenders: [] }, previousRadar = { leads: [] }
   const refreshedProfiles = await refreshSavedProfiles(savedProfiles, { fetchDetail: fetchEzakazkyDetail });
   const savedProebiz = previous.tenders.filter((row) => row.source === "proebiz" && !currentIds.has(row.id));
   const refreshedProebiz = await refreshSavedProfiles(savedProebiz, { fetchDetail: fetchProebizDetail });
-  const primary = await preferPrimaryProfiles([...refreshedProfiles, ...refreshedProebiz, ...refreshedNen, ...recoveredNen, ...refreshedSecondary, ...currentOfficial], {
+  const primary = await preferPrimaryProfiles([...refreshedProfiles, ...refreshedProebiz, ...refreshedNen, ...recoveredNen, ...carriedGov, ...refreshedSecondary, ...currentOfficial], {
     previousTenders: previous.tenders, now,
   });
 

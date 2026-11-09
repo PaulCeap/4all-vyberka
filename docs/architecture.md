@@ -78,7 +78,9 @@ První klíč je `source + sourceId`. Druhý, mezizdrojový klíč je SHA-256 fi
   formuláře a duplicitní podepsané kopie nespotřebovávají limit věcných příloh.
 - NEN a stahování příloh opakují přechodné síťové chyby s odstupem. Dílčí
   výpadky NEN jsou vidět ve výsledku. Vyčerpané pokusy označí workflow chybou
-  až po uložení úspěšně zpracovaných dat.
+  až po uložení úspěšně zpracovaných dat. Záznamy Zakázky GOV se z fronty
+  nezkoušejí číst čtečkou NEN: jejich oficiální souhrn zůstává v přehledu,
+  chybějící věcné přílohy jsou stavem k redakční kontrole, nikoli selháním běhu.
 - `processing` v publikovaném JSON zpřístupňuje stav v obou webových přehledech.
   Ukazuje i rozdíl mezi novým tipem a aktualizací zveřejněné zakázky. Výpadek
   sběru nelze zaměnit za aktuální prázdný seznam; web upozorní i na stáří dat.

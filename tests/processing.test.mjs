@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { currentNotes } from "../src/verified-notes.mjs";
 import { pendingDocumentReviews, reviewDocuments } from "../src/document-review.mjs";
 import { buildExtractiveNote, reviewPendingDocuments } from "../src/automatic-review.mjs";
-import { buildReviewState, dueReviews, classifyLead, radarDataset, processingOverview } from "../src/processing-state.mjs";
+import { buildReviewState, canRecoverQueuedOriginal, dueReviews, classifyLead, radarDataset, processingOverview } from "../src/processing-state.mjs";
 import { primaryMatchConfidence, matchConfidence } from "../src/origin-resolver.mjs";
 import { extractBudget, assessOpportunity } from "../src/assessment.mjs";
 import { scoreTender } from "../src/scoring.mjs";
@@ -96,6 +96,25 @@ test("úspěch uzavře frontu a nová položka dostane přednost před opakovano
   const resolved = buildReviewState({ candidates: [row], remaining: [], results: [{ id: row.id, status: "reviewed" }], previous: failed, now });
   assert.equal(resolved.pendingCount, 0);
   assert.equal(resolved.tenders[0].status, "reviewed");
+});
+
+test("nedostupný detail Zakázky GOV po opravě nezůstane falešně vyčerpaným pokusem", () => {
+  const gov = normalizeTender({ ...row, source: "zakazky-gov", sourceId: "RVZ2600296161",
+    url: "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600296161",
+    documents: [], verifiedFacts: [], factsReviewedAt: null }, now);
+  let previous = { tenders: [] };
+  for (let attempt = 0; attempt < 3; attempt++) {
+    previous = buildReviewState({ candidates: [gov], remaining: [], results: [],
+      sourceErrors: [{ id: gov.id, error: "Původní detail se nenačetl." }], previous, now });
+  }
+  assert.equal(previous.tenders[0].attempts, 3);
+  const recovered = buildReviewState({ candidates: [gov], remaining: [], results: [], previous, now });
+  assert.equal(recovered.tenders[0].status, "needs-review");
+  assert.equal(recovered.tenders[0].attempts, 0);
+  assert.equal(recovered.tenders[0].lastAttemptAt, null);
+  assert.match(recovered.tenders[0].error, /přílohy/);
+  assert.equal(canRecoverQueuedOriginal(recovered.tenders[0]), false);
+  assert.equal(canRecoverQueuedOriginal({ id: "nen:N006/26/V00012345" }), true);
 });
 
 test("radar rozliší vyřazení, ověření komerčního zdroje a skutečné čekání", () => {

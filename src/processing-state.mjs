@@ -11,6 +11,11 @@ const signature = (row) => createHash("sha256").update(JSON.stringify([
   PROCESSING_VERSION, row.title, row.summary, row.deadline, reviewSnapshot(row.documents),
 ])).digest("hex");
 
+export function canRecoverQueuedOriginal(item) {
+  // The queue recovery path reconstructs a NEN detail URL and calls its reader.
+  return item.source === "nen" || String(item.id || "").startsWith("nen:");
+}
+
 export function dueReviews(pending, candidates, previous = {}, now = new Date()) {
   const old = new Map((previous.tenders || []).map((row) => [row.id, row]));
   const byId = new Map(candidates.map((row) => [row.id, row]));
@@ -49,6 +54,10 @@ export function buildReviewState({ candidates, remaining, results, sourceErrors 
     } else if (current.has(id) && !reviewSnapshot(candidate.documents).length && !candidate.factsReviewedAt) {
       status = "needs-review";
       error = "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.";
+      // A missing attachment is an editorial review state, not an exhausted
+      // network retry. Clear stale counts from earlier failed detail requests.
+      attempts = 0;
+      lastAttemptAt = null;
     } else if (!current.has(id)) {
       status = candidate.deadline && new Date(candidate.deadline) <= now ? "expired" : "inactive";
       error = status === "inactive" ? "Zakázka není v aktuálním seznamu kandidátů; předchozí stav zůstal uložený." : null;
