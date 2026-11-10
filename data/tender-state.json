@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T13:03:43.749Z",
+  "generatedAt": "2026-11-10T12:48:31.920Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 11,
-    "newThisRun": 4,
+    "total": 12,
+    "newThisRun": 5,
     "strong": 1,
     "closingSoon": 1,
     "unresolvedOrigin": 0,
@@ -18,43 +18,38 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 105,
+      "count": 136,
       "warnings": []
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 63,
+      "count": 83,
       "warnings": []
     },
     {
       "id": "nen",
       "ok": true,
       "count": 80,
-      "warnings": [
-        "Dotaz PR služby: https://nen.nipez.cz/verejne-zakazky/p%3Avz%3AstavZP%3Dneukoncena%26query%3DPR%20slu%C5%BEby: HTTP 503",
-        "Dotaz sociální sítě: https://nen.nipez.cz/verejne-zakazky/p%3Avz%3AstavZP%3Dneukoncena%26query%3Dsoci%C3%A1ln%C3%AD%20s%C3%ADt%C4%9B: HTTP 503",
-        "Dotaz zajištění akcí: https://nen.nipez.cz/verejne-zakazky/p%3Avz%3AstavZP%3Dneukoncena%26query%3Dzaji%C5%A1t%C4%9Bn%C3%AD%20akc%C3%AD: HTTP 503",
-        "Dotaz audiovizuální: https://nen.nipez.cz/verejne-zakazky/p%3Avz%3AstavZP%3Dneukoncena%26query%3Daudiovizu%C3%A1ln%C3%AD: HTTP 503"
-      ],
+      "warnings": [],
       "retryQueue": []
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 492,
+      "count": 583,
       "warnings": []
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 71,
+      "count": 68,
       "warnings": []
     },
     {
       "id": "proebiz",
       "ok": true,
-      "count": 29,
+      "count": 32,
       "warnings": []
     },
     {
@@ -74,7 +69,7 @@
       "ok": true,
       "count": 20,
       "warnings": [],
-      "resolved": 0,
+      "resolved": 2,
       "pending": 1
     },
     {
@@ -83,7 +78,7 @@
       "count": 20,
       "warnings": [],
       "resolved": 2,
-      "pending": 2
+      "pending": 3
     }
   ],
   "tenders": [
@@ -127,7 +122,7 @@
       "procedureType": "services, services, services, services, services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-27T09:54:11.118Z",
-      "lastSeenAt": "2026-11-09T13:03:43.749Z",
+      "lastSeenAt": "2026-11-10T12:48:31.920Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -254,12 +249,15 @@
       "firstSeenAt": "2026-11-07T11:11:24.717Z",
       "lastSeenAt": "2026-11-07T11:11:24.717Z",
       "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": 0,
+      "discoverySource": "poptavky",
+      "discoveryUrl": "https://www.poptavky.cz/poptavka/2158700-kampan-2027",
+      "originStatus": "resolved",
+      "originConfidence": 95,
       "candidateProfileUrls": [],
       "fingerprint": "84575d4a330ea20091cb",
+      "duplicateSources": [
+        "nen"
+      ],
       "relevance": {
         "score": 67,
         "level": "good",
@@ -288,7 +286,7 @@
             "score": 25
           }
         ],
-        "deadlineDays": 21
+        "deadlineDays": 20
       },
       "assessment": {
         "status": "needs-information",
@@ -404,7 +402,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-19T10:03:31.222Z",
-      "lastSeenAt": "2026-11-09T13:03:43.749Z",
+      "lastSeenAt": "2026-11-10T12:48:31.920Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -443,7 +441,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 10
+        "deadlineDays": 9
       },
       "assessment": {
         "status": "needs-information",
@@ -525,7 +523,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 17
+        "deadlineDays": 16
       },
       "assessment": {
         "status": "needs-information",
@@ -720,7 +718,7 @@
             "score": 44
           }
         ],
-        "deadlineDays": 24
+        "deadlineDays": 23
       },
       "assessment": {
         "status": "needs-information",
@@ -764,7 +762,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-11-07T11:11:24.717Z",
-      "lastSeenAt": "2026-11-09T13:03:43.749Z",
+      "lastSeenAt": "2026-11-10T12:48:31.920Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -900,7 +898,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-24T09:34:04.116Z",
-      "lastSeenAt": "2026-11-09T13:03:43.749Z",
+      "lastSeenAt": "2026-11-10T12:48:31.920Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -931,7 +929,7 @@
             "score": 19
           }
         ],
-        "deadlineDays": 10
+        "deadlineDays": 9
       },
       "assessment": {
         "status": "needs-information",
@@ -1041,7 +1039,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-21T15:08:39.037Z",
-      "lastSeenAt": "2026-11-08T11:23:21.516Z",
+      "lastSeenAt": "2026-11-10T12:48:31.920Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -1074,7 +1072,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 28
+        "deadlineDays": 27
       },
       "assessment": {
         "status": "needs-information",
@@ -1089,83 +1087,6 @@
         ],
         "gaps": [
           "Kvalifikační požadavky nejsou ve výtahu ověřené."
-        ],
-        "internalChecks": [
-          "Porovnat požadované reference s našimi.",
-          "Ověřit kapacitu týmu a náklady realizace."
-        ],
-        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
-      }
-    },
-    {
-      "id": "nen:N006/26/V00035326",
-      "source": "nen",
-      "sourceId": "N006/26/V00035326",
-      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035326",
-      "title": "Distribuce časopisu RNB - opakované zadání",
-      "buyer": "Centrum pro regionální rozvoj České republiky",
-      "summary": "Předmětem veřejné zakázky je pravidelné zajištění služeb balení a distribuce zásilek, zejména časopisu Regiony nás baví, na území celé České republiky. Distribuce bude realizována v pravidelných měsíčních intervalech v období od 1.1. 2027 do 31. 12. 2027. Věcně příslušný útvar předpokládá postupný nárůst počtu distribuovaných zásilek v souvislosti s plánovanými marketingovými kampaněmi zaměřenými na zvýšení zájmu o distribuovaný časopis. Předpokládaný objem distribuce činí přibližně 8 500 kusů měsíčně v roce 2027.",
-      "country": "CZ",
-      "region": "Česká republika",
-      "publishedAt": "2026-11-06T10:32:00.000Z",
-      "deadline": "2026-11-16T07:00:00.000Z",
-      "deadlineTimeKnown": true,
-      "value": null,
-      "valueSource": null,
-      "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035326/zadavaci-dokumentace",
-      "documents": [
-        {
-          "name": "Distribuce RNB_1v0.zip",
-          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4815974602"
-        }
-      ],
-      "verifiedFacts": [],
-      "factsReviewedAt": null,
-      "reviewComplete": true,
-      "reviewWarnings": [],
-      "cpv": [
-        "64110000"
-      ],
-      "procedureType": "Sluzby / Otevřená výzva",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-11-06T12:15:04.866Z",
-      "lastSeenAt": "2026-11-06T12:15:04.866Z",
-      "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": 0,
-      "candidateProfileUrls": [],
-      "fingerprint": "44deb65ae8e255d29d32",
-      "relevance": {
-        "score": 49,
-        "level": "watch",
-        "reasons": [
-          "Marketing & eventy: přímá poptávka služby",
-          "obor potvrzuje popis zakázky",
-          "jde o zakázku na služby",
-          "zbývá alespoň týden na reakci"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 28
-          }
-        ],
-        "deadlineDays": 7
-      },
-      "assessment": {
-        "status": "needs-information",
-        "label": "Doplnit podklady pro rozhodnutí",
-        "requirements": [],
-        "evaluation": [],
-        "gaps": [
-          "Rozpočet není doložený.",
-          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
-          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
         ],
         "internalChecks": [
           "Porovnat požadované reference s našimi.",
@@ -1254,6 +1175,82 @@
       }
     },
     {
+      "id": "nen:N006/26/V00035326",
+      "source": "nen",
+      "sourceId": "N006/26/V00035326",
+      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035326",
+      "title": "Distribuce časopisu RNB - opakované zadání",
+      "buyer": "Centrum pro regionální rozvoj České republiky",
+      "summary": "Předmětem veřejné zakázky je pravidelné zajištění služeb balení a distribuce zásilek, zejména časopisu Regiony nás baví, na území celé České republiky. Distribuce bude realizována v pravidelných měsíčních intervalech v období od 1.1. 2027 do 31. 12. 2027. Věcně příslušný útvar předpokládá postupný nárůst počtu distribuovaných zásilek v souvislosti s plánovanými marketingovými kampaněmi zaměřenými na zvýšení zájmu o distribuovaný časopis. Předpokládaný objem distribuce činí přibližně 8 500 kusů měsíčně v roce 2027.",
+      "country": "CZ",
+      "region": "Česká republika",
+      "publishedAt": "2026-11-06T10:32:00.000Z",
+      "deadline": "2026-11-16T07:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": null,
+      "valueSource": null,
+      "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035326/zadavaci-dokumentace",
+      "documents": [
+        {
+          "name": "Distribuce RNB_1v0.zip",
+          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
+          "url": "https://nen.nipez.cz/file?id=4815974602"
+        }
+      ],
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [
+        "64110000"
+      ],
+      "procedureType": "Sluzby / Otevřená výzva",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-11-06T12:15:04.866Z",
+      "lastSeenAt": "2026-11-06T12:15:04.866Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": 0,
+      "candidateProfileUrls": [],
+      "fingerprint": "44deb65ae8e255d29d32",
+      "relevance": {
+        "score": 45,
+        "level": "watch",
+        "reasons": [
+          "Marketing & eventy: přímá poptávka služby",
+          "obor potvrzuje popis zakázky",
+          "jde o zakázku na služby"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 28
+          }
+        ],
+        "deadlineDays": 6
+      },
+      "assessment": {
+        "status": "needs-information",
+        "label": "Doplnit podklady pro rozhodnutí",
+        "requirements": [],
+        "evaluation": [],
+        "gaps": [
+          "Rozpočet není doložený.",
+          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
+          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
+        ],
+        "internalChecks": [
+          "Porovnat požadované reference s našimi.",
+          "Ověřit kapacitu týmu a náklady realizace."
+        ],
+        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
+      }
+    },
+    {
       "id": "tenderarena:P26V00349932",
       "source": "tenderarena",
       "sourceId": "P26V00349932",
@@ -1306,7 +1303,79 @@
             "score": 28
           }
         ],
-        "deadlineDays": 10
+        "deadlineDays": 9
+      },
+      "assessment": {
+        "status": "needs-information",
+        "label": "Doplnit podklady pro rozhodnutí",
+        "requirements": [],
+        "evaluation": [],
+        "gaps": [
+          "Rozpočet není doložený.",
+          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
+          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
+        ],
+        "internalChecks": [
+          "Porovnat požadované reference s našimi.",
+          "Ověřit kapacitu týmu a náklady realizace."
+        ],
+        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
+      }
+    },
+    {
+      "id": "zakazky-gov:RVZ2600298143",
+      "source": "zakazky-gov",
+      "sourceId": "RVZ2600298143",
+      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600298143",
+      "title": "Dodání AV obsahu pro stálou expozici Muzea paměti XX. století",
+      "buyer": "HLAVNÍ MĚSTO PRAHA",
+      "summary": "Veřejná zakázka je rozdělena na dvě části, a to na část s názvem „Dodání a realizace expozice pro stálou expozici Muzea paměti XX. století“ a část s názvem „Dodání AV obsahu pro stálou expozici Muzea paměti XX. století“. Předmětem obou částí veřejné zakázky je výroba a dodání vybavení a obsahu pro stálou expozici Muzea paměti XX. století v Domě pážat na adrese Kanovnická 3, 118 00 Praha 1 - Hradčany tak, aby mohla být stálá expozice otevřena pro veřejnost. Předmětem plnění této části veřejné zakázky je výroba a dodání audiovizuálního obsahu pro stálou expozici Muzea paměti XX. století v Domě pážat na adrese Kanovnická 3, 118 00 Praha 1-Hradčany.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": "2026-11-09T13:54:14.805Z",
+      "deadline": "2027-01-06T11:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": null,
+      "valueSource": null,
+      "documentsUrl": null,
+      "documents": [],
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [],
+      "procedureType": "VEREJNA ZAKAZKA",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-11-10T12:48:31.920Z",
+      "lastSeenAt": "2026-11-10T12:48:31.920Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "candidateProfileUrls": [],
+      "fingerprint": "fd5ec9aa32e8276ac47b",
+      "duplicateSources": [
+        "zakazky-gov",
+        "tenderarena"
+      ],
+      "relevance": {
+        "score": 44,
+        "level": "watch",
+        "reasons": [
+          "Tvorba obsahu: audiovizuální",
+          "obor potvrzuje popis zakázky",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 28
+          }
+        ],
+        "deadlineDays": 57
       },
       "assessment": {
         "status": "needs-information",
@@ -1327,29 +1396,24 @@
     }
   ],
   "processing": {
-    "updatedAt": "2026-11-09T13:03:43.749Z",
+    "updatedAt": "2026-11-10T12:48:31.920Z",
     "status": "attention",
     "reviews": {
       "pending": 0,
       "retry": 0,
       "needs-review": 11,
       "reviewed": 5,
-      "expired": 7,
+      "expired": 8,
       "inactive": 5
     },
     "radar": {
-      "pending": 3,
-      "resolved": 11,
-      "rejected": 86,
-      "expired": 59,
-      "needs-verification": 12
+      "pending": 4,
+      "resolved": 13,
+      "rejected": 91,
+      "expired": 63,
+      "needs-verification": 10
     },
-    "sources": [
-      {
-        "id": "nen",
-        "error": "4 dotazů nebo detailů se nepodařilo načíst; ostatní výsledky byly zpracovány."
-      }
-    ],
+    "sources": [],
     "items": [
       {
         "id": "ted:646731-2026",
@@ -1375,20 +1439,10 @@
         "id": "zakazky-gov:RVZ2600295484",
         "title": "DNS – Komunikační a marketingové aktivity",
         "status": "needs-review",
-        "reason": "Původní detail se nenačetl.",
+        "reason": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
         "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600295484",
         "nextAttemptAt": null,
-        "attempts": 11,
-        "published": false
-      },
-      {
-        "id": "zakazky-gov:RVZ2600296161",
-        "title": "D7 Postoloprty zkapacitnění obchvatu - prezentace postupu výstavby",
-        "status": "needs-review",
-        "reason": "Původní detail se nenačetl.",
-        "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600296161",
-        "nextAttemptAt": null,
-        "attempts": 4,
+        "attempts": 0,
         "published": false
       },
       {
@@ -1398,17 +1452,17 @@
         "reason": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
         "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-P00000240",
         "nextAttemptAt": null,
-        "attempts": 1,
+        "attempts": 0,
         "published": false
       },
       {
         "id": "zakazky-gov:RVZ2600297185",
         "title": "Zajištění inzertního a PR mediálního prostoru v rámci tištěných titulů BORGIS",
         "status": "needs-review",
-        "reason": "Původní detail se nenačetl.",
+        "reason": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
         "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600297185",
         "nextAttemptAt": null,
-        "attempts": 3,
+        "attempts": 0,
         "published": false
       },
       {
@@ -1460,6 +1514,16 @@
         "nextAttemptAt": null,
         "attempts": 0,
         "published": false
+      },
+      {
+        "id": "zakazky-gov:RVZ2600298143",
+        "title": "Dodání AV obsahu pro stálou expozici Muzea paměti XX. století",
+        "status": "needs-review",
+        "reason": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
+        "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600298143",
+        "nextAttemptAt": null,
+        "attempts": 0,
+        "published": true
       },
       {
         "id": "poptavky:2129927",
@@ -1534,24 +1598,6 @@
         "published": false
       },
       {
-        "id": "poptavky:2154348",
-        "title": "Průzkum trhu – 250 kusů triček s krátkým rukávem s logem/potiskem",
-        "status": "needs-verification",
-        "reason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje.",
-        "url": "https://www.poptavky.cz/poptavka/2154348-pruzkum-trhu-250-kusu-tricek-s-kratkym-rukavem-s-logempotiskem",
-        "attempts": 3,
-        "published": false
-      },
-      {
-        "id": "poptavky:2154346",
-        "title": "Průzkum trhu – 250 kusů mikin s logem/potiskem",
-        "status": "needs-verification",
-        "reason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje.",
-        "url": "https://www.poptavky.cz/poptavka/2154346-pruzkum-trhu-250-kusu-mikin-s-logempotiskem",
-        "attempts": 3,
-        "published": false
-      },
-      {
         "id": "poptavej:VZ713651",
         "title": "Zajištění konference",
         "status": "needs-verification",
@@ -1584,7 +1630,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ618758/dodani-a-realizace-expozice-pro-stalou-expozici",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       },
       {
@@ -1593,6 +1639,15 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ422905/kampan-vytvoreni-komunikacni-strategie",
+        "attempts": 2,
+        "published": false
+      },
+      {
+        "id": "poptavej:VZ790724",
+        "title": "Dodání AV obsahu pro stálou expozici",
+        "status": "pending",
+        "reason": "Čeká na dohledání oficiálního zadání.",
+        "url": "https://www.poptavej.cz/verejna-zakazka/VZ790724/dodani-av-obsahu-pro-stalou-expozici",
         "attempts": 1,
         "published": false
       }
@@ -1930,8 +1985,8 @@
       {
         "id": "poptavky:2139326",
         "title": "Monitoring médií a analýza mediálního obsahu",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavky.cz/poptavka/2139326-monitoring-medii-a-analyza-medialniho-obsahu"
       },
       {
@@ -2091,8 +2146,8 @@
       {
         "id": "poptavky:2142718",
         "title": "Tisk a vazba knih L. Kundera a Č. literatura v italských překladech",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavky.cz/poptavka/2142718-tisk-a-vazba-knih-l-kundera-a-c-literatura-v-italskych-prekladech"
       },
       {
@@ -2364,8 +2419,8 @@
       {
         "id": "poptavej:VZ280375",
         "title": "Nákup propagačních předmětů",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ280375/nakup-propagacnich-predmetu"
       },
       {
@@ -2551,6 +2606,20 @@
         "url": "https://www.poptavky.cz/poptavka/2153456-poptavam-vyrobu-a-dodani-papirovych-obalovych-krabicek-na-sypane-caje"
       },
       {
+        "id": "poptavky:2154348",
+        "title": "Průzkum trhu – 250 kusů triček s krátkým rukávem s logem/potiskem",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2154348-pruzkum-trhu-250-kusu-tricek-s-kratkym-rukavem-s-logempotiskem"
+      },
+      {
+        "id": "poptavky:2154346",
+        "title": "Průzkum trhu – 250 kusů mikin s logem/potiskem",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2154346-pruzkum-trhu-250-kusu-mikin-s-logempotiskem"
+      },
+      {
         "id": "poptavky:2153908",
         "title": "Nákup propagačního materiálu",
         "status": "rejected",
@@ -2567,8 +2636,8 @@
       {
         "id": "poptavky:2153586",
         "title": "Tisk a vazba knih",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavky.cz/poptavka/2153586-tisk-a-vazba-knih"
       },
       {
@@ -2689,6 +2758,69 @@
         "status": "resolved",
         "reason": "Spojeno s ověřeným originálem.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ073197/ramcova-dohoda-na-tisk-radnicnich-novin"
+      },
+      {
+        "id": "poptavky:2158700",
+        "title": "Kampaň 2027",
+        "status": "resolved",
+        "reason": "Spojeno s ověřeným originálem.",
+        "url": "https://www.poptavky.cz/poptavka/2158700-kampan-2027"
+      },
+      {
+        "id": "poptavky:2157884",
+        "title": "Poptávám: dárkové krabičky, 100 kusů",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2157884-poptavam-darkove-krabicky-100-kusu"
+      },
+      {
+        "id": "poptavky:2158342",
+        "title": "Kalendáře a diáře 2027",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2158342-kalendare-a-diare-2027"
+      },
+      {
+        "id": "poptavky:2158554",
+        "title": "Poptávám: celopolep pro vůz Škoda Octavia Combi",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2158554-poptavam-celopolep-pro-vuz-skoda-octavia-combi"
+      },
+      {
+        "id": "poptavky:2158270",
+        "title": "Dodávka propagačních předmětů",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2158270-dodavka-propagacnich-predmetu"
+      },
+      {
+        "id": "poptavky:2158262",
+        "title": "Dodávka motivačních předmětů k prevenci kriminality",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2158262-dodavka-motivacnich-predmetu-k-prevenci-kriminality"
+      },
+      {
+        "id": "poptavky:2158214",
+        "title": "Rámcová dohoda na tisk radničních novin Šestka",
+        "status": "resolved",
+        "reason": "Spojeno s ověřeným originálem.",
+        "url": "https://www.poptavky.cz/poptavka/2158214-ramcova-dohoda-na-tisk-radnicnich-novin-sestka"
+      },
+      {
+        "id": "poptavej:VZ124433",
+        "title": "Dodávka propagačních předmětů",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavej.cz/verejna-zakazka/VZ124433/dodavka-propagacnich-predmetu"
+      },
+      {
+        "id": "poptavej:VZ702877",
+        "title": "Dodávka motivačních předmětů k prevenci kriminality",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavej.cz/verejna-zakazka/VZ702877/dodavka-motivacnich-predmetu-k-prevenci-kriminality"
       }
     ]
   }
