@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T12:48:31.920Z",
+  "generatedAt": "2026-11-11T11:58:07.364Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 12,
-    "newThisRun": 5,
+    "total": 14,
+    "newThisRun": 7,
     "strong": 1,
     "closingSoon": 1,
     "unresolvedOrigin": 0,
@@ -18,13 +18,13 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 136,
+      "count": 130,
       "warnings": []
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 83,
+      "count": 75,
       "warnings": []
     },
     {
@@ -37,7 +37,7 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 583,
+      "count": 586,
       "warnings": []
     },
     {
@@ -49,7 +49,7 @@
     {
       "id": "proebiz",
       "ok": true,
-      "count": 32,
+      "count": 30,
       "warnings": []
     },
     {
@@ -78,7 +78,7 @@
       "count": 20,
       "warnings": [],
       "resolved": 2,
-      "pending": 3
+      "pending": 1
     }
   ],
   "tenders": [
@@ -122,7 +122,7 @@
       "procedureType": "services, services, services, services, services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-27T09:54:11.118Z",
-      "lastSeenAt": "2026-11-10T12:48:31.920Z",
+      "lastSeenAt": "2026-11-11T11:58:07.364Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -286,7 +286,7 @@
             "score": 25
           }
         ],
-        "deadlineDays": 20
+        "deadlineDays": 19
       },
       "assessment": {
         "status": "needs-information",
@@ -323,11 +323,8 @@
       "publishedAt": "2026-10-19T07:40:00.000Z",
       "deadline": "2026-11-19T08:00:00.000Z",
       "deadlineTimeKnown": true,
-      "value": {
-        "amount": 8600000,
-        "currency": "CZK"
-      },
-      "valueSource": "ted",
+      "value": null,
+      "valueSource": null,
       "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00033172/zadavaci-dokumentace",
       "documents": [
         {
@@ -402,7 +399,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-19T10:03:31.222Z",
-      "lastSeenAt": "2026-11-10T12:48:31.920Z",
+      "lastSeenAt": "2026-11-11T11:58:07.364Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -410,9 +407,6 @@
       "originConfidence": null,
       "candidateProfileUrls": [],
       "fingerprint": "37cc7f04c178dfead51d",
-      "duplicateSources": [
-        "nen"
-      ],
       "relevance": {
         "score": 64,
         "level": "good",
@@ -441,7 +435,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       },
       "assessment": {
         "status": "needs-information",
@@ -449,6 +443,7 @@
         "requirements": [],
         "evaluation": [],
         "gaps": [
+          "Rozpočet není doložený.",
           "Kvalifikační požadavky nejsou ve výtahu ověřené.",
           "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
         ],
@@ -523,7 +518,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 16
+        "deadlineDays": 15
       },
       "assessment": {
         "status": "needs-information",
@@ -718,7 +713,7 @@
             "score": 44
           }
         ],
-        "deadlineDays": 23
+        "deadlineDays": 22
       },
       "assessment": {
         "status": "needs-information",
@@ -762,7 +757,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-11-07T11:11:24.717Z",
-      "lastSeenAt": "2026-11-10T12:48:31.920Z",
+      "lastSeenAt": "2026-11-11T11:58:07.364Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -898,7 +893,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-24T09:34:04.116Z",
-      "lastSeenAt": "2026-11-10T12:48:31.920Z",
+      "lastSeenAt": "2026-11-11T11:58:07.364Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -929,7 +924,7 @@
             "score": 19
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       },
       "assessment": {
         "status": "needs-information",
@@ -1039,7 +1034,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-21T15:08:39.037Z",
-      "lastSeenAt": "2026-11-10T12:48:31.920Z",
+      "lastSeenAt": "2026-11-11T11:58:07.364Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -1072,7 +1067,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 27
+        "deadlineDays": 26
       },
       "assessment": {
         "status": "needs-information",
@@ -1087,6 +1082,84 @@
         ],
         "gaps": [
           "Kvalifikační požadavky nejsou ve výtahu ověřené."
+        ],
+        "internalChecks": [
+          "Porovnat požadované reference s našimi.",
+          "Ověřit kapacitu týmu a náklady realizace."
+        ],
+        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
+      }
+    },
+    {
+      "id": "zakazky-gov:RVZ2600298542",
+      "source": "zakazky-gov",
+      "sourceId": "RVZ2600298542",
+      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600298542",
+      "title": "Technologická agentura ČR",
+      "buyer": "Technologická agentura ČR",
+      "summary": "Předmětem plnění veřejné zakázky malého rozsahu je komplexní příprava a realizace již tradiční akce s názvem „Ceny TA ČR 2027” (dále jen „akce”) pro Technologickou agenturu ČR (dále jen ,,TA ČR”) viz https://tacr.gov.cz/o-nas/, konané 29. 4. 2027, spočívající v zajištění galavečera předávání cen TA ČR v prostorách historické budovy Národního muzea, Václavské náměstí 1700/68, 110 00 Praha 1 (dále jen „NM“). Jako téma letošního ročníku bylo zvoleno Architekti neznáma: Výzkum za hranicí jistoty. Kompletní představa o návrhu je uvedena v příloze č. 6 této Výzvy o zajištění akce „Ceny TA ČR 2027” - Program akce „Ceny TA ČR 2027” a vize celé akce. Plnění spočívá v návrhu komplexního provedení akce včetně jejího technického zajištění. SLAVNOSTNÍ GALAVEČER 29. 4. 2027 S PŘEDÁNÍM OCENĚNÍ vybraným řešitelům projektů podpořených TA ČR za mimořádné výsledky aplikovaného výzkumu a inovací, včetně technického zajištění průběhu akce, propagace partnerů akce (upřesnění dodá zadavatel v průběhu příprav), a to jak před provedením samotné akce, tak v jejím průběhu, a všech souvisejících opatření spojených s jejím pořádáním (např. tvorba scénáře akce, režie programu, kreativní návrh a řešení konceptu celého dne, sestavení a zajištění kulturního programu, dodání a obsluha techniky, dodání gastronomických služeb apod.). Při realizaci akce je základní podmínkou dodržení slavnostního charakteru předávání věcných ocenění za mimořádné výsledky aplikovaného výzkumu a inovací jednotlivým vybraným fyzickým osobám, tj. činnost vedoucí k úspěšnému naplnění cíle provozní potřeby zadavatele, dále aktivní spolupráce se zadavatelem a podle pokynů zadavatele organizační spolupráce s dalšími externími subjekty akce. Součástí realizace je audiovizuální výroba, a to včetně autorského konceptu, dramaturgie a režijního vedení. Dodávka nezahrnuje pouze technický střih, ale vyžaduje plnohodnotné režijní a dramaturgické zpracování (příprava scénáře, vedení protagonistů na place v případě natáčení spotů o projektech, kreativní vyprávění příběhu a dynamická postprodukce). Audiovizuální tvorba pro konání galavečera se skládá z: vytvoření video spotů, které budou představovat vítězné projekty. Jedná se o 4 video spoty, vše bude v českém jazyce s anglickými titulky, pořízení profesionálního dokumentačního videozáznamu z akce se zaměřením na téma akce a přítomné osobnosti, s ozvučením, titulky v angličtině a slovním doprovodem, vyhotovení profesionálního videa o TA ČR (\"otvírák\" večera). Spoty a sestřih z předchozího ročníku jsou k dispozici na tomto odkazu: https://youtu.be/iSVxTBRinxA?si=iNVUgUiVLnrZa1iC Součástí realizace je také systém online registrace a evidence hostů, online program galavečera a systém na hlasování o absolutním vítězi spočívající ve vybudování a nasazení funkčního hlasovacího systému pro potřeby hlasování o absolutním vítězi Cen TA ČR na předem připravenou stránku na webu TA ČR. Je potřeba, aby dodavatel respektoval technické požadavky zadavatele zejména na zabezpečení apod. Dodavatel služby bude kontaktovat správce webu TA ČR a zajistí vybudování a nasazení funkčního hlasovacího systému. Dodavateli nebude umožněno, aby mohl samostatně spravovat obsah webu TA ČR, jedná se pouze o jednorázový úkon spojený s případnými úpravami. Registrace a evidence hostů by měla být navržena tak, aby hosteskám při odbavování hostů na místě ušetřila práci a dovolila hladký průběh začátku akce. V případě, že dojde ke vzniku okolností vyšší moci, které Organizátor nemohl ovlivnit ani jim předejít a které znemožní, ztíží nebo zásadním způsobem ovlivní možnost konat akci v dohodnutém rozsahu nebo způsobem, jsou Smluvní strany povinny se bez zbytečného odkladu dohodnout na odpovídající úpravě rozsahu plnění, termínu konání akce nebo jiném vhodném řešení. Pokud nebude možné akci uskutečnit ani v náhradním režimu, může Zadavatel od Smlouvy odstoupit bez jakýchkoliv sankcí, přičemž Organizátor má v takovém případě nárok pouze na náhradu prokazatelně a účelně vynaložených nákladů, které byly schváleny Zadavatelem. Aktuálně je zvažováno následující náhradní řešení programu: virtuální pořad v podobném formátu jako v minulosti, kdy došlo k této situaci, s velmi originální invencí (odkaz na pořad ZDE). Premiéra vysílání bude připadat na stejný termín konání 29. 4. 2027 Rámcový program galavečera: 18:30 – 19:00 příchod hostů do NM před zahájením večerního programu a vítání hostů, podání drobného uvítacího občerstvení 19:00 – 21:00 v sále NM průběh programu – přivítání hostů – projevy, jednotlivé slavnostní předávání cen, prezentace oceněných, v průběhu celého večera zakomponovaný kulturní program vedený moderátorem 21:00 – 24:00 večerní občerstvení formou rautu pro účastníky slavnostního večera v prostorách NM a) Předmět plnění – uveden v čl. I návrhu smlouvy o zajištění akce “Ceny TA ČR 2027” (dále jen „Příloha č. 3 - Smlouva o zajištění akce Ceny TA ČR 2027“) b) Předpokládaný harmonogram plnění 11/2026–01/2027 – přípravné technické práce, precizování programu a scénáře, natáčení spotů o vítězných projektech 02–03 /2027 – prezentace akce, scénář a harmonogram akce, pozvánky hostům 04/2027 – detailní příprava, komunikace s oceněnými a hosty akce, organizace a realizace akce, PR aktivity 04–06/2027 – partnerské plnění, vrácení rollupů, vyúčtování c) Propagace a tiskoviny R...",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": "2026-11-10T14:43:30.982Z",
+      "deadline": "2026-11-23T09:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": null,
+      "valueSource": null,
+      "documentsUrl": null,
+      "documents": [],
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [],
+      "procedureType": "VEREJNA ZAKAZKA",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-11-11T11:58:07.364Z",
+      "lastSeenAt": "2026-11-11T11:58:07.364Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "candidateProfileUrls": [],
+      "fingerprint": "18c3f1e0b5bad8737aef",
+      "duplicateSources": [
+        "zakazky-gov",
+        "tenderarena"
+      ],
+      "relevance": {
+        "score": 48,
+        "level": "watch",
+        "reasons": [
+          "Tvorba obsahu: video, audiovizuální",
+          "PR & komunikace: propagace",
+          "obor potvrzuje popis zakázky",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 28
+          },
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 9
+          }
+        ],
+        "deadlineDays": 12
+      },
+      "assessment": {
+        "status": "needs-information",
+        "label": "Doplnit podklady pro rozhodnutí",
+        "requirements": [],
+        "evaluation": [],
+        "gaps": [
+          "Rozpočet není doložený.",
+          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
+          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
         ],
         "internalChecks": [
           "Porovnat požadované reference s našimi.",
@@ -1231,7 +1304,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 6
+        "deadlineDays": 5
       },
       "assessment": {
         "status": "needs-information",
@@ -1303,7 +1376,79 @@
             "score": 28
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
+      },
+      "assessment": {
+        "status": "needs-information",
+        "label": "Doplnit podklady pro rozhodnutí",
+        "requirements": [],
+        "evaluation": [],
+        "gaps": [
+          "Rozpočet není doložený.",
+          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
+          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
+        ],
+        "internalChecks": [
+          "Porovnat požadované reference s našimi.",
+          "Ověřit kapacitu týmu a náklady realizace."
+        ],
+        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
+      }
+    },
+    {
+      "id": "zakazky-gov:RVZ2600298722",
+      "source": "zakazky-gov",
+      "sourceId": "RVZ2600298722",
+      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600298722",
+      "title": "Marketingová kampaň - přeshraniční projekt Gotická stezka, ATCZ00122",
+      "buyer": "Jihočeská centrála cestovního ruchu",
+      "summary": "Marketingová kampaň - přeshraniční projekt Gotická stezka, ATCZ00122",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": "2026-11-11T10:11:19.991Z",
+      "deadline": "2026-11-30T10:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": null,
+      "valueSource": null,
+      "documentsUrl": null,
+      "documents": [],
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [],
+      "procedureType": "VEREJNA ZAKAZKA",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-11-11T11:58:07.364Z",
+      "lastSeenAt": "2026-11-11T11:58:07.364Z",
+      "status": "open",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "candidateProfileUrls": [],
+      "fingerprint": "7d0a45a84ddbc35a54d6",
+      "duplicateSources": [
+        "zakazky-gov",
+        "tenderarena"
+      ],
+      "relevance": {
+        "score": 44,
+        "level": "watch",
+        "reasons": [
+          "Marketing & eventy: marketingová kampaň",
+          "obor potvrzuje popis zakázky",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 28
+          }
+        ],
+        "deadlineDays": 19
       },
       "assessment": {
         "status": "needs-information",
@@ -1352,13 +1497,9 @@
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": null,
+      "originConfidence": 0,
       "candidateProfileUrls": [],
       "fingerprint": "fd5ec9aa32e8276ac47b",
-      "duplicateSources": [
-        "zakazky-gov",
-        "tenderarena"
-      ],
       "relevance": {
         "score": 44,
         "level": "watch",
@@ -1375,7 +1516,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 57
+        "deadlineDays": 56
       },
       "assessment": {
         "status": "needs-information",
@@ -1396,22 +1537,22 @@
     }
   ],
   "processing": {
-    "updatedAt": "2026-11-10T12:48:31.920Z",
+    "updatedAt": "2026-11-11T11:58:07.364Z",
     "status": "attention",
     "reviews": {
       "pending": 0,
       "retry": 0,
-      "needs-review": 11,
+      "needs-review": 14,
       "reviewed": 5,
-      "expired": 8,
-      "inactive": 5
+      "expired": 9,
+      "inactive": 4
     },
     "radar": {
-      "pending": 4,
+      "pending": 2,
       "resolved": 13,
-      "rejected": 91,
-      "expired": 63,
-      "needs-verification": 10
+      "rejected": 92,
+      "expired": 68,
+      "needs-verification": 12
     },
     "sources": [],
     "items": [
@@ -1526,6 +1667,36 @@
         "published": true
       },
       {
+        "id": "zakazky-gov:RVZ2600298722",
+        "title": "Marketingová kampaň - přeshraniční projekt Gotická stezka, ATCZ00122",
+        "status": "needs-review",
+        "reason": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
+        "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600298722",
+        "nextAttemptAt": null,
+        "attempts": 0,
+        "published": true
+      },
+      {
+        "id": "zakazky-gov:RVZ2600298542",
+        "title": "Technologická agentura ČR",
+        "status": "needs-review",
+        "reason": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
+        "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600298542",
+        "nextAttemptAt": null,
+        "attempts": 0,
+        "published": true
+      },
+      {
+        "id": "tenderarena:P26V00350436",
+        "title": "Marketingová kampaň - přeshraniční projekt Gotická stezka, ATCZ00122",
+        "status": "needs-review",
+        "reason": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
+        "url": "https://tenderarena.cz/dodavatel/zakazka/929711",
+        "nextAttemptAt": null,
+        "attempts": 0,
+        "published": false
+      },
+      {
         "id": "poptavky:2129927",
         "title": "Poptávka: externí marketingový manažer, Praha",
         "status": "needs-verification",
@@ -1627,19 +1798,19 @@
       {
         "id": "poptavej:VZ618758",
         "title": "Dodání a realizace expozice pro stálou expozici",
-        "status": "pending",
-        "reason": "Čeká na dohledání oficiálního zadání.",
+        "status": "needs-verification",
+        "reason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ618758/dodani-a-realizace-expozice-pro-stalou-expozici",
-        "attempts": 2,
+        "attempts": 3,
         "published": false
       },
       {
         "id": "poptavej:VZ422905",
         "title": "Kampaň - vytvoření komunikační strategie",
-        "status": "pending",
-        "reason": "Čeká na dohledání oficiálního zadání.",
+        "status": "needs-verification",
+        "reason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ422905/kampan-vytvoreni-komunikacni-strategie",
-        "attempts": 2,
+        "attempts": 3,
         "published": false
       },
       {
@@ -1648,7 +1819,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ790724/dodani-av-obsahu-pro-stalou-expozici",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       }
     ],
@@ -1922,8 +2093,8 @@
       {
         "id": "poptavej:VZ010662",
         "title": "Monitoring médií a analýza mediálního obsahu",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ010662/monitoring-medii-a-analyza-medialniho-obsahu"
       },
       {
@@ -2195,8 +2366,8 @@
       {
         "id": "poptavej:VZ037550",
         "title": "Tisk a vazba knih",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ037550/tisk-a-vazba-knih"
       },
       {
@@ -2300,8 +2471,8 @@
       {
         "id": "poptavej:VZ696118",
         "title": "Reklamní předměty",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ696118/reklamni-predmety"
       },
       {
@@ -2321,8 +2492,8 @@
       {
         "id": "poptavky:2146378",
         "title": "Tiskařské služby v letech 2027-2028",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavky.cz/poptavka/2146378-tiskarske-sluzby-v-letech-2027-2028"
       },
       {
@@ -2552,8 +2723,8 @@
       {
         "id": "poptavky:2152010",
         "title": "dodávka reklamních předmětů s potiskem / laserovým gravírováním",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavky.cz/poptavka/2152010-dodavka-reklamnich-predmetu-s-potiskem-laserovym-gravirovanim"
       },
       {
@@ -2821,6 +2992,48 @@
         "status": "rejected",
         "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ702877/dodavka-motivacnich-predmetu-k-prevenci-kriminality"
+      },
+      {
+        "id": "poptavky:2160088",
+        "title": "Předplatné periodik",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2160088-predplatne-periodik"
+      },
+      {
+        "id": "poptavky:2160070",
+        "title": "Dodávka formulářů",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2160070-dodavka-formularu"
+      },
+      {
+        "id": "poptavky:2160064",
+        "title": "Nákup propagačních předmětů 2026",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2160064-nakup-propagacnich-predmetu-2026"
+      },
+      {
+        "id": "poptavky:2159354",
+        "title": "Poptávka: tisk samolepek na výlohu, Praha 9 - Libeň",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2159354-poptavka-tisk-samolepek-na-vylohu-praha-9-liben"
+      },
+      {
+        "id": "poptavky:2159550",
+        "title": "Dodání AV obsahu",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2159550-dodani-av-obsahu"
+      },
+      {
+        "id": "poptavej:VZ150933",
+        "title": "Dodávka formulářů",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavej.cz/verejna-zakazka/VZ150933/dodavka-formularu"
       }
     ]
   }
