@@ -326,5 +326,34 @@
     ],
     "complete": true,
     "warnings": []
+  },
+  "nen:N006/26/V00037104": {
+    "reviewedAt": "2026-11-12T12:57:06.623Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4821277472",
+      "https://nen.nipez.cz/file?id=4821277482"
+    ],
+    "method": "automatic-extraction",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Plnění zahrnuje přípravu vzorků, bodové izotopové analýzy v texturně definovaných částech měřených krystalů, statistické a grafické zpracování dat, textovou a grafickou prezentaci výsledků (dále jen „datování“).",
+    "facts": [
+      {
+        "text": "Plnění zahrnuje přípravu vzorků, bodové izotopové analýzy v texturně definovaných částech měřených krystalů, statistické a grafické zpracování dat, textovou a grafickou prezentaci výsledků (dále jen „datování“).",
+        "url": "https://nen.nipez.cz/file?id=4821277472",
+        "kind": "scope"
+      },
+      {
+        "text": "Cena plnění a platební podmínky Maximální souhrnná cena všech dílčích plnění podle této smlouvy činí 2 000 000 Kč bez DPH.",
+        "url": "https://nen.nipez.cz/file?id=4821277472",
+        "kind": "price"
+      }
+    ],
+    "value": {
+      "amount": 2000000,
+      "currency": "CZK"
+    },
+    "valueSource": "https://nen.nipez.cz/file?id=4821277482",
+    "complete": true,
+    "warnings": []
   }
 }
