@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T12:57:06.623Z",
+  "generatedAt": "2026-11-13T12:22:37.284Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 15,
-    "newThisRun": 8,
+    "total": 13,
+    "newThisRun": 6,
     "strong": 1,
-    "closingSoon": 4,
+    "closingSoon": 2,
     "unresolvedOrigin": 0,
     "invalidRows": 0
   },
@@ -18,41 +18,72 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 113,
+      "count": 128,
       "warnings": []
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 75,
+      "count": 65,
       "warnings": []
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 80,
+      "count": 78,
       "warnings": [
-        "Dotaz audiovizuální: https://nen.nipez.cz/verejne-zakazky/p%3Avz%3AstavZP%3Dneukoncena%26query%3Daudiovizu%C3%A1ln%C3%AD: HTTP 503",
-        "Dotaz focení: https://nen.nipez.cz/verejne-zakazky/p%3Avz%3AstavZP%3Dneukoncena%26query%3Dfocen%C3%AD: HTTP 503"
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-25-V00006141: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-22-V00023790: HTTP 503"
       ],
-      "retryQueue": []
+      "retryQueue": [
+        {
+          "code": "N006/25/V00006141",
+          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-25-V00006141",
+          "title": "OS Praha 2- dohledové videosystémy DVS",
+          "summary": {
+            "kod": "N006/25/V00006141",
+            "nazev": "OS Praha 2- dohledové videosystémy DVS",
+            "zadavatelNazev": "Obvodní soud pro Prahu 2",
+            "podaniLhuta": "2025-03-07T23:00:00"
+          },
+          "attempts": 1,
+          "firstFailedAt": "2026-11-13T12:22:37.284Z",
+          "lastAttemptAt": "2026-11-13T12:22:37.284Z",
+          "error": "HTTP 503"
+        },
+        {
+          "code": "N006/22/V00023790",
+          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-22-V00023790",
+          "title": "Dodání motivačních předmětů s preventivní tématikou  k projektu č. 26 (grant)",
+          "summary": {
+            "kod": "N006/22/V00023790",
+            "nazev": "Dodání motivačních předmětů s preventivní tématikou  k projektu č. 26 (grant)",
+            "zadavatelNazev": "Krajské ředitelství policie hlavního města Prahy",
+            "podaniLhuta": "2022-09-20T09:00:00"
+          },
+          "attempts": 1,
+          "firstFailedAt": "2026-11-13T12:22:37.284Z",
+          "lastAttemptAt": "2026-11-13T12:22:37.284Z",
+          "error": "HTTP 503"
+        }
+      ]
     },
     {
       "id": "ted",
       "ok": true,
-      "count": 582,
+      "count": 577,
       "warnings": []
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 65,
+      "count": 67,
       "warnings": []
     },
     {
       "id": "proebiz",
       "ok": true,
-      "count": 31,
+      "count": 32,
       "warnings": []
     },
     {
@@ -125,7 +156,7 @@
       "procedureType": "services, services, services, services, services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-27T09:54:11.118Z",
-      "lastSeenAt": "2026-11-12T12:57:06.623Z",
+      "lastSeenAt": "2026-11-13T12:22:37.284Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -289,7 +320,7 @@
             "score": 25
           }
         ],
-        "deadlineDays": 18
+        "deadlineDays": 17
       },
       "assessment": {
         "status": "needs-information",
@@ -305,6 +336,89 @@
         "gaps": [
           "Rozpočet není doložený.",
           "Kvalifikační požadavky nejsou ve výtahu ověřené."
+        ],
+        "internalChecks": [
+          "Porovnat požadované reference s našimi.",
+          "Ověřit kapacitu týmu a náklady realizace."
+        ],
+        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
+      }
+    },
+    {
+      "id": "tenderarena:P26V00349386",
+      "source": "tenderarena",
+      "sourceId": "P26V00349386",
+      "url": "https://tenderarena.cz/dodavatel/zakazka/925983",
+      "title": "DNS – Komunikační a marketingové aktivity",
+      "buyer": "Ministerstvo zdravotnictví",
+      "summary": "Předmětem této veřejné zakázky je zavedení dynamického nákupního systému za účelem zajišťování komunikačních a marketingových aktivit podporujících informovanost, vzdělávání a osvětu odborné i laické veřejnosti v oblasti digitalizace zdravotnictví a projektů realizovaných Národním centrem elektronického zdravotnictví (NCEZ). Předmětem plnění dílčích veřejných zakázek zadávaných v rámci DNS bude poskytování služeb odpovídajících jednotlivým kategoriím DNS dle aktuálních potřeb zadavatele. Jednotlivé kategorie DNS představují okruhy komunikačních a marketingových aktivit, jejichž podrobnější vymezení je uvedeno v kapitole 3.2 této zadávací dokumentace. Dílčí veřejné zakázky budou zadávány v rámci jednotlivých kategorií DNS podle aktuálních potřeb zadavatele. Zadavatel může současně zadávat veřejné zakázky ve více kategoriích DNS. Podrobná specifikace předmětu plnění, rozsahu požadovaných služeb, technických podmínek, obchodních podmínek a dalších požadavků bude vždy uvedena ve výzvě k podání nabídek dle § 141 ZZVZ a jejích přílohách. Zadavatel je oprávněn v průběhu trvání DNS změnit nebo doplnit zadávací podmínky v souladu s § 139a ZZVZ. DNS je rozdělen do následujících pěti kategorií: - Kategorie 1 – Produkce audiovizuálního obsahu - Kategorie 2 – Organizace komunikačních a prezentačních akcí - Kategorie 3 – Tvorba informačních, edukačních a propagačních materiálů - Kategorie 4 – Mediální komunikace a marketingové kampaně - Kategorie 5 – Odborné kapacity pro komunikační a marketingové aktivity",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": "2026-10-27T15:54:06.633Z",
+      "deadline": "2026-11-26T09:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": null,
+      "valueSource": null,
+      "documentsUrl": null,
+      "documents": [],
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [],
+      "procedureType": "Veřejná zakázka v TenderArena",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-10-28T10:40:53.265Z",
+      "lastSeenAt": "2026-10-28T10:40:53.265Z",
+      "status": "needs-review",
+      "discoverySource": "poptavej",
+      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ506469/zavedeni-dns-komunikacni-a-marketingove-aktivity",
+      "originStatus": "resolved",
+      "originConfidence": 86,
+      "candidateProfileUrls": [],
+      "fingerprint": "835a6ae45fae4b6ebd32",
+      "duplicateSources": [
+        "tenderarena",
+        "zakazky-gov"
+      ],
+      "relevance": {
+        "score": 63,
+        "level": "good",
+        "reasons": [
+          "Tvorba obsahu: audiovizuální",
+          "PR & komunikace: mediální komunikace",
+          "obor potvrzuje popis zakázky",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "content",
+            "label": "Tvorba obsahu",
+            "score": 28
+          },
+          {
+            "id": "pr",
+            "label": "PR & komunikace",
+            "score": 28
+          },
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 28
+          }
+        ],
+        "deadlineDays": 13
+      },
+      "assessment": {
+        "status": "needs-information",
+        "label": "Doplnit podklady pro rozhodnutí",
+        "requirements": [],
+        "evaluation": [],
+        "gaps": [
+          "Rozpočet není doložený.",
+          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
+          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
         ],
         "internalChecks": [
           "Porovnat požadované reference s našimi.",
@@ -402,7 +516,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-19T10:03:31.222Z",
-      "lastSeenAt": "2026-11-12T12:57:06.623Z",
+      "lastSeenAt": "2026-11-13T12:22:37.284Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -411,14 +525,13 @@
       "candidateProfileUrls": [],
       "fingerprint": "37cc7f04c178dfead51d",
       "relevance": {
-        "score": 64,
+        "score": 60,
         "level": "good",
         "reasons": [
           "Tvorba obsahu: podcast",
           "Marketing & eventy: konference",
           "obor potvrzuje ověřený výtah zadání",
-          "jde o zakázku na služby",
-          "zbývá alespoň týden na reakci"
+          "jde o zakázku na služby"
         ],
         "negativeSignals": [],
         "categories": [
@@ -438,90 +551,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 7
-      },
-      "assessment": {
-        "status": "needs-information",
-        "label": "Doplnit podklady pro rozhodnutí",
-        "requirements": [],
-        "evaluation": [],
-        "gaps": [
-          "Rozpočet není doložený.",
-          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
-          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
-        ],
-        "internalChecks": [
-          "Porovnat požadované reference s našimi.",
-          "Ověřit kapacitu týmu a náklady realizace."
-        ],
-        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
-      }
-    },
-    {
-      "id": "tenderarena:P26V00349386",
-      "source": "tenderarena",
-      "sourceId": "P26V00349386",
-      "url": "https://tenderarena.cz/dodavatel/zakazka/925983",
-      "title": "DNS – Komunikační a marketingové aktivity",
-      "buyer": "Ministerstvo zdravotnictví",
-      "summary": "Předmětem této veřejné zakázky je zavedení dynamického nákupního systému za účelem zajišťování komunikačních a marketingových aktivit podporujících informovanost, vzdělávání a osvětu odborné i laické veřejnosti v oblasti digitalizace zdravotnictví a projektů realizovaných Národním centrem elektronického zdravotnictví (NCEZ). Předmětem plnění dílčích veřejných zakázek zadávaných v rámci DNS bude poskytování služeb odpovídajících jednotlivým kategoriím DNS dle aktuálních potřeb zadavatele. Jednotlivé kategorie DNS představují okruhy komunikačních a marketingových aktivit, jejichž podrobnější vymezení je uvedeno v kapitole 3.2 této zadávací dokumentace. Dílčí veřejné zakázky budou zadávány v rámci jednotlivých kategorií DNS podle aktuálních potřeb zadavatele. Zadavatel může současně zadávat veřejné zakázky ve více kategoriích DNS. Podrobná specifikace předmětu plnění, rozsahu požadovaných služeb, technických podmínek, obchodních podmínek a dalších požadavků bude vždy uvedena ve výzvě k podání nabídek dle § 141 ZZVZ a jejích přílohách. Zadavatel je oprávněn v průběhu trvání DNS změnit nebo doplnit zadávací podmínky v souladu s § 139a ZZVZ. DNS je rozdělen do následujících pěti kategorií: - Kategorie 1 – Produkce audiovizuálního obsahu - Kategorie 2 – Organizace komunikačních a prezentačních akcí - Kategorie 3 – Tvorba informačních, edukačních a propagačních materiálů - Kategorie 4 – Mediální komunikace a marketingové kampaně - Kategorie 5 – Odborné kapacity pro komunikační a marketingové aktivity",
-      "country": "CZ",
-      "region": "Česko",
-      "publishedAt": "2026-10-27T15:54:06.633Z",
-      "deadline": "2026-11-26T09:00:00.000Z",
-      "deadlineTimeKnown": true,
-      "value": null,
-      "valueSource": null,
-      "documentsUrl": null,
-      "documents": [],
-      "verifiedFacts": [],
-      "factsReviewedAt": null,
-      "reviewComplete": true,
-      "reviewWarnings": [],
-      "cpv": [],
-      "procedureType": "Veřejná zakázka v TenderArena",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-10-28T10:40:53.265Z",
-      "lastSeenAt": "2026-10-28T10:40:53.265Z",
-      "status": "needs-review",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ506469/zavedeni-dns-komunikacni-a-marketingove-aktivity",
-      "originStatus": "resolved",
-      "originConfidence": 86,
-      "candidateProfileUrls": [],
-      "fingerprint": "835a6ae45fae4b6ebd32",
-      "duplicateSources": [
-        "tenderarena",
-        "zakazky-gov"
-      ],
-      "relevance": {
-        "score": 63,
-        "level": "good",
-        "reasons": [
-          "Tvorba obsahu: audiovizuální",
-          "PR & komunikace: mediální komunikace",
-          "obor potvrzuje popis zakázky",
-          "zbývá alespoň týden na reakci"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "content",
-            "label": "Tvorba obsahu",
-            "score": 28
-          },
-          {
-            "id": "pr",
-            "label": "PR & komunikace",
-            "score": 28
-          },
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 28
-          }
-        ],
-        "deadlineDays": 14
+        "deadlineDays": 6
       },
       "assessment": {
         "status": "needs-information",
@@ -694,12 +724,9 @@
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
-      "originConfidence": null,
+      "originConfidence": 0,
       "candidateProfileUrls": [],
       "fingerprint": "f08c89c0a081eed6226d",
-      "duplicateSources": [
-        "official-profile"
-      ],
       "relevance": {
         "score": 60,
         "level": "good",
@@ -716,7 +743,7 @@
             "score": 44
           }
         ],
-        "deadlineDays": 21
+        "deadlineDays": 20
       },
       "assessment": {
         "status": "needs-information",
@@ -760,7 +787,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-11-07T11:11:24.717Z",
-      "lastSeenAt": "2026-11-12T12:57:06.623Z",
+      "lastSeenAt": "2026-11-13T12:22:37.284Z",
       "status": "signal",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -896,7 +923,7 @@
       "procedureType": "Sluzby / Otevřené řízení",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-24T09:34:04.116Z",
-      "lastSeenAt": "2026-11-12T12:57:06.623Z",
+      "lastSeenAt": "2026-11-13T12:22:37.284Z",
       "status": "open",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -905,14 +932,13 @@
       "candidateProfileUrls": [],
       "fingerprint": "ce6e7c4be58391508075",
       "relevance": {
-        "score": 58,
-        "level": "good",
+        "score": 54,
+        "level": "watch",
         "reasons": [
           "Marketing & eventy: reklamní plochy",
           "PR & komunikace: propagace",
           "obor potvrzuje ověřený výtah zadání",
-          "jde o zakázku na služby",
-          "zbývá alespoň týden na reakci"
+          "jde o zakázku na služby"
         ],
         "negativeSignals": [],
         "categories": [
@@ -927,7 +953,7 @@
             "score": 19
           }
         ],
-        "deadlineDays": 7
+        "deadlineDays": 6
       },
       "assessment": {
         "status": "needs-information",
@@ -951,7 +977,7 @@
       "sourceId": "N006/26/V00021404",
       "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00021404",
       "title": "Technické a organizační zajištění akcí OPŽP a OPST 2027 - 2029",
-      "buyer": "Česká republika - Ministerstvo životního prostředí",
+      "buyer": "Ministerstvo životního prostředí",
       "summary": "Předmětem veřejné zakázky je zajištění technické a organizační podpory při přípravě a realizaci akcí pořádaných za účelem implementace Operačního programu Životní prostředí 2021–2027 (dále „OPŽP“) a nástroje pro využití prostředků EU v oblasti politiky soudržnosti v gesci MŽP v programovém období 2028-2034 a Operačního programu Spravedlivá transformace (dále „OPST“) 2021–2027 a nástroje pro využití prostředků EU v oblasti politiky soudržnosti v gesci MŽP v programovém období 2028-2034. Jedná se především o zajištění zasedání monitorovacích výborů, jednání zástupců implementační struktury vč. Evropské komise, konferencí, seminářů či workshopů pro žadatele a příjemce dotace atp. Technická a organizační podpora akcí zahrnuje zejména zajištění jednacích prostor, techniky (tlumočnická technika, ozvučení prostor, projekční technika), tlumočení (do anglického jazyka: simultánní, konsekutivní nebo AI technologiemi), nahrávání či streamování jednání včetně přepisu záznamu, zajištění občerstvení, přepravy, případně rezervace ubytování pro účastníky zasedání či zajištění moderování akce a další služby spojené se zajištěním akcí.",
       "country": "CZ",
       "region": "Česká republika",
@@ -1044,7 +1070,7 @@
       "originStatus": "verified",
       "originConfidence": null,
       "candidateProfileUrls": [],
-      "fingerprint": "0dd620b2c00532ed0017",
+      "fingerprint": "a5c599e69d58c05f3b21",
       "duplicateSources": [
         "nen"
       ],
@@ -1070,7 +1096,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 25
+        "deadlineDays": 24
       },
       "assessment": {
         "status": "needs-information",
@@ -1170,7 +1196,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 11
+        "deadlineDays": 10
       },
       "assessment": {
         "status": "needs-information",
@@ -1243,7 +1269,7 @@
             "score": 9
           }
         ],
-        "deadlineDays": 11
+        "deadlineDays": 10
       },
       "assessment": {
         "status": "needs-information",
@@ -1342,154 +1368,6 @@
       }
     },
     {
-      "id": "nen:N006/26/V00035326",
-      "source": "nen",
-      "sourceId": "N006/26/V00035326",
-      "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035326",
-      "title": "Distribuce časopisu RNB - opakované zadání",
-      "buyer": "Centrum pro regionální rozvoj České republiky",
-      "summary": "Předmětem veřejné zakázky je pravidelné zajištění služeb balení a distribuce zásilek, zejména časopisu Regiony nás baví, na území celé České republiky. Distribuce bude realizována v pravidelných měsíčních intervalech v období od 1.1. 2027 do 31. 12. 2027. Věcně příslušný útvar předpokládá postupný nárůst počtu distribuovaných zásilek v souvislosti s plánovanými marketingovými kampaněmi zaměřenými na zvýšení zájmu o distribuovaný časopis. Předpokládaný objem distribuce činí přibližně 8 500 kusů měsíčně v roce 2027.",
-      "country": "CZ",
-      "region": "Česká republika",
-      "publishedAt": "2026-11-06T10:32:00.000Z",
-      "deadline": "2026-11-16T07:00:00.000Z",
-      "deadlineTimeKnown": true,
-      "value": null,
-      "valueSource": null,
-      "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035326/zadavaci-dokumentace",
-      "documents": [
-        {
-          "name": "Distribuce RNB_1v0.zip",
-          "type": "Výzva k podání nabídky včetně zadávací dokumentace",
-          "url": "https://nen.nipez.cz/file?id=4815974602"
-        }
-      ],
-      "verifiedFacts": [],
-      "factsReviewedAt": null,
-      "reviewComplete": true,
-      "reviewWarnings": [],
-      "cpv": [
-        "64110000"
-      ],
-      "procedureType": "Sluzby / Otevřená výzva",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-11-06T12:15:04.866Z",
-      "lastSeenAt": "2026-11-06T12:15:04.866Z",
-      "status": "open",
-      "discoverySource": null,
-      "discoveryUrl": null,
-      "originStatus": "verified",
-      "originConfidence": 0,
-      "candidateProfileUrls": [],
-      "fingerprint": "44deb65ae8e255d29d32",
-      "relevance": {
-        "score": 45,
-        "level": "watch",
-        "reasons": [
-          "Marketing & eventy: přímá poptávka služby",
-          "obor potvrzuje popis zakázky",
-          "jde o zakázku na služby"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 28
-          }
-        ],
-        "deadlineDays": 4
-      },
-      "assessment": {
-        "status": "needs-information",
-        "label": "Doplnit podklady pro rozhodnutí",
-        "requirements": [],
-        "evaluation": [],
-        "gaps": [
-          "Rozpočet není doložený.",
-          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
-          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
-        ],
-        "internalChecks": [
-          "Porovnat požadované reference s našimi.",
-          "Ověřit kapacitu týmu a náklady realizace."
-        ],
-        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
-      }
-    },
-    {
-      "id": "tenderarena:P26V00349932",
-      "source": "tenderarena",
-      "sourceId": "P26V00349932",
-      "url": "https://tenderarena.cz/dodavatel/zakazka/926374",
-      "title": "Zajištění inzertního a PR mediálního prostoru v rámci tištěných titulů BORGIS",
-      "buyer": "Pražská plynárenská, a.s.",
-      "summary": "Zajištění inzertního a PR mediálního prostoru v rámci tištěných titulů BORGIS",
-      "country": "CZ",
-      "region": "Česko",
-      "publishedAt": "2026-11-05T08:12:00.587Z",
-      "deadline": "2026-11-19T11:00:00.000Z",
-      "deadlineTimeKnown": true,
-      "value": null,
-      "valueSource": null,
-      "documentsUrl": null,
-      "documents": [],
-      "verifiedFacts": [],
-      "factsReviewedAt": null,
-      "reviewComplete": true,
-      "reviewWarnings": [],
-      "cpv": [],
-      "procedureType": "Veřejná zakázka v TenderArena",
-      "opportunityType": "public-tender",
-      "firstSeenAt": "2026-11-05T12:32:36.236Z",
-      "lastSeenAt": "2026-11-05T12:32:36.236Z",
-      "status": "needs-review",
-      "discoverySource": "poptavej",
-      "discoveryUrl": "https://www.poptavej.cz/verejna-zakazka/VZ940762/zajisteni-inzertniho-a-pr-medialniho-prostoru-v-ramci-tistenych-titulu",
-      "originStatus": "resolved",
-      "originConfidence": 89,
-      "candidateProfileUrls": [],
-      "fingerprint": "dc6c88e5453f72a2c1f1",
-      "duplicateSources": [
-        "tenderarena",
-        "zakazky-gov"
-      ],
-      "relevance": {
-        "score": 44,
-        "level": "watch",
-        "reasons": [
-          "Marketing & eventy: mediálního prostoru",
-          "obor potvrzuje popis zakázky",
-          "zbývá alespoň týden na reakci"
-        ],
-        "negativeSignals": [],
-        "categories": [
-          {
-            "id": "marketing",
-            "label": "Marketing & eventy",
-            "score": 28
-          }
-        ],
-        "deadlineDays": 7
-      },
-      "assessment": {
-        "status": "needs-information",
-        "label": "Doplnit podklady pro rozhodnutí",
-        "requirements": [],
-        "evaluation": [],
-        "gaps": [
-          "Rozpočet není doložený.",
-          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
-          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
-        ],
-        "internalChecks": [
-          "Porovnat požadované reference s našimi.",
-          "Ověřit kapacitu týmu a náklady realizace."
-        ],
-        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
-      }
-    },
-    {
       "id": "zakazky-gov:RVZ2600298722",
       "source": "zakazky-gov",
       "sourceId": "RVZ2600298722",
@@ -1538,7 +1416,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 18
+        "deadlineDays": 17
       },
       "assessment": {
         "status": "needs-information",
@@ -1606,7 +1484,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 55
+        "deadlineDays": 54
       },
       "assessment": {
         "status": "needs-information",
@@ -1627,21 +1505,21 @@
     }
   ],
   "processing": {
-    "updatedAt": "2026-11-12T12:57:06.623Z",
+    "updatedAt": "2026-11-13T12:22:37.284Z",
     "status": "attention",
     "reviews": {
       "pending": 0,
       "retry": 0,
-      "needs-review": 13,
+      "needs-review": 12,
       "reviewed": 6,
       "expired": 11,
-      "inactive": 3
+      "inactive": 4
     },
     "radar": {
       "pending": 3,
       "resolved": 13,
-      "rejected": 90,
-      "expired": 77,
+      "rejected": 83,
+      "expired": 84,
       "needs-verification": 13
     },
     "sources": [
@@ -1700,16 +1578,6 @@
         "nextAttemptAt": null,
         "attempts": 0,
         "published": false
-      },
-      {
-        "id": "nen:N006/26/V00035326",
-        "title": "Distribuce časopisu RNB - opakované zadání",
-        "status": "needs-review",
-        "reason": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
-        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035326",
-        "nextAttemptAt": null,
-        "attempts": 0,
-        "published": true
       },
       {
         "id": "ted:774958-2026",
@@ -1780,6 +1648,24 @@
         "nextAttemptAt": null,
         "attempts": 0,
         "published": true
+      },
+      {
+        "id": "nen:N006/25/V00006141",
+        "title": "OS Praha 2- dohledové videosystémy DVS",
+        "status": "retry",
+        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-25-V00006141",
+        "attempts": 1,
+        "published": false,
+        "reason": "Detail zdroje je nedostupný. Adresa je uložená a zkusí se znovu při dalším denním sběru (1 neúspěšných běhů). HTTP 503"
+      },
+      {
+        "id": "nen:N006/22/V00023790",
+        "title": "Dodání motivačních předmětů s preventivní tématikou  k projektu č. 26 (grant)",
+        "status": "retry",
+        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-22-V00023790",
+        "attempts": 1,
+        "published": false,
+        "reason": "Detail zdroje je nedostupný. Adresa je uložená a zkusí se znovu při dalším denním sběru (1 neúspěšných běhů). HTTP 503"
       },
       {
         "id": "poptavky:2129927",
@@ -1913,7 +1799,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavky.cz/poptavka/2161088-marketingova-kampan",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       },
       {
@@ -1922,7 +1808,7 @@
         "status": "pending",
         "reason": "Čeká na dohledání oficiálního zadání.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ451105/marketingova-kampan-preshranicni-projekt",
-        "attempts": 1,
+        "attempts": 2,
         "published": false
       }
     ],
@@ -2091,8 +1977,8 @@
       {
         "id": "poptavej:VZ277748",
         "title": "Zajištění dodavatele reklamních předmětů a poskytovatele tiskařských služeb",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ277748/zajisteni-dodavatele-reklamnich-predmetu-a-poskytovatele-tiskarskych-sluzeb"
       },
       {
@@ -2882,15 +2768,15 @@
       {
         "id": "poptavky:2154348",
         "title": "Průzkum trhu – 250 kusů triček s krátkým rukávem s logem/potiskem",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavky.cz/poptavka/2154348-pruzkum-trhu-250-kusu-tricek-s-kratkym-rukavem-s-logempotiskem"
       },
       {
         "id": "poptavky:2154346",
         "title": "Průzkum trhu – 250 kusů mikin s logem/potiskem",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavky.cz/poptavka/2154346-pruzkum-trhu-250-kusu-mikin-s-logempotiskem"
       },
       {
@@ -2938,29 +2824,29 @@
       {
         "id": "poptavej:VZ310176",
         "title": "Dodávka 250 kusů mikin s logem/potiskem",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ310176/dodavka-250-kusu-mikin-s-logem-potiskem"
       },
       {
         "id": "poptavej:VZ897040",
         "title": "Dodávka 250 kusů triček s krátkým rukávem s logem/potiskem",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ897040/dodavka-250-kusu-tricek-s-kratkym-rukavem-s-logem-potiskem"
       },
       {
         "id": "poptavej:VZ027280",
         "title": "Nákup propagačního materiálu",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ027280/nakup-propagacniho-materialu"
       },
       {
         "id": "poptavej:VZ346747",
         "title": "Tisk - letáky, plakáty, desky, vizitky atd.",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavej.cz/verejna-zakazka/VZ346747/tisk-letaky-plakaty-desky-vizitky-atd"
       },
       {
