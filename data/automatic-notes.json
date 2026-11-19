@@ -355,5 +355,28 @@
     "valueSource": "https://nen.nipez.cz/file?id=4821277482",
     "complete": true,
     "warnings": []
+  },
+  "nen:N006/26/V00036742": {
+    "reviewedAt": "2026-11-19T13:33:00.018Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4828543721"
+    ],
+    "method": "automatic-extraction",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "b) zpravodaj je dlouhodobě vydáván ve čtenářsky ustáleném formátu, grafické podobě, a s tradičním řazením rubrik, zadavatel připouští pro oblast grafického zpracování možnost návrhu určitých úprav a odlišností v průběhu zpracování až prvních 3 vydání zpravodaje zhotovitelem, a to v úvodu předmětného období plnění VZ, navržené změny budou se zadavatelem v dostatečném předstihu konzultovány a předloženy zadavateli k odsouhlasení.",
+    "facts": [
+      {
+        "text": "b) zpravodaj je dlouhodobě vydáván ve čtenářsky ustáleném formátu, grafické podobě, a s tradičním řazením rubrik, zadavatel připouští pro oblast grafického zpracování možnost návrhu určitých úprav a odlišností v průběhu zpracování až prvních 3 vydání zpravodaje zhotovitelem, a to v úvodu předmětného období plnění VZ, navržené změny budou se zadavatelem v dostatečném předstihu konzultovány a předloženy zadavateli k odsouhlasení.",
+        "url": "https://nen.nipez.cz/file?id=4828543721",
+        "kind": "scope"
+      },
+      {
+        "text": "U každé referenční zakázky bude minimálně uvedeno: • název referenční zakázky • hodnota referenční zakázky bez DPH • termín realizace referenční zakázky • jednoduchý popis referenční zakázky • aktuální kontakt na objednatele uvedené referenční zakázky",
+        "url": "https://nen.nipez.cz/file?id=4828543721",
+        "kind": "qualification"
+      }
+    ],
+    "complete": true,
+    "warnings": []
   }
 }
