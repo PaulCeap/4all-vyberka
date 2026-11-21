@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-20T13:13:20.889Z",
+  "updatedAt": "2026-11-21T12:49:49.255Z",
   "counts": {
     "pending": 1,
     "resolved": 12,
-    "rejected": 82,
-    "expired": 107,
-    "needs-verification": 15
+    "rejected": 79,
+    "expired": 112,
+    "needs-verification": 14
   },
   "leads": [
     {
@@ -2604,7 +2604,7 @@
       "lastSeenAt": "2026-10-29T10:58:37.476Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
-      "preliminaryScore": 5,
+      "preliminaryScore": 0,
       "processingStatus": "rejected",
       "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
@@ -4527,8 +4527,8 @@
       "lastOriginCheckAt": "2026-11-09T13:03:43.749Z",
       "originCheckAttempts": 3,
       "preliminaryScore": 39,
-      "processingStatus": "rejected",
-      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
+      "processingStatus": "expired",
+      "processingReason": "Lhůta již uplynula."
     },
     {
       "source": "poptavej",
@@ -4554,9 +4554,9 @@
       "lastSeenAt": "2026-11-18T13:13:07.148Z",
       "lastOriginCheckAt": "2026-11-09T13:03:43.749Z",
       "originCheckAttempts": 3,
-      "preliminaryScore": 42,
-      "processingStatus": "needs-verification",
-      "processingReason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje."
+      "preliminaryScore": 34,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     },
     {
       "source": "poptavej",
@@ -4580,8 +4580,8 @@
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
-      "processingStatus": "rejected",
-      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
+      "processingStatus": "expired",
+      "processingReason": "Lhůta již uplynula."
     },
     {
       "source": "poptavky",
@@ -5052,8 +5052,8 @@
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
-      "processingStatus": "rejected",
-      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
+      "processingStatus": "expired",
+      "processingReason": "Lhůta již uplynula."
     },
     {
       "source": "poptavej",
@@ -5077,8 +5077,8 @@
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
-      "processingStatus": "rejected",
-      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
+      "processingStatus": "expired",
+      "processingReason": "Lhůta již uplynula."
     },
     {
       "source": "poptavky",
@@ -5267,7 +5267,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-12T12:57:06.623Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 5,
@@ -5322,8 +5322,8 @@
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
-      "firstSeenAt": "2026-11-20T13:13:20.889Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "firstSeenAt": "2026-11-21T12:49:49.255Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "processingStatus": "expired",
@@ -5459,8 +5459,8 @@
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
-      "processingStatus": "rejected",
-      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
+      "processingStatus": "expired",
+      "processingReason": "Lhůta již uplynula."
     },
     {
       "source": "poptavej",
@@ -5511,7 +5511,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-14T11:37:20.835Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 9,
@@ -5564,7 +5564,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-16T12:56:03.472Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -5592,7 +5592,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-16T12:56:03.472Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 5,
@@ -5620,7 +5620,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-16T12:56:03.472Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -5732,7 +5732,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-17T13:38:33.584Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 9,
@@ -5760,7 +5760,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-17T13:38:33.584Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -5788,7 +5788,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-18T13:13:07.148Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -5816,7 +5816,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-18T13:13:07.148Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -5844,7 +5844,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-18T13:13:07.148Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 42,
@@ -5872,7 +5872,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-18T13:13:07.148Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -5899,8 +5899,8 @@
       "candidateOriginUrls": [],
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
-      "firstSeenAt": "2026-11-20T13:13:20.889Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "firstSeenAt": "2026-11-21T12:49:49.255Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "processingStatus": "expired",
@@ -5927,7 +5927,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-19T13:33:00.018Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -5955,7 +5955,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-19T13:33:00.018Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -5983,7 +5983,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-19T13:33:00.018Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -6011,7 +6011,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-19T13:33:00.018Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 9,
@@ -6039,7 +6039,7 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-20T13:13:20.889Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 0,
@@ -6067,12 +6067,40 @@
       "originStatus": "unresolved",
       "processingVersion": "2026-10-24-2",
       "firstSeenAt": "2026-11-20T13:13:20.889Z",
-      "lastSeenAt": "2026-11-20T13:13:20.889Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
       "lastOriginCheckAt": null,
       "originCheckAttempts": 0,
       "preliminaryScore": 61,
       "processingStatus": "needs-verification",
       "processingReason": "Komerční poptávka: doplnit ověřeného zadavatele a původní zadání; agregátor je pouze tip."
+    },
+    {
+      "source": "poptavky",
+      "sourceId": "2170113",
+      "url": "https://www.poptavky.cz/poptavka/2170113-poptavam-tisk-detske-knizky-stovky-ks",
+      "title": "Poptávám: tisk dětské knížky, stovky ks",
+      "buyer": "Zadavatel z Poptávky.cz",
+      "summary": "Poptávám: tiskové služby Popis: - poptávám tisk dětské knížky - formát knížky je 200 x 200 mm - knížka obsahuje 36 stran plus obálku - vazba V4 Specifikace: - materiál 170gBO + 300gKM s matnou laminací nepoškrabatelnou - barevnost 4/4 Množství/rozměr: - prosím o cenovou nabídku na 400, 800 a 1 200 ks Lokalita: - Plzeň Termín: - dohodou",
+      "region": "Plzeň",
+      "publishedAt": "2026-11-20T13:15:00.000Z",
+      "deadline": null,
+      "deadlineTimeKnown": false,
+      "value": {
+        "amount": 600000,
+        "currency": "CZK"
+      },
+      "procedureType": "Komerční poptávka",
+      "opportunityType": "commercial-demand",
+      "candidateOriginUrls": [],
+      "originStatus": "unresolved",
+      "processingVersion": "2026-10-24-2",
+      "firstSeenAt": "2026-11-21T12:49:49.255Z",
+      "lastSeenAt": "2026-11-21T12:49:49.255Z",
+      "lastOriginCheckAt": null,
+      "originCheckAttempts": 0,
+      "preliminaryScore": 0,
+      "processingStatus": "rejected",
+      "processingReason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel."
     }
   ]
 }
