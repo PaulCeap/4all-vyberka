@@ -378,5 +378,30 @@
     ],
     "complete": true,
     "warnings": []
+  },
+  "nen:N006/26/V00037809": {
+    "reviewedAt": "2026-11-23T14:57:51.375Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4832520844",
+      "https://nen.nipez.cz/file?id=4832520883",
+      "https://nen.nipez.cz/file?id=4832520898"
+    ],
+    "method": "automatic-extraction",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Zdravotní pojišťovna ministerstva vnitra České republiky sídlo Vinohradská 2577/178 | 130 00 Praha 3 | kód pojišťovny 211 | IČO 47114304 zapsána v obchodním rejstříku vedeném Městským soudem v Praze oddíl A, vložka 7216 datová schránka: 9swaix3 | infolinka: 224 211 211 | e-mail: info@zpmvcr.cz, www.zpmvcr.cz 3/26 2 PŘEDMĚT VEŘEJNÉ ZAKÁZKY a) Předmětem dílčích veřejných zakázek zadávaných v DNS je nákup mediálního prostoru a vysílacího času (dále jen „mediální prostor“) pro komunikační aktivity a kampaně Zadavatele, zejména kampaně na podporu prevence a zdravého životního stylu, informování o službách a programech Zadavatele, pozvánky na preventivní a další akce Zadavatele a komunikaci ke stávajícím klientům Zadavatele i k ostatní populaci.",
+    "facts": [
+      {
+        "text": "Zdravotní pojišťovna ministerstva vnitra České republiky sídlo Vinohradská 2577/178 | 130 00 Praha 3 | kód pojišťovny 211 | IČO 47114304 zapsána v obchodním rejstříku vedeném Městským soudem v Praze oddíl A, vložka 7216 datová schránka: 9swaix3 | infolinka: 224 211 211 | e-mail: info@zpmvcr.cz, www.zpmvcr.cz 3/26 2 PŘEDMĚT VEŘEJNÉ ZAKÁZKY a) Předmětem dílčích veřejných zakázek zadávaných v DNS je nákup mediálního prostoru a vysílacího času (dále jen „mediální prostor“) pro komunikační aktivity a kampaně Zadavatele, zejména kampaně na podporu prevence a zdravého životního stylu, informování o službách a programech Zadavatele, pozvánky na preventivní a další akce Zadavatele a komunikaci ke stávajícím klientům Zadavatele i k ostatní populaci.",
+        "url": "https://nen.nipez.cz/file?id=4832520883",
+        "kind": "scope"
+      },
+      {
+        "text": "TV metr); Radioprojekt; Media projekt; NetMonitor nebo rovnocenné zdroje B 2 služby v oblasti reklamy na internetu, min. 1 000 000 Kč bez DPH každá pro 1 objednatele, z toho min. 1 se sociálními sítěmi vedoucí týmu / specialista online médií (3 roky); specialista na reklamu na sociálních sítích (2 roky) NetMonitor nebo rovnocenný zdroj (např. u provozovatele online média vlastní data z nezávisle ověřeného měření) C 2 služby v oblasti inzerce v tisku, min. 300 000 Kč bez DPH každá pro 1 objednatele media planner / buyer (2 roky) Media projekt nebo rovnocenný zdroj D 2 služby v oblasti rozhlasové reklamy nebo digitálního audia, min. 500 000 Kč bez DPH každá pro 1 objednatele media planner / buyer (2 roky) Radioprojekt nebo rovnocenný zdroj E 2 služby v oblasti venkovní nebo vnitřní (indoor) reklamy, min. 500 000 Kč bez DPH každá pro 1 objednatele media planner / buyer (2 roky) nepožaduje se F 2 služby v oblasti televizní reklamy, z toho min. 1 s lineárním TV vysíláním, min. 2 000 000 Kč bez DPH každá pro 1 objednatele vedoucí týmu / account manager (3 roky); TV planner / buyer (3 roky) PCEM (ATO, tzv.",
+        "url": "https://nen.nipez.cz/file?id=4832520898",
+        "kind": "price"
+      }
+    ],
+    "complete": true,
+    "warnings": []
   }
 }
