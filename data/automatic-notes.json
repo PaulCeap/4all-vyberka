@@ -298,29 +298,24 @@
     "warnings": []
   },
   "nen:N006/26/V00036531": {
-    "reviewedAt": "2026-11-21T12:49:49.255Z",
+    "reviewedAt": "2026-11-24T14:59:57.100Z",
     "documentSnapshot": [
-      "https://nen.nipez.cz/file?id=4816296214",
-      "https://nen.nipez.cz/file?id=4816296234",
-      "https://nen.nipez.cz/file?id=4830480531"
+      "https://nen.nipez.cz/file?id=4830480531",
+      "https://nen.nipez.cz/file?id=4832759144",
+      "https://nen.nipez.cz/file?id=4832759149"
     ],
     "method": "automatic-extraction",
     "reviewVersion": "2026-10-24-2",
-    "summary": "Předmětem této veřejné zakázky dále není zajištění mediálních vztahů a krizové komunikace, výzkum znalosti a vnímání značky ani technická realizace úprav webu zadavatele; tyto činnosti zajistí zadavatel interně nebo samostatně.",
+    "summary": "Nákup mediálního prostoru není předmětem plnění této veřejné zakázky.",
     "facts": [
       {
-        "text": "Předmětem této veřejné zakázky dále není zajištění mediálních vztahů a krizové komunikace, výzkum znalosti a vnímání značky ani technická realizace úprav webu zadavatele; tyto činnosti zajistí zadavatel interně nebo samostatně.",
-        "url": "https://nen.nipez.cz/file?id=4816296214",
+        "text": "Nákup mediálního prostoru není předmětem plnění této veřejné zakázky.",
+        "url": "https://nen.nipez.cz/file?id=4830480531",
         "kind": "scope"
       },
       {
-        "text": "Hodnoticí kritéria a jejich váhy: Kritérium / subkritérium Váha A Kvalita nabídky 60 % A1 Porozumění zadání a cílovým skupinám 10 % A2 Kreativní koncept a klíčový vizuál 20 % A3 Mediální strategie a výběr kanálů 10 % A4 Měření, optimalizace a uživatelská cesta na web 10 % A5 Osobní prezentace 10 % B Cena a nákladová efektivnost 40 % B1 Nabídková cena (celková nabídková cena bez DPH) 20 % B2.1 Cena za bod efektivního zásahu 3+ v cílových skupinách 10 % B2.2 Cena za tisíc kontaktů v cílových skupinách (CPT) 10 %",
-        "url": "https://nen.nipez.cz/file?id=4816296214",
-        "kind": "evaluation"
-      },
-      {
-        "text": "Zdravotní pojišťovna ministerstva vnitra České republiky sídlo Vinohradská 2577/178 | 130 00 Praha 3 | kód pojišťovny 211 | IČO 47114304 zapsána v obchodním rejstříku vedeném Městským soudem v Praze oddíl A, vložka 7216 datová schránka: 9swaix3 | infolinka: 224 211 211 | fax: 233 380 332 | e-mail: info@zpmvcr.cz, www.zpmvcr.cz 7/10 • B2.2 Cena za tisíc kontaktů v cílových skupinách (10 %): 3 300 000 Kč bez DPH / (počet kontaktů v cílových skupinách / 1 000).",
-        "url": "https://nen.nipez.cz/file?id=4816296214",
+        "text": "Dotaz č. 4 – Ceny médií a obsah mediálního rozpočtu 3 300 000 Kč (brief, str. 19 a 23; formulář, list „Specifikace produkce“, položka P09) a) Z jakých cen má uchazeč při výpočtu parametrů B2 vycházet: z ceníkových cen provozovatelů médií, nebo z odhadu reálně dosažitelných cen po slevách? b) Zahrnuje mediální rozpočet 3 300 000 Kč bez DPH i odměnu a poplatky dodavatele médií (agenturní odměna, ad serving, technologické poplatky, verifikace viditelnosti a bezpečnosti značky)? c) Zahrnuje tento rozpočet i poplatky vydavatelů za nativní a obsahové formáty (formulář uvádí u položky P09, že je „zajišťuje dodavatel médií“)? d) Smlouva (Příloha č. 1, část D) nezapočítává do tolerance „prokázanou změnu ceníků provozovatelů médií mezi podáním nabídky a vyhlášením dílčí zakázky“.",
+        "url": "https://nen.nipez.cz/file?id=4832759144",
         "kind": "price"
       }
     ],
@@ -399,6 +394,25 @@
         "text": "TV metr); Radioprojekt; Media projekt; NetMonitor nebo rovnocenné zdroje B 2 služby v oblasti reklamy na internetu, min. 1 000 000 Kč bez DPH každá pro 1 objednatele, z toho min. 1 se sociálními sítěmi vedoucí týmu / specialista online médií (3 roky); specialista na reklamu na sociálních sítích (2 roky) NetMonitor nebo rovnocenný zdroj (např. u provozovatele online média vlastní data z nezávisle ověřeného měření) C 2 služby v oblasti inzerce v tisku, min. 300 000 Kč bez DPH každá pro 1 objednatele media planner / buyer (2 roky) Media projekt nebo rovnocenný zdroj D 2 služby v oblasti rozhlasové reklamy nebo digitálního audia, min. 500 000 Kč bez DPH každá pro 1 objednatele media planner / buyer (2 roky) Radioprojekt nebo rovnocenný zdroj E 2 služby v oblasti venkovní nebo vnitřní (indoor) reklamy, min. 500 000 Kč bez DPH každá pro 1 objednatele media planner / buyer (2 roky) nepožaduje se F 2 služby v oblasti televizní reklamy, z toho min. 1 s lineárním TV vysíláním, min. 2 000 000 Kč bez DPH každá pro 1 objednatele vedoucí týmu / account manager (3 roky); TV planner / buyer (3 roky) PCEM (ATO, tzv.",
         "url": "https://nen.nipez.cz/file?id=4832520898",
         "kind": "price"
+      }
+    ],
+    "complete": true,
+    "warnings": []
+  },
+  "nen:N006/26/V00038439": {
+    "reviewedAt": "2026-11-24T14:59:57.100Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4833916405",
+      "https://nen.nipez.cz/file?id=4833916411"
+    ],
+    "method": "automatic-extraction",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Indikativní cenový průzkum na poskytování služeb monitoringu médií požadavek Poskytuje ano/ne Čas dodání od zveřejnění v médiích Cena Kč bez DPH/ 1měsíc Poznámka (počty zdrojů, Pravidelný denní monitoring médií Neomezený počet vyhledávání dle klíčových slov Neomezený počet uživatelů Okamžité alerty/reporty, exporty článků dle klíčových slov Online aplikace, včetně zaškolení uživatelů Zde uveďte výčet funkcí aplikace Kompletní mediální archiv (i mimo klíčová slova) Možnost individuálního nastavení systému dle zadání Možnost analýz Prostor pro upřesnění Sociální sítě Prosím upřesněte rozsah monitoringu sociálních sítí Možnost úprav mediálních výstupů (lze-li např. zpracovat části reportáží – střih audio/video) Dle možností upřesněte Sledování aktivity autorů dle klíčových slov Automatické přepisy audiozáznamů Zahrnuje monitoring i výstupy ČTK?",
+    "facts": [
+      {
+        "text": "Indikativní cenový průzkum na poskytování služeb monitoringu médií požadavek Poskytuje ano/ne Čas dodání od zveřejnění v médiích Cena Kč bez DPH/ 1měsíc Poznámka (počty zdrojů, Pravidelný denní monitoring médií Neomezený počet vyhledávání dle klíčových slov Neomezený počet uživatelů Okamžité alerty/reporty, exporty článků dle klíčových slov Online aplikace, včetně zaškolení uživatelů Zde uveďte výčet funkcí aplikace Kompletní mediální archiv (i mimo klíčová slova) Možnost individuálního nastavení systému dle zadání Možnost analýz Prostor pro upřesnění Sociální sítě Prosím upřesněte rozsah monitoringu sociálních sítí Možnost úprav mediálních výstupů (lze-li např. zpracovat části reportáží – střih audio/video) Dle možností upřesněte Sledování aktivity autorů dle klíčových slov Automatické přepisy audiozáznamů Zahrnuje monitoring i výstupy ČTK?",
+        "url": "https://nen.nipez.cz/file?id=4833916405",
+        "kind": "scope"
       }
     ],
     "complete": true,
