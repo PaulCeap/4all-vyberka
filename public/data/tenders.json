@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T14:59:57.100Z",
+  "generatedAt": "2026-11-25T14:38:40.534Z",
   "project": "4ALL Výběrka",
   "filters": {
     "minimumScore": 42,
     "historyDays": 45
   },
   "stats": {
-    "total": 11,
-    "newThisRun": 5,
+    "total": 12,
+    "newThisRun": 6,
     "strong": 1,
     "closingSoon": 2,
     "unresolvedOrigin": 0,
@@ -18,36 +18,100 @@
     {
       "id": "zakazky-gov",
       "ok": true,
-      "count": 100,
+      "count": 135,
       "warnings": []
     },
     {
       "id": "tenderarena",
       "ok": true,
-      "count": 51,
+      "count": 76,
       "warnings": []
     },
     {
       "id": "nen",
       "ok": true,
-      "count": 79,
+      "count": 75,
       "warnings": [
-        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00028358: HTTP 503"
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035845: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-19-V00002439: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032530: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-17-V00001188: HTTP 503",
+        "Detail: https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035168: HTTP 503"
       ],
       "retryQueue": [
         {
-          "code": "N006/26/V00028358",
-          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00028358",
-          "title": "Opravy, pravidelná preventivní údržba, odborné prohlídky a odborné zkoušky výtahů, vyprošťovací služba v budově OSSZ Trutnov",
+          "code": "N006/26/V00035845",
+          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035845",
+          "title": "Nákup fotografického vybavení",
           "summary": {
-            "kod": "N006/26/V00028358",
-            "nazev": "Opravy, pravidelná preventivní údržba, odborné prohlídky a odborné zkoušky výtahů, vyprošťovací služba v budově OSSZ Trutnov",
-            "zadavatelNazev": "Česká správa sociálního zabezpečení",
-            "podaniLhuta": "2026-09-15T09:00:00"
+            "kod": "N006/26/V00035845",
+            "nazev": "Nákup fotografického vybavení",
+            "zadavatelNazev": "Krajské ředitelství policie Jihomoravského kraje",
+            "podaniLhuta": "2026-11-13T09:00:00"
           },
           "attempts": 1,
-          "firstFailedAt": "2026-11-24T14:59:57.100Z",
-          "lastAttemptAt": "2026-11-24T14:59:57.100Z",
+          "firstFailedAt": "2026-11-25T14:38:40.534Z",
+          "lastAttemptAt": "2026-11-25T14:38:40.534Z",
+          "error": "HTTP 503"
+        },
+        {
+          "code": "N006/19/V00002439",
+          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-19-V00002439",
+          "title": "Outdoorová reklamní kampaň k projektu 1989 Návrat demokracie - Střední Evropa",
+          "summary": {
+            "kod": "N006/19/V00002439",
+            "nazev": "Outdoorová reklamní kampaň k projektu 1989 Návrat demokracie - Střední Evropa",
+            "zadavatelNazev": "Správa Pražského hradu",
+            "podaniLhuta": "2019-02-14T11:00:00"
+          },
+          "attempts": 1,
+          "firstFailedAt": "2026-11-25T14:38:40.534Z",
+          "lastAttemptAt": "2026-11-25T14:38:40.534Z",
+          "error": "HTTP 503"
+        },
+        {
+          "code": "N006/26/V00032530",
+          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032530",
+          "title": "Dodavatel produkčních služeb pro r. 2027 a 2028",
+          "summary": {
+            "kod": "N006/26/V00032530",
+            "nazev": "Dodavatel produkčních služeb pro r. 2027 a 2028",
+            "zadavatelNazev": "České Budějovice - Evropské hlavní město kultury 2028, z.ú.",
+            "podaniLhuta": "2026-10-23T10:00:00"
+          },
+          "attempts": 1,
+          "firstFailedAt": "2026-11-25T14:38:40.534Z",
+          "lastAttemptAt": "2026-11-25T14:38:40.534Z",
+          "error": "HTTP 503"
+        },
+        {
+          "code": "N006/17/V00001188",
+          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-17-V00001188",
+          "title": "Grafické práce pro stálé expozice Příběh Pražského hradu a Svatovítský poklad",
+          "summary": {
+            "kod": "N006/17/V00001188",
+            "nazev": "Grafické práce pro stálé expozice Příběh Pražského hradu a Svatovítský poklad",
+            "zadavatelNazev": "Správa Pražského hradu",
+            "podaniLhuta": "2017-05-24T10:00:00"
+          },
+          "attempts": 1,
+          "firstFailedAt": "2026-11-25T14:38:40.534Z",
+          "lastAttemptAt": "2026-11-25T14:38:40.534Z",
+          "error": "HTTP 503"
+        },
+        {
+          "code": "N006/26/V00035168",
+          "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035168",
+          "title": "Zpracování audiovizuálního záznamu ze stavby „Novostavba garáží a dílen v areálu Cestmistrovství Frýdek-Místek“",
+          "summary": {
+            "kod": "N006/26/V00035168",
+            "nazev": "Zpracování audiovizuálního záznamu ze stavby „Novostavba garáží a dílen v areálu Cestmistrovství Frýdek-Místek“",
+            "zadavatelNazev": "Správa silnic Moravskoslezského kraje, příspěvková organizace",
+            "podaniLhuta": "2026-11-04T08:00:00"
+          },
+          "attempts": 1,
+          "firstFailedAt": "2026-11-25T14:38:40.534Z",
+          "lastAttemptAt": "2026-11-25T14:38:40.534Z",
           "error": "HTTP 503"
         }
       ]
@@ -55,19 +119,19 @@
     {
       "id": "ted",
       "ok": true,
-      "count": 500,
+      "count": 463,
       "warnings": []
     },
     {
       "id": "ezak-watchlist",
       "ok": true,
-      "count": 65,
+      "count": 68,
       "warnings": []
     },
     {
       "id": "proebiz",
       "ok": true,
-      "count": 27,
+      "count": 26,
       "warnings": []
     },
     {
@@ -122,7 +186,7 @@
       "procedureType": "services, services, services, services, services, services",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-10-27T09:54:11.118Z",
-      "lastSeenAt": "2026-11-24T14:59:57.100Z",
+      "lastSeenAt": "2026-11-25T14:38:40.534Z",
       "status": "open",
       "fingerprint": "884fc572f557f10f9e71",
       "relevance": {
@@ -209,7 +273,7 @@
       "procedureType": "Sluzby / Zavedení DNS",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-11-23T14:57:51.375Z",
-      "lastSeenAt": "2026-11-24T14:59:57.100Z",
+      "lastSeenAt": "2026-11-25T14:38:40.534Z",
       "status": "open",
       "fingerprint": "0ebe22be8cba948de541",
       "relevance": {
@@ -239,7 +303,7 @@
             "score": 25
           }
         ],
-        "deadlineDays": 27
+        "deadlineDays": 26
       },
       "assessment": {
         "status": "needs-information",
@@ -323,7 +387,7 @@
             "score": 25
           }
         ],
-        "deadlineDays": 6
+        "deadlineDays": 5
       },
       "assessment": {
         "status": "needs-information",
@@ -402,7 +466,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 10
+        "deadlineDays": 9
       },
       "assessment": {
         "status": "needs-information",
@@ -475,7 +539,7 @@
             "score": 44
           }
         ],
-        "deadlineDays": 9
+        "deadlineDays": 8
       },
       "assessment": {
         "status": "needs-information",
@@ -517,7 +581,7 @@
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
       "firstSeenAt": "2026-11-07T11:11:24.717Z",
-      "lastSeenAt": "2026-11-24T14:59:57.100Z",
+      "lastSeenAt": "2026-11-25T14:38:40.534Z",
       "status": "signal",
       "fingerprint": "60494647f08012b9aa3b",
       "relevance": {
@@ -620,7 +684,7 @@
             "score": 11
           }
         ],
-        "deadlineDays": 13
+        "deadlineDays": 12
       },
       "assessment": {
         "status": "needs-information",
@@ -697,7 +761,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 2
+        "deadlineDays": 1
       },
       "assessment": {
         "status": "needs-information",
@@ -775,7 +839,7 @@
             "score": 28
           }
         ],
-        "deadlineDays": 13
+        "deadlineDays": 12
       },
       "assessment": {
         "status": "needs-information",
@@ -910,7 +974,68 @@
             "score": 28
           }
         ],
-        "deadlineDays": 43
+        "deadlineDays": 42
+      },
+      "assessment": {
+        "status": "needs-information",
+        "label": "Doplnit podklady pro rozhodnutí",
+        "requirements": [],
+        "evaluation": [],
+        "gaps": [
+          "Rozpočet není doložený.",
+          "Kvalifikační požadavky nejsou ve výtahu ověřené.",
+          "Pravidla hodnocení nabídek nejsou ve výtahu ověřená."
+        ],
+        "internalChecks": [
+          "Porovnat požadované reference s našimi.",
+          "Ověřit kapacitu týmu a náklady realizace."
+        ],
+        "explanation": "Shoda vyjadřuje oborovou relevanci. Rozpočet je hodnota zadání, nikoli odhad zisku nebo šance na výhru."
+      }
+    },
+    {
+      "id": "zakazky-gov:RVZ2600301861",
+      "source": "zakazky-gov",
+      "sourceId": "RVZ2600301861",
+      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600301861",
+      "title": "Cobrand letištního salónku na Terminálu 2 // The co-branding of the airport lounge at Terminal 2",
+      "buyer": "Letiště Praha, a. s.",
+      "summary": "Předmětem Výběrového řízení je výběr partnera pro spolupráci formou cobrandu letištního salonku na Terminálu 2 Letiště Václava Havla Praha // The subject of the Tender Procedure is the selection of a partner for cooperation in the form of co-branding of the airport lounge at Terminal 2 of Václav Havel Airport Prague",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": "2026-11-25T12:24:44.644Z",
+      "deadline": "2027-01-15T11:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": null,
+      "valueSource": null,
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [],
+      "procedureType": "VEREJNA ZAKAZKA",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-11-25T14:38:40.534Z",
+      "lastSeenAt": "2026-11-25T14:38:40.534Z",
+      "status": "open",
+      "fingerprint": "3ae8ef5f1ea7c922ec39",
+      "relevance": {
+        "score": 44,
+        "level": "watch",
+        "reasons": [
+          "Marketing & eventy: branding",
+          "obor potvrzuje popis zakázky",
+          "zbývá alespoň týden na reakci"
+        ],
+        "negativeSignals": [],
+        "categories": [
+          {
+            "id": "marketing",
+            "label": "Marketing & eventy",
+            "score": 28
+          }
+        ],
+        "deadlineDays": 51
       },
       "assessment": {
         "status": "needs-information",
@@ -931,27 +1056,27 @@
     }
   ],
   "processing": {
-    "updatedAt": "2026-11-24T14:59:57.100Z",
+    "updatedAt": "2026-11-25T14:38:40.534Z",
     "status": "attention",
     "reviews": {
       "pending": 0,
       "retry": 0,
-      "needs-review": 9,
+      "needs-review": 11,
       "reviewed": 6,
       "expired": 18,
       "inactive": 4
     },
     "radar": {
-      "pending": 1,
+      "pending": 2,
       "resolved": 15,
-      "rejected": 96,
-      "expired": 120,
+      "rejected": 99,
+      "expired": 123,
       "needs-verification": 14
     },
     "sources": [
       {
         "id": "nen",
-        "error": "1 dotazů nebo detailů se nepodařilo načíst; ostatní výsledky byly zpracovány."
+        "error": "5 dotazů nebo detailů se nepodařilo načíst; ostatní výsledky byly zpracovány."
       },
       {
         "id": "poptavej",
@@ -1050,10 +1175,66 @@
         "published": false
       },
       {
-        "id": "nen:N006/26/V00028358",
-        "title": "Opravy, pravidelná preventivní údržba, odborné prohlídky a odborné zkoušky výtahů, vyprošťovací služba v budově OSSZ Trutnov",
+        "id": "zakazky-gov:RVZ2600301861",
+        "title": "Cobrand letištního salónku na Terminálu 2 // The co-branding of the airport lounge at Terminal 2",
+        "status": "needs-review",
+        "reason": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
+        "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600301861",
+        "nextAttemptAt": null,
+        "attempts": 0,
+        "published": true
+      },
+      {
+        "id": "tenderarena:P26V00351440",
+        "title": "Cobrand letištního salónku na Terminálu 2 // The co-branding of the airport lounge at Terminal 2",
+        "status": "needs-review",
+        "reason": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
+        "url": "https://tenderarena.cz/dodavatel/zakazka/933192",
+        "nextAttemptAt": null,
+        "attempts": 0,
+        "published": false
+      },
+      {
+        "id": "nen:N006/26/V00035845",
+        "title": "Nákup fotografického vybavení",
         "status": "retry",
-        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00028358",
+        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035845",
+        "attempts": 1,
+        "published": false,
+        "reason": "Detail zdroje je nedostupný. Adresa je uložená a zkusí se znovu při dalším denním sběru (1 neúspěšných běhů). HTTP 503"
+      },
+      {
+        "id": "nen:N006/19/V00002439",
+        "title": "Outdoorová reklamní kampaň k projektu 1989 Návrat demokracie - Střední Evropa",
+        "status": "retry",
+        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-19-V00002439",
+        "attempts": 1,
+        "published": false,
+        "reason": "Detail zdroje je nedostupný. Adresa je uložená a zkusí se znovu při dalším denním sběru (1 neúspěšných běhů). HTTP 503"
+      },
+      {
+        "id": "nen:N006/26/V00032530",
+        "title": "Dodavatel produkčních služeb pro r. 2027 a 2028",
+        "status": "retry",
+        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00032530",
+        "attempts": 1,
+        "published": false,
+        "reason": "Detail zdroje je nedostupný. Adresa je uložená a zkusí se znovu při dalším denním sběru (1 neúspěšných běhů). HTTP 503"
+      },
+      {
+        "id": "nen:N006/17/V00001188",
+        "title": "Grafické práce pro stálé expozice Příběh Pražského hradu a Svatovítský poklad",
+        "status": "retry",
+        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-17-V00001188",
+        "attempts": 1,
+        "published": false,
+        "reason": "Detail zdroje je nedostupný. Adresa je uložená a zkusí se znovu při dalším denním sběru (1 neúspěšných běhů). HTTP 503"
+      },
+      {
+        "id": "nen:N006/26/V00035168",
+        "title": "Zpracování audiovizuálního záznamu ze stavby „Novostavba garáží a dílen v areálu Cestmistrovství Frýdek-Místek“",
+        "status": "retry",
+        "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00035168",
         "attempts": 1,
         "published": false,
         "reason": "Detail zdroje je nedostupný. Adresa je uložená a zkusí se znovu při dalším denním sběru (1 neúspěšných běhů). HTTP 503"
@@ -1191,6 +1372,15 @@
         "reason": "Originál se nepodařilo jednoznačně ověřit po opakovaných pokusech. Vyžaduje kontrolu zdroje.",
         "url": "https://www.poptavky.cz/poptavka/2170471-graficke-zpracovani-tisk-a-dodavani",
         "attempts": 3,
+        "published": false
+      },
+      {
+        "id": "poptavky:2175289",
+        "title": "Monitoring médií",
+        "status": "pending",
+        "reason": "Čeká na dohledání oficiálního zadání.",
+        "url": "https://www.poptavky.cz/poptavka/2175289-monitoring-medii",
+        "attempts": 1,
         "published": false
       }
     ],
@@ -2409,8 +2599,8 @@
       {
         "id": "poptavky:2160070",
         "title": "Dodávka formulářů",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavky.cz/poptavka/2160070-dodavka-formularu"
       },
       {
@@ -2444,8 +2634,8 @@
       {
         "id": "poptavky:2161489",
         "title": "Poptávkové řízení - Reklamní předměty",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavky.cz/poptavka/2161489-poptavkove-rizeni-reklamni-predmety"
       },
       {
@@ -2514,8 +2704,8 @@
       {
         "id": "poptavky:2164387",
         "title": "Dodávka a další služby distributora zahraničních periodik",
-        "status": "rejected",
-        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "status": "expired",
+        "reason": "Lhůta již uplynula.",
         "url": "https://www.poptavky.cz/poptavka/2164387-dodavka-a-dalsi-sluzby-distributora-zahranicnich-periodik"
       },
       {
@@ -2811,6 +3001,48 @@
         "status": "rejected",
         "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
         "url": "https://www.poptavky.cz/poptavka/2172551-poptavam-reklamni-polepy-na-vylohu-9-x-3-m"
+      },
+      {
+        "id": "poptavky:2175653",
+        "title": "Poptávám: potisk textilu",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2175653-poptavam-potisk-textilu"
+      },
+      {
+        "id": "poptavky:2174203",
+        "title": "Dodávka tiskovin pro Národní muzeum",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2174203-dodavka-tiskovin-pro-narodni-muzeum"
+      },
+      {
+        "id": "poptavky:2175303",
+        "title": "Poptávám: výrobu a dodání medailí, 1.000 ks",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2175303-poptavam-vyrobu-a-dodani-medaili-1000-ks"
+      },
+      {
+        "id": "poptavky:2175283",
+        "title": "Dodávka a další služby distributora zahraničních periodik",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2175283-dodavka-a-dalsi-sluzby-distributora-zahranicnich-periodik"
+      },
+      {
+        "id": "poptavky:2174461",
+        "title": "Chemické inženýrství",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2174461-chemicke-inzenyrstvi"
+      },
+      {
+        "id": "poptavky:2174329",
+        "title": "Knihy pro vědeckou knihovnu II",
+        "status": "rejected",
+        "reason": "Předběžný popis nedokládá službu 4ALL. Znovu se posoudí při změně zdroje nebo pravidel.",
+        "url": "https://www.poptavky.cz/poptavka/2174329-knihy-pro-vedeckou-knihovnu-ii"
       }
     ]
   }
