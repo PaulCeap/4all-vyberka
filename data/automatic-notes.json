@@ -417,5 +417,36 @@
     ],
     "complete": true,
     "warnings": []
+  },
+  "nen:N006/26/V00038638": {
+    "reviewedAt": "2026-11-26T14:02:01.324Z",
+    "documentSnapshot": [
+      "https://nen.nipez.cz/file?id=4835342845",
+      "https://nen.nipez.cz/file?id=4835342854"
+    ],
+    "method": "automatic-extraction",
+    "reviewVersion": "2026-10-24-2",
+    "summary": "Celodenní záznam obecních slavností, včetně střihu a grafického zpracování, bude předán objednateli v elektronické podobě ve formátu vhodném pro archivaci a zveřejnění, a to prostřednictvím elektronického úložiště nebo na datovém nosiči dle požadavku objednatele. c.",
+    "facts": [
+      {
+        "text": "Celodenní záznam obecních slavností, včetně střihu a grafického zpracování, bude předán objednateli v elektronické podobě ve formátu vhodném pro archivaci a zveřejnění, a to prostřednictvím elektronického úložiště nebo na datovém nosiči dle požadavku objednatele. c.",
+        "url": "https://nen.nipez.cz/file?id=4835342845",
+        "kind": "scope"
+      },
+      {
+        "text": "Předpokládaná hodnota zakázky činí cca 1 300 000 Kč bez DPH.",
+        "url": "https://nen.nipez.cz/file?id=4835342845",
+        "kind": "price"
+      }
+    ],
+    "value": {
+      "amount": 1300000,
+      "currency": "CZK"
+    },
+    "valueSource": "https://nen.nipez.cz/file?id=4835342845",
+    "complete": false,
+    "warnings": [
+      "Příloha č_1 k ZD - Obchodní podmínky ve formě návrhu smlouvy.doc: Starý DOC/RTF zatím neumíme bezpečně přečíst."
+    ]
   }
 }
