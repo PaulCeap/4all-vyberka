@@ -1,24 +1,18 @@
 {
-  "updatedAt": "2026-11-26T14:02:01.324Z",
+  "updatedAt": "2026-11-27T14:00:38.286Z",
   "counts": {
     "pending": 0,
-    "retry": 2,
-    "needs-review": 9,
-    "reviewed": 5,
+    "retry": 1,
+    "needs-review": 11,
+    "reviewed": 6,
     "expired": 20,
-    "inactive": 4
+    "inactive": 5
   },
-  "reviewedCount": 0,
-  "pendingCount": 2,
-  "attentionCount": 9,
-  "failedCount": 2,
-  "sourceErrors": [
-    {
-      "id": "nen:N006/26/V00038439",
-      "title": "Poptávkové řízení - Monitoring médií",
-      "error": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00038439: HTTP 503"
-    }
-  ],
+  "reviewedCount": 1,
+  "pendingCount": 1,
+  "attentionCount": 11,
+  "failedCount": 1,
+  "sourceErrors": [],
   "tenders": [
     {
       "id": "official-profile:P26V00000072",
@@ -172,7 +166,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00034249",
@@ -266,7 +260,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": "2026-11-06T12:15:04.866Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00033336",
@@ -363,7 +357,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00030271",
@@ -430,7 +424,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": "2026-10-28T10:40:53.265Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00034098",
@@ -527,7 +521,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00033172",
@@ -621,7 +615,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": "2026-11-14T11:37:20.835Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00021404",
@@ -715,7 +709,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00032165",
@@ -826,7 +820,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": "2026-11-01T11:22:44.760Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "ted:646731-2026",
@@ -879,7 +873,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00031545",
@@ -946,7 +940,7 @@
       "firstQueuedAt": "2026-10-24T09:34:04.116Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00035168",
@@ -1013,7 +1007,7 @@
       "firstQueuedAt": "2026-10-27T09:54:11.118Z",
       "lastAttemptAt": "2026-10-28T10:40:53.265Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "ted:742978-2026",
@@ -1051,8 +1045,8 @@
       ],
       "procedureType": "services, services, services, services, services, services",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-11-26T14:02:01.324Z",
-      "lastSeenAt": "2026-11-26T14:02:01.324Z",
+      "firstSeenAt": "2026-11-27T14:00:38.286Z",
+      "lastSeenAt": "2026-11-27T14:00:38.286Z",
       "status": "needs-review",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -1066,7 +1060,7 @@
       "firstQueuedAt": "2026-10-27T09:54:11.118Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "zakazky-gov:RVZ2600295484",
@@ -1107,7 +1101,7 @@
       "firstQueuedAt": "2026-10-28T10:40:53.265Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "tenderarena:P26V00349386",
@@ -1148,7 +1142,7 @@
       "firstQueuedAt": "2026-10-28T10:40:53.265Z",
       "lastAttemptAt": "2026-10-29T10:58:37.476Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "ted:680377-2026",
@@ -1199,7 +1193,7 @@
       "firstQueuedAt": "2026-10-28T10:40:53.265Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00035576",
@@ -1263,7 +1257,7 @@
       "firstQueuedAt": "2026-10-31T10:28:10.711Z",
       "lastAttemptAt": "2026-11-04T12:18:28.304Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "zakazky-gov:RVZ2600296161",
@@ -1304,7 +1298,7 @@
       "firstQueuedAt": "2026-11-02T12:39:12.795Z",
       "lastAttemptAt": "2026-11-09T13:03:43.749Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/P00000240",
@@ -1343,8 +1337,8 @@
       ],
       "procedureType": "Předběžná tržní konzultace",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-11-26T14:02:01.324Z",
-      "lastSeenAt": "2026-11-26T14:02:01.324Z",
+      "firstSeenAt": "2026-11-27T14:00:38.286Z",
+      "lastSeenAt": "2026-11-27T14:00:38.286Z",
       "status": "needs-review",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -1358,7 +1352,7 @@
       "firstQueuedAt": "2026-11-03T12:04:45.535Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "zakazky-gov:RVZ2600297185",
@@ -1399,7 +1393,7 @@
       "firstQueuedAt": "2026-11-05T12:32:36.236Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00036193",
@@ -1468,7 +1462,7 @@
       "firstQueuedAt": "2026-11-05T12:32:36.236Z",
       "lastAttemptAt": "2026-11-08T11:23:21.516Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "tenderarena:P26V00349932",
@@ -1509,7 +1503,7 @@
       "firstQueuedAt": "2026-11-05T12:32:36.236Z",
       "lastAttemptAt": "2026-11-06T12:15:04.866Z",
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "ted:750434-2026",
@@ -1560,7 +1554,7 @@
       "firstQueuedAt": "2026-11-05T12:32:36.236Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00035326",
@@ -1609,7 +1603,7 @@
       "firstQueuedAt": "2026-11-06T12:15:04.866Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "ted:774958-2026",
@@ -1650,8 +1644,8 @@
       ],
       "procedureType": "services, services, services, services, services, services",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-11-26T14:02:01.324Z",
-      "lastSeenAt": "2026-11-26T14:02:01.324Z",
+      "firstSeenAt": "2026-11-27T14:00:38.286Z",
+      "lastSeenAt": "2026-11-27T14:00:38.286Z",
       "status": "needs-review",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -1665,7 +1659,7 @@
       "firstQueuedAt": "2026-11-06T12:15:04.866Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00036531",
@@ -1759,7 +1753,7 @@
       "firstQueuedAt": "2026-11-07T11:11:24.717Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "mediaguru:https://www.mediaguru.cz/pivovary-zubr-hledaji-pr-agenturu-pro-cesky-a-slovensky-trh",
@@ -1785,8 +1779,8 @@
       "cpv": [],
       "procedureType": "Komerční výběrové řízení — mediální signál",
       "opportunityType": "market-signal",
-      "firstSeenAt": "2026-11-26T14:02:01.324Z",
-      "lastSeenAt": "2026-11-26T14:02:01.324Z",
+      "firstSeenAt": "2026-11-27T14:00:38.286Z",
+      "lastSeenAt": "2026-11-27T14:00:38.286Z",
       "status": "needs-review",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -1800,7 +1794,7 @@
       "firstQueuedAt": "2026-11-07T11:11:24.717Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "ted:776889-2026",
@@ -1857,7 +1851,7 @@
       "firstQueuedAt": "2026-11-09T13:03:43.749Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "ted:777056-2026",
@@ -1906,7 +1900,7 @@
       "firstQueuedAt": "2026-11-09T13:03:43.749Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "zakazky-gov:RVZ2600298143",
@@ -1947,7 +1941,7 @@
       "firstQueuedAt": "2026-11-10T12:48:31.920Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "zakazky-gov:RVZ2600298722",
@@ -1975,7 +1969,7 @@
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-11-11T11:58:07.364Z",
       "lastSeenAt": "2026-11-11T11:58:07.364Z",
-      "status": "needs-review",
+      "status": "inactive",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
@@ -1983,12 +1977,12 @@
       "candidateProfileUrls": [],
       "fingerprint": "7d0a45a84ddbc35a54d6",
       "signature": "5d696f8b73a995f6b8ff3c3c1cec84d3ff4a5f84464b40b2880d954e31f2b4e5",
-      "error": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
+      "error": "Zakázka není v aktuálním seznamu kandidátů; předchozí stav zůstal uložený.",
       "attempts": 0,
       "firstQueuedAt": "2026-11-11T11:58:07.364Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "zakazky-gov:RVZ2600298542",
@@ -2029,7 +2023,7 @@
       "firstQueuedAt": "2026-11-11T11:58:07.364Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "tenderarena:P26V00350436",
@@ -2070,7 +2064,7 @@
       "firstQueuedAt": "2026-11-11T11:58:07.364Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00037104",
@@ -2127,7 +2121,7 @@
       "firstQueuedAt": "2026-11-12T12:57:06.623Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00036742",
@@ -2179,7 +2173,7 @@
       "firstQueuedAt": "2026-11-19T13:33:00.018Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "ted:807233-2026",
@@ -2213,8 +2207,8 @@
       ],
       "procedureType": "services, services",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-11-26T14:02:01.324Z",
-      "lastSeenAt": "2026-11-26T14:02:01.324Z",
+      "firstSeenAt": "2026-11-27T14:00:38.286Z",
+      "lastSeenAt": "2026-11-27T14:00:38.286Z",
       "status": "needs-review",
       "discoverySource": null,
       "discoveryUrl": null,
@@ -2230,14 +2224,14 @@
       "firstQueuedAt": "2026-11-19T13:33:00.018Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00037809",
       "source": "nen",
       "sourceId": "N006/26/V00037809",
       "url": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00037809",
-      "title": "Dynamický nákupní systém – Nákup mediálního prostoru",
+      "title": "DNS – Zajištění mediálního prostoru na propagaci prevence",
       "buyer": "Zdravotní pojišťovna ministerstva vnitra České republiky",
       "summary": "Zadavatel předpokládá zadávání veřejných zakázek v DNS v předem neurčených a nepravidelných intervalech závisejících zejména na komunikačních a provozních potřebách Zadavatele. Zadavatel předpokládá, že v průběhu kalendářního roku zadá v rámci DNS orientačně 5 až 20 dílčích veřejných zakázek, zejména v návaznosti na kampaně a komunikační aktivity podle ročního marketingového plánu (např. jarní a podzimní kampaň, regionální kampaně, pozvánky na akce Zadavatele a průběžná komunikace na sociálních sítích). Tento údaj je pouze orientační a nezakládá závazek Zadavatele zadat jakoukoli dílčí veřejnou zakázku.",
       "country": "CZ",
@@ -2258,34 +2252,39 @@
           "url": "https://nen.nipez.cz/file?id=4832520851"
         },
         {
-          "name": "Priloha_c_III_ZD_Vzor_seznamu.docx",
+          "name": "Oznámení o změně zadávací dokumentace č.1_S..pdf",
           "type": "Zadávací dokumentace_zavedení DNS",
-          "url": "https://nen.nipez.cz/file?id=4832520898"
+          "url": "https://nen.nipez.cz/file?id=4837280442"
         },
         {
-          "name": "Priloha_c_II_ZD_Cestne_prohlaseni.docx",
+          "name": "Priloha_c_III_ZD_Vzor_seznamu_změna č.1.docx",
           "type": "Zadávací dokumentace_zavedení DNS",
-          "url": "https://nen.nipez.cz/file?id=4832520893"
+          "url": "https://nen.nipez.cz/file?id=4837280430"
         },
         {
-          "name": "Priloha_c_IV_ZD_Mezinarodni_sankce a stret zajmu.docx",
+          "name": "Priloha_c_II_ZD_Cestne_prohlaseni_změna č.1.docx",
           "type": "Zadávací dokumentace_zavedení DNS",
-          "url": "https://nen.nipez.cz/file?id=4832520903"
+          "url": "https://nen.nipez.cz/file?id=4837280418"
         },
         {
-          "name": "Priloha_c_V_ZD_Navrh_typove_smlouvy.docx",
+          "name": "Priloha_c_IV_ZD_Mezinarodni_sankce a stret zajmu_změna č.1.docx",
           "type": "Zadávací dokumentace_zavedení DNS",
-          "url": "https://nen.nipez.cz/file?id=4832520908"
+          "url": "https://nen.nipez.cz/file?id=4837280452"
         },
         {
-          "name": "Příloha_c_I_ZD_Fomular_zadosti_o_ucast.docx",
+          "name": "Priloha_c_V_ZD_Navrh_typove_smlouvy_změna č.1.docx",
           "type": "Zadávací dokumentace_zavedení DNS",
-          "url": "https://nen.nipez.cz/file?id=4832520844"
+          "url": "https://nen.nipez.cz/file?id=4837280424"
         },
         {
-          "name": "ZD_DNS_Nakup_medialniho_prostoru_s.pdf",
+          "name": "Příloha_c_I_ZD_Fomular_zadosti_o_ucast_změna č.1.docx",
           "type": "Zadávací dokumentace_zavedení DNS",
-          "url": "https://nen.nipez.cz/file?id=4832520883"
+          "url": "https://nen.nipez.cz/file?id=4837280457"
+        },
+        {
+          "name": "ZD_DNS_Zajisteni_medialniho_prostoru_změna č. 1_S..pdf",
+          "type": "Zadávací dokumentace_zavedení DNS",
+          "url": "https://nen.nipez.cz/file?id=4837280408"
         }
       ],
       "verifiedFacts": [],
@@ -2297,22 +2296,22 @@
       ],
       "procedureType": "Sluzby / Zavedení DNS",
       "opportunityType": "public-tender",
-      "firstSeenAt": "2026-11-26T14:02:01.324Z",
-      "lastSeenAt": "2026-11-26T14:02:01.324Z",
+      "firstSeenAt": "2026-11-27T14:00:38.286Z",
+      "lastSeenAt": "2026-11-27T14:00:38.286Z",
       "status": "reviewed",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
       "originConfidence": null,
       "candidateProfileUrls": [],
-      "fingerprint": "0ebe22be8cba948de541",
-      "signature": "d017e4fced2112bd6648ade20292de751faa9f5d5c03a568dd24e1b1abaf3cc9",
+      "fingerprint": "22b8a07c36e43ddbb321",
+      "signature": "515add73a840682eb3c2564db3c144f7f4325387234d5fde3c70fe26d618c0f0",
       "error": null,
       "attempts": 0,
       "firstQueuedAt": "2026-11-23T14:57:51.375Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00038439",
@@ -2361,7 +2360,7 @@
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-11-24T14:59:57.100Z",
       "lastSeenAt": "2026-11-24T14:59:57.100Z",
-      "status": "retry",
+      "status": "reviewed",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
@@ -2369,12 +2368,12 @@
       "candidateProfileUrls": [],
       "fingerprint": "0a3c3234e80275616efb",
       "signature": "9b426262d9a198264294eb02170e746b3ea0e4bc7b2b3a21101311797de4b8d3",
-      "error": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00038439: HTTP 503",
+      "error": null,
       "attempts": 1,
       "firstQueuedAt": "2026-11-24T14:59:57.100Z",
       "lastAttemptAt": "2026-11-26T14:02:01.324Z",
-      "nextAttemptAt": "2026-11-26T16:02:01.324Z",
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "nextAttemptAt": null,
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "zakazky-gov:RVZ2600301861",
@@ -2415,7 +2414,7 @@
       "firstQueuedAt": "2026-11-25T14:38:40.534Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "tenderarena:P26V00351440",
@@ -2456,7 +2455,7 @@
       "firstQueuedAt": "2026-11-25T14:38:40.534Z",
       "lastAttemptAt": null,
       "nextAttemptAt": null,
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     },
     {
       "id": "nen:N006/26/V00038638",
@@ -2471,8 +2470,11 @@
       "publishedAt": "2026-11-25T20:40:00.000Z",
       "deadline": "2026-12-07T09:00:00.000Z",
       "deadlineTimeKnown": true,
-      "value": null,
-      "valueSource": null,
+      "value": {
+        "amount": 1300000,
+        "currency": "CZK"
+      },
+      "valueSource": "zakazky-gov",
       "documentsUrl": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-26-V00038638/zadavaci-dokumentace",
       "documents": [
         {
@@ -2506,21 +2508,155 @@
       "procedureType": "Sluzby / Otevřená výzva",
       "opportunityType": "public-tender",
       "firstSeenAt": "2026-11-26T14:02:01.324Z",
-      "lastSeenAt": "2026-11-26T14:02:01.324Z",
+      "lastSeenAt": "2026-11-27T14:00:38.286Z",
       "status": "retry",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": 0,
+      "candidateProfileUrls": [],
+      "fingerprint": "f969f23a543db92d9722",
+      "signature": "bc3f0d17c6e24cac8330b93dfcce0443d93753b2a6af8e3f8ec593441426b0d9",
+      "error": "Příloha č_1 k ZD - Obchodní podmínky ve formě návrhu smlouvy.doc: Starý DOC/RTF zatím neumíme bezpečně přečíst.",
+      "attempts": 2,
+      "firstQueuedAt": "2026-11-26T14:02:01.324Z",
+      "lastAttemptAt": "2026-11-27T14:00:38.286Z",
+      "nextAttemptAt": "2026-11-27T18:00:38.286Z",
+      "updatedAt": "2026-11-27T14:00:38.286Z"
+    },
+    {
+      "id": "zakazky-gov:RVZ2600302572",
+      "source": "zakazky-gov",
+      "sourceId": "RVZ2600302572",
+      "url": "https://zakazky.gov.cz/verejne-zakazky/detail-zakazky/RVZ2600302572",
+      "title": "Zajištění inzertního a PR mediálního prostoru v rámci tištěných titulů MAFRA",
+      "buyer": "Pražská plynárenská, a.s.",
+      "summary": "Zajištění inzertního a PR mediálního prostoru v rámci tištěných titulů MAFRA",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": "2026-11-27T11:10:26.883Z",
+      "deadline": "2026-12-14T11:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": null,
+      "valueSource": null,
+      "documentsUrl": null,
+      "documents": [],
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [],
+      "procedureType": "VEREJNA ZAKAZKA",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-11-27T14:00:38.286Z",
+      "lastSeenAt": "2026-11-27T14:00:38.286Z",
+      "status": "needs-review",
       "discoverySource": null,
       "discoveryUrl": null,
       "originStatus": "verified",
       "originConfidence": null,
       "candidateProfileUrls": [],
-      "fingerprint": "f969f23a543db92d9722",
-      "signature": "bc3f0d17c6e24cac8330b93dfcce0443d93753b2a6af8e3f8ec593441426b0d9",
-      "error": "Příloha č_1 k ZD - Obchodní podmínky ve formě návrhu smlouvy.doc: Starý DOC/RTF zatím neumíme bezpečně přečíst.",
-      "attempts": 1,
-      "firstQueuedAt": "2026-11-26T14:02:01.324Z",
-      "lastAttemptAt": "2026-11-26T14:02:01.324Z",
-      "nextAttemptAt": "2026-11-26T16:02:01.324Z",
-      "updatedAt": "2026-11-26T14:02:01.324Z"
+      "fingerprint": "7a0769800051c32be6e5",
+      "signature": "6540b54f8137f56c8970287f13332283005af89edf737bc2d3bb5cd1186c4e07",
+      "error": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
+      "attempts": 0,
+      "firstQueuedAt": "2026-11-27T14:00:38.286Z",
+      "lastAttemptAt": null,
+      "nextAttemptAt": null,
+      "updatedAt": "2026-11-27T14:00:38.286Z"
+    },
+    {
+      "id": "tenderarena:P26V00351640",
+      "source": "tenderarena",
+      "sourceId": "P26V00351640",
+      "url": "https://tenderarena.cz/dodavatel/zakazka/929264",
+      "title": "Zajištění inzertního a PR mediálního prostoru v rámci tištěných titulů MAFRA",
+      "buyer": "Pražská plynárenská, a.s.",
+      "summary": "",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": null,
+      "deadline": "2026-12-14T11:00:00.000Z",
+      "deadlineTimeKnown": true,
+      "value": null,
+      "valueSource": null,
+      "documentsUrl": null,
+      "documents": [],
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [],
+      "procedureType": "Veřejná zakázka v TenderArena",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-11-27T14:00:38.286Z",
+      "lastSeenAt": "2026-11-27T14:00:38.286Z",
+      "status": "needs-review",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "candidateProfileUrls": [],
+      "fingerprint": "7a0769800051c32be6e5",
+      "signature": "fac068ee80a41f12c799d0474c4208ae00c0f917172dd747480d2d8d90035f84",
+      "error": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
+      "attempts": 0,
+      "firstQueuedAt": "2026-11-27T14:00:38.286Z",
+      "lastAttemptAt": null,
+      "nextAttemptAt": null,
+      "updatedAt": "2026-11-27T14:00:38.286Z"
+    },
+    {
+      "id": "ted:813301-2026",
+      "source": "ted",
+      "sourceId": "813301-2026",
+      "url": "https://ted.europa.eu/cs/notice/-/detail/813301-2026",
+      "title": "Dynamický nákupní systém – Nákup mediálního prostoru",
+      "buyer": "Zdravotní pojišťovna ministerstva vnitra České republiky",
+      "summary": "Nákup mediálního prostoru a vysílacího času (dále jen „mediální prostor“) pro komunikační aktivity a kampaně Zadavatele, zejména kampaně na podporu prevence a zdravého životního stylu, informování o službách a programech Zadavatele, pozvánky na preventivní a další akce Zadavatele a komunikaci ke stávajícím klientům Zadavatele i k ostatní populaci. Předmětem plnění je spolupráce s dodavateli (zejména mediálními agenturami a provozovateli médií a reklamních nosičů), kteří na základě strategického mediálního plánu Zadavatele, případně i taktického mediálního plánu Zadavatele, zpracují nákupní mediální plán, rezervují a nakoupí pro Zadavatele mediální prostor, zajistí nasazení reklamy (inzerce) v offline i online médiích, průběžně kampaň optimalizují a ověřitelným způsobem doloží dosažené výsledky. Reklamní spoty, sponzoring a další formáty v celoplošném i regionálním televizním vysílání, včetně reklamy v aplikacích a na připojených televizích (HbbTV, CTV) a ve videotékách (VOD) provozovatelů televizního vysílání. Nákup mediálního prostoru pro ucelenou kampaň nebo komunikační aktivitu ve dvou nebo více mediatypech podle kategorií B až G na základě Strategického mediálního plánu Zadavatele, včetně koordinace nákupu a nasazení napříč mediatypy a společného vyhodnocení kampaně. Kategorie je určena zejména pro hlavní kampaně Zadavatele. Nákup reklamního prostoru na internetu, zejména na sociálních sítích (např. Facebook, Instagram, YouTube, TikTok, LinkedIn), ve vyhledávačích a obsahových sítích, ve zpravodajských a jiných online médiích (včetně nativní reklamy a komerčních článků), online videoreklama, programatický nákup, bannerová, výkonová a mobilní reklama a reklama v aplikacích. Plošná a jiná inzerce v periodickém i neperiodickém tisku, zejména v celostátních a regionálních denících, týdenících, časopisech (včetně odborných a resortních periodik), suplementech a denících zdarma, včetně vkládané inzerce, speciálních formátů a komerčních článků a včetně inzerce v elektronických vydáních nabízené společně s tištěným vydáním. Reklamní spoty, sponzoring a další formáty v celoplošném i regionálním rozhlasovém vysílání a v digitálním audiu (např. internetová rádia, hudební streamovací služby, podcasty). Outdoorová i indoorová reklama na pevných i mobilních nosičích, zejména billboardy, bigboardy, CLV, plakátovací plochy, reklama v prostředcích a prostorách veřejné dopravy, na nádražích a letištích a v obchodních centrech, digitální venkovní reklama (DOOH) a ambientní formáty. Nákup mediálního prostoru v mediatypech a formátech, které nelze podřadit pod kategorie B až F, zejména kinoreklama, reklama v herním prostředí, reklama v čekárnách a prostorách poskytovatelů zdravotních služeb, retail media, jakož i v nových mediatypech a formátech, které se na trhu objeví v průběhu trvání DNS.",
+      "country": "CZ",
+      "region": "Česko",
+      "publishedAt": null,
+      "deadline": null,
+      "deadlineTimeKnown": false,
+      "value": {
+        "amount": 40910000,
+        "currency": "CZK"
+      },
+      "valueSource": null,
+      "documentsUrl": null,
+      "documents": [],
+      "verifiedFacts": [],
+      "factsReviewedAt": null,
+      "reviewComplete": true,
+      "reviewWarnings": [],
+      "cpv": [
+        "79341000",
+        "79341400",
+        "92220000",
+        "79341200",
+        "92210000"
+      ],
+      "procedureType": "services, services, services, services, services, services, services, services",
+      "opportunityType": "public-tender",
+      "firstSeenAt": "2026-11-27T14:00:38.286Z",
+      "lastSeenAt": "2026-11-27T14:00:38.286Z",
+      "status": "needs-review",
+      "discoverySource": null,
+      "discoveryUrl": null,
+      "originStatus": "verified",
+      "originConfidence": null,
+      "candidateProfileUrls": [
+        "https://nen.nipez.cz/profily-zadavatelu-platne/detail-profilu/zpmvcr_profil"
+      ],
+      "fingerprint": "0a7ec4b57f8437e0c658",
+      "signature": "8cd929bd2c35837913881e2c847bbf7143372309f0534f5e74382e6803e1e954",
+      "error": "Zdroj nemá dostupné rozpoznané věcné přílohy. Posouzení vychází jen z popisu zadání.",
+      "attempts": 0,
+      "firstQueuedAt": "2026-11-27T14:00:38.286Z",
+      "lastAttemptAt": null,
+      "nextAttemptAt": null,
+      "updatedAt": "2026-11-27T14:00:38.286Z"
     }
   ]
 }
